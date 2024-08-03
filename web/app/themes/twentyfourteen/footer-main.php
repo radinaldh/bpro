@@ -21,7 +21,8 @@
                     <!-- txt -->
                     <div>
                         <span class="block font-medium text-[14px]">Event Venue</span>
-                        <h5 class="font-medium text-[20px]">Jalan Nginden Intan Timur I No.29</h5>
+                        <h5 class="font-medium text-[20px]">Gereja Bethany Manyar <br>
+                        Jl. Manyar Rejo II No.36-38, Surabaya.</h5>
                     </div>
                 </div>
 
@@ -41,7 +42,7 @@
                     <!-- txt -->
                     <div>
                         <span class="block font-medium text-[14px]">Send Email</span>
-                        <h5 class="font-medium text-[20px]"><a href="mailto:info@Bethany Professional.com">info@Bethany Professional.com</a></h5>
+                        <h5 class="font-medium text-[20px]"><a href="mailto:info@info@bethanyprofessional.com">info@bethanyprofessional.com</a></h5>
                     </div>
                 </div>
 
@@ -60,8 +61,8 @@
 
                     <!-- txt -->
                     <div>
-                        <span class="block font-medium text-[14px]">Contact Person</span>
-                        <h5 class="font-medium text-[20px]"><a href="tel:88012365499">+62 811 31166111</a></h5>
+                        <span class="block font-medium text-[14px]">Hotline BPro :</span>
+                        <h5 class="font-medium text-[20px]"><a href="https://wa.me/6281131166111">0811 311 66 111 (Whatsapp)</a></h5>
                     </div>
                 </div>
             </div>
