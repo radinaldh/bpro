@@ -1,0 +1,85 @@
+/*
+Theme Name: Twenty Fourteen
+Theme URI: https://wordpress.org/themes/twentyfourteen/
+Author: the WordPress team
+Author URI: https://wordpress.org/
+Description: In 2014, our default theme lets you create a responsive magazine website with a sleek, modern design. Feature your favorite homepage content in either a grid or a slider. Use the three widget areas to customize your website, and change your content's layout with a full-width page template and a contributor page to show off your authors. Creating a magazine website with WordPress has never been easier.
+Version: 4.0
+Requires at least: 3.6
+Tested up to: 6.6
+Requires PHP: 5.2.4
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Tags: blog, news, two-columns, three-columns, left-sidebar, right-sidebar, custom-background, custom-header, custom-menu, editor-style, featured-images, flexible-header, footer-widgets, full-width-template, microformats, post-formats, rtl-language-support, sticky-post, theme-options, translation-ready, accessibility-ready, block-patterns
+Text Domain: twentyfourteen
+
+This theme, like WordPress, is licensed under the GPL.
+Use it to make something cool, have fun, and share what you've learned with others.
+*/
+
+body {
+  font-family: "Work Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+
+.outline {
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: rgb(255, 255, 255);
+  color: #ffffff00;
+}
+
+.flag-img {
+  width: 200px;
+}
+
+.text-primary {
+  color: #0b1f38 !important;
+}
+
+.bg-blue {
+  background-color: #ffffff00 !important;
+  color: #fff !important;
+}
+
+.qr-code-img {
+  width: 100px;
+}
+
+a {
+  color: #fff;
+}
+
+@media screen and (max-width: 800px) {
+  .flag-img {
+    width: 60px;
+  }
+
+  h1 {
+    font-size: 24px;
+  }
+
+  h2 {
+    font-size: 18px;
+  }
+
+  h4 {
+    font-size: 12px;
+  }
+
+  h5 {
+    font-size: 12px;
+  }
+
+  p {
+    font-size: 10px;
+  }
+
+  p.small-text {
+    font-size: 8px;
+  }
+
+  .qr-code-img {
+    width: 50px;
+  }
+}
