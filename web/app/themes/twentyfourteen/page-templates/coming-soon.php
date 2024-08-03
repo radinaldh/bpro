@@ -7,6 +7,8 @@
  * @subpackage Twenty_Fourteen
  * @since Twenty Fourteen 1.0
  */
+
+//  Coming Soon Purposes
 ?>
 
 <!DOCTYPE html>
