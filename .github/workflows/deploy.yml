@@ -1,4 +1,4 @@
-name: Deploy to cPanel
+name: Deploy to cPanel and Update Database
 
 on:
   push:
@@ -6,18 +6,31 @@ on:
       - master # Ensure this matches your default branch
 
 jobs:
-  ftp-deploy:
+  deploy:
     runs-on: ubuntu-latest
 
     steps:
       - name: Checkout code
-        uses: actions/checkout@v3 # Updated to v3 for Node.js 16/20 compatibility
+        uses: actions/checkout@v3
 
       - name: Install FTP Deploy Action
-        uses: SamKirkland/FTP-Deploy-Action@4.3.0 # Updated to the latest version
+        uses: SamKirkland/FTP-Deploy-Action@4.3.0
         with:
           server: ${{ secrets.FTP_SERVER }}
           username: ${{ secrets.FTP_USERNAME }}
           password: ${{ secrets.FTP_PASSWORD }}
           local-dir: ./
-          server-dir: /home/wit10000/bethanyprofessional.com/ # Updated path based on your cPanel file manager
+          server-dir: /home/wit10000/bethanyprofessional.com/
+
+      - name: Set up MySQL
+        run: sudo apt-get install mysql-client
+
+      - name: Run database migrations
+        env:
+          DB_HOST: ${{ secrets.DB_HOST }}
+          DB_PORT: ${{ secrets.DB_PORT }}
+          DB_NAME: ${{ secrets.DB_NAME }}
+          DB_USER: ${{ secrets.DB_USER }}
+          DB_PASSWORD: ${{ secrets.DB_PASSWORD }}
+        run: |
+          mysql -h $DB_HOST -P $DB_PORT -u $DB_USER -p$DB_PASSWORD $DB_NAME < /config/db/migration.sql
