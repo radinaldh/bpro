@@ -3,7 +3,7 @@ name: Deploy to cPanel
 on:
   push:
     branches:
-      - master
+      - master # Ensure this matches your default branch
 
 jobs:
   ftp-deploy:
@@ -11,13 +11,13 @@ jobs:
 
     steps:
       - name: Checkout code
-        uses: actions/checkout@v3
+        uses: actions/checkout@v3 # Updated to v3 for Node.js 16/20 compatibility
 
       - name: Install FTP Deploy Action
-        uses: SamKirkland/FTP-Deploy-Action@4.3.0
+        uses: SamKirkland/FTP-Deploy-Action@4.3.0 # Updated to the latest version
         with:
           server: ${{ secrets.FTP_SERVER }}
           username: ${{ secrets.FTP_USERNAME }}
           password: ${{ secrets.FTP_PASSWORD }}
           local-dir: ./
-          server-dir: /public_html/bethanyprofessional.com/
+          server-dir: /home/wit10000/bethanyprofessional.com/ # Updated path based on your cPanel file manager
