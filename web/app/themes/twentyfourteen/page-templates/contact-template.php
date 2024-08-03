@@ -35,7 +35,7 @@ get_header('main'); ?>
 
                         <div class="txt">
                             <span class="font-light" style="font-size: 12px;">Call Us 7/24</span>
-                            <h4 class="font-semibold text-[12px]"><a href="tel:+208-555-0112">+0811 311 66 111</a></h4>
+                            <h4 class="font-semibold text-[12px]"><a href="whatsapp://send?text=Hello&phone=+6281131166111">+0811 311 66 111</a></h4>
                         </div>
                     </div>
 
