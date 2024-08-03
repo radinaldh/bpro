@@ -20,7 +20,8 @@ web/.htaccess
 .env.*
 !.env.example
 
-# htaccess ignore
+# htaccess
+htaccess
 .htaccess
 /.htaccess
 
