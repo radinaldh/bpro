@@ -7,7 +7,7 @@
 get_header('main'); ?>
 
 <!-- BREADCRUMB SECTION START -->
-<section class="et-breadcrumb bg-[#000D83] pt-[210px] lg:pt-[190px] sm:pt-[160px] pb-[130px] lg:pb-[110px] sm:pb-[80px] relative z-[1] before:absolute before:inset-0 before:bg-[url('<?= get_template_directory_uri(); ?>assets/img/breadcrumb-bg.jpg')] before:bg-no-repeat before:bg-cover before:bg-center before:-z-[1] before:opacity-30">
+<section class="et-breadcrumb bg-[#000D83] pt-[210px] lg:pt-[190px] sm:pt-[160px] pb-[130px] lg:pb-[110px] sm:pb-[80px] relative z-[1] before:absolute before:inset-0 before:bg-[url('<?= get_template_directory_uri()?>/assets/img/breadcrumb-bg.jpg')] before:bg-no-repeat before:bg-cover before:bg-center before:-z-[1] before:opacity-30">
     <div class="container mx-auto max-w-[1200px] px-[12px] xl:max-w-full text-center text-white">
         <h1 class="et-breadcrumb-title font-medium text-[56px] md:text-[50px] xs:text-[45px]">Contact Us</h1>
         <ul class="inline-flex items-center gap-[10px] font-medium text-[16px]">
@@ -30,43 +30,43 @@ get_header('main'); ?>
                     <!-- single contact info -->
                     <div class="flex flex-wrap items-center gap-[20px] pb-[20px] text-white border-b border-white/30 last:border-0 last:pb-0">
                         <span class="icon shrink-0 border border-dashed border-white rounded-full h-[62px] w-[62px] flex items-center justify-center">
-                            <img src="<?= get_template_directory_uri(); ?>assets/img/call-msg.svg" alt="icon">
+                            <img src="<?= get_template_directory_uri()?>/assets/img/call-msg.svg" alt="icon">
                         </span>
 
                         <div class="txt">
-                            <span class="font-light">Call Us 7/24</span>
-                            <h4 class="font-semibold text-[24px]"><a href="tel:+208-555-0112">+208-555-0112</a></h4>
+                            <span class="font-light" style="font-size: 12px;">Call Us 7/24</span>
+                            <h4 class="font-semibold text-[12px]"><a href="tel:+208-555-0112">+0811 311 66 111</a></h4>
                         </div>
                     </div>
 
                     <!-- single contact info -->
                     <div class="flex flex-wrap items-center gap-[20px] pb-[20px] text-white border-b border-white/30 last:border-0 last:pb-0">
                         <span class="icon shrink-0 border border-dashed border-white rounded-full h-[62px] w-[62px] flex items-center justify-center">
-                            <img src="<?= get_template_directory_uri(); ?>assets/img/mail.svg" alt="icon">
+                            <img src="<?= get_template_directory_uri()?>/assets/img/mail.svg" alt="icon">
                         </span>
 
                         <div class="txt">
-                            <span class="font-light">Make a Quote</span>
-                            <h4 class="font-semibold text-[24px]"><a href="mailto:Bethany@gmail.com">Bethany@gmail.com</a></h4>
+                            <span class="font-light" style="font-size: 12px;">Make a Quote</span>
+                            <h4 class="font-semibold text-[12px]"><a href="mailto:info@bethanyprofessional.com">info@bethanyprofessional.com </a></h4>
                         </div>
                     </div>
 
                     <!-- single contact info -->
                     <div class="flex flex-wrap items-center gap-[20px] pb-[20px] text-white border-b border-white/30 last:border-0 last:pb-0">
                         <span class="icon shrink-0 border border-dashed border-white rounded-full h-[62px] w-[62px] flex items-center justify-center">
-                            <img src="<?= get_template_directory_uri(); ?>assets/img/location-dot-circle.svg" alt="icon">
+                            <img src="<?= get_template_directory_uri()?>/assets/img/location-dot-circle.svg" alt="icon">
                         </span>
 
                         <div class="txt">
-                            <span class="font-light">Location</span>
-                            <h4 class="font-semibold text-[24px]">4517 Washington ave.</h4>
+                            <span class="font-light" style="font-size: 12px;">Location</span>
+                            <h4 class="font-semibold text-[12px]">Gereja Bethany Manyar Jl. Manyar Rejo II No.36-38, Surabaya. </h4>
                         </div>
                     </div>
                 </div>
 
                 <!-- video cover -->
                 <div class="relative">
-                    <img src="<?= get_template_directory_uri(); ?>assets/img/contact-video-cover.jpg" alt="video cover" class="w-full">
+                    <img src="<?= get_template_directory_uri()?>/assets/img/contact-video-cover.jpg" alt="video cover" class="w-full">
                     <a href="https://youtu.be/6KmuL6RcdNA?si=s1RJZZwk6XcqZAwX" data-fslightbox class="video-btn-shadow w-[58px] aspect-square rounded-full bg-white text-[18px] text-etBlue flex items-center justify-center absolute top-[50%] left-[50%] -translate-y-[50%] -translate-x-[50%]">
                         <i class="fa-solid fa-play"></i>
                     </a>
@@ -103,7 +103,5 @@ get_header('main'); ?>
 
 
 <!-- map -->
-<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d17361.523329457763!2d90.46439825796337!3d23.825330202730832!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3755c967e0e4e467%3A0x7c43720137a9b4e9!2sBashundhara%20Kings%20Arena!5e0!3m2!1sen!2sbd!4v1712131260359!5m2!1sen!2sbd" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" class="w-full h-[600px] lg:h-[500px] md:h-[400px] sm:h-[350px]"></iframe>
-
-<?php
+<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3957.509229362831!2d112.76195907466156!3d-7.296539671723768!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dd7fa4d645cfe87%3A0xad4edfbfc291f746!2sGereja%20Bethany%20Manyar!5e0!3m2!1sid!2sid!4v1722670310258!5m2!1sid!2sid" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe><?php
 get_footer('main');
