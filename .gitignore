@@ -20,11 +20,6 @@ web/.htaccess
 .env.*
 !.env.example
 
-# htaccess
-htaccess
-.htaccess
-/.htaccess
-
 # Composer
 /vendor
 
