@@ -20,8 +20,9 @@ web/.htaccess
 .env.*
 !.env.example
 
-# htaccess
+# htaccess ignore
 .htaccess
+/.htaccess
 
 # Composer
 /vendor
