@@ -23,8 +23,8 @@ get_header('main');
         <div class="flex items-center md:flex-wrap gap-x-[60px] xxl:gap-x-[40px] lg:gap-x-[30px] gap-y-[40px] sm:gap-y-[40px] lg:justify-center">
             <!-- left -->
             <div class="et-about-img relative z-[1] md:w-auto shrink-0 max-w-full mr-[70px] md:mr-0 ml-[28px] xxxl:ml-[47px] md:ml-0 xs:w-[70%] xxs:w-[90%] xxs:ml-[47px]">
-                <img src="<?= get_template_directory_uri()?>/assets/img/about-img.jpg" alt="image" class="shrink-0 rounded-[10px]" />
-                <img src="<?= get_template_directory_uri()?>/assets/img/about-img-3.jpg" alt="image" class="et-about-floating-img absolute top-[45px] -right-[70px] shrink-0 rounded-[20px] border-white border-[10px] xs:hidden" />
+                <img src="<?= get_template_directory_uri()?>/assets/img/services2.png" alt="image" class="shrink-0 rounded-[10px]" />
+                <img src="<?= get_template_directory_uri()?>/assets/img/services1.png" alt="image" class="et-about-floating-img absolute top-[45px] -right-[70px] shrink-0 rounded-[20px] border-white border-[10px] xs:hidden" />
 
                 <!-- vectors -->
                 <div class="et-about-vectors xs:hidden">
@@ -35,7 +35,6 @@ get_header('main');
 
                 <!-- video btn -->
                 <div class="absolute bottom-[50px] -left-[47px] lg:-left-[27px] md:-left-[47px] w-[180px] lg:w-[160px] aspect-square bg-[url('assets/img/about-video-btn-bg.jpg')] text-center text-[22px] text-white z-[1] flex items-center justify-center before:absolute before:bg-etBlue/80 before:-z-[1] before:inset-0 after:bg-etBlack after:w-[47px] after:h-[30px] after:absolute after:top-[100%] after:left-0 after:-z-[2] after:skew-y-[30deg] after:-translate-y-[17px]">
-                    <a href="https://www.youtube.com/watch?v=AQleI8oFqZo&amp;t=1s" data-fslightbox="about-video" class="w-[107px] aspect-square rounded-full border border-white/20 flex justify-center items-center text-etBlue relative z-[1] text-[18px] before:absolute before:w-[56px] before:h-[56px] before:bg-white before:rounded-full before:-z-[1] hover:text-black"><i class="fa-solid fa-play"></i></a>
                 </div>
             </div>
 
@@ -46,7 +45,7 @@ get_header('main');
                     <div class="my-[30px]">
                         <h6 class="et-section-sub-title anim-text">Services BPro</h6>
                         <h2 class="et-section-title mb-[24px] md:mb-[19px] anim-text" style="font-size: 25px;">BPro – Join Our Ministry</h2>
-                        <p class="my-[10px] text-[15px]">
+                        <p class="my-[10px] text-[15px]" style="text-align: justify;">
                         -<br>
 Saudara-saudara, memang kamu telah dipanggil untuk merdeka. Tetapi janganlah kamu mempergunakan kemerdekaan itu sebagai kesempatan untuk kehidupan dalam dosa, melainkan layanilah seorang akan yang lain oleh kasih.<b> Galatia 5:13 </b>
 <br>-<br><br>
@@ -84,8 +83,8 @@ Hotline BPro - 0811 311 66111 (Whatsapp)
         <div class="flex items-center md:flex-wrap gap-x-[60px] xxl:gap-x-[40px] lg:gap-x-[30px] gap-y-[40px] sm:gap-y-[40px] lg:justify-center">
             <!-- left -->
             <div class="et-about-img relative z-[1] md:w-auto shrink-0 max-w-full mr-[70px] md:mr-0 ml-[28px] xxxl:ml-[47px] md:ml-0 xs:w-[70%] xxs:w-[90%] xxs:ml-[47px]">
-                <img src="<?= get_template_directory_uri()?>/assets/img/about-img.jpg" alt="image" class="shrink-0 rounded-[10px]" />
-                <img src="<?= get_template_directory_uri()?>/assets/img/about-img-3.jpg" alt="image" class="et-about-floating-img absolute top-[45px] -right-[70px] shrink-0 rounded-[20px] border-white border-[10px] xs:hidden" />
+                <img src="<?= get_template_directory_uri()?>/assets/img/services4.png" alt="image" class="shrink-0 rounded-[10px]" />
+                <img src="<?= get_template_directory_uri()?>/assets/img/services3.png" alt="image" class="et-about-floating-img absolute top-[45px] -right-[70px] shrink-0 rounded-[20px] border-white border-[10px] xs:hidden" />
 
                 <!-- vectors -->
                 <div class="et-about-vectors xs:hidden">
@@ -107,7 +106,7 @@ Hotline BPro - 0811 311 66111 (Whatsapp)
                     <div class="my-[30px]">
                         <h6 class="et-section-sub-title anim-text text-white" style="color: #fff;">Services BPro</h6>
                         <h2 class="et-section-title mb-[24px] md:mb-[19px] anim-text text-white" style="font-size: 25px;color: #fff;">BPro – Other Services</h2>
-                        <div class="my-[10px] text-[15px] text-white">
+                        <div class="my-[10px] text-[15px] text-white" style="text-align: justify;">
 <ul class="text-white" style="
     list-style: circle;
     padding-left: 18px;
