@@ -7,20 +7,23 @@
 get_header('main');
 ?>
 
+
+<?php if(isset($_GET['journal-detail'])) : ?>
 <!-- BREADCRUMB SECTION START -->
-<section class="et-breadcrumb bg-[#000D83] pt-[210px] lg:pt-[190px] sm:pt-[160px] pb-[130px] lg:pb-[110px] sm:pb-[80px] relative z-[1] before:absolute before:inset-0 before:bg-[url('assets/img/breadcrumb-bg.jpg')] before:bg-no-repeat before:bg-cover before:bg-center before:-z-[1] before:opacity-30">
+<section
+    class="et-breadcrumb bg-[#000D83] pt-[210px] lg:pt-[190px] sm:pt-[160px] pb-[130px] lg:pb-[110px] sm:pb-[80px] relative z-[1] before:absolute before:inset-0 before:bg-[url('assets/img/breadcrumb-bg.jpg')] before:bg-no-repeat before:bg-cover before:bg-center before:-z-[1] before:opacity-30">
     <div class="container mx-auto max-w-[1200px] px-[12px] xl:max-w-full text-center text-white">
-        <h1 class="et-breadcrumb-title font-medium text-[56px] md:text-[50px] xs:text-[45px]">Event Details</h1>
+        <h1 class="et-breadcrumb-title font-medium text-[56px] md:text-[50px] xs:text-[45px]">Journal Details</h1>
         <ul class="inline-flex items-center gap-[10px] font-medium text-[16px]">
             <li class="opacity-80"><a href="index-2.html" class="hover:text-etBlue">Home</a></li>
             <li><i class="fa-solid fa-angle-right"></i><i class="fa-solid fa-angle-right"></i></li>
-            <li class="current-page">Event Details</li>
+            <li class="current-page">Journal Details</li>
         </ul>
     </div>
 </section>
 <!-- BREADCRUMB SECTION END -->
 
-
+<?php if($_GET['journal-detail'] == 'Gods-Purpose-in-Me') : ?>
 <!-- main content -->
 <div class="et-event-details-content py-[130px] lg:py-[80px] md:py-[60px]">
     <div class="container mx-auto max-w-[1200px] px-[12px] xl:max-w-full">
@@ -29,229 +32,966 @@ get_header('main');
             <div class="left">
                 <!-- img -->
                 <div class="relative rounded-[8px] overflow-hidden">
-                    <img src="<?= get_template_directory_uri(); ?>/assets/img/event-details-img.jpg" alt="event-details-img">
+                    <img src="<?= get_template_directory_uri(); ?>/assets/new-img/journal-detail.png"
+                        alt="event-details-img">
                     <!-- hall number tag -->
-                    <span class="absolute top-[20px] left-[20px] bg-etBlue rounded-[6px] text-white px-[12px] py-[5px] inline-block font-normal text-[16px]">Hall No: 59</span>
+                    <!-- <span
+                        class="absolute top-[20px] left-[20px] bg-etBlue rounded-[6px] text-white px-[12px] py-[5px] inline-block font-normal text-[16px]">Hall
+                        No: 59</span> -->
                 </div>
 
                 <!-- txt -->
                 <div>
-                    <h4 class="text-[30px] xs:text-[25px] xxs:text-[22px] font-medium text-etBlack mb-[11px] mt-[27px]">Indoor worships</h4>
+                    <h4 class="text-[30px] xs:text-[25px] xxs:text-[22px] font-medium text-etBlack mb-[11px] mt-[27px]">
+                        God's Purpose in Me</h4>
 
-                    <p class="font-light text-[16px] text-etGray mb-[15px]">Consectetur adipisicing elit, sed do eiusmod tempor is incididunt ut labore et dolore of magna aliqua. Ut enim ad minim veniam, made of owl the quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea dolor commodo consequat. Duis aute irure and dolor in reprehenderit.</p>
+                    <p class="font-light text-[16px] text-etGray mb-[15px]">Setiap manusia diciptakan Tuhan pasti dengan
+                        suatu tujuan dalam hidupnya. Nah bagaimana kita sebagai profesional muda bisa mengerti tujuan
+                        hidup yang benar yang sesuai Firman Tuhan?</p>
 
-                    <p class="font-light text-[16px] text-etGray">The is ipsum dolor sit amet consectetur adipiscing elit. Fusce eleifend porta arcu In hac augu ehabitasse the is platea augue thelorem turpoi dictumst. In lacus libero faucibus at malesuada sagittis placerat eros sed istincidunt augue ac ante rutrum sed the is sodales augue consequat.</p>
+                    <p class="font-light text-[16px] text-etGray mb-[21px]">Dikatakan dalam kitab Kejadian 1:1 yaitu
+                        "pada mulanya Allah menciptakan langit dan bumi", hal ini berbicara bahwa Allah menciptakan
+                        waktu untuk kita (pada mulanya), ruang (langit) dan materi (bumi).
+                        Kita sebagai manusia, diciptakan dengan memiliki identitas Tuhan dan kita memperoleh mandat dari
+                        Tuhan untuk menguasai atau mengelola bumi. Dengan kata lain bumi ini sebagai marketplace, yang
+                        menjadi tempat kita berkarya.</p>
 
-                    <h4 class="text-[30px] xs:text-[25px] xxs:text-[22px] font-medium text-etBlack mb-[11px] mt-[19px]">Requirements for the event</h4>
+                    <p class="font-light text-[16px] text-etGray mb-[21px]">Disebutkan oleh Pdt. Billy Lantang, untuk
+                        bisa mengerti tujuan Tuhan dalam hidup kita, maka yang harus kita lakukan adalah:
+                    </p>
 
-                    <p class="font-light text-[16px] text-etGray mb-[21px]">Nulla facilisi. Vestibulum tristique sem in eros eleifend imperdiet. Donec quis convallis neque. In id lacus pulvinar lacus, eget vulputate lectus. Ut viverra bibendum lorem, at tempus nibh mattis in. Sed a massa eget lacus consequat auctor.</p>
-
-                    <ul class="et-event-details-requirements-list font-light text-[16px] text-etGray grid grid-cols-2 xxs:grid-cols-1 gap-[20px] xxs:gap-[10px]">
-                        <li>Ut viverra bibendum lorem, at tempus nibh</li>
-                        <li>Duis aute irure and dolor in reprehenderit.</li>
-                        <li>quis nostrud exercitation ullamco laboris nisi</li>
-                        <li>ante rutrum sed the is sodales augue</li>
+                    <ul class="et-event-details-requirements-list font-light text-[16px] text-etGray mb-[21px]">
+                        <li>Pertama, kita harus mengerti panggilan Tuhan dalam hidup kita dan mengalami pertumbuhan
+                            rohani serta hidup dalam ketaatan kepada Tuhan.</li>
+                        <li>Kedua, lakukan dan fokus dengan yang apa kita lakukan. Jangan pernah membandingkan kehidupan
+                            kita dengan orang lain, karena kita memiliki karunia yang berbeda satu sama lain. Berikanlah
+                            yang terbaik di tempat kita berkarya.</li>
+                        <li>Ketiga, jangan pernah merasa gagal, karena hidup ini adalah proses.</li>
                     </ul>
 
-                    <div class="grid grid-cols-2 xxs:grid-cols-1 gap-[30px] lg:gap-[20px] mt-[38px] mb-[33px]">
-                        <img src="<?= get_template_directory_uri(); ?>/assets/img/event-detailsimg-2.jpg" alt="event-details-img" class="max-h-[306px] w-full object-cover rounded-[8px]">
-                        <img src="<?= get_template_directory_uri(); ?>/assets/img/event-detailsimg-3.jpg" alt="event-details-img" class="max-h-[306px] w-full object-cover rounded-[8px]">
-                    </div>
+                    <!-- <div class="grid grid-cols-2 xxs:grid-cols-1 gap-[30px] lg:gap-[20px] mt-[38px] mb-[33px]">
+                        <img src="<?= get_template_directory_uri(); ?>/assets/new-img/journal-detail-2.png"
+                            alt="event-details-img" class="max-h-[306px] w-full object-cover rounded-[8px]">
+                        <img src="<?= get_template_directory_uri(); ?>/assets/new-img/journal-detail-3.png "
+                            alt="event-details-img" class="max-h-[306px] w-full object-cover rounded-[8px]">
+                    </div> -->
 
-                    <p class="font-light text-[16px] text-etGray mb-[43px]">Consectetur adipisicing elit, sed do eiusmod tempor is incididunt ut labore et dolore of magna aliqua. Ut enim ad minim veniam, made of owl the quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea dolor commodo consequat. Duis aute irure and dolor in reprehenderit.</p>
-                </div>
-
-
-                <!-- actions -->
-                <div class="border-y border-[#d9d9d9] py-[24px] flex items-center xxs:flex-col gap-[20px]">
-                    <a href="#" class="inline-flex items-center h-[50px] rounded-full bg-etBlue px-[20px] text-[17px] font-medium text-white gap-[10px] hover:bg-etGray">Register Yourself <i class="fa-arrow-right-long fa-solid"></i></a>
-                    <div class="flex gap-[12px]">
-                        <span class="icon bg-etBlue w-[50px] aspect-square rounded-full outline-[2px] outline outline-white -outline-offset-[3px] flex items-center justify-center">
-                            <img src="<?= get_template_directory_uri(); ?>/assets/img/call-icon.svg" alt="call icon">
-                        </span>
-
-                        <span class="txt font-semibold text-etBlack">
-                            <span class="block text-[14px] mb-[2px]">Call Us Now</span>
-                            <a href="tel:+208-555-0112" class="text-[18px] hover:text-etBlue">+208-555-0112</a>
-                        </span>
-                    </div>
-                </div>
-
-                <!-- artists -->
-                <div class="mt-[50px]">
-                    <h3 class="text-[30px] xs:text-[25px] font-semibold text-etBlack mb-[30px] xs:mb-[15px]">Event</h3>
-
-                    <!-- single artist -->
-                    <div class="border border-[#d9d9d9] rounded-[12px] p-[30px] lg:p-[20px] flex xs:flex-col gap-x-[25px] gap-y-[10px] mb-[30px]">
-                        <!-- img -->
-                        <div class="rounded-[6px] overflow-hidden shrink-0">
-                            <img src="<?= get_template_directory_uri(); ?>/assets/img/artist-4.jpg" alt="Artist Image" class="w-[168px] aspect-square">
-                        </div>
-
-                        <!-- txt -->
-                        <div class="grow">
-                            <!-- heading  -->
-                            <div class="flex flex-wrap items-center justify-between gap-[10px] border-b border-[#d9d9d9] pb-[15px]">
-                                <div>
-                                    <h5 class="font-semibold text-[20px] text-etBlack"><a href="#" class="hover:text-etBlue">Ronald Richards</a></h5>
-                                    <span class="inline-block text-etGray2 text-[16px]">Singer</span>
-                                </div>
-
-                                <!-- socials -->
-                                <div class="flex gap-[15px] text-[16px]">
-                                    <a href="#" class="text-[#757277] hover:text-etBlue"><i class="fa-brands fa-facebook-f"></i></a>
-                                    <a href="#" class="text-[#757277] hover:text-etBlue"><i class="fa-brands fa-twitter"></i></a>
-                                    <a href="#" class="text-[#757277] hover:text-etBlue"><i class="fa-brands fa-linkedin-in"></i></a>
-                                    <a href="#" class="text-[#757277] hover:text-etBlue"><i class="fa-brands fa-youtube"></i></a>
-                                </div>
-                            </div>
-
-                            <!-- description -->
-                            <p class="font-light text-etGray2 pt-[20px] text-[16px]">Pellentesque pretium, mi in viverra faucibus, justo nunc dapibus lacus, sit amet consequat diam nisi eu mi. Integer diam erat, accumsan eget nisl eu, maximus feugiat odio. Proin eleifend.</p>
-                        </div>
-                    </div>
-
-                    <!-- single artist -->
-                    <div class="border border-[#d9d9d9] rounded-[12px] p-[30px] lg:p-[20px] flex xs:flex-col gap-x-[25px] gap-y-[10px] mb-[30px]">
-                        <!-- img -->
-                        <div class="rounded-[6px] overflow-hidden shrink-0">
-                            <img src="<?= get_template_directory_uri(); ?>/assets/img/artist-5.jpg" alt="Artist Image" class="w-[168px] aspect-square">
-                        </div>
-
-                        <!-- txt -->
-                        <div class="grow">
-                            <!-- heading  -->
-                            <div class="flex flex-wrap items-center justify-between gap-[10px] border-b border-[#d9d9d9] pb-[15px]">
-                                <div>
-                                    <h5 class="font-semibold text-[20px] text-etBlack"><a href="#" class="hover:text-etBlue">Leslie Alexander</a></h5>
-                                    <span class="inline-block text-etGray2 text-[16px]">Singer</span>
-                                </div>
-
-                                <!-- socials -->
-                                <div class="flex gap-[15px] text-[16px]">
-                                    <a href="#" class="text-[#757277] hover:text-etBlue"><i class="fa-brands fa-facebook-f"></i></a>
-                                    <a href="#" class="text-[#757277] hover:text-etBlue"><i class="fa-brands fa-twitter"></i></a>
-                                    <a href="#" class="text-[#757277] hover:text-etBlue"><i class="fa-brands fa-linkedin-in"></i></a>
-                                    <a href="#" class="text-[#757277] hover:text-etBlue"><i class="fa-brands fa-youtube"></i></a>
-                                </div>
-                            </div>
-
-                            <!-- description -->
-                            <p class="font-light text-etGray2 pt-[20px] text-[16px]">Pellentesque pretium, mi in viverra faucibus, justo nunc dapibus lacus, sit amet consequat diam nisi eu mi. Integer diam erat, accumsan eget nisl eu, maximus feugiat odio. Proin eleifend.</p>
-                        </div>
-                    </div>
+                    <p class="font-light text-[16px] text-etGray mb-[43px]">Nah, apakah kita sudah yakin tujuan hidup
+                        yang kita jalani sudah benar?
+                        Yuk profesional muda temukan jawabannya dalam Talkshow BPro – God’s Purpose in Me bersama nara
+                        sumber Pdt. Billy Lantang disini.</p>
                 </div>
             </div>
 
-            <!-- right sidebar -->
-            <div class="right max-w-full w-[370px] lg:w-[360px] shrink-0 space-y-[30px]">
-                <!-- ticket widget -->
-                <div class="et-event-details-ticket-widgget border border-[#e5e5e5] rounded-[16px] overflow-hidden">
-                    <!-- heading -->
-                    <div class="bg-etBlue p-[16px] xxs:p-[12px]">
-                        <h5 class="font-medium text-[20px] text-white text-center">Select Date and Time</h5>
-                    </div>
 
-                    <!-- body  -->
-                    <div class="p-[22px] lg:p-[16px]">
-                        <!-- time schedule -->
-                        <div class="flex justify-between items-center mt-[6px] mb-[16px]">
-                            <h6 class="font-medium text-[16px] text-[#232323]">Time Schedule</h6>
-
-                            <div class="flex gap-[20px] items-center text-[16px]" id="et-event-details-ticket-time-slider-nav">
-                                <button class="prev hover:text-etBlue"><i class="fa-solid fa-angle-left"></i></button>
-                                <button class="next hover:text-etBlue"><i class="fa-solid fa-angle-right"></i></button>
-                            </div>
-                        </div>
-
-                        <!-- slider -->
-                        <div class="et-event-details-ticket-time-slider swiper overflow-visible mb-[24px]">
-                            <div class="swiper-wrapper">
-                                <div class="swiper-slide w-max group">
-                                    <span class="border border-[#e5e5e5] rounded-[4px] h-[30px] inline-flex items-center justify-center px-[15px] font-inter font-normal text-[14px] text-[#232323] cursor-pointer group-[.swiper-slide-active]:bg-etBlue group-[.swiper-slide-active]:border-etBlue group-[.swiper-slide-active]:text-white">19:00</span>
-                                </div>
-                                <div class="swiper-slide w-max group">
-                                    <span class="border border-[#e5e5e5] rounded-[4px] h-[30px] inline-flex items-center justify-center px-[15px] font-inter font-normal text-[14px] text-[#232323] cursor-pointer group-[.swiper-slide-active]:bg-etBlue group-[.swiper-slide-active]:border-etBlue group-[.swiper-slide-active]:text-white">19:00</span>
-                                </div>
-                                <div class="swiper-slide w-max group">
-                                    <span class="border border-[#e5e5e5] rounded-[4px] h-[30px] inline-flex items-center justify-center px-[15px] font-inter font-normal text-[14px] text-[#232323] cursor-pointer group-[.swiper-slide-active]:bg-etBlue group-[.swiper-slide-active]:border-etBlue group-[.swiper-slide-active]:text-white">19:00</span>
-                                </div>
-                                <div class="swiper-slide w-max group">
-                                    <span class="border border-[#e5e5e5] rounded-[4px] h-[30px] inline-flex items-center justify-center px-[15px] font-inter font-normal text-[14px] text-[#232323] cursor-pointer group-[.swiper-slide-active]:bg-etBlue group-[.swiper-slide-active]:border-etBlue group-[.swiper-slide-active]:text-white">19:00</span>
-                                </div>
-                                <div class="swiper-slide w-max group">
-                                    <span class="border border-[#e5e5e5] rounded-[4px] h-[30px] inline-flex items-center justify-center px-[15px] font-inter font-normal text-[14px] text-[#232323] cursor-pointer group-[.swiper-slide-active]:bg-etBlue group-[.swiper-slide-active]:border-etBlue group-[.swiper-slide-active]:text-white">19:00</span>
-                                </div>
-                                <div class="swiper-slide w-max group">
-                                    <span class="border border-[#e5e5e5] rounded-[4px] h-[30px] inline-flex items-center justify-center px-[15px] font-inter font-normal text-[14px] text-[#232323] cursor-pointer group-[.swiper-slide-active]:bg-etBlue group-[.swiper-slide-active]:border-etBlue group-[.swiper-slide-active]:text-white">19:00</span>
-                                </div>
-                                <div class="swiper-slide w-max group">
-                                    <span class="border border-[#e5e5e5] rounded-[4px] h-[30px] inline-flex items-center justify-center px-[15px] font-inter font-normal text-[14px] text-[#232323] cursor-pointer group-[.swiper-slide-active]:bg-etBlue group-[.swiper-slide-active]:border-etBlue group-[.swiper-slide-active]:text-white">19:00</span>
-                                </div>
-                            </div>
-                        </div>
-
-                        <!-- events -->
-                        <form class="space-y-[10px] mb-[30px]">
-                            <div class="radio-container border border-[#d9d9d9] rounded-[6px] px-[16px] py-[7px]">
-                                <label for="schedule1" class="flex gap-[15px] relative font-normal text-[14px] text-[#232323]">
-                                    <span>posuere turpis, eget molestie Nulla at nibh et.</span>
-                                    <span class="flex items-center">
-                                        <input type="radio" id="schedule1" name="options" value="schedule1" class="appearance-none" checked>
-                                        <span class="before:content-normal before:absolute before:w-[16px] before:h-[16px] before:border before:border-etBlue before:rounded-full before:bg-white before:right-0 before:top-[50%] before:-translate-y-[50%] before:-z-[1] after:content-normal after:w-[8px] after:h-[8px] after:bg-etBlue after:rounded-full after:mr-[4px] after:opacity-0 after:absolute after:top-[50%] after:-translate-y-[50%] after:right-0 mr-[28px]">15,00 €</span>
-                                    </span>
-                                </label>
-                            </div>
-
-                            <div class="radio-container border border-[#d9d9d9] rounded-[6px] px-[16px] py-[7px]">
-                                <label for="schedule2" class="flex gap-[15px] relative font-normal text-[14px] text-[#232323]">
-                                    <span>posuere turpis, eget molestie Nulla at nibh et.</span>
-                                    <span class="flex items-center">
-                                        <input type="radio" id="schedule2" name="options" value="schedule2" class="appearance-none">
-                                        <span class="font-normal text-[14px] text-[#232323] before:content-normal before:absolute before:w-[16px] before:h-[16px] before:border before:border-etBlue before:rounded-full before:bg-white before:right-0 before:top-[50%] before:-translate-y-[50%] before:-z-[1] after:content-normal after:w-[8px] after:h-[8px] after:bg-etBlue after:rounded-full after:mr-[4px] after:opacity-0 after:absolute after:top-[50%] after:-translate-y-[50%] after:right-0 mr-[28px]">13,00 €</span>
-                                    </span>
-                                </label>
-                            </div>
-
-                            <div class="radio-container border border-[#d9d9d9] rounded-[6px] px-[16px] py-[7px]">
-                                <label for="schedule3" class="flex gap-[15px] relative font-normal text-[14px] text-[#232323]">
-                                    <span>posuere turpis, eget molestie Nulla at nibh et.</span>
-                                    <span class="flex items-center">
-                                        <input type="radio" id="schedule3" name="options" value="schedule3" class="appearance-none">
-                                        <span class="font-normal text-[14px] text-[#232323] before:content-normal before:absolute before:w-[16px] before:h-[16px] before:border before:border-etBlue before:rounded-full before:bg-white before:right-0 before:top-[50%] before:-translate-y-[50%] before:-z-[1] after:content-normal after:w-[8px] after:h-[8px] after:bg-etBlue after:rounded-full after:mr-[4px] after:opacity-0 after:absolute after:top-[50%] after:-translate-y-[50%] after:right-0 mr-[28px]">14,00 €</span>
-                                    </span>
-                                </label>
-                            </div>
-                        </form>
-
-                        <!-- ticket quantity -->
-                        <div class="border-[0.5px] border-[#d9d9d9] px-[80px] xxs:px-[30px] rounded-full mb-[30px]">
-                            <div class="flex items-center justify-between gap-[15px] py-[17px]">
-                                <button type="button" id="decreaseButton" class="decrease font-extralight text-[35px] bg-etBlue/10 w-[28px] aspect-square rounded-full inline-flex items-center justify-center hover:bg-etBlue hover:text-white">
-                                    <span class="h-[28px] leading-[22px]">&minus;</span>
-                                </button>
-                                <span class="text-[16px] font-light"><span id="ticketNumber">1</span> Ticket</span>
-
-                                <button type="button" id="increaseButton" class="increase font-extralight text-[35px] bg-etBlue/10 w-[28px] aspect-square rounded-full inline-flex items-center justify-center hover:bg-etBlue hover:text-white">
-                                    <span class="h-[28px] leading-[22px]">&plus;</span>
-                                </button>
-                            </div>
-                        </div>
-
-                        <!-- button -->
-                        <button class="">
-                            <span><img src="<?= get_template_directory_uri(); ?>/assets/img/ticket-icon.svg" alt="ticket icon"></span>
-                            <span>15,00 €-get Tickets Now</span>
-                        </button>
-                    </div>
-                </div>
-
-                <!-- location map -->
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1825.3318974837207!2d90.4133514479341!3d23.794983684888223!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3755c7a494861707%3A0x59ab371b6ff2e0fd!2zR3Vsc2hhbiBTcXVhcmUg4KaX4KeB4Kay4Ka24Ka-4KaoIOCmuOCnjeCmleCmr-CmvOCmvuCmsA!5e0!3m2!1sen!2sbd!4v1710998994716!5m2!1sen!2sbd" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" class="w-full h-[280px] rounded-[30px]"></iframe>
-            </div>
         </div>
     </div>
 </div>
+<?php elseif($_GET['journal-detail'] == 'bpro-race') : ?>
+<div class="et-event-details-content py-[130px] lg:py-[80px] md:py-[60px]">
+    <div class="container mx-auto max-w-[1200px] px-[12px] xl:max-w-full">
+        <div class="flex gap-[30px] lg:gap-[20px] md:flex-col md:items-center">
+            <!-- left content -->
+            <div class="left">
+                <!-- img -->
+                <div class="relative rounded-[8px] overflow-hidden">
+                    <img src="<?= get_template_directory_uri(); ?>/assets/new-img/bpro1.jpg" alt="event-details-img">
+                    <!-- hall number tag -->
+                    <!-- <span
+                        class="absolute top-[20px] left-[20px] bg-etBlue rounded-[6px] text-white px-[12px] py-[5px] inline-block font-normal text-[16px]">Hall
+                        No: 59</span> -->
+                </div>
 
+                <!-- txt -->
+                <div>
+                    <h4 class="text-[30px] xs:text-[25px] xxs:text-[22px] font-medium text-etBlack mb-[11px] mt-[27px]">
+                        Bpro Race</h4>
+
+                    <p class="font-light text-[16px] text-etGray mb-[15px]">Pada tanggal 23 Mei 2024, BPro mengadakan
+                        program funday untuk gathering seluruh anggota FA, yaitu BPro Race. Event spesial ini diadakan
+                        setiap beberapa bulan sekali. Tujuan dari acara ini adalah supaya anggota FA dapat saling kenal
+                        dengan anggota FA yang lain.
+                    </p>
+
+                    <p class="font-light text-[16px] text-etGray mb-[21px]">Event yang diadakan kali ini sangat spesial
+                        karena BPro bekerja sama dengan Surabaya Plaza, sebagai pihak yang menyediakan area games untuk
+                        BPro Race. Wow!! Dihadiri oleh sekitar 120 peserta, acara dimulai tepat pukul 9 pagi dan
+                        bertempat di Morazen Hotel Surabaya. Banyak games yang seru dan asyik lho.</p>
+
+                    <p class="font-light text-[16px] text-etGray mb-[21px]">Dalam games BPro Race, panitia mengusung 3
+                        value BPro yaitu :
+
+                    </p>
+
+                    <ul class="et-event-details-requirements-list font-light text-[16px] text-etGray mb-[21px]">
+                        <li>Unity - setiap anggota kelompok harus selalu bersama, belajar untuk saling kompak dan tentu
+                            saja menghindari perpecahan. Beda pendapat it’s okay, tapi ‘baperan’ no way!
+                        </li>
+                        <li>Professional - setiap peserta harus tetap mengikuti aturan, petunjuk dan rute yang
+                            ditetapkan oleh panitia. Berlomba menyelesaikan tantangan di setiap game, berpadu dengan
+                            segala kreatifitas, dan berpacu dalam tenggat waktu yang diberikan.
+                        </li>
+                        <li>Integrity - komitmen untuk fokus menyelesaikan journey yang ada sekalipun tanpa diawasi oleh
+                            tim panitia. Tidak menyimpang ke kanan dan ke kiri, agar jangan gagal fokus dan malah
+                            tergoda shopping di mal Surabaya Plaza. Hayo, siapa yang begini kemarin? Hahaha…</li>
+                    </ul>
+
+                    <!-- <div class="grid grid-cols-2 xxs:grid-cols-1 gap-[30px] lg:gap-[20px] mt-[38px] mb-[33px]">
+                        <img src="<?= get_template_directory_uri(); ?>/assets/new-img/bpro2.png" alt="event-details-img"
+                            class="max-h-[306px] w-full object-cover rounded-[8px]">
+                        <img src="<?= get_template_directory_uri(); ?>/assets/new-img/bpro3.png "
+                            alt="event-details-img" class="max-h-[306px] w-full object-cover rounded-[8px]">
+                    </div> -->
+
+                    <p class="font-light text-[16px] text-etGray mb-[43px]">So, gimana acara funday nya, seru kan? Kamu
+                        mau ikutan juga di next event funday?
+                        Yuk gabung dengan FA BPro…
+                    </p>
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+</div>
+<?php elseif($_GET['journal-detail'] == 'harmony-celebration') : ?>
+<div class="et-event-details-content py-[130px] lg:py-[80px] md:py-[60px]">
+    <div class="container mx-auto max-w-[1200px] px-[12px] xl:max-w-full">
+        <div class="flex gap-[30px] lg:gap-[20px] md:flex-col md:items-center">
+            <!-- left content -->
+            <div class="left">
+                <!-- img -->
+                <div class="relative rounded-[8px] overflow-hidden">
+                    <img src="<?= get_template_directory_uri(); ?>/assets/new-img/journal6.png" alt="event-details-img">
+                    <!-- hall number tag -->
+                    <!-- <span
+                        class="absolute top-[20px] left-[20px] bg-etBlue rounded-[6px] text-white px-[12px] py-[5px] inline-block font-normal text-[16px]">Hall
+                        No: 59</span> -->
+                </div>
+
+                <!-- txt -->
+                <div>
+                    <h4 class="text-[30px] xs:text-[25px] xxs:text-[22px] font-medium text-etBlack mb-[11px] mt-[27px]">
+                        Harmony Celebration</h4>
+
+                    <p class="font-light text-[16px] text-etGray mb-[15px]">Di bulan Oktober 2023, BPro merayakan
+                        Anniversary yang ke-26, dengan tema ‘Harmony Celebration’ . Event ini dibalut dengan dresscode
+                        asik bergaya retro. Tema Harmony Celebration berbicara tentang keharmonisan dalam sebuah
+                        komunitas.
+                    </p>
+
+                    <p class="font-light text-[16px] text-etGray mb-[21px]">Dalam komunitas kita bisa belajar tentang 2
+                        hal,
+
+                    </p>
+
+                    <ul class="et-event-details-requirements-list font-light text-[16px] text-etGray mb-[21px]">
+                        <li>Pertama, Unity. Salah satu kunci utama dalam komunitas adalah kesatuan. Jadi supaya berkat
+                            mengalir di dalam komunitas keluarga, pekerjaan, dan pelayanan, kita harus memiliki
+                            kerukunan dan kesatuan hati.
+                        </li>
+                        <li>Kedua, Living in Community. Manusia adalah mahkluk sosial, tidak bisa hidup sendiri. Kita
+                            butuh komunitas untuk bertumbuh, saling berbagi, saling mendoakan dan saling support. Di
+                            BPro, ada kelompok FA (Family Altar); komunitas persekutuan kecil tempat kita praktek kasih,
+                            saling melayani dan memberkati dalam keseharian kita.
+                        </li>
+                    </ul>
+
+                    <!-- <div class="grid grid-cols-2 xxs:grid-cols-1 gap-[30px] lg:gap-[20px] mt-[38px] mb-[33px]">
+                        <img src="<?= get_template_directory_uri(); ?>/assets/new-img/bpro2.png" alt="event-details-img"
+                            class="max-h-[306px] w-full object-cover rounded-[8px]">
+                        <img src="<?= get_template_directory_uri(); ?>/assets/new-img/bpro3.png "
+                            alt="event-details-img" class="max-h-[306px] w-full object-cover rounded-[8px]">
+                    </div> -->
+
+                    <p class="font-light text-[16px] text-etGray mb-[43px]">Yuk.. para profesional muda bergabunglah
+                        bersama kami di komunitas BPro. Bersama kita bertumbuh dalam keharmonisan iman dan karakter.
+
+                    </p>
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+</div>
+<?php elseif($_GET['journal-detail'] == 'the-calling') : ?>
+<div class="et-event-details-content py-[130px] lg:py-[80px] md:py-[60px]">
+    <div class="container mx-auto max-w-[1200px] px-[12px] xl:max-w-full">
+        <div class="flex gap-[30px] lg:gap-[20px] md:flex-col md:items-center">
+            <!-- left content -->
+            <div class="left">
+                <!-- img -->
+                <div class="relative rounded-[8px] overflow-hidden">
+                    <img src="<?= get_template_directory_uri(); ?>/assets/new-img/the-calling.png" alt="event-details-img">
+                    <!-- hall number tag -->
+                    <!-- <span
+                        class="absolute top-[20px] left-[20px] bg-etBlue rounded-[6px] text-white px-[12px] py-[5px] inline-block font-normal text-[16px]">Hall
+                        No: 59</span> -->
+                </div>
+
+                <!-- txt -->
+                <div>
+                    <h4 class="text-[30px] xs:text-[25px] xxs:text-[22px] font-medium text-etBlack mb-[11px] mt-[27px]">
+                        The Calling</h4>
+
+                    <p class="font-light text-[16px] text-etGray mb-[15px]">Talkshow ‘The Calling’, Pdt. Agus Gunawan
+                        atau akrabnya dipanggil ‘Ko Han-Han’, membagikan alasan mengapa kita melayani Tuhan yaitu karena
+                        kita mengasihi Tuhan. Seperti yang tertulis dalam Matius 22:37, kekuatan kasih inilah yang
+                        membuat kita mau berkorban untuk melayani Tuhan. Cinta kita kepada Tuhan tetap harus
+                        menggebu-gebu.
+                    </p>
+
+                    <p class="font-light text-[16px] text-etGray mb-[21px]">Pada saat melayani Tuhan pasti akan ada
+                        tantangan dan gesekan. Tetapi kita harus tetap setia dalam melayani. Salah satu tantangan yang
+                        dihadapi Ko Han adalah membuka ibadah berbahasa inggris padahal kemampuannya berbahasa inggris
+                        ketika itu bisa dibilang sangat pas-pasan.
+
+                    </p>
+                    <p class="font-light text-[16px] text-etGray mb-[21px]">Dengan segala keterbatasan yang ada, Ko Han
+                        juga tidak habis akal untuk menjangkau jiwa baru. Ia melihat ada banyak mahasiswa baru yang
+                        berasal dari Afrika yang merantau di Australia dengan finansial yang minim. Ko Han lalu mencoba
+                        memanfaatkan roti yang tidak terjual di hari itu di toko roti, dengan mengantongi ijin untuk
+                        kegiatan charity dari gereja. Dan melalui roti yang dibagikan tersebut, mereka mulai merangkul
+                        dan memenangkan jiwa. Hingga sekarang, Ko Han dan tim Bethany Sydney akhirnya memiliki pelayanan
+                        ‘food bank’ yang digunakan sebagai sarana untuk dapat menjangkau jiwa.
+
+                    </p>
+
+                    <p class="font-light text-[16px] text-etGray mb-[21px]">Kita harus tetap semangat dalam melayani
+                        Tuhan. Dalam Roma 12:11 dikatakan : “Janganlah hendaknya kerajinanmu kendor, biarlah rohmu
+                        menyala-nyala dan layanilah Tuhan”, jika kita penuh dengan Roh Kudus, roh kita pasti
+                        menyala-nyala bagi Tuhan. Biarlah hidup kita menghasilkan buah roh dan menjadi saksi bagi Tuhan.
+
+                    </p>
+
+                    <p class="font-light text-[16px] text-etGray mb-[21px]">Ingin tau lebih jelas tentang kisah
+                        pengalaman Ko Han-Han dalam melayani? Bagaimana ia tetap mempertahankan “api” semangat dalam
+                        melayani Tuhan?
+
+                    </p>
+
+
+                    <!-- <div class="grid grid-cols-2 xxs:grid-cols-1 gap-[30px] lg:gap-[20px] mt-[38px] mb-[33px]">
+                        <img src="<?= get_template_directory_uri(); ?>/assets/new-img/bpro2.png" alt="event-details-img"
+                            class="max-h-[306px] w-full object-cover rounded-[8px]">
+                        <img src="<?= get_template_directory_uri(); ?>/assets/new-img/bpro3.png "
+                            alt="event-details-img" class="max-h-[306px] w-full object-cover rounded-[8px]">
+                    </div> -->
+
+                    <p class="font-light text-[16px] text-etGray mb-[43px]">Yuk temukan jawabannya dalam Talkshow BPro -
+                        The Calling bersama Narasumber Ko Han-Han disini.
+
+
+                    </p>
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+</div>
+<?php else :  ?>
+
+<!-- BREADCRUMB SECTION START -->
+<section
+    class="et-breadcrumb bg-[#000D83] pt-[210px] lg:pt-[190px] sm:pt-[160px] pb-[130px] lg:pb-[110px] sm:pb-[80px] relative z-[1] before:absolute before:inset-0 before:bg-[url('<?= get_template_directory_uri() ?>/assets/img/breadcrumb-bg.jpg')] before:bg-no-repeat before:bg-cover before:bg-center before:-z-[1] before:opacity-30">
+    <div class="container mx-auto max-w-[1200px] px-[12px] xl:max-w-full text-center text-white">
+        <h1 class="et-breadcrumb-title font-medium text-[56px] md:text-[50px] xs:text-[45px]">All Journal</h1>
+        <ul class="inline-flex items-center gap-[10px] font-medium text-[16px]">
+            <li class="opacity-80"><a href="index-2.html" class="hover:text-etBlue">Home</a></li>
+            <li><i class="fa-solid fa-angle-right"></i><i class="fa-solid fa-angle-right"></i></li>
+            <li class="current-page">Journal</li>
+        </ul>
+    </div>
+</section>
+<?php endif;?>
+<!-- BREADCRUMB SECTION END -->
+<?php else :?>
+<section
+    class="et-breadcrumb bg-[#000D83] pt-[210px] lg:pt-[190px] sm:pt-[160px] pb-[130px] lg:pb-[110px] sm:pb-[80px] relative z-[1] before:absolute before:inset-0 before:bg-[url('assets/img/breadcrumb-bg.jpg')] before:bg-no-repeat before:bg-cover before:bg-center before:-z-[1] before:opacity-30">
+    <div class="container mx-auto max-w-[1200px] px-[12px] xl:max-w-full text-center text-white">
+        <h1 class="et-breadcrumb-title font-medium text-[56px] md:text-[50px] xs:text-[45px]">Journal</h1>
+        <ul class="inline-flex items-center gap-[10px] font-medium text-[16px]">
+            <li class="opacity-80"><a href="index-2.html" class="hover:text-etBlue">Home</a></li>
+            <li><i class="fa-solid fa-angle-right"></i><i class="fa-solid fa-angle-right"></i></li>
+            <li class="current-page">Journal</li>
+        </ul>
+    </div>
+</section>
+<div class="py-[130px] lg:py-[80px] md:py-[60px] overflow-hidden">
+    <!-- EVENTS SECTION START -->
+    <section class="et-all-events">
+        <div class="container mx-auto max-w-[1200px] px-[12px] xl:max-w-full">
+
+            <div class="et-schedules-tab-container">
+                <div id="et-event-tab0" class="et-tab active">
+                    <div class="all-scheduled-events space-y-[30px]">
+                        <div class="et-schedule flex md:flex-wrap gap-x-[30px] gap-y-[20px] justify-betweetev-slide-up">
+                            <!-- img -->
+                            <div
+                                class="w-[270px] shadow-[0_4px_60px_rgba(18,96,254,0.12)] shrink-0 rounded-[20px] overflow-hidden">
+                                <img src="<?= get_template_directory_uri() ?>/assets/new-img/journal3.png"
+                                    alt="scehduled-event-cover">
+                            </div>
+
+                            <!-- text -->
+                            <div
+                                class="px-[37px] sm:px-[22px] py-[30px] shadow-[0_4px_60px_rgba(18,96,254,0.12)] w-full rounded-[20px] flex gap-y-[15px] xs:flex-col items-center xs:items-start">
+                                <div
+                                    class="et-schedule__heading w-[80%] pr-[40px] sm:pr-[25px] xs:pr-0 mr-[40px] sm:mr-[25px] xs:mr-0 border-r xs:border-r-0 border-[#d9d9d9]">
+                                    <!-- date & time -->
+                                    <div
+                                        class="et-schedule-date-time border border-[rgba(217,217,217,0.89)] py-[7px] px-[15px] rounded-full inline-flex xxs:w-full items-center justify-center gap-x-[24px] gap-y-[10px] mb-[10px] xxs:border-0 xxs:p-0 xxs:justify-start">
+                                        <div class="date flex items-center gap-[10px]">
+                                            <span class="icon">
+                                                <svg width="16" height="17" viewBox="0 0 16 17" fill="none"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <g clip-path="url(#clip0_2043_1443)">
+                                                        <path
+                                                            d="M14.125 1.75H13.375V0.5H12.125V1.75H3.875V0.5H2.625V1.75H1.875C0.841125 1.75 0 2.59113 0 3.625V14.625C0 15.6589 0.841125 16.5 1.875 16.5H14.125C15.1589 16.5 16 15.6589 16 14.625V3.625C16 2.59113 15.1589 1.75 14.125 1.75ZM14.75 14.625C14.75 14.9696 14.4696 15.25 14.125 15.25H1.875C1.53038 15.25 1.25 14.9696 1.25 14.625V6.375H14.75V14.625ZM14.75 5.125H1.25V3.625C1.25 3.28038 1.53038 3 1.875 3H2.625V4.25H3.875V3H12.125V4.25H13.375V3H14.125C14.4696 3 14.75 3.28038 14.75 3.625V5.125Z"
+                                                            fill="var(--et-blue)" />
+                                                        <path d="M3.625 7.6875H2.375V8.9375H3.625V7.6875Z"
+                                                            fill="var(--et-blue)" />
+                                                        <path d="M6.125 7.6875H4.875V8.9375H6.125V7.6875Z"
+                                                            fill="var(--et-blue)" />
+                                                        <path d="M8.625 7.6875H7.375V8.9375H8.625V7.6875Z"
+                                                            fill="var(--et-blue)" />
+                                                        <path d="M11.125 7.6875H9.875V8.9375H11.125V7.6875Z"
+                                                            fill="var(--et-blue)" />
+                                                        <path d="M13.625 7.6875H12.375V8.9375H13.625V7.6875Z"
+                                                            fill="var(--et-blue)" />
+                                                        <path d="M3.625 10.1875H2.375V11.4375H3.625V10.1875Z"
+                                                            fill="var(--et-blue)" />
+                                                        <path d="M6.125 10.1875H4.875V11.4375H6.125V10.1875Z"
+                                                            fill="var(--et-blue)" />
+                                                        <path d="M8.625 10.1875H7.375V11.4375H8.625V10.1875Z"
+                                                            fill="var(--et-blue)" />
+                                                        <path d="M11.125 10.1875H9.875V11.4375H11.125V10.1875Z"
+                                                            fill="var(--et-blue)" />
+                                                        <path d="M3.625 12.6875H2.375V13.9375H3.625V12.6875Z"
+                                                            fill="var(--et-blue)" />
+                                                        <path d="M6.125 12.6875H4.875V13.9375H6.125V12.6875Z"
+                                                            fill="var(--et-blue)" />
+                                                        <path d="M8.625 12.6875H7.375V13.9375H8.625V12.6875Z"
+                                                            fill="var(--et-blue)" />
+                                                        <path d="M11.125 12.6875H9.875V13.9375H11.125V12.6875Z"
+                                                            fill="var(--et-blue)" />
+                                                        <path d="M13.625 10.1875H12.375V11.4375H13.625V10.1875Z"
+                                                            fill="var(--et-blue)" />
+                                                    </g>
+                                                </svg>
+                                            </span>
+
+                                            <span class="text-etGray font-normal text-[16px]">08 July 2024</span>
+                                        </div>
+
+                                        <div class="time flex items-center gap-[10px] xxs:hidden">
+                                            <span class="icon">
+                                                <svg width="16" height="17" viewBox="0 0 16 17" fill="none"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <path
+                                                        d="M10.8505 9.91291L8.61967 8.23979V4.8316C8.61967 4.48891 8.34266 4.21191 7.99998 4.21191C7.65729 4.21191 7.38029 4.48891 7.38029 4.8316V8.54966C7.38029 8.74485 7.47201 8.92892 7.62817 9.04541L10.1069 10.9044C10.2138 10.985 10.3441 11.0285 10.478 11.0284C10.667 11.0284 10.8529 10.9435 10.9744 10.7799C11.1802 10.5066 11.1244 10.118 10.8505 9.91291Z"
+                                                        fill="var(--et-blue)" />
+                                                    <path
+                                                        d="M8 0.5C3.58853 0.5 0 4.08853 0 8.5C0 12.9115 3.58853 16.5 8 16.5C12.4115 16.5 16 12.9115 16 8.5C16 4.08853 12.4115 0.5 8 0.5ZM8 15.2607C4.27266 15.2607 1.23934 12.2273 1.23934 8.5C1.23934 4.77266 4.27266 1.73934 8 1.73934C11.728 1.73934 14.7607 4.77266 14.7607 8.5C14.7607 12.2273 11.7273 15.2607 8 15.2607Z"
+                                                        fill="var(--et-blue)" />
+                                                </svg>
+                                            </span>
+
+                                            <span class="text-etGray font-normal text-[16px]">13.00</span>
+                                        </div>
+                                    </div>
+
+                                    <!-- title -->
+                                    <h3
+                                        class="et-schedule-title text-[24px] sm:text-[22px] font-regular text-etBlack leading-[1.25] mb-[16px] anim-text">
+                                        <a href="#" class="hover:text-etBlue"> FA - FA Gabungan Bpro </a>
+                                    </h3>
+                                    <h4 class="font-semibold text-etBlue text-[16px] my-[10px]">Talkshow BPro </h4>
+
+                                    <!-- location -->
+                                    <div class="et-schedule-loaction flex items-center gap-[12px]">
+                                        <span class="icon">
+                                            <svg width="12" height="16" viewBox="0 0 12 16" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path
+                                                    d="M5.99998 0C2.80482 0 0.205383 2.59944 0.205383 5.79456C0.205383 9.75981 5.39098 15.581 5.61176 15.8269C5.81913 16.0579 6.1812 16.0575 6.3882 15.8269C6.60898 15.581 11.7946 9.75981 11.7946 5.79456C11.7945 2.59944 9.1951 0 5.99998 0ZM5.99998 8.70997C4.39241 8.70997 3.0846 7.40212 3.0846 5.79456C3.0846 4.187 4.39245 2.87919 5.99998 2.87919C7.60751 2.87919 8.91532 4.18703 8.91532 5.79459C8.91532 7.40216 7.60751 8.70997 5.99998 8.70997Z"
+                                                    fill="var(--et-blue)" />
+                                            </svg>
+                                        </span>
+                                        <h6 class="text-[16px] text-etGray">Bethany Manyar</h6>
+                                    </div>
+                                </div>
+
+                                <div class="flex shrink-0 flex-col xxs:flex-row gap-[16px] xxs:gap-[10px]">
+                                    <!-- <a href="#" class="et-btn border w-[180px] bg-etBlue text-white inline-flex items-center justify-center h-[45px] px-[22px] xxs:px-[16px] font-normal text-[17px] rounded-full hover:!bg-etBlack hover:!text-white">View More</a> -->
+                                    <a href="#"
+                                        class="et-btn border w-[180px] bg-etBlack text-white inline-flex items-center justify-center h-[45px] px-[22px] xxs:px-[16px] font-normal text-[17px] rounded-full hover:!bg-etBlue hover:!text-white">Read
+                                        More</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div
+                            class="et-schedule flex md:flex-wrap gap-x-[30px] gap-y-[20px] justify-between rev-slide-up">
+                            <!-- img -->
+                            <div
+                                class="w-[270px] shadow-[0_4px_60px_rgba(18,96,254,0.12)] shrink-0 rounded-[20px] overflow-hidden">
+                                <img src="<?= get_template_directory_uri() ?>/assets/new-img/journal1.jpg"
+                                    alt="scehduled-event-cover">
+                            </div>
+
+                            <!-- text -->
+                            <div
+                                class="px-[37px] sm:px-[22px] py-[30px] shadow-[0_4px_60px_rgba(18,96,254,0.12)] w-full rounded-[20px] flex gap-y-[15px] xs:flex-col items-center xs:items-start">
+                                <div
+                                    class="et-schedule__heading w-[80%] pr-[40px] sm:pr-[25px] xs:pr-0 mr-[40px] sm:mr-[25px] xs:mr-0 border-r xs:border-r-0 border-[#d9d9d9]">
+                                    <!-- date & time -->
+                                    <div
+                                        class="et-schedule-date-time border border-[rgba(217,217,217,0.89)] py-[7px] px-[15px] rounded-full inline-flex xxs:w-full items-center justify-center gap-x-[24px] gap-y-[10px] mb-[10px] xxs:border-0 xxs:p-0 xxs:justify-start">
+                                        <div class="date flex items-center gap-[10px]">
+                                            <span class="icon">
+                                                <svg width="16" height="17" viewBox="0 0 16 17" fill="none"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <g clip-path="url(#clip0_2043_1443)">
+                                                        <path
+                                                            d="M14.125 1.75H13.375V0.5H12.125V1.75H3.875V0.5H2.625V1.75H1.875C0.841125 1.75 0 2.59113 0 3.625V14.625C0 15.6589 0.841125 16.5 1.875 16.5H14.125C15.1589 16.5 16 15.6589 16 14.625V3.625C16 2.59113 15.1589 1.75 14.125 1.75ZM14.75 14.625C14.75 14.9696 14.4696 15.25 14.125 15.25H1.875C1.53038 15.25 1.25 14.9696 1.25 14.625V6.375H14.75V14.625ZM14.75 5.125H1.25V3.625C1.25 3.28038 1.53038 3 1.875 3H2.625V4.25H3.875V3H12.125V4.25H13.375V3H14.125C14.4696 3 14.75 3.28038 14.75 3.625V5.125Z"
+                                                            fill="var(--et-blue)" />
+                                                        <path d="M3.625 7.6875H2.375V8.9375H3.625V7.6875Z"
+                                                            fill="var(--et-blue)" />
+                                                        <path d="M6.125 7.6875H4.875V8.9375H6.125V7.6875Z"
+                                                            fill="var(--et-blue)" />
+                                                        <path d="M8.625 7.6875H7.375V8.9375H8.625V7.6875Z"
+                                                            fill="var(--et-blue)" />
+                                                        <path d="M11.125 7.6875H9.875V8.9375H11.125V7.6875Z"
+                                                            fill="var(--et-blue)" />
+                                                        <path d="M13.625 7.6875H12.375V8.9375H13.625V7.6875Z"
+                                                            fill="var(--et-blue)" />
+                                                        <path d="M3.625 10.1875H2.375V11.4375H3.625V10.1875Z"
+                                                            fill="var(--et-blue)" />
+                                                        <path d="M6.125 10.1875H4.875V11.4375H6.125V10.1875Z"
+                                                            fill="var(--et-blue)" />
+                                                        <path d="M8.625 10.1875H7.375V11.4375H8.625V10.1875Z"
+                                                            fill="var(--et-blue)" />
+                                                        <path d="M11.125 10.1875H9.875V11.4375H11.125V10.1875Z"
+                                                            fill="var(--et-blue)" />
+                                                        <path d="M3.625 12.6875H2.375V13.9375H3.625V12.6875Z"
+                                                            fill="var(--et-blue)" />
+                                                        <path d="M6.125 12.6875H4.875V13.9375H6.125V12.6875Z"
+                                                            fill="var(--et-blue)" />
+                                                        <path d="M8.625 12.6875H7.375V13.9375H8.625V12.6875Z"
+                                                            fill="var(--et-blue)" />
+                                                        <path d="M11.125 12.6875H9.875V13.9375H11.125V12.6875Z"
+                                                            fill="var(--et-blue)" />
+                                                        <path d="M13.625 10.1875H12.375V11.4375H13.625V10.1875Z"
+                                                            fill="var(--et-blue)" />
+                                                    </g>
+                                                </svg>
+                                            </span>
+
+                                            <span class="text-etGray font-normal text-[16px]">06 July 2024</span>
+                                        </div>
+
+                                        <div class="time flex items-center gap-[10px] xxs:hidden">
+                                            <span class="icon">
+                                                <svg width="16" height="17" viewBox="0 0 16 17" fill="none"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <path
+                                                        d="M10.8505 9.91291L8.61967 8.23979V4.8316C8.61967 4.48891 8.34266 4.21191 7.99998 4.21191C7.65729 4.21191 7.38029 4.48891 7.38029 4.8316V8.54966C7.38029 8.74485 7.47201 8.92892 7.62817 9.04541L10.1069 10.9044C10.2138 10.985 10.3441 11.0285 10.478 11.0284C10.667 11.0284 10.8529 10.9435 10.9744 10.7799C11.1802 10.5066 11.1244 10.118 10.8505 9.91291Z"
+                                                        fill="var(--et-blue)" />
+                                                    <path
+                                                        d="M8 0.5C3.58853 0.5 0 4.08853 0 8.5C0 12.9115 3.58853 16.5 8 16.5C12.4115 16.5 16 12.9115 16 8.5C16 4.08853 12.4115 0.5 8 0.5ZM8 15.2607C4.27266 15.2607 1.23934 12.2273 1.23934 8.5C1.23934 4.77266 4.27266 1.73934 8 1.73934C11.728 1.73934 14.7607 4.77266 14.7607 8.5C14.7607 12.2273 11.7273 15.2607 8 15.2607Z"
+                                                        fill="var(--et-blue)" />
+                                                </svg>
+                                            </span>
+
+                                            <span class="text-etGray font-normal text-[16px]">17.30</span>
+                                        </div>
+                                    </div>
+
+                                    <!-- title -->
+                                    <h3
+                                        class="et-schedule-title text-[24px] sm:text-[22px] font-regular text-etBlack leading-[1.25] mb-[16px] anim-text">
+                                        <a href="#" class="hover:text-etBlue"> God's Purpose in Me </a>
+                                    </h3>
+                                    <h4 class="font-semibold text-etBlue text-[16px] my-[10px]">Talkshow BPro</h4>
+
+                                    <!-- location -->
+                                    <div class="et-schedule-loaction flex items-center gap-[12px]">
+                                        <span class="icon">
+                                            <svg width="12" height="16" viewBox="0 0 12 16" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path
+                                                    d="M5.99998 0C2.80482 0 0.205383 2.59944 0.205383 5.79456C0.205383 9.75981 5.39098 15.581 5.61176 15.8269C5.81913 16.0579 6.1812 16.0575 6.3882 15.8269C6.60898 15.581 11.7946 9.75981 11.7946 5.79456C11.7945 2.59944 9.1951 0 5.99998 0ZM5.99998 8.70997C4.39241 8.70997 3.0846 7.40212 3.0846 5.79456C3.0846 4.187 4.39245 2.87919 5.99998 2.87919C7.60751 2.87919 8.91532 4.18703 8.91532 5.79459C8.91532 7.40216 7.60751 8.70997 5.99998 8.70997Z"
+                                                    fill="var(--et-blue)" />
+                                            </svg>
+                                        </span>
+                                        <h6 class="text-[16px] text-etGray">Bethany Manyar</h6>
+                                    </div>
+                                </div>
+
+                                <div class="flex shrink-0 flex-col xxs:flex-row gap-[16px] xxs:gap-[10px]">
+                                    <!-- <a href="#" class="et-btn border w-[180px] bg-etBlue text-white inline-flex items-center justify-center h-[45px] px-[22px] xxs:px-[16px] font-normal text-[17px] rounded-full hover:!bg-etBlack hover:!text-white">View More</a> -->
+                                    <a href="<?php echo home_url()?>/journal?journal-detail=Gods-Purpose-in-Me"
+                                        class="et-btn border w-[180px] bg-etBlack text-white inline-flex items-center justify-center h-[45px] px-[22px] xxs:px-[16px] font-normal text-[17px] rounded-full hover:!bg-etBlue hover:!text-white">Read
+                                        More</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- single schedule -->
+                        <div
+                            class="et-schedule flex md:flex-wrap gap-x-[30px] gap-y-[20px] justify-between rev-slide-up">
+                            <!-- img -->
+                            <div
+                                class="w-[270px] shadow-[0_4px_60px_rgba(18,96,254,0.12)] shrink-0 rounded-[20px] overflow-hidden">
+                                <img src="<?= get_template_directory_uri() ?>/assets/new-img/journal2.png"
+                                    alt="scehduled-event-cover">
+                            </div>
+
+                            <!-- text -->
+                            <div
+                                class="px-[37px] sm:px-[22px] py-[30px] shadow-[0_4px_60px_rgba(18,96,254,0.12)] w-full rounded-[20px] flex gap-y-[15px] xs:flex-col items-center xs:items-start">
+                                <div
+                                    class="et-schedule__heading w-[80%] pr-[40px] sm:pr-[25px] xs:pr-0 mr-[40px] sm:mr-[25px] xs:mr-0 border-r xs:border-r-0 border-[#d9d9d9]">
+                                    <!-- date & time -->
+                                    <div
+                                        class="et-schedule-date-time border border-[rgba(217,217,217,0.89)] py-[7px] px-[15px] rounded-full inline-flex xxs:w-full items-center justify-center gap-x-[24px] gap-y-[10px] mb-[10px] xxs:border-0 xxs:p-0 xxs:justify-start">
+                                        <div class="date flex items-center gap-[10px]">
+                                            <span class="icon">
+                                                <svg width="16" height="17" viewBox="0 0 16 17" fill="none"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <g clip-path="url(#clip0_2043_1443)">
+                                                        <path
+                                                            d="M14.125 1.75H13.375V0.5H12.125V1.75H3.875V0.5H2.625V1.75H1.875C0.841125 1.75 0 2.59113 0 3.625V14.625C0 15.6589 0.841125 16.5 1.875 16.5H14.125C15.1589 16.5 16 15.6589 16 14.625V3.625C16 2.59113 15.1589 1.75 14.125 1.75ZM14.75 14.625C14.75 14.9696 14.4696 15.25 14.125 15.25H1.875C1.53038 15.25 1.25 14.9696 1.25 14.625V6.375H14.75V14.625ZM14.75 5.125H1.25V3.625C1.25 3.28038 1.53038 3 1.875 3H2.625V4.25H3.875V3H12.125V4.25H13.375V3H14.125C14.4696 3 14.75 3.28038 14.75 3.625V5.125Z"
+                                                            fill="var(--et-blue)" />
+                                                        <path d="M3.625 7.6875H2.375V8.9375H3.625V7.6875Z"
+                                                            fill="var(--et-blue)" />
+                                                        <path d="M6.125 7.6875H4.875V8.9375H6.125V7.6875Z"
+                                                            fill="var(--et-blue)" />
+                                                        <path d="M8.625 7.6875H7.375V8.9375H8.625V7.6875Z"
+                                                            fill="var(--et-blue)" />
+                                                        <path d="M11.125 7.6875H9.875V8.9375H11.125V7.6875Z"
+                                                            fill="var(--et-blue)" />
+                                                        <path d="M13.625 7.6875H12.375V8.9375H13.625V7.6875Z"
+                                                            fill="var(--et-blue)" />
+                                                        <path d="M3.625 10.1875H2.375V11.4375H3.625V10.1875Z"
+                                                            fill="var(--et-blue)" />
+                                                        <path d="M6.125 10.1875H4.875V11.4375H6.125V10.1875Z"
+                                                            fill="var(--et-blue)" />
+                                                        <path d="M8.625 10.1875H7.375V11.4375H8.625V10.1875Z"
+                                                            fill="var(--et-blue)" />
+                                                        <path d="M11.125 10.1875H9.875V11.4375H11.125V10.1875Z"
+                                                            fill="var(--et-blue)" />
+                                                        <path d="M3.625 12.6875H2.375V13.9375H3.625V12.6875Z"
+                                                            fill="var(--et-blue)" />
+                                                        <path d="M6.125 12.6875H4.875V13.9375H6.125V12.6875Z"
+                                                            fill="var(--et-blue)" />
+                                                        <path d="M8.625 12.6875H7.375V13.9375H8.625V12.6875Z"
+                                                            fill="var(--et-blue)" />
+                                                        <path d="M11.125 12.6875H9.875V13.9375H11.125V12.6875Z"
+                                                            fill="var(--et-blue)" />
+                                                        <path d="M13.625 10.1875H12.375V11.4375H13.625V10.1875Z"
+                                                            fill="var(--et-blue)" />
+                                                    </g>
+                                                </svg>
+                                            </span>
+
+                                            <span class="text-etGray font-normal text-[16px]">22 Juni 2024</span>
+                                        </div>
+
+                                        <div class="time flex items-center gap-[10px] xxs:hidden">
+                                            <span class="icon">
+                                                <svg width="16" height="17" viewBox="0 0 16 17" fill="none"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <path
+                                                        d="M10.8505 9.91291L8.61967 8.23979V4.8316C8.61967 4.48891 8.34266 4.21191 7.99998 4.21191C7.65729 4.21191 7.38029 4.48891 7.38029 4.8316V8.54966C7.38029 8.74485 7.47201 8.92892 7.62817 9.04541L10.1069 10.9044C10.2138 10.985 10.3441 11.0285 10.478 11.0284C10.667 11.0284 10.8529 10.9435 10.9744 10.7799C11.1802 10.5066 11.1244 10.118 10.8505 9.91291Z"
+                                                        fill="var(--et-blue)" />
+                                                    <path
+                                                        d="M8 0.5C3.58853 0.5 0 4.08853 0 8.5C0 12.9115 3.58853 16.5 8 16.5C12.4115 16.5 16 12.9115 16 8.5C16 4.08853 12.4115 0.5 8 0.5ZM8 15.2607C4.27266 15.2607 1.23934 12.2273 1.23934 8.5C1.23934 4.77266 4.27266 1.73934 8 1.73934C11.728 1.73934 14.7607 4.77266 14.7607 8.5C14.7607 12.2273 11.7273 15.2607 8 15.2607Z"
+                                                        fill="var(--et-blue)" />
+                                                </svg>
+                                            </span>
+
+                                            <span class="text-etGray font-normal text-[16px]">17.30</span>
+                                        </div>
+                                    </div>
+
+                                    <!-- title -->
+                                    <h3
+                                        class="et-schedule-title text-[24px] sm:text-[22px] font-regular text-etBlack leading-[1.25] mb-[16px] anim-text">
+                                        <a href="#" class="hover:text-etBlue"> The Calling </a>
+                                    </h3>
+                                    <h4 class="font-semibold text-etBlue text-[16px] my-[10px]">Talkshow BPro</h4>
+
+                                    <!-- location -->
+                                    <div class="et-schedule-loaction flex items-center gap-[12px]">
+                                        <span class="icon">
+                                            <svg width="12" height="16" viewBox="0 0 12 16" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path
+                                                    d="M5.99998 0C2.80482 0 0.205383 2.59944 0.205383 5.79456C0.205383 9.75981 5.39098 15.581 5.61176 15.8269C5.81913 16.0579 6.1812 16.0575 6.3882 15.8269C6.60898 15.581 11.7946 9.75981 11.7946 5.79456C11.7945 2.59944 9.1951 0 5.99998 0ZM5.99998 8.70997C4.39241 8.70997 3.0846 7.40212 3.0846 5.79456C3.0846 4.187 4.39245 2.87919 5.99998 2.87919C7.60751 2.87919 8.91532 4.18703 8.91532 5.79459C8.91532 7.40216 7.60751 8.70997 5.99998 8.70997Z"
+                                                    fill="var(--et-blue)" />
+                                            </svg>
+                                        </span>
+                                        <h6 class="text-[16px] text-etGray">Bethany Manyar</h6>
+                                    </div>
+                                </div>
+
+                                <div class="flex shrink-0 flex-col xxs:flex-row gap-[16px] xxs:gap-[10px]">
+                                    <!-- <a href="#" class="et-btn border w-[180px] bg-etBlue text-white inline-flex items-center justify-center h-[45px] px-[22px] xxs:px-[16px] font-normal text-[17px] rounded-full hover:!bg-etBlack hover:!text-white">View More</a> -->
+                                    <a href="<?php echo home_url()?>/journal?journal-detail=the-calling"
+                                        class="et-btn border w-[180px] bg-etBlack text-white inline-flex items-center justify-center h-[45px] px-[22px] xxs:px-[16px] font-normal text-[17px] rounded-full hover:!bg-etBlue hover:!text-white">Read
+                                        More</a>
+                                </div>
+                            </div>
+                        </div>
+
+
+
+                        <div
+                            class="et-schedule flex md:flex-wrap gap-x-[30px] gap-y-[20px] justify-between rev-slide-up">
+                            <!-- img -->
+                            <div
+                                class="w-[270px] shadow-[0_4px_60px_rgba(18,96,254,0.12)] shrink-0 rounded-[20px] overflow-hidden">
+                                <img src="<?= get_template_directory_uri() ?>/assets/new-img/journal4.png"
+                                    alt="scehduled-event-cover">
+                            </div>
+
+                            <!-- text -->
+                            <div
+                                class="px-[37px] sm:px-[22px] py-[30px] shadow-[0_4px_60px_rgba(18,96,254,0.12)] w-full rounded-[20px] flex gap-y-[15px] xs:flex-col items-center xs:items-start">
+                                <div
+                                    class="et-schedule__heading w-[80%] pr-[40px] sm:pr-[25px] xs:pr-0 mr-[40px] sm:mr-[25px] xs:mr-0 border-r xs:border-r-0 border-[#d9d9d9]">
+                                    <!-- date & time -->
+                                    <div
+                                        class="et-schedule-date-time border border-[rgba(217,217,217,0.89)] py-[7px] px-[15px] rounded-full inline-flex xxs:w-full items-center justify-center gap-x-[24px] gap-y-[10px] mb-[10px] xxs:border-0 xxs:p-0 xxs:justify-start">
+                                        <div class="date flex items-center gap-[10px]">
+                                            <span class="icon">
+                                                <svg width="16" height="17" viewBox="0 0 16 17" fill="none"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <g clip-path="url(#clip0_2043_1443)">
+                                                        <path
+                                                            d="M14.125 1.75H13.375V0.5H12.125V1.75H3.875V0.5H2.625V1.75H1.875C0.841125 1.75 0 2.59113 0 3.625V14.625C0 15.6589 0.841125 16.5 1.875 16.5H14.125C15.1589 16.5 16 15.6589 16 14.625V3.625C16 2.59113 15.1589 1.75 14.125 1.75ZM14.75 14.625C14.75 14.9696 14.4696 15.25 14.125 15.25H1.875C1.53038 15.25 1.25 14.9696 1.25 14.625V6.375H14.75V14.625ZM14.75 5.125H1.25V3.625C1.25 3.28038 1.53038 3 1.875 3H2.625V4.25H3.875V3H12.125V4.25H13.375V3H14.125C14.4696 3 14.75 3.28038 14.75 3.625V5.125Z"
+                                                            fill="var(--et-blue)" />
+                                                        <path d="M3.625 7.6875H2.375V8.9375H3.625V7.6875Z"
+                                                            fill="var(--et-blue)" />
+                                                        <path d="M6.125 7.6875H4.875V8.9375H6.125V7.6875Z"
+                                                            fill="var(--et-blue)" />
+                                                        <path d="M8.625 7.6875H7.375V8.9375H8.625V7.6875Z"
+                                                            fill="var(--et-blue)" />
+                                                        <path d="M11.125 7.6875H9.875V8.9375H11.125V7.6875Z"
+                                                            fill="var(--et-blue)" />
+                                                        <path d="M13.625 7.6875H12.375V8.9375H13.625V7.6875Z"
+                                                            fill="var(--et-blue)" />
+                                                        <path d="M3.625 10.1875H2.375V11.4375H3.625V10.1875Z"
+                                                            fill="var(--et-blue)" />
+                                                        <path d="M6.125 10.1875H4.875V11.4375H6.125V10.1875Z"
+                                                            fill="var(--et-blue)" />
+                                                        <path d="M8.625 10.1875H7.375V11.4375H8.625V10.1875Z"
+                                                            fill="var(--et-blue)" />
+                                                        <path d="M11.125 10.1875H9.875V11.4375H11.125V10.1875Z"
+                                                            fill="var(--et-blue)" />
+                                                        <path d="M3.625 12.6875H2.375V13.9375H3.625V12.6875Z"
+                                                            fill="var(--et-blue)" />
+                                                        <path d="M6.125 12.6875H4.875V13.9375H6.125V12.6875Z"
+                                                            fill="var(--et-blue)" />
+                                                        <path d="M8.625 12.6875H7.375V13.9375H8.625V12.6875Z"
+                                                            fill="var(--et-blue)" />
+                                                        <path d="M11.125 12.6875H9.875V13.9375H11.125V12.6875Z"
+                                                            fill="var(--et-blue)" />
+                                                        <path d="M13.625 10.1875H12.375V11.4375H13.625V10.1875Z"
+                                                            fill="var(--et-blue)" />
+                                                    </g>
+                                                </svg>
+                                            </span>
+
+                                            <span class="text-etGray font-normal text-[16px]">23 Mei 2024</span>
+                                        </div>
+
+                                        <div class="time flex items-center gap-[10px] xxs:hidden">
+                                            <span class="icon">
+                                                <svg width="16" height="17" viewBox="0 0 16 17" fill="none"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <path
+                                                        d="M10.8505 9.91291L8.61967 8.23979V4.8316C8.61967 4.48891 8.34266 4.21191 7.99998 4.21191C7.65729 4.21191 7.38029 4.48891 7.38029 4.8316V8.54966C7.38029 8.74485 7.47201 8.92892 7.62817 9.04541L10.1069 10.9044C10.2138 10.985 10.3441 11.0285 10.478 11.0284C10.667 11.0284 10.8529 10.9435 10.9744 10.7799C11.1802 10.5066 11.1244 10.118 10.8505 9.91291Z"
+                                                        fill="var(--et-blue)" />
+                                                    <path
+                                                        d="M8 0.5C3.58853 0.5 0 4.08853 0 8.5C0 12.9115 3.58853 16.5 8 16.5C12.4115 16.5 16 12.9115 16 8.5C16 4.08853 12.4115 0.5 8 0.5ZM8 15.2607C4.27266 15.2607 1.23934 12.2273 1.23934 8.5C1.23934 4.77266 4.27266 1.73934 8 1.73934C11.728 1.73934 14.7607 4.77266 14.7607 8.5C14.7607 12.2273 11.7273 15.2607 8 15.2607Z"
+                                                        fill="var(--et-blue)" />
+                                                </svg>
+                                            </span>
+
+                                            <span class="text-etGray font-normal text-[16px]">17.30</span>
+                                        </div>
+                                    </div>
+
+                                    <!-- title -->
+                                    <h3
+                                        class="et-schedule-title text-[24px] sm:text-[22px] font-regular text-etBlack leading-[1.25] mb-[16px] anim-text">
+                                        <a href="#" class="hover:text-etBlue"> BPro Race </a>
+                                    </h3>
+                                    <h4 class="font-semibold text-etBlue text-[16px] my-[10px]">Gathering FA</h4>
+
+                                    <!-- location -->
+                                    <div class="et-schedule-loaction flex items-center gap-[12px]">
+                                        <span class="icon">
+                                            <svg width="12" height="16" viewBox="0 0 12 16" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path
+                                                    d="M5.99998 0C2.80482 0 0.205383 2.59944 0.205383 5.79456C0.205383 9.75981 5.39098 15.581 5.61176 15.8269C5.81913 16.0579 6.1812 16.0575 6.3882 15.8269C6.60898 15.581 11.7946 9.75981 11.7946 5.79456C11.7945 2.59944 9.1951 0 5.99998 0ZM5.99998 8.70997C4.39241 8.70997 3.0846 7.40212 3.0846 5.79456C3.0846 4.187 4.39245 2.87919 5.99998 2.87919C7.60751 2.87919 8.91532 4.18703 8.91532 5.79459C8.91532 7.40216 7.60751 8.70997 5.99998 8.70997Z"
+                                                    fill="var(--et-blue)" />
+                                            </svg>
+                                        </span>
+                                        <h6 class="text-[16px] text-etGray">Morazen Hotel Surabaya</h6>
+                                    </div>
+                                </div>
+
+                                <div class="flex shrink-0 flex-col xxs:flex-row gap-[16px] xxs:gap-[10px]">
+                                    <!-- <a href="#" class="et-btn border w-[180px] bg-etBlue text-white inline-flex items-center justify-center h-[45px] px-[22px] xxs:px-[16px] font-normal text-[17px] rounded-full hover:!bg-etBlack hover:!text-white">View More</a> -->
+                                    <a href="<?php echo home_url()?>/journal?journal-detail=bpro-race"
+                                        class="et-btn border w-[180px] bg-etBlack text-white inline-flex items-center justify-center h-[45px] px-[22px] xxs:px-[16px] font-normal text-[17px] rounded-full hover:!bg-etBlue hover:!text-white">Read
+                                        More</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div
+                            class="et-schedule flex md:flex-wrap gap-x-[30px] gap-y-[20px] justify-between rev-slide-up">
+                            <!-- img -->
+                            <div
+                                class="w-[270px] shadow-[0_4px_60px_rgba(18,96,254,0.12)] shrink-0 rounded-[20px] overflow-hidden">
+                                <img src="<?= get_template_directory_uri() ?>/assets/new-img/journal5.png"
+                                    alt="scehduled-event-cover">
+                            </div>
+
+                            <!-- text -->
+                            <div
+                                class="px-[37px] sm:px-[22px] py-[30px] shadow-[0_4px_60px_rgba(18,96,254,0.12)] w-full rounded-[20px] flex gap-y-[15px] xs:flex-col items-center xs:items-start">
+                                <div
+                                    class="et-schedule__heading w-[80%] pr-[40px] sm:pr-[25px] xs:pr-0 mr-[40px] sm:mr-[25px] xs:mr-0 border-r xs:border-r-0 border-[#d9d9d9]">
+                                    <!-- date & time -->
+                                    <div
+                                        class="et-schedule-date-time border border-[rgba(217,217,217,0.89)] py-[7px] px-[15px] rounded-full inline-flex xxs:w-full items-center justify-center gap-x-[24px] gap-y-[10px] mb-[10px] xxs:border-0 xxs:p-0 xxs:justify-start">
+                                        <div class="date flex items-center gap-[10px]">
+                                            <span class="icon">
+                                                <svg width="16" height="17" viewBox="0 0 16 17" fill="none"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <g clip-path="url(#clip0_2043_1443)">
+                                                        <path
+                                                            d="M14.125 1.75H13.375V0.5H12.125V1.75H3.875V0.5H2.625V1.75H1.875C0.841125 1.75 0 2.59113 0 3.625V14.625C0 15.6589 0.841125 16.5 1.875 16.5H14.125C15.1589 16.5 16 15.6589 16 14.625V3.625C16 2.59113 15.1589 1.75 14.125 1.75ZM14.75 14.625C14.75 14.9696 14.4696 15.25 14.125 15.25H1.875C1.53038 15.25 1.25 14.9696 1.25 14.625V6.375H14.75V14.625ZM14.75 5.125H1.25V3.625C1.25 3.28038 1.53038 3 1.875 3H2.625V4.25H3.875V3H12.125V4.25H13.375V3H14.125C14.4696 3 14.75 3.28038 14.75 3.625V5.125Z"
+                                                            fill="var(--et-blue)" />
+                                                        <path d="M3.625 7.6875H2.375V8.9375H3.625V7.6875Z"
+                                                            fill="var(--et-blue)" />
+                                                        <path d="M6.125 7.6875H4.875V8.9375H6.125V7.6875Z"
+                                                            fill="var(--et-blue)" />
+                                                        <path d="M8.625 7.6875H7.375V8.9375H8.625V7.6875Z"
+                                                            fill="var(--et-blue)" />
+                                                        <path d="M11.125 7.6875H9.875V8.9375H11.125V7.6875Z"
+                                                            fill="var(--et-blue)" />
+                                                        <path d="M13.625 7.6875H12.375V8.9375H13.625V7.6875Z"
+                                                            fill="var(--et-blue)" />
+                                                        <path d="M3.625 10.1875H2.375V11.4375H3.625V10.1875Z"
+                                                            fill="var(--et-blue)" />
+                                                        <path d="M6.125 10.1875H4.875V11.4375H6.125V10.1875Z"
+                                                            fill="var(--et-blue)" />
+                                                        <path d="M8.625 10.1875H7.375V11.4375H8.625V10.1875Z"
+                                                            fill="var(--et-blue)" />
+                                                        <path d="M11.125 10.1875H9.875V11.4375H11.125V10.1875Z"
+                                                            fill="var(--et-blue)" />
+                                                        <path d="M3.625 12.6875H2.375V13.9375H3.625V12.6875Z"
+                                                            fill="var(--et-blue)" />
+                                                        <path d="M6.125 12.6875H4.875V13.9375H6.125V12.6875Z"
+                                                            fill="var(--et-blue)" />
+                                                        <path d="M8.625 12.6875H7.375V13.9375H8.625V12.6875Z"
+                                                            fill="var(--et-blue)" />
+                                                        <path d="M11.125 12.6875H9.875V13.9375H11.125V12.6875Z"
+                                                            fill="var(--et-blue)" />
+                                                        <path d="M13.625 10.1875H12.375V11.4375H13.625V10.1875Z"
+                                                            fill="var(--et-blue)" />
+                                                    </g>
+                                                </svg>
+                                            </span>
+
+                                            <span class="text-etGray font-normal text-[16px]">23 Maret 2024</span>
+                                        </div>
+
+                                        <div class="time flex items-center gap-[10px] xxs:hidden">
+                                            <span class="icon">
+                                                <svg width="16" height="17" viewBox="0 0 16 17" fill="none"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <path
+                                                        d="M10.8505 9.91291L8.61967 8.23979V4.8316C8.61967 4.48891 8.34266 4.21191 7.99998 4.21191C7.65729 4.21191 7.38029 4.48891 7.38029 4.8316V8.54966C7.38029 8.74485 7.47201 8.92892 7.62817 9.04541L10.1069 10.9044C10.2138 10.985 10.3441 11.0285 10.478 11.0284C10.667 11.0284 10.8529 10.9435 10.9744 10.7799C11.1802 10.5066 11.1244 10.118 10.8505 9.91291Z"
+                                                        fill="var(--et-blue)" />
+                                                    <path
+                                                        d="M8 0.5C3.58853 0.5 0 4.08853 0 8.5C0 12.9115 3.58853 16.5 8 16.5C12.4115 16.5 16 12.9115 16 8.5C16 4.08853 12.4115 0.5 8 0.5ZM8 15.2607C4.27266 15.2607 1.23934 12.2273 1.23934 8.5C1.23934 4.77266 4.27266 1.73934 8 1.73934C11.728 1.73934 14.7607 4.77266 14.7607 8.5C14.7607 12.2273 11.7273 15.2607 8 15.2607Z"
+                                                        fill="var(--et-blue)" />
+                                                </svg>
+                                            </span>
+
+                                            <span class="text-etGray font-normal text-[16px]">17.30</span>
+                                        </div>
+                                    </div>
+
+                                    <!-- title -->
+                                    <h3
+                                        class="et-schedule-title text-[24px] sm:text-[22px] font-regular text-etBlack leading-[1.25] mb-[16px] anim-text">
+                                        <a href="#" class="hover:text-etBlue"> TS - Bestie in Community </a>
+                                    </h3>
+                                    <h4 class="font-semibold text-etBlue text-[16px] my-[10px]">Talkshow BPro</h4>
+
+                                    <!-- location -->
+                                    <div class="et-schedule-loaction flex items-center gap-[12px]">
+                                        <span class="icon">
+                                            <svg width="12" height="16" viewBox="0 0 12 16" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path
+                                                    d="M5.99998 0C2.80482 0 0.205383 2.59944 0.205383 5.79456C0.205383 9.75981 5.39098 15.581 5.61176 15.8269C5.81913 16.0579 6.1812 16.0575 6.3882 15.8269C6.60898 15.581 11.7946 9.75981 11.7946 5.79456C11.7945 2.59944 9.1951 0 5.99998 0ZM5.99998 8.70997C4.39241 8.70997 3.0846 7.40212 3.0846 5.79456C3.0846 4.187 4.39245 2.87919 5.99998 2.87919C7.60751 2.87919 8.91532 4.18703 8.91532 5.79459C8.91532 7.40216 7.60751 8.70997 5.99998 8.70997Z"
+                                                    fill="var(--et-blue)" />
+                                            </svg>
+                                        </span>
+                                        <h6 class="text-[16px] text-etGray">Bethany Manyar</h6>
+                                    </div>
+                                </div>
+
+                                <div class="flex shrink-0 flex-col xxs:flex-row gap-[16px] xxs:gap-[10px]">
+                                    <!-- <a href="#" class="et-btn border w-[180px] bg-etBlue text-white inline-flex items-center justify-center h-[45px] px-[22px] xxs:px-[16px] font-normal text-[17px] rounded-full hover:!bg-etBlack hover:!text-white">View More</a> -->
+                                    <a href="#"
+                                        class="et-btn border w-[180px] bg-etBlack text-white inline-flex items-center justify-center h-[45px] px-[22px] xxs:px-[16px] font-normal text-[17px] rounded-full hover:!bg-etBlue hover:!text-white">Read
+                                        More</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div
+                            class="et-schedule flex md:flex-wrap gap-x-[30px] gap-y-[20px] justify-between rev-slide-up">
+                            <!-- img -->
+                            <div
+                                class="w-[270px] shadow-[0_4px_60px_rgba(18,96,254,0.12)] shrink-0 rounded-[20px] overflow-hidden">
+                                <img src="<?= get_template_directory_uri() ?>/assets/new-img/journal6.png"
+                                    alt="scehduled-event-cover">
+                            </div>
+
+                            <!-- text -->
+                            <div
+                                class="px-[37px] sm:px-[22px] py-[30px] shadow-[0_4px_60px_rgba(18,96,254,0.12)] w-full rounded-[20px] flex gap-y-[15px] xs:flex-col items-center xs:items-start">
+                                <div
+                                    class="et-schedule__heading w-[80%] pr-[40px] sm:pr-[25px] xs:pr-0 mr-[40px] sm:mr-[25px] xs:mr-0 border-r xs:border-r-0 border-[#d9d9d9]">
+                                    <!-- date & time -->
+                                    <div
+                                        class="et-schedule-date-time border border-[rgba(217,217,217,0.89)] py-[7px] px-[15px] rounded-full inline-flex xxs:w-full items-center justify-center gap-x-[24px] gap-y-[10px] mb-[10px] xxs:border-0 xxs:p-0 xxs:justify-start">
+                                        <div class="date flex items-center gap-[10px]">
+                                            <span class="icon">
+                                                <svg width="16" height="17" viewBox="0 0 16 17" fill="none"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <g clip-path="url(#clip0_2043_1443)">
+                                                        <path
+                                                            d="M14.125 1.75H13.375V0.5H12.125V1.75H3.875V0.5H2.625V1.75H1.875C0.841125 1.75 0 2.59113 0 3.625V14.625C0 15.6589 0.841125 16.5 1.875 16.5H14.125C15.1589 16.5 16 15.6589 16 14.625V3.625C16 2.59113 15.1589 1.75 14.125 1.75ZM14.75 14.625C14.75 14.9696 14.4696 15.25 14.125 15.25H1.875C1.53038 15.25 1.25 14.9696 1.25 14.625V6.375H14.75V14.625ZM14.75 5.125H1.25V3.625C1.25 3.28038 1.53038 3 1.875 3H2.625V4.25H3.875V3H12.125V4.25H13.375V3H14.125C14.4696 3 14.75 3.28038 14.75 3.625V5.125Z"
+                                                            fill="var(--et-blue)" />
+                                                        <path d="M3.625 7.6875H2.375V8.9375H3.625V7.6875Z"
+                                                            fill="var(--et-blue)" />
+                                                        <path d="M6.125 7.6875H4.875V8.9375H6.125V7.6875Z"
+                                                            fill="var(--et-blue)" />
+                                                        <path d="M8.625 7.6875H7.375V8.9375H8.625V7.6875Z"
+                                                            fill="var(--et-blue)" />
+                                                        <path d="M11.125 7.6875H9.875V8.9375H11.125V7.6875Z"
+                                                            fill="var(--et-blue)" />
+                                                        <path d="M13.625 7.6875H12.375V8.9375H13.625V7.6875Z"
+                                                            fill="var(--et-blue)" />
+                                                        <path d="M3.625 10.1875H2.375V11.4375H3.625V10.1875Z"
+                                                            fill="var(--et-blue)" />
+                                                        <path d="M6.125 10.1875H4.875V11.4375H6.125V10.1875Z"
+                                                            fill="var(--et-blue)" />
+                                                        <path d="M8.625 10.1875H7.375V11.4375H8.625V10.1875Z"
+                                                            fill="var(--et-blue)" />
+                                                        <path d="M11.125 10.1875H9.875V11.4375H11.125V10.1875Z"
+                                                            fill="var(--et-blue)" />
+                                                        <path d="M3.625 12.6875H2.375V13.9375H3.625V12.6875Z"
+                                                            fill="var(--et-blue)" />
+                                                        <path d="M6.125 12.6875H4.875V13.9375H6.125V12.6875Z"
+                                                            fill="var(--et-blue)" />
+                                                        <path d="M8.625 12.6875H7.375V13.9375H8.625V12.6875Z"
+                                                            fill="var(--et-blue)" />
+                                                        <path d="M11.125 12.6875H9.875V13.9375H11.125V12.6875Z"
+                                                            fill="var(--et-blue)" />
+                                                        <path d="M13.625 10.1875H12.375V11.4375H13.625V10.1875Z"
+                                                            fill="var(--et-blue)" />
+                                                    </g>
+                                                </svg>
+                                            </span>
+
+                                            <span class="text-etGray font-normal text-[16px]">14 Oct 2023</span>
+                                        </div>
+
+                                        <div class="time flex items-center gap-[10px] xxs:hidden">
+                                            <span class="icon">
+                                                <svg width="16" height="17" viewBox="0 0 16 17" fill="none"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <path
+                                                        d="M10.8505 9.91291L8.61967 8.23979V4.8316C8.61967 4.48891 8.34266 4.21191 7.99998 4.21191C7.65729 4.21191 7.38029 4.48891 7.38029 4.8316V8.54966C7.38029 8.74485 7.47201 8.92892 7.62817 9.04541L10.1069 10.9044C10.2138 10.985 10.3441 11.0285 10.478 11.0284C10.667 11.0284 10.8529 10.9435 10.9744 10.7799C11.1802 10.5066 11.1244 10.118 10.8505 9.91291Z"
+                                                        fill="var(--et-blue)" />
+                                                    <path
+                                                        d="M8 0.5C3.58853 0.5 0 4.08853 0 8.5C0 12.9115 3.58853 16.5 8 16.5C12.4115 16.5 16 12.9115 16 8.5C16 4.08853 12.4115 0.5 8 0.5ZM8 15.2607C4.27266 15.2607 1.23934 12.2273 1.23934 8.5C1.23934 4.77266 4.27266 1.73934 8 1.73934C11.728 1.73934 14.7607 4.77266 14.7607 8.5C14.7607 12.2273 11.7273 15.2607 8 15.2607Z"
+                                                        fill="var(--et-blue)" />
+                                                </svg>
+                                            </span>
+
+                                            <span class="text-etGray font-normal text-[16px]">17.30</span>
+                                        </div>
+                                    </div>
+
+                                    <!-- title -->
+                                    <h3
+                                        class="et-schedule-title text-[24px] sm:text-[22px] font-regular text-etBlack leading-[1.25] mb-[16px] anim-text">
+                                        <a href="#" class="hover:text-etBlue"> Harmony Celebration </a>
+                                    </h3>
+                                    <h4 class="font-semibold text-etBlue text-[16px] my-[10px]">BPro Anniversary</h4>
+
+                                    <!-- location -->
+                                    <div class="et-schedule-loaction flex items-center gap-[12px]">
+                                        <span class="icon">
+                                            <svg width="12" height="16" viewBox="0 0 12 16" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path
+                                                    d="M5.99998 0C2.80482 0 0.205383 2.59944 0.205383 5.79456C0.205383 9.75981 5.39098 15.581 5.61176 15.8269C5.81913 16.0579 6.1812 16.0575 6.3882 15.8269C6.60898 15.581 11.7946 9.75981 11.7946 5.79456C11.7945 2.59944 9.1951 0 5.99998 0ZM5.99998 8.70997C4.39241 8.70997 3.0846 7.40212 3.0846 5.79456C3.0846 4.187 4.39245 2.87919 5.99998 2.87919C7.60751 2.87919 8.91532 4.18703 8.91532 5.79459C8.91532 7.40216 7.60751 8.70997 5.99998 8.70997Z"
+                                                    fill="var(--et-blue)" />
+                                            </svg>
+                                        </span>
+                                        <h6 class="text-[16px] text-etGray">Bethany Manyar</h6>
+                                    </div>
+                                </div>
+
+                                <div class="flex shrink-0 flex-col xxs:flex-row gap-[16px] xxs:gap-[10px]">
+                                    <!-- <a href="#" class="et-btn border w-[180px] bg-etBlue text-white inline-flex items-center justify-center h-[45px] px-[22px] xxs:px-[16px] font-normal text-[17px] rounded-full hover:!bg-etBlack hover:!text-white">View More</a> -->
+                                    <a href="<?php echo home_url()?>/journal?journal-detail=harmony-celebration"
+                                        class="et-btn border w-[180px] bg-etBlack text-white inline-flex items-center justify-center h-[45px] px-[22px] xxs:px-[16px] font-normal text-[17px] rounded-full hover:!bg-etBlue hover:!text-white">Read
+                                        More</a>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- EVENTS SECTION END -->
+
+
+    <!-- PAGINATION START -->
+    <!-- <div class="container mx-auto max-w-[1200px] px-[12px] xl:max-w-full">
+        <div class="flex items-center gap-[20px] pt-[60px] justify-center text-[16px]">
+            <a href="#" class=""><i class="fa-solid fa-arrow-left-long"></i></a>
+            <div class="et-pagination flex gap-[10px] items-center">
+                <a href="#" class="border border-[#d9d9d9] rounded-full w-[50px] h-[50px] flex items-center justify-center text-etBlack hover:bg-etBlue hover:border-etBlue hover:text-white active">01</a>
+                <a href="#" class="border border-[#d9d9d9] rounded-full w-[50px] h-[50px] flex items-center justify-center text-etBlack hover:bg-etBlue hover:border-etBlue hover:text-white">02</a>
+                <a href="#" class="border border-[#d9d9d9] rounded-full w-[50px] h-[50px] flex items-center justify-center text-etBlack hover:bg-etBlue hover:border-etBlue hover:text-white">03</a>
+            </div>
+            <a href="#" class=""><i class="fa-solid fa-arrow-right-long"></i></a>
+        </div>
+    </div> -->
+    <!-- PAGINATION END -->
+</div>
+<?php endif ; ?>
 <?php
 get_footer('main');
