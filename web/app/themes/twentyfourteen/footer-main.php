@@ -62,7 +62,7 @@
                     <!-- txt -->
                     <div>
                         <span class="block font-medium text-[14px]">Hotline BPro :</span>
-                        <h5 class="font-medium text-[20px]"><a href="https://wa.me/6281131166111">0811 311 66 111 (Whatsapp)</a></h5>
+                        <h5 class="font-medium text-[20px]"><a href="https://api.whatsapp.com/send?phone=6281131166111">0811-311-66-111 (Whatsapp)</a></h5>
                     </div>
                 </div>
             </div>
@@ -71,14 +71,14 @@
                 <!-- footer about -->
                 <div class="et-footer-about max-w-[295px] lg:max-w-none md:max-w-[300px] xs:max-w-full">
                     <a href="#" class="mb-[25px] inline-block"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/logo-white.png" alt="logo" style="width: 90px !important;" style="width: 65% !important;"></a>
-                    <p class="font-light text-[#f2f2f2] text-[16px] mb-[25px]">Lorem ipsum dolor sit amet consectetur adipiscing elit ut aliquam purus sit amet magna elemen facilisis</p>
+                    <p class="font-light text-[#f2f2f2] text-[16px] mb-[25px]">Dengan semangat inilah, kami ada. Komunitas Bethany Professional, atau bisa juga disebut, BPro.</p>
 
                     <!-- social media -->
                     <div class="et-socials flex gap-[10px] text-[14px] *:border *:border-[#9EAACB] *:text-[#9EAACB] *:w-[40px] *:aspect-square *:shrink-0 *:inline-flex *:items-center *:justify-center *:rounded-full ">
-                        <a href="#" class="hover:text-white hover:bg-etBlue hover:border-etBlue"><i class="fa-brands fa-facebook-f"></i></a>
-                        <a href="#" class="hover:text-white hover:bg-etBlue hover:border-etBlue"><i class="fa-brands fa-twitter"></i></a>
-                        <a href="#" class="hover:text-white hover:bg-etBlue hover:border-etBlue"><i class="fa-brands fa-linkedin-in"></i></a>
-                        <a href="#" class="hover:text-white hover:bg-etBlue hover:border-etBlue"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="https://www.facebook.com/profile.php?id=100067809792113" class="hover:text-white hover:bg-etBlue hover:border-etBlue"><i class="fa-brands fa-facebook-f"></i></a>
+                        <a href="https://www.tiktok.com/@b.pro.manyar" class="hover:text-white hover:bg-etBlue hover:border-etBlue"><i class="fa-brands fa-tiktok"></i></a>
+                        <a href="https://www.youtube.com/channel/UCJXFxBhG2AZfTFcICC8l1MQ/videos" class="hover:text-white hover:bg-etBlue hover:border-etBlue"><i class="fa-brands fa-youtube"></i></a>
+                        <a href="https://www.instagram.com/b.pro.manyar" class="hover:text-white hover:bg-etBlue hover:border-etBlue"><i class="fa-brands fa-instagram"></i></a>
                     </div>
                 </div>
 
@@ -88,53 +88,53 @@
 
                     <ul class="space-y-[17px] text-[16px] font-light text-[#f2f2f2]">
                         <li>
-                            <a href="#" class="flex items-center gap-[10px] hover:text-etBlue group">
+                            <a href="/events/" class="flex items-center gap-[10px] hover:text-etBlue group">
                                 <span class="icon">
                                     <svg width="12" height="16" viewBox="0 0 12 16" fill="none" xmlns="http://www.w3.org/2000/svg">
                                         <path d="M0 15.875V2.28125C0 1.51953 0.615234 0.875 1.40625 0.875H9.84375C10.6055 0.875 11.25 1.51953 11.25 2.28125V15.875L5.625 12.5938L0 15.875Z" class="fill-transparent stroke-white group-hover:stroke-etBlue group-hover:fill-etBlue transition" />
                                     </svg>
                                 </span>
-                                <span class="txt">Outdoor worships</span>
+                                <span class="txt">Heart for The Lost</span>
                             </a>
                         </li>
                         <li>
-                            <a href="#" class="flex items-center gap-[10px] hover:text-etBlue group">
+                            <a href="/events/" class="flex items-center gap-[10px] hover:text-etBlue group">
                                 <span class="icon">
                                     <svg width="12" height="16" viewBox="0 0 12 16" fill="none" xmlns="http://www.w3.org/2000/svg">
                                         <path d="M0 15.875V2.28125C0 1.51953 0.615234 0.875 1.40625 0.875H9.84375C10.6055 0.875 11.25 1.51953 11.25 2.28125V15.875L5.625 12.5938L0 15.875Z" class="fill-transparent stroke-white group-hover:stroke-etBlue group-hover:fill-etBlue transition" />
                                     </svg>
                                 </span>
-                                <span class="txt">Indoor worships</span>
+                                <span class="txt">Agent of Christ</span>
                             </a>
                         </li>
                         <li>
-                            <a href="#" class="flex items-center gap-[10px] hover:text-etBlue group">
+                            <a href="/events/" class="flex items-center gap-[10px] hover:text-etBlue group">
                                 <span class="icon">
                                     <svg width="12" height="16" viewBox="0 0 12 16" fill="none" xmlns="http://www.w3.org/2000/svg">
                                         <path d="M0 15.875V2.28125C0 1.51953 0.615234 0.875 1.40625 0.875H9.84375C10.6055 0.875 11.25 1.51953 11.25 2.28125V15.875L5.625 12.5938L0 15.875Z" class="fill-transparent stroke-white group-hover:stroke-etBlue group-hover:fill-etBlue transition" />
                                     </svg>
                                 </span>
-                                <span class="txt">Festivals</span>
+                                <span class="txt">Discover Cyber Security and Financial Trap</span>
                             </a>
                         </li>
                         <li>
-                            <a href="#" class="flex items-center gap-[10px] hover:text-etBlue group">
+                            <a href="/events/" class="flex items-center gap-[10px] hover:text-etBlue group">
                                 <span class="icon">
                                     <svg width="12" height="16" viewBox="0 0 12 16" fill="none" xmlns="http://www.w3.org/2000/svg">
                                         <path d="M0 15.875V2.28125C0 1.51953 0.615234 0.875 1.40625 0.875H9.84375C10.6055 0.875 11.25 1.51953 11.25 2.28125V15.875L5.625 12.5938L0 15.875Z" class="fill-transparent stroke-white group-hover:stroke-etBlue group-hover:fill-etBlue transition" />
                                     </svg>
                                 </span>
-                                <span class="txt">worships</span>
+                                <span class="txt">Liberty in Christ</span>
                             </a>
                         </li>
                         <li>
-                            <a href="#" class="flex items-center gap-[10px] hover:text-etBlue group">
+                            <a href="/events/" class="flex items-center gap-[10px] hover:text-etBlue group">
                                 <span class="icon">
                                     <svg width="12" height="16" viewBox="0 0 12 16" fill="none" xmlns="http://www.w3.org/2000/svg">
                                         <path d="M0 15.875V2.28125C0 1.51953 0.615234 0.875 1.40625 0.875H9.84375C10.6055 0.875 11.25 1.51953 11.25 2.28125V15.875L5.625 12.5938L0 15.875Z" class="fill-transparent stroke-white group-hover:stroke-etBlue group-hover:fill-etBlue transition" />
                                     </svg>
                                 </span>
-                                <span class="txt">Event Calendar</span>
+                                <span class="txt">Built to Build</span>
                             </a>
                         </li>
                     </ul>
@@ -146,43 +146,43 @@
 
                     <ul class="space-y-[17px] text-[16px] font-light text-[#f2f2f2]">
                         <li>
-                            <a href="#" class="flex items-center gap-[10px] hover:text-etBlue group">
+                            <a href="/about/" class="flex items-center gap-[10px] hover:text-etBlue group">
                                 <span class="icon">
                                     <svg width="12" height="16" viewBox="0 0 12 16" fill="none" xmlns="http://www.w3.org/2000/svg">
                                         <path d="M0 15.875V2.28125C0 1.51953 0.615234 0.875 1.40625 0.875H9.84375C10.6055 0.875 11.25 1.51953 11.25 2.28125V15.875L5.625 12.5938L0 15.875Z" class="fill-transparent stroke-white group-hover:stroke-etBlue group-hover:fill-etBlue transition" />
                                     </svg>
                                 </span>
-                                <span class="txt">Log In</span>
+                                <span class="txt">About</span>
                             </a>
                         </li>
                         <li>
-                            <a href="#" class="flex items-center gap-[10px] hover:text-etBlue group">
+                            <a href="/services/" class="flex items-center gap-[10px] hover:text-etBlue group">
                                 <span class="icon">
                                     <svg width="12" height="16" viewBox="0 0 12 16" fill="none" xmlns="http://www.w3.org/2000/svg">
                                         <path d="M0 15.875V2.28125C0 1.51953 0.615234 0.875 1.40625 0.875H9.84375C10.6055 0.875 11.25 1.51953 11.25 2.28125V15.875L5.625 12.5938L0 15.875Z" class="fill-transparent stroke-white group-hover:stroke-etBlue group-hover:fill-etBlue transition" />
                                     </svg>
                                 </span>
-                                <span class="txt">Register</span>
+                                <span class="txt">Services</span>
                             </a>
                         </li>
                         <li>
-                            <a href="#" class="flex items-center gap-[10px] hover:text-etBlue group">
+                            <a href="/journal/" class="flex items-center gap-[10px] hover:text-etBlue group">
                                 <span class="icon">
                                     <svg width="12" height="16" viewBox="0 0 12 16" fill="none" xmlns="http://www.w3.org/2000/svg">
                                         <path d="M0 15.875V2.28125C0 1.51953 0.615234 0.875 1.40625 0.875H9.84375C10.6055 0.875 11.25 1.51953 11.25 2.28125V15.875L5.625 12.5938L0 15.875Z" class="fill-transparent stroke-white group-hover:stroke-etBlue group-hover:fill-etBlue transition" />
                                     </svg>
                                 </span>
-                                <span class="txt">About Bethany Professional</span>
+                                <span class="txt">Journa</span>
                             </a>
                         </li>
                         <li>
-                            <a href="#" class="flex items-center gap-[10px] hover:text-etBlue group">
+                            <a href="/bible/" class="flex items-center gap-[10px] hover:text-etBlue group">
                                 <span class="icon">
                                     <svg width="12" height="16" viewBox="0 0 12 16" fill="none" xmlns="http://www.w3.org/2000/svg">
                                         <path d="M0 15.875V2.28125C0 1.51953 0.615234 0.875 1.40625 0.875H9.84375C10.6055 0.875 11.25 1.51953 11.25 2.28125V15.875L5.625 12.5938L0 15.875Z" class="fill-transparent stroke-white group-hover:stroke-etBlue group-hover:fill-etBlue transition" />
                                     </svg>
                                 </span>
-                                <span class="txt">How It Works</span>
+                                <span class="txt">Bible</span>
                             </a>
                         </li>
                     </ul>
@@ -196,7 +196,7 @@
                         <!-- single upcoming events -->
                         <div class="flex items-center gap-x-[30px] xxs:gap-x-[15px]">
                             <div class="rounded-[15px] overflow-hidden shrink-0">
-                                <img src="<?php echo get_template_directory_uri(); ?>/assets/img/cta-bg-2.jpg" alt="Event Image" class="w-[80px] aspect-square">
+                                <img src="<?php echo get_template_directory_uri(); ?>/assets/new-img/1.png" alt="Event Image" class="w-[80px] aspect-square">
                             </div>
 
                             <div>
@@ -222,17 +222,17 @@
                                             </g>
                                         </svg>
                                     </span>
-                                    <span>24, jan - 2024</span>
+                                    <span>03 Aug 2024</span>
                                 </span>
 
-                                <h6 class="font-medium text-[20px] text-white"><a href="news-details.html" class="hover:text-etBlue">Pastor Meetup</a></h6>
+                                <h6 class="font-medium text-[20px] text-white"><a href="#" class="hover:text-etBlue">Heart for The Lost</a></h6>
                             </div>
                         </div>
 
                         <!-- single upcoming events -->
                         <div class="flex items-center gap-x-[30px] xxs:gap-x-[15px]">
                             <div class="rounded-[15px] overflow-hidden shrink-0">
-                                <img src="<?php echo get_template_directory_uri(); ?>/assets/img/evenet-sched-2.jpg" alt="Event Image" class="w-[80px] aspect-square">
+                                <img src="<?php echo get_template_directory_uri(); ?>/assets/new-img/3.png" alt="Event Image" class="w-[80px] aspect-square">
                             </div>
 
                             <div>
@@ -258,10 +258,10 @@
                                             </g>
                                         </svg>
                                     </span>
-                                    <span>24, jan - 2024</span>
+                                    <span>10 Aug 2024</span>
                                 </span>
 
-                                <h6 class="font-medium text-[20px] text-white"><a href="news-details.html" class="hover:text-etBlue">Pastor Meetup</a></h6>
+                                <h6 class="font-medium text-[20px] text-white"><a href="news-details.html" class="hover:text-etBlue">Agent of Christ.</a></h6>
                             </div>
                         </div>
                     </div>
