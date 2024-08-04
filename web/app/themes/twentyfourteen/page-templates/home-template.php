@@ -377,7 +377,7 @@ get_header('main');
 
                         <button data-tab="tab2" class="tab-nav bg-etBlack rounded-full px-[20px] py-[3px] text-[16px] font-medium text-white hover:bg-etBlue">Day 02</button>
 
-                        <button data-tab="tab3" class="tab-nav bg-etBlack rounded-full px-[20px] py-[3px] text-[16px] font-medium text-white hover:bg-etBlue">Day 03</button>
+                        <!-- <button data-tab="tab3" class="tab-nav bg-etBlack rounded-full px-[20px] py-[3px] text-[16px] font-medium text-white hover:bg-etBlue">Day 03</button> -->
                     </div>
                 </div>
             </div>
@@ -391,7 +391,7 @@ get_header('main');
                             <!-- img -->
                             <div class="w-[240px] shrink-0 relative">
                                 <div class="et-2-schedule-img absolute md:static md:-mt-[45px] bottom-0 md:before:content-none before:absolute before:top-0 before:left-[100%] before:w-full before:h-full before:bg-gradient-to-br before:from-etBlue before:to-[#0B3998] before:-z-[1]">
-                                    <img src="<?= get_template_directory_uri(); ?>/assets/img/evenet-sched-1.jpg" alt="scehduled-event-cover" class="rounded-[20px] rounded-tr-none object-cover aspect-[8/9]">
+                                    <img src="<?= get_template_directory_uri(); ?>/assets/new-img/1.png" alt="scehduled-event-cover" class="rounded-[20px] rounded-tr-none object-cover aspect-[8/9]">
                                 </div>
                             </div>
 
@@ -424,7 +424,7 @@ get_header('main');
                                                 </svg>
                                             </span>
 
-                                            <span class="text-etGray font-normal text-[16px]">24, Jan - 2024</span>
+                                            <span class="text-etGray font-normal text-[16px]">03 Aug 2024</span>
                                         </div>
 
                                         <div class="time flex items-center gap-[10px]  xxs:hidden">
@@ -435,7 +435,7 @@ get_header('main');
                                                 </svg>
                                             </span>
 
-                                            <span class="text-etGray font-normal text-[16px]">10:00 AM – 2.00 PM</span>
+                                            <span class="text-etGray font-normal text-[16px]">at 17.30 PM</span>
                                         </div>
                                     </div>
 
@@ -449,7 +449,7 @@ get_header('main');
                                                 <path d="M5.99998 0C2.80482 0 0.205383 2.59944 0.205383 5.79456C0.205383 9.75981 5.39098 15.581 5.61176 15.8269C5.81913 16.0579 6.1812 16.0575 6.3882 15.8269C6.60898 15.581 11.7946 9.75981 11.7946 5.79456C11.7945 2.59944 9.1951 0 5.99998 0ZM5.99998 8.70997C4.39241 8.70997 3.0846 7.40212 3.0846 5.79456C3.0846 4.187 4.39245 2.87919 5.99998 2.87919C7.60751 2.87919 8.91532 4.18703 8.91532 5.79459C8.91532 7.40216 7.60751 8.70997 5.99998 8.70997Z" fill="var(--et-blue)" />
                                             </svg>
                                         </span>
-                                        <h6 class="text-[16px] text-etGray">135 W, 46nd Street, New York</h6>
+                                        <h6 class="text-[16px] text-etGray">Bethany Manyar</h6>
                                     </div>
                                 </div>
 
@@ -477,7 +477,7 @@ get_header('main');
                             <!-- img -->
                             <div class="w-[240px] shrink-0 relative">
                                 <div class="et-2-schedule-img absolute md:static md:-mt-[45px] bottom-0 md:before:content-none before:absolute before:top-0 before:left-[100%] before:w-full before:h-full before:bg-gradient-to-br before:from-etBlue before:to-[#0B3998] before:-z-[1]">
-                                    <img src="<?= get_template_directory_uri(); ?>/assets/img/evenet-sched-2.jpg" alt="scehduled-event-cover" class="rounded-[20px] rounded-tr-none object-cover aspect-[8/9]">
+                                    <img src="<?= get_template_directory_uri(); ?>/assets/new-img/3.png" alt="scehduled-event-cover" class="rounded-[20px] rounded-tr-none object-cover aspect-[8/9]">
                                 </div>
                             </div>
 
@@ -510,7 +510,7 @@ get_header('main');
                                                 </svg>
                                             </span>
 
-                                            <span class="text-etGray font-normal text-[16px]">24, Jan - 2024</span>
+                                            <span class="text-etGray font-normal text-[16px]">10 Aug 2024</span>
                                         </div>
 
                                         <div class="time flex items-center gap-[10px] xxs:hidden">
@@ -521,12 +521,12 @@ get_header('main');
                                                 </svg>
                                             </span>
 
-                                            <span class="text-etGray font-normal text-[16px]">10:00 AM – 2.00 PM</span>
+                                            <span class="text-etGray font-normal text-[16px]">17.30 PM</span>
                                         </div>
                                     </div>
 
                                     <!-- title -->
-                                    <h3 class="et-schedule-title text-[24px] sm:text-[22px] font-regular text-etBlack mb-[16px] anim-text"><a href="#" class="hover:text-etBlue">Siempre Son Flores" Musica Cubana Salsa Jazz adipi scing elit.</a></h3>
+                                    <h3 class="et-schedule-title text-[24px] sm:text-[22px] font-regular text-etBlack mb-[16px] anim-text"><a href="#" class="hover:text-etBlue">Agent of Christ.</a></h3>
 
                                     <!-- location -->
                                     <div class="et-schedule-loaction flex items-center gap-[12px]">
@@ -535,7 +535,7 @@ get_header('main');
                                                 <path d="M5.99998 0C2.80482 0 0.205383 2.59944 0.205383 5.79456C0.205383 9.75981 5.39098 15.581 5.61176 15.8269C5.81913 16.0579 6.1812 16.0575 6.3882 15.8269C6.60898 15.581 11.7946 9.75981 11.7946 5.79456C11.7945 2.59944 9.1951 0 5.99998 0ZM5.99998 8.70997C4.39241 8.70997 3.0846 7.40212 3.0846 5.79456C3.0846 4.187 4.39245 2.87919 5.99998 2.87919C7.60751 2.87919 8.91532 4.18703 8.91532 5.79459C8.91532 7.40216 7.60751 8.70997 5.99998 8.70997Z" fill="var(--et-blue)" />
                                             </svg>
                                         </span>
-                                        <h6 class="text-[16px] text-etGray">135 W, 46nd Street, New York</h6>
+                                        <h6 class="text-[16px] text-etGray">Bethany Manyar</h6>
                                     </div>
                                 </div>
 
@@ -563,7 +563,7 @@ get_header('main');
                             <!-- img -->
                             <div class="w-[240px] shrink-0 relative">
                                 <div class="et-2-schedule-img absolute md:static md:-mt-[45px] bottom-0 md:before:content-none before:absolute before:top-0 before:left-[100%] before:w-full before:h-full before:bg-gradient-to-br before:from-etBlue before:to-[#0B3998] before:-z-[1]">
-                                    <img src="<?= get_template_directory_uri(); ?>/assets/img/evenet-sched-3.jpg" alt="scehduled-event-cover" class="rounded-[20px] rounded-tr-none object-cover aspect-[8/9]">
+                                    <img src="<?= get_template_directory_uri(); ?>/assets/new-img/4.png" alt="scehduled-event-cover" class="rounded-[20px] rounded-tr-none object-cover aspect-[8/9]">
                                 </div>
                             </div>
 
@@ -596,7 +596,7 @@ get_header('main');
                                                 </svg>
                                             </span>
 
-                                            <span class="text-etGray font-normal text-[16px]">24, Jan - 2024</span>
+                                            <span class="text-etGray font-normal text-[16px]">17 Aug 2024</span>
                                         </div>
 
                                         <div class="time flex items-center gap-[10px] xxs:hidden">
@@ -607,12 +607,12 @@ get_header('main');
                                                 </svg>
                                             </span>
 
-                                            <span class="text-etGray font-normal text-[16px]">10:00 AM – 2.00 PM</span>
+                                            <span class="text-etGray font-normal text-[16px]">13.00 PM</span>
                                         </div>
                                     </div>
 
                                     <!-- title -->
-                                    <h3 class="et-schedule-title text-[24px] sm:text-[22px] font-regular text-etBlack mb-[16px] anim-text"><a href="#" class="hover:text-etBlue">Siempre Son Flores" Musica Cubana Salsa Jazz adipi scing elit.</a></h3>
+                                    <h3 class="et-schedule-title text-[24px] sm:text-[22px] font-regular text-etBlack mb-[16px] anim-text"><a href="#" class="hover:text-etBlue">Discover Cyber Security and Financial Trap.</a></h3>
 
                                     <!-- location -->
                                     <div class="et-schedule-loaction flex items-center gap-[12px]">
@@ -621,7 +621,7 @@ get_header('main');
                                                 <path d="M5.99998 0C2.80482 0 0.205383 2.59944 0.205383 5.79456C0.205383 9.75981 5.39098 15.581 5.61176 15.8269C5.81913 16.0579 6.1812 16.0575 6.3882 15.8269C6.60898 15.581 11.7946 9.75981 11.7946 5.79456C11.7945 2.59944 9.1951 0 5.99998 0ZM5.99998 8.70997C4.39241 8.70997 3.0846 7.40212 3.0846 5.79456C3.0846 4.187 4.39245 2.87919 5.99998 2.87919C7.60751 2.87919 8.91532 4.18703 8.91532 5.79459C8.91532 7.40216 7.60751 8.70997 5.99998 8.70997Z" fill="var(--et-blue)" />
                                             </svg>
                                         </span>
-                                        <h6 class="text-[16px] text-etGray">135 W, 46nd Street, New York</h6>
+                                        <h6 class="text-[16px] text-etGray">Bethany Manyar</h6>
                                     </div>
                                 </div>
 
@@ -653,7 +653,7 @@ get_header('main');
                             <!-- img -->
                             <div class="w-[240px] shrink-0 relative">
                                 <div class="et-2-schedule-img absolute md:static md:-mt-[45px] bottom-0 md:before:content-none before:absolute before:top-0 before:left-[100%] before:w-full before:h-full before:bg-gradient-to-br before:from-etBlue before:to-[#0B3998] before:-z-[1]">
-                                    <img src="<?= get_template_directory_uri(); ?>/assets/img/evenet-sched-2.jpg" alt="scehduled-event-cover" class="rounded-[20px] rounded-tr-none object-cover aspect-[8/9]">
+                                    <img src="<?= get_template_directory_uri(); ?>/assets/new-img/4.png" alt="scehduled-event-cover" class="rounded-[20px] rounded-tr-none object-cover aspect-[8/9]">
                                 </div>
                             </div>
 
@@ -686,7 +686,7 @@ get_header('main');
                                                 </svg>
                                             </span>
 
-                                            <span class="text-etGray font-normal text-[16px]">24, Jan - 2024</span>
+                                            <span class="text-etGray font-normal text-[16px]">17 Aug 2024</span>
                                         </div>
 
                                         <div class="time flex items-center gap-[10px] xxs:hidden">
@@ -697,12 +697,12 @@ get_header('main');
                                                 </svg>
                                             </span>
 
-                                            <span class="text-etGray font-normal text-[16px]">10:00 AM – 2.00 PM</span>
+                                            <span class="text-etGray font-normal text-[16px]">17.30 PM</span>
                                         </div>
                                     </div>
 
                                     <!-- title -->
-                                    <h3 class="et-schedule-title text-[24px] sm:text-[22px] font-regular text-etBlack mb-[16px] anim-text"><a href="#" class="hover:text-etBlue">Siempre Son Flores" Musica Cubana Salsa Jazz adipi scing elit.</a></h3>
+                                    <h3 class="et-schedule-title text-[24px] sm:text-[22px] font-regular text-etBlack mb-[16px] anim-text"><a href="#" class="hover:text-etBlue">Liberty in Christ.</a></h3>
 
                                     <!-- location -->
                                     <div class="et-schedule-loaction flex items-center gap-[12px]">
@@ -711,7 +711,7 @@ get_header('main');
                                                 <path d="M5.99998 0C2.80482 0 0.205383 2.59944 0.205383 5.79456C0.205383 9.75981 5.39098 15.581 5.61176 15.8269C5.81913 16.0579 6.1812 16.0575 6.3882 15.8269C6.60898 15.581 11.7946 9.75981 11.7946 5.79456C11.7945 2.59944 9.1951 0 5.99998 0ZM5.99998 8.70997C4.39241 8.70997 3.0846 7.40212 3.0846 5.79456C3.0846 4.187 4.39245 2.87919 5.99998 2.87919C7.60751 2.87919 8.91532 4.18703 8.91532 5.79459C8.91532 7.40216 7.60751 8.70997 5.99998 8.70997Z" fill="var(--et-blue)" />
                                             </svg>
                                         </span>
-                                        <h6 class="text-[16px] text-etGray">135 W, 46nd Street, New York</h6>
+                                        <h6 class="text-[16px] text-etGray">Bethany Manyar</h6>
                                     </div>
                                 </div>
 
@@ -739,7 +739,7 @@ get_header('main');
                             <!-- img -->
                             <div class="w-[240px] shrink-0 relative">
                                 <div class="et-2-schedule-img absolute md:static md:-mt-[45px] bottom-0 md:before:content-none before:absolute before:top-0 before:left-[100%] before:w-full before:h-full before:bg-gradient-to-br before:from-etBlue before:to-[#0B3998] before:-z-[1]">
-                                    <img src="<?= get_template_directory_uri(); ?>/assets/img/evenet-sched-3.jpg" alt="scehduled-event-cover" class="rounded-[20px] rounded-tr-none object-cover aspect-[8/9]">
+                                    <img src="<?= get_template_directory_uri(); ?>/assets/new-img/2.png" alt="scehduled-event-cover" class="rounded-[20px] rounded-tr-none object-cover aspect-[8/9]">
                                 </div>
                             </div>
 
@@ -772,7 +772,7 @@ get_header('main');
                                                 </svg>
                                             </span>
 
-                                            <span class="text-etGray font-normal text-[16px]">24, Jan - 2024</span>
+                                            <span class="text-etGray font-normal text-[16px]">24 Aug 2024</span>
                                         </div>
 
                                         <div class="time flex items-center gap-[10px] xxs:hidden">
@@ -783,12 +783,12 @@ get_header('main');
                                                 </svg>
                                             </span>
 
-                                            <span class="text-etGray font-normal text-[16px]">10:00 AM – 2.00 PM</span>
+                                            <span class="text-etGray font-normal text-[16px]">17.30 PM</span>
                                         </div>
                                     </div>
 
                                     <!-- title -->
-                                    <h3 class="et-schedule-title text-[24px] sm:text-[22px] font-regular text-etBlack mb-[16px] anim-text"><a href="#" class="hover:text-etBlue">Siempre Son Flores" Musica Cubana Salsa Jazz adipi scing elit.</a></h3>
+                                    <h3 class="et-schedule-title text-[24px] sm:text-[22px] font-regular text-etBlack mb-[16px] anim-text"><a href="#" class="hover:text-etBlue">We Are His Witness.</a></h3>
 
                                     <!-- location -->
                                     <div class="et-schedule-loaction flex items-center gap-[12px]">
@@ -797,7 +797,7 @@ get_header('main');
                                                 <path d="M5.99998 0C2.80482 0 0.205383 2.59944 0.205383 5.79456C0.205383 9.75981 5.39098 15.581 5.61176 15.8269C5.81913 16.0579 6.1812 16.0575 6.3882 15.8269C6.60898 15.581 11.7946 9.75981 11.7946 5.79456C11.7945 2.59944 9.1951 0 5.99998 0ZM5.99998 8.70997C4.39241 8.70997 3.0846 7.40212 3.0846 5.79456C3.0846 4.187 4.39245 2.87919 5.99998 2.87919C7.60751 2.87919 8.91532 4.18703 8.91532 5.79459C8.91532 7.40216 7.60751 8.70997 5.99998 8.70997Z" fill="var(--et-blue)" />
                                             </svg>
                                         </span>
-                                        <h6 class="text-[16px] text-etGray">135 W, 46nd Street, New York</h6>
+                                        <h6 class="text-[16px] text-etGray">Bethany Manyar</h6>
                                     </div>
                                 </div>
 
@@ -825,7 +825,7 @@ get_header('main');
                             <!-- img -->
                             <div class="w-[240px] shrink-0 relative">
                                 <div class="et-2-schedule-img absolute md:static md:-mt-[45px] bottom-0 md:before:content-none before:absolute before:top-0 before:left-[100%] before:w-full before:h-full before:bg-gradient-to-br before:from-etBlue before:to-[#0B3998] before:-z-[1]">
-                                    <img src="<?= get_template_directory_uri(); ?>/assets/img/evenet-sched-1.jpg" alt="scehduled-event-cover" class="rounded-[20px] rounded-tr-none object-cover aspect-[8/9]">
+                                    <img src="<?= get_template_directory_uri(); ?>/assets/new-img/4.png" alt="scehduled-event-cover" class="rounded-[20px] rounded-tr-none object-cover aspect-[8/9]">
                                 </div>
                             </div>
 
@@ -858,7 +858,7 @@ get_header('main');
                                                 </svg>
                                             </span>
 
-                                            <span class="text-etGray font-normal text-[16px]">24, Jan - 2024</span>
+                                            <span class="text-etGray font-normal text-[16px]">31 Aug 2024</span>
                                         </div>
 
                                         <div class="time flex items-center gap-[10px] xxs:hidden">
@@ -869,12 +869,12 @@ get_header('main');
                                                 </svg>
                                             </span>
 
-                                            <span class="text-etGray font-normal text-[16px]">10:00 AM – 2.00 PM</span>
+                                            <span class="text-etGray font-normal text-[16px]">17.30 PM</span>
                                         </div>
                                     </div>
 
                                     <!-- title -->
-                                    <h3 class="et-schedule-title text-[24px] sm:text-[22px] font-regular text-etBlack mb-[16px] anim-text"><a href="#" class="hover:text-etBlue">Siempre Son Flores" Musica Cubana Salsa Jazz adipi scing elit.</a></h3>
+                                    <h3 class="et-schedule-title text-[24px] sm:text-[22px] font-regular text-etBlack mb-[16px] anim-text"><a href="#" class="hover:text-etBlue">Built to Build.</a></h3>
 
                                     <!-- location -->
                                     <div class="et-schedule-loaction flex items-center gap-[12px]">
@@ -883,7 +883,7 @@ get_header('main');
                                                 <path d="M5.99998 0C2.80482 0 0.205383 2.59944 0.205383 5.79456C0.205383 9.75981 5.39098 15.581 5.61176 15.8269C5.81913 16.0579 6.1812 16.0575 6.3882 15.8269C6.60898 15.581 11.7946 9.75981 11.7946 5.79456C11.7945 2.59944 9.1951 0 5.99998 0ZM5.99998 8.70997C4.39241 8.70997 3.0846 7.40212 3.0846 5.79456C3.0846 4.187 4.39245 2.87919 5.99998 2.87919C7.60751 2.87919 8.91532 4.18703 8.91532 5.79459C8.91532 7.40216 7.60751 8.70997 5.99998 8.70997Z" fill="var(--et-blue)" />
                                             </svg>
                                         </span>
-                                        <h6 class="text-[16px] text-etGray">135 W, 46nd Street, New York</h6>
+                                        <h6 class="text-[16px] text-etGray">Bethany Manyar</h6>
                                     </div>
                                 </div>
 
