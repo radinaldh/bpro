@@ -5,88 +5,125 @@
  */
 
 get_header('main'); ?>
+
+<style>
+.single-fa {
+    background-color: #fff;
+    padding: 30px;
+    width: 80%;
+    margin: auto;
+}
+</style>
+
 <!-- BREADCRUMB SECTION START -->
-<section class="et-breadcrumb bg-[#000D83] pt-[210px] lg:pt-[190px] sm:pt-[160px] pb-[130px] lg:pb-[110px] sm:pb-[80px] relative z-[1] before:absolute before:inset-0 before:bg-[url('<?= get_template_directory_uri(); ?>/assets/img/breadcrumb-bg.jpg')] before:bg-no-repeat before:bg-cover before:bg-center before:-z-[1] before:opacity-30">
+<section
+    class="et-breadcrumb bg-[#000D83] pt-[210px] lg:pt-[190px] sm:pt-[160px] pb-[130px] lg:pb-[110px] sm:pb-[80px] relative z-[1] before:absolute before:inset-0 before:bg-[url('<?= get_template_directory_uri(); ?>/assets/img/breadcrumb-bg.jpg')] before:bg-no-repeat before:bg-cover before:bg-center before:-z-[1] before:opacity-30">
     <div class="container mx-auto max-w-[1200px] px-[12px] xl:max-w-full text-center text-white">
-        <h1 class="et-breadcrumb-title font-medium text-[56px] md:text-[50px] xs:text-[45px]">Family Altar</h1>
+        <h1 class="et-breadcrumb-title font-medium text-[56px] md:text-[50px] xs:text-[45px]">Family Altar Bpro</h1>
+        <p class="font-medium text-[16px] pb-[30px]">Kesatuan Hati - Tumbuh Bersama - Memenangkan Jiwa</p>
         <ul class="inline-flex items-center gap-[10px] font-medium text-[16px]">
             <li class="opacity-80"><a href="index-2.html" class="hover:text-etBlue">Home</a></li>
             <li><i class="fa-solid fa-angle-right"></i><i class="fa-solid fa-angle-right"></i></li>
-            <li class="current-page">Family Altar</li>
+            <li class="current-page">Family Altar Bpro</li>
         </ul>
     </div>
 </section>
 <!-- BREADCRUMB SECTION END -->
 
 
-<!-- ABOUT SECTION START -->
 <section class="et-about py-[130px] xl:py-[80px] md:py-[60px] overflow-hidden relative">
-    <div class="container mx-auto max-w-[calc(100%-39.1vw)] xxxl:max-w-[calc(100%-350px)] xl:max-w-[calc(100%-170px)] px-[12px] lg:max-w-full">
-        <div class="flex items-center md:flex-wrap gap-x-[60px] xxl:gap-x-[40px] lg:gap-x-[30px] gap-y-[40px] sm:gap-y-[40px] lg:justify-center">
+    <div
+        class="container mx-auto max-w-[calc(100%-39.1vw)] xxxl:max-w-[calc(100%-350px)] xl:max-w-[calc(100%-170px)] px-[12px] lg:max-w-full">
+        <div
+            class="flex items-center md:flex-wrap gap-x-[60px] xxl:gap-x-[40px] lg:gap-x-[30px] gap-y-[40px] sm:gap-y-[40px] lg:justify-center">
             <!-- left -->
-            <div class="et-about-img relative z-[1] md:w-auto shrink-0 max-w-full mr-[70px] md:mr-0 ml-[28px] xxxl:ml-[47px] md:ml-0 xs:w-[70%] xxs:w-[90%] xxs:ml-[47px]">
-                <img src="<?= get_template_directory_uri(); ?>/assets/img/about-img.jpg" alt="image" class="shrink-0 rounded-[10px]" />
-                <img src="<?= get_template_directory_uri(); ?>/assets/img/about-img-3.jpg" alt="image" class="et-about-floating-img absolute top-[45px] -right-[70px] shrink-0 rounded-[20px] border-white border-[10px] xs:hidden" />
+            <div
+                class="et-about-img relative z-[1] md:w-auto shrink-0 max-w-full mr-[70px] md:mr-0 ml-[28px] xxxl:ml-[47px] md:ml-0 xs:w-[70%] xxs:w-[90%] xxs:ml-[47px]">
+                <img src="<?= get_template_directory_uri()?>/assets/img/about-img.jpg" alt="image"
+                    class="shrink-0 rounded-[10px]" />
+                <img src="<?= get_template_directory_uri()?>/assets/img/about-img-3.jpg" alt="image"
+                    class="et-about-floating-img absolute top-[45px] -right-[70px] shrink-0 rounded-[20px] border-white border-[10px] xs:hidden" />
 
                 <!-- vectors -->
                 <div class="et-about-vectors xs:hidden">
-                    <img src="<?= get_template_directory_uri(); ?>/assets/img/about-img-vector-1.png" alt="vector" class="et-about-vector-1 absolute -left-[47px] top-[20px] -z-[1]" />
-                    <img src="<?= get_template_directory_uri(); ?>/assets/img/about-img-vector-2.png" alt="vector" class="et-about-vector-2 absolute -left-[27px] top-[41px] -z-[1]" />
-                    <img src="<?= get_template_directory_uri(); ?>/assets/img/about-img-vector-3.png" alt="vector" class="et-about-vector absolute -right-[24px] bottom-[34px] -z-[1]" />
+                    <img src="<?= get_template_directory_uri()?>/assets/img/about-img-vector-1.png" alt="vector"
+                        class="et-about-vector-1 absolute -left-[47px] top-[20px] -z-[1]" />
+                    <img src="<?= get_template_directory_uri()?>/assets/img/about-img-vector-2.png" alt="vector"
+                        class="et-about-vector-2 absolute -left-[27px] top-[41px] -z-[1]" />
+                    <img src="<?= get_template_directory_uri()?>/assets/img/about-img-vector-3.png" alt="vector"
+                        class="et-about-vector absolute -right-[24px] bottom-[34px] -z-[1]" />
                 </div>
 
                 <!-- video btn -->
-                <div class="absolute bottom-[50px] -left-[47px] lg:-left-[27px] md:-left-[47px] w-[180px] lg:w-[160px] aspect-square bg-[url('<?= get_template_directory_uri(); ?>/assets/img/about-video-btn-bg.jpg')] text-center text-[22px] text-white z-[1] flex items-center justify-center before:absolute before:bg-etBlue/80 before:-z-[1] before:inset-0 after:bg-etBlack after:w-[47px] after:h-[30px] after:absolute after:top-[100%] after:left-0 after:-z-[2] after:skew-y-[30deg] after:-translate-y-[17px]">
-                    <a href="https://www.youtube.com/watch?v=AQleI8oFqZo&amp;t=1s" data-fslightbox="about-video" class="w-[107px] aspect-square rounded-full border border-white/20 flex justify-center items-center text-etBlue relative z-[1] text-[18px] before:absolute before:w-[56px] before:h-[56px] before:bg-white before:rounded-full before:-z-[1] hover:text-black"><i class="fa-solid fa-play"></i></a>
+                <div
+                    class="absolute bottom-[50px] -left-[47px] lg:-left-[27px] md:-left-[47px] w-[180px] lg:w-[160px] aspect-square bg-[url('assets/img/about-video-btn-bg.jpg')] text-center text-[22px] text-white z-[1] flex items-center justify-center before:absolute before:bg-etBlue/80 before:-z-[1] before:inset-0 after:bg-etBlack after:w-[47px] after:h-[30px] after:absolute after:top-[100%] after:left-0 after:-z-[2] after:skew-y-[30deg] after:-translate-y-[17px]">
+                    <a href="https://www.youtube.com/watch?v=AQleI8oFqZo&amp;t=1s" data-fslightbox="about-video"
+                        class="w-[107px] aspect-square rounded-full border border-white/20 flex justify-center items-center text-etBlue relative z-[1] text-[18px] before:absolute before:w-[56px] before:h-[56px] before:bg-white before:rounded-full before:-z-[1] hover:text-black"><i
+                            class="fa-solid fa-play"></i></a>
                 </div>
             </div>
 
             <!-- right -->
             <div class="et-about__txt">
-                <h6 class="et-section-sub-title anim-text">About Bethany</h6>
-                <h2 class="et-section-title mb-[24px] md:mb-[19px] anim-text">Know More About The Bethany </h2>
 
-                <p class="mb-[30px] text-[16px] font-light text-etGray md:mb-[30px] rev-slide-up">
-                    There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable.
-                </p>
-
-                <div class="flex xxs:flex-wrap items-center gap-[20px] pt-[30px] border-t border-[#D9D9D9] mb-[50px] xxs:mb-[30px] rev-slide-up">
-                    <div class="shrink-0 h-[80px] w-[80px] rounded-[6px] shadow-[0_4px_50px_10px_rgba(18,96,254,0.10)] flex items-center justify-center">
-                        <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <g clip-path="url(#clip0_6038_295)">
-                                <path d="M35.4168 33.3346H28.4501C27.7601 33.3346 27.2001 32.7746 27.2001 32.0846C27.2001 31.3946 27.7601 30.8346 28.4501 30.8346H34.5401L36.9651 24.168H3.03343L5.45843 30.8346H11.5501C12.2401 30.8346 12.8001 31.3946 12.8001 32.0846C12.8001 32.7746 12.2401 33.3346 11.5501 33.3346H4.58343C4.05843 33.3346 3.58843 33.0063 3.40843 32.5113L0.0751012 23.3446C-0.0632322 22.9613 -0.00823216 22.5346 0.226768 22.1996C0.460101 21.8663 0.841768 21.668 1.2501 21.668H38.7501C39.1584 21.668 39.5401 21.8663 39.7734 22.2013C40.0084 22.5346 40.0634 22.963 39.9251 23.3463L36.5918 32.513C36.4118 33.0063 35.9418 33.3346 35.4168 33.3346Z" fill="#1260FE" />
-                                <path d="M27.0849 40.0013C27.0216 40.0013 26.9583 39.9963 26.8933 39.9863C26.2116 39.8813 25.7433 39.243 25.8483 38.5613L27.2933 29.168H12.7066L14.1516 38.5613C14.2566 39.2446 13.7883 39.8813 13.1066 39.9863C12.4249 40.098 11.7849 39.6246 11.6816 38.9413L10.0149 28.108C9.95994 27.748 10.0633 27.3796 10.3016 27.103C10.5399 26.8263 10.8849 26.668 11.2499 26.668H28.7499C29.1149 26.668 29.4616 26.828 29.6983 27.1046C29.9349 27.3813 30.0399 27.748 29.9849 28.1096L28.3183 38.943C28.2249 39.5596 27.6916 40.0013 27.0849 40.0013Z" fill="#1260FE" />
-                                <path d="M37.5 23.7498C36.81 23.7498 36.25 23.1898 36.25 22.4998C36.25 19.2015 34.4866 16.0798 31.6483 14.3515C31.0583 13.9915 30.8716 13.2232 31.2316 12.6332C31.5916 12.0432 32.36 11.8565 32.95 12.2165C36.5266 14.3965 38.7483 18.3365 38.7483 22.4998C38.75 23.1898 38.19 23.7498 37.5 23.7498Z" fill="#1260FE" />
-                                <path d="M30.8333 15C32.214 15 33.3333 13.8807 33.3333 12.5C33.3333 11.1193 32.214 10 30.8333 10C29.4525 10 28.3333 11.1193 28.3333 12.5C28.3333 13.8807 29.4525 15 30.8333 15Z" fill="#1260FE" />
-                                <path d="M19.9999 13.3333C16.3233 13.3333 13.3333 10.3433 13.3333 6.66667C13.3333 2.99 16.3233 0 19.9999 0C23.6766 0 26.6666 2.99 26.6666 6.66667C26.6666 10.3433 23.6766 13.3333 19.9999 13.3333ZM19.9999 2.5C17.7016 2.5 15.8333 4.37 15.8333 6.66667C15.8333 8.96333 17.7016 10.8333 19.9999 10.8333C22.2983 10.8333 24.1666 8.96333 24.1666 6.66667C24.1666 4.37 22.2983 2.5 19.9999 2.5Z" fill="#1260FE" />
-                                <path d="M32.5 24.1667C31.81 24.1667 31.25 23.6067 31.25 22.9167C31.25 19.93 28.82 17.5 25.8333 17.5H14.1667C11.18 17.5 8.75 19.93 8.75 22.9167C8.75 23.6067 8.19 24.1667 7.5 24.1667C6.81 24.1667 6.25 23.6067 6.25 22.9167C6.25 18.5517 9.80167 15 14.1667 15H25.8333C30.1983 15 33.75 18.5517 33.75 22.9167C33.75 23.6067 33.19 24.1667 32.5 24.1667Z" fill="#1260FE" />
-                            </g>
-                            <defs>
-                                <clipPath id="clip0_6038_295">
-                                    <rect width="40" height="40" fill="white" />
-                                </clipPath>
-                            </defs>
-                        </svg>
-                    </div>
-
+                <div class="rev-slide-up">
                     <!-- txt -->
-                    <div>
-                        <h6 class="font-medium text-[18px] text-black mb-[8px]">Whence at the Conference</h6>
-                        <p class="text-[16px] font-light text-etGray">Embarrassing hidden in the middle All the Lorem Ipsum generators on the Internet repeat predefined chunks</p>
-                    </div>
-                </div>
+                    <div class="my-[30px]">
+                        <h6 class="et-section-sub-title anim-text">FA at a Glance </h6>
+                        <p class="my-[10px] text-[15px]">Kesatuan Hati – Tumbuh Bersama – Memenangkan Jiwa <br /><br />
 
-                <div class="flex flex-wrap items-center gap-x-[30px] gap-y-[16px] rev-slide-up">
-                    <a href="contact.html" class="et-btn bg-etBlue inline-flex items-center justify-center gap-x-[13px] h-[45px] px-[15px] text-white font-normal text-[17px] rounded-full hover:!bg-black hover:!text-white">Register Now</a>
+                            Kisah Para Rasul 2:46-47
+                            <br>
+                            Dengan bertekun dan dengan sehati mereka berkumpul tiap-tiap hari dalam Bait Allah. Mereka
+                            memecahkan roti di rumah masing-masing secara bergilir dan makan bersama-sama dengan gembira
+                            dan dengan tulus hati, sambil memuji Allah. Dan mereka disukai semua orang. Dan tiap-tiap
+                            hari Tuhan menambah jumlah mereka dengan orang yang diselamatkan.
 
-                    <div class="flex items-center gap-[10px]">
-                        <div class="flex *:-ml-[20px]">
-                            <img src="<?= get_template_directory_uri(); ?>/assets/img/reviewer-1.png" alt="Person" class="w-[60px] h-[60px] rounded-full border-[3px] border-white first:ml-0">
-                            <img src="<?= get_template_directory_uri(); ?>/assets/img/reviewer-2.png" alt="Person" class="w-[60px] h-[60px] rounded-full border-[3px] border-white first:ml-0">
-                            <img src="<?= get_template_directory_uri(); ?>/assets/img/reviewer-3.png" alt="Person" class="w-[60px] h-[60px] rounded-full border-[3px] border-white first:ml-0">
-                            <div class="w-[60px] h-[60px] rounded-full border-[3px] border-white first:ml-0 text-white bg-etBlue font-semibold flex items-center justify-center text-[16px]">25+</div>
-                        </div>
-                        <span class="uppercase font-semibold text-etBlue text-[16px]">Speakers</span>
+                            <br /><br />
+
+                            “Sudah berjemaat di gereja. Sudah datang ke ibadah. Sudah cukuplah.”
+                            Terkadang hal ini muncul dalam benak kita.
+
+
+                            <br /><br />
+
+                            Disadari atau tidak, setiap orang pasti mempunyai kebutuhan untuk bersosialisasi dengan
+                            orang lain. Entah sekedar obrolan ringan, curhat, atau sampai tukar pikiran untuk hal yang
+                            lebih serius. Setiap orang punya cerita hidup, dan setiap orang sejatinya – butuh bercerita.
+
+
+                            <br /><br />
+
+                            Dengan hanya sebatas berjemaat di gereja dan datang ke ibadah rutin saja, sepertinya tidak
+                            akan cukup untuk menjawab kebutuhan yang disebutkan tadi. Maksudnya? Menjawab kebutuhan
+                            bahwa kita perlu orang lain, kita perlu didengar, kita perlu diperhatikan.
+
+
+                            <br /><br />
+
+                            Itulah mengapa, kita butuh sebuah komunitas kecil. Komunitas yang bisa menerima kita apa
+                            adanya, simpel, relevan, dan saling support. Disini, komunitas kecil ini kami sebut dengan
+                            FA - Family Altar.
+
+                            <br /><br />
+
+                            FA akan menjadi wadah bagi kita untuk berkumpul, duduk dan ngobrol bareng, saling berbagi
+                            cerita hidup, kesaksian dan prinsip kebenaran Firman. FA memberikan ruang untuk membangun
+                            persahabatan, berbagi keterbukaan, saling mendoakan, dan saling terhubung satu sama lain.
+
+                            <br /><br />
+
+                            Melalui FA, kita dapat menemukan keluarga baru di dalam Tuhan. Keluarga yang bersatu hati,
+                            bertumbuh bersama di dalam iman, karakter dan value kebenaran firman Tuhan. Keluarga yang
+                            menjadi tempat belajar untuk saling melayani dan membawa orang lain untuk mendekat kepada
+                            Kristus.
+                            <br><br>
+                            Di BPro, kami dengan tangan terbuka, mengundangmu untuk bergabung dalam kelompok FA yang ada
+                            di sekitarmu. Come and join us!
+                            <br><br>
+                            Be Success, Be Professional.
+
+                        </p>
                     </div>
                 </div>
             </div>
@@ -95,323 +132,210 @@ get_header('main'); ?>
 
     <!-- vectors -->
     <div class="xs:hidden">
-        <img src="<?= get_template_directory_uri(); ?>/assets/img/about-vector-1.png" alt="vector" class="pointer-events-none absolute top-[340px] left-[90px] -z-[1]">
-        <img src="<?= get_template_directory_uri(); ?>/assets/img/about-vector-2.png" alt="vector" class="pointer-events-none absolute top-[153px] right-0 -z-[1]">
+        <img src="<?= get_template_directory_uri()?>/assets/img/about-vector-1.png" alt="vector"
+            class="pointer-events-none absolute top-[340px] left-[90px] -z-[1]">
+        <img src="<?= get_template_directory_uri()?>/assets/img/about-vector-2.png" alt="vector"
+            class="pointer-events-none absolute top-[153px] right-0 -z-[1]">
     </div>
 </section>
-<!-- ABOUT SECTION END -->
+
+
+
 
 
 <!-- HISTORY SECTION START -->
-<section class="bg-[#001B52] relative z-[1] before:absolute before:inset-0 before:-z-[1] before:bg-[url('<?= get_template_directory_uri(); ?>/assets/img/history-bg.jpg')] before:bg-no-repeat before:bg-cover before:bg-center before:mix-blend-screen before:opacity-25 py-[130px] lg:py-[80px] md:py-[60px]">
+<section
+    class="bg-[#001B52] relative z-[1] before:absolute before:inset-0 before:-z-[1] before:bg-[url('<?= get_template_directory_uri(); ?>/assets/img/history-bg.jpg')] before:bg-no-repeat before:bg-cover before:bg-center before:mix-blend-screen before:opacity-25 py-[130px] lg:py-[80px] md:py-[60px]">
     <div class="container mx-auto max-w-[1200px] px-[12px] xl:max-w-full">
         <!-- heading -->
-        <div class="et-upcoming-events-heading text-center max-w-[60%] mx-auto mb-[52px] xl:mb-[42px] lg:mb-[32px] md:max-w-[70%] sm:max-w-[80%] xs:max-w-full">
-            <h6 class="et-section-sub-title !text-white">Company History</h6>
-            <h2 class="et-section-title !text-white">Our Bethany Internasal Design Conferences History</h2>
+        <div
+            class="et-upcoming-events-heading text-center max-w-[60%] mx-auto mb-[52px] xl:mb-[42px] lg:mb-[32px] md:max-w-[70%] sm:max-w-[80%] xs:max-w-full">
+            <h6 class="et-section-sub-title !text-white">Join Us at FA BPro</h6>
+            <h2 class="et-section-title !text-white">List Of Every Family Altar Time Detail And Location</h2>
         </div>
 
-        <!-- main slider -->
-        <div class="et-history-slider swiper ">
-            <div class="swiper-wrapper">
-                <!-- single timeline -->
-                <div class="swiper-slide">
-                    <div class="grid grid-cols-2 md:grid-cols-1 gap-[30px]">
-                        <div class="rounded-[20px] overflow-hidden">
-                            <img src="<?= get_template_directory_uri(); ?>/assets/img/history-img.jpg" alt="History image" class="w-full h-full object-cover">
-                        </div>
+        <div class="list-fa">
+            <div class="et-schedule justify-between rev-slide-up pb-[30px]">
+                <div
+                    class="single-fa px-[37px] sm:px-[22px] py-[30px] shadow-[0_4px_60px_rgba(18,96,254,0.12)] w-full rounded-[20px] flex gap-y-[15px] xs:flex-col items-center xs:items-start">
+                    <div
+                        class="et-schedule__heading w-[80%] pr-[40px] sm:pr-[25px] xs:pr-0 mr-[40px] sm:mr-[25px] xs:mr-0 border-r xs:border-r-0 border-[#d9d9d9]">
+                        <!-- date & time -->
+                        <div
+                            class="et-schedule-date-time border border-[rgba(217,217,217,0.89)] py-[7px] px-[15px] rounded-full inline-flex xxs:w-full items-center justify-center gap-x-[24px] gap-y-[10px] mb-[10px] xxs:border-0 xxs:p-0 xxs:justify-start">
+                            <div class="date flex items-center gap-[10px]">
+                                <span class="icon">
+                                    <svg width="16" height="17" viewBox="0 0 16 17" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <g clip-path="url(#clip0_2043_1443)">
+                                            <path
+                                                d="M14.125 1.75H13.375V0.5H12.125V1.75H3.875V0.5H2.625V1.75H1.875C0.841125 1.75 0 2.59113 0 3.625V14.625C0 15.6589 0.841125 16.5 1.875 16.5H14.125C15.1589 16.5 16 15.6589 16 14.625V3.625C16 2.59113 15.1589 1.75 14.125 1.75ZM14.75 14.625C14.75 14.9696 14.4696 15.25 14.125 15.25H1.875C1.53038 15.25 1.25 14.9696 1.25 14.625V6.375H14.75V14.625ZM14.75 5.125H1.25V3.625C1.25 3.28038 1.53038 3 1.875 3H2.625V4.25H3.875V3H12.125V4.25H13.375V3H14.125C14.4696 3 14.75 3.28038 14.75 3.625V5.125Z"
+                                                fill="var(--et-blue)" />
+                                            <path d="M3.625 7.6875H2.375V8.9375H3.625V7.6875Z" fill="var(--et-blue)" />
+                                            <path d="M6.125 7.6875H4.875V8.9375H6.125V7.6875Z" fill="var(--et-blue)" />
+                                            <path d="M8.625 7.6875H7.375V8.9375H8.625V7.6875Z" fill="var(--et-blue)" />
+                                            <path d="M11.125 7.6875H9.875V8.9375H11.125V7.6875Z"
+                                                fill="var(--et-blue)" />
+                                            <path d="M13.625 7.6875H12.375V8.9375H13.625V7.6875Z"
+                                                fill="var(--et-blue)" />
+                                            <path d="M3.625 10.1875H2.375V11.4375H3.625V10.1875Z"
+                                                fill="var(--et-blue)" />
+                                            <path d="M6.125 10.1875H4.875V11.4375H6.125V10.1875Z"
+                                                fill="var(--et-blue)" />
+                                            <path d="M8.625 10.1875H7.375V11.4375H8.625V10.1875Z"
+                                                fill="var(--et-blue)" />
+                                            <path d="M11.125 10.1875H9.875V11.4375H11.125V10.1875Z"
+                                                fill="var(--et-blue)" />
+                                            <path d="M3.625 12.6875H2.375V13.9375H3.625V12.6875Z"
+                                                fill="var(--et-blue)" />
+                                            <path d="M6.125 12.6875H4.875V13.9375H6.125V12.6875Z"
+                                                fill="var(--et-blue)" />
+                                            <path d="M8.625 12.6875H7.375V13.9375H8.625V12.6875Z"
+                                                fill="var(--et-blue)" />
+                                            <path d="M11.125 12.6875H9.875V13.9375H11.125V12.6875Z"
+                                                fill="var(--et-blue)" />
+                                            <path d="M13.625 10.1875H12.375V11.4375H13.625V10.1875Z"
+                                                fill="var(--et-blue)" />
+                                        </g>
+                                    </svg>
+                                </span>
 
-                        <div class="bg-white rounded-[20px] px-[30px] py-[20px] xxs:px-[20px]">
-                            <h5 class="text-[24px] font-normal mb-[13px]">Welcome to Bethany</h5>
-
-                            <div class="txt mb-[40px]">
-                                <p class="font-light text-[16px] text-etGray mb-[12px]">Experience Harmonia: where melodies transcend boundaries. Immerse in captiva performances that ignite the stage. Unleash your musical senses and embrace rhyth mic bliss.  where melodies transcend boundaries. Immerse in</p>
-                                <p class="font-light text-[16px] text-etGray">Experience Harmonia: where melodies transcend boundaries. Immerse in captiva performances that ignite the stage. Unleash your musical senses and embrace rhyth mic bliss.</p>
+                                <span class="text-etGray font-normal text-[16px]">Every Tuesday</span>
                             </div>
 
-                            <div class="flex flex-wrap gap-x-[40px] lg:gap-x-[20px] gap-y-[15px] items-center xxs:justify-center">
-                                <!-- founder -->
-                                <div class="flex items-center gap-x-[15px] border-r xxs:border-r-0 xxs:border-b border-[#d9d9d9] pr-[40px] lg:pr-[20px] xxs:pr-0 xxs:pb-[15px]">
-                                    <div class="img rounded-full overflow-hidden w-[65px] h-[65px] shrink-0">
-                                        <img src="<?= get_template_directory_uri(); ?>/assets/img/user.jpg" alt="founder image">
-                                    </div>
+                            <div class="time flex items-center gap-[10px] xxs:hidden">
+                                <span class="icon">
+                                    <svg width="16" height="17" viewBox="0 0 16 17" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M10.8505 9.91291L8.61967 8.23979V4.8316C8.61967 4.48891 8.34266 4.21191 7.99998 4.21191C7.65729 4.21191 7.38029 4.48891 7.38029 4.8316V8.54966C7.38029 8.74485 7.47201 8.92892 7.62817 9.04541L10.1069 10.9044C10.2138 10.985 10.3441 11.0285 10.478 11.0284C10.667 11.0284 10.8529 10.9435 10.9744 10.7799C11.1802 10.5066 11.1244 10.118 10.8505 9.91291Z"
+                                            fill="var(--et-blue)" />
+                                        <path
+                                            d="M8 0.5C3.58853 0.5 0 4.08853 0 8.5C0 12.9115 3.58853 16.5 8 16.5C12.4115 16.5 16 12.9115 16 8.5C16 4.08853 12.4115 0.5 8 0.5ZM8 15.2607C4.27266 15.2607 1.23934 12.2273 1.23934 8.5C1.23934 4.77266 4.27266 1.73934 8 1.73934C11.728 1.73934 14.7607 4.77266 14.7607 8.5C14.7607 12.2273 11.7273 15.2607 8 15.2607Z"
+                                            fill="var(--et-blue)" />
+                                    </svg>
+                                </span>
 
-                                    <div class="txt">
-                                        <h5 class="font-semibold text-[20px] text-etBlack mb-[2px]">Alexsia Jorgina</h5>
-                                        <span class="text-[15px] font-normal text-etGray">Co. Founder</span>
-                                    </div>
-                                </div>
-
-                                <!-- signature -->
-                                <div>
-                                    <img src="<?= get_template_directory_uri(); ?>/assets/img/signature.png" alt="signature">
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!-- single timeline -->
-                <div class="swiper-slide">
-                    <div class="grid grid-cols-2 md:grid-cols-1 gap-[30px]">
-                        <div class="rounded-[20px] overflow-hidden">
-                            <img src="<?= get_template_directory_uri(); ?>/assets/img/history-img.jpg" alt="History image" class="w-full h-full object-cover">
-                        </div>
-
-                        <div class="bg-white rounded-[20px] px-[30px] py-[20px] xxs:px-[20px]">
-                            <h5 class="text-[24px] font-normal mb-[13px]">Welcome to Bethany</h5>
-
-                            <div class="txt mb-[40px]">
-                                <p class="font-light text-[16px] text-etGray mb-[12px]">Experience Harmonia: where melodies transcend boundaries. Immerse in captiva performances that ignite the stage. Unleash your musical senses and embrace rhyth mic bliss.  where melodies transcend boundaries. Immerse in</p>
-                                <p class="font-light text-[16px] text-etGray">Experience Harmonia: where melodies transcend boundaries. Immerse in captiva performances that ignite the stage. Unleash your musical senses and embrace rhyth mic bliss.</p>
-                            </div>
-
-                            <div class="flex flex-wrap gap-x-[40px] lg:gap-x-[20px] gap-y-[15px] items-center xxs:justify-center">
-                                <!-- founder -->
-                                <div class="flex items-center gap-x-[15px] border-r xxs:border-r-0 xxs:border-b border-[#d9d9d9] pr-[40px] lg:pr-[20px] xxs:pr-0 xxs:pb-[15px]">
-                                    <div class="img rounded-full overflow-hidden w-[65px] h-[65px] shrink-0">
-                                        <img src="<?= get_template_directory_uri(); ?>/assets/img/user.jpg" alt="founder image">
-                                    </div>
-
-                                    <div class="txt">
-                                        <h5 class="font-semibold text-[20px] text-etBlack mb-[2px]">Alexsia Jorgina</h5>
-                                        <span class="text-[15px] font-normal text-etGray">Co. Founder</span>
-                                    </div>
-                                </div>
-
-                                <!-- signature -->
-                                <div>
-                                    <img src="<?= get_template_directory_uri(); ?>/assets/img/signature.png" alt="signature">
-                                </div>
+                                <span class="text-etGray font-normal text-[16px]">19.00</span>
                             </div>
                         </div>
-                    </div>
-                </div>
-                <!-- single timeline -->
-                <div class="swiper-slide">
-                    <div class="grid grid-cols-2 md:grid-cols-1 gap-[30px]">
-                        <div class="rounded-[20px] overflow-hidden">
-                            <img src="<?= get_template_directory_uri(); ?>/assets/img/history-img.jpg" alt="History image" class="w-full h-full object-cover">
-                        </div>
 
-                        <div class="bg-white rounded-[20px] px-[30px] py-[20px] xxs:px-[20px]">
-                            <h5 class="text-[24px] font-normal mb-[13px]">Welcome to Bethany</h5>
+                        <!-- title -->
+                        <h3
+                            class="et-schedule-title text-[24px] sm:text-[22px] font-regular text-etBlack leading-[1.25] mb-[16px] anim-text">
+                            <a href="#" class="hover:text-etBlue"> FA Wiyung </a></h3>
+                        <h4 class="font-semibold text-etBlue text-[16px] my-[10px]">Gembala : Dhea</h4>
 
-                            <div class="txt mb-[40px]">
-                                <p class="font-light text-[16px] text-etGray mb-[12px]">Experience Harmonia: where melodies transcend boundaries. Immerse in captiva performances that ignite the stage. Unleash your musical senses and embrace rhyth mic bliss.  where melodies transcend boundaries. Immerse in</p>
-                                <p class="font-light text-[16px] text-etGray">Experience Harmonia: where melodies transcend boundaries. Immerse in captiva performances that ignite the stage. Unleash your musical senses and embrace rhyth mic bliss.</p>
-                            </div>
-
-                            <div class="flex flex-wrap gap-x-[40px] lg:gap-x-[20px] gap-y-[15px] items-center xxs:justify-center">
-                                <!-- founder -->
-                                <div class="flex items-center gap-x-[15px] border-r xxs:border-r-0 xxs:border-b border-[#d9d9d9] pr-[40px] lg:pr-[20px] xxs:pr-0 xxs:pb-[15px]">
-                                    <div class="img rounded-full overflow-hidden w-[65px] h-[65px] shrink-0">
-                                        <img src="<?= get_template_directory_uri(); ?>/assets/img/user.jpg" alt="founder image">
-                                    </div>
-
-                                    <div class="txt">
-                                        <h5 class="font-semibold text-[20px] text-etBlack mb-[2px]">Alexsia Jorgina</h5>
-                                        <span class="text-[15px] font-normal text-etGray">Co. Founder</span>
-                                    </div>
-                                </div>
-
-                                <!-- signature -->
-                                <div>
-                                    <img src="<?= get_template_directory_uri(); ?>/assets/img/signature.png" alt="signature">
-                                </div>
-                            </div>
+                        <!-- location -->
+                        <div class="et-schedule-loaction flex items-center gap-[12px]">
+                            <span class="icon">
+                                <svg width="12" height="16" viewBox="0 0 12 16" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M5.99998 0C2.80482 0 0.205383 2.59944 0.205383 5.79456C0.205383 9.75981 5.39098 15.581 5.61176 15.8269C5.81913 16.0579 6.1812 16.0575 6.3882 15.8269C6.60898 15.581 11.7946 9.75981 11.7946 5.79456C11.7945 2.59944 9.1951 0 5.99998 0ZM5.99998 8.70997C4.39241 8.70997 3.0846 7.40212 3.0846 5.79456C3.0846 4.187 4.39245 2.87919 5.99998 2.87919C7.60751 2.87919 8.91532 4.18703 8.91532 5.79459C8.91532 7.40216 7.60751 8.70997 5.99998 8.70997Z"
+                                        fill="var(--et-blue)" />
+                                </svg>
+                            </span>
+                            <h6 class="text-[16px] text-etGray">SURABAYA SELATAN</h6>
                         </div>
                     </div>
-                </div>
-                <!-- single timeline -->
-                <div class="swiper-slide">
-                    <div class="grid grid-cols-2 md:grid-cols-1 gap-[30px]">
-                        <div class="rounded-[20px] overflow-hidden">
-                            <img src="<?= get_template_directory_uri(); ?>/assets/img/history-img.jpg" alt="History image" class="w-full h-full object-cover">
-                        </div>
 
-                        <div class="bg-white rounded-[20px] px-[30px] py-[20px] xxs:px-[20px]">
-                            <h5 class="text-[24px] font-normal mb-[13px]">Welcome to Bethany</h5>
-
-                            <div class="txt mb-[40px]">
-                                <p class="font-light text-[16px] text-etGray mb-[12px]">Experience Harmonia: where melodies transcend boundaries. Immerse in captiva performances that ignite the stage. Unleash your musical senses and embrace rhyth mic bliss.  where melodies transcend boundaries. Immerse in</p>
-                                <p class="font-light text-[16px] text-etGray">Experience Harmonia: where melodies transcend boundaries. Immerse in captiva performances that ignite the stage. Unleash your musical senses and embrace rhyth mic bliss.</p>
-                            </div>
-
-                            <div class="flex flex-wrap gap-x-[40px] lg:gap-x-[20px] gap-y-[15px] items-center xxs:justify-center">
-                                <!-- founder -->
-                                <div class="flex items-center gap-x-[15px] border-r xxs:border-r-0 xxs:border-b border-[#d9d9d9] pr-[40px] lg:pr-[20px] xxs:pr-0 xxs:pb-[15px]">
-                                    <div class="img rounded-full overflow-hidden w-[65px] h-[65px] shrink-0">
-                                        <img src="<?= get_template_directory_uri(); ?>/assets/img/user.jpg" alt="founder image">
-                                    </div>
-
-                                    <div class="txt">
-                                        <h5 class="font-semibold text-[20px] text-etBlack mb-[2px]">Alexsia Jorgina</h5>
-                                        <span class="text-[15px] font-normal text-etGray">Co. Founder</span>
-                                    </div>
-                                </div>
-
-                                <!-- signature -->
-                                <div>
-                                    <img src="<?= get_template_directory_uri(); ?>/assets/img/signature.png" alt="signature">
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!-- single timeline -->
-                <div class="swiper-slide">
-                    <div class="grid grid-cols-2 md:grid-cols-1 gap-[30px]">
-                        <div class="rounded-[20px] overflow-hidden">
-                            <img src="<?= get_template_directory_uri(); ?>/assets/img/history-img.jpg" alt="History image" class="w-full h-full object-cover">
-                        </div>
-
-                        <div class="bg-white rounded-[20px] px-[30px] py-[20px] xxs:px-[20px]">
-                            <h5 class="text-[24px] font-normal mb-[13px]">Welcome to Bethany</h5>
-
-                            <div class="txt mb-[40px]">
-                                <p class="font-light text-[16px] text-etGray mb-[12px]">Experience Harmonia: where melodies transcend boundaries. Immerse in captiva performances that ignite the stage. Unleash your musical senses and embrace rhyth mic bliss.  where melodies transcend boundaries. Immerse in</p>
-                                <p class="font-light text-[16px] text-etGray">Experience Harmonia: where melodies transcend boundaries. Immerse in captiva performances that ignite the stage. Unleash your musical senses and embrace rhyth mic bliss.</p>
-                            </div>
-
-                            <div class="flex flex-wrap gap-x-[40px] lg:gap-x-[20px] gap-y-[15px] items-center xxs:justify-center">
-                                <!-- founder -->
-                                <div class="flex items-center gap-x-[15px] border-r xxs:border-r-0 xxs:border-b border-[#d9d9d9] pr-[40px] lg:pr-[20px] xxs:pr-0 xxs:pb-[15px]">
-                                    <div class="img rounded-full overflow-hidden w-[65px] h-[65px] shrink-0">
-                                        <img src="<?= get_template_directory_uri(); ?>/assets/img/user.jpg" alt="founder image">
-                                    </div>
-
-                                    <div class="txt">
-                                        <h5 class="font-semibold text-[20px] text-etBlack mb-[2px]">Alexsia Jorgina</h5>
-                                        <span class="text-[15px] font-normal text-etGray">Co. Founder</span>
-                                    </div>
-                                </div>
-
-                                <!-- signature -->
-                                <div>
-                                    <img src="<?= get_template_directory_uri(); ?>/assets/img/signature.png" alt="signature">
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!-- single timeline -->
-                <div class="swiper-slide">
-                    <div class="grid grid-cols-2 md:grid-cols-1 gap-[30px]">
-                        <div class="rounded-[20px] overflow-hidden">
-                            <img src="<?= get_template_directory_uri(); ?>/assets/img/history-img.jpg" alt="History image" class="w-full h-full object-cover">
-                        </div>
-
-                        <div class="bg-white rounded-[20px] px-[30px] py-[20px] xxs:px-[20px]">
-                            <h5 class="text-[24px] font-normal mb-[13px]">Welcome to Bethany</h5>
-
-                            <div class="txt mb-[40px]">
-                                <p class="font-light text-[16px] text-etGray mb-[12px]">Experience Harmonia: where melodies transcend boundaries. Immerse in captiva performances that ignite the stage. Unleash your musical senses and embrace rhyth mic bliss.  where melodies transcend boundaries. Immerse in</p>
-                                <p class="font-light text-[16px] text-etGray">Experience Harmonia: where melodies transcend boundaries. Immerse in captiva performances that ignite the stage. Unleash your musical senses and embrace rhyth mic bliss.</p>
-                            </div>
-
-                            <div class="flex flex-wrap gap-x-[40px] lg:gap-x-[20px] gap-y-[15px] items-center xxs:justify-center">
-                                <!-- founder -->
-                                <div class="flex items-center gap-x-[15px] border-r xxs:border-r-0 xxs:border-b border-[#d9d9d9] pr-[40px] lg:pr-[20px] xxs:pr-0 xxs:pb-[15px]">
-                                    <div class="img rounded-full overflow-hidden w-[65px] h-[65px] shrink-0">
-                                        <img src="<?= get_template_directory_uri(); ?>/assets/img/user.jpg" alt="founder image">
-                                    </div>
-
-                                    <div class="txt">
-                                        <h5 class="font-semibold text-[20px] text-etBlack mb-[2px]">Alexsia Jorgina</h5>
-                                        <span class="text-[15px] font-normal text-etGray">Co. Founder</span>
-                                    </div>
-                                </div>
-
-                                <!-- signature -->
-                                <div>
-                                    <img src="<?= get_template_directory_uri(); ?>/assets/img/signature.png" alt="signature">
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!-- single timeline -->
-                <div class="swiper-slide">
-                    <div class="grid grid-cols-2 md:grid-cols-1 gap-[30px]">
-                        <div class="rounded-[20px] overflow-hidden">
-                            <img src="<?= get_template_directory_uri(); ?>/assets/img/history-img.jpg" alt="History image" class="w-full h-full object-cover">
-                        </div>
-
-                        <div class="bg-white rounded-[20px] px-[30px] py-[20px] xxs:px-[20px]">
-                            <h5 class="text-[24px] font-normal mb-[13px]">Welcome to Bethany</h5>
-
-                            <div class="txt mb-[40px]">
-                                <p class="font-light text-[16px] text-etGray mb-[12px]">Experience Harmonia: where melodies transcend boundaries. Immerse in captiva performances that ignite the stage. Unleash your musical senses and embrace rhyth mic bliss.  where melodies transcend boundaries. Immerse in</p>
-                                <p class="font-light text-[16px] text-etGray">Experience Harmonia: where melodies transcend boundaries. Immerse in captiva performances that ignite the stage. Unleash your musical senses and embrace rhyth mic bliss.</p>
-                            </div>
-
-                            <div class="flex flex-wrap gap-x-[40px] lg:gap-x-[20px] gap-y-[15px] items-center xxs:justify-center">
-                                <!-- founder -->
-                                <div class="flex items-center gap-x-[15px] border-r xxs:border-r-0 xxs:border-b border-[#d9d9d9] pr-[40px] lg:pr-[20px] xxs:pr-0 xxs:pb-[15px]">
-                                    <div class="img rounded-full overflow-hidden w-[65px] h-[65px] shrink-0">
-                                        <img src="<?= get_template_directory_uri(); ?>/assets/img/user.jpg" alt="founder image">
-                                    </div>
-
-                                    <div class="txt">
-                                        <h5 class="font-semibold text-[20px] text-etBlack mb-[2px]">Alexsia Jorgina</h5>
-                                        <span class="text-[15px] font-normal text-etGray">Co. Founder</span>
-                                    </div>
-                                </div>
-
-                                <!-- signature -->
-                                <div>
-                                    <img src="<?= get_template_directory_uri(); ?>/assets/img/signature.png" alt="signature">
-                                </div>
-                            </div>
-                        </div>
+                    <div class="flex shrink-0 flex-col xxs:flex-row gap-[16px] xxs:gap-[10px]">
+                        <!-- <a href="#" class="et-btn border w-[180px] bg-etBlue text-white inline-flex items-center justify-center h-[45px] px-[22px] xxs:px-[16px] font-normal text-[17px] rounded-full hover:!bg-etBlack hover:!text-white">View More</a> -->
+                        <a href="https://maps.app.goo.gl/JzMbMYqYZ42yWh3b7"
+                            class="et-btn border w-[180px] bg-etBlack text-white inline-flex items-center justify-center h-[45px] px-[22px] xxs:px-[16px] font-normal text-[17px] rounded-full hover:!bg-etBlue hover:!text-white">Direction</a>
                     </div>
                 </div>
             </div>
-        </div>
+            <div class="et-schedule justify-between rev-slide-up pb-[30px]">
+                <div
+                    class="single-fa px-[37px] sm:px-[22px] py-[30px] shadow-[0_4px_60px_rgba(18,96,254,0.12)] w-full rounded-[20px] flex gap-y-[15px] xs:flex-col items-center xs:items-start">
+                    <div
+                        class="et-schedule__heading w-[80%] pr-[40px] sm:pr-[25px] xs:pr-0 mr-[40px] sm:mr-[25px] xs:mr-0 border-r xs:border-r-0 border-[#d9d9d9]">
+                        <!-- date & time -->
+                        <div
+                            class="et-schedule-date-time border border-[rgba(217,217,217,0.89)] py-[7px] px-[15px] rounded-full inline-flex xxs:w-full items-center justify-center gap-x-[24px] gap-y-[10px] mb-[10px] xxs:border-0 xxs:p-0 xxs:justify-start">
+                            <div class="date flex items-center gap-[10px]">
+                                <span class="icon">
+                                    <svg width="16" height="17" viewBox="0 0 16 17" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <g clip-path="url(#clip0_2043_1443)">
+                                            <path
+                                                d="M14.125 1.75H13.375V0.5H12.125V1.75H3.875V0.5H2.625V1.75H1.875C0.841125 1.75 0 2.59113 0 3.625V14.625C0 15.6589 0.841125 16.5 1.875 16.5H14.125C15.1589 16.5 16 15.6589 16 14.625V3.625C16 2.59113 15.1589 1.75 14.125 1.75ZM14.75 14.625C14.75 14.9696 14.4696 15.25 14.125 15.25H1.875C1.53038 15.25 1.25 14.9696 1.25 14.625V6.375H14.75V14.625ZM14.75 5.125H1.25V3.625C1.25 3.28038 1.53038 3 1.875 3H2.625V4.25H3.875V3H12.125V4.25H13.375V3H14.125C14.4696 3 14.75 3.28038 14.75 3.625V5.125Z"
+                                                fill="var(--et-blue)" />
+                                            <path d="M3.625 7.6875H2.375V8.9375H3.625V7.6875Z" fill="var(--et-blue)" />
+                                            <path d="M6.125 7.6875H4.875V8.9375H6.125V7.6875Z" fill="var(--et-blue)" />
+                                            <path d="M8.625 7.6875H7.375V8.9375H8.625V7.6875Z" fill="var(--et-blue)" />
+                                            <path d="M11.125 7.6875H9.875V8.9375H11.125V7.6875Z"
+                                                fill="var(--et-blue)" />
+                                            <path d="M13.625 7.6875H12.375V8.9375H13.625V7.6875Z"
+                                                fill="var(--et-blue)" />
+                                            <path d="M3.625 10.1875H2.375V11.4375H3.625V10.1875Z"
+                                                fill="var(--et-blue)" />
+                                            <path d="M6.125 10.1875H4.875V11.4375H6.125V10.1875Z"
+                                                fill="var(--et-blue)" />
+                                            <path d="M8.625 10.1875H7.375V11.4375H8.625V10.1875Z"
+                                                fill="var(--et-blue)" />
+                                            <path d="M11.125 10.1875H9.875V11.4375H11.125V10.1875Z"
+                                                fill="var(--et-blue)" />
+                                            <path d="M3.625 12.6875H2.375V13.9375H3.625V12.6875Z"
+                                                fill="var(--et-blue)" />
+                                            <path d="M6.125 12.6875H4.875V13.9375H6.125V12.6875Z"
+                                                fill="var(--et-blue)" />
+                                            <path d="M8.625 12.6875H7.375V13.9375H8.625V12.6875Z"
+                                                fill="var(--et-blue)" />
+                                            <path d="M11.125 12.6875H9.875V13.9375H11.125V12.6875Z"
+                                                fill="var(--et-blue)" />
+                                            <path d="M13.625 10.1875H12.375V11.4375H13.625V10.1875Z"
+                                                fill="var(--et-blue)" />
+                                        </g>
+                                    </svg>
+                                </span>
 
-        <!-- timeline slider as nav for main slider -->
-        <div class="et-history-timeline-slider swiper mt-[30px] lg:mt-[25px] border-t border-[rgba(217,217,217,0.2)]">
-            <div class="swiper-wrapper">
-                <!-- single timeline -->
-                <div class="et-history-timeline swiper-slide pt-[54px] lg:pt-[34px] relative cursor-pointer">
-                    <div>
-                        <h3 class="font-semibold text-[70px] md:text-[60px] sm:text-[50px] leading-[0.8] text-transparent">1985</h3>
+                                <span class="text-etGray font-normal text-[16px]">Every Wednesday</span>
+                            </div>
+
+                            <div class="time flex items-center gap-[10px] xxs:hidden">
+                                <span class="icon">
+                                    <svg width="16" height="17" viewBox="0 0 16 17" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M10.8505 9.91291L8.61967 8.23979V4.8316C8.61967 4.48891 8.34266 4.21191 7.99998 4.21191C7.65729 4.21191 7.38029 4.48891 7.38029 4.8316V8.54966C7.38029 8.74485 7.47201 8.92892 7.62817 9.04541L10.1069 10.9044C10.2138 10.985 10.3441 11.0285 10.478 11.0284C10.667 11.0284 10.8529 10.9435 10.9744 10.7799C11.1802 10.5066 11.1244 10.118 10.8505 9.91291Z"
+                                            fill="var(--et-blue)" />
+                                        <path
+                                            d="M8 0.5C3.58853 0.5 0 4.08853 0 8.5C0 12.9115 3.58853 16.5 8 16.5C12.4115 16.5 16 12.9115 16 8.5C16 4.08853 12.4115 0.5 8 0.5ZM8 15.2607C4.27266 15.2607 1.23934 12.2273 1.23934 8.5C1.23934 4.77266 4.27266 1.73934 8 1.73934C11.728 1.73934 14.7607 4.77266 14.7607 8.5C14.7607 12.2273 11.7273 15.2607 8 15.2607Z"
+                                            fill="var(--et-blue)" />
+                                    </svg>
+                                </span>
+
+                                <span class="text-etGray font-normal text-[16px]">19.00</span>
+                            </div>
+                        </div>
+
+                        <!-- title -->
+                        <h3
+                            class="et-schedule-title text-[24px] sm:text-[22px] font-regular text-etBlack leading-[1.25] mb-[16px] anim-text">
+                            <a href="#" class="hover:text-etBlue"> FA Ngagel </a></h3>
+                        <h4 class="font-semibold text-etBlue text-[16px] my-[10px]">Gembala : Inneke</h4>
+
+                        <!-- location -->
+                        <div class="et-schedule-loaction flex items-center gap-[12px]">
+                            <span class="icon">
+                                <svg width="12" height="16" viewBox="0 0 12 16" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M5.99998 0C2.80482 0 0.205383 2.59944 0.205383 5.79456C0.205383 9.75981 5.39098 15.581 5.61176 15.8269C5.81913 16.0579 6.1812 16.0575 6.3882 15.8269C6.60898 15.581 11.7946 9.75981 11.7946 5.79456C11.7945 2.59944 9.1951 0 5.99998 0ZM5.99998 8.70997C4.39241 8.70997 3.0846 7.40212 3.0846 5.79456C3.0846 4.187 4.39245 2.87919 5.99998 2.87919C7.60751 2.87919 8.91532 4.18703 8.91532 5.79459C8.91532 7.40216 7.60751 8.70997 5.99998 8.70997Z"
+                                        fill="var(--et-blue)" />
+                                </svg>
+                            </span>
+                            <h6 class="text-[16px] text-etGray">SURABAYA SELATAN</h6>
+                        </div>
                     </div>
-                </div>
-                <!-- single timeline -->
-                <div class="et-history-timeline swiper-slide pt-[54px] lg:pt-[34px] relative cursor-pointer">
-                    <div>
-                        <h3 class="font-semibold text-[70px] md:text-[60px] sm:text-[50px] leading-[0.8] text-transparent">1995</h3>
-                    </div>
-                </div>
-                <!-- single timeline -->
-                <div class="et-history-timeline swiper-slide pt-[54px] lg:pt-[34px] relative cursor-pointer">
-                    <div>
-                        <h3 class="font-semibold text-[70px] md:text-[60px] sm:text-[50px] leading-[0.8] text-transparent">2005</h3>
-                    </div>
-                </div>
-                <!-- single timeline -->
-                <div class="et-history-timeline swiper-slide pt-[54px] lg:pt-[34px] relative cursor-pointer">
-                    <div>
-                        <h3 class="font-semibold text-[70px] md:text-[60px] sm:text-[50px] leading-[0.8] text-transparent">2015</h3>
-                    </div>
-                </div>
-                <!-- single timeline -->
-                <div class="et-history-timeline swiper-slide pt-[54px] lg:pt-[34px] relative cursor-pointer">
-                    <div>
-                        <h3 class="font-semibold text-[70px] md:text-[60px] sm:text-[50px] leading-[0.8] text-transparent">2020</h3>
-                    </div>
-                </div>
-                <!-- single timeline -->
-                <div class="et-history-timeline swiper-slide pt-[54px] lg:pt-[34px] relative cursor-pointer">
-                    <div>
-                        <h3 class="font-semibold text-[70px] md:text-[60px] sm:text-[50px] leading-[0.8] text-transparent">2023</h3>
-                    </div>
-                </div>
-                <!-- single timeline -->
-                <div class="et-history-timeline swiper-slide pt-[54px] lg:pt-[34px] relative cursor-pointer">
-                    <div>
-                        <h3 class="font-semibold text-[70px] md:text-[60px] sm:text-[50px] leading-[0.8] text-transparent">2024</h3>
+
+                    <div class="flex shrink-0 flex-col xxs:flex-row gap-[16px] xxs:gap-[10px]">
+                        <!-- <a href="#" class="et-btn border w-[180px] bg-etBlue text-white inline-flex items-center justify-center h-[45px] px-[22px] xxs:px-[16px] font-normal text-[17px] rounded-full hover:!bg-etBlack hover:!text-white">View More</a> -->
+                        <a href="https://maps.app.goo.gl/DyBdCZdrVSr6VhuC7"
+                            class="et-btn border w-[180px] bg-etBlack text-white inline-flex items-center justify-center h-[45px] px-[22px] xxs:px-[16px] font-normal text-[17px] rounded-full hover:!bg-etBlue hover:!text-white">Direction</a>
                     </div>
                 </div>
             </div>
@@ -421,349 +345,6 @@ get_header('main'); ?>
 <!-- HISTORY SECTION END -->
 
 
-<!-- TEAM SECTION START -->
-<section class="et-speakers py-[130px] lg:py-[80px] md:py-[60px] overflow-hidden relative z-[1]">
-    <div class="container mx-auto max-w-[1200px] px-[12px] xl:max-w-full">
-        <!-- heading -->
-        <div class="et-speakers-heading text-center mb-[46px] xl:mb-[26px] lg:mb-[16px] gap-[15px]">
-            <h6 class="et-section-sub-title anim-text">Event Speakers</h6>
-            <h2 class="et-section-title anim-text">Meet Our Creative Speakers</h2>
-        </div>
 
-        <div class="grid grid-cols-3 md:grid-cols-3 sm:grid-cols-2 xxs:grid-cols-1 justify-center gap-[30px] lg:gap-[20px]">
-            <!-- single team member -->
-            <div class="et-member group">
-                <div class="et-member__img rounded-[16px] overflow-hidden">
-                    <img src="<?= get_template_directory_uri(); ?>/assets/img/team-member-1.jpg" alt="Team Member Image" class="w-full duration-[400ms] group-hover:scale-110">
-                </div>
-
-                <div class="et-member__txt bg-white relative z-[1] mx-[25px] md:mx-[15px] xs:mx-[5px] -mt-[44px] md:-mt-[15px] xs:mt-0 rounded-[16px] shadow-[0_4px_60px_rgba(18,96,254,0.12)] px-[25px] md:px-[15px] pb-[30px] md:pb-[20px] before:w-full before:absolute before:-z-[1] before:h-full before:bg-white before:left-0 before:rounded-[16px] before:-top-[33px] before:skew-y-[4deg]">
-                    <div class="et-member-socials absolute right-[20px] -top-[43px]">
-                        <div class="et-speaker__socials flex flex-col gap-[8px] absolute -z-[2] text-[14px] opacity-0 transition duration-[400ms] bottom-[calc(100%+8px)] translate-y-[100%] group-hover:translate-y-0 group-hover:opacity-100">
-                            <a href="#" class="border border-white text-white w-[36px] h-[36px] flex items-center justify-center rounded-full hover:border-etBlue hover:bg-etBlue"><i class="fa-brands fa-facebook-f"></i></a>
-                            <a href="#" class="border border-white text-white w-[36px] h-[36px] flex items-center justify-center rounded-full hover:border-etBlue hover:bg-etBlue"><i class="fa-brands fa-x-twitter"></i></a>
-                            <a href="#" class="border border-white text-white w-[36px] h-[36px] flex items-center justify-center rounded-full hover:border-etBlue hover:bg-etBlue"><i class="fa-brands fa-linkedin-in"></i></a>
-                            <a href="#" class="border border-white text-white w-[36px] h-[36px] flex items-center justify-center rounded-full hover:border-etBlue hover:bg-etBlue"><i class="fa-brands fa-instagram"></i></a>
-                        </div>
-                        <div class="et-member-socials__icon w-[36px] aspect-square rounded-full bg-etBlue flex items-center justify-center">
-                            <svg width="13" height="14" viewBox="0 0 13 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M9.89361 9.41703C9.22284 9.41703 8.61849 9.70668 8.19906 10.1675L4.42637 7.83088C4.52995 7.56611 4.58305 7.28429 4.58294 6.99999C4.58307 6.71568 4.52997 6.43386 4.42637 6.16909L8.19906 3.83238C8.61851 4.29318 9.22284 4.58297 9.89361 4.58297C11.1572 4.58297 12.1851 3.55501 12.1851 2.29143C12.1851 1.02785 11.1572 0 9.89361 0C8.63005 0 7.60209 1.02796 7.60209 2.29154C7.60204 2.57583 7.65514 2.85763 7.75866 3.1224L3.98608 5.45903C3.56663 4.99824 2.96231 4.70845 2.29154 4.70845C1.02796 4.70845 0 5.73652 0 6.99999C0 8.26354 1.02796 9.29152 2.29154 9.29152C2.96228 9.29152 3.56666 9.00185 3.98608 8.54094L7.75869 10.8776C7.65515 11.1424 7.60204 11.4242 7.60209 11.7085C7.60209 12.972 8.63003 14 9.89361 14C11.1572 14 12.1851 12.972 12.1851 11.7086C12.1851 10.445 11.1572 9.41703 9.89361 9.41703ZM8.43766 2.29154C8.43766 1.48873 9.09082 0.835596 9.89361 0.835596C10.6964 0.835596 11.3495 1.48873 11.3495 2.29154C11.3495 3.09435 10.6964 3.74748 9.89361 3.74748C9.09079 3.74748 8.43766 3.09432 8.43766 2.29154ZM2.29154 8.45593C1.48862 8.45593 0.835487 7.80277 0.835487 6.99999C0.835487 6.1972 1.48862 5.54404 2.29154 5.54404C3.09435 5.54404 3.74737 6.1972 3.74737 6.99999C3.74737 7.80277 3.09432 8.45593 2.29154 8.45593ZM8.43766 11.7085C8.43766 10.9057 9.09082 10.2525 9.89361 10.2525C10.6964 10.2525 11.3495 10.9057 11.3495 11.7084C11.3495 12.5112 10.6964 13.1644 9.89361 13.1644C9.09079 13.1644 8.43766 12.5112 8.43766 11.7084V11.7085Z" fill="white" />
-                            </svg>
-                        </div>
-                    </div>
-                    <h5 class="font-semibold text-[22px] md:text-[20px] text-etBlack mb-[4px]"><a href="team-member-details.html" class="hover:text-etBlue">Darlene Robertson</a></h5>
-                    <span class="text-etGray text-[16px]">Web Designer</span>
-                </div>
-            </div>
-
-            <!-- single team member -->
-            <div class="et-member group">
-                <div class="et-member__img rounded-[16px] overflow-hidden">
-                    <img src="<?= get_template_directory_uri(); ?>/assets/img/team-member-2.jpg" alt="Team Member Image" class="w-full duration-[400ms] group-hover:scale-110">
-                </div>
-
-                <div class="et-member__txt bg-white relative z-[1] mx-[25px] md:mx-[15px] xs:mx-[5px] -mt-[44px] md:-mt-[15px] xs:mt-0 rounded-[16px] shadow-[0_4px_60px_rgba(18,96,254,0.12)] px-[25px] md:px-[15px] pb-[30px] md:pb-[20px] before:w-full before:absolute before:-z-[1] before:h-full before:bg-white before:left-0 before:rounded-[16px] before:-top-[33px] before:skew-y-[4deg]">
-                    <div class="et-member-socials absolute right-[20px] -top-[43px]">
-                        <div class="et-speaker__socials flex flex-col gap-[8px] absolute -z-[2] text-[14px] opacity-0 transition duration-[400ms] bottom-[calc(100%+8px)] translate-y-[100%] group-hover:translate-y-0 group-hover:opacity-100">
-                            <a href="#" class="border border-white text-white w-[36px] h-[36px] flex items-center justify-center rounded-full hover:border-etBlue hover:bg-etBlue"><i class="fa-brands fa-facebook-f"></i></a>
-                            <a href="#" class="border border-white text-white w-[36px] h-[36px] flex items-center justify-center rounded-full hover:border-etBlue hover:bg-etBlue"><i class="fa-brands fa-x-twitter"></i></a>
-                            <a href="#" class="border border-white text-white w-[36px] h-[36px] flex items-center justify-center rounded-full hover:border-etBlue hover:bg-etBlue"><i class="fa-brands fa-linkedin-in"></i></a>
-                            <a href="#" class="border border-white text-white w-[36px] h-[36px] flex items-center justify-center rounded-full hover:border-etBlue hover:bg-etBlue"><i class="fa-brands fa-instagram"></i></a>
-                        </div>
-                        <div class="et-member-socials__icon w-[36px] aspect-square rounded-full bg-etBlue flex items-center justify-center">
-                            <svg width="13" height="14" viewBox="0 0 13 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M9.89361 9.41703C9.22284 9.41703 8.61849 9.70668 8.19906 10.1675L4.42637 7.83088C4.52995 7.56611 4.58305 7.28429 4.58294 6.99999C4.58307 6.71568 4.52997 6.43386 4.42637 6.16909L8.19906 3.83238C8.61851 4.29318 9.22284 4.58297 9.89361 4.58297C11.1572 4.58297 12.1851 3.55501 12.1851 2.29143C12.1851 1.02785 11.1572 0 9.89361 0C8.63005 0 7.60209 1.02796 7.60209 2.29154C7.60204 2.57583 7.65514 2.85763 7.75866 3.1224L3.98608 5.45903C3.56663 4.99824 2.96231 4.70845 2.29154 4.70845C1.02796 4.70845 0 5.73652 0 6.99999C0 8.26354 1.02796 9.29152 2.29154 9.29152C2.96228 9.29152 3.56666 9.00185 3.98608 8.54094L7.75869 10.8776C7.65515 11.1424 7.60204 11.4242 7.60209 11.7085C7.60209 12.972 8.63003 14 9.89361 14C11.1572 14 12.1851 12.972 12.1851 11.7086C12.1851 10.445 11.1572 9.41703 9.89361 9.41703ZM8.43766 2.29154C8.43766 1.48873 9.09082 0.835596 9.89361 0.835596C10.6964 0.835596 11.3495 1.48873 11.3495 2.29154C11.3495 3.09435 10.6964 3.74748 9.89361 3.74748C9.09079 3.74748 8.43766 3.09432 8.43766 2.29154ZM2.29154 8.45593C1.48862 8.45593 0.835487 7.80277 0.835487 6.99999C0.835487 6.1972 1.48862 5.54404 2.29154 5.54404C3.09435 5.54404 3.74737 6.1972 3.74737 6.99999C3.74737 7.80277 3.09432 8.45593 2.29154 8.45593ZM8.43766 11.7085C8.43766 10.9057 9.09082 10.2525 9.89361 10.2525C10.6964 10.2525 11.3495 10.9057 11.3495 11.7084C11.3495 12.5112 10.6964 13.1644 9.89361 13.1644C9.09079 13.1644 8.43766 12.5112 8.43766 11.7084V11.7085Z" fill="white" />
-                            </svg>
-                        </div>
-                    </div>
-                    <h5 class="font-semibold text-[22px] md:text-[20px] text-etBlack mb-[4px]"><a href="team-member-details.html" class="hover:text-etBlue">Leslie Alexander</a></h5>
-                    <span class="text-etGray text-[16px]">Nursing Assistant</span>
-                </div>
-            </div>
-
-            <!-- single team member -->
-            <div class="et-member group">
-                <div class="et-member__img rounded-[16px] overflow-hidden">
-                    <img src="<?= get_template_directory_uri(); ?>/assets/img/team-member-3.jpg" alt="Team Member Image" class="w-full duration-[400ms] group-hover:scale-110">
-                </div>
-
-                <div class="et-member__txt bg-white relative z-[1] mx-[25px] md:mx-[15px] xs:mx-[5px] -mt-[44px] md:-mt-[15px] xs:mt-0 rounded-[16px] shadow-[0_4px_60px_rgba(18,96,254,0.12)] px-[25px] md:px-[15px] pb-[30px] md:pb-[20px] before:w-full before:absolute before:-z-[1] before:h-full before:bg-white before:left-0 before:rounded-[16px] before:-top-[33px] before:skew-y-[4deg]">
-                    <div class="et-member-socials absolute right-[20px] -top-[43px]">
-                        <div class="et-speaker__socials flex flex-col gap-[8px] absolute -z-[2] text-[14px] opacity-0 transition duration-[400ms] bottom-[calc(100%+8px)] translate-y-[100%] group-hover:translate-y-0 group-hover:opacity-100">
-                            <a href="#" class="border border-white text-white w-[36px] h-[36px] flex items-center justify-center rounded-full hover:border-etBlue hover:bg-etBlue"><i class="fa-brands fa-facebook-f"></i></a>
-                            <a href="#" class="border border-white text-white w-[36px] h-[36px] flex items-center justify-center rounded-full hover:border-etBlue hover:bg-etBlue"><i class="fa-brands fa-x-twitter"></i></a>
-                            <a href="#" class="border border-white text-white w-[36px] h-[36px] flex items-center justify-center rounded-full hover:border-etBlue hover:bg-etBlue"><i class="fa-brands fa-linkedin-in"></i></a>
-                            <a href="#" class="border border-white text-white w-[36px] h-[36px] flex items-center justify-center rounded-full hover:border-etBlue hover:bg-etBlue"><i class="fa-brands fa-instagram"></i></a>
-                        </div>
-                        <div class="et-member-socials__icon w-[36px] aspect-square rounded-full bg-etBlue flex items-center justify-center">
-                            <svg width="13" height="14" viewBox="0 0 13 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M9.89361 9.41703C9.22284 9.41703 8.61849 9.70668 8.19906 10.1675L4.42637 7.83088C4.52995 7.56611 4.58305 7.28429 4.58294 6.99999C4.58307 6.71568 4.52997 6.43386 4.42637 6.16909L8.19906 3.83238C8.61851 4.29318 9.22284 4.58297 9.89361 4.58297C11.1572 4.58297 12.1851 3.55501 12.1851 2.29143C12.1851 1.02785 11.1572 0 9.89361 0C8.63005 0 7.60209 1.02796 7.60209 2.29154C7.60204 2.57583 7.65514 2.85763 7.75866 3.1224L3.98608 5.45903C3.56663 4.99824 2.96231 4.70845 2.29154 4.70845C1.02796 4.70845 0 5.73652 0 6.99999C0 8.26354 1.02796 9.29152 2.29154 9.29152C2.96228 9.29152 3.56666 9.00185 3.98608 8.54094L7.75869 10.8776C7.65515 11.1424 7.60204 11.4242 7.60209 11.7085C7.60209 12.972 8.63003 14 9.89361 14C11.1572 14 12.1851 12.972 12.1851 11.7086C12.1851 10.445 11.1572 9.41703 9.89361 9.41703ZM8.43766 2.29154C8.43766 1.48873 9.09082 0.835596 9.89361 0.835596C10.6964 0.835596 11.3495 1.48873 11.3495 2.29154C11.3495 3.09435 10.6964 3.74748 9.89361 3.74748C9.09079 3.74748 8.43766 3.09432 8.43766 2.29154ZM2.29154 8.45593C1.48862 8.45593 0.835487 7.80277 0.835487 6.99999C0.835487 6.1972 1.48862 5.54404 2.29154 5.54404C3.09435 5.54404 3.74737 6.1972 3.74737 6.99999C3.74737 7.80277 3.09432 8.45593 2.29154 8.45593ZM8.43766 11.7085C8.43766 10.9057 9.09082 10.2525 9.89361 10.2525C10.6964 10.2525 11.3495 10.9057 11.3495 11.7084C11.3495 12.5112 10.6964 13.1644 9.89361 13.1644C9.09079 13.1644 8.43766 12.5112 8.43766 11.7084V11.7085Z" fill="white" />
-                            </svg>
-                        </div>
-                    </div>
-                    <h5 class="font-semibold text-[22px] md:text-[20px] text-etBlack mb-[4px]"><a href="team-member-details.html" class="hover:text-etBlue">Cameron Williamson</a></h5>
-                    <span class="text-etGray text-[16px]">President of Sales</span>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-<!-- TEAM SECTION END -->
-
-
-<!-- STATS SECTION START -->
-<section class="text-center py-[130px] xl:py-[80px] md:py-[60px] bg-[url(../<?= get_template_directory_uri(); ?>/assets/img/stats-bg.jpg)] bg-no-repeat bg-cover relative z-[1] before:absolute before:inset-0 before:bg-etBlue/85 before:-z-[1]">
-    <div class="container mx-auto max-w-[calc(100%-37.1vw)] xxxl:max-w-[calc(100%-350px)] xl:max-w-[calc(100%-170px)] px-[12px] lg:max-w-full rev-slide-up">
-        <div class="flex xs:flex-col gap-x-[77px] sm:gap-x-[57px] gap-y-[15px] justify-center border-b border-white/20 pb-[35px]">
-            <!-- single stat -->
-            <div class="et-single-stat text-white">
-                <h5 class="number font-semibold text-[55px]">50+</h5>
-                <h6 class="font-medium text-[16px]">Workshop We Offer</h6>
-            </div>
-            <!-- single stat -->
-            <div class="et-single-stat text-white">
-                <h5 class="number font-semibold text-[55px]">25+</h5>
-                <h6 class="font-medium text-[16px]">Visionary Speaker</h6>
-            </div>
-            <!-- single stat -->
-            <div class="et-single-stat text-white">
-                <h5 class="number font-semibold text-[55px]">70k+</h5>
-                <h6 class="font-medium text-[16px]">Event Participants</h6>
-            </div>
-        </div>
-
-        <h2 class="et-section-title anim-text !text-white text-center max-w-[55%] md:max-w-[65%] sm:max-w-full mx-auto mt-[30px] mb-[40px]">Never Miss Another Speaker Announcement</h2>
-
-        <a href="#" class="bg-white inline-flex items-center gap-[12px] rounded-full text-etBlue h-[54px] px-[15px] text-[17px] group hover:bg-etBlue hover:text-white">
-            <span class="icon">
-                <svg width="18" height="20" viewBox="0 0 18 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M13.1023 17.6473C13.0496 17.6473 12.9979 17.6511 12.9471 17.6578C12.4966 16.1361 11.1883 14.9794 9.5848 14.7503V13.6641H8.41524V14.7503C6.81011 14.9796 5.50077 16.1384 5.05156 17.6624C4.99031 17.6526 4.92753 17.6473 4.86351 17.6473C4.21347 17.6473 3.68652 18.1742 3.68652 18.8242C3.68652 19.4742 4.21347 20.0012 4.86351 20.0012C5.4544 20.0012 5.94345 19.5657 6.0276 18.9982C6.04471 18.9433 6.05393 18.8848 6.05393 18.8242C6.05393 17.3999 7.06993 16.2086 8.41524 15.9366V17.791C8.04998 17.9908 7.80223 18.3786 7.80223 18.8242C7.80223 19.4742 8.32918 20.0012 8.97918 20.0012C9.62922 20.0012 10.1562 19.4742 10.1562 18.8242C10.1562 18.3957 9.92708 18.0208 9.5848 17.815V15.9366C10.8716 16.1968 11.8565 17.2982 11.9398 18.6401C11.9303 18.7001 11.9253 18.7616 11.9253 18.8243C11.9253 19.4743 12.4523 20.0012 13.1023 20.0012C13.7523 20.0012 14.2793 19.4743 14.2793 18.8243C14.2793 18.1743 13.7523 17.6473 13.1023 17.6473Z" class="fill-etBlue group-hover:fill-white transition duration-[0.4s]" />
-                    <path d="M17.2036 6.2168H15.6151C15.2921 6.2168 15.0303 6.47861 15.0303 6.8016V8.5676C15.0303 9.11044 14.5882 9.55211 14.0447 9.55211H13.9074C13.9062 9.55211 13.9051 9.55227 13.904 9.55227V9.55211H4.09592V9.55227C4.09478 9.55227 4.09365 9.55211 4.09252 9.55211H4.07443C3.53096 9.55211 3.08883 9.11044 3.08883 8.5676V6.8016C3.08883 6.47861 2.82701 6.2168 2.50403 6.2168H0.796348C0.47336 6.2168 0.211548 6.47861 0.211548 6.8016C0.211548 7.12458 0.47336 7.3864 0.796348 7.3864H1.91927V8.5676C1.91927 9.75536 2.88608 10.7217 4.07443 10.7217H4.09252C4.09369 10.7217 4.09478 10.7216 4.09592 10.7216V10.9282C4.09592 11.7911 4.79553 12.4908 5.65851 12.4908H12.3414C13.2044 12.4908 13.904 11.7911 13.904 10.9282V10.7216C13.9051 10.7216 13.9063 10.7217 13.9074 10.7217H14.0447C15.2331 10.7217 16.1999 9.7554 16.1999 8.5676V7.3864H17.2036C17.5265 7.3864 17.7884 7.12458 17.7884 6.8016C17.7884 6.47865 17.5265 6.2168 17.2036 6.2168Z" class="fill-etBlue group-hover:fill-white transition duration-[0.4s]" />
-                    <path d="M13.1157 2.14739C13.1157 0.963338 12.1524 0 10.9683 0H7.03167C5.84758 0 4.88428 0.963299 4.88428 2.14739V8.38037H13.1157V2.14739Z" class="fill-etBlue group-hover:fill-white transition duration-[0.4s]" />
-                </svg>
-            </span>
-            <span>Register Now</span>
-        </a>
-    </div>
-
-    <!-- vectors -->
-    <div>
-        <img src="<?= get_template_directory_uri(); ?>/assets/img/stats-vector-1.png" alt="vector" class="pointer-events-none absolute top-[150px] left-[105px] -z-[1] md:hidden">
-        <img src="<?= get_template_directory_uri(); ?>/assets/img/stats-vector-2.png" alt="vector" class="pointer-events-none absolute bottom-[63px] left-[63px] -z-[1] w-[80px] aspect-square opacity-10">
-        <img src="<?= get_template_directory_uri(); ?>/assets/img/stats-vector-2.png" alt="vector" class="pointer-events-none absolute top-[80px] right-[70px] -z-[1] opacity-10">
-        <img src="<?= get_template_directory_uri(); ?>/assets/img/stats-vector-3.png" alt="vector" class="pointer-events-none absolute bottom-[112px] right-[80px] -z-[1]">
-    </div>
-</section>
-<!-- STATS SECTION END -->
-
-
-<!-- TESTIMONIAL SECTION START -->
-<section class="et-testimonial overflow-hidden py-[130px] xl:py-[80px] md:py-[60px]">
-    <div class="container mx-auto max-w-[1200px] px-[12px] xl:max-w-full">
-        <!-- heading -->
-        <div class="et-testimonial-heading text-center mb-[46px] xl:mb-[26px] lg:mb-[16px] gap-[15px]">
-            <h6 class="et-section-sub-title anim-text">Testimonials</h6>
-            <h2 class="et-section-title anim-text">See Our Clients Feedback</h2>
-        </div>
-
-        <!-- slider -->
-        <div class="et-2-testimonial-slider swiper overflow-visible">
-            <div class="swiper-wrapper">
-                <!-- single testimony  -->
-                <div class="swiper-slide">
-                    <div class="et-testimony relative p-[40px] lg:p-[30px] md:p-[20px] border border-[#D4DCED] rounded-[16px] mt-[60px]">
-                        <!-- single testimony heading -->
-                        <div class="et-testimony__heading flex items-end justify-center mb-[17px] lg:mb-[12px] -mt-[100px] md:-mt-[80px]">
-                            <div class="et-testimony__img rounded-full overflow-hidden border border-etBlue p-[7px] w-max max-w-full">
-                                <img src="<?= get_template_directory_uri(); ?>/assets/img/reviewer-1.png" alt="reviewer image" class="w-[100px] sm:w-[80px] h-[100px] sm:h-[80px] rounded-full">
-                            </div>
-                        </div>
-
-                        <div class="text-center">
-                            <h5 class="text-black font-medium text-[20px] mb-[3px]">Esther Howard</h5>
-                            <h6 class="text-[16px] text-etGray font-normal mb-[20px]">Nursing Assistant</h6>
-                            <p class="text-[16px] text-etGray font-normal mb-[20px]">Consectetur adipiscing elit. Integer nunc viverra laoreet est the is porta pretium metus aliquam eget maecenas porta is nunc viverra Aenean pulvinar maximus leo</p>
-                        </div>
-
-                        <!-- quotation icon -->
-                        <div class="absolute top-[40px] sm:top-[20px] left-[40px] sm:left-[20px]">
-                            <img src="<?= get_template_directory_uri(); ?>/assets/img/quotation-blue.svg" alt="quotation mark">
-                        </div>
-
-                        <!-- rating stars -->
-                        <div class="absolute bottom-0 left-[50%] -translate-x-[50%] translate-y-[50%] flex gap-[6px] bg-white shadow-[0_4px_25px_rgba(56,75,255,0.15)] p-[12px] rounded-full">
-                            <img src="<?= get_template_directory_uri(); ?>/assets/img/star-blue.svg" alt="star">
-                            <img src="<?= get_template_directory_uri(); ?>/assets/img/star-blue.svg" alt="star">
-                            <img src="<?= get_template_directory_uri(); ?>/assets/img/star-blue.svg" alt="star">
-                            <img src="<?= get_template_directory_uri(); ?>/assets/img/star-blue.svg" alt="star">
-                            <img src="<?= get_template_directory_uri(); ?>/assets/img/star-blue.svg" alt="star" class="opacity-25">
-                        </div>
-                    </div>
-                </div>
-
-                <!-- single testimony  -->
-                <div class="swiper-slide">
-                    <div class="et-testimony relative p-[40px] lg:p-[30px] md:p-[20px] border border-[#D4DCED] rounded-[16px] mt-[60px]">
-                        <!-- single testimony heading -->
-                        <div class="et-testimony__heading flex items-end justify-center mb-[17px] lg:mb-[12px] -mt-[100px] md:-mt-[80px]">
-                            <div class="et-testimony__img rounded-full overflow-hidden border border-etBlue p-[7px] w-max max-w-full">
-                                <img src="<?= get_template_directory_uri(); ?>/assets/img/reviewer-2.png" alt="reviewer image" class="w-[100px] sm:w-[80px] h-[100px] sm:h-[80px] rounded-full">
-                            </div>
-                        </div>
-
-                        <div class="text-center">
-                            <h5 class="text-black font-medium text-[20px] mb-[3px]">Leslie Alexander</h5>
-                            <h6 class="text-[16px] text-etGray font-normal mb-[20px]">Graphic designer</h6>
-                            <p class="text-[16px] text-etGray font-normal mb-[20px]">Consectetur adipiscing elit. Integer nunc viverra laoreet est the is porta pretium metus aliquam eget maecenas porta is nunc viverra Aenean pulvinar maximus leo</p>
-                        </div>
-
-                        <!-- quotation icon -->
-                        <div class="absolute top-[40px] sm:top-[20px] left-[40px] sm:left-[20px]">
-                            <img src="<?= get_template_directory_uri(); ?>/assets/img/quotation-blue.svg" alt="quotation mark">
-                        </div>
-
-                        <!-- rating stars -->
-                        <div class="absolute bottom-0 left-[50%] -translate-x-[50%] translate-y-[50%] flex gap-[6px] bg-white shadow-[0_4px_25px_rgba(56,75,255,0.15)] p-[12px] rounded-full">
-                            <img src="<?= get_template_directory_uri(); ?>/assets/img/star-blue.svg" alt="star">
-                            <img src="<?= get_template_directory_uri(); ?>/assets/img/star-blue.svg" alt="star">
-                            <img src="<?= get_template_directory_uri(); ?>/assets/img/star-blue.svg" alt="star">
-                            <img src="<?= get_template_directory_uri(); ?>/assets/img/star-blue.svg" alt="star">
-                            <img src="<?= get_template_directory_uri(); ?>/assets/img/star-blue.svg" alt="star" class="opacity-25">
-                        </div>
-                    </div>
-                </div>
-
-                <!-- single testimony  -->
-                <div class="swiper-slide">
-                    <div class="et-testimony relative p-[40px] lg:p-[30px] md:p-[20px] border border-[#D4DCED] rounded-[16px] mt-[60px]">
-                        <!-- single testimony heading -->
-                        <div class="et-testimony__heading flex items-end justify-center mb-[17px] lg:mb-[12px] -mt-[100px] md:-mt-[80px]">
-                            <div class="et-testimony__img rounded-full overflow-hidden border border-etBlue p-[7px] w-max max-w-full">
-                                <img src="<?= get_template_directory_uri(); ?>/assets/img/reviewer-3.png" alt="reviewer image" class="w-[100px] sm:w-[80px] h-[100px] sm:h-[80px] rounded-full">
-                            </div>
-                        </div>
-
-                        <div class="text-center">
-                            <h5 class="text-black font-medium text-[20px] mb-[3px]">Ronald Richards</h5>
-                            <h6 class="text-[16px] text-etGray font-normal mb-[20px]">Nursing Assistant</h6>
-                            <p class="text-[16px] text-etGray font-normal mb-[20px]">Consectetur adipiscing elit. Integer nunc viverra laoreet est the is porta pretium metus aliquam eget maecenas porta is nunc viverra Aenean pulvinar maximus leo</p>
-                        </div>
-
-                        <!-- quotation icon -->
-                        <div class="absolute top-[40px] sm:top-[20px] left-[40px] sm:left-[20px]">
-                            <img src="<?= get_template_directory_uri(); ?>/assets/img/quotation-blue.svg" alt="quotation mark">
-                        </div>
-
-                        <!-- rating stars -->
-                        <div class="absolute bottom-0 left-[50%] -translate-x-[50%] translate-y-[50%] flex gap-[6px] bg-white shadow-[0_4px_25px_rgba(56,75,255,0.15)] p-[12px] rounded-full">
-                            <img src="<?= get_template_directory_uri(); ?>/assets/img/star-blue.svg" alt="star">
-                            <img src="<?= get_template_directory_uri(); ?>/assets/img/star-blue.svg" alt="star">
-                            <img src="<?= get_template_directory_uri(); ?>/assets/img/star-blue.svg" alt="star">
-                            <img src="<?= get_template_directory_uri(); ?>/assets/img/star-blue.svg" alt="star">
-                            <img src="<?= get_template_directory_uri(); ?>/assets/img/star-blue.svg" alt="star" class="opacity-25">
-                        </div>
-                    </div>
-                </div>
-
-                <!-- single testimony  -->
-                <div class="swiper-slide">
-                    <div class="et-testimony relative p-[40px] lg:p-[30px] md:p-[20px] border border-[#D4DCED] rounded-[16px] mt-[60px]">
-                        <!-- single testimony heading -->
-                        <div class="et-testimony__heading flex items-end justify-center mb-[17px] lg:mb-[12px] -mt-[100px] md:-mt-[80px]">
-                            <div class="et-testimony__img rounded-full overflow-hidden border border-etBlue p-[7px] w-max max-w-full">
-                                <img src="<?= get_template_directory_uri(); ?>/assets/img/reviewer-1.png" alt="reviewer image" class="w-[100px] sm:w-[80px] h-[100px] sm:h-[80px] rounded-full">
-                            </div>
-                        </div>
-
-                        <div class="text-center">
-                            <h5 class="text-black font-medium text-[20px] mb-[3px]">Esther Howard</h5>
-                            <h6 class="text-[16px] text-etGray font-normal mb-[20px]">Nursing Assistant</h6>
-                            <p class="text-[16px] text-etGray font-normal mb-[20px]">Consectetur adipiscing elit. Integer nunc viverra laoreet est the is porta pretium metus aliquam eget maecenas porta is nunc viverra Aenean pulvinar maximus leo</p>
-                        </div>
-
-                        <!-- quotation icon -->
-                        <div class="absolute top-[40px] sm:top-[20px] left-[40px] sm:left-[20px]">
-                            <img src="<?= get_template_directory_uri(); ?>/assets/img/quotation-blue.svg" alt="quotation mark">
-                        </div>
-
-                        <!-- rating stars -->
-                        <div class="absolute bottom-0 left-[50%] -translate-x-[50%] translate-y-[50%] flex gap-[6px] bg-white shadow-[0_4px_25px_rgba(56,75,255,0.15)] p-[12px] rounded-full">
-                            <img src="<?= get_template_directory_uri(); ?>/assets/img/star-blue.svg" alt="star">
-                            <img src="<?= get_template_directory_uri(); ?>/assets/img/star-blue.svg" alt="star">
-                            <img src="<?= get_template_directory_uri(); ?>/assets/img/star-blue.svg" alt="star">
-                            <img src="<?= get_template_directory_uri(); ?>/assets/img/star-blue.svg" alt="star">
-                            <img src="<?= get_template_directory_uri(); ?>/assets/img/star-blue.svg" alt="star" class="opacity-25">
-                        </div>
-                    </div>
-                </div>
-
-                <!-- single testimony  -->
-                <div class="swiper-slide">
-                    <div class="et-testimony relative p-[40px] lg:p-[30px] md:p-[20px] border border-[#D4DCED] rounded-[16px] mt-[60px]">
-                        <!-- single testimony heading -->
-                        <div class="et-testimony__heading flex items-end justify-center mb-[17px] lg:mb-[12px] -mt-[100px] md:-mt-[80px]">
-                            <div class="et-testimony__img rounded-full overflow-hidden border border-etBlue p-[7px] w-max max-w-full">
-                                <img src="<?= get_template_directory_uri(); ?>/assets/img/reviewer-1.png" alt="reviewer image" class="w-[100px] sm:w-[80px] h-[100px] sm:h-[80px] rounded-full">
-                            </div>
-                        </div>
-
-                        <div class="text-center">
-                            <h5 class="text-black font-medium text-[20px] mb-[3px]">Esther Howard</h5>
-                            <h6 class="text-[16px] text-etGray font-normal mb-[20px]">Nursing Assistant</h6>
-                            <p class="text-[16px] text-etGray font-normal mb-[20px]">Consectetur adipiscing elit. Integer nunc viverra laoreet est the is porta pretium metus aliquam eget maecenas porta is nunc viverra Aenean pulvinar maximus leo</p>
-                        </div>
-
-                        <!-- quotation icon -->
-                        <div class="absolute top-[40px] sm:top-[20px] left-[40px] sm:left-[20px]">
-                            <img src="<?= get_template_directory_uri(); ?>/assets/img/quotation-blue.svg" alt="quotation mark">
-                        </div>
-
-                        <!-- rating stars -->
-                        <div class="absolute bottom-0 left-[50%] -translate-x-[50%] translate-y-[50%] flex gap-[6px] bg-white shadow-[0_4px_25px_rgba(56,75,255,0.15)] p-[12px] rounded-full">
-                            <img src="<?= get_template_directory_uri(); ?>/assets/img/star-blue.svg" alt="star">
-                            <img src="<?= get_template_directory_uri(); ?>/assets/img/star-blue.svg" alt="star">
-                            <img src="<?= get_template_directory_uri(); ?>/assets/img/star-blue.svg" alt="star">
-                            <img src="<?= get_template_directory_uri(); ?>/assets/img/star-blue.svg" alt="star">
-                            <img src="<?= get_template_directory_uri(); ?>/assets/img/star-blue.svg" alt="star" class="opacity-25">
-                        </div>
-                    </div>
-                </div>
-
-                <!-- single testimony  -->
-                <div class="swiper-slide">
-                    <div class="et-testimony relative p-[40px] lg:p-[30px] md:p-[20px] border border-[#D4DCED] rounded-[16px] mt-[60px]">
-                        <!-- single testimony heading -->
-                        <div class="et-testimony__heading flex items-end justify-center mb-[17px] lg:mb-[12px] -mt-[100px] md:-mt-[80px]">
-                            <div class="et-testimony__img rounded-full overflow-hidden border border-etBlue p-[7px] w-max max-w-full">
-                                <img src="<?= get_template_directory_uri(); ?>/assets/img/reviewer-1.png" alt="reviewer image" class="w-[100px] sm:w-[80px] h-[100px] sm:h-[80px] rounded-full">
-                            </div>
-                        </div>
-
-                        <div class="text-center">
-                            <h5 class="text-black font-medium text-[20px] mb-[3px]">Esther Howard</h5>
-                            <h6 class="text-[16px] text-etGray font-normal mb-[20px]">Nursing Assistant</h6>
-                            <p class="text-[16px] text-etGray font-normal mb-[20px]">Consectetur adipiscing elit. Integer nunc viverra laoreet est the is porta pretium metus aliquam eget maecenas porta is nunc viverra Aenean pulvinar maximus leo</p>
-                        </div>
-
-                        <!-- quotation icon -->
-                        <div class="absolute top-[40px] sm:top-[20px] left-[40px] sm:left-[20px]">
-                            <img src="<?= get_template_directory_uri(); ?>/assets/img/quotation-blue.svg" alt="quotation mark">
-                        </div>
-
-                        <!-- rating stars -->
-                        <div class="absolute bottom-0 left-[50%] -translate-x-[50%] translate-y-[50%] flex gap-[6px] bg-white shadow-[0_4px_25px_rgba(56,75,255,0.15)] p-[12px] rounded-full">
-                            <img src="<?= get_template_directory_uri(); ?>/assets/img/star-blue.svg" alt="star">
-                            <img src="<?= get_template_directory_uri(); ?>/assets/img/star-blue.svg" alt="star">
-                            <img src="<?= get_template_directory_uri(); ?>/assets/img/star-blue.svg" alt="star">
-                            <img src="<?= get_template_directory_uri(); ?>/assets/img/star-blue.svg" alt="star">
-                            <img src="<?= get_template_directory_uri(); ?>/assets/img/star-blue.svg" alt="star" class="opacity-25">
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-<!-- TESTIMONIAL SECTION END -->
 <?php
 get_footer('main');
