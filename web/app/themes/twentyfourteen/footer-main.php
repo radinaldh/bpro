@@ -172,7 +172,7 @@
                                         <path d="M0 15.875V2.28125C0 1.51953 0.615234 0.875 1.40625 0.875H9.84375C10.6055 0.875 11.25 1.51953 11.25 2.28125V15.875L5.625 12.5938L0 15.875Z" class="fill-transparent stroke-white group-hover:stroke-etBlue group-hover:fill-etBlue transition" />
                                     </svg>
                                 </span>
-                                <span class="txt">Journa</span>
+                                <span class="txt">Journal</span>
                             </a>
                         </li>
                         <li>
@@ -189,7 +189,7 @@
                 </div>
 
                 <!-- widget -->
-                <div class="et-footer-widget shrink-0 max-w-[318px] xs:max-w-full xs:grow">
+                <div style="display: none;" class="et-footer-widget shrink-0 max-w-[318px] xs:max-w-full xs:grow">
                     <h5 class="text-[20px] font-semibold mb-[16px]">Upcoming <span class="text-etBlue">Events</span></h5>
 
                     <div class="space-y-[30px]">
