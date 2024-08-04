@@ -46,9 +46,9 @@ get_header('main');
                 <!-- video btn -->
                 <div
                     class="absolute bottom-[50px] -left-[47px] lg:-left-[27px] md:-left-[47px] w-[180px] lg:w-[160px] aspect-square bg-[url('assets/img/about-video-btn-bg.jpg')] text-center text-[22px] text-white z-[1] flex items-center justify-center before:absolute before:bg-etBlue/80 before:-z-[1] before:inset-0 after:bg-etBlack after:w-[47px] after:h-[30px] after:absolute after:top-[100%] after:left-0 after:-z-[2] after:skew-y-[30deg] after:-translate-y-[17px]">
-                    <a href="https://www.youtube.com/watch?v=AQleI8oFqZo&amp;t=1s" data-fslightbox="about-video"
+                    <!-- <a href="https://www.youtube.com/watch?v=AQleI8oFqZo&amp;t=1s" data-fslightbox="about-video"
                         class="w-[107px] aspect-square rounded-full border border-white/20 flex justify-center items-center text-etBlue relative z-[1] text-[18px] before:absolute before:w-[56px] before:h-[56px] before:bg-white before:rounded-full before:-z-[1] hover:text-black"><i
-                            class="fa-solid fa-play"></i></a>
+                            class="fa-solid fa-play"></i></a> -->
                 </div>
             </div>
 
@@ -59,7 +59,7 @@ get_header('main');
                     <!-- txt -->
                     <div class="my-[30px]">
                         <h6 class="et-section-sub-title anim-text">BPro at a Glance </h6>
-                            <p class="my-[10px] text-[15px]">Shalom profesional muda, <br /><br />
+                            <p class="my-[10px] text-[15px]" style="text-align: justify;">Shalom profesional muda, <br /><br />
 
                             Kami percaya bahwa setiap manusia, sebagai makhluk sosial, membutuhkan sebuah komunitas
                             dalam keseharian hidup mereka. Dan sejatinya, komunitas itu akan menjadi sebuah tempat
@@ -121,7 +121,7 @@ get_header('main');
         <div
             class="et-upcoming-events-heading text-center max-w-[60%] mx-auto mb-[52px] xl:mb-[42px] lg:mb-[32px] md:max-w-[70%] sm:max-w-[80%] xs:max-w-full">
             <h6 class="et-section-sub-title !text-white">Bethany Professional Vision and Value</h6>
-            <h2 class="et-section-title !text-white">Growing Together in Grace and Purpose</h2>
+            <h2 class="et-section-title !text-white" style="font-size: 40px;">Growing Together in Grace and Purpose</h2>
         </div>
 
         <!-- main slider -->
@@ -136,27 +136,27 @@ get_header('main');
                         </div>
 
                         <div class="bg-white rounded-[20px] px-[30px] py-[20px] xxs:px-[20px]">
-                            <h5 class="text-[24px] font-normal mb-[13px]">Vision Bethany Professional</h5>
+                            <h5 class="text-[24px] font-normal mb-[13px]" style="color:#1260FE">Vision Bethany Professional</h5>
 
                             <div class="txt mb-[40px]">
-                                <p class="my-[10px] text-[15px]">Menjadi Komunitas Profesional Muda yang cinta Tuhan dan
+                                <p class="my-[10px] text-[15px]" style="text-align: justify;">Menjadi Komunitas Profesional Muda yang cinta Tuhan dan
                                     diberkati untuk memberkati.</p>
                             </div>
 
-                            <h5 class="text-[24px] font-normal mb-[13px]">Value Bethany Professional</h5>
+                            <h5 class="text-[24px] font-normal mb-[13px]" style="color:#1260FE">Value Bethany Professional</h5>
 
                             <h2 class="et-section-title mb-[24px] md:mb-[19px] anim-text" style="font-size: 20px;"><i>U
                                     PRO IN HIM</i></h2>
-                            <p class="my-[10px] text-[15px]"><i>Unity</i> (memelihara kesatuan dan saling mendukung
+                            <p class="my-[10px] text-[15px]" style="text-align: justify;"><i>Unity</i> (memelihara kesatuan dan saling mendukung
                                 dimanapun kita berada)</p>
-                            <p class="my-[10px] text-[15px]"><i>Professional</i> (menjadi spesialis yang terdidik,
+                            <p class="my-[10px] text-[15px]" style="text-align: justify;"><i>Professional</i> (menjadi spesialis yang terdidik,
                                 berkualitas, dan tidak murahan dalam bidang yang Tuhan percayakan)</p>
-                            <p class="my-[10px] text-[15px]"><i>Integrity</i> (memiliki keteguhan hati, selalu
+                            <p class="my-[10px] text-[15px]" style="text-align: justify;"><i>Integrity</i> (memiliki keteguhan hati, selalu
                                 konsisten, memiliki sikap yang sama ketika ada yang memperhatikan maupun saat tidak ada
                                 yang memperhatikan)</p>
-                            <p class="my-[10px] text-[15px]"><i>Humility</i> (memiliki sifat tingkah laku yang rendah
+                            <p class="my-[10px] text-[15px]" style="text-align: justify;"><i>Humility</i> (memiliki sifat tingkah laku yang rendah
                                 hati dalam setiap kondisi)</p>
-                            <p class="my-[10px] text-[15px]"><i>Impact</i> (menjadi dampak, role model, membuat
+                            <p class="my-[10px] text-[15px]" style="text-align: justify;"><i>Impact</i> (menjadi dampak, role model, membuat
                                 perbedaan dan memberi pengaruh yang positif dimanapun kita berada)</p>
 
                             <div

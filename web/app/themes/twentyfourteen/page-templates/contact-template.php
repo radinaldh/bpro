@@ -35,7 +35,7 @@ get_header('main'); ?>
 
                         <div class="txt">
                             <span class="font-light" style="font-size: 12px;">Call Us 7/24</span>
-                            <h4 class="font-semibold text-[12px]"><a href="whatsapp://send?text=Hello&phone=+6281131166111">0811 - 311 - 66 - 111</a></h4>
+                            <h4 class="font-semibold text-[12px]"><a href="whatsapp://send?text=Hello&phone=+6281131166111">+62811-311-66-111</a></h4>
                         </div>
                     </div>
 
@@ -67,16 +67,16 @@ get_header('main'); ?>
                 <!-- video cover -->
                 <div class="relative">
                     <img src="<?= get_template_directory_uri()?>/assets/img/contact-video-cover.jpg" alt="video cover" class="w-full">
-                    <a href="https://youtu.be/6KmuL6RcdNA?si=s1RJZZwk6XcqZAwX" data-fslightbox class="video-btn-shadow w-[58px] aspect-square rounded-full bg-white text-[18px] text-etBlue flex items-center justify-center absolute top-[50%] left-[50%] -translate-y-[50%] -translate-x-[50%]">
+                    <!-- <a href="https://youtu.be/6KmuL6RcdNA?si=s1RJZZwk6XcqZAwX" data-fslightbox class="video-btn-shadow w-[58px] aspect-square rounded-full bg-white text-[18px] text-etBlue flex items-center justify-center absolute top-[50%] left-[50%] -translate-y-[50%] -translate-x-[50%]">
                         <i class="fa-solid fa-play"></i>
-                    </a>
+                    </a> -->
                 </div>
             </div>
 
             <!-- right side contact form -->
             <div>
                 <h2 class="text-[40px] md:text-[35px] sm:text-[30px] xxs:text-[28px] font-medium text-etBlack mb-[7px]">Ready to Get Started?</h2>
-                <p class="text-etGray font-light text-[16px] mb-[38px]">Nullam varius, erat quis iaculis dictum, eros urna varius eros, ut blandit felis odio in turpis. Quisque rhoncus, eros in auctor ultrices,</p>
+                <p class="text-etGray font-light text-[16px] mb-[38px]">Reach out to us for support, questions, or to get involved. We're here to guide you on your spiritual journey and help you connect with our community.</p>
 
                 <form action="#" class="grid grid-cols-2 xxs:grid-cols-1 gap-[30px] xs:gap-[20px] text-[16px]">
                     <div>
