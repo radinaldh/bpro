@@ -342,9 +342,9 @@ get_header('main');
                     </div>
 
                     <div class="flex flex-wrap items-center gap-x-[30px] gap-y-[16px] rev-slide-up">
-                        <a href="about.html" class="et-btn bg-etBlue inline-flex items-center justify-center gap-x-[13px] h-[45px] px-[15px] text-white font-normal text-[17px] rounded-full hover:!bg-black hover:!text-white">View Details</a>
+                        <a href="/about/" class="et-btn bg-etBlue inline-flex items-center justify-center gap-x-[13px] h-[45px] px-[15px] text-white font-normal text-[17px] rounded-full hover:!bg-black hover:!text-white">Read More</a>
 
-                        <div class="flex items-center gap-[10px]">
+                        <!-- <div class="flex items-center gap-[10px]">
                             <div class="flex *:-ml-[20px]">
                                 <img src="<?= get_template_directory_uri(); ?>/assets/img/reviewer-1.png" alt="Person" class="w-[60px] h-[60px] rounded-full border-[3px] border-white first:ml-0">
                                 <img src="<?= get_template_directory_uri(); ?>/assets/img/reviewer-2.png" alt="Person" class="w-[60px] h-[60px] rounded-full border-[3px] border-white first:ml-0">
@@ -352,7 +352,7 @@ get_header('main');
                                 <div class="w-[60px] h-[60px] rounded-full border-[3px] border-white first:ml-0 text-white bg-etBlue font-semibold flex items-center justify-center text-[16px]">25+</div>
                             </div>
                             <span class="uppercase font-semibold text-etBlue text-[16px]">Speakers</span>
-                        </div>
+                        </div> -->
                     </div>
                 </div>
             </div>
@@ -388,17 +388,16 @@ get_header('main');
                     <div class="all-scheduled-events flex flex-col gap-[30px]">
                         <!-- single schedule -->
                         <div class="et-2-schedule bg-white mt-[57px] p-[12px] pt-0 rounded-[20px] inline-flex md:flex-col w-full gap-y-[20px] justify-between relative z-[2] rev-slide-up">
-                            <!-- img -->
                             <div class="w-[240px] shrink-0 relative">
                                 <div class="et-2-schedule-img absolute md:static md:-mt-[45px] bottom-0 md:before:content-none before:absolute before:top-0 before:left-[100%] before:w-full before:h-full before:bg-gradient-to-br before:from-etBlue before:to-[#0B3998] before:-z-[1]">
-                                    <img src="<?= get_template_directory_uri(); ?>/assets/new-img/1.png" alt="scehduled-event-cover" class="rounded-[20px] rounded-tr-none object-cover aspect-[8/9]">
+                                    <img style="height: 230px; width: 230px;" src="<?= get_template_directory_uri(); ?>/assets/new-img/1.png" alt="scehduled-event-cover" class="rounded-[20px] rounded-tr-none object-cover aspect-[8/9]">
                                 </div>
                             </div>
 
                             <!-- text -->
                             <div class="px-[30px] sm:px-[12px] py-[25px] sm:pb-[15px] pt-[37px] md:pt-0 w-full flex xs:flex-col gap-y-[15px] items-center bg-white">
                                 <!-- single schedule heading -->
-                                <div class="pr-[46px] sm:pr-0 mr-[54px] sm:mr-0 border-r sm:border-r-0 border-[#d9d9d9]">
+                                <div class="pr-[46px] sm:pr-0 mr-[54px] sm:mr-0 border-r sm:border-r-0 border-[#d9d9d9]" style="min-width: 76%;">
                                     <!-- date & time -->
                                     <div class="et-schedule-date-time border border-[rgba(217,217,217,0.89)] xxs:border-0 py-[7px] px-[15px] xxs:p-0 rounded-full inline-flex xxs:w-full items-center justify-center xxs:justify-start gap-x-[24px] gap-y-[10px] mb-[10px]">
                                         <div class="date flex items-center gap-[10px]">
@@ -440,7 +439,7 @@ get_header('main');
                                     </div>
 
                                     <!-- title -->
-                                    <h3 class="et-schedule-title text-[24px] sm:text-[22px] font-regular text-etBlack mb-[16px] anim-text"><a href="#" class="hover:text-etBlue">Siempre Son Flores" Musica Cubana Salsa Jazz adipi scing elit.</a></h3>
+                                    <h3 class="et-schedule-title text-[24px] sm:text-[22px] font-regular text-etBlack mb-[16px] anim-text"><a href="#" class="hover:text-etBlue">Heart for The Lost</a></h3>
 
                                     <!-- location -->
                                     <div class="et-schedule-loaction flex items-center gap-[12px]">
@@ -454,7 +453,7 @@ get_header('main');
                                 </div>
 
                                 <div class="flex shrink-0 xxl:flex-col xs:flex-row flex-wrap items-center xxl:items-start xs:items-center gap-x-[54px] gap-y-[16px]">
-                                    <div class="flex items-center">
+                                    <!-- <div class="flex items-center">
                                         <div class="flex *:-ml-[20px]">
                                             <img src="<?= get_template_directory_uri(); ?>/assets/img/reviewer-1.png" alt="Person" class="w-[45px] h-[45px] rounded-full border-[3px] border-white first:ml-0">
                                             <img src="<?= get_template_directory_uri(); ?>/assets/img/reviewer-2.png" alt="Person" class="w-[45px] h-[45px] rounded-full border-[3px] border-white first:ml-0">
@@ -462,11 +461,11 @@ get_header('main');
                                             <div class="w-[45px] h-[45px] rounded-full border-[3px] border-white first:ml-0 text-white bg-etBlue font-semibold flex items-center justify-center text-[16px]"></div>
                                         </div>
                                         <span class="font-normal text-etBlue text-[16px] -ml-[29px]"><span class="text-white">Spe</span>akers</span>
-                                    </div>
+                                    </div> -->
 
                                     <div class="flex shrink-0 flex-col xxs:flex-row gap-[16px] xxs:gap-[10px]">
-                                        <a href="#" class="et-btn border bg-etBlue text-white inline-flex items-center justify-center h-[45px] px-[22px] xxs:px-[16px] font-normal text-[17px] rounded-full hover:!bg-etBlack hover:!text-white">View More</a>
-                                        <a href="#" class="et-btn border bg-etBlack text-white inline-flex items-center justify-center h-[45px] px-[22px] xxs:px-[16px] font-normal text-[17px] rounded-full hover:!bg-etBlue hover:!text-white">Buy Tickets</a>
+                                        <!-- <a href="#" class="et-btn border bg-etBlue text-white inline-flex items-center justify-center h-[45px] px-[22px] xxs:px-[16px] font-normal text-[17px] rounded-full hover:!bg-etBlack hover:!text-white">View More</a> -->
+                                        <a href="#" class="et-btn border bg-etBlack text-white inline-flex items-center justify-center h-[45px] px-[22px] xxs:px-[16px] font-normal text-[17px] rounded-full hover:!bg-etBlue hover:!text-white">Coming Soon</a>
                                     </div>
                                 </div>
                             </div>
@@ -477,14 +476,14 @@ get_header('main');
                             <!-- img -->
                             <div class="w-[240px] shrink-0 relative">
                                 <div class="et-2-schedule-img absolute md:static md:-mt-[45px] bottom-0 md:before:content-none before:absolute before:top-0 before:left-[100%] before:w-full before:h-full before:bg-gradient-to-br before:from-etBlue before:to-[#0B3998] before:-z-[1]">
-                                    <img src="<?= get_template_directory_uri(); ?>/assets/new-img/3.png" alt="scehduled-event-cover" class="rounded-[20px] rounded-tr-none object-cover aspect-[8/9]">
+                                    <img style="height: 230px; width: 230px;" src="<?= get_template_directory_uri(); ?>/assets/new-img/3.png" alt="scehduled-event-cover" class="rounded-[20px] rounded-tr-none object-cover aspect-[8/9]">
                                 </div>
                             </div>
 
                             <!-- text -->
-                            <div class="px-[30px] sm:px-[12px] py-[25px] sm:pb-[15px] pt-[37px] md:pt-0 w-full flex xs:flex-col gap-y-[15px] items-center bg-white">
+                            <div class="px-[30px] sm:px-[12px] py-[25px] sm:pb-[15px] pt-[37px] md:pt-0 w-full flex xs:flex-col gap-y-[15px] items-center bg-white" >
                                 <!-- single schedule heading -->
-                                <div class="pr-[46px] sm:pr-0 mr-[54px] sm:mr-0 border-r sm:border-r-0 border-[#d9d9d9]">
+                                <div class="pr-[46px] sm:pr-0 mr-[54px] sm:mr-0 border-r sm:border-r-0 border-[#d9d9d9]" style="min-width: 76%;">
                                     <!-- date & time -->
                                     <div class="et-schedule-date-time border border-[rgba(217,217,217,0.89)] xxs:border-0 py-[7px] px-[15px] xxs:p-0 rounded-full inline-flex xxs:w-full items-center justify-center xxs:justify-start gap-x-[24px] gap-y-[10px] mb-[10px]">
                                         <div class="date flex items-center gap-[10px]">
@@ -540,7 +539,7 @@ get_header('main');
                                 </div>
 
                                 <div class="flex shrink-0 xxl:flex-col xs:flex-row flex-wrap items-center xxl:items-start xs:items-center gap-x-[54px] gap-y-[16px]">
-                                    <div class="flex items-center">
+                                    <!-- <div class="flex items-center">
                                         <div class="flex *:-ml-[20px]">
                                             <img src="<?= get_template_directory_uri(); ?>/assets/img/reviewer-1.png" alt="Person" class="w-[45px] h-[45px] rounded-full border-[3px] border-white first:ml-0">
                                             <img src="<?= get_template_directory_uri(); ?>/assets/img/reviewer-2.png" alt="Person" class="w-[45px] h-[45px] rounded-full border-[3px] border-white first:ml-0">
@@ -548,11 +547,11 @@ get_header('main');
                                             <div class="w-[45px] h-[45px] rounded-full border-[3px] border-white first:ml-0 text-white bg-etBlue font-semibold flex items-center justify-center text-[16px]"></div>
                                         </div>
                                         <span class="font-normal text-etBlue text-[16px] -ml-[29px]"><span class="text-white">Spe</span>akers</span>
-                                    </div>
+                                    </div> -->
 
                                     <div class="flex shrink-0 flex-col xxs:flex-row gap-[16px] xxs:gap-[10px]">
-                                        <a href="#" class="et-btn border bg-etBlue text-white inline-flex items-center justify-center h-[45px] px-[22px] xxs:px-[16px] font-normal text-[17px] rounded-full hover:!bg-etBlack hover:!text-white">View More</a>
-                                        <a href="#" class="et-btn border bg-etBlack text-white inline-flex items-center justify-center h-[45px] px-[22px] xxs:px-[16px] font-normal text-[17px] rounded-full hover:!bg-etBlue hover:!text-white">Buy Tickets</a>
+                                        <!-- <a href="#" class="et-btn border bg-etBlue text-white inline-flex items-center justify-center h-[45px] px-[22px] xxs:px-[16px] font-normal text-[17px] rounded-full hover:!bg-etBlack hover:!text-white">View More</a> -->
+                                        <a href="#" class="et-btn border bg-etBlack text-white inline-flex items-center justify-center h-[45px] px-[22px] xxs:px-[16px] font-normal text-[17px] rounded-full hover:!bg-etBlue hover:!text-white">Coming Soon</a>
                                     </div>
                                 </div>
                             </div>
@@ -563,14 +562,14 @@ get_header('main');
                             <!-- img -->
                             <div class="w-[240px] shrink-0 relative">
                                 <div class="et-2-schedule-img absolute md:static md:-mt-[45px] bottom-0 md:before:content-none before:absolute before:top-0 before:left-[100%] before:w-full before:h-full before:bg-gradient-to-br before:from-etBlue before:to-[#0B3998] before:-z-[1]">
-                                    <img src="<?= get_template_directory_uri(); ?>/assets/new-img/4.png" alt="scehduled-event-cover" class="rounded-[20px] rounded-tr-none object-cover aspect-[8/9]">
+                                    <img style="height: 230px; width: 230px;" src="<?= get_template_directory_uri(); ?>/assets/new-img/4.png" alt="scehduled-event-cover" class="rounded-[20px] rounded-tr-none object-cover aspect-[8/9]">
                                 </div>
                             </div>
 
                             <!-- text -->
                             <div class="px-[30px] sm:px-[12px] py-[25px] sm:pb-[15px] pt-[37px] md:pt-0 w-full flex xs:flex-col gap-y-[15px] items-center bg-white">
                                 <!-- single schedule heading -->
-                                <div class="pr-[46px] sm:pr-0 mr-[54px] sm:mr-0 border-r sm:border-r-0 border-[#d9d9d9]">
+                                <div class="pr-[46px] sm:pr-0 mr-[54px] sm:mr-0 border-r sm:border-r-0 border-[#d9d9d9]" style="min-width: 76%;">
                                     <!-- date & time -->
                                     <div class="et-schedule-date-time border border-[rgba(217,217,217,0.89)] xxs:border-0 py-[7px] px-[15px] xxs:p-0 rounded-full inline-flex xxs:w-full items-center justify-center xxs:justify-start gap-x-[24px] gap-y-[10px] mb-[10px]">
                                         <div class="date flex items-center gap-[10px]">
@@ -626,7 +625,7 @@ get_header('main');
                                 </div>
 
                                 <div class="flex shrink-0 xxl:flex-col xs:flex-row flex-wrap items-center xxl:items-start xs:items-center gap-x-[54px] gap-y-[16px]">
-                                    <div class="flex items-center">
+                                    <!-- <div class="flex items-center">
                                         <div class="flex *:-ml-[20px]">
                                             <img src="<?= get_template_directory_uri(); ?>/assets/img/reviewer-1.png" alt="Person" class="w-[45px] h-[45px] rounded-full border-[3px] border-white first:ml-0">
                                             <img src="<?= get_template_directory_uri(); ?>/assets/img/reviewer-2.png" alt="Person" class="w-[45px] h-[45px] rounded-full border-[3px] border-white first:ml-0">
@@ -634,11 +633,13 @@ get_header('main');
                                             <div class="w-[45px] h-[45px] rounded-full border-[3px] border-white first:ml-0 text-white bg-etBlue font-semibold flex items-center justify-center text-[16px]"></div>
                                         </div>
                                         <span class="font-normal text-etBlue text-[16px] -ml-[29px]"><span class="text-white">Spe</span>akers</span>
-                                    </div>
+                                    </div> -->
 
                                     <div class="flex shrink-0 flex-col xxs:flex-row gap-[16px] xxs:gap-[10px]">
-                                        <a href="#" class="et-btn border bg-etBlue text-white inline-flex items-center justify-center h-[45px] px-[22px] xxs:px-[16px] font-normal text-[17px] rounded-full hover:!bg-etBlack hover:!text-white">View More</a>
-                                        <a href="#" class="et-btn border bg-etBlack text-white inline-flex items-center justify-center h-[45px] px-[22px] xxs:px-[16px] font-normal text-[17px] rounded-full hover:!bg-etBlue hover:!text-white">Buy Tickets</a>
+                                    <button href="#"
+                                        class="myBtn et-btn border w-[180px] bg-etBlue text-white inline-flex items-center justify-center h-[45px] px-[22px] xxs:px-[16px] font-normal text-[17px] rounded-full hover:!bg-etBlack hover:!text-white">View
+                                        More</button>
+                                        <a href="https://bethanyprofessional.com/rsvp/" class="et-btn border bg-etBlack text-white inline-flex items-center justify-center h-[45px] px-[22px] xxs:px-[16px] font-normal text-[17px] rounded-full hover:!bg-etBlue hover:!text-white">Buy Tickets</a>
                                     </div>
                                 </div>
                             </div>
@@ -653,14 +654,14 @@ get_header('main');
                             <!-- img -->
                             <div class="w-[240px] shrink-0 relative">
                                 <div class="et-2-schedule-img absolute md:static md:-mt-[45px] bottom-0 md:before:content-none before:absolute before:top-0 before:left-[100%] before:w-full before:h-full before:bg-gradient-to-br before:from-etBlue before:to-[#0B3998] before:-z-[1]">
-                                    <img src="<?= get_template_directory_uri(); ?>/assets/new-img/4.png" alt="scehduled-event-cover" class="rounded-[20px] rounded-tr-none object-cover aspect-[8/9]">
+                                    <img style="height: 230px; width: 230px;" src="<?= get_template_directory_uri(); ?>/assets/new-img/4.png" alt="scehduled-event-cover" class="rounded-[20px] rounded-tr-none object-cover aspect-[8/9]">
                                 </div>
                             </div>
 
                             <!-- text -->
                             <div class="px-[30px] sm:px-[12px] py-[25px] sm:pb-[15px] pt-[37px] md:pt-0 w-full flex xs:flex-col gap-y-[15px] items-center bg-white">
                                 <!-- single schedule heading -->
-                                <div class="pr-[46px] sm:pr-0 mr-[54px] sm:mr-0 border-r sm:border-r-0 border-[#d9d9d9]">
+                                <div class="pr-[46px] sm:pr-0 mr-[54px] sm:mr-0 border-r sm:border-r-0 border-[#d9d9d9]" style="min-width: 76%;">
                                     <!-- date & time -->
                                     <div class="et-schedule-date-time border border-[rgba(217,217,217,0.89)] xxs:border-0 py-[7px] px-[15px] xxs:p-0 rounded-full inline-flex xxs:w-full items-center justify-center xxs:justify-start gap-x-[24px] gap-y-[10px] mb-[10px]">
                                         <div class="date flex items-center gap-[10px]">
@@ -716,7 +717,7 @@ get_header('main');
                                 </div>
 
                                 <div class="flex shrink-0 xxl:flex-col xs:flex-row flex-wrap items-center xxl:items-start xs:items-center gap-x-[54px] gap-y-[16px]">
-                                    <div class="flex items-center">
+                                    <!-- <div class="flex items-center">
                                         <div class="flex *:-ml-[20px]">
                                             <img src="<?= get_template_directory_uri(); ?>/assets/img/reviewer-1.png" alt="Person" class="w-[45px] h-[45px] rounded-full border-[3px] border-white first:ml-0">
                                             <img src="<?= get_template_directory_uri(); ?>/assets/img/reviewer-2.png" alt="Person" class="w-[45px] h-[45px] rounded-full border-[3px] border-white first:ml-0">
@@ -724,11 +725,11 @@ get_header('main');
                                             <div class="w-[45px] h-[45px] rounded-full border-[3px] border-white first:ml-0 text-white bg-etBlue font-semibold flex items-center justify-center text-[16px]"></div>
                                         </div>
                                         <span class="font-normal text-etBlue text-[16px] -ml-[29px]"><span class="text-white">Spe</span>akers</span>
-                                    </div>
+                                    </div> -->
 
                                     <div class="flex shrink-0 flex-col xxs:flex-row gap-[16px] xxs:gap-[10px]">
-                                        <a href="#" class="et-btn border bg-etBlue text-white inline-flex items-center justify-center h-[45px] px-[22px] xxs:px-[16px] font-normal text-[17px] rounded-full hover:!bg-etBlack hover:!text-white">View More</a>
-                                        <a href="#" class="et-btn border bg-etBlack text-white inline-flex items-center justify-center h-[45px] px-[22px] xxs:px-[16px] font-normal text-[17px] rounded-full hover:!bg-etBlue hover:!text-white">Buy Tickets</a>
+                                          <!-- <a href="#" class="et-btn border bg-etBlue text-white inline-flex items-center justify-center h-[45px] px-[22px] xxs:px-[16px] font-normal text-[17px] rounded-full hover:!bg-etBlack hover:!text-white">View More</a> -->
+                                          <a href="#" class="et-btn border bg-etBlack text-white inline-flex items-center justify-center h-[45px] px-[22px] xxs:px-[16px] font-normal text-[17px] rounded-full hover:!bg-etBlue hover:!text-white">Coming Soon</a>
                                     </div>
                                 </div>
                             </div>
@@ -739,14 +740,14 @@ get_header('main');
                             <!-- img -->
                             <div class="w-[240px] shrink-0 relative">
                                 <div class="et-2-schedule-img absolute md:static md:-mt-[45px] bottom-0 md:before:content-none before:absolute before:top-0 before:left-[100%] before:w-full before:h-full before:bg-gradient-to-br before:from-etBlue before:to-[#0B3998] before:-z-[1]">
-                                    <img src="<?= get_template_directory_uri(); ?>/assets/new-img/2.png" alt="scehduled-event-cover" class="rounded-[20px] rounded-tr-none object-cover aspect-[8/9]">
+                                    <img style="height: 230px; width: 230px;" src="<?= get_template_directory_uri(); ?>/assets/new-img/2.png" alt="scehduled-event-cover" class="rounded-[20px] rounded-tr-none object-cover aspect-[8/9]">
                                 </div>
                             </div>
 
                             <!-- text -->
                             <div class="px-[30px] sm:px-[12px] py-[25px] sm:pb-[15px] pt-[37px] md:pt-0 w-full flex xs:flex-col gap-y-[15px] items-center bg-white">
                                 <!-- single schedule heading -->
-                                <div class="pr-[46px] sm:pr-0 mr-[54px] sm:mr-0 border-r sm:border-r-0 border-[#d9d9d9]">
+                                <div class="pr-[46px] sm:pr-0 mr-[54px] sm:mr-0 border-r sm:border-r-0 border-[#d9d9d9]" style="min-width: 76%;">
                                     <!-- date & time -->
                                     <div class="et-schedule-date-time border border-[rgba(217,217,217,0.89)] xxs:border-0 py-[7px] px-[15px] xxs:p-0 rounded-full inline-flex xxs:w-full items-center justify-center xxs:justify-start gap-x-[24px] gap-y-[10px] mb-[10px]">
                                         <div class="date flex items-center gap-[10px]">
@@ -802,19 +803,9 @@ get_header('main');
                                 </div>
 
                                 <div class="flex shrink-0 xxl:flex-col xs:flex-row flex-wrap items-center xxl:items-start xs:items-center gap-x-[54px] gap-y-[16px]">
-                                    <div class="flex items-center">
-                                        <div class="flex *:-ml-[20px]">
-                                            <img src="<?= get_template_directory_uri(); ?>/assets/img/reviewer-1.png" alt="Person" class="w-[45px] h-[45px] rounded-full border-[3px] border-white first:ml-0">
-                                            <img src="<?= get_template_directory_uri(); ?>/assets/img/reviewer-2.png" alt="Person" class="w-[45px] h-[45px] rounded-full border-[3px] border-white first:ml-0">
-                                            <img src="<?= get_template_directory_uri(); ?>/assets/img/reviewer-3.png" alt="Person" class="w-[45px] h-[45px] rounded-full border-[3px] border-white first:ml-0">
-                                            <div class="w-[45px] h-[45px] rounded-full border-[3px] border-white first:ml-0 text-white bg-etBlue font-semibold flex items-center justify-center text-[16px]"></div>
-                                        </div>
-                                        <span class="font-normal text-etBlue text-[16px] -ml-[29px]"><span class="text-white">Spe</span>akers</span>
-                                    </div>
-
                                     <div class="flex shrink-0 flex-col xxs:flex-row gap-[16px] xxs:gap-[10px]">
-                                        <a href="#" class="et-btn border bg-etBlue text-white inline-flex items-center justify-center h-[45px] px-[22px] xxs:px-[16px] font-normal text-[17px] rounded-full hover:!bg-etBlack hover:!text-white">View More</a>
-                                        <a href="#" class="et-btn border bg-etBlack text-white inline-flex items-center justify-center h-[45px] px-[22px] xxs:px-[16px] font-normal text-[17px] rounded-full hover:!bg-etBlue hover:!text-white">Buy Tickets</a>
+                                         <!-- <a href="#" class="et-btn border bg-etBlue text-white inline-flex items-center justify-center h-[45px] px-[22px] xxs:px-[16px] font-normal text-[17px] rounded-full hover:!bg-etBlack hover:!text-white">View More</a> -->
+                                         <a href="#" class="et-btn border bg-etBlack text-white inline-flex items-center justify-center h-[45px] px-[22px] xxs:px-[16px] font-normal text-[17px] rounded-full hover:!bg-etBlue hover:!text-white">Coming Soon</a>
                                     </div>
                                 </div>
                             </div>
@@ -825,14 +816,14 @@ get_header('main');
                             <!-- img -->
                             <div class="w-[240px] shrink-0 relative">
                                 <div class="et-2-schedule-img absolute md:static md:-mt-[45px] bottom-0 md:before:content-none before:absolute before:top-0 before:left-[100%] before:w-full before:h-full before:bg-gradient-to-br before:from-etBlue before:to-[#0B3998] before:-z-[1]">
-                                    <img src="<?= get_template_directory_uri(); ?>/assets/new-img/4.png" alt="scehduled-event-cover" class="rounded-[20px] rounded-tr-none object-cover aspect-[8/9]">
+                                    <img style="height: 230px; width: 230px;" src="<?= get_template_directory_uri(); ?>/assets/new-img/4.png" alt="scehduled-event-cover" class="rounded-[20px] rounded-tr-none object-cover aspect-[8/9]">
                                 </div>
                             </div>
 
                             <!-- text -->
                             <div class="px-[30px] sm:px-[12px] py-[25px] sm:pb-[15px] pt-[37px] md:pt-0 w-full flex xs:flex-col gap-y-[15px] items-center bg-white">
                                 <!-- single schedule heading -->
-                                <div class="pr-[46px] sm:pr-0 mr-[54px] sm:mr-0 border-r sm:border-r-0 border-[#d9d9d9]">
+                                <div class="pr-[46px] sm:pr-0 mr-[54px] sm:mr-0 border-r sm:border-r-0 border-[#d9d9d9]" style="min-width: 76%;">
                                     <!-- date & time -->
                                     <div class="et-schedule-date-time border border-[rgba(217,217,217,0.89)] xxs:border-0 py-[7px] px-[15px] xxs:p-0 rounded-full inline-flex xxs:w-full items-center justify-center xxs:justify-start gap-x-[24px] gap-y-[10px] mb-[10px]">
                                         <div class="date flex items-center gap-[10px]">
@@ -888,19 +879,10 @@ get_header('main');
                                 </div>
 
                                 <div class="flex shrink-0 xxl:flex-col xs:flex-row flex-wrap items-center xxl:items-start xs:items-center gap-x-[54px] gap-y-[16px]">
-                                    <div class="flex items-center">
-                                        <div class="flex *:-ml-[20px]">
-                                            <img src="<?= get_template_directory_uri(); ?>/assets/img/reviewer-1.png" alt="Person" class="w-[45px] h-[45px] rounded-full border-[3px] border-white first:ml-0">
-                                            <img src="<?= get_template_directory_uri(); ?>/assets/img/reviewer-2.png" alt="Person" class="w-[45px] h-[45px] rounded-full border-[3px] border-white first:ml-0">
-                                            <img src="<?= get_template_directory_uri(); ?>/assets/img/reviewer-3.png" alt="Person" class="w-[45px] h-[45px] rounded-full border-[3px] border-white first:ml-0">
-                                            <div class="w-[45px] h-[45px] rounded-full border-[3px] border-white first:ml-0 text-white bg-etBlue font-semibold flex items-center justify-center text-[16px]"></div>
-                                        </div>
-                                        <span class="font-normal text-etBlue text-[16px] -ml-[29px]"><span class="text-white">Spe</span>akers</span>
-                                    </div>
 
                                     <div class="flex shrink-0 flex-col xxs:flex-row gap-[16px] xxs:gap-[10px]">
-                                        <a href="#" class="et-btn border bg-etBlue text-white inline-flex items-center justify-center h-[45px] px-[22px] xxs:px-[16px] font-normal text-[17px] rounded-full hover:!bg-etBlack hover:!text-white">View More</a>
-                                        <a href="#" class="et-btn border bg-etBlack text-white inline-flex items-center justify-center h-[45px] px-[22px] xxs:px-[16px] font-normal text-[17px] rounded-full hover:!bg-etBlue hover:!text-white">Buy Tickets</a>
+                                          <!-- <a href="#" class="et-btn border bg-etBlue text-white inline-flex items-center justify-center h-[45px] px-[22px] xxs:px-[16px] font-normal text-[17px] rounded-full hover:!bg-etBlack hover:!text-white">View More</a> -->
+                                          <a href="#" class="et-btn border bg-etBlack text-white inline-flex items-center justify-center h-[45px] px-[22px] xxs:px-[16px] font-normal text-[17px] rounded-full hover:!bg-etBlue hover:!text-white">Coming Soon</a>
                                     </div>
                                 </div>
                             </div>
@@ -1207,10 +1189,10 @@ get_header('main');
                     <div class="et-member__txt bg-white relative z-[1] mx-[25px] md:mx-[15px] xs:mx-[5px] -mt-[44px] md:-mt-[15px] xs:mt-0 rounded-[16px] shadow-[0_4px_60px_rgba(18,96,254,0.12)] px-[25px] md:px-[15px] pb-[30px] md:pb-[20px] before:w-full before:absolute before:-z-[1] before:h-full before:bg-white before:left-0 before:rounded-[16px] before:-top-[33px] before:skew-y-[4deg]">
                         <div class="et-member-socials absolute right-[20px] -top-[43px]">
                             <div class="et-speaker__socials flex flex-col gap-[8px] absolute -z-[2] text-[14px] opacity-0 transition duration-[400ms] bottom-[calc(100%+8px)] translate-y-[100%] group-hover:translate-y-0 group-hover:opacity-100">
-                                <a href="#" class="border border-white text-white w-[36px] h-[36px] flex items-center justify-center rounded-full hover:border-etBlue hover:bg-etBlue"><i class="fa-brands fa-facebook-f"></i></a>
+                                <a href="https://www.facebook.com/sharer/sharer.php?u=https://bethanyprofessional.com/rsvp/" class="border border-white text-white w-[36px] h-[36px] flex items-center justify-center rounded-full hover:border-etBlue hover:bg-etBlue"><i class="fa-brands fa-facebook-f"></i></a>
                                 <!-- <a href="#" class="border border-white text-white w-[36px] h-[36px] flex items-center justify-center rounded-full hover:border-etBlue hover:bg-etBlue"><i class="fa-brands fa-x-twitter"></i></a>
                                 <a href="#" class="border border-white text-white w-[36px] h-[36px] flex items-center justify-center rounded-full hover:border-etBlue hover:bg-etBlue"><i class="fa-brands fa-linkedin-in"></i></a> -->
-                                <a href="#" class="border border-white text-white w-[36px] h-[36px] flex items-center justify-center rounded-full hover:border-etBlue hover:bg-etBlue"><i class="fa-brands fa-instagram"></i></a>
+                                <a href="javascript:void(0);" onclick="copyLink()" class="border border-white text-white w-[36px] h-[36px] flex items-center justify-center rounded-full hover:border-etBlue hover:bg-etBlue"><i class="fa-brands fa-instagram"></i></a>
                             </div>
                             <div class="et-member-socials__icon w-[36px] aspect-square rounded-full bg-etBlue flex items-center justify-center">
                                 <svg width="13" height="14" viewBox="0 0 13 14" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -1233,10 +1215,10 @@ get_header('main');
                     <div class="et-member__txt bg-white relative z-[1] mx-[25px] md:mx-[15px] xs:mx-[5px] -mt-[44px] md:-mt-[15px] xs:mt-0 rounded-[16px] shadow-[0_4px_60px_rgba(18,96,254,0.12)] px-[25px] md:px-[15px] pb-[30px] md:pb-[20px] before:w-full before:absolute before:-z-[1] before:h-full before:bg-white before:left-0 before:rounded-[16px] before:-top-[33px] before:skew-y-[4deg]">
                         <div class="et-member-socials absolute right-[20px] -top-[43px]">
                             <div class="et-speaker__socials flex flex-col gap-[8px] absolute -z-[2] text-[14px] opacity-0 transition duration-[400ms] bottom-[calc(100%+8px)] translate-y-[100%] group-hover:translate-y-0 group-hover:opacity-100">
-                                <a href="#" class="border border-white text-white w-[36px] h-[36px] flex items-center justify-center rounded-full hover:border-etBlue hover:bg-etBlue"><i class="fa-brands fa-facebook-f"></i></a>
+                                <a href="https://www.facebook.com/sharer/sharer.php?u=https://bethanyprofessional.com/rsvp/" class="border border-white text-white w-[36px] h-[36px] flex items-center justify-center rounded-full hover:border-etBlue hover:bg-etBlue"><i class="fa-brands fa-facebook-f"></i></a>
                                 <!-- <a href="#" class="border border-white text-white w-[36px] h-[36px] flex items-center justify-center rounded-full hover:border-etBlue hover:bg-etBlue"><i class="fa-brands fa-x-twitter"></i></a>
                                 <a href="#" class="border border-white text-white w-[36px] h-[36px] flex items-center justify-center rounded-full hover:border-etBlue hover:bg-etBlue"><i class="fa-brands fa-linkedin-in"></i></a> -->
-                                <a href="#" class="border border-white text-white w-[36px] h-[36px] flex items-center justify-center rounded-full hover:border-etBlue hover:bg-etBlue"><i class="fa-brands fa-instagram"></i></a>
+                                <a href="javascript:void(0);" onclick="copyLink()" class="border border-white text-white w-[36px] h-[36px] flex items-center justify-center rounded-full hover:border-etBlue hover:bg-etBlue"><i class="fa-brands fa-instagram"></i></a>
                             </div>
                             <div class="et-member-socials__icon w-[36px] aspect-square rounded-full bg-etBlue flex items-center justify-center">
                                 <svg width="13" height="14" viewBox="0 0 13 14" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -1277,7 +1259,7 @@ get_header('main');
                         <!-- txt -->
                         <div class="text-white">
                             <span class="block font-medium text-[16px] mb-[3px]">Hotline BPro :</span>
-                            <h5 class="font-medium text-[22px] xxs:text-[22px]"><a href="tel:88012365499">0811 311 66 111 (Whatsapp)</a></h5>
+                            <h5 class="font-medium text-[22px] xxs:text-[22px]"><a href="https://api.whatsapp.com/send?phone=6281131166111">0811-311-66-111 (Whatsapp)</a></h5>
                         </div>
                     </div>
                     <div class="pl-[54px] overflow-hidden border-l-[4px] sm:border-l-0 border-white md:text-center md:pl-[15px] sm:pl-0 md:w-full relative before:absolute before:-left-[10px] before:top-[50%] before:-translate-y-[50%] before:w-[15px] before:aspect-square before:bg-white before:rotate-[45deg] before:-skew-x-[10deg] before:-skew-y-[10deg] sm:before:hidden">
@@ -1289,7 +1271,7 @@ wrapped with Praise & Worship Night <br>
                     </div>
                 </div>
 
-                <a href="https://www.google.com/url?q=http://bit.ly/BPROEVENT&sa=D&source=editors&ust=1722669762050051&usg=AOvVaw3SJvupWKHwGMOEHNj0mgK8" class="et-btn bg-white flex items-center justify-center gap-x-[15px] h-[50px] px-[15px] text-etBlue font-medium text-[17px] rounded-full shrink-0 group">
+                <a href="https://bethanyprofessional.com/rsvp/" class="et-btn bg-white flex items-center justify-center gap-x-[15px] h-[50px] px-[15px] text-etBlue font-medium text-[17px] rounded-full shrink-0 group">
                     <span class="icon">
                         <svg width="27" height="16" viewBox="0 0 27 16" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path d="M8.02101 0H0.844661C0.378197 0 0 0.378144 0 0.844662V5.12625C0 5.59277 0.378197 5.97091 0.844661 5.97091C1.96347 5.97091 2.8737 6.88114 2.8737 8C2.8737 9.11886 1.96347 10.029 0.844661 10.029C0.378197 10.029 0 10.4071 0 10.8736V15.1553C0 15.6218 0.378197 15.9999 0.844661 15.9999H8.02101V0Z" class="fill-etBlue group-hover:fill-white transition"></path>
@@ -1406,71 +1388,6 @@ wrapped with Praise & Worship Night <br>
     <!-- FEATURES SECTION END -->
 
     <!-- GALLERY SECTION START -->
-    <section class="grid grid-cols-4 lg:grid-cols-3 sm:grid-cols-2">
-        <!-- single gallery item -->
-        <div class="relative z-[1] group before:absolute before:inset-0 before:bg-etBlack/70 before:z-[0] before:opacity-0 before:transition before:duration-[400ms] hover:before:opacity-100">
-            <img src="<?= get_template_directory_uri(); ?>/assets/img/galeri1.png" alt="gallery image">
-            <a href="<?= get_template_directory_uri(); ?>assets/img/galeri1.png" data-fslightbox="gallery" class="inline-flex items-center justify-center w-[64px] aspect-square rounded-full bg-white text-[25px] absolute top-[50%] left-[50%] -translate-x-[50%] -translate-y-[50%] opacity-0 group-hover:opacity-100 hover:text-etBlue">
-                <i class="fa-plus fa-regular"></i>
-            </a>
-        </div>
-
-        <!-- single gallery item -->
-        <div class="relative z-[1] group before:absolute before:inset-0 before:bg-etBlack/70 before:z-[0] before:opacity-0 before:transition before:duration-[400ms] hover:before:opacity-100">
-            <img src="<?= get_template_directory_uri(); ?>/assets/img/galeri2.png" alt="gallery image">
-            <a href="<?= get_template_directory_uri(); ?>assets/img/galeri2.png" data-fslightbox="gallery" class="inline-flex items-center justify-center w-[64px] aspect-square rounded-full bg-white text-[25px] absolute top-[50%] left-[50%] -translate-x-[50%] -translate-y-[50%] opacity-0 group-hover:opacity-100 hover:text-etBlue">
-                <i class="fa-plus fa-regular"></i>
-            </a>
-        </div>
-
-        <!-- single gallery item -->
-        <div class="relative z-[1] group before:absolute before:inset-0 before:bg-etBlack/70 before:z-[0] before:opacity-0 before:transition before:duration-[400ms] hover:before:opacity-100">
-            <img src="<?= get_template_directory_uri(); ?>/assets/img/galeri3.png" alt="gallery image">
-            <a href="<?= get_template_directory_uri(); ?>assets/img/galeri3.png" data-fslightbox="gallery" class="inline-flex items-center justify-center w-[64px] aspect-square rounded-full bg-white text-[25px] absolute top-[50%] left-[50%] -translate-x-[50%] -translate-y-[50%] opacity-0 group-hover:opacity-100 hover:text-etBlue">
-                <i class="fa-plus fa-regular"></i>
-            </a>
-        </div>
-
-        <!-- single gallery item -->
-        <div class="relative z-[1] group before:absolute before:inset-0 before:bg-etBlack/70 before:z-[0] before:opacity-0 before:transition before:duration-[400ms] hover:before:opacity-100">
-            <img src="<?= get_template_directory_uri(); ?>/assets/img/galeri4.png" alt="gallery image">
-            <a href="<?= get_template_directory_uri(); ?>assets/img/galeri4.png" data-fslightbox="gallery" class="inline-flex items-center justify-center w-[64px] aspect-square rounded-full bg-white text-[25px] absolute top-[50%] left-[50%] -translate-x-[50%] -translate-y-[50%] opacity-0 group-hover:opacity-100 hover:text-etBlue">
-                <i class="fa-plus fa-regular"></i>
-            </a>
-        </div>
-
-        <!-- single gallery item -->
-        <div class="relative z-[1] group before:absolute before:inset-0 before:bg-etBlack/70 before:z-[0] before:opacity-0 before:transition before:duration-[400ms] hover:before:opacity-100">
-            <img src="<?= get_template_directory_uri(); ?>/assets/img/galeri5.png" alt="gallery image">
-            <a href="<?= get_template_directory_uri(); ?>assets/img/galeri5.png" data-fslightbox="gallery" class="inline-flex items-center justify-center w-[64px] aspect-square rounded-full bg-white text-[25px] absolute top-[50%] left-[50%] -translate-x-[50%] -translate-y-[50%] opacity-0 group-hover:opacity-100 hover:text-etBlue">
-                <i class="fa-plus fa-regular"></i>
-            </a>
-        </div>
-
-        <!-- single gallery item -->
-        <div class="relative z-[1] group before:absolute before:inset-0 before:bg-etBlack/70 before:z-[0] before:opacity-0 before:transition before:duration-[400ms] hover:before:opacity-100">
-            <img src="<?= get_template_directory_uri(); ?>/assets/img/galeri6.png" alt="gallery image">
-            <a href="<?= get_template_directory_uri(); ?>assets/img/galeri6.png" data-fslightbox="gallery" class="inline-flex items-center justify-center w-[64px] aspect-square rounded-full bg-white text-[25px] absolute top-[50%] left-[50%] -translate-x-[50%] -translate-y-[50%] opacity-0 group-hover:opacity-100 hover:text-etBlue">
-                <i class="fa-plus fa-regular"></i>
-            </a>
-        </div>
-
-        <!-- single gallery item -->
-        <div class="relative z-[1] group before:absolute before:inset-0 before:bg-etBlack/70 before:z-[0] before:opacity-0 before:transition before:duration-[400ms] hover:before:opacity-100">
-            <img src="<?= get_template_directory_uri(); ?>/assets/img/galeri7.png" alt="gallery image">
-            <a href="<?= get_template_directory_uri(); ?>assets/img/galeri7.png" data-fslightbox="gallery" class="inline-flex items-center justify-center w-[64px] aspect-square rounded-full bg-white text-[25px] absolute top-[50%] left-[50%] -translate-x-[50%] -translate-y-[50%] opacity-0 group-hover:opacity-100 hover:text-etBlue">
-                <i class="fa-plus fa-regular"></i>
-            </a>
-        </div>
-
-        <!-- single gallery item -->
-        <div class="relative z-[1] group before:absolute before:inset-0 before:bg-etBlack/70 before:z-[0] before:opacity-0 before:transition before:duration-[400ms] hover:before:opacity-100">
-            <img src="<?= get_template_directory_uri(); ?>/assets/img/galeri8.png" alt="gallery image">
-            <a href="<?= get_template_directory_uri(); ?>assets/img/galeri8.png" data-fslightbox="gallery" class="inline-flex items-center justify-center w-[64px] aspect-square rounded-full bg-white text-[25px] absolute top-[50%] left-[50%] -translate-x-[50%] -translate-y-[50%] opacity-0 group-hover:opacity-100 hover:text-etBlue">
-                <i class="fa-plus fa-regular"></i>
-            </a>
-        </div>
-    </section>
     <!-- GALLERY SECTION END -->
 
 
@@ -1870,10 +1787,75 @@ wrapped with Praise & Worship Night <br>
         </div>
     </section>
     <!-- TESTIMONIAL SECTION END -->
+    <section class="grid grid-cols-4 lg:grid-cols-3 sm:grid-cols-2">
+        <!-- single gallery item -->
+        <div class="relative z-[1] group before:absolute before:inset-0 before:bg-etBlack/70 before:z-[0] before:opacity-0 before:transition before:duration-[400ms] hover:before:opacity-100">
+            <img src="<?= get_template_directory_uri(); ?>/assets/img/galeri1.png" alt="gallery image">
+            <a href="<?= get_template_directory_uri(); ?>/assets/img/galeri1.png" data-fslightbox="gallery" class="inline-flex items-center justify-center w-[64px] aspect-square rounded-full bg-white text-[25px] absolute top-[50%] left-[50%] -translate-x-[50%] -translate-y-[50%] opacity-0 group-hover:opacity-100 hover:text-etBlue">
+                <i class="fa-plus fa-regular"></i>
+            </a>
+        </div>
 
+        <!-- single gallery item -->
+        <div class="relative z-[1] group before:absolute before:inset-0 before:bg-etBlack/70 before:z-[0] before:opacity-0 before:transition before:duration-[400ms] hover:before:opacity-100">
+            <img src="<?= get_template_directory_uri(); ?>/assets/img/galeri2.png" alt="gallery image">
+            <a href="<?= get_template_directory_uri(); ?>/assets/img/galeri2.png" data-fslightbox="gallery" class="inline-flex items-center justify-center w-[64px] aspect-square rounded-full bg-white text-[25px] absolute top-[50%] left-[50%] -translate-x-[50%] -translate-y-[50%] opacity-0 group-hover:opacity-100 hover:text-etBlue">
+                <i class="fa-plus fa-regular"></i>
+            </a>
+        </div>
+
+        <!-- single gallery item -->
+        <div class="relative z-[1] group before:absolute before:inset-0 before:bg-etBlack/70 before:z-[0] before:opacity-0 before:transition before:duration-[400ms] hover:before:opacity-100">
+            <img src="<?= get_template_directory_uri(); ?>/assets/img/galeri3.png" alt="gallery image">
+            <a href="<?= get_template_directory_uri(); ?>/assets/img/galeri3.png" data-fslightbox="gallery" class="inline-flex items-center justify-center w-[64px] aspect-square rounded-full bg-white text-[25px] absolute top-[50%] left-[50%] -translate-x-[50%] -translate-y-[50%] opacity-0 group-hover:opacity-100 hover:text-etBlue">
+                <i class="fa-plus fa-regular"></i>
+            </a>
+        </div>
+
+        <!-- single gallery item -->
+        <div class="relative z-[1] group before:absolute before:inset-0 before:bg-etBlack/70 before:z-[0] before:opacity-0 before:transition before:duration-[400ms] hover:before:opacity-100">
+            <img src="<?= get_template_directory_uri(); ?>/assets/img/galeri4.png" alt="gallery image">
+            <a href="<?= get_template_directory_uri(); ?>/assets/img/galeri4.png" data-fslightbox="gallery" class="inline-flex items-center justify-center w-[64px] aspect-square rounded-full bg-white text-[25px] absolute top-[50%] left-[50%] -translate-x-[50%] -translate-y-[50%] opacity-0 group-hover:opacity-100 hover:text-etBlue">
+                <i class="fa-plus fa-regular"></i>
+            </a>
+        </div>
+
+        <!-- single gallery item -->
+        <div class="relative z-[1] group before:absolute before:inset-0 before:bg-etBlack/70 before:z-[0] before:opacity-0 before:transition before:duration-[400ms] hover:before:opacity-100">
+            <img src="<?= get_template_directory_uri(); ?>/assets/img/galeri5.png" alt="gallery image">
+            <a href="<?= get_template_directory_uri(); ?>/assets/img/galeri5.png" data-fslightbox="gallery" class="inline-flex items-center justify-center w-[64px] aspect-square rounded-full bg-white text-[25px] absolute top-[50%] left-[50%] -translate-x-[50%] -translate-y-[50%] opacity-0 group-hover:opacity-100 hover:text-etBlue">
+                <i class="fa-plus fa-regular"></i>
+            </a>
+        </div>
+
+        <!-- single gallery item -->
+        <div class="relative z-[1] group before:absolute before:inset-0 before:bg-etBlack/70 before:z-[0] before:opacity-0 before:transition before:duration-[400ms] hover:before:opacity-100">
+            <img src="<?= get_template_directory_uri(); ?>/assets/img/galeri6.png" alt="gallery image">
+            <a href="<?= get_template_directory_uri(); ?>/assets/img/galeri6.png" data-fslightbox="gallery" class="inline-flex items-center justify-center w-[64px] aspect-square rounded-full bg-white text-[25px] absolute top-[50%] left-[50%] -translate-x-[50%] -translate-y-[50%] opacity-0 group-hover:opacity-100 hover:text-etBlue">
+                <i class="fa-plus fa-regular"></i>
+            </a>
+        </div>
+
+        <!-- single gallery item -->
+        <div class="relative z-[1] group before:absolute before:inset-0 before:bg-etBlack/70 before:z-[0] before:opacity-0 before:transition before:duration-[400ms] hover:before:opacity-100">
+            <img src="<?= get_template_directory_uri(); ?>/assets/img/galeri9.png" alt="gallery image">
+            <a href="<?= get_template_directory_uri(); ?>/assets/img/galeri9.png" data-fslightbox="gallery" class="inline-flex items-center justify-center w-[64px] aspect-square rounded-full bg-white text-[25px] absolute top-[50%] left-[50%] -translate-x-[50%] -translate-y-[50%] opacity-0 group-hover:opacity-100 hover:text-etBlue">
+                <i class="fa-plus fa-regular"></i>
+            </a>
+        </div>
+
+        <!-- single gallery item -->
+        <div class="relative z-[1] group before:absolute before:inset-0 before:bg-etBlack/70 before:z-[0] before:opacity-0 before:transition before:duration-[400ms] hover:before:opacity-100">
+            <img src="<?= get_template_directory_uri(); ?>/assets/img/galeri10.png" alt="gallery image">
+            <a href="<?= get_template_directory_uri(); ?>/assets/img/galeri10.png" data-fslightbox="gallery" class="inline-flex items-center justify-center w-[64px] aspect-square rounded-full bg-white text-[25px] absolute top-[50%] left-[50%] -translate-x-[50%] -translate-y-[50%] opacity-0 group-hover:opacity-100 hover:text-etBlue">
+                <i class="fa-plus fa-regular"></i>
+            </a>
+        </div>
+    </section>
+    
 
     <!-- SPONSORS SECTION START -->
-    <section class="et-2-sponsors bg-[#00239F] py-[130px] lg:py-[80px] md:py-[60px] relative z-[1] before:absolute before:inset-0 before:bg-[url('assets/img/sponsors-bg.jpg')] before:bg-cover before:bg-center before:bg-no-repeat before:-z-[1] before:opacity-30">
+    <section style="display: none;" class="et-2-sponsors bg-[#00239F] py-[130px] lg:py-[80px] md:py-[60px] relative z-[1] before:absolute before:inset-0 before:bg-[url('assets/img/sponsors-bg.jpg')] before:bg-cover before:bg-center before:bg-no-repeat before:-z-[1] before:opacity-30">
         <div class="container mx-auto max-w-[calc(100%-37.1vw)] xxxl:max-w-[calc(100%-350px)] xl:max-w-[calc(100%-170px)] px-[12px] lg:max-w-full">
             <!-- heading -->
             <div class="text-center mb-[52px] xl:mb-[42px] md:mb-[32px]">
@@ -2049,6 +2031,149 @@ wrapped with Praise & Worship Night <br>
     </section>
     <!-- BLOG/NEWS SECTION END -->
 </main>
+<div id="myModal" class="modal">
+    <div class="modal-content">
+        <span class="close">&times;</span>
+        <p style="font-size: 15px;">Shallom profesional muda, <br /><br />
+
+            Dengan penuh semangat dan rasa syukur, kami ingin menginformasikan kepada Anda bahwa Bethany Professional
+            (BPro) akan mengadakan workshop dengan topik yang relevan dengan keseharian kita, yaitu kemajuan teknologi
+            dan financial.
+            <br /><br />
+
+            Seiring dengan pesatnya perkembangan di dunia teknologi dan financial, muncul berbagai ilmu dan informasi
+            baru hampir setiap hari. Hal ini menuntut kita, sebagai para profesional muda untuk selalu siap dan tanggap
+            menghadapi perubahan.
+            <br /><br />
+
+            Untuk itu, BPro ingin memfasilitasi Anda dalam menambah wawasan dan memperluas perspektif melalui workshop
+            ini, agar Anda lebih siap dan diperlengkapi dalam menghadapi tantangan dunia profesional yang terus
+            berkembang.
+            <br /><br />
+
+            Kami mengundang Anda untuk bergabung dalam acara "Professional Workshop" yang disertai dengan "Praise &
+            Worship Night". Kami berharap event ini dapat memberi manfaat dan membantu dalam perjalanan profesional
+            Anda.
+            <br /><br />
+
+            Terima kasih.
+            <br />
+            Tuhan Yesus memberkati
+            <br />
+            <img src="<?= get_template_directory_uri(); ?>/assets/new-img/logo-color.png"
+                                        alt="signature" class="w-[100px]">
+            <br />
+            Be Success, Be Profesional.</p>
+    </div>
+</div>
+<style>
+    .modal {
+        display: none;
+        position: fixed;
+        z-index: 99999;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        overflow: auto;
+        background-color: rgb(0, 0, 0);
+        background-color: rgba(0, 0, 0, 0.4);
+    }
+
+    .modal-content {
+        position: relative;
+        background-color: #fefefe;
+        margin: auto;
+        padding: 0;
+        border: 1px solid #888;
+        width: 80%;
+        height: auto;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        -webkit-animation-name: animatetop;
+        -webkit-animation-duration: 0.5s;
+        animation-name: animatetop;
+        animation-duration: 0.5s;
+        z-index: 99;
+        top: 50px;
+        padding: 30px;
+    }
+
+    /* Add Animation */
+    @-webkit-keyframes animatetop {
+        from {
+            top: -100px;
+            opacity: 0
+        }
+
+        to {
+            top: 0;
+            opacity: 1
+        }
+    }
+
+    @keyframes animatetop {
+        from {
+            top: -100px;
+            opacity: 0
+        }
+
+        to {
+            top: 50px;
+            opacity: 1
+        }
+    }
+
+    .close {
+        color: #aaa;
+        float: right;
+        font-size: 28px;
+        font-weight: bold;
+    }
+
+    .close:hover,
+    .close:focus {
+        color: black;
+        text-decoration: none;
+        cursor: pointer;
+    }
+</style>
+<script>
+    // Get the modal
+    var modal = document.getElementById("myModal");
+
+    // Get the button that opens the modal
+    var btns = document.getElementsByClassName("myBtn");
+
+    // Get the <span> element that closes the modal
+    var span = document.getElementsByClassName("close")[0];
+
+    // When the user clicks on the button, open the modal
+    for (var i = 0; i < btns.length; i++) {
+        btns[i].onclick = function () {
+            modal.style.display = "block";
+        }
+    }
+
+
+    // When the user clicks on <span> (x), close the modal
+    span.onclick = function () {
+        modal.style.display = "none";
+    }
+
+    // When the user clicks anywhere outside of the modal, close it
+    window.onclick = function (event) {
+        if (event.target == modal) {
+            modal.style.display = "none";
+        }
+    }
+
+    function copyLink() {
+    const link = "https://bethanyprofessional.com/rsvp/";
+    navigator.clipboard.writeText(link).then(() => {
+        alert('Link copied! Now, open Instagram, create a Story, and paste the link.');
+    });
+}
+</script>
 
 <?php
 get_footer('main');
