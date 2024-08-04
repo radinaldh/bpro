@@ -1791,7 +1791,7 @@ wrapped with Praise & Worship Night <br>
         <!-- single gallery item -->
         <div class="relative z-[1] group before:absolute before:inset-0 before:bg-etBlack/70 before:z-[0] before:opacity-0 before:transition before:duration-[400ms] hover:before:opacity-100">
             <img src="<?= get_template_directory_uri(); ?>/assets/img/galeri1.png" alt="gallery image">
-            <a href="<?= get_template_directory_uri(); ?>assets/img/galeri1.png" data-fslightbox="gallery" class="inline-flex items-center justify-center w-[64px] aspect-square rounded-full bg-white text-[25px] absolute top-[50%] left-[50%] -translate-x-[50%] -translate-y-[50%] opacity-0 group-hover:opacity-100 hover:text-etBlue">
+            <a href="<?= get_template_directory_uri(); ?>/assets/img/galeri1.png" data-fslightbox="gallery" class="inline-flex items-center justify-center w-[64px] aspect-square rounded-full bg-white text-[25px] absolute top-[50%] left-[50%] -translate-x-[50%] -translate-y-[50%] opacity-0 group-hover:opacity-100 hover:text-etBlue">
                 <i class="fa-plus fa-regular"></i>
             </a>
         </div>
@@ -1799,7 +1799,7 @@ wrapped with Praise & Worship Night <br>
         <!-- single gallery item -->
         <div class="relative z-[1] group before:absolute before:inset-0 before:bg-etBlack/70 before:z-[0] before:opacity-0 before:transition before:duration-[400ms] hover:before:opacity-100">
             <img src="<?= get_template_directory_uri(); ?>/assets/img/galeri2.png" alt="gallery image">
-            <a href="<?= get_template_directory_uri(); ?>assets/img/galeri2.png" data-fslightbox="gallery" class="inline-flex items-center justify-center w-[64px] aspect-square rounded-full bg-white text-[25px] absolute top-[50%] left-[50%] -translate-x-[50%] -translate-y-[50%] opacity-0 group-hover:opacity-100 hover:text-etBlue">
+            <a href="<?= get_template_directory_uri(); ?>/assets/img/galeri2.png" data-fslightbox="gallery" class="inline-flex items-center justify-center w-[64px] aspect-square rounded-full bg-white text-[25px] absolute top-[50%] left-[50%] -translate-x-[50%] -translate-y-[50%] opacity-0 group-hover:opacity-100 hover:text-etBlue">
                 <i class="fa-plus fa-regular"></i>
             </a>
         </div>
@@ -1807,7 +1807,7 @@ wrapped with Praise & Worship Night <br>
         <!-- single gallery item -->
         <div class="relative z-[1] group before:absolute before:inset-0 before:bg-etBlack/70 before:z-[0] before:opacity-0 before:transition before:duration-[400ms] hover:before:opacity-100">
             <img src="<?= get_template_directory_uri(); ?>/assets/img/galeri3.png" alt="gallery image">
-            <a href="<?= get_template_directory_uri(); ?>assets/img/galeri3.png" data-fslightbox="gallery" class="inline-flex items-center justify-center w-[64px] aspect-square rounded-full bg-white text-[25px] absolute top-[50%] left-[50%] -translate-x-[50%] -translate-y-[50%] opacity-0 group-hover:opacity-100 hover:text-etBlue">
+            <a href="<?= get_template_directory_uri(); ?>/assets/img/galeri3.png" data-fslightbox="gallery" class="inline-flex items-center justify-center w-[64px] aspect-square rounded-full bg-white text-[25px] absolute top-[50%] left-[50%] -translate-x-[50%] -translate-y-[50%] opacity-0 group-hover:opacity-100 hover:text-etBlue">
                 <i class="fa-plus fa-regular"></i>
             </a>
         </div>
@@ -1815,7 +1815,7 @@ wrapped with Praise & Worship Night <br>
         <!-- single gallery item -->
         <div class="relative z-[1] group before:absolute before:inset-0 before:bg-etBlack/70 before:z-[0] before:opacity-0 before:transition before:duration-[400ms] hover:before:opacity-100">
             <img src="<?= get_template_directory_uri(); ?>/assets/img/galeri4.png" alt="gallery image">
-            <a href="<?= get_template_directory_uri(); ?>assets/img/galeri4.png" data-fslightbox="gallery" class="inline-flex items-center justify-center w-[64px] aspect-square rounded-full bg-white text-[25px] absolute top-[50%] left-[50%] -translate-x-[50%] -translate-y-[50%] opacity-0 group-hover:opacity-100 hover:text-etBlue">
+            <a href="<?= get_template_directory_uri(); ?>/assets/img/galeri4.png" data-fslightbox="gallery" class="inline-flex items-center justify-center w-[64px] aspect-square rounded-full bg-white text-[25px] absolute top-[50%] left-[50%] -translate-x-[50%] -translate-y-[50%] opacity-0 group-hover:opacity-100 hover:text-etBlue">
                 <i class="fa-plus fa-regular"></i>
             </a>
         </div>
@@ -1823,7 +1823,7 @@ wrapped with Praise & Worship Night <br>
         <!-- single gallery item -->
         <div class="relative z-[1] group before:absolute before:inset-0 before:bg-etBlack/70 before:z-[0] before:opacity-0 before:transition before:duration-[400ms] hover:before:opacity-100">
             <img src="<?= get_template_directory_uri(); ?>/assets/img/galeri5.png" alt="gallery image">
-            <a href="<?= get_template_directory_uri(); ?>assets/img/galeri5.png" data-fslightbox="gallery" class="inline-flex items-center justify-center w-[64px] aspect-square rounded-full bg-white text-[25px] absolute top-[50%] left-[50%] -translate-x-[50%] -translate-y-[50%] opacity-0 group-hover:opacity-100 hover:text-etBlue">
+            <a href="<?= get_template_directory_uri(); ?>/assets/img/galeri5.png" data-fslightbox="gallery" class="inline-flex items-center justify-center w-[64px] aspect-square rounded-full bg-white text-[25px] absolute top-[50%] left-[50%] -translate-x-[50%] -translate-y-[50%] opacity-0 group-hover:opacity-100 hover:text-etBlue">
                 <i class="fa-plus fa-regular"></i>
             </a>
         </div>
@@ -1831,23 +1831,23 @@ wrapped with Praise & Worship Night <br>
         <!-- single gallery item -->
         <div class="relative z-[1] group before:absolute before:inset-0 before:bg-etBlack/70 before:z-[0] before:opacity-0 before:transition before:duration-[400ms] hover:before:opacity-100">
             <img src="<?= get_template_directory_uri(); ?>/assets/img/galeri6.png" alt="gallery image">
-            <a href="<?= get_template_directory_uri(); ?>assets/img/galeri6.png" data-fslightbox="gallery" class="inline-flex items-center justify-center w-[64px] aspect-square rounded-full bg-white text-[25px] absolute top-[50%] left-[50%] -translate-x-[50%] -translate-y-[50%] opacity-0 group-hover:opacity-100 hover:text-etBlue">
+            <a href="<?= get_template_directory_uri(); ?>/assets/img/galeri6.png" data-fslightbox="gallery" class="inline-flex items-center justify-center w-[64px] aspect-square rounded-full bg-white text-[25px] absolute top-[50%] left-[50%] -translate-x-[50%] -translate-y-[50%] opacity-0 group-hover:opacity-100 hover:text-etBlue">
                 <i class="fa-plus fa-regular"></i>
             </a>
         </div>
 
         <!-- single gallery item -->
         <div class="relative z-[1] group before:absolute before:inset-0 before:bg-etBlack/70 before:z-[0] before:opacity-0 before:transition before:duration-[400ms] hover:before:opacity-100">
-            <img src="<?= get_template_directory_uri(); ?>/assets/img/galeri7.png" alt="gallery image">
-            <a href="<?= get_template_directory_uri(); ?>assets/img/galeri7.png" data-fslightbox="gallery" class="inline-flex items-center justify-center w-[64px] aspect-square rounded-full bg-white text-[25px] absolute top-[50%] left-[50%] -translate-x-[50%] -translate-y-[50%] opacity-0 group-hover:opacity-100 hover:text-etBlue">
+            <img src="<?= get_template_directory_uri(); ?>/assets/img/galeri9.png" alt="gallery image">
+            <a href="<?= get_template_directory_uri(); ?>/assets/img/galeri9.png" data-fslightbox="gallery" class="inline-flex items-center justify-center w-[64px] aspect-square rounded-full bg-white text-[25px] absolute top-[50%] left-[50%] -translate-x-[50%] -translate-y-[50%] opacity-0 group-hover:opacity-100 hover:text-etBlue">
                 <i class="fa-plus fa-regular"></i>
             </a>
         </div>
 
         <!-- single gallery item -->
         <div class="relative z-[1] group before:absolute before:inset-0 before:bg-etBlack/70 before:z-[0] before:opacity-0 before:transition before:duration-[400ms] hover:before:opacity-100">
-            <img src="<?= get_template_directory_uri(); ?>/assets/img/galeri8.png" alt="gallery image">
-            <a href="<?= get_template_directory_uri(); ?>assets/img/galeri8.png" data-fslightbox="gallery" class="inline-flex items-center justify-center w-[64px] aspect-square rounded-full bg-white text-[25px] absolute top-[50%] left-[50%] -translate-x-[50%] -translate-y-[50%] opacity-0 group-hover:opacity-100 hover:text-etBlue">
+            <img src="<?= get_template_directory_uri(); ?>/assets/img/galeri10.png" alt="gallery image">
+            <a href="<?= get_template_directory_uri(); ?>/assets/img/galeri10.png" data-fslightbox="gallery" class="inline-flex items-center justify-center w-[64px] aspect-square rounded-full bg-white text-[25px] absolute top-[50%] left-[50%] -translate-x-[50%] -translate-y-[50%] opacity-0 group-hover:opacity-100 hover:text-etBlue">
                 <i class="fa-plus fa-regular"></i>
             </a>
         </div>
