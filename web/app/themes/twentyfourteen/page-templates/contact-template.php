@@ -6,12 +6,18 @@
 
 get_header('main'); ?>
 
+<style>
+    .font-light {
+        font-size: 12px;
+    }
+</style>
+
 <!-- BREADCRUMB SECTION START -->
 <section class="et-breadcrumb bg-[#000D83] pt-[210px] lg:pt-[190px] sm:pt-[160px] pb-[130px] lg:pb-[110px] sm:pb-[80px] relative z-[1] before:absolute before:inset-0 before:bg-[url('<?= get_template_directory_uri()?>/assets/img/breadcrumb-bg.jpg')] before:bg-no-repeat before:bg-cover before:bg-center before:-z-[1] before:opacity-30">
     <div class="container mx-auto max-w-[1200px] px-[12px] xl:max-w-full text-center text-white">
-        <h1 class="et-breadcrumb-title font-medium text-[56px] md:text-[50px] xs:text-[45px]">Contact Us</h1>
-        <ul class="inline-flex items-center gap-[10px] font-medium text-[16px]">
-            <li class="opacity-80"><a href="index-2.html" class="hover:text-etBlue">Home</a></li>
+        <h1 class="et-breadcrumb-title font-medium text-[56px] md:text-[50px] sm:text-[22px]">Contact Us</h1>
+        <ul class="inline-flex items-center gap-[10px] font-medium text-[16px] sm:text-[12px]">
+            <li class="opacity-80"><a href="<?= home_url()?>/" class="hover:text-etBlue">Home</a></li>
             <li><i class="fa-solid fa-angle-right"></i><i class="fa-solid fa-angle-right"></i></li>
             <li class="current-page">Contact Us</li>
         </ul>
@@ -28,37 +34,37 @@ get_header('main'); ?>
             <div>
                 <div class="bg-etBlue p-[40px] sm:p-[30px] space-y-[24px] text-[16px]">
                     <!-- single contact info -->
-                    <div class="flex flex-wrap items-center gap-[20px] pb-[20px] text-white border-b border-white/30 last:border-0 last:pb-0">
+                    <div class="flex flex-wrap sm:flex-col xs:text-center items-center gap-[20px] pb-[20px] text-white border-b border-white/30 last:border-0 last:pb-0">
                         <span class="icon shrink-0 border border-dashed border-white rounded-full h-[62px] w-[62px] flex items-center justify-center">
                             <img src="<?= get_template_directory_uri()?>/assets/img/call-msg.svg" alt="icon">
                         </span>
 
                         <div class="txt">
-                            <span class="font-light" style="font-size: 12px;">Call Us 7/24</span>
+                            <span class="font-light">Call Us 7/24</span>
                             <h4 class="font-semibold text-[12px]"><a href="whatsapp://send?text=Hello&phone=+6281131166111">+62811-311-66-111</a></h4>
                         </div>
                     </div>
 
                     <!-- single contact info -->
-                    <div class="flex flex-wrap items-center gap-[20px] pb-[20px] text-white border-b border-white/30 last:border-0 last:pb-0">
+                    <div class="flex flex-wrap sm:flex-col xs:text-center items-center gap-[20px] pb-[20px] text-white border-b border-white/30 last:border-0 last:pb-0">
                         <span class="icon shrink-0 border border-dashed border-white rounded-full h-[62px] w-[62px] flex items-center justify-center">
                             <img src="<?= get_template_directory_uri()?>/assets/img/mail.svg" alt="icon">
                         </span>
 
                         <div class="txt">
-                            <span class="font-light" style="font-size: 12px;">Make a Quote</span>
+                            <span class="font-light">Make a Quote</span>
                             <h4 class="font-semibold text-[12px]"><a href="mailto:info@bethanyprofessional.com">info@bethanyprofessional.com </a></h4>
                         </div>
                     </div>
 
                     <!-- single contact info -->
-                    <div class="flex flex-wrap items-center gap-[20px] pb-[20px] text-white border-b border-white/30 last:border-0 last:pb-0">
+                    <div class="flex flex-wrap sm:flex-col xs:text-center items-center gap-[20px] pb-[20px] text-white border-b border-white/30 last:border-0 last:pb-0">
                         <span class="icon shrink-0 border border-dashed border-white rounded-full h-[62px] w-[62px] flex items-center justify-center">
                             <img src="<?= get_template_directory_uri()?>/assets/img/location-dot-circle.svg" alt="icon">
                         </span>
 
                         <div class="txt">
-                            <span class="font-light" style="font-size: 12px;">Location</span>
+                            <span class="font-light">Location</span>
                             <h4 class="font-semibold text-[12px]">Gereja Bethany Manyar Jl. Manyar Rejo II No.36-38, Surabaya. </h4>
                         </div>
                     </div>
