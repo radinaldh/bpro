@@ -8,9 +8,17 @@ get_header('main'); ?>
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/lc-lightbox-lite@1.3.1/css/lc_lightbox.min.css">
 
 <style>
+
+    .praise {
+        display: none;
+    }
     @media(max-width:600px) {
         .modal-content {
             width: 95%  !important;
+        }
+
+        .praise {
+            display: block;
         }
     }
     @media(min-width:1600px) {
@@ -335,8 +343,8 @@ get_header('main'); ?>
     <!-- EVENTS SECTION START -->
     <section class="et-all-events">
         <div class="container mx-auto max-w-[1200px] px-[12px] xl:max-w-full">
-            <div class="flex lg:flex-wrap items-center justify-center lg:justify-center gap-y-[15px] shadow-[0_4px_50px_rgba(0,0,0,0.07)] mb-[60px] rounded-full xxs:rounded-[30px] lg:py-[15px] px-[30px] pr-[6px] md:px-[20px] md:pr-[6px] py-[20px]">
-                <div class="et-events-tab-navs w-[100%] lg:w-full align-center flex xs:flex-wrap shrink-0 lg:justify-center gap-[45px] md:gap-[30px] xxs:gap-[20px] md:gap-y-[15px]">
+            <div class="flex lg:flex-wrap items-center justify-center lg:justify-center sm:justify-start gap-y-[15px] shadow-[0_4px_50px_rgba(0,0,0,0.07)] mb-[60px] rounded-full xxs:rounded-[30px] lg:py-[15px] px-[30px] pr-[6px] md:px-[20px] md:pr-[6px] py-[20px]">
+                <div class="et-events-tab-navs w-[100%] lg:w-full align-center flex xs:flex-wrap shrink-0 lg:justify-center sm:justify-start gap-[45px] md:gap-[30px] xxs:gap-[20px] md:gap-y-[15px]">
                     <button data-tab="et-event-tab0" class="tab-nav border-r border-[#d9d9d9] text-[14px] font-medium text-etBlack pr-[45px] pl-[10px] md:pr-[30px] xxs:pr-[20px] hover:text-etBlue group active">
                         <span class="group-[.active]:text-etBlue">All</span>
                     </button>
@@ -350,9 +358,13 @@ get_header('main'); ?>
                         <span class="group-[.active]:text-etBlue">Professional Workshop</span>
                     </button>
                     <button data-tab="et-event-tab4"
-                        class="tab-nav border-r border-[#d9d9d9] text-[14px] font-medium text-etBlack pr-[45px] pl-[10px] md:pr-[30px] xxs:pr-[20px] hover:text-etBlue group"><span
+                        class="sm:hidden tab-nav border-r border-[#d9d9d9] text-[14px] font-medium text-etBlack pr-[45px] pl-[10px] md:pr-[30px] xxs:pr-[20px] hover:text-etBlue group"><span
                             class=" group-[.active]:text-etBlue">Praise and Worship Night</span>
                         </button>
+                    <button data-tab="et-event-tab4"
+                    class="tab-nav praise border-r border-[#d9d9d9] text-[14px] font-medium text-etBlack pr-[45px] pl-[10px] md:pr-[30px] xxs:pr-[20px] hover:text-etBlue group"><span
+                        class=" group-[.active]:text-etBlue">Praise Worship</span>
+                    </button>
                     <button data-tab="et-event-tab5"
                         class="tab-nav border-r border-[#d9d9d9] text-[14px] font-medium text-etBlack pr-[45px] pl-[10px] md:pr-[30px] xxs:pr-[20px] hover:text-etBlue group"
                         style="border: transparent;"><span class=" group-[.active]:text-etBlue">Ibadah</span>
