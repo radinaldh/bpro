@@ -30,7 +30,7 @@ get_header('main'); ?>
     class="et-breadcrumb bg-[#000D83] pt-[210px] lg:pt-[190px] sm:pt-[160px] pb-[130px] lg:pb-[110px] sm:pb-[80px] relative z-[1] before:absolute before:inset-0 before:bg-[url('<?= get_template_directory_uri(); ?>/assets/img/breadcrumb-bg.jpg')] before:bg-no-repeat before:bg-cover before:bg-center before:-z-[1] before:opacity-30">
     <div class="container mx-auto max-w-[1200px] px-[12px] xl:max-w-full text-center text-white">
         <h1 class="et-breadcrumb-title font-medium text-[56px] md:text-[50px] sm:text-[22px]">Family Altar Bpro</h1>
-        <p class="font-medium text-[16px] pb-[30px] sm:text-[12px]">Kesatuan Hati - Tumbuh Bersama - Memenangkan Jiwa</p>
+        <p class="font-medium text-[15px] pb-[30px] sm:text-[12px] ">Kesatuan Hati - Tumbuh Bersama - Memenangkan Jiwa</p>
         <ul class="inline-flex items-center gap-[10px] font-medium text-[16px]">
             <li class="opacity-80"><a href="index-2.html" class="hover:text-etBlue">Home</a></li>
             <li><i class="fa-solid fa-angle-right"></i><i class="fa-solid fa-angle-right"></i></li>
@@ -162,7 +162,7 @@ get_header('main'); ?>
         <div
             class="et-upcoming-events-heading text-center max-w-[60%] mx-auto mb-[52px] xl:mb-[42px] lg:mb-[32px] md:max-w-[70%] sm:max-w-[80%] xs:max-w-full">
             <h6 class="et-section-sub-title !text-white">Join Us at FA BPro</h6>
-            <h2 class="et-section-title !text-white" style="font-size: 30px;">List Of Every Family Altar Time Detail And
+            <h2 class=" !text-white text-[35px] sm:text-[24px]" >List Of Every Family Altar Time Detail And
                 Location</h2>
         </div>
 
@@ -218,7 +218,7 @@ get_header('main'); ?>
                                         </svg>
                                     </span>
 
-                                    <span class="text-etGray font-normal text-[16px]">Every Tuesday</span>
+                                    <span class="text-etGray font-normal text-[16px] sm:text-[12px]">Every Tuesday</span>
                                 </div>
 
                                 <div class="time flex items-center gap-[10px]">
@@ -234,7 +234,7 @@ get_header('main'); ?>
                                         </svg>
                                     </span>
 
-                                    <span class="text-etGray font-normal text-[16px]">19.00</span>
+                                    <span class="text-etGray font-normal text-[16px] sm:text-[12px]">19.00</span>
                                 </div>
                             </div>
 
@@ -243,7 +243,7 @@ get_header('main'); ?>
                                 class="et-schedule-title text-[24px] sm:text-[22px] font-regular text-etBlack leading-[1.25] mb-[16px] anim-text">
                                 <a href="#" class="hover:text-etBlue"> FA Wiyung </a>
                             </h3>
-                            <h4 class="font-semibold text-etBlue text-[16px] my-[10px]">Gembala : Dhea</h4>
+                            <h4 class="font-semibold text-etBlue text-[16px] my-[10px] sm:text-[12px]">Gembala : Dhea</h4>
 
                             <!-- location -->
                             <div class="et-schedule-loaction flex items-center gap-[12px]">
@@ -255,7 +255,7 @@ get_header('main'); ?>
                                             fill="var(--et-blue)" />
                                     </svg>
                                 </span>
-                                <h6 class="text-[15px] text-etGray">Taman Pondok Indah, Wiyung, Surabaya</h6>
+                                <h6 class="text-[15px] text-etGray sm:text-[12px] sm:my-[10px]">Taman Pondok Indah, Wiyung, Surabaya</h6>
                             </div>
                             <div class="et-schedule-loaction flex items-center gap-[12px]">
                                 <span class="icon">
@@ -266,7 +266,7 @@ get_header('main'); ?>
                                             fill="var(--et-blue)" />
                                     </svg>
                                 </span>
-                                <h6 class="text-[15px] text-etGray">SURABAYA SELATAN</h6>
+                                <h6 class="text-[15px] text-etGray sm:text-[12px] sm:my-[10px]">SURABAYA SELATAN</h6>
                             </div>
                             
                         </div>
@@ -326,7 +326,7 @@ get_header('main'); ?>
                                         </svg>
                                     </span>
 
-                                    <span class="text-etGray font-normal text-[16px]">Every Wednesday</span>
+                                    <span class="text-etGray font-normal text-[16px] sm:text-[12px]">Every Wednesday</span>
                                 </div>
 
                                 <div class="time flex items-center gap-[10px]">
@@ -342,7 +342,7 @@ get_header('main'); ?>
                                         </svg>
                                     </span>
 
-                                    <span class="text-etGray font-normal text-[16px]">19.00</span>
+                                    <span class="text-etGray font-normal text-[16px] sm:text-[12px]">19.00</span>
                                 </div>
                             </div>
 
@@ -351,7 +351,7 @@ get_header('main'); ?>
                                 class="et-schedule-title text-[24px] sm:text-[22px] font-regular text-etBlack leading-[1.25] mb-[16px] anim-text">
                                 <a href="#" class="hover:text-etBlue"> FA Ngagel </a>
                             </h3>
-                            <h4 class="font-semibold text-etBlue text-[16px] my-[10px]">Gembala : Inneke</h4>
+                            <h4 class="font-semibold text-etBlue text-[16px] my-[10px] sm:text-[12px]">Gembala : Inneke</h4>
 
                             <!-- location -->
                             <div class="et-schedule-loaction flex items-center gap-[12px]">
@@ -363,7 +363,7 @@ get_header('main'); ?>
                                             fill="var(--et-blue)" />
                                     </svg>
                                 </span>
-                                <h6 class="text-[15px] text-etGray">Jl. Ngagel Madya Utara, Surabaya</h6>
+                                <h6 class="text-[15px] text-etGray sm:text-[12px] sm:my-[10px]">Jl. Ngagel Madya Utara, Surabaya</h6>
                             </div>
                             <div class="et-schedule-loaction flex items-center gap-[12px]">
                                 <span class="icon">
@@ -374,7 +374,7 @@ get_header('main'); ?>
                                             fill="var(--et-blue)" />
                                     </svg>
                                 </span>
-                                <h6 class="text-[15px] text-etGray">SURABAYA SELATAN</h6>
+                                <h6 class="text-[15px] text-etGray sm:text-[12px] sm:my-[10px]">SURABAYA SELATAN</h6>
                             </div>
                             
                         </div>
@@ -434,7 +434,7 @@ get_header('main'); ?>
                                         </svg>
                                     </span>
 
-                                    <span class="text-etGray font-normal text-[16px]">Every Monday</span>
+                                    <span class="text-etGray font-normal text-[16px] sm:text-[12px]">Every Monday</span>
                                 </div>
 
                                 <div class="time flex items-center gap-[10px]">
@@ -450,7 +450,7 @@ get_header('main'); ?>
                                         </svg>
                                     </span>
 
-                                    <span class="text-etGray font-normal text-[16px]">19.00</span>
+                                    <span class="text-etGray font-normal text-[16px] sm:text-[12px]">19.00</span>
                                 </div>
                             </div>
 
@@ -459,7 +459,7 @@ get_header('main'); ?>
                                 class="et-schedule-title text-[24px] sm:text-[22px] font-regular text-etBlack leading-[1.25] mb-[16px] anim-text">
                                 <a href="#" class="hover:text-etBlue"> FA Ngaglik </a>
                             </h3>
-                            <h4 class="font-semibold text-etBlue text-[16px] my-[10px]">Gembala : Yohan</h4>
+                            <h4 class="font-semibold text-etBlue text-[16px] my-[10px] sm:text-[12px]">Gembala : Yohan</h4>
 
                             <!-- location -->
                             <div class="et-schedule-loaction flex items-center gap-[12px]">
@@ -471,7 +471,7 @@ get_header('main'); ?>
                                             fill="var(--et-blue)" />
                                     </svg>
                                 </span>
-                                <h6 class="text-[15px] text-etGray">Jl. Ploso Bogen, Surabaya</h6>
+                                <h6 class="text-[15px] text-etGray sm:text-[12px] sm:my-[10px]">Jl. Ploso Bogen, Surabaya</h6>
                             </div>
                             <div class="et-schedule-loaction flex items-center gap-[12px]">
                                 <span class="icon">
@@ -482,7 +482,7 @@ get_header('main'); ?>
                                             fill="var(--et-blue)" />
                                     </svg>
                                 </span>
-                                <h6 class="text-[15px] text-etGray">SURABAYA PUSAT</h6>
+                                <h6 class="text-[15px] text-etGray sm:text-[12px] sm:my-[10px]">SURABAYA PUSAT</h6>
                             </div>
                             
                         </div>
@@ -542,7 +542,7 @@ get_header('main'); ?>
                                         </svg>
                                     </span>
 
-                                    <span class="text-etGray font-normal text-[16px]">Every Tuesday</span>
+                                    <span class="text-etGray font-normal text-[16px] sm:text-[12px]">Every Tuesday</span>
                                 </div>
 
                                 <div class="time flex items-center gap-[10px]">
@@ -558,7 +558,7 @@ get_header('main'); ?>
                                         </svg>
                                     </span>
 
-                                    <span class="text-etGray font-normal text-[16px]">19.00</span>
+                                    <span class="text-etGray font-normal text-[16px] sm:text-[12px]">19.00</span>
                                 </div>
                             </div>
 
@@ -567,7 +567,7 @@ get_header('main'); ?>
                                 class="et-schedule-title text-[24px] sm:text-[22px] font-regular text-etBlack leading-[1.25] mb-[16px] anim-text">
                                 <a href="#" class="hover:text-etBlue"> FA Nginden Intan </a>
                             </h3>
-                            <h4 class="font-semibold text-etBlue text-[16px] my-[10px]">Gembala : Abraham</h4>
+                            <h4 class="font-semibold text-etBlue text-[16px] my-[10px] sm:text-[12px]">Gembala : Abraham</h4>
 
                             <!-- location -->
                             <div class="et-schedule-loaction flex items-center gap-[12px]">
@@ -579,7 +579,7 @@ get_header('main'); ?>
                                             fill="var(--et-blue)" />
                                     </svg>
                                 </span>
-                                <h6 class="text-[15px] text-etGray">Jl. Nginden Intan Timur, Surabaya</h6>
+                                <h6 class="text-[15px] text-etGray sm:text-[12px] sm:my-[10px]">Jl. Nginden Intan Timur, Surabaya</h6>
                             </div>
                             <div class="et-schedule-loaction flex items-center gap-[12px]">
                                 <span class="icon">
@@ -590,7 +590,7 @@ get_header('main'); ?>
                                             fill="var(--et-blue)" />
                                     </svg>
                                 </span>
-                                <h6 class="text-[15px] text-etGray">SURABAYA TIMUR</h6>
+                                <h6 class="text-[15px] text-etGray sm:text-[12px] sm:my-[10px]">SURABAYA TIMUR</h6>
                             </div>
                             
                         </div>
@@ -650,7 +650,7 @@ get_header('main'); ?>
                                         </svg>
                                     </span>
 
-                                    <span class="text-etGray font-normal text-[16px]">Every Wednesday</span>
+                                    <span class="text-etGray font-normal text-[16px] sm:text-[12px]">Every Wednesday</span>
                                 </div>
 
                                 <div class="time flex items-center gap-[10px]">
@@ -666,7 +666,7 @@ get_header('main'); ?>
                                         </svg>
                                     </span>
 
-                                    <span class="text-etGray font-normal text-[16px]">19.00</span>
+                                    <span class="text-etGray font-normal text-[16px] sm:text-[12px]">19.00</span>
                                 </div>
                             </div>
 
@@ -675,7 +675,7 @@ get_header('main'); ?>
                                 class="et-schedule-title text-[24px] sm:text-[22px] font-regular text-etBlack leading-[1.25] mb-[16px] anim-text">
                                 <a href="#" class="hover:text-etBlue"> FA Gunung Sari </a>
                             </h3>
-                            <h4 class="font-semibold text-etBlue text-[16px] my-[10px]">Gembala : Kinan</h4>
+                            <h4 class="font-semibold text-etBlue text-[16px] my-[10px] sm:text-[12px]">Gembala : Kinan</h4>
 
                             <!-- location -->
                             <div class="et-schedule-loaction flex items-center gap-[12px]">
@@ -687,7 +687,7 @@ get_header('main'); ?>
                                             fill="var(--et-blue)" />
                                     </svg>
                                 </span>
-                                <h6 class="text-[15px] text-etGray">Jl. Wonokitri, Surabaya</h6>
+                                <h6 class="text-[15px] text-etGray sm:text-[12px] sm:my-[10px]">Jl. Wonokitri, Surabaya</h6>
                             </div>
                             <div class="et-schedule-loaction flex items-center gap-[12px]">
                                 <span class="icon">
@@ -698,7 +698,7 @@ get_header('main'); ?>
                                             fill="var(--et-blue)" />
                                     </svg>
                                 </span>
-                                <h6 class="text-[15px] text-etGray">SURABAYA SELATAN</h6>
+                                <h6 class="text-[15px] text-etGray sm:text-[12px] sm:my-[10px]">SURABAYA SELATAN</h6>
                             </div>
                             
                         </div>
@@ -758,7 +758,7 @@ get_header('main'); ?>
                                         </svg>
                                     </span>
 
-                                    <span class="text-etGray font-normal text-[16px]">Every Friday</span>
+                                    <span class="text-etGray font-normal text-[16px] sm:text-[12px]">Every Friday</span>
                                 </div>
 
                                 <div class="time flex items-center gap-[10px]">
@@ -774,7 +774,7 @@ get_header('main'); ?>
                                         </svg>
                                     </span>
 
-                                    <span class="text-etGray font-normal text-[16px]">19.00</span>
+                                    <span class="text-etGray font-normal text-[16px] sm:text-[12px]">19.00</span>
                                 </div>
                             </div>
 
@@ -783,7 +783,7 @@ get_header('main'); ?>
                                 class="et-schedule-title text-[24px] sm:text-[22px] font-regular text-etBlack leading-[1.25] mb-[16px] anim-text">
                                 <a href="#" class="hover:text-etBlue"> FA Rungkut </a>
                             </h3>
-                            <h4 class="font-semibold text-etBlue text-[16px] my-[10px]">Gembala : Yohanes</h4>
+                            <h4 class="font-semibold text-etBlue text-[16px] my-[10px] sm:text-[12px]">Gembala : Yohanes</h4>
 
                             <!-- location -->
                             <div class="et-schedule-loaction flex items-center gap-[12px]">
@@ -795,7 +795,7 @@ get_header('main'); ?>
                                             fill="var(--et-blue)" />
                                     </svg>
                                 </span>
-                                <h6 class="text-[15px] text-etGray">Jl. Rungkut Menanggal Harapan, Surabaya</h6>
+                                <h6 class="text-[15px] text-etGray sm:text-[12px] sm:my-[10px]">Jl. Rungkut Menanggal Harapan, Surabaya</h6>
                             </div>
                             <div class="et-schedule-loaction flex items-center gap-[12px]">
                                 <span class="icon">
@@ -806,7 +806,7 @@ get_header('main'); ?>
                                             fill="var(--et-blue)" />
                                     </svg>
                                 </span>
-                                <h6 class="text-[15px] text-etGray">SURABAYA TIMUR</h6>
+                                <h6 class="text-[15px] text-etGray sm:text-[12px] sm:my-[10px]">SURABAYA TIMUR</h6>
                             </div>
                             
                         </div>
@@ -866,7 +866,7 @@ get_header('main'); ?>
                                         </svg>
                                     </span>
 
-                                    <span class="text-etGray font-normal text-[16px]">Every Monday</span>
+                                    <span class="text-etGray font-normal text-[16px] sm:text-[12px]">Every Monday</span>
                                 </div>
 
                                 <div class="time flex items-center gap-[10px]">
@@ -882,7 +882,7 @@ get_header('main'); ?>
                                         </svg>
                                     </span>
 
-                                    <span class="text-etGray font-normal text-[16px]">19.00</span>
+                                    <span class="text-etGray font-normal text-[16px] sm:text-[12px]">19.00</span>
                                 </div>
                             </div>
 
@@ -891,7 +891,7 @@ get_header('main'); ?>
                                 class="et-schedule-title text-[24px] sm:text-[22px] font-regular text-etBlack leading-[1.25] mb-[16px] anim-text">
                                 <a href="#" class="hover:text-etBlue"> FA Jemursari </a>
                             </h3>
-                            <h4 class="font-semibold text-etBlue text-[16px] my-[10px]">Gembala : Arghi</h4>
+                            <h4 class="font-semibold text-etBlue text-[16px] my-[10px] sm:text-[12px]">Gembala : Arghi</h4>
 
                             <!-- location -->
                             <div class="et-schedule-loaction flex items-center gap-[12px]">
@@ -903,7 +903,7 @@ get_header('main'); ?>
                                             fill="var(--et-blue)" />
                                     </svg>
                                 </span>
-                                <h6 class="text-[15px] text-etGray">Jl. Jemur Wonosari, Surabaya</h6>
+                                <h6 class="text-[15px] text-etGray sm:text-[12px] sm:my-[10px]">Jl. Jemur Wonosari, Surabaya</h6>
                             </div>
                             <div class="et-schedule-loaction flex items-center gap-[12px]">
                                 <span class="icon">
@@ -914,7 +914,7 @@ get_header('main'); ?>
                                             fill="var(--et-blue)" />
                                     </svg>
                                 </span>
-                                <h6 class="text-[15px] text-etGray">SURABAYA SELATAN</h6>
+                                <h6 class="text-[15px] text-etGray sm:text-[12px] sm:my-[10px]">SURABAYA SELATAN</h6>
                             </div>
                             
                         </div>
@@ -974,7 +974,7 @@ get_header('main'); ?>
                                         </svg>
                                     </span>
 
-                                    <span class="text-etGray font-normal text-[16px]">Every Friday</span>
+                                    <span class="text-etGray font-normal text-[16px] sm:text-[12px]">Every Friday</span>
                                 </div>
 
                                 <div class="time flex items-center gap-[10px]">
@@ -990,7 +990,7 @@ get_header('main'); ?>
                                         </svg>
                                     </span>
 
-                                    <span class="text-etGray font-normal text-[16px]">19.30</span>
+                                    <span class="text-etGray font-normal text-[16px] sm:text-[12px]">19.30</span>
                                 </div>
                             </div>
 
@@ -999,7 +999,7 @@ get_header('main'); ?>
                                 class="et-schedule-title text-[24px] sm:text-[22px] font-regular text-etBlack leading-[1.25] mb-[16px] anim-text">
                                 <a href="#" class="hover:text-etBlue"> FA Arif Rahman A </a>
                             </h3>
-                            <h4 class="font-semibold text-etBlue text-[16px] my-[10px]">Gembala : Jerimun</h4>
+                            <h4 class="font-semibold text-etBlue text-[16px] my-[10px] sm:text-[12px]">Gembala : Jerimun</h4>
 
                             <!-- location -->
                             <div class="et-schedule-loaction flex items-center gap-[12px]">
@@ -1011,7 +1011,7 @@ get_header('main'); ?>
                                             fill="var(--et-blue)" />
                                     </svg>
                                 </span>
-                                <h6 class="text-[15px] text-etGray">Jl. Arif Rahman Hakim, Surabaya</h6>
+                                <h6 class="text-[15px] text-etGray sm:text-[12px] sm:my-[10px]">Jl. Arif Rahman Hakim, Surabaya</h6>
                             </div>
                             <div class="et-schedule-loaction flex items-center gap-[12px]">
                                 <span class="icon">
@@ -1022,7 +1022,7 @@ get_header('main'); ?>
                                             fill="var(--et-blue)" />
                                     </svg>
                                 </span>
-                                <h6 class="text-[15px] text-etGray">SURABAYA TIMUR</h6>
+                                <h6 class="text-[15px] text-etGray sm:text-[12px] sm:my-[10px]">SURABAYA TIMUR</h6>
                             </div>
                             
                         </div>
@@ -1082,7 +1082,7 @@ get_header('main'); ?>
                                         </svg>
                                     </span>
 
-                                    <span class="text-etGray font-normal text-[16px]">Every Tuesday</span>
+                                    <span class="text-etGray font-normal text-[16px] sm:text-[12px]">Every Tuesday</span>
                                 </div>
 
                                 <div class="time flex items-center gap-[10px]">
@@ -1098,7 +1098,7 @@ get_header('main'); ?>
                                         </svg>
                                     </span>
 
-                                    <span class="text-etGray font-normal text-[16px]">20.00</span>
+                                    <span class="text-etGray font-normal text-[16px] sm:text-[12px]">20.00</span>
                                 </div>
                             </div>
 
@@ -1107,7 +1107,7 @@ get_header('main'); ?>
                                 class="et-schedule-title text-[24px] sm:text-[22px] font-regular text-etBlack leading-[1.25] mb-[16px] anim-text">
                                 <a href="#" class="hover:text-etBlue"> FA Menganti </a>
                             </h3>
-                            <h4 class="font-semibold text-etBlue text-[16px] my-[10px]">Gembala : Nelfin</h4>
+                            <h4 class="font-semibold text-etBlue text-[16px] my-[10px] sm:text-[12px]">Gembala : Nelfin</h4>
 
                             <!-- location -->
                             <div class="et-schedule-loaction flex items-center gap-[12px]">
@@ -1119,7 +1119,7 @@ get_header('main'); ?>
                                             fill="var(--et-blue)" />
                                     </svg>
                                 </span>
-                                <h6 class="text-[15px] text-etGray">Jl. Puri Safira Regency, Menganti</h6>
+                                <h6 class="text-[15px] text-etGray sm:text-[12px] sm:my-[10px]">Jl. Puri Safira Regency, Menganti</h6>
                             </div>
                             <div class="et-schedule-loaction flex items-center gap-[12px]">
                                 <span class="icon">
@@ -1130,7 +1130,7 @@ get_header('main'); ?>
                                             fill="var(--et-blue)" />
                                     </svg>
                                 </span>
-                                <h6 class="text-[15px] text-etGray">SURABAYA BARAT</h6>
+                                <h6 class="text-[15px] text-etGray sm:text-[12px] sm:my-[10px]">SURABAYA BARAT</h6>
                             </div>
                             
                         </div>
@@ -1190,7 +1190,7 @@ get_header('main'); ?>
                                         </svg>
                                     </span>
 
-                                    <span class="text-etGray font-normal text-[16px]">Every Friday</span>
+                                    <span class="text-etGray font-normal text-[16px] sm:text-[12px]">Every Friday</span>
                                 </div>
 
                                 <div class="time flex items-center gap-[10px]">
@@ -1206,7 +1206,7 @@ get_header('main'); ?>
                                         </svg>
                                     </span>
 
-                                    <span class="text-etGray font-normal text-[16px]">19.00</span>
+                                    <span class="text-etGray font-normal text-[16px] sm:text-[12px]">19.00</span>
                                 </div>
                             </div>
 
@@ -1215,7 +1215,7 @@ get_header('main'); ?>
                                 class="et-schedule-title text-[24px] sm:text-[22px] font-regular text-etBlack leading-[1.25] mb-[16px] anim-text">
                                 <a href="#" class="hover:text-etBlue"> FA Manyar Rejo </a>
                             </h3>
-                            <h4 class="font-semibold text-etBlue text-[16px] my-[10px]">Gembala : Andrew</h4>
+                            <h4 class="font-semibold text-etBlue text-[16px] my-[10px] sm:text-[12px]">Gembala : Andrew</h4>
 
                             <!-- location -->
                             <div class="et-schedule-loaction flex items-center gap-[12px]">
@@ -1227,7 +1227,7 @@ get_header('main'); ?>
                                             fill="var(--et-blue)" />
                                     </svg>
                                 </span>
-                                <h6 class="text-[15px] text-etGray">Jl. Manyar Rejo, Surabaya</h6>
+                                <h6 class="text-[15px] text-etGray sm:text-[12px] sm:my-[10px]">Jl. Manyar Rejo, Surabaya</h6>
                             </div>
                             <div class="et-schedule-loaction flex items-center gap-[12px]">
                                 <span class="icon">
@@ -1238,7 +1238,7 @@ get_header('main'); ?>
                                             fill="var(--et-blue)" />
                                     </svg>
                                 </span>
-                                <h6 class="text-[15px] text-etGray">SURABAYA TIMUR</h6>
+                                <h6 class="text-[15px] text-etGray sm:text-[12px] sm:my-[10px]">SURABAYA TIMUR</h6>
                             </div>
                             
                         </div>
@@ -1298,7 +1298,7 @@ get_header('main'); ?>
                                         </svg>
                                     </span>
 
-                                    <span class="text-etGray font-normal text-[16px]">Every Monday</span>
+                                    <span class="text-etGray font-normal text-[16px] sm:text-[12px]">Every Monday</span>
                                 </div>
 
                                 <div class="time flex items-center gap-[10px]">
@@ -1314,7 +1314,7 @@ get_header('main'); ?>
                                         </svg>
                                     </span>
 
-                                    <span class="text-etGray font-normal text-[16px]">19.30</span>
+                                    <span class="text-etGray font-normal text-[16px] sm:text-[12px]">19.30</span>
                                 </div>
                             </div>
 
@@ -1323,7 +1323,7 @@ get_header('main'); ?>
                                 class="et-schedule-title text-[24px] sm:text-[22px] font-regular text-etBlack leading-[1.25] mb-[16px] anim-text">
                                 <a href="#" class="hover:text-etBlue"> FA Manyar Jaya </a>
                             </h3>
-                            <h4 class="font-semibold text-etBlue text-[16px] my-[10px]">Gembala : Shirley</h4>
+                            <h4 class="font-semibold text-etBlue text-[16px] my-[10px] sm:text-[12px]">Gembala : Shirley</h4>
 
                             <!-- location -->
                             <div class="et-schedule-loaction flex items-center gap-[12px]">
@@ -1335,7 +1335,7 @@ get_header('main'); ?>
                                             fill="var(--et-blue)" />
                                     </svg>
                                 </span>
-                                <h6 class="text-[15px] text-etGray">Jl. Manyar Jaya, Surabaya</h6>
+                                <h6 class="text-[15px] text-etGray sm:text-[12px] sm:my-[10px]">Jl. Manyar Jaya, Surabaya</h6>
                             </div>
                             <div class="et-schedule-loaction flex items-center gap-[12px]">
                                 <span class="icon">
@@ -1346,7 +1346,7 @@ get_header('main'); ?>
                                             fill="var(--et-blue)" />
                                     </svg>
                                 </span>
-                                <h6 class="text-[15px] text-etGray">SURABAYA TIMUR</h6>
+                                <h6 class="text-[15px] text-etGray sm:text-[12px] sm:my-[10px]">SURABAYA TIMUR</h6>
                             </div>
                             
                         </div>
@@ -1406,7 +1406,7 @@ get_header('main'); ?>
                                         </svg>
                                     </span>
 
-                                    <span class="text-etGray font-normal text-[16px]">Every Monday</span>
+                                    <span class="text-etGray font-normal text-[16px] sm:text-[12px]">Every Monday</span>
                                 </div>
 
                                 <div class="time flex items-center gap-[10px]">
@@ -1422,7 +1422,7 @@ get_header('main'); ?>
                                         </svg>
                                     </span>
 
-                                    <span class="text-etGray font-normal text-[16px]">19.30</span>
+                                    <span class="text-etGray font-normal text-[16px] sm:text-[12px]">19.30</span>
                                 </div>
                             </div>
 
@@ -1431,7 +1431,7 @@ get_header('main'); ?>
                                 class="et-schedule-title text-[24px] sm:text-[22px] font-regular text-etBlack leading-[1.25] mb-[16px] anim-text">
                                 <a href="#" class="hover:text-etBlue"> FA Barata Jaya </a>
                             </h3>
-                            <h4 class="font-semibold text-etBlue text-[16px] my-[10px]">Gembala : Ina</h4>
+                            <h4 class="font-semibold text-etBlue text-[16px] my-[10px] sm:text-[12px]">Gembala : Ina</h4>
 
                             <!-- location -->
                             <div class="et-schedule-loaction flex items-center gap-[12px]">
@@ -1443,7 +1443,7 @@ get_header('main'); ?>
                                             fill="var(--et-blue)" />
                                     </svg>
                                 </span>
-                                <h6 class="text-[15px] text-etGray">Jl. Barata Jaya, Surabaya</h6>
+                                <h6 class="text-[15px] text-etGray sm:text-[12px] sm:my-[10px]">Jl. Barata Jaya, Surabaya</h6>
                             </div>
                             <div class="et-schedule-loaction flex items-center gap-[12px]">
                                 <span class="icon">
@@ -1454,7 +1454,7 @@ get_header('main'); ?>
                                             fill="var(--et-blue)" />
                                     </svg>
                                 </span>
-                                <h6 class="text-[15px] text-etGray">SURABAYA TIMUR</h6>
+                                <h6 class="text-[15px] text-etGray sm:text-[12px] sm:my-[10px]">SURABAYA TIMUR</h6>
                             </div>
                             
                         </div>
@@ -1514,7 +1514,7 @@ get_header('main'); ?>
                                         </svg>
                                     </span>
 
-                                    <span class="text-etGray font-normal text-[16px]">Every Monday</span>
+                                    <span class="text-etGray font-normal text-[16px] sm:text-[12px]">Every Monday</span>
                                 </div>
 
                                 <div class="time flex items-center gap-[10px]">
@@ -1530,7 +1530,7 @@ get_header('main'); ?>
                                         </svg>
                                     </span>
 
-                                    <span class="text-etGray font-normal text-[16px]">19.30</span>
+                                    <span class="text-etGray font-normal text-[16px] sm:text-[12px]">19.30</span>
                                 </div>
                             </div>
 
@@ -1539,7 +1539,7 @@ get_header('main'); ?>
                                 class="et-schedule-title text-[24px] sm:text-[22px] font-regular text-etBlack leading-[1.25] mb-[16px] anim-text">
                                 <a href="#" class="hover:text-etBlue"> FA Mulyo Sari </a>
                             </h3>
-                            <h4 class="font-semibold text-etBlue text-[16px] my-[10px]">Gembala : Febe</h4>
+                            <h4 class="font-semibold text-etBlue text-[16px] my-[10px] sm:text-[12px]">Gembala : Febe</h4>
 
                             <!-- location -->
                             <div class="et-schedule-loaction flex items-center gap-[12px]">
@@ -1551,7 +1551,7 @@ get_header('main'); ?>
                                             fill="var(--et-blue)" />
                                     </svg>
                                 </span>
-                                <h6 class="text-[15px] text-etGray">Jl. Babatan Pantai Timur, Surabaya</h6>
+                                <h6 class="text-[15px] text-etGray sm:text-[12px] sm:my-[10px]">Jl. Babatan Pantai Timur, Surabaya</h6>
                             </div>
                             <div class="et-schedule-loaction flex items-center gap-[12px]">
                                 <span class="icon">
@@ -1562,7 +1562,7 @@ get_header('main'); ?>
                                             fill="var(--et-blue)" />
                                     </svg>
                                 </span>
-                                <h6 class="text-[15px] text-etGray">SURABAYA TIMUR</h6>
+                                <h6 class="text-[15px] text-etGray sm:text-[12px] sm:my-[10px]">SURABAYA TIMUR</h6>
                             </div>
                             
                         </div>
@@ -1622,7 +1622,7 @@ get_header('main'); ?>
                                         </svg>
                                     </span>
 
-                                    <span class="text-etGray font-normal text-[16px]">Every Tuesday</span>
+                                    <span class="text-etGray font-normal text-[16px] sm:text-[12px]">Every Tuesday</span>
                                 </div>
 
                                 <div class="time flex items-center gap-[10px]">
@@ -1638,7 +1638,7 @@ get_header('main'); ?>
                                         </svg>
                                     </span>
 
-                                    <span class="text-etGray font-normal text-[16px]">19.00</span>
+                                    <span class="text-etGray font-normal text-[16px] sm:text-[12px]">19.00</span>
                                 </div>
                             </div>
 
@@ -1647,7 +1647,7 @@ get_header('main'); ?>
                                 class="et-schedule-title text-[24px] sm:text-[22px] font-regular text-etBlack leading-[1.25] mb-[16px] anim-text">
                                 <a href="#" class="hover:text-etBlue"> FA Araya </a>
                             </h3>
-                            <h4 class="font-semibold text-etBlue text-[16px] my-[10px]">Gembala : Julian</h4>
+                            <h4 class="font-semibold text-etBlue text-[16px] my-[10px] sm:text-[12px]">Gembala : Julian</h4>
 
                             <!-- location -->
                             <div class="et-schedule-loaction flex items-center gap-[12px]">
@@ -1659,7 +1659,7 @@ get_header('main'); ?>
                                             fill="var(--et-blue)" />
                                     </svg>
                                 </span>
-                                <h6 class="text-[15px] text-etGray">Jl. Galaxy Bumi Permai, Surabaya</h6>
+                                <h6 class="text-[15px] text-etGray sm:text-[12px] sm:my-[10px]">Jl. Galaxy Bumi Permai, Surabaya</h6>
                             </div>
                             <div class="et-schedule-loaction flex items-center gap-[12px]">
                                 <span class="icon">
@@ -1670,7 +1670,7 @@ get_header('main'); ?>
                                             fill="var(--et-blue)" />
                                     </svg>
                                 </span>
-                                <h6 class="text-[15px] text-etGray">SURABAYA TIMUR</h6>
+                                <h6 class="text-[15px] text-etGray sm:text-[12px] sm:my-[10px]">SURABAYA TIMUR</h6>
                             </div>
                             
                         </div>
@@ -1730,7 +1730,7 @@ get_header('main'); ?>
                                         </svg>
                                     </span>
 
-                                    <span class="text-etGray font-normal text-[16px]">Every Wednesday</span>
+                                    <span class="text-etGray font-normal text-[16px] sm:text-[12px]">Every Wednesday</span>
                                 </div>
 
                                 <div class="time flex items-center gap-[10px]">
@@ -1746,7 +1746,7 @@ get_header('main'); ?>
                                         </svg>
                                     </span>
 
-                                    <span class="text-etGray font-normal text-[16px]">19.00</span>
+                                    <span class="text-etGray font-normal text-[16px] sm:text-[12px]">19.00</span>
                                 </div>
                             </div>
 
@@ -1755,7 +1755,7 @@ get_header('main'); ?>
                                 class="et-schedule-title text-[24px] sm:text-[22px] font-regular text-etBlack leading-[1.25] mb-[16px] anim-text">
                                 <a href="#" class="hover:text-etBlue"> FA Kedung Baruk </a>
                             </h3>
-                            <h4 class="font-semibold text-etBlue text-[16px] my-[10px]">Gembala : Renita</h4>
+                            <h4 class="font-semibold text-etBlue text-[16px] my-[10px] sm:text-[12px]">Gembala : Renita</h4>
 
                             <!-- location -->
                             <div class="et-schedule-loaction flex items-center gap-[12px]">
@@ -1767,7 +1767,7 @@ get_header('main'); ?>
                                             fill="var(--et-blue)" />
                                     </svg>
                                 </span>
-                                <h6 class="text-[15px] text-etGray">Jl. Springville Residence, Surabaya</h6>
+                                <h6 class="text-[15px] text-etGray sm:text-[12px] sm:my-[10px]">Jl. Springville Residence, Surabaya</h6>
                             </div>
                             <div class="et-schedule-loaction flex items-center gap-[12px]">
                                 <span class="icon">
@@ -1778,7 +1778,7 @@ get_header('main'); ?>
                                             fill="var(--et-blue)" />
                                     </svg>
                                 </span>
-                                <h6 class="text-[15px] text-etGray">SURABAYA TIMUR</h6>
+                                <h6 class="text-[15px] text-etGray sm:text-[12px] sm:my-[10px]">SURABAYA TIMUR</h6>
                             </div>
                             
                         </div>
