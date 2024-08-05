@@ -409,9 +409,7 @@ get_header('main');
                             class="text-[30px] lg:text-[27px] sm:text-[24px] xxs:text-[22px] font-medium text-etBlack mb-[10px] sm:text-[24px] sm:my-[15px]">
                             FA - FA Gabungan Bpro</h3>
 
-                        <p class="font-light text-[16px] text-etGray mb-[10px] sm:text-[12px]">The is ipsum dolor sit amet consectetur
-                            adipiscing elit. Fusce is eleifend porta arcu In hac platea habitasse the platea thelorem
-                            turpoi dictumst. In lacus libero faucibus.</p>
+                        <p class="font-light text-[16px] text-etGray mb-[10px] sm:text-[12px]"></p>
 
                         <a href="#" class="text-etBlue text-[16px] hover:text-etBlue">Read More <span
                                 class="pl-[5px]"><i class="fa-solid fa-arrow-right-long"></i></span></a>
@@ -643,9 +641,7 @@ get_header('main');
                             class="text-[30px] lg:text-[27px] sm:text-[24px] xxs:text-[22px] font-medium text-etBlack mb-[10px] sm:text-[24px] sm:my-[15px]">
                             TS - Bestie in Community</h3>
 
-                        <p class="font-light text-[16px] text-etGray mb-[10px] sm:text-[12px]">The is ipsum dolor sit amet consectetur
-                            adipiscing elit. Fusce is eleifend porta arcu In hac platea habitasse the platea thelorem
-                            turpoi dictumst. In lacus libero faucibus.</p>
+                        <p class="font-light text-[16px] text-etGray mb-[10px] sm:text-[12px]"></p>
 
                         <a href="#" class="text-etBlue text-[16px] hover:text-etBlue">Read More <span
                                 class="pl-[5px]"><i class="fa-solid fa-arrow-right-long"></i></span></a>
