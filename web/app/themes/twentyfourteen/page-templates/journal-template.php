@@ -8,13 +8,36 @@ get_header('main');
 ?>
 
 
+<style>
+    img.img-recent {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.left p {
+    text-align: justify;
+}
+
+.left ul {
+    text-align: justify;
+}
+
+@media screen and (max-width: 600px) {
+    .right {
+    margin-top: 50px;
+    width: 100%;
+}
+}
+</style>
+
 <?php if(isset($_GET['journal-detail'])) : ?>
 <!-- BREADCRUMB SECTION START -->
 <section
     class="et-breadcrumb bg-[#000D83] pt-[210px] lg:pt-[190px] sm:pt-[160px] pb-[130px] lg:pb-[110px] sm:pb-[80px] relative z-[1] before:absolute before:inset-0 before:bg-[url('assets/img/breadcrumb-bg.jpg')] before:bg-no-repeat before:bg-cover before:bg-center before:-z-[1] before:opacity-30">
     <div class="container mx-auto max-w-[1200px] px-[12px] xl:max-w-full text-center text-white">
-        <h1 class="et-breadcrumb-title font-medium text-[56px] md:text-[50px] xs:text-[45px]">Journal Details</h1>
-        <ul class="inline-flex items-center gap-[10px] font-medium text-[16px]">
+        <h1 class="et-breadcrumb-title font-medium text-[56px] md:text-[50px] sm:text-[22px]">Journal Details</h1>
+        <ul class="inline-flex items-center gap-[10px] font-medium text-[16px] sm:text-[12px]">
             <li class="opacity-80"><a href="index-2.htm" class="hover:text-etBlue">Home</a></li>
             <li><i class="fa-solid fa-angle-right"></i><i class="fa-solid fa-angle-right"></i></li>
             <li class="current-page">Journal Details</li>
@@ -80,6 +103,16 @@ get_header('main');
                         yang kita jalani sudah benar?
                         Yuk profesional muda temukan jawabannya dalam Talkshow BPro – God’s Purpose in Me bersama nara
                         sumber Pdt. Billy Lantang disini.</p>
+                </div>
+                <div class="border-y border-[#d9d9d9] py-[24px] flex items-center justify-between xs:flex-col xs:items-start gap-[20px]">
+                    <!-- share options -->
+                    <div class="flex gap-[28px] items-center">
+                        <h6 class="font-medium text-[16px] text-etBlack">Share:</h6>
+                        <div class="flex gap-[15px] text-[16px]">
+                            <a href="#" class="text-[#757277] hover:text-etBlue"><i class="fa-brands fa-facebook-f"></i></a>
+                            <a href="#" class="text-[#757277] hover:text-etBlue"><i class="fa-brands fa-instagram"></i></a>
+                        </div>
+                    </div>
                 </div>
             </div>
 
@@ -162,7 +195,7 @@ get_header('main');
             <div class="left">
                 <!-- img -->
                 <div class="relative rounded-[8px] overflow-hidden">
-                    <img src="<?= get_template_directory_uri(); ?>/assets/new-img/journal6.png" alt="event-details-img">
+                    <img src="<?= get_template_directory_uri(); ?>/assets/new-img/harmony.png" alt="event-details-img">
                     <!-- hall number tag -->
                     <!-- <span
                         class="absolute top-[20px] left-[20px] bg-etBlue rounded-[6px] text-white px-[12px] py-[5px] inline-block font-normal text-[16px]">Hall
@@ -223,7 +256,8 @@ get_header('main');
             <div class="left">
                 <!-- img -->
                 <div class="relative rounded-[8px] overflow-hidden">
-                    <img src="<?= get_template_directory_uri(); ?>/assets/new-img/the-calling.png" alt="event-details-img">
+                    <img src="<?= get_template_directory_uri(); ?>/assets/new-img/the-calling.png"
+                        alt="event-details-img">
                     <!-- hall number tag -->
                     <!-- <span
                         class="absolute top-[20px] left-[20px] bg-etBlue rounded-[6px] text-white px-[12px] py-[5px] inline-block font-normal text-[16px]">Hall
@@ -297,8 +331,8 @@ get_header('main');
 <section
     class="et-breadcrumb bg-[#000D83] pt-[210px] lg:pt-[190px] sm:pt-[160px] pb-[130px] lg:pb-[110px] sm:pb-[80px] relative z-[1] before:absolute before:inset-0 before:bg-[url('<?= get_template_directory_uri() ?>/assets/img/breadcrumb-bg.jpg')] before:bg-no-repeat before:bg-cover before:bg-center before:-z-[1] before:opacity-30">
     <div class="container mx-auto max-w-[1200px] px-[12px] xl:max-w-full text-center text-white">
-        <h1 class="et-breadcrumb-title font-medium text-[56px] md:text-[50px] xs:text-[45px]">All Journal</h1>
-        <ul class="inline-flex items-center gap-[10px] font-medium text-[16px]">
+        <h1 class="et-breadcrumb-title font-medium text-[56px] md:text-[50px] sm:text-[22px]">All Journal</h1>
+        <ul class="inline-flex items-center gap-[10px] font-medium text-[16px] sm:text-[12px]">
             <li class="opacity-80"><a href="index-2.htm" class="hover:text-etBlue">Home</a></li>
             <li><i class="fa-solid fa-angle-right"></i><i class="fa-solid fa-angle-right"></i></li>
             <li class="current-page">Journal</li>
@@ -308,8 +342,7 @@ get_header('main');
 <?php endif;?>
 <!-- BREADCRUMB SECTION END -->
 <?php else :?>
-<section
-    class="et-breadcrumb bg-[#000D83] pt-[210px] lg:pt-[190px] sm:pt-[160px] pb-[130px] lg:pb-[110px] sm:pb-[80px] relative z-[1] before:absolute before:inset-0 before:bg-[url('assets/img/breadcrumb-bg.jpg')] before:bg-no-repeat before:bg-cover before:bg-center before:-z-[1] before:opacity-30">
+<section class="et-breadcrumb bg-[#000D83] pt-[210px] lg:pt-[190px] sm:pt-[160px] pb-[130px] lg:pb-[110px] sm:pb-[80px] relative z-[1] before:absolute before:inset-0 before:bg-[url('assets/img/breadcrumb-bg.jpg')] before:bg-no-repeat before:bg-cover before:bg-center before:-z-[1] before:opacity-30">
     <div class="container mx-auto max-w-[1200px] px-[12px] xl:max-w-full text-center text-white">
         <h1 class="et-breadcrumb-title font-medium text-[56px] md:text-[50px] xs:text-[45px]">Journal</h1>
         <ul class="inline-flex items-center gap-[10px] font-medium text-[16px]">
@@ -319,679 +352,568 @@ get_header('main');
         </ul>
     </div>
 </section>
-<div class="py-[130px] lg:py-[80px] md:py-[60px] overflow-hidden">
-    <!-- EVENTS SECTION START -->
-    <section class="et-all-events">
-        <div class="container mx-auto max-w-[1200px] px-[12px] xl:max-w-full">
-
-            <div class="et-schedules-tab-container">
-                <div id="et-event-tab0" class="et-tab active">
-                    <div class="all-scheduled-events space-y-[30px]">
-                        <div class="et-schedule flex md:flex-wrap gap-x-[30px] gap-y-[20px] justify-betweetev-slide-up">
-                            <!-- img -->
-                            <div
-                                class="w-[270px] shadow-[0_4px_60px_rgba(18,96,254,0.12)] shrink-0 rounded-[20px] overflow-hidden">
-                                <img src="<?= get_template_directory_uri() ?>/assets/new-img/journal3.png"
-                                    alt="scehduled-event-cover">
-                            </div>
-
-                            <!-- text -->
-                            <div
-                                class="px-[37px] sm:px-[22px] py-[30px] shadow-[0_4px_60px_rgba(18,96,254,0.12)] w-full rounded-[20px] flex gap-y-[15px] xs:flex-col items-center xs:items-start">
-                                <div
-                                    class="et-schedule__heading w-[80%] pr-[40px] sm:pr-[25px] xs:pr-0 mr-[40px] sm:mr-[25px] xs:mr-0 border-r xs:border-r-0 border-[#d9d9d9]">
-                                    <!-- date & time -->
-                                    <div
-                                        class="et-schedule-date-time border border-[rgba(217,217,217,0.89)] py-[7px] px-[15px] rounded-full inline-flex xxs:w-full items-center justify-center gap-x-[24px] gap-y-[10px] mb-[10px] xxs:border-0 xxs:p-0 xxs:justify-start">
-                                        <div class="date flex items-center gap-[10px]">
-                                            <span class="icon">
-                                                <svg width="16" height="17" viewBox="0 0 16 17" fill="none"
-                                                    xmlns="http://www.w3.org/2000/svg">
-                                                    <g clip-path="url(#clip0_2043_1443)">
-                                                        <path
-                                                            d="M14.125 1.75H13.375V0.5H12.125V1.75H3.875V0.5H2.625V1.75H1.875C0.841125 1.75 0 2.59113 0 3.625V14.625C0 15.6589 0.841125 16.5 1.875 16.5H14.125C15.1589 16.5 16 15.6589 16 14.625V3.625C16 2.59113 15.1589 1.75 14.125 1.75ZM14.75 14.625C14.75 14.9696 14.4696 15.25 14.125 15.25H1.875C1.53038 15.25 1.25 14.9696 1.25 14.625V6.375H14.75V14.625ZM14.75 5.125H1.25V3.625C1.25 3.28038 1.53038 3 1.875 3H2.625V4.25H3.875V3H12.125V4.25H13.375V3H14.125C14.4696 3 14.75 3.28038 14.75 3.625V5.125Z"
-                                                            fill="var(--et-blue)" />
-                                                        <path d="M3.625 7.6875H2.375V8.9375H3.625V7.6875Z"
-                                                            fill="var(--et-blue)" />
-                                                        <path d="M6.125 7.6875H4.875V8.9375H6.125V7.6875Z"
-                                                            fill="var(--et-blue)" />
-                                                        <path d="M8.625 7.6875H7.375V8.9375H8.625V7.6875Z"
-                                                            fill="var(--et-blue)" />
-                                                        <path d="M11.125 7.6875H9.875V8.9375H11.125V7.6875Z"
-                                                            fill="var(--et-blue)" />
-                                                        <path d="M13.625 7.6875H12.375V8.9375H13.625V7.6875Z"
-                                                            fill="var(--et-blue)" />
-                                                        <path d="M3.625 10.1875H2.375V11.4375H3.625V10.1875Z"
-                                                            fill="var(--et-blue)" />
-                                                        <path d="M6.125 10.1875H4.875V11.4375H6.125V10.1875Z"
-                                                            fill="var(--et-blue)" />
-                                                        <path d="M8.625 10.1875H7.375V11.4375H8.625V10.1875Z"
-                                                            fill="var(--et-blue)" />
-                                                        <path d="M11.125 10.1875H9.875V11.4375H11.125V10.1875Z"
-                                                            fill="var(--et-blue)" />
-                                                        <path d="M3.625 12.6875H2.375V13.9375H3.625V12.6875Z"
-                                                            fill="var(--et-blue)" />
-                                                        <path d="M6.125 12.6875H4.875V13.9375H6.125V12.6875Z"
-                                                            fill="var(--et-blue)" />
-                                                        <path d="M8.625 12.6875H7.375V13.9375H8.625V12.6875Z"
-                                                            fill="var(--et-blue)" />
-                                                        <path d="M11.125 12.6875H9.875V13.9375H11.125V12.6875Z"
-                                                            fill="var(--et-blue)" />
-                                                        <path d="M13.625 10.1875H12.375V11.4375H13.625V10.1875Z"
-                                                            fill="var(--et-blue)" />
-                                                    </g>
-                                                </svg>
-                                            </span>
-
-                                            <span class="text-etGray font-normal text-[16px]">08 July 2024</span>
-                                        </div>
-
-                                        <div class="time flex items-center gap-[10px] xxs:hidden">
-                                            <span class="icon">
-                                                <svg width="16" height="17" viewBox="0 0 16 17" fill="none"
-                                                    xmlns="http://www.w3.org/2000/svg">
-                                                    <path
-                                                        d="M10.8505 9.91291L8.61967 8.23979V4.8316C8.61967 4.48891 8.34266 4.21191 7.99998 4.21191C7.65729 4.21191 7.38029 4.48891 7.38029 4.8316V8.54966C7.38029 8.74485 7.47201 8.92892 7.62817 9.04541L10.1069 10.9044C10.2138 10.985 10.3441 11.0285 10.478 11.0284C10.667 11.0284 10.8529 10.9435 10.9744 10.7799C11.1802 10.5066 11.1244 10.118 10.8505 9.91291Z"
-                                                        fill="var(--et-blue)" />
-                                                    <path
-                                                        d="M8 0.5C3.58853 0.5 0 4.08853 0 8.5C0 12.9115 3.58853 16.5 8 16.5C12.4115 16.5 16 12.9115 16 8.5C16 4.08853 12.4115 0.5 8 0.5ZM8 15.2607C4.27266 15.2607 1.23934 12.2273 1.23934 8.5C1.23934 4.77266 4.27266 1.73934 8 1.73934C11.728 1.73934 14.7607 4.77266 14.7607 8.5C14.7607 12.2273 11.7273 15.2607 8 15.2607Z"
-                                                        fill="var(--et-blue)" />
-                                                </svg>
-                                            </span>
-
-                                            <span class="text-etGray font-normal text-[16px]">13.00</span>
-                                        </div>
-                                    </div>
-
-                                    <!-- title -->
-                                    <h3
-                                        class="et-schedule-title text-[24px] sm:text-[22px] font-regular text-etBlack leading-[1.25] mb-[16px] anim-text">
-                                        FA - FA Gabungan Bpro
-                                    </h3>
-                                    <h4 class="font-semibold text-etBlue text-[16px] my-[10px]">Talkshow BPro </h4>
-
-                                    <!-- location -->
-                                    <div class="et-schedule-loaction flex items-center gap-[12px]">
-                                        <span class="icon">
-                                            <svg width="12" height="16" viewBox="0 0 12 16" fill="none"
-                                                xmlns="http://www.w3.org/2000/svg">
-                                                <path
-                                                    d="M5.99998 0C2.80482 0 0.205383 2.59944 0.205383 5.79456C0.205383 9.75981 5.39098 15.581 5.61176 15.8269C5.81913 16.0579 6.1812 16.0575 6.3882 15.8269C6.60898 15.581 11.7946 9.75981 11.7946 5.79456C11.7945 2.59944 9.1951 0 5.99998 0ZM5.99998 8.70997C4.39241 8.70997 3.0846 7.40212 3.0846 5.79456C3.0846 4.187 4.39245 2.87919 5.99998 2.87919C7.60751 2.87919 8.91532 4.18703 8.91532 5.79459C8.91532 7.40216 7.60751 8.70997 5.99998 8.70997Z"
-                                                    fill="var(--et-blue)" />
-                                            </svg>
-                                        </span>
-                                        <h6 class="text-[16px] text-etGray">Bethany Manyar</h6>
-                                    </div>
-                                </div>
-
-                                <div class="flex shrink-0 flex-col xxs:flex-row gap-[16px] xxs:gap-[10px]">
-                                    <!-- <a href="#" class="et-btn border w-[180px] bg-etBlue text-white inline-flex items-center justify-center h-[45px] px-[22px] xxs:px-[16px] font-normal text-[17px] rounded-full hover:!bg-etBlack hover:!text-white">View More</a> -->
-                                    <a href="#"
-                                        class="et-btn border w-[180px] bg-etBlue text-white inline-flex items-center justify-center h-[45px] px-[22px] xxs:px-[16px] font-normal text-[17px] rounded-full hover:!bg-etBlack hover:!text-white">Read
-                                        More</a>
-                                </div>
-                            </div>
-                        </div>
-                        <div
-                            class="et-schedule flex md:flex-wrap gap-x-[30px] gap-y-[20px] justify-between rev-slide-up">
-                            <!-- img -->
-                            <div
-                                class="w-[270px] shadow-[0_4px_60px_rgba(18,96,254,0.12)] shrink-0 rounded-[20px] overflow-hidden">
-                                <img src="<?= get_template_directory_uri() ?>/assets/new-img/journal1.jpg"
-                                    alt="scehduled-event-cover">
-                            </div>
-
-                            <!-- text -->
-                            <div
-                                class="px-[37px] sm:px-[22px] py-[30px] shadow-[0_4px_60px_rgba(18,96,254,0.12)] w-full rounded-[20px] flex gap-y-[15px] xs:flex-col items-center xs:items-start">
-                                <div
-                                    class="et-schedule__heading w-[80%] pr-[40px] sm:pr-[25px] xs:pr-0 mr-[40px] sm:mr-[25px] xs:mr-0 border-r xs:border-r-0 border-[#d9d9d9]">
-                                    <!-- date & time -->
-                                    <div
-                                        class="et-schedule-date-time border border-[rgba(217,217,217,0.89)] py-[7px] px-[15px] rounded-full inline-flex xxs:w-full items-center justify-center gap-x-[24px] gap-y-[10px] mb-[10px] xxs:border-0 xxs:p-0 xxs:justify-start">
-                                        <div class="date flex items-center gap-[10px]">
-                                            <span class="icon">
-                                                <svg width="16" height="17" viewBox="0 0 16 17" fill="none"
-                                                    xmlns="http://www.w3.org/2000/svg">
-                                                    <g clip-path="url(#clip0_2043_1443)">
-                                                        <path
-                                                            d="M14.125 1.75H13.375V0.5H12.125V1.75H3.875V0.5H2.625V1.75H1.875C0.841125 1.75 0 2.59113 0 3.625V14.625C0 15.6589 0.841125 16.5 1.875 16.5H14.125C15.1589 16.5 16 15.6589 16 14.625V3.625C16 2.59113 15.1589 1.75 14.125 1.75ZM14.75 14.625C14.75 14.9696 14.4696 15.25 14.125 15.25H1.875C1.53038 15.25 1.25 14.9696 1.25 14.625V6.375H14.75V14.625ZM14.75 5.125H1.25V3.625C1.25 3.28038 1.53038 3 1.875 3H2.625V4.25H3.875V3H12.125V4.25H13.375V3H14.125C14.4696 3 14.75 3.28038 14.75 3.625V5.125Z"
-                                                            fill="var(--et-blue)" />
-                                                        <path d="M3.625 7.6875H2.375V8.9375H3.625V7.6875Z"
-                                                            fill="var(--et-blue)" />
-                                                        <path d="M6.125 7.6875H4.875V8.9375H6.125V7.6875Z"
-                                                            fill="var(--et-blue)" />
-                                                        <path d="M8.625 7.6875H7.375V8.9375H8.625V7.6875Z"
-                                                            fill="var(--et-blue)" />
-                                                        <path d="M11.125 7.6875H9.875V8.9375H11.125V7.6875Z"
-                                                            fill="var(--et-blue)" />
-                                                        <path d="M13.625 7.6875H12.375V8.9375H13.625V7.6875Z"
-                                                            fill="var(--et-blue)" />
-                                                        <path d="M3.625 10.1875H2.375V11.4375H3.625V10.1875Z"
-                                                            fill="var(--et-blue)" />
-                                                        <path d="M6.125 10.1875H4.875V11.4375H6.125V10.1875Z"
-                                                            fill="var(--et-blue)" />
-                                                        <path d="M8.625 10.1875H7.375V11.4375H8.625V10.1875Z"
-                                                            fill="var(--et-blue)" />
-                                                        <path d="M11.125 10.1875H9.875V11.4375H11.125V10.1875Z"
-                                                            fill="var(--et-blue)" />
-                                                        <path d="M3.625 12.6875H2.375V13.9375H3.625V12.6875Z"
-                                                            fill="var(--et-blue)" />
-                                                        <path d="M6.125 12.6875H4.875V13.9375H6.125V12.6875Z"
-                                                            fill="var(--et-blue)" />
-                                                        <path d="M8.625 12.6875H7.375V13.9375H8.625V12.6875Z"
-                                                            fill="var(--et-blue)" />
-                                                        <path d="M11.125 12.6875H9.875V13.9375H11.125V12.6875Z"
-                                                            fill="var(--et-blue)" />
-                                                        <path d="M13.625 10.1875H12.375V11.4375H13.625V10.1875Z"
-                                                            fill="var(--et-blue)" />
-                                                    </g>
-                                                </svg>
-                                            </span>
-
-                                            <span class="text-etGray font-normal text-[16px]">06 July 2024</span>
-                                        </div>
-
-                                        <div class="time flex items-center gap-[10px] xxs:hidden">
-                                            <span class="icon">
-                                                <svg width="16" height="17" viewBox="0 0 16 17" fill="none"
-                                                    xmlns="http://www.w3.org/2000/svg">
-                                                    <path
-                                                        d="M10.8505 9.91291L8.61967 8.23979V4.8316C8.61967 4.48891 8.34266 4.21191 7.99998 4.21191C7.65729 4.21191 7.38029 4.48891 7.38029 4.8316V8.54966C7.38029 8.74485 7.47201 8.92892 7.62817 9.04541L10.1069 10.9044C10.2138 10.985 10.3441 11.0285 10.478 11.0284C10.667 11.0284 10.8529 10.9435 10.9744 10.7799C11.1802 10.5066 11.1244 10.118 10.8505 9.91291Z"
-                                                        fill="var(--et-blue)" />
-                                                    <path
-                                                        d="M8 0.5C3.58853 0.5 0 4.08853 0 8.5C0 12.9115 3.58853 16.5 8 16.5C12.4115 16.5 16 12.9115 16 8.5C16 4.08853 12.4115 0.5 8 0.5ZM8 15.2607C4.27266 15.2607 1.23934 12.2273 1.23934 8.5C1.23934 4.77266 4.27266 1.73934 8 1.73934C11.728 1.73934 14.7607 4.77266 14.7607 8.5C14.7607 12.2273 11.7273 15.2607 8 15.2607Z"
-                                                        fill="var(--et-blue)" />
-                                                </svg>
-                                            </span>
-
-                                            <span class="text-etGray font-normal text-[16px]">17.30</span>
-                                        </div>
-                                    </div>
-
-                                    <!-- title -->
-                                    <h3
-                                        class="et-schedule-title text-[24px] sm:text-[22px] font-regular text-etBlack leading-[1.25] mb-[16px] anim-text">
-                                        God's Purpose in Me
-                                    </h3>
-                                    <h4 class="font-semibold text-etBlue text-[16px] my-[10px]">Talkshow BPro</h4>
-
-                                    <!-- location -->
-                                    <div class="et-schedule-loaction flex items-center gap-[12px]">
-                                        <span class="icon">
-                                            <svg width="12" height="16" viewBox="0 0 12 16" fill="none"
-                                                xmlns="http://www.w3.org/2000/svg">
-                                                <path
-                                                    d="M5.99998 0C2.80482 0 0.205383 2.59944 0.205383 5.79456C0.205383 9.75981 5.39098 15.581 5.61176 15.8269C5.81913 16.0579 6.1812 16.0575 6.3882 15.8269C6.60898 15.581 11.7946 9.75981 11.7946 5.79456C11.7945 2.59944 9.1951 0 5.99998 0ZM5.99998 8.70997C4.39241 8.70997 3.0846 7.40212 3.0846 5.79456C3.0846 4.187 4.39245 2.87919 5.99998 2.87919C7.60751 2.87919 8.91532 4.18703 8.91532 5.79459C8.91532 7.40216 7.60751 8.70997 5.99998 8.70997Z"
-                                                    fill="var(--et-blue)" />
-                                            </svg>
-                                        </span>
-                                        <h6 class="text-[16px] text-etGray">Bethany Manyar</h6>
-                                    </div>
-                                </div>
-
-                                <div class="flex shrink-0 flex-col xxs:flex-row gap-[16px] xxs:gap-[10px]">
-                                    <!-- <a href="#" class="et-btn border w-[180px] bg-etBlue text-white inline-flex items-center justify-center h-[45px] px-[22px] xxs:px-[16px] font-normal text-[17px] rounded-full hover:!bg-etBlack hover:!text-white">View More</a> -->
-                                    <a href="<?php echo home_url()?>/journal?journal-detail=Gods-Purpose-in-Me"
-                                        class="et-btn border w-[180px] bg-etBlue text-white inline-flex items-center justify-center h-[45px] px-[22px] xxs:px-[16px] font-normal text-[17px] rounded-full hover:!bg-etBlack hover:!text-white">Read
-                                        More</a>
-                                </div>
-                            </div>
-                        </div>
-
-                        <!-- single schedule -->
-                        <div
-                            class="et-schedule flex md:flex-wrap gap-x-[30px] gap-y-[20px] justify-between rev-slide-up">
-                            <!-- img -->
-                            <div
-                                class="w-[270px] shadow-[0_4px_60px_rgba(18,96,254,0.12)] shrink-0 rounded-[20px] overflow-hidden">
-                                <img src="<?= get_template_directory_uri() ?>/assets/new-img/journal2.png"
-                                    alt="scehduled-event-cover">
-                            </div>
-
-                            <!-- text -->
-                            <div
-                                class="px-[37px] sm:px-[22px] py-[30px] shadow-[0_4px_60px_rgba(18,96,254,0.12)] w-full rounded-[20px] flex gap-y-[15px] xs:flex-col items-center xs:items-start">
-                                <div
-                                    class="et-schedule__heading w-[80%] pr-[40px] sm:pr-[25px] xs:pr-0 mr-[40px] sm:mr-[25px] xs:mr-0 border-r xs:border-r-0 border-[#d9d9d9]">
-                                    <!-- date & time -->
-                                    <div
-                                        class="et-schedule-date-time border border-[rgba(217,217,217,0.89)] py-[7px] px-[15px] rounded-full inline-flex xxs:w-full items-center justify-center gap-x-[24px] gap-y-[10px] mb-[10px] xxs:border-0 xxs:p-0 xxs:justify-start">
-                                        <div class="date flex items-center gap-[10px]">
-                                            <span class="icon">
-                                                <svg width="16" height="17" viewBox="0 0 16 17" fill="none"
-                                                    xmlns="http://www.w3.org/2000/svg">
-                                                    <g clip-path="url(#clip0_2043_1443)">
-                                                        <path
-                                                            d="M14.125 1.75H13.375V0.5H12.125V1.75H3.875V0.5H2.625V1.75H1.875C0.841125 1.75 0 2.59113 0 3.625V14.625C0 15.6589 0.841125 16.5 1.875 16.5H14.125C15.1589 16.5 16 15.6589 16 14.625V3.625C16 2.59113 15.1589 1.75 14.125 1.75ZM14.75 14.625C14.75 14.9696 14.4696 15.25 14.125 15.25H1.875C1.53038 15.25 1.25 14.9696 1.25 14.625V6.375H14.75V14.625ZM14.75 5.125H1.25V3.625C1.25 3.28038 1.53038 3 1.875 3H2.625V4.25H3.875V3H12.125V4.25H13.375V3H14.125C14.4696 3 14.75 3.28038 14.75 3.625V5.125Z"
-                                                            fill="var(--et-blue)" />
-                                                        <path d="M3.625 7.6875H2.375V8.9375H3.625V7.6875Z"
-                                                            fill="var(--et-blue)" />
-                                                        <path d="M6.125 7.6875H4.875V8.9375H6.125V7.6875Z"
-                                                            fill="var(--et-blue)" />
-                                                        <path d="M8.625 7.6875H7.375V8.9375H8.625V7.6875Z"
-                                                            fill="var(--et-blue)" />
-                                                        <path d="M11.125 7.6875H9.875V8.9375H11.125V7.6875Z"
-                                                            fill="var(--et-blue)" />
-                                                        <path d="M13.625 7.6875H12.375V8.9375H13.625V7.6875Z"
-                                                            fill="var(--et-blue)" />
-                                                        <path d="M3.625 10.1875H2.375V11.4375H3.625V10.1875Z"
-                                                            fill="var(--et-blue)" />
-                                                        <path d="M6.125 10.1875H4.875V11.4375H6.125V10.1875Z"
-                                                            fill="var(--et-blue)" />
-                                                        <path d="M8.625 10.1875H7.375V11.4375H8.625V10.1875Z"
-                                                            fill="var(--et-blue)" />
-                                                        <path d="M11.125 10.1875H9.875V11.4375H11.125V10.1875Z"
-                                                            fill="var(--et-blue)" />
-                                                        <path d="M3.625 12.6875H2.375V13.9375H3.625V12.6875Z"
-                                                            fill="var(--et-blue)" />
-                                                        <path d="M6.125 12.6875H4.875V13.9375H6.125V12.6875Z"
-                                                            fill="var(--et-blue)" />
-                                                        <path d="M8.625 12.6875H7.375V13.9375H8.625V12.6875Z"
-                                                            fill="var(--et-blue)" />
-                                                        <path d="M11.125 12.6875H9.875V13.9375H11.125V12.6875Z"
-                                                            fill="var(--et-blue)" />
-                                                        <path d="M13.625 10.1875H12.375V11.4375H13.625V10.1875Z"
-                                                            fill="var(--et-blue)" />
-                                                    </g>
-                                                </svg>
-                                            </span>
-
-                                            <span class="text-etGray font-normal text-[16px]">22 Juni 2024</span>
-                                        </div>
-
-                                        <div class="time flex items-center gap-[10px] xxs:hidden">
-                                            <span class="icon">
-                                                <svg width="16" height="17" viewBox="0 0 16 17" fill="none"
-                                                    xmlns="http://www.w3.org/2000/svg">
-                                                    <path
-                                                        d="M10.8505 9.91291L8.61967 8.23979V4.8316C8.61967 4.48891 8.34266 4.21191 7.99998 4.21191C7.65729 4.21191 7.38029 4.48891 7.38029 4.8316V8.54966C7.38029 8.74485 7.47201 8.92892 7.62817 9.04541L10.1069 10.9044C10.2138 10.985 10.3441 11.0285 10.478 11.0284C10.667 11.0284 10.8529 10.9435 10.9744 10.7799C11.1802 10.5066 11.1244 10.118 10.8505 9.91291Z"
-                                                        fill="var(--et-blue)" />
-                                                    <path
-                                                        d="M8 0.5C3.58853 0.5 0 4.08853 0 8.5C0 12.9115 3.58853 16.5 8 16.5C12.4115 16.5 16 12.9115 16 8.5C16 4.08853 12.4115 0.5 8 0.5ZM8 15.2607C4.27266 15.2607 1.23934 12.2273 1.23934 8.5C1.23934 4.77266 4.27266 1.73934 8 1.73934C11.728 1.73934 14.7607 4.77266 14.7607 8.5C14.7607 12.2273 11.7273 15.2607 8 15.2607Z"
-                                                        fill="var(--et-blue)" />
-                                                </svg>
-                                            </span>
-
-                                            <span class="text-etGray font-normal text-[16px]">17.30</span>
-                                        </div>
-                                    </div>
-
-                                    <!-- title -->
-                                    <h3
-                                        class="et-schedule-title text-[24px] sm:text-[22px] font-regular text-etBlack leading-[1.25] mb-[16px] anim-text">
-                                         The Calling 
-                                    </h3>
-                                    <h4 class="font-semibold text-etBlue text-[16px] my-[10px]">Talkshow BPro</h4>
-
-                                    <!-- location -->
-                                    <div class="et-schedule-loaction flex items-center gap-[12px]">
-                                        <span class="icon">
-                                            <svg width="12" height="16" viewBox="0 0 12 16" fill="none"
-                                                xmlns="http://www.w3.org/2000/svg">
-                                                <path
-                                                    d="M5.99998 0C2.80482 0 0.205383 2.59944 0.205383 5.79456C0.205383 9.75981 5.39098 15.581 5.61176 15.8269C5.81913 16.0579 6.1812 16.0575 6.3882 15.8269C6.60898 15.581 11.7946 9.75981 11.7946 5.79456C11.7945 2.59944 9.1951 0 5.99998 0ZM5.99998 8.70997C4.39241 8.70997 3.0846 7.40212 3.0846 5.79456C3.0846 4.187 4.39245 2.87919 5.99998 2.87919C7.60751 2.87919 8.91532 4.18703 8.91532 5.79459C8.91532 7.40216 7.60751 8.70997 5.99998 8.70997Z"
-                                                    fill="var(--et-blue)" />
-                                            </svg>
-                                        </span>
-                                        <h6 class="text-[16px] text-etGray">Bethany Manyar</h6>
-                                    </div>
-                                </div>
-
-                                <div class="flex shrink-0 flex-col xxs:flex-row gap-[16px] xxs:gap-[10px]">
-                                    <!-- <a href="#" class="et-btn border w-[180px] bg-etBlue text-white inline-flex items-center justify-center h-[45px] px-[22px] xxs:px-[16px] font-normal text-[17px] rounded-full hover:!bg-etBlack hover:!text-white">View More</a> -->
-                                    <a href="<?php echo home_url()?>/journal?journal-detail=the-calling"
-                                        class="et-btn border w-[180px] bg-etBlue text-white inline-flex items-center justify-center h-[45px] px-[22px] xxs:px-[16px] font-normal text-[17px] rounded-full hover:!bg-etBlack hover:!text-white">Read
-                                        More</a>
-                                </div>
-                            </div>
-                        </div>
-
-
+<!-- MAIN CONTENT START -->
+<div class="et-event-details-content py-[130px] lg:py-[80px] md:py-[60px]">
+    <div class="container mx-auto max-w-[1200px] px-[12px] xl:max-w-full">
+        <div class="flex gap-[30px] lg:gap-[20px] md:flex-col md:items-center">
+            <!-- left content -->
+            <div class="left grow space-y-[40px] md:space-y-[30px]">
+                <!-- single blog -->
+                <div class="border border-[#D9D9D9] rounded-[8px] p-[24px] xxs:p-[18px]">
+                    <div class="img overflow-hidden rounded-[8px] mb-[30px] relative">
+                        <img src="<?= get_template_directory_uri()?>/assets/new-img/gabungan.png" alt="blog-cover"
+                            class="w-full">
 
                         <div
-                            class="et-schedule flex md:flex-wrap gap-x-[30px] gap-y-[20px] justify-between rev-slide-up">
-                            <!-- img -->
-                            <div
-                                class="w-[270px] shadow-[0_4px_60px_rgba(18,96,254,0.12)] shrink-0 rounded-[20px] overflow-hidden">
-                                <img src="<?= get_template_directory_uri() ?>/assets/new-img/journal4.png"
-                                    alt="scehduled-event-cover">
+                            class="bg-etBlue rounded-[6px] absolute top-[20px] left-[20px] text-white px-[20px] py-[13px]">
+                            <span class="block text-[24px] font-medium leading-[0.7] mb-[6px]">08</span>
+                            <span class="block text-[12px] font-medium leading-[0.7]">July</span>
+                        </div>
+                    </div>
+
+                    <!-- txt -->
+                    <div>
+                        <!-- infos -->
+                        <div class="flex items-center gap-[30px] mb-[5px]">
+                            <!-- single info -->
+                            <div class="flex gap-[10px] items-center">
+                                <span class="shrink-0">
+                                    <svg width="18" height="20" viewBox="0 0 18 20" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M13.5435 5.19275C13.5435 7.69093 11.4989 9.7355 9.00075 9.7355C6.50262 9.7355 4.45804 7.69093 4.45804 5.19275C4.45804 2.69457 6.50258 0.65 9.00075 0.65C11.4989 0.65 13.5435 2.69458 13.5435 5.19275Z"
+                                            class="stroke-etBlue" stroke-width="1.3" />
+                                        <path
+                                            d="M17.2644 14.6708C17.1052 14.946 16.9241 15.2075 16.7169 15.4769L16.7168 15.4768L16.7089 15.4875C16.4203 15.8791 16.0845 16.2376 15.7295 16.5926C15.4326 16.8894 15.0932 17.1863 14.7568 17.4387C13.0794 18.6913 11.0622 19.3501 8.97815 19.3501C6.89837 19.3501 4.88507 18.694 3.20977 17.4463C2.84588 17.1507 2.51368 16.8795 2.22687 16.5927L2.2199 16.5857L2.21272 16.5789C1.85663 16.2438 1.54239 15.8879 1.24746 15.4876L1.24748 15.4876L1.24414 15.4831C1.06193 15.2402 0.873212 14.9758 0.719199 14.7172C0.836191 14.4561 0.984554 14.1849 1.14522 13.9529L1.14533 13.9529L1.15285 13.9416C2.06985 12.5559 3.53706 11.6391 5.16643 11.415L5.18601 11.4123L5.20539 11.4084C5.23087 11.4033 5.29495 11.4119 5.34548 11.4498L5.34547 11.4498L5.34948 11.4528C6.41651 12.2403 7.6863 12.6456 9.0008 12.6456C10.3153 12.6456 11.5851 12.2403 12.6521 11.4528L12.6521 11.4528L12.6561 11.4498C12.6715 11.4382 12.7403 11.4082 12.8492 11.417C14.4688 11.6438 15.9121 12.557 16.8524 13.9471L16.8524 13.9471L16.8564 13.9529C17.0165 14.1842 17.1557 14.4234 17.2644 14.6708Z"
+                                            class="stroke-etBlue" stroke-width="1.3" />
+                                    </svg>
+                                </span>
+                                <span class="text-[14px] text-etGray">by <a href="#">Admin_Bpro</a></span>
                             </div>
 
-                            <!-- text -->
-                            <div
-                                class="px-[37px] sm:px-[22px] py-[30px] shadow-[0_4px_60px_rgba(18,96,254,0.12)] w-full rounded-[20px] flex gap-y-[15px] xs:flex-col items-center xs:items-start">
-                                <div
-                                    class="et-schedule__heading w-[80%] pr-[40px] sm:pr-[25px] xs:pr-0 mr-[40px] sm:mr-[25px] xs:mr-0 border-r xs:border-r-0 border-[#d9d9d9]">
-                                    <!-- date & time -->
-                                    <div
-                                        class="et-schedule-date-time border border-[rgba(217,217,217,0.89)] py-[7px] px-[15px] rounded-full inline-flex xxs:w-full items-center justify-center gap-x-[24px] gap-y-[10px] mb-[10px] xxs:border-0 xxs:p-0 xxs:justify-start">
-                                        <div class="date flex items-center gap-[10px]">
-                                            <span class="icon">
-                                                <svg width="16" height="17" viewBox="0 0 16 17" fill="none"
-                                                    xmlns="http://www.w3.org/2000/svg">
-                                                    <g clip-path="url(#clip0_2043_1443)">
-                                                        <path
-                                                            d="M14.125 1.75H13.375V0.5H12.125V1.75H3.875V0.5H2.625V1.75H1.875C0.841125 1.75 0 2.59113 0 3.625V14.625C0 15.6589 0.841125 16.5 1.875 16.5H14.125C15.1589 16.5 16 15.6589 16 14.625V3.625C16 2.59113 15.1589 1.75 14.125 1.75ZM14.75 14.625C14.75 14.9696 14.4696 15.25 14.125 15.25H1.875C1.53038 15.25 1.25 14.9696 1.25 14.625V6.375H14.75V14.625ZM14.75 5.125H1.25V3.625C1.25 3.28038 1.53038 3 1.875 3H2.625V4.25H3.875V3H12.125V4.25H13.375V3H14.125C14.4696 3 14.75 3.28038 14.75 3.625V5.125Z"
-                                                            fill="var(--et-blue)" />
-                                                        <path d="M3.625 7.6875H2.375V8.9375H3.625V7.6875Z"
-                                                            fill="var(--et-blue)" />
-                                                        <path d="M6.125 7.6875H4.875V8.9375H6.125V7.6875Z"
-                                                            fill="var(--et-blue)" />
-                                                        <path d="M8.625 7.6875H7.375V8.9375H8.625V7.6875Z"
-                                                            fill="var(--et-blue)" />
-                                                        <path d="M11.125 7.6875H9.875V8.9375H11.125V7.6875Z"
-                                                            fill="var(--et-blue)" />
-                                                        <path d="M13.625 7.6875H12.375V8.9375H13.625V7.6875Z"
-                                                            fill="var(--et-blue)" />
-                                                        <path d="M3.625 10.1875H2.375V11.4375H3.625V10.1875Z"
-                                                            fill="var(--et-blue)" />
-                                                        <path d="M6.125 10.1875H4.875V11.4375H6.125V10.1875Z"
-                                                            fill="var(--et-blue)" />
-                                                        <path d="M8.625 10.1875H7.375V11.4375H8.625V10.1875Z"
-                                                            fill="var(--et-blue)" />
-                                                        <path d="M11.125 10.1875H9.875V11.4375H11.125V10.1875Z"
-                                                            fill="var(--et-blue)" />
-                                                        <path d="M3.625 12.6875H2.375V13.9375H3.625V12.6875Z"
-                                                            fill="var(--et-blue)" />
-                                                        <path d="M6.125 12.6875H4.875V13.9375H6.125V12.6875Z"
-                                                            fill="var(--et-blue)" />
-                                                        <path d="M8.625 12.6875H7.375V13.9375H8.625V12.6875Z"
-                                                            fill="var(--et-blue)" />
-                                                        <path d="M11.125 12.6875H9.875V13.9375H11.125V12.6875Z"
-                                                            fill="var(--et-blue)" />
-                                                        <path d="M13.625 10.1875H12.375V11.4375H13.625V10.1875Z"
-                                                            fill="var(--et-blue)" />
-                                                    </g>
-                                                </svg>
-                                            </span>
-
-                                            <span class="text-etGray font-normal text-[16px]">23 Mei 2024</span>
-                                        </div>
-
-                                        <div class="time flex items-center gap-[10px] xxs:hidden">
-                                            <span class="icon">
-                                                <svg width="16" height="17" viewBox="0 0 16 17" fill="none"
-                                                    xmlns="http://www.w3.org/2000/svg">
-                                                    <path
-                                                        d="M10.8505 9.91291L8.61967 8.23979V4.8316C8.61967 4.48891 8.34266 4.21191 7.99998 4.21191C7.65729 4.21191 7.38029 4.48891 7.38029 4.8316V8.54966C7.38029 8.74485 7.47201 8.92892 7.62817 9.04541L10.1069 10.9044C10.2138 10.985 10.3441 11.0285 10.478 11.0284C10.667 11.0284 10.8529 10.9435 10.9744 10.7799C11.1802 10.5066 11.1244 10.118 10.8505 9.91291Z"
-                                                        fill="var(--et-blue)" />
-                                                    <path
-                                                        d="M8 0.5C3.58853 0.5 0 4.08853 0 8.5C0 12.9115 3.58853 16.5 8 16.5C12.4115 16.5 16 12.9115 16 8.5C16 4.08853 12.4115 0.5 8 0.5ZM8 15.2607C4.27266 15.2607 1.23934 12.2273 1.23934 8.5C1.23934 4.77266 4.27266 1.73934 8 1.73934C11.728 1.73934 14.7607 4.77266 14.7607 8.5C14.7607 12.2273 11.7273 15.2607 8 15.2607Z"
-                                                        fill="var(--et-blue)" />
-                                                </svg>
-                                            </span>
-
-                                            <span class="text-etGray font-normal text-[16px]">17.30</span>
-                                        </div>
-                                    </div>
-
-                                    <!-- title -->
-                                    <h3
-                                        class="et-schedule-title text-[24px] sm:text-[22px] font-regular text-etBlack leading-[1.25] mb-[16px] anim-text">
-                                       BPro Race
-                                    </h3>
-                                    <h4 class="font-semibold text-etBlue text-[16px] my-[10px]">Gathering FA</h4>
-
-                                    <!-- location -->
-                                    <div class="et-schedule-loaction flex items-center gap-[12px]">
-                                        <span class="icon">
-                                            <svg width="12" height="16" viewBox="0 0 12 16" fill="none"
-                                                xmlns="http://www.w3.org/2000/svg">
-                                                <path
-                                                    d="M5.99998 0C2.80482 0 0.205383 2.59944 0.205383 5.79456C0.205383 9.75981 5.39098 15.581 5.61176 15.8269C5.81913 16.0579 6.1812 16.0575 6.3882 15.8269C6.60898 15.581 11.7946 9.75981 11.7946 5.79456C11.7945 2.59944 9.1951 0 5.99998 0ZM5.99998 8.70997C4.39241 8.70997 3.0846 7.40212 3.0846 5.79456C3.0846 4.187 4.39245 2.87919 5.99998 2.87919C7.60751 2.87919 8.91532 4.18703 8.91532 5.79459C8.91532 7.40216 7.60751 8.70997 5.99998 8.70997Z"
-                                                    fill="var(--et-blue)" />
-                                            </svg>
-                                        </span>
-                                        <h6 class="text-[16px] text-etGray">Morazen Hotel Surabaya</h6>
-                                    </div>
-                                </div>
-
-                                <div class="flex shrink-0 flex-col xxs:flex-row gap-[16px] xxs:gap-[10px]">
-                                    <!-- <a href="#" class="et-btn border w-[180px] bg-etBlue text-white inline-flex items-center justify-center h-[45px] px-[22px] xxs:px-[16px] font-normal text-[17px] rounded-full hover:!bg-etBlack hover:!text-white">View More</a> -->
-                                    <a href="<?php echo home_url()?>/journal?journal-detail=bpro-race"
-                                        class="et-btn border w-[180px] bg-etBlue text-white inline-flex items-center justify-center h-[45px] px-[22px] xxs:px-[16px] font-normal text-[17px] rounded-full hover:!bg-etBlack hover:!text-white">Read
-                                        More</a>
-                                </div>
+                            <!-- single info -->
+                            <div class="flex gap-[10px] items-center">
+                                <span class="shrink-0">
+                                    <svg width="19" height="19" viewBox="0 0 19 19" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M8.05666 18.75H8.05504C7.46832 18.7495 6.91657 18.5207 6.50187 18.1052L0.660341 12.2553C-0.194072 11.3994 -0.194072 10.0065 0.660341 9.15058L8.53478 1.26102C9.3463 0.44792 10.426 0 11.575 0H16.5709C17.7824 0 18.7682 0.985546 18.7682 2.19726V7.17785C18.7682 8.32602 18.3208 9.40532 17.5084 10.2167L9.60951 18.1074C9.19455 18.5218 8.64306 18.75 8.05666 18.75ZM11.575 1.46484C10.8179 1.46484 10.1064 1.75998 9.57163 2.29579L1.69707 10.1853C1.41222 10.4708 1.41222 10.9349 1.69707 11.2203L7.53857 17.0702C7.6767 17.2086 7.86051 17.285 8.05619 17.2851H8.05677C8.1529 17.2854 8.24812 17.2666 8.33694 17.2299C8.42577 17.1931 8.50643 17.1391 8.57427 17.071L16.4732 9.18046C17.0086 8.6458 17.3034 7.93447 17.3034 7.17788V2.19726C17.3034 1.79341 16.9748 1.46484 16.5709 1.46484H11.575ZM13.458 7.43408C12.2465 7.43408 11.2608 6.44853 11.2608 5.23681C11.2608 4.0251 12.2465 3.03955 13.458 3.03955C14.6696 3.03955 15.6553 4.0251 15.6553 5.23681C15.6553 6.44853 14.6696 7.43408 13.458 7.43408ZM13.458 4.50439C13.0542 4.50439 12.7256 4.83296 12.7256 5.23681C12.7256 5.64067 13.0542 5.96924 13.458 5.96924C13.862 5.96924 14.1905 5.64067 14.1905 5.23681C14.1905 4.83296 13.862 4.50439 13.458 4.50439Z"
+                                            class="fill-etBlue" />
+                                    </svg>
+                                </span>
+                                <span class="text-[14px] text-etGray"><a href="#">Talkshow Bpro</a></span>
                             </div>
                         </div>
+
+                        <h3
+                            class="text-[30px] lg:text-[27px] sm:text-[24px] xxs:text-[22px] font-medium text-etBlack mb-[10px]">
+                            FA - FA Gabungan Bpro</h3>
+
+                        <p class="font-light text-[16px] text-etGray mb-[10px]">The is ipsum dolor sit amet consectetur
+                            adipiscing elit. Fusce is eleifend porta arcu In hac platea habitasse the platea thelorem
+                            turpoi dictumst. In lacus libero faucibus.</p>
+
+                        <a href="#" class="text-etBlue text-[16px] hover:text-etBlue">Read More <span
+                                class="pl-[5px]"><i class="fa-solid fa-arrow-right-long"></i></span></a>
+                    </div>
+                </div>
+
+                <!-- single blog -->
+                <div class="border border-[#D9D9D9] rounded-[8px] p-[24px] xxs:p-[18px]">
+                    <div class="img overflow-hidden rounded-[8px] mb-[30px] relative">
+                        <img src="<?= get_template_directory_uri()?>/assets/new-img/purpose.png" alt="blog-cover"
+                            class="w-full">
 
                         <div
-                            class="et-schedule flex md:flex-wrap gap-x-[30px] gap-y-[20px] justify-between rev-slide-up">
-                            <!-- img -->
-                            <div
-                                class="w-[270px] shadow-[0_4px_60px_rgba(18,96,254,0.12)] shrink-0 rounded-[20px] overflow-hidden">
-                                <img src="<?= get_template_directory_uri() ?>/assets/new-img/journal5.png"
-                                    alt="scehduled-event-cover">
+                            class="bg-etBlue rounded-[6px] absolute top-[20px] left-[20px] text-white px-[20px] py-[13px]">
+                            <span class="block text-[24px] font-medium leading-[0.7] mb-[6px]">06</span>
+                            <span class="block text-[12px] font-medium leading-[0.7]">July</span>
+                        </div>
+                    </div>
+
+                    <!-- txt -->
+                    <div>
+                        <!-- infos -->
+                        <div class="flex items-center gap-[30px] mb-[5px]">
+                            <!-- single info -->
+                            <div class="flex gap-[10px] items-center">
+                                <span class="shrink-0">
+                                    <svg width="18" height="20" viewBox="0 0 18 20" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M13.5435 5.19275C13.5435 7.69093 11.4989 9.7355 9.00075 9.7355C6.50262 9.7355 4.45804 7.69093 4.45804 5.19275C4.45804 2.69457 6.50258 0.65 9.00075 0.65C11.4989 0.65 13.5435 2.69458 13.5435 5.19275Z"
+                                            class="stroke-etBlue" stroke-width="1.3" />
+                                        <path
+                                            d="M17.2644 14.6708C17.1052 14.946 16.9241 15.2075 16.7169 15.4769L16.7168 15.4768L16.7089 15.4875C16.4203 15.8791 16.0845 16.2376 15.7295 16.5926C15.4326 16.8894 15.0932 17.1863 14.7568 17.4387C13.0794 18.6913 11.0622 19.3501 8.97815 19.3501C6.89837 19.3501 4.88507 18.694 3.20977 17.4463C2.84588 17.1507 2.51368 16.8795 2.22687 16.5927L2.2199 16.5857L2.21272 16.5789C1.85663 16.2438 1.54239 15.8879 1.24746 15.4876L1.24748 15.4876L1.24414 15.4831C1.06193 15.2402 0.873212 14.9758 0.719199 14.7172C0.836191 14.4561 0.984554 14.1849 1.14522 13.9529L1.14533 13.9529L1.15285 13.9416C2.06985 12.5559 3.53706 11.6391 5.16643 11.415L5.18601 11.4123L5.20539 11.4084C5.23087 11.4033 5.29495 11.4119 5.34548 11.4498L5.34547 11.4498L5.34948 11.4528C6.41651 12.2403 7.6863 12.6456 9.0008 12.6456C10.3153 12.6456 11.5851 12.2403 12.6521 11.4528L12.6521 11.4528L12.6561 11.4498C12.6715 11.4382 12.7403 11.4082 12.8492 11.417C14.4688 11.6438 15.9121 12.557 16.8524 13.9471L16.8524 13.9471L16.8564 13.9529C17.0165 14.1842 17.1557 14.4234 17.2644 14.6708Z"
+                                            class="stroke-etBlue" stroke-width="1.3" />
+                                    </svg>
+                                </span>
+                                <span class="text-[14px] text-etGray">by <a href="#">Admin_Bpro</a></span>
                             </div>
 
-                            <!-- text -->
-                            <div
-                                class="px-[37px] sm:px-[22px] py-[30px] shadow-[0_4px_60px_rgba(18,96,254,0.12)] w-full rounded-[20px] flex gap-y-[15px] xs:flex-col items-center xs:items-start">
-                                <div
-                                    class="et-schedule__heading w-[80%] pr-[40px] sm:pr-[25px] xs:pr-0 mr-[40px] sm:mr-[25px] xs:mr-0 border-r xs:border-r-0 border-[#d9d9d9]">
-                                    <!-- date & time -->
-                                    <div
-                                        class="et-schedule-date-time border border-[rgba(217,217,217,0.89)] py-[7px] px-[15px] rounded-full inline-flex xxs:w-full items-center justify-center gap-x-[24px] gap-y-[10px] mb-[10px] xxs:border-0 xxs:p-0 xxs:justify-start">
-                                        <div class="date flex items-center gap-[10px]">
-                                            <span class="icon">
-                                                <svg width="16" height="17" viewBox="0 0 16 17" fill="none"
-                                                    xmlns="http://www.w3.org/2000/svg">
-                                                    <g clip-path="url(#clip0_2043_1443)">
-                                                        <path
-                                                            d="M14.125 1.75H13.375V0.5H12.125V1.75H3.875V0.5H2.625V1.75H1.875C0.841125 1.75 0 2.59113 0 3.625V14.625C0 15.6589 0.841125 16.5 1.875 16.5H14.125C15.1589 16.5 16 15.6589 16 14.625V3.625C16 2.59113 15.1589 1.75 14.125 1.75ZM14.75 14.625C14.75 14.9696 14.4696 15.25 14.125 15.25H1.875C1.53038 15.25 1.25 14.9696 1.25 14.625V6.375H14.75V14.625ZM14.75 5.125H1.25V3.625C1.25 3.28038 1.53038 3 1.875 3H2.625V4.25H3.875V3H12.125V4.25H13.375V3H14.125C14.4696 3 14.75 3.28038 14.75 3.625V5.125Z"
-                                                            fill="var(--et-blue)" />
-                                                        <path d="M3.625 7.6875H2.375V8.9375H3.625V7.6875Z"
-                                                            fill="var(--et-blue)" />
-                                                        <path d="M6.125 7.6875H4.875V8.9375H6.125V7.6875Z"
-                                                            fill="var(--et-blue)" />
-                                                        <path d="M8.625 7.6875H7.375V8.9375H8.625V7.6875Z"
-                                                            fill="var(--et-blue)" />
-                                                        <path d="M11.125 7.6875H9.875V8.9375H11.125V7.6875Z"
-                                                            fill="var(--et-blue)" />
-                                                        <path d="M13.625 7.6875H12.375V8.9375H13.625V7.6875Z"
-                                                            fill="var(--et-blue)" />
-                                                        <path d="M3.625 10.1875H2.375V11.4375H3.625V10.1875Z"
-                                                            fill="var(--et-blue)" />
-                                                        <path d="M6.125 10.1875H4.875V11.4375H6.125V10.1875Z"
-                                                            fill="var(--et-blue)" />
-                                                        <path d="M8.625 10.1875H7.375V11.4375H8.625V10.1875Z"
-                                                            fill="var(--et-blue)" />
-                                                        <path d="M11.125 10.1875H9.875V11.4375H11.125V10.1875Z"
-                                                            fill="var(--et-blue)" />
-                                                        <path d="M3.625 12.6875H2.375V13.9375H3.625V12.6875Z"
-                                                            fill="var(--et-blue)" />
-                                                        <path d="M6.125 12.6875H4.875V13.9375H6.125V12.6875Z"
-                                                            fill="var(--et-blue)" />
-                                                        <path d="M8.625 12.6875H7.375V13.9375H8.625V12.6875Z"
-                                                            fill="var(--et-blue)" />
-                                                        <path d="M11.125 12.6875H9.875V13.9375H11.125V12.6875Z"
-                                                            fill="var(--et-blue)" />
-                                                        <path d="M13.625 10.1875H12.375V11.4375H13.625V10.1875Z"
-                                                            fill="var(--et-blue)" />
-                                                    </g>
-                                                </svg>
-                                            </span>
-
-                                            <span class="text-etGray font-normal text-[16px]">23 Maret 2024</span>
-                                        </div>
-
-                                        <div class="time flex items-center gap-[10px] xxs:hidden">
-                                            <span class="icon">
-                                                <svg width="16" height="17" viewBox="0 0 16 17" fill="none"
-                                                    xmlns="http://www.w3.org/2000/svg">
-                                                    <path
-                                                        d="M10.8505 9.91291L8.61967 8.23979V4.8316C8.61967 4.48891 8.34266 4.21191 7.99998 4.21191C7.65729 4.21191 7.38029 4.48891 7.38029 4.8316V8.54966C7.38029 8.74485 7.47201 8.92892 7.62817 9.04541L10.1069 10.9044C10.2138 10.985 10.3441 11.0285 10.478 11.0284C10.667 11.0284 10.8529 10.9435 10.9744 10.7799C11.1802 10.5066 11.1244 10.118 10.8505 9.91291Z"
-                                                        fill="var(--et-blue)" />
-                                                    <path
-                                                        d="M8 0.5C3.58853 0.5 0 4.08853 0 8.5C0 12.9115 3.58853 16.5 8 16.5C12.4115 16.5 16 12.9115 16 8.5C16 4.08853 12.4115 0.5 8 0.5ZM8 15.2607C4.27266 15.2607 1.23934 12.2273 1.23934 8.5C1.23934 4.77266 4.27266 1.73934 8 1.73934C11.728 1.73934 14.7607 4.77266 14.7607 8.5C14.7607 12.2273 11.7273 15.2607 8 15.2607Z"
-                                                        fill="var(--et-blue)" />
-                                                </svg>
-                                            </span>
-
-                                            <span class="text-etGray font-normal text-[16px]">17.30</span>
-                                        </div>
-                                    </div>
-
-                                    <!-- title -->
-                                    <h3
-                                        class="et-schedule-title text-[24px] sm:text-[22px] font-regular text-etBlack leading-[1.25] mb-[16px] anim-text">
-                                        TS - Bestie in Community 
-                                    </h3>
-                                    <h4 class="font-semibold text-etBlue text-[16px] my-[10px]">Talkshow BPro</h4>
-
-                                    <!-- location -->
-                                    <div class="et-schedule-loaction flex items-center gap-[12px]">
-                                        <span class="icon">
-                                            <svg width="12" height="16" viewBox="0 0 12 16" fill="none"
-                                                xmlns="http://www.w3.org/2000/svg">
-                                                <path
-                                                    d="M5.99998 0C2.80482 0 0.205383 2.59944 0.205383 5.79456C0.205383 9.75981 5.39098 15.581 5.61176 15.8269C5.81913 16.0579 6.1812 16.0575 6.3882 15.8269C6.60898 15.581 11.7946 9.75981 11.7946 5.79456C11.7945 2.59944 9.1951 0 5.99998 0ZM5.99998 8.70997C4.39241 8.70997 3.0846 7.40212 3.0846 5.79456C3.0846 4.187 4.39245 2.87919 5.99998 2.87919C7.60751 2.87919 8.91532 4.18703 8.91532 5.79459C8.91532 7.40216 7.60751 8.70997 5.99998 8.70997Z"
-                                                    fill="var(--et-blue)" />
-                                            </svg>
-                                        </span>
-                                        <h6 class="text-[16px] text-etGray">Bethany Manyar</h6>
-                                    </div>
-                                </div>
-
-                                <div class="flex shrink-0 flex-col xxs:flex-row gap-[16px] xxs:gap-[10px]">
-                                    <!-- <a href="#" class="et-btn border w-[180px] bg-etBlue text-white inline-flex items-center justify-center h-[45px] px-[22px] xxs:px-[16px] font-normal text-[17px] rounded-full hover:!bg-etBlack hover:!text-white">View More</a> -->
-                                    <a href="#"
-                                        class="et-btn border w-[180px] bg-etBlue text-white inline-flex items-center justify-center h-[45px] px-[22px] xxs:px-[16px] font-normal text-[17px] rounded-full hover:!bg-etBlack hover:!text-white">Read
-                                        More</a>
-                                </div>
+                            <!-- single info -->
+                            <div class="flex gap-[10px] items-center">
+                                <span class="shrink-0">
+                                    <svg width="19" height="19" viewBox="0 0 19 19" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M8.05666 18.75H8.05504C7.46832 18.7495 6.91657 18.5207 6.50187 18.1052L0.660341 12.2553C-0.194072 11.3994 -0.194072 10.0065 0.660341 9.15058L8.53478 1.26102C9.3463 0.44792 10.426 0 11.575 0H16.5709C17.7824 0 18.7682 0.985546 18.7682 2.19726V7.17785C18.7682 8.32602 18.3208 9.40532 17.5084 10.2167L9.60951 18.1074C9.19455 18.5218 8.64306 18.75 8.05666 18.75ZM11.575 1.46484C10.8179 1.46484 10.1064 1.75998 9.57163 2.29579L1.69707 10.1853C1.41222 10.4708 1.41222 10.9349 1.69707 11.2203L7.53857 17.0702C7.6767 17.2086 7.86051 17.285 8.05619 17.2851H8.05677C8.1529 17.2854 8.24812 17.2666 8.33694 17.2299C8.42577 17.1931 8.50643 17.1391 8.57427 17.071L16.4732 9.18046C17.0086 8.6458 17.3034 7.93447 17.3034 7.17788V2.19726C17.3034 1.79341 16.9748 1.46484 16.5709 1.46484H11.575ZM13.458 7.43408C12.2465 7.43408 11.2608 6.44853 11.2608 5.23681C11.2608 4.0251 12.2465 3.03955 13.458 3.03955C14.6696 3.03955 15.6553 4.0251 15.6553 5.23681C15.6553 6.44853 14.6696 7.43408 13.458 7.43408ZM13.458 4.50439C13.0542 4.50439 12.7256 4.83296 12.7256 5.23681C12.7256 5.64067 13.0542 5.96924 13.458 5.96924C13.862 5.96924 14.1905 5.64067 14.1905 5.23681C14.1905 4.83296 13.862 4.50439 13.458 4.50439Z"
+                                            class="fill-etBlue" />
+                                    </svg>
+                                </span>
+                                <span class="text-[14px] text-etGray"><a href="#">Talkshow Bpro</a></span>
                             </div>
                         </div>
+
+                        <h3
+                            class="text-[30px] lg:text-[27px] sm:text-[24px] xxs:text-[22px] font-medium text-etBlack mb-[10px]">
+                            God's Purpose in Me</h3>
+
+                        <p class="font-light text-[16px] text-etGray mb-[10px]">Setiap manusia diciptakan Tuhan pasti dengan suatu tujuan dalam hidupnya. Nah bagaimana kita sebagai profesional muda bisa mengerti tujuan hidup yang benar yang sesuai Firman Tuhan?</p>
+
+                        <a href="<?php echo home_url() ?>/journal?journal-detail=Gods-Purpose-in-Me" class="text-etBlue text-[16px] hover:text-etBlue">Read More <span
+                                class="pl-[5px]"><i class="fa-solid fa-arrow-right-long"></i></span></a>
+                    </div>
+                </div>
+
+                <!-- single blog -->
+                <div class="border border-[#D9D9D9] rounded-[8px] p-[24px] xxs:p-[18px]">
+                    <div class="img overflow-hidden rounded-[8px] mb-[30px] relative">
+                        <img src="<?= get_template_directory_uri()?>/assets/new-img/the-calling.png" alt="blog-cover"
+                            class="w-full">
 
                         <div
-                            class="et-schedule flex md:flex-wrap gap-x-[30px] gap-y-[20px] justify-between rev-slide-up">
-                            <!-- img -->
-                            <div
-                                class="w-[270px] shadow-[0_4px_60px_rgba(18,96,254,0.12)] shrink-0 rounded-[20px] overflow-hidden">
-                                <img src="<?= get_template_directory_uri() ?>/assets/new-img/journal6.png"
-                                    alt="scehduled-event-cover">
+                            class="bg-etBlue rounded-[6px] absolute top-[20px] left-[20px] text-white px-[20px] py-[13px]">
+                            <span class="block text-[24px] font-medium leading-[0.7] mb-[6px]">22</span>
+                            <span class="block text-[12px] font-medium leading-[0.7]">Juni</span>
+                        </div>
+                    </div>
+
+                    <!-- txt -->
+                    <div>
+                        <!-- infos -->
+                        <div class="flex items-center gap-[30px] mb-[5px]">
+                            <!-- single info -->
+                            <div class="flex gap-[10px] items-center">
+                                <span class="shrink-0">
+                                    <svg width="18" height="20" viewBox="0 0 18 20" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M13.5435 5.19275C13.5435 7.69093 11.4989 9.7355 9.00075 9.7355C6.50262 9.7355 4.45804 7.69093 4.45804 5.19275C4.45804 2.69457 6.50258 0.65 9.00075 0.65C11.4989 0.65 13.5435 2.69458 13.5435 5.19275Z"
+                                            class="stroke-etBlue" stroke-width="1.3" />
+                                        <path
+                                            d="M17.2644 14.6708C17.1052 14.946 16.9241 15.2075 16.7169 15.4769L16.7168 15.4768L16.7089 15.4875C16.4203 15.8791 16.0845 16.2376 15.7295 16.5926C15.4326 16.8894 15.0932 17.1863 14.7568 17.4387C13.0794 18.6913 11.0622 19.3501 8.97815 19.3501C6.89837 19.3501 4.88507 18.694 3.20977 17.4463C2.84588 17.1507 2.51368 16.8795 2.22687 16.5927L2.2199 16.5857L2.21272 16.5789C1.85663 16.2438 1.54239 15.8879 1.24746 15.4876L1.24748 15.4876L1.24414 15.4831C1.06193 15.2402 0.873212 14.9758 0.719199 14.7172C0.836191 14.4561 0.984554 14.1849 1.14522 13.9529L1.14533 13.9529L1.15285 13.9416C2.06985 12.5559 3.53706 11.6391 5.16643 11.415L5.18601 11.4123L5.20539 11.4084C5.23087 11.4033 5.29495 11.4119 5.34548 11.4498L5.34547 11.4498L5.34948 11.4528C6.41651 12.2403 7.6863 12.6456 9.0008 12.6456C10.3153 12.6456 11.5851 12.2403 12.6521 11.4528L12.6521 11.4528L12.6561 11.4498C12.6715 11.4382 12.7403 11.4082 12.8492 11.417C14.4688 11.6438 15.9121 12.557 16.8524 13.9471L16.8524 13.9471L16.8564 13.9529C17.0165 14.1842 17.1557 14.4234 17.2644 14.6708Z"
+                                            class="stroke-etBlue" stroke-width="1.3" />
+                                    </svg>
+                                </span>
+                                <span class="text-[14px] text-etGray">by <a href="#">Admin_Bpro</a></span>
                             </div>
 
-                            <!-- text -->
-                            <div
-                                class="px-[37px] sm:px-[22px] py-[30px] shadow-[0_4px_60px_rgba(18,96,254,0.12)] w-full rounded-[20px] flex gap-y-[15px] xs:flex-col items-center xs:items-start">
-                                <div
-                                    class="et-schedule__heading w-[80%] pr-[40px] sm:pr-[25px] xs:pr-0 mr-[40px] sm:mr-[25px] xs:mr-0 border-r xs:border-r-0 border-[#d9d9d9]">
-                                    <!-- date & time -->
-                                    <div
-                                        class="et-schedule-date-time border border-[rgba(217,217,217,0.89)] py-[7px] px-[15px] rounded-full inline-flex xxs:w-full items-center justify-center gap-x-[24px] gap-y-[10px] mb-[10px] xxs:border-0 xxs:p-0 xxs:justify-start">
-                                        <div class="date flex items-center gap-[10px]">
-                                            <span class="icon">
-                                                <svg width="16" height="17" viewBox="0 0 16 17" fill="none"
-                                                    xmlns="http://www.w3.org/2000/svg">
-                                                    <g clip-path="url(#clip0_2043_1443)">
-                                                        <path
-                                                            d="M14.125 1.75H13.375V0.5H12.125V1.75H3.875V0.5H2.625V1.75H1.875C0.841125 1.75 0 2.59113 0 3.625V14.625C0 15.6589 0.841125 16.5 1.875 16.5H14.125C15.1589 16.5 16 15.6589 16 14.625V3.625C16 2.59113 15.1589 1.75 14.125 1.75ZM14.75 14.625C14.75 14.9696 14.4696 15.25 14.125 15.25H1.875C1.53038 15.25 1.25 14.9696 1.25 14.625V6.375H14.75V14.625ZM14.75 5.125H1.25V3.625C1.25 3.28038 1.53038 3 1.875 3H2.625V4.25H3.875V3H12.125V4.25H13.375V3H14.125C14.4696 3 14.75 3.28038 14.75 3.625V5.125Z"
-                                                            fill="var(--et-blue)" />
-                                                        <path d="M3.625 7.6875H2.375V8.9375H3.625V7.6875Z"
-                                                            fill="var(--et-blue)" />
-                                                        <path d="M6.125 7.6875H4.875V8.9375H6.125V7.6875Z"
-                                                            fill="var(--et-blue)" />
-                                                        <path d="M8.625 7.6875H7.375V8.9375H8.625V7.6875Z"
-                                                            fill="var(--et-blue)" />
-                                                        <path d="M11.125 7.6875H9.875V8.9375H11.125V7.6875Z"
-                                                            fill="var(--et-blue)" />
-                                                        <path d="M13.625 7.6875H12.375V8.9375H13.625V7.6875Z"
-                                                            fill="var(--et-blue)" />
-                                                        <path d="M3.625 10.1875H2.375V11.4375H3.625V10.1875Z"
-                                                            fill="var(--et-blue)" />
-                                                        <path d="M6.125 10.1875H4.875V11.4375H6.125V10.1875Z"
-                                                            fill="var(--et-blue)" />
-                                                        <path d="M8.625 10.1875H7.375V11.4375H8.625V10.1875Z"
-                                                            fill="var(--et-blue)" />
-                                                        <path d="M11.125 10.1875H9.875V11.4375H11.125V10.1875Z"
-                                                            fill="var(--et-blue)" />
-                                                        <path d="M3.625 12.6875H2.375V13.9375H3.625V12.6875Z"
-                                                            fill="var(--et-blue)" />
-                                                        <path d="M6.125 12.6875H4.875V13.9375H6.125V12.6875Z"
-                                                            fill="var(--et-blue)" />
-                                                        <path d="M8.625 12.6875H7.375V13.9375H8.625V12.6875Z"
-                                                            fill="var(--et-blue)" />
-                                                        <path d="M11.125 12.6875H9.875V13.9375H11.125V12.6875Z"
-                                                            fill="var(--et-blue)" />
-                                                        <path d="M13.625 10.1875H12.375V11.4375H13.625V10.1875Z"
-                                                            fill="var(--et-blue)" />
-                                                    </g>
-                                                </svg>
-                                            </span>
-
-                                            <span class="text-etGray font-normal text-[16px]">14 Oct 2023</span>
-                                        </div>
-
-                                        <div class="time flex items-center gap-[10px] xxs:hidden">
-                                            <span class="icon">
-                                                <svg width="16" height="17" viewBox="0 0 16 17" fill="none"
-                                                    xmlns="http://www.w3.org/2000/svg">
-                                                    <path
-                                                        d="M10.8505 9.91291L8.61967 8.23979V4.8316C8.61967 4.48891 8.34266 4.21191 7.99998 4.21191C7.65729 4.21191 7.38029 4.48891 7.38029 4.8316V8.54966C7.38029 8.74485 7.47201 8.92892 7.62817 9.04541L10.1069 10.9044C10.2138 10.985 10.3441 11.0285 10.478 11.0284C10.667 11.0284 10.8529 10.9435 10.9744 10.7799C11.1802 10.5066 11.1244 10.118 10.8505 9.91291Z"
-                                                        fill="var(--et-blue)" />
-                                                    <path
-                                                        d="M8 0.5C3.58853 0.5 0 4.08853 0 8.5C0 12.9115 3.58853 16.5 8 16.5C12.4115 16.5 16 12.9115 16 8.5C16 4.08853 12.4115 0.5 8 0.5ZM8 15.2607C4.27266 15.2607 1.23934 12.2273 1.23934 8.5C1.23934 4.77266 4.27266 1.73934 8 1.73934C11.728 1.73934 14.7607 4.77266 14.7607 8.5C14.7607 12.2273 11.7273 15.2607 8 15.2607Z"
-                                                        fill="var(--et-blue)" />
-                                                </svg>
-                                            </span>
-
-                                            <span class="text-etGray font-normal text-[16px]">17.30</span>
-                                        </div>
-                                    </div>
-
-                                    <!-- title -->
-                                    <h3
-                                        class="et-schedule-title text-[24px] sm:text-[22px] font-regular text-etBlack leading-[1.25] mb-[16px] anim-text">
-                                       Harmony Celebration 
-                                    </h3>
-                                    <h4 class="font-semibold text-etBlue text-[16px] my-[10px]">BPro Anniversary</h4>
-
-                                    <!-- location -->
-                                    <div class="et-schedule-loaction flex items-center gap-[12px]">
-                                        <span class="icon">
-                                            <svg width="12" height="16" viewBox="0 0 12 16" fill="none"
-                                                xmlns="http://www.w3.org/2000/svg">
-                                                <path
-                                                    d="M5.99998 0C2.80482 0 0.205383 2.59944 0.205383 5.79456C0.205383 9.75981 5.39098 15.581 5.61176 15.8269C5.81913 16.0579 6.1812 16.0575 6.3882 15.8269C6.60898 15.581 11.7946 9.75981 11.7946 5.79456C11.7945 2.59944 9.1951 0 5.99998 0ZM5.99998 8.70997C4.39241 8.70997 3.0846 7.40212 3.0846 5.79456C3.0846 4.187 4.39245 2.87919 5.99998 2.87919C7.60751 2.87919 8.91532 4.18703 8.91532 5.79459C8.91532 7.40216 7.60751 8.70997 5.99998 8.70997Z"
-                                                    fill="var(--et-blue)" />
-                                            </svg>
-                                        </span>
-                                        <h6 class="text-[16px] text-etGray">Bethany Manyar</h6>
-                                    </div>
-                                </div>
-
-                                <div class="flex shrink-0 flex-col xxs:flex-row gap-[16px] xxs:gap-[10px]">
-                                    <!-- <a href="#" class="et-btn border w-[180px] bg-etBlue text-white inline-flex items-center justify-center h-[45px] px-[22px] xxs:px-[16px] font-normal text-[17px] rounded-full hover:!bg-etBlack hover:!text-white">View More</a> -->
-                                    <a href="<?php echo home_url()?>/journal?journal-detail=harmony-celebration"
-                                        class="et-btn border w-[180px] bg-etBlue text-white inline-flex items-center justify-center h-[45px] px-[22px] xxs:px-[16px] font-normal text-[17px] rounded-full hover:!bg-etBlack hover:!text-white">Read
-                                        More</a>
-                                </div>
+                            <!-- single info -->
+                            <div class="flex gap-[10px] items-center">
+                                <span class="shrink-0">
+                                    <svg width="19" height="19" viewBox="0 0 19 19" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M8.05666 18.75H8.05504C7.46832 18.7495 6.91657 18.5207 6.50187 18.1052L0.660341 12.2553C-0.194072 11.3994 -0.194072 10.0065 0.660341 9.15058L8.53478 1.26102C9.3463 0.44792 10.426 0 11.575 0H16.5709C17.7824 0 18.7682 0.985546 18.7682 2.19726V7.17785C18.7682 8.32602 18.3208 9.40532 17.5084 10.2167L9.60951 18.1074C9.19455 18.5218 8.64306 18.75 8.05666 18.75ZM11.575 1.46484C10.8179 1.46484 10.1064 1.75998 9.57163 2.29579L1.69707 10.1853C1.41222 10.4708 1.41222 10.9349 1.69707 11.2203L7.53857 17.0702C7.6767 17.2086 7.86051 17.285 8.05619 17.2851H8.05677C8.1529 17.2854 8.24812 17.2666 8.33694 17.2299C8.42577 17.1931 8.50643 17.1391 8.57427 17.071L16.4732 9.18046C17.0086 8.6458 17.3034 7.93447 17.3034 7.17788V2.19726C17.3034 1.79341 16.9748 1.46484 16.5709 1.46484H11.575ZM13.458 7.43408C12.2465 7.43408 11.2608 6.44853 11.2608 5.23681C11.2608 4.0251 12.2465 3.03955 13.458 3.03955C14.6696 3.03955 15.6553 4.0251 15.6553 5.23681C15.6553 6.44853 14.6696 7.43408 13.458 7.43408ZM13.458 4.50439C13.0542 4.50439 12.7256 4.83296 12.7256 5.23681C12.7256 5.64067 13.0542 5.96924 13.458 5.96924C13.862 5.96924 14.1905 5.64067 14.1905 5.23681C14.1905 4.83296 13.862 4.50439 13.458 4.50439Z"
+                                            class="fill-etBlue" />
+                                    </svg>
+                                </span>
+                                <span class="text-[14px] text-etGray"><a href="#">Talkshow Bpro</a></span>
                             </div>
                         </div>
 
+                        <h3
+                            class="text-[30px] lg:text-[27px] sm:text-[24px] xxs:text-[22px] font-medium text-etBlack mb-[10px]">
+                            The Calling</h3>
+
+                        <p class="font-light text-[16px] text-etGray mb-[10px]">Talkshow ‘The Calling’, Pdt. Agus Gunawan atau akrabnya dipanggil ‘Ko Han-Han’, membagikan alasan mengapa kita melayani Tuhan yaitu karena kita mengasihi Tuhan.</p>
+
+                        <a href="<?php echo home_url() ?>/journal?journal-detail=the-calling" class="text-etBlue text-[16px] hover:text-etBlue">Read More <span
+                                class="pl-[5px]"><i class="fa-solid fa-arrow-right-long"></i></span></a>
+                    </div>
+                </div>
+
+                <!-- single blog -->
+                <div class="border border-[#D9D9D9] rounded-[8px] p-[24px] xxs:p-[18px]">
+                    <div class="img overflow-hidden rounded-[8px] mb-[30px] relative">
+                        <img src="<?= get_template_directory_uri()?>/assets/new-img/bpro1.jpg" alt="blog-cover"
+                            class="w-full">
+
+                        <div
+                            class="bg-etBlue rounded-[6px] absolute top-[20px] left-[20px] text-white px-[20px] py-[13px]">
+                            <span class="block text-[24px] font-medium leading-[0.7] mb-[6px]">23</span>
+                            <span class="block text-[12px] font-medium leading-[0.7]">Mei</span>
+                        </div>
+                    </div>
+
+                    <!-- txt -->
+                    <div>
+                        <!-- infos -->
+                        <div class="flex items-center gap-[30px] mb-[5px]">
+                            <!-- single info -->
+                            <div class="flex gap-[10px] items-center">
+                                <span class="shrink-0">
+                                    <svg width="18" height="20" viewBox="0 0 18 20" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M13.5435 5.19275C13.5435 7.69093 11.4989 9.7355 9.00075 9.7355C6.50262 9.7355 4.45804 7.69093 4.45804 5.19275C4.45804 2.69457 6.50258 0.65 9.00075 0.65C11.4989 0.65 13.5435 2.69458 13.5435 5.19275Z"
+                                            class="stroke-etBlue" stroke-width="1.3" />
+                                        <path
+                                            d="M17.2644 14.6708C17.1052 14.946 16.9241 15.2075 16.7169 15.4769L16.7168 15.4768L16.7089 15.4875C16.4203 15.8791 16.0845 16.2376 15.7295 16.5926C15.4326 16.8894 15.0932 17.1863 14.7568 17.4387C13.0794 18.6913 11.0622 19.3501 8.97815 19.3501C6.89837 19.3501 4.88507 18.694 3.20977 17.4463C2.84588 17.1507 2.51368 16.8795 2.22687 16.5927L2.2199 16.5857L2.21272 16.5789C1.85663 16.2438 1.54239 15.8879 1.24746 15.4876L1.24748 15.4876L1.24414 15.4831C1.06193 15.2402 0.873212 14.9758 0.719199 14.7172C0.836191 14.4561 0.984554 14.1849 1.14522 13.9529L1.14533 13.9529L1.15285 13.9416C2.06985 12.5559 3.53706 11.6391 5.16643 11.415L5.18601 11.4123L5.20539 11.4084C5.23087 11.4033 5.29495 11.4119 5.34548 11.4498L5.34547 11.4498L5.34948 11.4528C6.41651 12.2403 7.6863 12.6456 9.0008 12.6456C10.3153 12.6456 11.5851 12.2403 12.6521 11.4528L12.6521 11.4528L12.6561 11.4498C12.6715 11.4382 12.7403 11.4082 12.8492 11.417C14.4688 11.6438 15.9121 12.557 16.8524 13.9471L16.8524 13.9471L16.8564 13.9529C17.0165 14.1842 17.1557 14.4234 17.2644 14.6708Z"
+                                            class="stroke-etBlue" stroke-width="1.3" />
+                                    </svg>
+                                </span>
+                                <span class="text-[14px] text-etGray">by <a href="#">Admin_Bpro</a></span>
+                            </div>
+
+                            <!-- single info -->
+                            <div class="flex gap-[10px] items-center">
+                                <span class="shrink-0">
+                                    <svg width="19" height="19" viewBox="0 0 19 19" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M8.05666 18.75H8.05504C7.46832 18.7495 6.91657 18.5207 6.50187 18.1052L0.660341 12.2553C-0.194072 11.3994 -0.194072 10.0065 0.660341 9.15058L8.53478 1.26102C9.3463 0.44792 10.426 0 11.575 0H16.5709C17.7824 0 18.7682 0.985546 18.7682 2.19726V7.17785C18.7682 8.32602 18.3208 9.40532 17.5084 10.2167L9.60951 18.1074C9.19455 18.5218 8.64306 18.75 8.05666 18.75ZM11.575 1.46484C10.8179 1.46484 10.1064 1.75998 9.57163 2.29579L1.69707 10.1853C1.41222 10.4708 1.41222 10.9349 1.69707 11.2203L7.53857 17.0702C7.6767 17.2086 7.86051 17.285 8.05619 17.2851H8.05677C8.1529 17.2854 8.24812 17.2666 8.33694 17.2299C8.42577 17.1931 8.50643 17.1391 8.57427 17.071L16.4732 9.18046C17.0086 8.6458 17.3034 7.93447 17.3034 7.17788V2.19726C17.3034 1.79341 16.9748 1.46484 16.5709 1.46484H11.575ZM13.458 7.43408C12.2465 7.43408 11.2608 6.44853 11.2608 5.23681C11.2608 4.0251 12.2465 3.03955 13.458 3.03955C14.6696 3.03955 15.6553 4.0251 15.6553 5.23681C15.6553 6.44853 14.6696 7.43408 13.458 7.43408ZM13.458 4.50439C13.0542 4.50439 12.7256 4.83296 12.7256 5.23681C12.7256 5.64067 13.0542 5.96924 13.458 5.96924C13.862 5.96924 14.1905 5.64067 14.1905 5.23681C14.1905 4.83296 13.862 4.50439 13.458 4.50439Z"
+                                            class="fill-etBlue" />
+                                    </svg>
+                                </span>
+                                <span class="text-[14px] text-etGray"><a href="#">Gathering FA</a></span>
+                            </div>
+                        </div>
+
+                        <h3
+                            class="text-[30px] lg:text-[27px] sm:text-[24px] xxs:text-[22px] font-medium text-etBlack mb-[10px]">
+                            BPro Race</h3>
+
+                        <p class="font-light text-[16px] text-etGray mb-[10px]">Pada tanggal 23 Mei 2024, BPro mengadakan program funday untuk gathering seluruh anggota FA, yaitu BPro Race. Event spesial ini diadakan setiap beberapa bulan sekali.</p>
+
+                        <a href="<?php echo home_url() ?>/journal?journal-detail=bpro-race" class="text-etBlue text-[16px] hover:text-etBlue">Read More <span
+                                class="pl-[5px]"><i class="fa-solid fa-arrow-right-long"></i></span></a>
+                    </div>
+                </div>
+
+                <!-- single blog -->
+                <div class="border border-[#D9D9D9] rounded-[8px] p-[24px] xxs:p-[18px]">
+                    <div class="img overflow-hidden rounded-[8px] mb-[30px] relative">
+                        <img src="<?= get_template_directory_uri()?>/assets/new-img/bestie.png" alt="blog-cover"
+                            class="w-full">
+
+                        <div
+                            class="bg-etBlue rounded-[6px] absolute top-[20px] left-[20px] text-white px-[20px] py-[13px]">
+                            <span class="block text-[24px] font-medium leading-[0.7] mb-[6px]">23</span>
+                            <span class="block text-[12px] font-medium leading-[0.7]">Maret</span>
+                        </div>
+                    </div>
+
+                    <!-- txt -->
+                    <div>
+                        <!-- infos -->
+                        <div class="flex items-center gap-[30px] mb-[5px]">
+                            <!-- single info -->
+                            <div class="flex gap-[10px] items-center">
+                                <span class="shrink-0">
+                                    <svg width="18" height="20" viewBox="0 0 18 20" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M13.5435 5.19275C13.5435 7.69093 11.4989 9.7355 9.00075 9.7355C6.50262 9.7355 4.45804 7.69093 4.45804 5.19275C4.45804 2.69457 6.50258 0.65 9.00075 0.65C11.4989 0.65 13.5435 2.69458 13.5435 5.19275Z"
+                                            class="stroke-etBlue" stroke-width="1.3" />
+                                        <path
+                                            d="M17.2644 14.6708C17.1052 14.946 16.9241 15.2075 16.7169 15.4769L16.7168 15.4768L16.7089 15.4875C16.4203 15.8791 16.0845 16.2376 15.7295 16.5926C15.4326 16.8894 15.0932 17.1863 14.7568 17.4387C13.0794 18.6913 11.0622 19.3501 8.97815 19.3501C6.89837 19.3501 4.88507 18.694 3.20977 17.4463C2.84588 17.1507 2.51368 16.8795 2.22687 16.5927L2.2199 16.5857L2.21272 16.5789C1.85663 16.2438 1.54239 15.8879 1.24746 15.4876L1.24748 15.4876L1.24414 15.4831C1.06193 15.2402 0.873212 14.9758 0.719199 14.7172C0.836191 14.4561 0.984554 14.1849 1.14522 13.9529L1.14533 13.9529L1.15285 13.9416C2.06985 12.5559 3.53706 11.6391 5.16643 11.415L5.18601 11.4123L5.20539 11.4084C5.23087 11.4033 5.29495 11.4119 5.34548 11.4498L5.34547 11.4498L5.34948 11.4528C6.41651 12.2403 7.6863 12.6456 9.0008 12.6456C10.3153 12.6456 11.5851 12.2403 12.6521 11.4528L12.6521 11.4528L12.6561 11.4498C12.6715 11.4382 12.7403 11.4082 12.8492 11.417C14.4688 11.6438 15.9121 12.557 16.8524 13.9471L16.8524 13.9471L16.8564 13.9529C17.0165 14.1842 17.1557 14.4234 17.2644 14.6708Z"
+                                            class="stroke-etBlue" stroke-width="1.3" />
+                                    </svg>
+                                </span>
+                                <span class="text-[14px] text-etGray">by <a href="#">Admin_Bpro</a></span>
+                            </div>
+
+                            <!-- single info -->
+                            <div class="flex gap-[10px] items-center">
+                                <span class="shrink-0">
+                                    <svg width="19" height="19" viewBox="0 0 19 19" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M8.05666 18.75H8.05504C7.46832 18.7495 6.91657 18.5207 6.50187 18.1052L0.660341 12.2553C-0.194072 11.3994 -0.194072 10.0065 0.660341 9.15058L8.53478 1.26102C9.3463 0.44792 10.426 0 11.575 0H16.5709C17.7824 0 18.7682 0.985546 18.7682 2.19726V7.17785C18.7682 8.32602 18.3208 9.40532 17.5084 10.2167L9.60951 18.1074C9.19455 18.5218 8.64306 18.75 8.05666 18.75ZM11.575 1.46484C10.8179 1.46484 10.1064 1.75998 9.57163 2.29579L1.69707 10.1853C1.41222 10.4708 1.41222 10.9349 1.69707 11.2203L7.53857 17.0702C7.6767 17.2086 7.86051 17.285 8.05619 17.2851H8.05677C8.1529 17.2854 8.24812 17.2666 8.33694 17.2299C8.42577 17.1931 8.50643 17.1391 8.57427 17.071L16.4732 9.18046C17.0086 8.6458 17.3034 7.93447 17.3034 7.17788V2.19726C17.3034 1.79341 16.9748 1.46484 16.5709 1.46484H11.575ZM13.458 7.43408C12.2465 7.43408 11.2608 6.44853 11.2608 5.23681C11.2608 4.0251 12.2465 3.03955 13.458 3.03955C14.6696 3.03955 15.6553 4.0251 15.6553 5.23681C15.6553 6.44853 14.6696 7.43408 13.458 7.43408ZM13.458 4.50439C13.0542 4.50439 12.7256 4.83296 12.7256 5.23681C12.7256 5.64067 13.0542 5.96924 13.458 5.96924C13.862 5.96924 14.1905 5.64067 14.1905 5.23681C14.1905 4.83296 13.862 4.50439 13.458 4.50439Z"
+                                            class="fill-etBlue" />
+                                    </svg>
+                                </span>
+                                <span class="text-[14px] text-etGray"><a href="#">Talkshow Bpro</a></span>
+                            </div>
+                        </div>
+
+                        <h3
+                            class="text-[30px] lg:text-[27px] sm:text-[24px] xxs:text-[22px] font-medium text-etBlack mb-[10px]">
+                            TS - Bestie in Community</h3>
+
+                        <p class="font-light text-[16px] text-etGray mb-[10px]">The is ipsum dolor sit amet consectetur
+                            adipiscing elit. Fusce is eleifend porta arcu In hac platea habitasse the platea thelorem
+                            turpoi dictumst. In lacus libero faucibus.</p>
+
+                        <a href="#" class="text-etBlue text-[16px] hover:text-etBlue">Read More <span
+                                class="pl-[5px]"><i class="fa-solid fa-arrow-right-long"></i></span></a>
+                    </div>
+                </div>
+
+                <!-- single blog -->
+                <div class="border border-[#D9D9D9] rounded-[8px] p-[24px] xxs:p-[18px]">
+                    <div class="img overflow-hidden rounded-[8px] mb-[30px] relative">
+                        <img src="<?= get_template_directory_uri()?>/assets/new-img/harmony.png" alt="blog-cover"
+                            class="w-full">
+
+                        <div
+                            class="bg-etBlue rounded-[6px] absolute top-[20px] left-[20px] text-white px-[20px] py-[13px]">
+                            <span class="block text-[24px] font-medium leading-[0.7] mb-[6px]">14</span>
+                            <span class="block text-[12px] font-medium leading-[0.7]">Oct</span>
+                        </div>
+                    </div>
+
+                    <!-- txt -->
+                    <div>
+                        <!-- infos -->
+                        <div class="flex items-center gap-[30px] mb-[5px]">
+                            <!-- single info -->
+                            <div class="flex gap-[10px] items-center">
+                                <span class="shrink-0">
+                                    <svg width="18" height="20" viewBox="0 0 18 20" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M13.5435 5.19275C13.5435 7.69093 11.4989 9.7355 9.00075 9.7355C6.50262 9.7355 4.45804 7.69093 4.45804 5.19275C4.45804 2.69457 6.50258 0.65 9.00075 0.65C11.4989 0.65 13.5435 2.69458 13.5435 5.19275Z"
+                                            class="stroke-etBlue" stroke-width="1.3" />
+                                        <path
+                                            d="M17.2644 14.6708C17.1052 14.946 16.9241 15.2075 16.7169 15.4769L16.7168 15.4768L16.7089 15.4875C16.4203 15.8791 16.0845 16.2376 15.7295 16.5926C15.4326 16.8894 15.0932 17.1863 14.7568 17.4387C13.0794 18.6913 11.0622 19.3501 8.97815 19.3501C6.89837 19.3501 4.88507 18.694 3.20977 17.4463C2.84588 17.1507 2.51368 16.8795 2.22687 16.5927L2.2199 16.5857L2.21272 16.5789C1.85663 16.2438 1.54239 15.8879 1.24746 15.4876L1.24748 15.4876L1.24414 15.4831C1.06193 15.2402 0.873212 14.9758 0.719199 14.7172C0.836191 14.4561 0.984554 14.1849 1.14522 13.9529L1.14533 13.9529L1.15285 13.9416C2.06985 12.5559 3.53706 11.6391 5.16643 11.415L5.18601 11.4123L5.20539 11.4084C5.23087 11.4033 5.29495 11.4119 5.34548 11.4498L5.34547 11.4498L5.34948 11.4528C6.41651 12.2403 7.6863 12.6456 9.0008 12.6456C10.3153 12.6456 11.5851 12.2403 12.6521 11.4528L12.6521 11.4528L12.6561 11.4498C12.6715 11.4382 12.7403 11.4082 12.8492 11.417C14.4688 11.6438 15.9121 12.557 16.8524 13.9471L16.8524 13.9471L16.8564 13.9529C17.0165 14.1842 17.1557 14.4234 17.2644 14.6708Z"
+                                            class="stroke-etBlue" stroke-width="1.3" />
+                                    </svg>
+                                </span>
+                                <span class="text-[14px] text-etGray">by <a href="#">Admin_Bpro</a></span>
+                            </div>
+
+                            <!-- single info -->
+                            <div class="flex gap-[10px] items-center">
+                                <span class="shrink-0">
+                                    <svg width="19" height="19" viewBox="0 0 19 19" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M8.05666 18.75H8.05504C7.46832 18.7495 6.91657 18.5207 6.50187 18.1052L0.660341 12.2553C-0.194072 11.3994 -0.194072 10.0065 0.660341 9.15058L8.53478 1.26102C9.3463 0.44792 10.426 0 11.575 0H16.5709C17.7824 0 18.7682 0.985546 18.7682 2.19726V7.17785C18.7682 8.32602 18.3208 9.40532 17.5084 10.2167L9.60951 18.1074C9.19455 18.5218 8.64306 18.75 8.05666 18.75ZM11.575 1.46484C10.8179 1.46484 10.1064 1.75998 9.57163 2.29579L1.69707 10.1853C1.41222 10.4708 1.41222 10.9349 1.69707 11.2203L7.53857 17.0702C7.6767 17.2086 7.86051 17.285 8.05619 17.2851H8.05677C8.1529 17.2854 8.24812 17.2666 8.33694 17.2299C8.42577 17.1931 8.50643 17.1391 8.57427 17.071L16.4732 9.18046C17.0086 8.6458 17.3034 7.93447 17.3034 7.17788V2.19726C17.3034 1.79341 16.9748 1.46484 16.5709 1.46484H11.575ZM13.458 7.43408C12.2465 7.43408 11.2608 6.44853 11.2608 5.23681C11.2608 4.0251 12.2465 3.03955 13.458 3.03955C14.6696 3.03955 15.6553 4.0251 15.6553 5.23681C15.6553 6.44853 14.6696 7.43408 13.458 7.43408ZM13.458 4.50439C13.0542 4.50439 12.7256 4.83296 12.7256 5.23681C12.7256 5.64067 13.0542 5.96924 13.458 5.96924C13.862 5.96924 14.1905 5.64067 14.1905 5.23681C14.1905 4.83296 13.862 4.50439 13.458 4.50439Z"
+                                            class="fill-etBlue" />
+                                    </svg>
+                                </span>
+                                <span class="text-[14px] text-etGray"><a href="#">BPro Anniversary</a></span>
+                            </div>
+                        </div>
+
+                        <h3
+                            class="text-[30px] lg:text-[27px] sm:text-[24px] xxs:text-[22px] font-medium text-etBlack mb-[10px]">
+                            Harmony Celebration</h3>
+
+                        <p class="font-light text-[16px] text-etGray mb-[10px]">Di bulan Oktober 2023, BPro merayakan Anniversary yang ke-26, dengan tema ‘Harmony Celebration’. Event ini dibalut dengan dresscode asik bergaya retro.</p>
+
+                        <a href="<?php echo home_url() ?>/journal?journal-detail=harmony-celebration" class="text-etBlue text-[16px] hover:text-etBlue">Read More <span
+                                class="pl-[5px]"><i class="fa-solid fa-arrow-right-long"></i></span></a>
+                    </div>
+                </div>
+
+                <!-- PAGINATION START -->
+                <!-- <div class="container mx-auto max-w-[1200px] px-[12px] xl:max-w-full">
+                            <div class="flex items-center gap-[20px] pt-[60px] justify-center text-[16px]">
+                                <a href="#" class=""><i class="fa-solid fa-arrow-left-long"></i></a>
+                                <div class="et-pagination flex gap-[10px] items-center">
+                                    <a href="#" class="border border-[#d9d9d9] rounded-full w-[50px] h-[50px] flex items-center justify-center text-etBlack hover:bg-etBlue hover:border-etBlue hover:text-white active">01</a>
+                                    <a href="#" class="border border-[#d9d9d9] rounded-full w-[50px] h-[50px] flex items-center justify-center text-etBlack hover:bg-etBlue hover:border-etBlue hover:text-white">02</a>
+                                    <a href="#" class="border border-[#d9d9d9] rounded-full w-[50px] h-[50px] flex items-center justify-center text-etBlack hover:bg-etBlue hover:border-etBlue hover:text-white">03</a>
+                                </div>
+                                <a href="#" class=""><i class="fa-solid fa-arrow-right-long"></i></a>
+                            </div>
+                        </div> -->
+                <!-- PAGINATION END -->
+            </div>
+
+            <!-- right sidebar -->
+            <div class="right max-w-full w-[370px] lg:w-[360px] shrink-0 space-y-[30px] md:space-y-[25px]">
+                <!-- search widget -->
+                <div
+                    class="border border-[#e5e5e5] rounded-[10px] px-[30px] xxs:px-[20px] pt-[30px] xxs:pt-[20px] pb-[40px] xxs:pb-[30px]">
+                    <h4
+                        class="font-medium text-[24px] xxs:text-[20px] text-etBlack relative mb-[5px] before:content-normal before:absolute before:left-0 before:-bottom-[5px] before:w-[50px] before:h-[2px] before:bg-etBlue">
+                        Search</h4>
+
+                    <!-- search form -->
+                    <form action="#" class="border border-[#e5e5e5] rounded-[8px] flex h-[60px] px-[20px] mt-[30px]">
+                        <input type="search" name="search" id="et-news-search"
+                            class="w-full bg-transparent text-[16px] focus:outline-none" placeholder="Search here..">
+                        <button type="submit" class="text-[16px] hover:text-etBlue"><i
+                                class="fa-solid fa-magnifying-glass"></i></button>
+                    </form>
+                </div>
+
+                <!-- Categories widget -->
+                <div
+                    class="border border-[#e5e5e5] rounded-[10px] px-[30px] xxs:px-[20px] pt-[30px] xxs:pt-[20px] pb-[40px] xxs:pb-[30px]">
+                    <h4
+                        class="font-medium text-[24px] xxs:text-[20px] text-etBlack relative mb-[5px] before:content-normal before:absolute before:left-0 before:-bottom-[5px] before:w-[50px] before:h-[2px] before:bg-etBlue">
+                        Categories</h4>
+
+                    <ul class="mt-[30px] text-[16px]">
+                        <li class="text-etBlack py-[16px] border-b border-t border-[#D9D9D9]">
+                            <a href="#" class="flex items-center justify-between hover:text-etBlue">
+                                <span>Talkshow Bpro</span>
+                                <span>(4)</span>
+                            </a>
+                        </li>
+                        <li class="text-etBlack py-[16px] border-b border-[#D9D9D9]">
+                            <a href="#" class="flex items-center justify-between hover:text-etBlue">
+                                <span>Gathering FA</span>
+                                <span>(1)</span>
+                            </a>
+                        </li>
+                        <li class="text-etBlack py-[16px] border-b border-[#D9D9D9]">
+                            <a href="#" class="flex items-center justify-between hover:text-etBlue">
+                                <span>BPro Anniversary</span>
+                                <span>(1)</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Recent Post widget -->
+                <div
+                    class="border border-[#e5e5e5] rounded-[10px] px-[30px] xxs:px-[20px] pt-[30px] xxs:pt-[20px] pb-[40px] xxs:pb-[30px]">
+                    <h4
+                        class="font-medium text-[24px] xxs:text-[20px] text-etBlack relative mb-[5px] before:content-normal before:absolute before:left-0 before:-bottom-[5px] before:w-[50px] before:h-[2px] before:bg-etBlue">
+                        Recent Post</h4>
+
+                    <div class="posts mt-[30px] space-y-[24px]">
+                        <!-- single post -->
+                        <div class="flex items-center gap-[16px]">
+                            <div class="rounded-[6px] w-[78px] h-[79px] overflow-hidden shrink-0">
+                                <img class="img-recent" src="<?= get_template_directory_uri()?>/assets/new-img/gabungan.png" alt="Post Image">
+                            </div>
+
+                            <div>
+                                <span class="date text-[14px] text-etGray flex items-center gap-[12px] mb-[3px]">
+                                    <span class="icon">
+                                        <svg width="16" height="17" viewBox="0 0 16 17" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M15.6756 4.42875C15.5769 2.78656 14.2056 1.5 12.5541 1.5H11.75V0.875C11.75 0.70924 11.6842 0.550268 11.5669 0.433058C11.4497 0.315848 11.2908 0.25 11.125 0.25C10.9592 0.25 10.8003 0.315848 10.6831 0.433058C10.5659 0.550268 10.5 0.70924 10.5 0.875V1.5H5.50001V0.875C5.50001 0.70924 5.43416 0.550268 5.31695 0.433058C5.19974 0.315848 5.04077 0.25 4.87501 0.25C4.70924 0.25 4.55027 0.315848 4.43306 0.433058C4.31585 0.550268 4.25001 0.70924 4.25001 0.875V1.5H3.44594C1.79407 1.5 0.422818 2.78656 0.32438 4.42875C0.139068 7.5175 0.142505 10.6506 0.334693 13.7409C0.432193 15.3103 1.68938 16.5675 3.25875 16.665C4.83157 16.7628 6.41563 16.8116 7.99969 16.8116C9.58344 16.8116 11.1678 16.7628 12.7406 16.665C14.31 16.5675 15.5672 15.3103 15.6647 13.7409C15.8572 10.6522 15.8606 7.51937 15.6756 4.42875ZM14.4175 13.6634C14.3885 14.1191 14.1944 14.5487 13.8716 14.8716C13.5487 15.1944 13.1192 15.3885 12.6634 15.4175C9.56907 15.6097 6.43094 15.6097 3.33657 15.4175C2.88086 15.3885 2.45134 15.1944 2.12845 14.8716C1.80557 14.5487 1.61147 14.1191 1.58251 13.6634C1.43601 11.2785 1.40296 8.88803 1.48344 6.5H14.5169C14.5956 8.8875 14.5653 11.2884 14.4175 13.6634ZM4.87501 4C5.04077 4 5.19974 3.93415 5.31695 3.81694C5.43416 3.69973 5.50001 3.54076 5.50001 3.375V2.75H10.5V3.375C10.5 3.54076 10.5659 3.69973 10.6831 3.81694C10.8003 3.93415 10.9592 4 11.125 4C11.2908 4 11.4497 3.93415 11.5669 3.81694C11.6842 3.69973 11.75 3.54076 11.75 3.375V2.75H12.5541C13.5456 2.75 14.3688 3.52031 14.4278 4.50344C14.4425 4.75156 14.4488 5.00125 14.4609 5.25H1.53907C1.55157 5.00125 1.55751 4.75156 1.57219 4.50344C1.63126 3.52031 2.45407 2.75 3.44594 2.75H4.25001V3.375C4.25001 3.54076 4.31585 3.69973 4.43306 3.81694C4.55027 3.93415 4.70924 4 4.87501 4Z"
+                                                class="fill-etBlue" />
+                                            <path
+                                                d="M4.875 10.25C5.39277 10.25 5.8125 9.83027 5.8125 9.3125C5.8125 8.79473 5.39277 8.375 4.875 8.375C4.35723 8.375 3.9375 8.79473 3.9375 9.3125C3.9375 9.83027 4.35723 10.25 4.875 10.25Z"
+                                                class="fill-etBlue" />
+                                            <path
+                                                d="M8 10.25C8.51777 10.25 8.9375 9.83027 8.9375 9.3125C8.9375 8.79473 8.51777 8.375 8 8.375C7.48223 8.375 7.0625 8.79473 7.0625 9.3125C7.0625 9.83027 7.48223 10.25 8 10.25Z"
+                                                class="fill-etBlue" />
+                                            <path
+                                                d="M4.875 13.375C5.39277 13.375 5.8125 12.9553 5.8125 12.4375C5.8125 11.9197 5.39277 11.5 4.875 11.5C4.35723 11.5 3.9375 11.9197 3.9375 12.4375C3.9375 12.9553 4.35723 13.375 4.875 13.375Z"
+                                                class="fill-etBlue" />
+                                            <path
+                                                d="M11.125 10.25C11.6428 10.25 12.0625 9.83027 12.0625 9.3125C12.0625 8.79473 11.6428 8.375 11.125 8.375C10.6072 8.375 10.1875 8.79473 10.1875 9.3125C10.1875 9.83027 10.6072 10.25 11.125 10.25Z"
+                                                class="fill-etBlue" />
+                                            <path
+                                                d="M11.125 13.375C11.6428 13.375 12.0625 12.9553 12.0625 12.4375C12.0625 11.9197 11.6428 11.5 11.125 11.5C10.6072 11.5 10.1875 11.9197 10.1875 12.4375C10.1875 12.9553 10.6072 13.375 11.125 13.375Z"
+                                                class="fill-etBlue" />
+                                            <path
+                                                d="M8 13.375C8.51777 13.375 8.9375 12.9553 8.9375 12.4375C8.9375 11.9197 8.51777 11.5 8 11.5C7.48223 11.5 7.0625 11.9197 7.0625 12.4375C7.0625 12.9553 7.48223 13.375 8 13.375Z"
+                                                class="fill-etBlue" />
+                                        </svg>
+                                    </span>
+                                    <span>08 July, 2024</span>
+                                </span>
+
+                                <h6 class="font-medium text-[15px] text-etBlack"><a href="#"
+                                        class="hover:text-etBlue">FA - FA Gabungan Bpro</a>
+                                </h6>
+                            </div>
+                        </div>
+
+                        <!-- single post -->
+                        <div class="flex items-center gap-[16px]">
+                            <div class="rounded-[6px] w-[78px] h-[79px] overflow-hidden shrink-0">
+                                <img class="img-recent" src="<?= get_template_directory_uri()?>/assets/new-img/purpose.png" alt="Post Image">
+                            </div>
+
+                            <div>
+                                <span class="date text-[14px] text-etGray flex items-center gap-[12px] mb-[3px]">
+                                    <span class="icon">
+                                        <svg width="16" height="17" viewBox="0 0 16 17" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M15.6756 4.42875C15.5769 2.78656 14.2056 1.5 12.5541 1.5H11.75V0.875C11.75 0.70924 11.6842 0.550268 11.5669 0.433058C11.4497 0.315848 11.2908 0.25 11.125 0.25C10.9592 0.25 10.8003 0.315848 10.6831 0.433058C10.5659 0.550268 10.5 0.70924 10.5 0.875V1.5H5.50001V0.875C5.50001 0.70924 5.43416 0.550268 5.31695 0.433058C5.19974 0.315848 5.04077 0.25 4.87501 0.25C4.70924 0.25 4.55027 0.315848 4.43306 0.433058C4.31585 0.550268 4.25001 0.70924 4.25001 0.875V1.5H3.44594C1.79407 1.5 0.422818 2.78656 0.32438 4.42875C0.139068 7.5175 0.142505 10.6506 0.334693 13.7409C0.432193 15.3103 1.68938 16.5675 3.25875 16.665C4.83157 16.7628 6.41563 16.8116 7.99969 16.8116C9.58344 16.8116 11.1678 16.7628 12.7406 16.665C14.31 16.5675 15.5672 15.3103 15.6647 13.7409C15.8572 10.6522 15.8606 7.51937 15.6756 4.42875ZM14.4175 13.6634C14.3885 14.1191 14.1944 14.5487 13.8716 14.8716C13.5487 15.1944 13.1192 15.3885 12.6634 15.4175C9.56907 15.6097 6.43094 15.6097 3.33657 15.4175C2.88086 15.3885 2.45134 15.1944 2.12845 14.8716C1.80557 14.5487 1.61147 14.1191 1.58251 13.6634C1.43601 11.2785 1.40296 8.88803 1.48344 6.5H14.5169C14.5956 8.8875 14.5653 11.2884 14.4175 13.6634ZM4.87501 4C5.04077 4 5.19974 3.93415 5.31695 3.81694C5.43416 3.69973 5.50001 3.54076 5.50001 3.375V2.75H10.5V3.375C10.5 3.54076 10.5659 3.69973 10.6831 3.81694C10.8003 3.93415 10.9592 4 11.125 4C11.2908 4 11.4497 3.93415 11.5669 3.81694C11.6842 3.69973 11.75 3.54076 11.75 3.375V2.75H12.5541C13.5456 2.75 14.3688 3.52031 14.4278 4.50344C14.4425 4.75156 14.4488 5.00125 14.4609 5.25H1.53907C1.55157 5.00125 1.55751 4.75156 1.57219 4.50344C1.63126 3.52031 2.45407 2.75 3.44594 2.75H4.25001V3.375C4.25001 3.54076 4.31585 3.69973 4.43306 3.81694C4.55027 3.93415 4.70924 4 4.87501 4Z"
+                                                class="fill-etBlue" />
+                                            <path
+                                                d="M4.875 10.25C5.39277 10.25 5.8125 9.83027 5.8125 9.3125C5.8125 8.79473 5.39277 8.375 4.875 8.375C4.35723 8.375 3.9375 8.79473 3.9375 9.3125C3.9375 9.83027 4.35723 10.25 4.875 10.25Z"
+                                                class="fill-etBlue" />
+                                            <path
+                                                d="M8 10.25C8.51777 10.25 8.9375 9.83027 8.9375 9.3125C8.9375 8.79473 8.51777 8.375 8 8.375C7.48223 8.375 7.0625 8.79473 7.0625 9.3125C7.0625 9.83027 7.48223 10.25 8 10.25Z"
+                                                class="fill-etBlue" />
+                                            <path
+                                                d="M4.875 13.375C5.39277 13.375 5.8125 12.9553 5.8125 12.4375C5.8125 11.9197 5.39277 11.5 4.875 11.5C4.35723 11.5 3.9375 11.9197 3.9375 12.4375C3.9375 12.9553 4.35723 13.375 4.875 13.375Z"
+                                                class="fill-etBlue" />
+                                            <path
+                                                d="M11.125 10.25C11.6428 10.25 12.0625 9.83027 12.0625 9.3125C12.0625 8.79473 11.6428 8.375 11.125 8.375C10.6072 8.375 10.1875 8.79473 10.1875 9.3125C10.1875 9.83027 10.6072 10.25 11.125 10.25Z"
+                                                class="fill-etBlue" />
+                                            <path
+                                                d="M11.125 13.375C11.6428 13.375 12.0625 12.9553 12.0625 12.4375C12.0625 11.9197 11.6428 11.5 11.125 11.5C10.6072 11.5 10.1875 11.9197 10.1875 12.4375C10.1875 12.9553 10.6072 13.375 11.125 13.375Z"
+                                                class="fill-etBlue" />
+                                            <path
+                                                d="M8 13.375C8.51777 13.375 8.9375 12.9553 8.9375 12.4375C8.9375 11.9197 8.51777 11.5 8 11.5C7.48223 11.5 7.0625 11.9197 7.0625 12.4375C7.0625 12.9553 7.48223 13.375 8 13.375Z"
+                                                class="fill-etBlue" />
+                                        </svg>
+                                    </span>
+                                    <span>06 July, 2024</span>
+                                </span>
+
+                                <h6 class="font-medium text-[15px] text-etBlack"><a href="<?php echo home_url() ?>/journal?journal-detail=Gods-Purpose-in-Me"
+                                        class="hover:text-etBlue">God's Purpose in Me</a></h6>
+                            </div>
+                        </div>
+
+                        <!-- single post -->
+                        <div class="flex items-center gap-[16px]">
+                            <div class="rounded-[6px] w-[78px] h-[79px] overflow-hidden shrink-0">
+                                <img class="img-recent" src="<?= get_template_directory_uri()?>/assets/new-img/the-calling.png" alt="Post Image">
+                            </div>
+
+                            <div>
+                                <span class="date text-[14px] text-etGray flex items-center gap-[12px] mb-[3px]">
+                                    <span class="icon">
+                                        <svg width="16" height="17" viewBox="0 0 16 17" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M15.6756 4.42875C15.5769 2.78656 14.2056 1.5 12.5541 1.5H11.75V0.875C11.75 0.70924 11.6842 0.550268 11.5669 0.433058C11.4497 0.315848 11.2908 0.25 11.125 0.25C10.9592 0.25 10.8003 0.315848 10.6831 0.433058C10.5659 0.550268 10.5 0.70924 10.5 0.875V1.5H5.50001V0.875C5.50001 0.70924 5.43416 0.550268 5.31695 0.433058C5.19974 0.315848 5.04077 0.25 4.87501 0.25C4.70924 0.25 4.55027 0.315848 4.43306 0.433058C4.31585 0.550268 4.25001 0.70924 4.25001 0.875V1.5H3.44594C1.79407 1.5 0.422818 2.78656 0.32438 4.42875C0.139068 7.5175 0.142505 10.6506 0.334693 13.7409C0.432193 15.3103 1.68938 16.5675 3.25875 16.665C4.83157 16.7628 6.41563 16.8116 7.99969 16.8116C9.58344 16.8116 11.1678 16.7628 12.7406 16.665C14.31 16.5675 15.5672 15.3103 15.6647 13.7409C15.8572 10.6522 15.8606 7.51937 15.6756 4.42875ZM14.4175 13.6634C14.3885 14.1191 14.1944 14.5487 13.8716 14.8716C13.5487 15.1944 13.1192 15.3885 12.6634 15.4175C9.56907 15.6097 6.43094 15.6097 3.33657 15.4175C2.88086 15.3885 2.45134 15.1944 2.12845 14.8716C1.80557 14.5487 1.61147 14.1191 1.58251 13.6634C1.43601 11.2785 1.40296 8.88803 1.48344 6.5H14.5169C14.5956 8.8875 14.5653 11.2884 14.4175 13.6634ZM4.87501 4C5.04077 4 5.19974 3.93415 5.31695 3.81694C5.43416 3.69973 5.50001 3.54076 5.50001 3.375V2.75H10.5V3.375C10.5 3.54076 10.5659 3.69973 10.6831 3.81694C10.8003 3.93415 10.9592 4 11.125 4C11.2908 4 11.4497 3.93415 11.5669 3.81694C11.6842 3.69973 11.75 3.54076 11.75 3.375V2.75H12.5541C13.5456 2.75 14.3688 3.52031 14.4278 4.50344C14.4425 4.75156 14.4488 5.00125 14.4609 5.25H1.53907C1.55157 5.00125 1.55751 4.75156 1.57219 4.50344C1.63126 3.52031 2.45407 2.75 3.44594 2.75H4.25001V3.375C4.25001 3.54076 4.31585 3.69973 4.43306 3.81694C4.55027 3.93415 4.70924 4 4.87501 4Z"
+                                                class="fill-etBlue" />
+                                            <path
+                                                d="M4.875 10.25C5.39277 10.25 5.8125 9.83027 5.8125 9.3125C5.8125 8.79473 5.39277 8.375 4.875 8.375C4.35723 8.375 3.9375 8.79473 3.9375 9.3125C3.9375 9.83027 4.35723 10.25 4.875 10.25Z"
+                                                class="fill-etBlue" />
+                                            <path
+                                                d="M8 10.25C8.51777 10.25 8.9375 9.83027 8.9375 9.3125C8.9375 8.79473 8.51777 8.375 8 8.375C7.48223 8.375 7.0625 8.79473 7.0625 9.3125C7.0625 9.83027 7.48223 10.25 8 10.25Z"
+                                                class="fill-etBlue" />
+                                            <path
+                                                d="M4.875 13.375C5.39277 13.375 5.8125 12.9553 5.8125 12.4375C5.8125 11.9197 5.39277 11.5 4.875 11.5C4.35723 11.5 3.9375 11.9197 3.9375 12.4375C3.9375 12.9553 4.35723 13.375 4.875 13.375Z"
+                                                class="fill-etBlue" />
+                                            <path
+                                                d="M11.125 10.25C11.6428 10.25 12.0625 9.83027 12.0625 9.3125C12.0625 8.79473 11.6428 8.375 11.125 8.375C10.6072 8.375 10.1875 8.79473 10.1875 9.3125C10.1875 9.83027 10.6072 10.25 11.125 10.25Z"
+                                                class="fill-etBlue" />
+                                            <path
+                                                d="M11.125 13.375C11.6428 13.375 12.0625 12.9553 12.0625 12.4375C12.0625 11.9197 11.6428 11.5 11.125 11.5C10.6072 11.5 10.1875 11.9197 10.1875 12.4375C10.1875 12.9553 10.6072 13.375 11.125 13.375Z"
+                                                class="fill-etBlue" />
+                                            <path
+                                                d="M8 13.375C8.51777 13.375 8.9375 12.9553 8.9375 12.4375C8.9375 11.9197 8.51777 11.5 8 11.5C7.48223 11.5 7.0625 11.9197 7.0625 12.4375C7.0625 12.9553 7.48223 13.375 8 13.375Z"
+                                                class="fill-etBlue" />
+                                        </svg>
+                                    </span>
+                                    <span>22 Juni, 2024</span>
+                                </span>
+
+                                <h6 class="font-medium text-[15px] text-etBlack"><a href="<?php echo home_url() ?>/journal?journal-detail=the-calling"
+                                        class="hover:text-etBlue">The Calling</a>
+                                </h6>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
-    </section>
-    <!-- EVENTS SECTION END -->
-
-
-    <!-- PAGINATION START -->
-    <!-- <div class="container mx-auto max-w-[1200px] px-[12px] xl:max-w-full">
-        <div class="flex items-center gap-[20px] pt-[60px] justify-center text-[16px]">
-            <a href="#" class=""><i class="fa-solid fa-arrow-left-long"></i></a>
-            <div class="et-pagination flex gap-[10px] items-center">
-                <a href="#" class="border border-[#d9d9d9] rounded-full w-[50px] h-[50px] flex items-center justify-center text-etBlack hover:bg-etBlue hover:border-etBlue hover:text-white active">01</a>
-                <a href="#" class="border border-[#d9d9d9] rounded-full w-[50px] h-[50px] flex items-center justify-center text-etBlack hover:bg-etBlue hover:border-etBlue hover:text-white">02</a>
-                <a href="#" class="border border-[#d9d9d9] rounded-full w-[50px] h-[50px] flex items-center justify-center text-etBlack hover:bg-etBlue hover:border-etBlue hover:text-white">03</a>
-            </div>
-            <a href="#" class=""><i class="fa-solid fa-arrow-right-long"></i></a>
-        </div>
-    </div> -->
-    <!-- PAGINATION END -->
+    </div>
 </div>
+<!-- MAIN CONTENT END -->
 <?php endif ; ?>
 <?php
 get_footer('main');
