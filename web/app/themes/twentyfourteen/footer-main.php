@@ -62,7 +62,7 @@
                     <!-- txt -->
                     <div>
                         <span class="block font-medium text-[14px]">Hotline BPro :</span>
-                        <h5 class="font-medium text-[20px]"><a href="https://api.whatsapp.com/send?phone=6281131166111">0811-311-66-111 (Whatsapp)</a></h5>
+                        <h5 class="font-medium text-[20px]"><a href="https://api.whatsapp.com/send?phone=6281131166111">+6281131166111 (Whatsapp)</a></h5>
                     </div>
                 </div>
             </div>
@@ -71,7 +71,7 @@
                 <!-- footer about -->
                 <div class="et-footer-about max-w-[295px] lg:max-w-none md:max-w-[300px] xs:max-w-full">
                     <a href="#" class="mb-[25px] inline-block"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/logo-white.png" alt="logo" style="width: 90px !important;" style="width: 65% !important;"></a>
-                    <p class="font-light text-[#f2f2f2] text-[16px] mb-[25px]">Dengan semangat inilah, kami ada. Komunitas Bethany Professional, atau bisa juga disebut, BPro.</p>
+                    <p class="font-light text-[#f2f2f2] text-[16px] mb-[25px]" style="margin-top: -30px;">Dengan semangat inilah, kami ada. Komunitas Bethany Professional, atau bisa juga disebut, BPro.</p>
 
                     <!-- social media -->
                     <div class="et-socials flex gap-[10px] text-[14px] *:border *:border-[#9EAACB] *:text-[#9EAACB] *:w-[40px] *:aspect-square *:shrink-0 *:inline-flex *:items-center *:justify-center *:rounded-full ">
@@ -172,7 +172,7 @@
                                         <path d="M0 15.875V2.28125C0 1.51953 0.615234 0.875 1.40625 0.875H9.84375C10.6055 0.875 11.25 1.51953 11.25 2.28125V15.875L5.625 12.5938L0 15.875Z" class="fill-transparent stroke-white group-hover:stroke-etBlue group-hover:fill-etBlue transition" />
                                     </svg>
                                 </span>
-                                <span class="txt">Journa</span>
+                                <span class="txt">Journal</span>
                             </a>
                         </li>
                         <li>
@@ -189,7 +189,7 @@
                 </div>
 
                 <!-- widget -->
-                <div class="et-footer-widget shrink-0 max-w-[318px] xs:max-w-full xs:grow">
+                <div style="display: none;" class="et-footer-widget shrink-0 max-w-[318px] xs:max-w-full xs:grow">
                     <h5 class="text-[20px] font-semibold mb-[16px]">Upcoming <span class="text-etBlue">Events</span></h5>
 
                     <div class="space-y-[30px]">
