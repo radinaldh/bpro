@@ -211,7 +211,7 @@ get_header('main');
 
                 <div class="right">
                     <div class="et-schedules-tab-navs bg-[#D0E1FF] px-[12px] py-[14px] flex flex-w gap-[16px] sm:gap-[12px] rounded-full">
-                        <a href="/events/" class="tab-nav bg-etBlue rounded-full px-[20px] py-[3px] text-[16px] font-medium text-white hover:bg-etBlue">View More</a>
+                        <a href="/events/" class="et-btn border w-[180px] bg-etBlue text-white inline-flex items-center justify-center h-[45px] px-[22px] xxs:px-[16px] font-normal text-[17px] rounded-full hover:!bg-etBlue hover:!text-white">View More</a>
 
                         <!-- <button data-tab="tab2" class="tab-nav bg-etBlue rounded-full px-[20px] py-[3px] text-[16px] font-medium text-white hover:bg-etBlue">Day 02</button> -->
 
@@ -1984,7 +1984,7 @@ Wrapped with Praise & Worship Night <br>
     }
 
     .et-testimony.relative.p-\[40px\].lg\:p-\[30px\].md\:p-\[20px\].border.border-\[\#D4DCED\].rounded-\[16px\].mt-\[60px\] {}.et-testimony.relative.p-\[40px\].lg\:p-\[30px\].md\:p-\[20px\].border.border-\[\#D4DCED\].rounded-\[16px\].mt-\[60px\] {
-    min-height: 290px;
+    min-height: 350px;
 }
 </style>
 <script>

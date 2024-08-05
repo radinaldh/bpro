@@ -12,7 +12,7 @@
     <link rel="stylesheet" href="<?= get_template_directory_uri(); ?>/assets/vendor/splide/splide.min.css" />
     <link rel="stylesheet" href="<?= get_template_directory_uri(); ?>/assets/vendor/slim-select/slimselect.css" />
     <title>Bethany Professional</title>
-    <link rel="icon" type="image/x-icon" href="<?= get_template_directory_uri(); ?>/assets/img/favicon-white.png">
+    <link rel="icon" type="image/x-icon" href="<?= get_template_directory_uri(); ?>/assets/img/Fav Icon BPro.png">
     <!-- tailwind css -->
     <link href="<?= get_template_directory_uri(); ?>/src/output.css" rel="stylesheet" />
 
