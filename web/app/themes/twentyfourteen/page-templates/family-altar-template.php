@@ -12,14 +12,25 @@ get_header('main'); ?>
     padding: 30px;
     margin: auto;
 }
+
+@media screen and (max-width: 600px) {
+    .single-fa .et-schedule__heading {
+    width: 100%;
+}
+
+.single-fa .et-btn {
+    padding-left: 70px;
+    padding-right: 70px;
+}
+}
 </style>
 
 <!-- BREADCRUMB SECTION START -->
 <section
     class="et-breadcrumb bg-[#000D83] pt-[210px] lg:pt-[190px] sm:pt-[160px] pb-[130px] lg:pb-[110px] sm:pb-[80px] relative z-[1] before:absolute before:inset-0 before:bg-[url('<?= get_template_directory_uri(); ?>/assets/img/breadcrumb-bg.jpg')] before:bg-no-repeat before:bg-cover before:bg-center before:-z-[1] before:opacity-30">
     <div class="container mx-auto max-w-[1200px] px-[12px] xl:max-w-full text-center text-white">
-        <h1 class="et-breadcrumb-title font-medium text-[56px] md:text-[50px] xs:text-[45px]">Family Altar Bpro</h1>
-        <p class="font-medium text-[16px] pb-[30px]">Kesatuan Hati - Tumbuh Bersama - Memenangkan Jiwa</p>
+        <h1 class="et-breadcrumb-title font-medium text-[56px] md:text-[50px] sm:text-[22px]">Family Altar Bpro</h1>
+        <p class="font-medium text-[16px] pb-[30px] sm:text-[12px]">Kesatuan Hati - Tumbuh Bersama - Memenangkan Jiwa</p>
         <ul class="inline-flex items-center gap-[10px] font-medium text-[16px]">
             <li class="opacity-80"><a href="index-2.html" class="hover:text-etBlue">Home</a></li>
             <li><i class="fa-solid fa-angle-right"></i><i class="fa-solid fa-angle-right"></i></li>
@@ -37,7 +48,7 @@ get_header('main'); ?>
             class="flex items-center md:flex-wrap gap-x-[60px] xxl:gap-x-[40px] lg:gap-x-[30px] gap-y-[40px] sm:gap-y-[40px] lg:justify-center">
             <!-- left -->
             <div
-                class="et-about-img relative z-[1] md:w-auto shrink-0 max-w-full mr-[70px] md:mr-0 ml-[28px] xxxl:ml-[47px] md:ml-0 xs:w-[70%] xxs:w-[90%] xxs:ml-[47px]">
+                class="et-about-img relative z-[1] md:w-auto shrink-0 max-w-full mr-[70px] md:mr-0 ml-[28px] xxxl:ml-[47px] md:ml-0 xs:w-[70%] xxs:w-[90%] ">
                 <img src="<?= get_template_directory_uri()?>/assets/new-img/fa-bpro.png" alt="image"
                     class="shrink-0 rounded-[10px]" />
                 <img src="<?= get_template_directory_uri()?>/assets/new-img/fa-bpro-2.png" alt="image"
@@ -55,7 +66,7 @@ get_header('main'); ?>
 
                 <!-- video btn -->
                 <div
-                    class="absolute bottom-[50px] -left-[47px] lg:-left-[27px] md:-left-[47px] w-[180px] lg:w-[160px] aspect-square bg-[url('assets/img/about-video-btn-bg.jpg')] text-center text-[22px] text-white z-[1] flex items-center justify-center before:absolute before:bg-etBlue/80 before:-z-[1] before:inset-0 after:bg-etBlue after:w-[47px] after:h-[30px] after:absolute after:top-[100%] after:left-0 after:-z-[2] after:skew-y-[30deg] after:-translate-y-[17px]">
+                    class="absolute xxs:hidden bottom-[50px] -left-[47px] lg:-left-[27px] md:-left-[47px] w-[180px] lg:w-[160px] aspect-square bg-[url('assets/img/about-video-btn-bg.jpg')] text-center text-[22px] text-white z-[1] flex items-center justify-center before:absolute before:bg-etBlue/80 before:-z-[1] before:inset-0 after:bg-etBlue after:w-[47px] after:h-[30px] after:absolute after:top-[100%] after:left-0 after:-z-[2] after:skew-y-[30deg] after:-translate-y-[17px]">
                     <!-- <a href="https://www.youtube.com/watch?v=AQleI8oFqZo&amp;t=1s" data-fslightbox="about-video"
                         class="w-[107px] aspect-square rounded-full border border-white/20 flex justify-center items-center text-etBlue relative z-[1] text-[18px] before:absolute before:w-[56px] before:h-[56px] before:bg-white before:rounded-full before:-z-[1] hover:text-black"><i
                             class="fa-solid fa-play"></i></a> -->
@@ -210,7 +221,7 @@ get_header('main'); ?>
                                     <span class="text-etGray font-normal text-[16px]">Every Tuesday</span>
                                 </div>
 
-                                <div class="time flex items-center gap-[10px] xxs:hidden">
+                                <div class="time flex items-center gap-[10px]">
                                     <span class="icon">
                                         <svg width="16" height="17" viewBox="0 0 16 17" fill="none"
                                             xmlns="http://www.w3.org/2000/svg">
@@ -244,7 +255,7 @@ get_header('main'); ?>
                                             fill="var(--et-blue)" />
                                     </svg>
                                 </span>
-                                <h6 class="text-[16px] text-etGray">Taman Pondok Indah, Wiyung, Surabaya</h6>
+                                <h6 class="text-[15px] text-etGray">Taman Pondok Indah, Wiyung, Surabaya</h6>
                             </div>
                             <div class="et-schedule-loaction flex items-center gap-[12px]">
                                 <span class="icon">
@@ -255,7 +266,7 @@ get_header('main'); ?>
                                             fill="var(--et-blue)" />
                                     </svg>
                                 </span>
-                                <h6 class="text-[16px] text-etGray">SURABAYA SELATAN</h6>
+                                <h6 class="text-[15px] text-etGray">SURABAYA SELATAN</h6>
                             </div>
                             
                         </div>
@@ -318,7 +329,7 @@ get_header('main'); ?>
                                     <span class="text-etGray font-normal text-[16px]">Every Wednesday</span>
                                 </div>
 
-                                <div class="time flex items-center gap-[10px] xxs:hidden">
+                                <div class="time flex items-center gap-[10px]">
                                     <span class="icon">
                                         <svg width="16" height="17" viewBox="0 0 16 17" fill="none"
                                             xmlns="http://www.w3.org/2000/svg">
@@ -352,7 +363,7 @@ get_header('main'); ?>
                                             fill="var(--et-blue)" />
                                     </svg>
                                 </span>
-                                <h6 class="text-[16px] text-etGray">Jl. Ngagel Madya Utara, Surabaya</h6>
+                                <h6 class="text-[15px] text-etGray">Jl. Ngagel Madya Utara, Surabaya</h6>
                             </div>
                             <div class="et-schedule-loaction flex items-center gap-[12px]">
                                 <span class="icon">
@@ -363,7 +374,7 @@ get_header('main'); ?>
                                             fill="var(--et-blue)" />
                                     </svg>
                                 </span>
-                                <h6 class="text-[16px] text-etGray">SURABAYA SELATAN</h6>
+                                <h6 class="text-[15px] text-etGray">SURABAYA SELATAN</h6>
                             </div>
                             
                         </div>
@@ -426,7 +437,7 @@ get_header('main'); ?>
                                     <span class="text-etGray font-normal text-[16px]">Every Monday</span>
                                 </div>
 
-                                <div class="time flex items-center gap-[10px] xxs:hidden">
+                                <div class="time flex items-center gap-[10px]">
                                     <span class="icon">
                                         <svg width="16" height="17" viewBox="0 0 16 17" fill="none"
                                             xmlns="http://www.w3.org/2000/svg">
@@ -460,7 +471,7 @@ get_header('main'); ?>
                                             fill="var(--et-blue)" />
                                     </svg>
                                 </span>
-                                <h6 class="text-[16px] text-etGray">Jl. Ploso Bogen, Surabaya</h6>
+                                <h6 class="text-[15px] text-etGray">Jl. Ploso Bogen, Surabaya</h6>
                             </div>
                             <div class="et-schedule-loaction flex items-center gap-[12px]">
                                 <span class="icon">
@@ -471,7 +482,7 @@ get_header('main'); ?>
                                             fill="var(--et-blue)" />
                                     </svg>
                                 </span>
-                                <h6 class="text-[16px] text-etGray">SURABAYA PUSAT</h6>
+                                <h6 class="text-[15px] text-etGray">SURABAYA PUSAT</h6>
                             </div>
                             
                         </div>
@@ -534,7 +545,7 @@ get_header('main'); ?>
                                     <span class="text-etGray font-normal text-[16px]">Every Tuesday</span>
                                 </div>
 
-                                <div class="time flex items-center gap-[10px] xxs:hidden">
+                                <div class="time flex items-center gap-[10px]">
                                     <span class="icon">
                                         <svg width="16" height="17" viewBox="0 0 16 17" fill="none"
                                             xmlns="http://www.w3.org/2000/svg">
@@ -568,7 +579,7 @@ get_header('main'); ?>
                                             fill="var(--et-blue)" />
                                     </svg>
                                 </span>
-                                <h6 class="text-[16px] text-etGray">Jl. Nginden Intan Timur, Surabaya</h6>
+                                <h6 class="text-[15px] text-etGray">Jl. Nginden Intan Timur, Surabaya</h6>
                             </div>
                             <div class="et-schedule-loaction flex items-center gap-[12px]">
                                 <span class="icon">
@@ -579,7 +590,7 @@ get_header('main'); ?>
                                             fill="var(--et-blue)" />
                                     </svg>
                                 </span>
-                                <h6 class="text-[16px] text-etGray">SURABAYA TIMUR</h6>
+                                <h6 class="text-[15px] text-etGray">SURABAYA TIMUR</h6>
                             </div>
                             
                         </div>
@@ -642,7 +653,7 @@ get_header('main'); ?>
                                     <span class="text-etGray font-normal text-[16px]">Every Wednesday</span>
                                 </div>
 
-                                <div class="time flex items-center gap-[10px] xxs:hidden">
+                                <div class="time flex items-center gap-[10px]">
                                     <span class="icon">
                                         <svg width="16" height="17" viewBox="0 0 16 17" fill="none"
                                             xmlns="http://www.w3.org/2000/svg">
@@ -676,7 +687,7 @@ get_header('main'); ?>
                                             fill="var(--et-blue)" />
                                     </svg>
                                 </span>
-                                <h6 class="text-[16px] text-etGray">Jl. Wonokitri, Surabaya</h6>
+                                <h6 class="text-[15px] text-etGray">Jl. Wonokitri, Surabaya</h6>
                             </div>
                             <div class="et-schedule-loaction flex items-center gap-[12px]">
                                 <span class="icon">
@@ -687,7 +698,7 @@ get_header('main'); ?>
                                             fill="var(--et-blue)" />
                                     </svg>
                                 </span>
-                                <h6 class="text-[16px] text-etGray">SURABAYA SELATAN</h6>
+                                <h6 class="text-[15px] text-etGray">SURABAYA SELATAN</h6>
                             </div>
                             
                         </div>
@@ -750,7 +761,7 @@ get_header('main'); ?>
                                     <span class="text-etGray font-normal text-[16px]">Every Friday</span>
                                 </div>
 
-                                <div class="time flex items-center gap-[10px] xxs:hidden">
+                                <div class="time flex items-center gap-[10px]">
                                     <span class="icon">
                                         <svg width="16" height="17" viewBox="0 0 16 17" fill="none"
                                             xmlns="http://www.w3.org/2000/svg">
@@ -784,7 +795,7 @@ get_header('main'); ?>
                                             fill="var(--et-blue)" />
                                     </svg>
                                 </span>
-                                <h6 class="text-[16px] text-etGray">Jl. Rungkut Menanggal Harapan, Surabaya</h6>
+                                <h6 class="text-[15px] text-etGray">Jl. Rungkut Menanggal Harapan, Surabaya</h6>
                             </div>
                             <div class="et-schedule-loaction flex items-center gap-[12px]">
                                 <span class="icon">
@@ -795,7 +806,7 @@ get_header('main'); ?>
                                             fill="var(--et-blue)" />
                                     </svg>
                                 </span>
-                                <h6 class="text-[16px] text-etGray">SURABAYA TIMUR</h6>
+                                <h6 class="text-[15px] text-etGray">SURABAYA TIMUR</h6>
                             </div>
                             
                         </div>
@@ -858,7 +869,7 @@ get_header('main'); ?>
                                     <span class="text-etGray font-normal text-[16px]">Every Monday</span>
                                 </div>
 
-                                <div class="time flex items-center gap-[10px] xxs:hidden">
+                                <div class="time flex items-center gap-[10px]">
                                     <span class="icon">
                                         <svg width="16" height="17" viewBox="0 0 16 17" fill="none"
                                             xmlns="http://www.w3.org/2000/svg">
@@ -892,7 +903,7 @@ get_header('main'); ?>
                                             fill="var(--et-blue)" />
                                     </svg>
                                 </span>
-                                <h6 class="text-[16px] text-etGray">Jl. Jemur Wonosari, Surabaya</h6>
+                                <h6 class="text-[15px] text-etGray">Jl. Jemur Wonosari, Surabaya</h6>
                             </div>
                             <div class="et-schedule-loaction flex items-center gap-[12px]">
                                 <span class="icon">
@@ -903,7 +914,7 @@ get_header('main'); ?>
                                             fill="var(--et-blue)" />
                                     </svg>
                                 </span>
-                                <h6 class="text-[16px] text-etGray">SURABAYA SELATAN</h6>
+                                <h6 class="text-[15px] text-etGray">SURABAYA SELATAN</h6>
                             </div>
                             
                         </div>
@@ -966,7 +977,7 @@ get_header('main'); ?>
                                     <span class="text-etGray font-normal text-[16px]">Every Friday</span>
                                 </div>
 
-                                <div class="time flex items-center gap-[10px] xxs:hidden">
+                                <div class="time flex items-center gap-[10px]">
                                     <span class="icon">
                                         <svg width="16" height="17" viewBox="0 0 16 17" fill="none"
                                             xmlns="http://www.w3.org/2000/svg">
@@ -1000,7 +1011,7 @@ get_header('main'); ?>
                                             fill="var(--et-blue)" />
                                     </svg>
                                 </span>
-                                <h6 class="text-[16px] text-etGray">Jl. Arif Rahman Hakim, Surabaya</h6>
+                                <h6 class="text-[15px] text-etGray">Jl. Arif Rahman Hakim, Surabaya</h6>
                             </div>
                             <div class="et-schedule-loaction flex items-center gap-[12px]">
                                 <span class="icon">
@@ -1011,7 +1022,7 @@ get_header('main'); ?>
                                             fill="var(--et-blue)" />
                                     </svg>
                                 </span>
-                                <h6 class="text-[16px] text-etGray">SURABAYA TIMUR</h6>
+                                <h6 class="text-[15px] text-etGray">SURABAYA TIMUR</h6>
                             </div>
                             
                         </div>
@@ -1074,7 +1085,7 @@ get_header('main'); ?>
                                     <span class="text-etGray font-normal text-[16px]">Every Tuesday</span>
                                 </div>
 
-                                <div class="time flex items-center gap-[10px] xxs:hidden">
+                                <div class="time flex items-center gap-[10px]">
                                     <span class="icon">
                                         <svg width="16" height="17" viewBox="0 0 16 17" fill="none"
                                             xmlns="http://www.w3.org/2000/svg">
@@ -1108,7 +1119,7 @@ get_header('main'); ?>
                                             fill="var(--et-blue)" />
                                     </svg>
                                 </span>
-                                <h6 class="text-[16px] text-etGray">Jl. Puri Safira Regency, Menganti</h6>
+                                <h6 class="text-[15px] text-etGray">Jl. Puri Safira Regency, Menganti</h6>
                             </div>
                             <div class="et-schedule-loaction flex items-center gap-[12px]">
                                 <span class="icon">
@@ -1119,7 +1130,7 @@ get_header('main'); ?>
                                             fill="var(--et-blue)" />
                                     </svg>
                                 </span>
-                                <h6 class="text-[16px] text-etGray">SURABAYA BARAT</h6>
+                                <h6 class="text-[15px] text-etGray">SURABAYA BARAT</h6>
                             </div>
                             
                         </div>
@@ -1182,7 +1193,7 @@ get_header('main'); ?>
                                     <span class="text-etGray font-normal text-[16px]">Every Friday</span>
                                 </div>
 
-                                <div class="time flex items-center gap-[10px] xxs:hidden">
+                                <div class="time flex items-center gap-[10px]">
                                     <span class="icon">
                                         <svg width="16" height="17" viewBox="0 0 16 17" fill="none"
                                             xmlns="http://www.w3.org/2000/svg">
@@ -1216,7 +1227,7 @@ get_header('main'); ?>
                                             fill="var(--et-blue)" />
                                     </svg>
                                 </span>
-                                <h6 class="text-[16px] text-etGray">Jl. Manyar Rejo, Surabaya</h6>
+                                <h6 class="text-[15px] text-etGray">Jl. Manyar Rejo, Surabaya</h6>
                             </div>
                             <div class="et-schedule-loaction flex items-center gap-[12px]">
                                 <span class="icon">
@@ -1227,7 +1238,7 @@ get_header('main'); ?>
                                             fill="var(--et-blue)" />
                                     </svg>
                                 </span>
-                                <h6 class="text-[16px] text-etGray">SURABAYA TIMUR</h6>
+                                <h6 class="text-[15px] text-etGray">SURABAYA TIMUR</h6>
                             </div>
                             
                         </div>
@@ -1290,7 +1301,7 @@ get_header('main'); ?>
                                     <span class="text-etGray font-normal text-[16px]">Every Monday</span>
                                 </div>
 
-                                <div class="time flex items-center gap-[10px] xxs:hidden">
+                                <div class="time flex items-center gap-[10px]">
                                     <span class="icon">
                                         <svg width="16" height="17" viewBox="0 0 16 17" fill="none"
                                             xmlns="http://www.w3.org/2000/svg">
@@ -1324,7 +1335,7 @@ get_header('main'); ?>
                                             fill="var(--et-blue)" />
                                     </svg>
                                 </span>
-                                <h6 class="text-[16px] text-etGray">Jl. Manyar Jaya, Surabaya</h6>
+                                <h6 class="text-[15px] text-etGray">Jl. Manyar Jaya, Surabaya</h6>
                             </div>
                             <div class="et-schedule-loaction flex items-center gap-[12px]">
                                 <span class="icon">
@@ -1335,7 +1346,7 @@ get_header('main'); ?>
                                             fill="var(--et-blue)" />
                                     </svg>
                                 </span>
-                                <h6 class="text-[16px] text-etGray">SURABAYA TIMUR</h6>
+                                <h6 class="text-[15px] text-etGray">SURABAYA TIMUR</h6>
                             </div>
                             
                         </div>
@@ -1398,7 +1409,7 @@ get_header('main'); ?>
                                     <span class="text-etGray font-normal text-[16px]">Every Monday</span>
                                 </div>
 
-                                <div class="time flex items-center gap-[10px] xxs:hidden">
+                                <div class="time flex items-center gap-[10px]">
                                     <span class="icon">
                                         <svg width="16" height="17" viewBox="0 0 16 17" fill="none"
                                             xmlns="http://www.w3.org/2000/svg">
@@ -1432,7 +1443,7 @@ get_header('main'); ?>
                                             fill="var(--et-blue)" />
                                     </svg>
                                 </span>
-                                <h6 class="text-[16px] text-etGray">Jl. Barata Jaya, Surabaya</h6>
+                                <h6 class="text-[15px] text-etGray">Jl. Barata Jaya, Surabaya</h6>
                             </div>
                             <div class="et-schedule-loaction flex items-center gap-[12px]">
                                 <span class="icon">
@@ -1443,7 +1454,7 @@ get_header('main'); ?>
                                             fill="var(--et-blue)" />
                                     </svg>
                                 </span>
-                                <h6 class="text-[16px] text-etGray">SURABAYA TIMUR</h6>
+                                <h6 class="text-[15px] text-etGray">SURABAYA TIMUR</h6>
                             </div>
                             
                         </div>
@@ -1506,7 +1517,7 @@ get_header('main'); ?>
                                     <span class="text-etGray font-normal text-[16px]">Every Monday</span>
                                 </div>
 
-                                <div class="time flex items-center gap-[10px] xxs:hidden">
+                                <div class="time flex items-center gap-[10px]">
                                     <span class="icon">
                                         <svg width="16" height="17" viewBox="0 0 16 17" fill="none"
                                             xmlns="http://www.w3.org/2000/svg">
@@ -1540,7 +1551,7 @@ get_header('main'); ?>
                                             fill="var(--et-blue)" />
                                     </svg>
                                 </span>
-                                <h6 class="text-[16px] text-etGray">Jl. Babatan Pantai Timur, Surabaya</h6>
+                                <h6 class="text-[15px] text-etGray">Jl. Babatan Pantai Timur, Surabaya</h6>
                             </div>
                             <div class="et-schedule-loaction flex items-center gap-[12px]">
                                 <span class="icon">
@@ -1551,7 +1562,7 @@ get_header('main'); ?>
                                             fill="var(--et-blue)" />
                                     </svg>
                                 </span>
-                                <h6 class="text-[16px] text-etGray">SURABAYA TIMUR</h6>
+                                <h6 class="text-[15px] text-etGray">SURABAYA TIMUR</h6>
                             </div>
                             
                         </div>
@@ -1614,7 +1625,7 @@ get_header('main'); ?>
                                     <span class="text-etGray font-normal text-[16px]">Every Tuesday</span>
                                 </div>
 
-                                <div class="time flex items-center gap-[10px] xxs:hidden">
+                                <div class="time flex items-center gap-[10px]">
                                     <span class="icon">
                                         <svg width="16" height="17" viewBox="0 0 16 17" fill="none"
                                             xmlns="http://www.w3.org/2000/svg">
@@ -1648,7 +1659,7 @@ get_header('main'); ?>
                                             fill="var(--et-blue)" />
                                     </svg>
                                 </span>
-                                <h6 class="text-[16px] text-etGray">Jl. Galaxy Bumi Permai, Surabaya</h6>
+                                <h6 class="text-[15px] text-etGray">Jl. Galaxy Bumi Permai, Surabaya</h6>
                             </div>
                             <div class="et-schedule-loaction flex items-center gap-[12px]">
                                 <span class="icon">
@@ -1659,7 +1670,7 @@ get_header('main'); ?>
                                             fill="var(--et-blue)" />
                                     </svg>
                                 </span>
-                                <h6 class="text-[16px] text-etGray">SURABAYA TIMUR</h6>
+                                <h6 class="text-[15px] text-etGray">SURABAYA TIMUR</h6>
                             </div>
                             
                         </div>
@@ -1722,7 +1733,7 @@ get_header('main'); ?>
                                     <span class="text-etGray font-normal text-[16px]">Every Wednesday</span>
                                 </div>
 
-                                <div class="time flex items-center gap-[10px] xxs:hidden">
+                                <div class="time flex items-center gap-[10px]">
                                     <span class="icon">
                                         <svg width="16" height="17" viewBox="0 0 16 17" fill="none"
                                             xmlns="http://www.w3.org/2000/svg">
@@ -1756,7 +1767,7 @@ get_header('main'); ?>
                                             fill="var(--et-blue)" />
                                     </svg>
                                 </span>
-                                <h6 class="text-[16px] text-etGray">SURABAYA TIMUR</h6>
+                                <h6 class="text-[15px] text-etGray">Jl. Springville Residence, Surabaya</h6>
                             </div>
                             <div class="et-schedule-loaction flex items-center gap-[12px]">
                                 <span class="icon">
@@ -1767,7 +1778,7 @@ get_header('main'); ?>
                                             fill="var(--et-blue)" />
                                     </svg>
                                 </span>
-                                <h6 class="text-[16px] text-etGray">Jl. Springville Residence, Surabaya</h6>
+                                <h6 class="text-[15px] text-etGray">SURABAYA TIMUR</h6>
                             </div>
                             
                         </div>
