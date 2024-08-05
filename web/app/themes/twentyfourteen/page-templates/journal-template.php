@@ -15,7 +15,7 @@ get_header('main');
     <div class="container mx-auto max-w-[1200px] px-[12px] xl:max-w-full text-center text-white">
         <h1 class="et-breadcrumb-title font-medium text-[56px] md:text-[50px] xs:text-[45px]">Journal Details</h1>
         <ul class="inline-flex items-center gap-[10px] font-medium text-[16px]">
-            <li class="opacity-80"><a href="index-2.html" class="hover:text-etBlue">Home</a></li>
+            <li class="opacity-80"><a href="index-2.htm" class="hover:text-etBlue">Home</a></li>
             <li><i class="fa-solid fa-angle-right"></i><i class="fa-solid fa-angle-right"></i></li>
             <li class="current-page">Journal Details</li>
         </ul>
@@ -299,7 +299,7 @@ get_header('main');
     <div class="container mx-auto max-w-[1200px] px-[12px] xl:max-w-full text-center text-white">
         <h1 class="et-breadcrumb-title font-medium text-[56px] md:text-[50px] xs:text-[45px]">All Journal</h1>
         <ul class="inline-flex items-center gap-[10px] font-medium text-[16px]">
-            <li class="opacity-80"><a href="index-2.html" class="hover:text-etBlue">Home</a></li>
+            <li class="opacity-80"><a href="index-2.htm" class="hover:text-etBlue">Home</a></li>
             <li><i class="fa-solid fa-angle-right"></i><i class="fa-solid fa-angle-right"></i></li>
             <li class="current-page">Journal</li>
         </ul>
@@ -313,7 +313,7 @@ get_header('main');
     <div class="container mx-auto max-w-[1200px] px-[12px] xl:max-w-full text-center text-white">
         <h1 class="et-breadcrumb-title font-medium text-[56px] md:text-[50px] xs:text-[45px]">Journal</h1>
         <ul class="inline-flex items-center gap-[10px] font-medium text-[16px]">
-            <li class="opacity-80"><a href="index-2.html" class="hover:text-etBlue">Home</a></li>
+            <li class="opacity-80"><a href="index-2.htm" class="hover:text-etBlue">Home</a></li>
             <li><i class="fa-solid fa-angle-right"></i><i class="fa-solid fa-angle-right"></i></li>
             <li class="current-page">Journal</li>
         </ul>
@@ -406,7 +406,7 @@ get_header('main');
                                     <!-- title -->
                                     <h3
                                         class="et-schedule-title text-[24px] sm:text-[22px] font-regular text-etBlack leading-[1.25] mb-[16px] anim-text">
-                                        <a href="#" class="hover:text-etBlue"> FA - FA Gabungan Bpro </a>
+                                        FA - FA Gabungan Bpro
                                     </h3>
                                     <h4 class="font-semibold text-etBlue text-[16px] my-[10px]">Talkshow BPro </h4>
 
@@ -427,7 +427,7 @@ get_header('main');
                                 <div class="flex shrink-0 flex-col xxs:flex-row gap-[16px] xxs:gap-[10px]">
                                     <!-- <a href="#" class="et-btn border w-[180px] bg-etBlue text-white inline-flex items-center justify-center h-[45px] px-[22px] xxs:px-[16px] font-normal text-[17px] rounded-full hover:!bg-etBlack hover:!text-white">View More</a> -->
                                     <a href="#"
-                                        class="et-btn border w-[180px] bg-etBlack text-white inline-flex items-center justify-center h-[45px] px-[22px] xxs:px-[16px] font-normal text-[17px] rounded-full hover:!bg-etBlue hover:!text-white">Read
+                                        class="et-btn border w-[180px] bg-etBlue text-white inline-flex items-center justify-center h-[45px] px-[22px] xxs:px-[16px] font-normal text-[17px] rounded-full hover:!bg-etBlack hover:!text-white">Read
                                         More</a>
                                 </div>
                             </div>
@@ -512,7 +512,7 @@ get_header('main');
                                     <!-- title -->
                                     <h3
                                         class="et-schedule-title text-[24px] sm:text-[22px] font-regular text-etBlack leading-[1.25] mb-[16px] anim-text">
-                                        <a href="#" class="hover:text-etBlue"> God's Purpose in Me </a>
+                                        God's Purpose in Me
                                     </h3>
                                     <h4 class="font-semibold text-etBlue text-[16px] my-[10px]">Talkshow BPro</h4>
 
@@ -533,7 +533,7 @@ get_header('main');
                                 <div class="flex shrink-0 flex-col xxs:flex-row gap-[16px] xxs:gap-[10px]">
                                     <!-- <a href="#" class="et-btn border w-[180px] bg-etBlue text-white inline-flex items-center justify-center h-[45px] px-[22px] xxs:px-[16px] font-normal text-[17px] rounded-full hover:!bg-etBlack hover:!text-white">View More</a> -->
                                     <a href="<?php echo home_url()?>/journal?journal-detail=Gods-Purpose-in-Me"
-                                        class="et-btn border w-[180px] bg-etBlack text-white inline-flex items-center justify-center h-[45px] px-[22px] xxs:px-[16px] font-normal text-[17px] rounded-full hover:!bg-etBlue hover:!text-white">Read
+                                        class="et-btn border w-[180px] bg-etBlue text-white inline-flex items-center justify-center h-[45px] px-[22px] xxs:px-[16px] font-normal text-[17px] rounded-full hover:!bg-etBlack hover:!text-white">Read
                                         More</a>
                                 </div>
                             </div>
@@ -620,7 +620,7 @@ get_header('main');
                                     <!-- title -->
                                     <h3
                                         class="et-schedule-title text-[24px] sm:text-[22px] font-regular text-etBlack leading-[1.25] mb-[16px] anim-text">
-                                        <a href="#" class="hover:text-etBlue"> The Calling </a>
+                                         The Calling 
                                     </h3>
                                     <h4 class="font-semibold text-etBlue text-[16px] my-[10px]">Talkshow BPro</h4>
 
@@ -641,7 +641,7 @@ get_header('main');
                                 <div class="flex shrink-0 flex-col xxs:flex-row gap-[16px] xxs:gap-[10px]">
                                     <!-- <a href="#" class="et-btn border w-[180px] bg-etBlue text-white inline-flex items-center justify-center h-[45px] px-[22px] xxs:px-[16px] font-normal text-[17px] rounded-full hover:!bg-etBlack hover:!text-white">View More</a> -->
                                     <a href="<?php echo home_url()?>/journal?journal-detail=the-calling"
-                                        class="et-btn border w-[180px] bg-etBlack text-white inline-flex items-center justify-center h-[45px] px-[22px] xxs:px-[16px] font-normal text-[17px] rounded-full hover:!bg-etBlue hover:!text-white">Read
+                                        class="et-btn border w-[180px] bg-etBlue text-white inline-flex items-center justify-center h-[45px] px-[22px] xxs:px-[16px] font-normal text-[17px] rounded-full hover:!bg-etBlack hover:!text-white">Read
                                         More</a>
                                 </div>
                             </div>
@@ -729,7 +729,7 @@ get_header('main');
                                     <!-- title -->
                                     <h3
                                         class="et-schedule-title text-[24px] sm:text-[22px] font-regular text-etBlack leading-[1.25] mb-[16px] anim-text">
-                                        <a href="#" class="hover:text-etBlue"> BPro Race </a>
+                                       BPro Race
                                     </h3>
                                     <h4 class="font-semibold text-etBlue text-[16px] my-[10px]">Gathering FA</h4>
 
@@ -750,7 +750,7 @@ get_header('main');
                                 <div class="flex shrink-0 flex-col xxs:flex-row gap-[16px] xxs:gap-[10px]">
                                     <!-- <a href="#" class="et-btn border w-[180px] bg-etBlue text-white inline-flex items-center justify-center h-[45px] px-[22px] xxs:px-[16px] font-normal text-[17px] rounded-full hover:!bg-etBlack hover:!text-white">View More</a> -->
                                     <a href="<?php echo home_url()?>/journal?journal-detail=bpro-race"
-                                        class="et-btn border w-[180px] bg-etBlack text-white inline-flex items-center justify-center h-[45px] px-[22px] xxs:px-[16px] font-normal text-[17px] rounded-full hover:!bg-etBlue hover:!text-white">Read
+                                        class="et-btn border w-[180px] bg-etBlue text-white inline-flex items-center justify-center h-[45px] px-[22px] xxs:px-[16px] font-normal text-[17px] rounded-full hover:!bg-etBlack hover:!text-white">Read
                                         More</a>
                                 </div>
                             </div>
@@ -836,7 +836,7 @@ get_header('main');
                                     <!-- title -->
                                     <h3
                                         class="et-schedule-title text-[24px] sm:text-[22px] font-regular text-etBlack leading-[1.25] mb-[16px] anim-text">
-                                        <a href="#" class="hover:text-etBlue"> TS - Bestie in Community </a>
+                                        TS - Bestie in Community 
                                     </h3>
                                     <h4 class="font-semibold text-etBlue text-[16px] my-[10px]">Talkshow BPro</h4>
 
@@ -857,7 +857,7 @@ get_header('main');
                                 <div class="flex shrink-0 flex-col xxs:flex-row gap-[16px] xxs:gap-[10px]">
                                     <!-- <a href="#" class="et-btn border w-[180px] bg-etBlue text-white inline-flex items-center justify-center h-[45px] px-[22px] xxs:px-[16px] font-normal text-[17px] rounded-full hover:!bg-etBlack hover:!text-white">View More</a> -->
                                     <a href="#"
-                                        class="et-btn border w-[180px] bg-etBlack text-white inline-flex items-center justify-center h-[45px] px-[22px] xxs:px-[16px] font-normal text-[17px] rounded-full hover:!bg-etBlue hover:!text-white">Read
+                                        class="et-btn border w-[180px] bg-etBlue text-white inline-flex items-center justify-center h-[45px] px-[22px] xxs:px-[16px] font-normal text-[17px] rounded-full hover:!bg-etBlack hover:!text-white">Read
                                         More</a>
                                 </div>
                             </div>
@@ -943,7 +943,7 @@ get_header('main');
                                     <!-- title -->
                                     <h3
                                         class="et-schedule-title text-[24px] sm:text-[22px] font-regular text-etBlack leading-[1.25] mb-[16px] anim-text">
-                                        <a href="#" class="hover:text-etBlue"> Harmony Celebration </a>
+                                       Harmony Celebration 
                                     </h3>
                                     <h4 class="font-semibold text-etBlue text-[16px] my-[10px]">BPro Anniversary</h4>
 
@@ -964,7 +964,7 @@ get_header('main');
                                 <div class="flex shrink-0 flex-col xxs:flex-row gap-[16px] xxs:gap-[10px]">
                                     <!-- <a href="#" class="et-btn border w-[180px] bg-etBlue text-white inline-flex items-center justify-center h-[45px] px-[22px] xxs:px-[16px] font-normal text-[17px] rounded-full hover:!bg-etBlack hover:!text-white">View More</a> -->
                                     <a href="<?php echo home_url()?>/journal?journal-detail=harmony-celebration"
-                                        class="et-btn border w-[180px] bg-etBlack text-white inline-flex items-center justify-center h-[45px] px-[22px] xxs:px-[16px] font-normal text-[17px] rounded-full hover:!bg-etBlue hover:!text-white">Read
+                                        class="et-btn border w-[180px] bg-etBlue text-white inline-flex items-center justify-center h-[45px] px-[22px] xxs:px-[16px] font-normal text-[17px] rounded-full hover:!bg-etBlack hover:!text-white">Read
                                         More</a>
                                 </div>
                             </div>
