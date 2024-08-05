@@ -45,11 +45,11 @@ get_header('main');
 
                                     <h1 class="text-[clamp(42px,6.25vw,12rem)] font-semibold leading-[1.1] mb-[36px] md:mb-[36px] anim-text">Church Mega <span class="italic font-normal">Conference</span></h1>
 
-                                    <div class="et-banner-btns flex flex-wrap items-center gap-[20px]">
+                                    <!-- <div class="et-banner-btns flex flex-wrap items-center gap-[20px]">
                                         <a href="#" class="et-btn bg-etBlue inline-flex items-center justify-center gap-x-[13px] h-[45px] px-[15px] text-white font-normal text-[17px] rounded-full hover:!bg-white hover:!text-etBlue">Register Now</a>
 
                                         <a href="#" class="et-btn bg-white inline-flex items-center justify-center gap-x-[13px] h-[45px] px-[15px] text-etBlue font-normal text-[17px] rounded-full">View More</a>
-                                    </div>
+                                    </div> -->
                                 </div>
                             </div>
                         </div>
