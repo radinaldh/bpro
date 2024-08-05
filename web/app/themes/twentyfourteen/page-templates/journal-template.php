@@ -68,22 +68,22 @@ get_header('main');
                     <h4 class="text-[30px] xs:text-[25px] xxs:text-[22px] font-medium text-etBlack mb-[11px] mt-[27px]">
                         God's Purpose in Me</h4>
 
-                    <p class="font-light text-[16px] text-etGray mb-[15px] sm:text-[12px]">Setiap manusia diciptakan Tuhan pasti dengan
+                    <p class="font-light text-[16px] mb-[15px] sm:text-[15px]">Setiap manusia diciptakan Tuhan pasti dengan
                         suatu tujuan dalam hidupnya. Nah bagaimana kita sebagai profesional muda bisa mengerti tujuan
                         hidup yang benar yang sesuai Firman Tuhan?</p>
 
-                    <p class="font-light text-[16px] text-etGray mb-[21px] sm:text-[12px]">Dikatakan dalam kitab Kejadian 1:1 yaitu
+                    <p class="font-light text-[16px] mb-[21px] sm:text-[15px]">Dikatakan dalam kitab Kejadian 1:1 yaitu
                         "pada mulanya Allah menciptakan langit dan bumi", hal ini berbicara bahwa Allah menciptakan
                         waktu untuk kita (pada mulanya), ruang (langit) dan materi (bumi).
                         Kita sebagai manusia, diciptakan dengan memiliki identitas Tuhan dan kita memperoleh mandat dari
                         Tuhan untuk menguasai atau mengelola bumi. Dengan kata lain bumi ini sebagai marketplace, yang
                         menjadi tempat kita berkarya.</p>
 
-                    <p class="font-light text-[16px] text-etGray mb-[21px] sm:text-[12px]">Disebutkan oleh Pdt. Billy Lantang, untuk
+                    <p class="font-light text-[16px] mb-[21px] sm:text-[15px]">Disebutkan oleh Pdt. Billy Lantang, untuk
                         bisa mengerti tujuan Tuhan dalam hidup kita, maka yang harus kita lakukan adalah:
                     </p>
 
-                    <ul class="et-event-details-requirements-list font-light text-[16px] text-etGray mb-[21px] sm:text-[12px]">
+                    <ul class="et-event-details-requirements-list font-light text-[16px] mb-[21px] sm:text-[15px]">
                         <li>Pertama, kita harus mengerti panggilan Tuhan dalam hidup kita dan mengalami pertumbuhan
                             rohani serta hidup dalam ketaatan kepada Tuhan.</li>
                         <li>Kedua, lakukan dan fokus dengan yang apa kita lakukan. Jangan pernah membandingkan kehidupan
@@ -99,7 +99,7 @@ get_header('main');
                             alt="event-details-img" class="max-h-[306px] w-full object-cover rounded-[8px]">
                     </div> -->
 
-                    <p class="font-light text-[16px] text-etGray mb-[43px] sm:text-[12px]">Nah, apakah kita sudah yakin tujuan hidup
+                    <p class="font-light text-[16px] mb-[43px] sm:text-[15px]">Nah, apakah kita sudah yakin tujuan hidup
                         yang kita jalani sudah benar?
                         Yuk profesional muda temukan jawabannya dalam Talkshow BPro – God’s Purpose in Me bersama nara
                         sumber Pdt. Billy Lantang disini.</p>
@@ -140,23 +140,23 @@ get_header('main');
                     <h4 class="text-[30px] xs:text-[25px] xxs:text-[22px] font-medium text-etBlack mb-[11px] mt-[27px]">
                         Bpro Race</h4>
 
-                    <p class="font-light text-[16px] text-etGray mb-[15px] sm:text-[12px]">Pada tanggal 23 Mei 2024, BPro mengadakan
+                    <p class="font-light text-[16px] mb-[15px] sm:text-[15px]">Pada tanggal 23 Mei 2024, BPro mengadakan
                         program funday untuk gathering seluruh anggota FA, yaitu BPro Race. Event spesial ini diadakan
                         setiap beberapa bulan sekali. Tujuan dari acara ini adalah supaya anggota FA dapat saling kenal
                         dengan anggota FA yang lain.
                     </p>
 
-                    <p class="font-light text-[16px] text-etGray mb-[21px] sm:text-[12px]">Event yang diadakan kali ini sangat spesial
+                    <p class="font-light text-[16px] mb-[21px] sm:text-[15px]">Event yang diadakan kali ini sangat spesial
                         karena BPro bekerja sama dengan Surabaya Plaza, sebagai pihak yang menyediakan area games untuk
                         BPro Race. Wow!! Dihadiri oleh sekitar 120 peserta, acara dimulai tepat pukul 9 pagi dan
                         bertempat di Morazen Hotel Surabaya. Banyak games yang seru dan asyik lho.</p>
 
-                    <p class="font-light text-[16px] text-etGray mb-[21px] sm:text-[12px]">Dalam games BPro Race, panitia mengusung 3
+                    <p class="font-light text-[16px] mb-[21px] sm:text-[15px]">Dalam games BPro Race, panitia mengusung 3
                         value BPro yaitu :
 
                     </p>
 
-                    <ul class="et-event-details-requirements-list font-light text-[16px] text-etGray mb-[21px] sm:text-[12px]">
+                    <ul class="et-event-details-requirements-list font-light text-[16px] mb-[21px] sm:text-[15px]">
                         <li>Unity - setiap anggota kelompok harus selalu bersama, belajar untuk saling kompak dan tentu
                             saja menghindari perpecahan. Beda pendapat it’s okay, tapi ‘baperan’ no way!
                         </li>
@@ -176,7 +176,7 @@ get_header('main');
                             alt="event-details-img" class="max-h-[306px] w-full object-cover rounded-[8px]">
                     </div> -->
 
-                    <p class="font-light text-[16px] text-etGray mb-[43px] sm:text-[12px]">So, gimana acara funday nya, seru kan? Kamu
+                    <p class="font-light text-[16px] mb-[43px] sm:text-[15px]">So, gimana acara funday nya, seru kan? Kamu
                         mau ikutan juga di next event funday?
                         Yuk gabung dengan FA BPro…
                     </p>
@@ -217,18 +217,18 @@ get_header('main');
                     <h4 class="text-[30px] xs:text-[25px] xxs:text-[22px] font-medium text-etBlack mb-[11px] mt-[27px]">
                         Harmony Celebration</h4>
 
-                    <p class="font-light text-[16px] text-etGray mb-[15px] sm:text-[12px]">Di bulan Oktober 2023, BPro merayakan
+                    <p class="font-light text-[16px] mb-[15px] sm:text-[15px]">Di bulan Oktober 2023, BPro merayakan
                         Anniversary yang ke-26, dengan tema ‘Harmony Celebration’ . Event ini dibalut dengan dresscode
                         asik bergaya retro. Tema Harmony Celebration berbicara tentang keharmonisan dalam sebuah
                         komunitas.
                     </p>
 
-                    <p class="font-light text-[16px] text-etGray mb-[21px] sm:text-[12px]">Dalam komunitas kita bisa belajar tentang 2
+                    <p class="font-light text-[16px] mb-[21px] sm:text-[15px]">Dalam komunitas kita bisa belajar tentang 2
                         hal,
 
                     </p>
 
-                    <ul class="et-event-details-requirements-list font-light text-[16px] text-etGray mb-[21px] sm:text-[12px]">
+                    <ul class="et-event-details-requirements-list font-light text-[16px] mb-[21px] sm:text-[15px]">
                         <li>Pertama, Unity. Salah satu kunci utama dalam komunitas adalah kesatuan. Jadi supaya berkat
                             mengalir di dalam komunitas keluarga, pekerjaan, dan pelayanan, kita harus memiliki
                             kerukunan dan kesatuan hati.
@@ -247,7 +247,7 @@ get_header('main');
                             alt="event-details-img" class="max-h-[306px] w-full object-cover rounded-[8px]">
                     </div> -->
 
-                    <p class="font-light text-[16px] text-etGray mb-[43px] sm:text-[12px]">Yuk.. para profesional muda bergabunglah
+                    <p class="font-light text-[16px] mb-[43px] sm:text-[15px]">Yuk.. para profesional muda bergabunglah
                         bersama kami di komunitas BPro. Bersama kita bertumbuh dalam keharmonisan iman dan karakter.
 
                     </p>
@@ -289,20 +289,20 @@ get_header('main');
                     <h4 class="text-[30px] xs:text-[25px] xxs:text-[22px] font-medium text-etBlack mb-[11px] mt-[27px]">
                         The Calling</h4>
 
-                    <p class="font-light text-[16px] text-etGray mb-[15px] sm:text-[12px]">Talkshow ‘The Calling’, Pdt. Agus Gunawan
+                    <p class="font-light text-[16px] mb-[15px] sm:text-[15px]">Talkshow ‘The Calling’, Pdt. Agus Gunawan
                         atau akrabnya dipanggil ‘Ko Han-Han’, membagikan alasan mengapa kita melayani Tuhan yaitu karena
                         kita mengasihi Tuhan. Seperti yang tertulis dalam Matius 22:37, kekuatan kasih inilah yang
                         membuat kita mau berkorban untuk melayani Tuhan. Cinta kita kepada Tuhan tetap harus
                         menggebu-gebu.
                     </p>
 
-                    <p class="font-light text-[16px] text-etGray mb-[21px] sm:text-[12px]">Pada saat melayani Tuhan pasti akan ada
+                    <p class="font-light text-[16px] mb-[21px] sm:text-[15px]">Pada saat melayani Tuhan pasti akan ada
                         tantangan dan gesekan. Tetapi kita harus tetap setia dalam melayani. Salah satu tantangan yang
                         dihadapi Ko Han adalah membuka ibadah berbahasa inggris padahal kemampuannya berbahasa inggris
                         ketika itu bisa dibilang sangat pas-pasan.
 
                     </p>
-                    <p class="font-light text-[16px] text-etGray mb-[21px] sm:text-[12px]">Dengan segala keterbatasan yang ada, Ko Han
+                    <p class="font-light text-[16px] mb-[21px] sm:text-[15px]">Dengan segala keterbatasan yang ada, Ko Han
                         juga tidak habis akal untuk menjangkau jiwa baru. Ia melihat ada banyak mahasiswa baru yang
                         berasal dari Afrika yang merantau di Australia dengan finansial yang minim. Ko Han lalu mencoba
                         memanfaatkan roti yang tidak terjual di hari itu di toko roti, dengan mengantongi ijin untuk
@@ -312,14 +312,14 @@ get_header('main');
 
                     </p>
 
-                    <p class="font-light text-[16px] text-etGray mb-[21px] sm:text-[12px]">Kita harus tetap semangat dalam melayani
+                    <p class="font-light text-[16px] mb-[21px] sm:text-[15px]">Kita harus tetap semangat dalam melayani
                         Tuhan. Dalam Roma 12:11 dikatakan : “Janganlah hendaknya kerajinanmu kendor, biarlah rohmu
                         menyala-nyala dan layanilah Tuhan”, jika kita penuh dengan Roh Kudus, roh kita pasti
                         menyala-nyala bagi Tuhan. Biarlah hidup kita menghasilkan buah roh dan menjadi saksi bagi Tuhan.
 
                     </p>
 
-                    <p class="font-light text-[16px] text-etGray mb-[21px] sm:text-[12px]">Ingin tau lebih jelas tentang kisah
+                    <p class="font-light text-[16px] mb-[21px] sm:text-[15px]">Ingin tau lebih jelas tentang kisah
                         pengalaman Ko Han-Han dalam melayani? Bagaimana ia tetap mempertahankan “api” semangat dalam
                         melayani Tuhan?
 
@@ -333,7 +333,7 @@ get_header('main');
                             alt="event-details-img" class="max-h-[306px] w-full object-cover rounded-[8px]">
                     </div> -->
 
-                    <p class="font-light text-[16px] text-etGray mb-[43px] sm:text-[12px]">Yuk temukan jawabannya dalam Talkshow BPro -
+                    <p class="font-light text-[16px] mb-[43px] sm:text-[15px]">Yuk temukan jawabannya dalam Talkshow BPro -
                         The Calling bersama Narasumber Ko Han-Han disini.
 
 
@@ -418,7 +418,7 @@ get_header('main');
                                             class="stroke-etBlue" stroke-width="1.3" />
                                     </svg>
                                 </span>
-                                <span class="text-[14px] text-etGray sm:text-[12px]"><a href="#">BPro Administrator</a></span>
+                                <span class="text-[14px] sm:text-[12px]"><a href="#">BPro Administrator</a></span>
                             </div>
 
                             <!-- single info -->
@@ -431,15 +431,15 @@ get_header('main');
                                             class="fill-etBlue" />
                                     </svg>
                                 </span>
-                                <span class="text-[14px] text-etGray sm:text-[12px]"><a href="#">Talkshow Bpro</a></span>
+                                <span class="text-[14px] sm:text-[12px]"><a href="#">Talkshow BPro</a></span>
                             </div>
                         </div>
 
                         <h3
                             class="text-[30px] lg:text-[27px] sm:text-[24px] xxs:text-[22px] font-medium text-etBlack mb-[10px] sm:text-[24px] sm:my-[15px]">
-                            FA - FA Gabungan Bpro</h3>
+                            FA - FA Gabungan BPro</h3>
 
-                        <p class="font-light text-[16px] text-etGray mb-[10px] sm:text-[12px]"></p>
+                        <p class="font-light text-[16px] mb-[10px] sm:text-[15px]"></p>
 
                         <a href="#" class="text-etBlue text-[16px] hover:text-etBlue">Read More <span
                                 class="pl-[5px]"><i class="fa-solid fa-arrow-right-long"></i></span></a>
@@ -476,7 +476,7 @@ get_header('main');
                                             class="stroke-etBlue" stroke-width="1.3" />
                                     </svg>
                                 </span>
-                                <span class="text-[14px] text-etGray sm:text-[12px]"><a href="#">BPro Administrator</a></span>
+                                <span class="text-[14px] sm:text-[12px]"><a href="#">BPro Administrator</a></span>
                             </div>
 
                             <!-- single info -->
@@ -489,7 +489,7 @@ get_header('main');
                                             class="fill-etBlue" />
                                     </svg>
                                 </span>
-                                <span class="text-[14px] text-etGray sm:text-[12px]"><a href="#">Talkshow Bpro</a></span>
+                                <span class="text-[14px] sm:text-[12px]"><a href="#">Talkshow BPro</a></span>
                             </div>
                         </div>
 
@@ -497,7 +497,7 @@ get_header('main');
                             class="text-[30px] lg:text-[27px] sm:text-[24px] xxs:text-[22px] font-medium text-etBlack mb-[10px] sm:text-[24px] sm:my-[15px]">
                             God's Purpose in Me</h3>
 
-                        <p class="font-light text-[16px] text-etGray mb-[10px] sm:text-[12px]">Setiap manusia diciptakan Tuhan pasti dengan suatu tujuan dalam hidupnya. Nah bagaimana kita sebagai profesional muda bisa mengerti tujuan hidup yang benar yang sesuai Firman Tuhan?</p>
+                        <p class="font-light text-[16px] mb-[10px] sm:text-[15px]">Setiap manusia diciptakan Tuhan pasti dengan suatu tujuan dalam hidupnya. Nah bagaimana kita sebagai profesional muda bisa mengerti tujuan hidup yang benar yang sesuai Firman Tuhan?</p>
 
                         <a href="<?php echo home_url() ?>/journal?journal-detail=Gods-Purpose-in-Me" class="text-etBlue text-[16px] hover:text-etBlue">Read More <span
                                 class="pl-[5px]"><i class="fa-solid fa-arrow-right-long"></i></span></a>
@@ -534,7 +534,7 @@ get_header('main');
                                             class="stroke-etBlue" stroke-width="1.3" />
                                     </svg>
                                 </span>
-                                <span class="text-[14px] text-etGray sm:text-[12px]"><a href="#">BPro Administrator</a></span>
+                                <span class="text-[14px] sm:text-[12px]"><a href="#">BPro Administrator</a></span>
                             </div>
 
                             <!-- single info -->
@@ -547,7 +547,7 @@ get_header('main');
                                             class="fill-etBlue" />
                                     </svg>
                                 </span>
-                                <span class="text-[14px] text-etGray sm:text-[12px]"><a href="#">Talkshow Bpro</a></span>
+                                <span class="text-[14px] sm:text-[12px]"><a href="#">Talkshow BPro</a></span>
                             </div>
                         </div>
 
@@ -555,7 +555,7 @@ get_header('main');
                             class="text-[30px] lg:text-[27px] sm:text-[24px] xxs:text-[22px] font-medium text-etBlack mb-[10px] sm:text-[24px] sm:my-[15px]">
                             The Calling</h3>
 
-                        <p class="font-light text-[16px] text-etGray mb-[10px] sm:text-[12px]">Talkshow ‘The Calling’, Pdt. Agus Gunawan atau akrabnya dipanggil ‘Ko Han-Han’, membagikan alasan mengapa kita melayani Tuhan yaitu karena kita mengasihi Tuhan.</p>
+                        <p class="font-light text-[16px] mb-[10px] sm:text-[15px]">Talkshow ‘The Calling’, Pdt. Agus Gunawan atau akrabnya dipanggil ‘Ko Han-Han’, membagikan alasan mengapa kita melayani Tuhan yaitu karena kita mengasihi Tuhan.</p>
 
                         <a href="<?php echo home_url() ?>/journal?journal-detail=the-calling" class="text-etBlue text-[16px] hover:text-etBlue">Read More <span
                                 class="pl-[5px]"><i class="fa-solid fa-arrow-right-long"></i></span></a>
@@ -592,7 +592,7 @@ get_header('main');
                                             class="stroke-etBlue" stroke-width="1.3" />
                                     </svg>
                                 </span>
-                                <span class="text-[14px] text-etGray sm:text-[12px]"><a href="#">BPro Administrator</a></span>
+                                <span class="text-[14px] sm:text-[12px]"><a href="#">BPro Administrator</a></span>
                             </div>
 
                             <!-- single info -->
@@ -605,7 +605,7 @@ get_header('main');
                                             class="fill-etBlue" />
                                     </svg>
                                 </span>
-                                <span class="text-[14px] text-etGray sm:text-[12px]"><a href="#">Gathering FA</a></span>
+                                <span class="text-[14px] sm:text-[12px]"><a href="#">Gathering FA</a></span>
                             </div>
                         </div>
 
@@ -613,7 +613,7 @@ get_header('main');
                             class="text-[30px] lg:text-[27px] sm:text-[24px] xxs:text-[22px] font-medium text-etBlack mb-[10px] sm:text-[24px] sm:my-[15px]">
                             BPro Race</h3>
 
-                        <p class="font-light text-[16px] text-etGray mb-[10px] sm:text-[12px]">Pada tanggal 23 Mei 2024, BPro mengadakan program funday untuk gathering seluruh anggota FA, yaitu BPro Race. Event spesial ini diadakan setiap beberapa bulan sekali.</p>
+                        <p class="font-light text-[16px] mb-[10px] sm:text-[15px]">Pada tanggal 23 Mei 2024, BPro mengadakan program funday untuk gathering seluruh anggota FA, yaitu BPro Race. Event spesial ini diadakan setiap beberapa bulan sekali.</p>
 
                         <a href="<?php echo home_url() ?>/journal?journal-detail=bpro-race" class="text-etBlue text-[16px] hover:text-etBlue">Read More <span
                                 class="pl-[5px]"><i class="fa-solid fa-arrow-right-long"></i></span></a>
@@ -650,7 +650,7 @@ get_header('main');
                                             class="stroke-etBlue" stroke-width="1.3" />
                                     </svg>
                                 </span>
-                                <span class="text-[14px] text-etGray sm:text-[12px]"><a href="#">BPro Administrator</a></span>
+                                <span class="text-[14px] sm:text-[12px]"><a href="#">BPro Administrator</a></span>
                             </div>
 
                             <!-- single info -->
@@ -663,7 +663,7 @@ get_header('main');
                                             class="fill-etBlue" />
                                     </svg>
                                 </span>
-                                <span class="text-[14px] text-etGray sm:text-[12px]"><a href="#">Talkshow Bpro</a></span>
+                                <span class="text-[14px] sm:text-[12px]"><a href="#">Talkshow BPro</a></span>
                             </div>
                         </div>
 
@@ -671,7 +671,7 @@ get_header('main');
                             class="text-[30px] lg:text-[27px] sm:text-[24px] xxs:text-[22px] font-medium text-etBlack mb-[10px] sm:text-[24px] sm:my-[15px]">
                             TS - Bestie in Community</h3>
 
-                        <p class="font-light text-[16px] text-etGray mb-[10px] sm:text-[12px]"></p>
+                        <p class="font-light text-[16px] mb-[10px] sm:text-[15px]"></p>
 
                         <a href="#" class="text-etBlue text-[16px] hover:text-etBlue">Read More <span
                                 class="pl-[5px]"><i class="fa-solid fa-arrow-right-long"></i></span></a>
@@ -708,7 +708,7 @@ get_header('main');
                                             class="stroke-etBlue" stroke-width="1.3" />
                                     </svg>
                                 </span>
-                                <span class="text-[14px] text-etGray sm:text-[12px]"><a href="#">BPro Administrator</a></span>
+                                <span class="text-[14px] sm:text-[12px]"><a href="#">BPro Administrator</a></span>
                             </div>
 
                             <!-- single info -->
@@ -721,7 +721,7 @@ get_header('main');
                                             class="fill-etBlue" />
                                     </svg>
                                 </span>
-                                <span class="text-[14px] text-etGray sm:text-[12px]"><a href="#">BPro Anniversary</a></span>
+                                <span class="text-[14px] sm:text-[12px]"><a href="#">BPro Anniversary</a></span>
                             </div>
                         </div>
 
@@ -729,7 +729,7 @@ get_header('main');
                             class="text-[30px] lg:text-[27px] sm:text-[24px] xxs:text-[22px] font-medium text-etBlack mb-[10px] sm:text-[24px] sm:my-[15px]">
                             Harmony Celebration</h3>
 
-                        <p class="font-light text-[16px] text-etGray mb-[10px] sm:text-[12px]">Di bulan Oktober 2023, BPro merayakan Anniversary yang ke-26, dengan tema ‘Harmony Celebration’. Event ini dibalut dengan dresscode asik bergaya retro.</p>
+                        <p class="font-light text-[16px] mb-[10px] sm:text-[15px]">Di bulan Oktober 2023, BPro merayakan Anniversary yang ke-26, dengan tema ‘Harmony Celebration’. Event ini dibalut dengan dresscode asik bergaya retro.</p>
 
                         <a href="<?php echo home_url() ?>/journal?journal-detail=harmony-celebration" class="text-etBlue text-[16px] hover:text-etBlue">Read More <span
                                 class="pl-[5px]"><i class="fa-solid fa-arrow-right-long"></i></span></a>
@@ -779,7 +779,7 @@ get_header('main');
                     <ul class="mt-[30px] text-[16px]">
                         <li class="text-etBlack py-[16px] border-b border-t border-[#D9D9D9]">
                             <a href="#" class="flex items-center justify-between hover:text-etBlue">
-                                <span>Talkshow Bpro</span>
+                                <span>Talkshow BPro</span>
                                 <span>(4)</span>
                             </a>
                         </li>
@@ -813,7 +813,7 @@ get_header('main');
                             </div>
 
                             <div>
-                                <span class="date text-[14px] text-etGray sm:text-[12px] flex items-center gap-[12px] mb-[3px]">
+                                <span class="date text-[14px] sm:text-[12px] flex items-center gap-[12px] mb-[3px]">
                                     <span class="icon">
                                         <svg width="16" height="17" viewBox="0 0 16 17" fill="none"
                                             xmlns="http://www.w3.org/2000/svg">
@@ -844,7 +844,7 @@ get_header('main');
                                 </span>
 
                                 <h6 class="font-medium text-[15px] text-etBlack"><a href="#"
-                                        class="hover:text-etBlue">FA - FA Gabungan Bpro</a>
+                                        class="hover:text-etBlue">FA - FA Gabungan BPro</a>
                                 </h6>
                             </div>
                         </div>
@@ -856,7 +856,7 @@ get_header('main');
                             </div>
 
                             <div>
-                                <span class="date text-[14px] text-etGray sm:text-[12px] flex items-center gap-[12px] mb-[3px]">
+                                <span class="date text-[14px] sm:text-[12px] flex items-center gap-[12px] mb-[3px]">
                                     <span class="icon">
                                         <svg width="16" height="17" viewBox="0 0 16 17" fill="none"
                                             xmlns="http://www.w3.org/2000/svg">
@@ -898,7 +898,7 @@ get_header('main');
                             </div>
 
                             <div>
-                                <span class="date text-[14px] text-etGray sm:text-[12px] flex items-center gap-[12px] mb-[3px]">
+                                <span class="date text-[14px] sm:text-[12px] flex items-center gap-[12px] mb-[3px]">
                                     <span class="icon">
                                         <svg width="16" height="17" viewBox="0 0 16 17" fill="none"
                                             xmlns="http://www.w3.org/2000/svg">
