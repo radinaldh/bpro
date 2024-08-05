@@ -22,6 +22,24 @@ get_header('main'); ?>
     padding-left: 70px;
     padding-right: 70px;
 }
+
+.et-schedule-date-time {
+    padding: 10px;
+    width: 80%;
+    justify-content: center;
+    margin-bottom: 25px;
+}
+
+.et-schedule-date-time > *:not(:last-child)::before {
+    content: "";
+    position: absolute;
+    left: calc(100% + 12px);
+    top: 50%;
+    transform: translateY(-50%);
+    height: 21px;
+    width: 1px;
+    background-color: #D9D9D9;
+}
 }
 </style>
 
@@ -162,7 +180,7 @@ get_header('main'); ?>
         <div
             class="et-upcoming-events-heading text-center max-w-[60%] mx-auto mb-[52px] xl:mb-[42px] lg:mb-[32px] md:max-w-[70%] sm:max-w-[80%] xs:max-w-full">
             <h6 class="et-section-sub-title !text-white">Join Us at FA BPro</h6>
-            <h2 class=" !text-white text-[35px] sm:text-[24px]" >List Of Every Family Altar Time Detail And
+            <h2 class=" !text-white text-[30px] sm:text-[24px]" >List Of Every Family Altar Time Detail And
                 Location</h2>
         </div>
 
@@ -177,7 +195,7 @@ get_header('main'); ?>
                             class="et-schedule__heading w-[80%] pr-[40px] sm:pr-[25px] xs:pr-0 mr-[40px] sm:mr-[25px] xs:mr-0 border-r xs:border-r-0 border-[#d9d9d9]">
                             <!-- date & time -->
                             <div
-                                class="et-schedule-date-time border border-[rgba(217,217,217,0.89)] py-[7px] px-[15px] rounded-full inline-flex xxs:w-full items-center justify-center gap-x-[24px] gap-y-[10px] mb-[10px] xxs:border-0 xxs:p-0 xxs:justify-start">
+                                class="et-schedule-date-time border border-[rgba(217,217,217,0.89)] py-[7px] px-[15px] rounded-full inline-flex xxs:w-full items-center justify-center gap-x-[24px] gap-y-[10px] mb-[10px] xxs:border-[rgba(217,217,217,0.89)] xxs:py-[7px] xxs:px-[15px] xxs:p-0 xxs:justify-start">
                                 <div class="date flex items-center gap-[10px]">
                                     <span class="icon">
                                         <svg width="16" height="17" viewBox="0 0 16 17" fill="none"
@@ -285,7 +303,7 @@ get_header('main'); ?>
                             class="et-schedule__heading w-[80%] pr-[40px] sm:pr-[25px] xs:pr-0 mr-[40px] sm:mr-[25px] xs:mr-0 border-r xs:border-r-0 border-[#d9d9d9]">
                             <!-- date & time -->
                             <div
-                                class="et-schedule-date-time border border-[rgba(217,217,217,0.89)] py-[7px] px-[15px] rounded-full inline-flex xxs:w-full items-center justify-center gap-x-[24px] gap-y-[10px] mb-[10px] xxs:border-0 xxs:p-0 xxs:justify-start">
+                                class="et-schedule-date-time border border-[rgba(217,217,217,0.89)] py-[7px] px-[15px] rounded-full inline-flex xxs:w-full items-center justify-center gap-x-[24px] gap-y-[10px] mb-[10px] xxs:border-[rgba(217,217,217,0.89)] xxs:py-[7px] xxs:px-[15px] xxs:p-0 xxs:justify-start">
                                 <div class="date flex items-center gap-[10px]">
                                     <span class="icon">
                                         <svg width="16" height="17" viewBox="0 0 16 17" fill="none"
@@ -393,7 +411,7 @@ get_header('main'); ?>
                             class="et-schedule__heading w-[80%] pr-[40px] sm:pr-[25px] xs:pr-0 mr-[40px] sm:mr-[25px] xs:mr-0 border-r xs:border-r-0 border-[#d9d9d9]">
                             <!-- date & time -->
                             <div
-                                class="et-schedule-date-time border border-[rgba(217,217,217,0.89)] py-[7px] px-[15px] rounded-full inline-flex xxs:w-full items-center justify-center gap-x-[24px] gap-y-[10px] mb-[10px] xxs:border-0 xxs:p-0 xxs:justify-start">
+                                class="et-schedule-date-time border border-[rgba(217,217,217,0.89)] py-[7px] px-[15px] rounded-full inline-flex xxs:w-full items-center justify-center gap-x-[24px] gap-y-[10px] mb-[10px] xxs:border-[rgba(217,217,217,0.89)] xxs:py-[7px] xxs:px-[15px] xxs:p-0 xxs:justify-start">
                                 <div class="date flex items-center gap-[10px]">
                                     <span class="icon">
                                         <svg width="16" height="17" viewBox="0 0 16 17" fill="none"
@@ -501,7 +519,7 @@ get_header('main'); ?>
                             class="et-schedule__heading w-[80%] pr-[40px] sm:pr-[25px] xs:pr-0 mr-[40px] sm:mr-[25px] xs:mr-0 border-r xs:border-r-0 border-[#d9d9d9]">
                             <!-- date & time -->
                             <div
-                                class="et-schedule-date-time border border-[rgba(217,217,217,0.89)] py-[7px] px-[15px] rounded-full inline-flex xxs:w-full items-center justify-center gap-x-[24px] gap-y-[10px] mb-[10px] xxs:border-0 xxs:p-0 xxs:justify-start">
+                                class="et-schedule-date-time border border-[rgba(217,217,217,0.89)] py-[7px] px-[15px] rounded-full inline-flex xxs:w-full items-center justify-center gap-x-[24px] gap-y-[10px] mb-[10px] xxs:border-[rgba(217,217,217,0.89)] xxs:py-[7px] xxs:px-[15px] xxs:p-0 xxs:justify-start">
                                 <div class="date flex items-center gap-[10px]">
                                     <span class="icon">
                                         <svg width="16" height="17" viewBox="0 0 16 17" fill="none"
@@ -609,7 +627,7 @@ get_header('main'); ?>
                             class="et-schedule__heading w-[80%] pr-[40px] sm:pr-[25px] xs:pr-0 mr-[40px] sm:mr-[25px] xs:mr-0 border-r xs:border-r-0 border-[#d9d9d9]">
                             <!-- date & time -->
                             <div
-                                class="et-schedule-date-time border border-[rgba(217,217,217,0.89)] py-[7px] px-[15px] rounded-full inline-flex xxs:w-full items-center justify-center gap-x-[24px] gap-y-[10px] mb-[10px] xxs:border-0 xxs:p-0 xxs:justify-start">
+                                class="et-schedule-date-time border border-[rgba(217,217,217,0.89)] py-[7px] px-[15px] rounded-full inline-flex xxs:w-full items-center justify-center gap-x-[24px] gap-y-[10px] mb-[10px] xxs:border-[rgba(217,217,217,0.89)] xxs:py-[7px] xxs:px-[15px] xxs:p-0 xxs:justify-start">
                                 <div class="date flex items-center gap-[10px]">
                                     <span class="icon">
                                         <svg width="16" height="17" viewBox="0 0 16 17" fill="none"
@@ -717,7 +735,7 @@ get_header('main'); ?>
                             class="et-schedule__heading w-[80%] pr-[40px] sm:pr-[25px] xs:pr-0 mr-[40px] sm:mr-[25px] xs:mr-0 border-r xs:border-r-0 border-[#d9d9d9]">
                             <!-- date & time -->
                             <div
-                                class="et-schedule-date-time border border-[rgba(217,217,217,0.89)] py-[7px] px-[15px] rounded-full inline-flex xxs:w-full items-center justify-center gap-x-[24px] gap-y-[10px] mb-[10px] xxs:border-0 xxs:p-0 xxs:justify-start">
+                                class="et-schedule-date-time border border-[rgba(217,217,217,0.89)] py-[7px] px-[15px] rounded-full inline-flex xxs:w-full items-center justify-center gap-x-[24px] gap-y-[10px] mb-[10px] xxs:border-[rgba(217,217,217,0.89)] xxs:py-[7px] xxs:px-[15px] xxs:p-0 xxs:justify-start">
                                 <div class="date flex items-center gap-[10px]">
                                     <span class="icon">
                                         <svg width="16" height="17" viewBox="0 0 16 17" fill="none"
@@ -825,7 +843,7 @@ get_header('main'); ?>
                             class="et-schedule__heading w-[80%] pr-[40px] sm:pr-[25px] xs:pr-0 mr-[40px] sm:mr-[25px] xs:mr-0 border-r xs:border-r-0 border-[#d9d9d9]">
                             <!-- date & time -->
                             <div
-                                class="et-schedule-date-time border border-[rgba(217,217,217,0.89)] py-[7px] px-[15px] rounded-full inline-flex xxs:w-full items-center justify-center gap-x-[24px] gap-y-[10px] mb-[10px] xxs:border-0 xxs:p-0 xxs:justify-start">
+                                class="et-schedule-date-time border border-[rgba(217,217,217,0.89)] py-[7px] px-[15px] rounded-full inline-flex xxs:w-full items-center justify-center gap-x-[24px] gap-y-[10px] mb-[10px] xxs:border-[rgba(217,217,217,0.89)] xxs:py-[7px] xxs:px-[15px] xxs:p-0 xxs:justify-start">
                                 <div class="date flex items-center gap-[10px]">
                                     <span class="icon">
                                         <svg width="16" height="17" viewBox="0 0 16 17" fill="none"
@@ -933,7 +951,7 @@ get_header('main'); ?>
                             class="et-schedule__heading w-[80%] pr-[40px] sm:pr-[25px] xs:pr-0 mr-[40px] sm:mr-[25px] xs:mr-0 border-r xs:border-r-0 border-[#d9d9d9]">
                             <!-- date & time -->
                             <div
-                                class="et-schedule-date-time border border-[rgba(217,217,217,0.89)] py-[7px] px-[15px] rounded-full inline-flex xxs:w-full items-center justify-center gap-x-[24px] gap-y-[10px] mb-[10px] xxs:border-0 xxs:p-0 xxs:justify-start">
+                                class="et-schedule-date-time border border-[rgba(217,217,217,0.89)] py-[7px] px-[15px] rounded-full inline-flex xxs:w-full items-center justify-center gap-x-[24px] gap-y-[10px] mb-[10px] xxs:border-[rgba(217,217,217,0.89)] xxs:py-[7px] xxs:px-[15px] xxs:p-0 xxs:justify-start">
                                 <div class="date flex items-center gap-[10px]">
                                     <span class="icon">
                                         <svg width="16" height="17" viewBox="0 0 16 17" fill="none"
@@ -1041,7 +1059,7 @@ get_header('main'); ?>
                             class="et-schedule__heading w-[80%] pr-[40px] sm:pr-[25px] xs:pr-0 mr-[40px] sm:mr-[25px] xs:mr-0 border-r xs:border-r-0 border-[#d9d9d9]">
                             <!-- date & time -->
                             <div
-                                class="et-schedule-date-time border border-[rgba(217,217,217,0.89)] py-[7px] px-[15px] rounded-full inline-flex xxs:w-full items-center justify-center gap-x-[24px] gap-y-[10px] mb-[10px] xxs:border-0 xxs:p-0 xxs:justify-start">
+                                class="et-schedule-date-time border border-[rgba(217,217,217,0.89)] py-[7px] px-[15px] rounded-full inline-flex xxs:w-full items-center justify-center gap-x-[24px] gap-y-[10px] mb-[10px] xxs:border-[rgba(217,217,217,0.89)] xxs:py-[7px] xxs:px-[15px] xxs:p-0 xxs:justify-start">
                                 <div class="date flex items-center gap-[10px]">
                                     <span class="icon">
                                         <svg width="16" height="17" viewBox="0 0 16 17" fill="none"
@@ -1149,7 +1167,7 @@ get_header('main'); ?>
                             class="et-schedule__heading w-[80%] pr-[40px] sm:pr-[25px] xs:pr-0 mr-[40px] sm:mr-[25px] xs:mr-0 border-r xs:border-r-0 border-[#d9d9d9]">
                             <!-- date & time -->
                             <div
-                                class="et-schedule-date-time border border-[rgba(217,217,217,0.89)] py-[7px] px-[15px] rounded-full inline-flex xxs:w-full items-center justify-center gap-x-[24px] gap-y-[10px] mb-[10px] xxs:border-0 xxs:p-0 xxs:justify-start">
+                                class="et-schedule-date-time border border-[rgba(217,217,217,0.89)] py-[7px] px-[15px] rounded-full inline-flex xxs:w-full items-center justify-center gap-x-[24px] gap-y-[10px] mb-[10px] xxs:border-[rgba(217,217,217,0.89)] xxs:py-[7px] xxs:px-[15px] xxs:p-0 xxs:justify-start">
                                 <div class="date flex items-center gap-[10px]">
                                     <span class="icon">
                                         <svg width="16" height="17" viewBox="0 0 16 17" fill="none"
@@ -1257,7 +1275,7 @@ get_header('main'); ?>
                             class="et-schedule__heading w-[80%] pr-[40px] sm:pr-[25px] xs:pr-0 mr-[40px] sm:mr-[25px] xs:mr-0 border-r xs:border-r-0 border-[#d9d9d9]">
                             <!-- date & time -->
                             <div
-                                class="et-schedule-date-time border border-[rgba(217,217,217,0.89)] py-[7px] px-[15px] rounded-full inline-flex xxs:w-full items-center justify-center gap-x-[24px] gap-y-[10px] mb-[10px] xxs:border-0 xxs:p-0 xxs:justify-start">
+                                class="et-schedule-date-time border border-[rgba(217,217,217,0.89)] py-[7px] px-[15px] rounded-full inline-flex xxs:w-full items-center justify-center gap-x-[24px] gap-y-[10px] mb-[10px] xxs:border-[rgba(217,217,217,0.89)] xxs:py-[7px] xxs:px-[15px] xxs:p-0 xxs:justify-start">
                                 <div class="date flex items-center gap-[10px]">
                                     <span class="icon">
                                         <svg width="16" height="17" viewBox="0 0 16 17" fill="none"
@@ -1365,7 +1383,7 @@ get_header('main'); ?>
                             class="et-schedule__heading w-[80%] pr-[40px] sm:pr-[25px] xs:pr-0 mr-[40px] sm:mr-[25px] xs:mr-0 border-r xs:border-r-0 border-[#d9d9d9]">
                             <!-- date & time -->
                             <div
-                                class="et-schedule-date-time border border-[rgba(217,217,217,0.89)] py-[7px] px-[15px] rounded-full inline-flex xxs:w-full items-center justify-center gap-x-[24px] gap-y-[10px] mb-[10px] xxs:border-0 xxs:p-0 xxs:justify-start">
+                                class="et-schedule-date-time border border-[rgba(217,217,217,0.89)] py-[7px] px-[15px] rounded-full inline-flex xxs:w-full items-center justify-center gap-x-[24px] gap-y-[10px] mb-[10px] xxs:border-[rgba(217,217,217,0.89)] xxs:py-[7px] xxs:px-[15px] xxs:p-0 xxs:justify-start">
                                 <div class="date flex items-center gap-[10px]">
                                     <span class="icon">
                                         <svg width="16" height="17" viewBox="0 0 16 17" fill="none"
@@ -1473,7 +1491,7 @@ get_header('main'); ?>
                             class="et-schedule__heading w-[80%] pr-[40px] sm:pr-[25px] xs:pr-0 mr-[40px] sm:mr-[25px] xs:mr-0 border-r xs:border-r-0 border-[#d9d9d9]">
                             <!-- date & time -->
                             <div
-                                class="et-schedule-date-time border border-[rgba(217,217,217,0.89)] py-[7px] px-[15px] rounded-full inline-flex xxs:w-full items-center justify-center gap-x-[24px] gap-y-[10px] mb-[10px] xxs:border-0 xxs:p-0 xxs:justify-start">
+                                class="et-schedule-date-time border border-[rgba(217,217,217,0.89)] py-[7px] px-[15px] rounded-full inline-flex xxs:w-full items-center justify-center gap-x-[24px] gap-y-[10px] mb-[10px] xxs:border-[rgba(217,217,217,0.89)] xxs:py-[7px] xxs:px-[15px] xxs:p-0 xxs:justify-start">
                                 <div class="date flex items-center gap-[10px]">
                                     <span class="icon">
                                         <svg width="16" height="17" viewBox="0 0 16 17" fill="none"
@@ -1581,7 +1599,7 @@ get_header('main'); ?>
                             class="et-schedule__heading w-[80%] pr-[40px] sm:pr-[25px] xs:pr-0 mr-[40px] sm:mr-[25px] xs:mr-0 border-r xs:border-r-0 border-[#d9d9d9]">
                             <!-- date & time -->
                             <div
-                                class="et-schedule-date-time border border-[rgba(217,217,217,0.89)] py-[7px] px-[15px] rounded-full inline-flex xxs:w-full items-center justify-center gap-x-[24px] gap-y-[10px] mb-[10px] xxs:border-0 xxs:p-0 xxs:justify-start">
+                                class="et-schedule-date-time border border-[rgba(217,217,217,0.89)] py-[7px] px-[15px] rounded-full inline-flex xxs:w-full items-center justify-center gap-x-[24px] gap-y-[10px] mb-[10px] xxs:border-[rgba(217,217,217,0.89)] xxs:py-[7px] xxs:px-[15px] xxs:p-0 xxs:justify-start">
                                 <div class="date flex items-center gap-[10px]">
                                     <span class="icon">
                                         <svg width="16" height="17" viewBox="0 0 16 17" fill="none"
@@ -1689,7 +1707,7 @@ get_header('main'); ?>
                             class="et-schedule__heading w-[80%] pr-[40px] sm:pr-[25px] xs:pr-0 mr-[40px] sm:mr-[25px] xs:mr-0 border-r xs:border-r-0 border-[#d9d9d9]">
                             <!-- date & time -->
                             <div
-                                class="et-schedule-date-time border border-[rgba(217,217,217,0.89)] py-[7px] px-[15px] rounded-full inline-flex xxs:w-full items-center justify-center gap-x-[24px] gap-y-[10px] mb-[10px] xxs:border-0 xxs:p-0 xxs:justify-start">
+                                class="et-schedule-date-time border border-[rgba(217,217,217,0.89)] py-[7px] px-[15px] rounded-full inline-flex xxs:w-full items-center justify-center gap-x-[24px] gap-y-[10px] mb-[10px] xxs:border-[rgba(217,217,217,0.89)] xxs:py-[7px] xxs:px-[15px] xxs:p-0 xxs:justify-start">
                                 <div class="date flex items-center gap-[10px]">
                                     <span class="icon">
                                         <svg width="16" height="17" viewBox="0 0 16 17" fill="none"
