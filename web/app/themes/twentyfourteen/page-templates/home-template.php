@@ -223,7 +223,7 @@ get_header('main');
                             <!-- text -->
                             <div class="px-[30px] sm:px-[12px] py-[25px] sm:pb-[15px] pt-[37px] md:pt-0 w-full flex xs:flex-col gap-y-[15px] items-center bg-white" >
                                 <!-- single schedule heading -->
-                                <div class="pr-[46px] sm:pr-0 mr-[54px] sm:mr-0 border-r sm:border-r-0 border-[#d9d9d9]" style="min-width: 76%;">
+                                <div class="pr-[46px] sm:pr-0 mr-[54px] sm:mr-0 border-r sm:border-r-0 border-[#d9d9d9]" style="min-width: 71%;">
                                     <!-- date & time -->
                                     <div class="et-schedule-date-time border border-[rgba(217,217,217,0.89)] xxs:border-0 py-[7px] px-[15px] xxs:p-0 rounded-full inline-flex xxs:w-full items-center justify-center gap-x-[24px] gap-y-[10px] mb-[10px]">
                                         <div class="date flex items-center gap-[10px]">
@@ -310,7 +310,7 @@ get_header('main');
                             <!-- text -->
                             <div class="px-[30px] sm:px-[12px] py-[25px] sm:pb-[15px] pt-[37px] md:pt-0 w-full flex xs:flex-col gap-y-[15px] items-center bg-white">
                                 <!-- single schedule heading -->
-                                <div class="pr-[46px] sm:pr-0 mr-[54px] sm:mr-0 border-r sm:border-r-0 border-[#d9d9d9]" style="min-width: 76%;">
+                                <div class="pr-[46px] sm:pr-0 mr-[54px] sm:mr-0 border-r sm:border-r-0 border-[#d9d9d9]" style="min-width: 71%;">
                                     <!-- date & time -->
                                     <div class="et-schedule-date-time border border-[rgba(217,217,217,0.89)] xxs:border-0 py-[7px] px-[15px] xxs:p-0 rounded-full inline-flex xxs:w-full items-center justify-center xxs:justify-start gap-x-[24px] gap-y-[10px] mb-[10px]">
                                         <div class="date flex items-center gap-[10px]">
@@ -398,7 +398,7 @@ get_header('main');
                             <!-- text -->
                             <div class="px-[30px] sm:px-[12px] py-[25px] sm:pb-[15px] pt-[37px] md:pt-0 w-full flex xs:flex-col gap-y-[15px] items-center bg-white">
                                 <!-- single schedule heading -->
-                                <div class="pr-[46px] sm:pr-0 mr-[54px] sm:mr-0 border-r sm:border-r-0 border-[#d9d9d9]" style="min-width: 76%;">
+                                <div class="pr-[46px] sm:pr-0 mr-[54px] sm:mr-0 border-r sm:border-r-0 border-[#d9d9d9]" style="min-width: 71%;">
                                     <!-- date & time -->
                                     <div class="et-schedule-date-time border border-[rgba(217,217,217,0.89)] xxs:border-0 py-[7px] px-[15px] xxs:p-0 rounded-full inline-flex xxs:w-full items-center justify-center xxs:justify-start gap-x-[24px] gap-y-[10px] mb-[10px]">
                                         <div class="date flex items-center gap-[10px]">
@@ -490,7 +490,7 @@ get_header('main');
                                 <!-- text -->
                                 <div class="px-[30px] sm:px-[12px] py-[25px] sm:pb-[15px] pt-[37px] md:pt-0 w-full flex xs:flex-col gap-y-[15px] items-center bg-white" >
                                     <!-- single schedule heading -->
-                                    <div class="pr-[46px] sm:pr-0 mr-[54px] sm:mr-0 border-r sm:border-r-0 border-[#d9d9d9]" style="min-width: 76%;">
+                                    <div class="pr-[46px] sm:pr-0 mr-[54px] sm:mr-0 border-r sm:border-r-0 border-[#d9d9d9]" style="min-width: 71%;">
                                         <!-- date & time -->
                                         <div class="et-schedule-date-time border border-[rgba(217,217,217,0.89)] xxs:border-0 py-[7px] px-[15px] xxs:p-0 rounded-full inline-flex xxs:w-full items-center justify-center gap-x-[24px] gap-y-[10px] mb-[10px]">
                                             <div class="date flex items-center gap-[10px]">
@@ -578,7 +578,7 @@ get_header('main');
                                 <!-- text -->
                                 <div class="px-[30px] sm:px-[12px] py-[25px] sm:pb-[15px] pt-[37px] md:pt-0 w-full flex xs:flex-col gap-y-[15px] items-center bg-white">
                                     <!-- single schedule heading -->
-                                    <div class="pr-[46px] sm:pr-0 mr-[54px] sm:mr-0 border-r sm:border-r-0 border-[#d9d9d9]" style="min-width: 76%;">
+                                    <div class="pr-[46px] sm:pr-0 mr-[54px] sm:mr-0 border-r sm:border-r-0 border-[#d9d9d9]" style="min-width: 71%;">
                                         <!-- date & time -->
                                         <div class="et-schedule-date-time sm:text-center sm:justify-center border border-[rgba(217,217,217,0.89)] xxs:border-0 py-[7px] px-[15px] xxs:p-0 rounded-full inline-flex xxs:w-full items-center justify-center gap-x-[24px] gap-y-[10px] mb-[10px]">
                                             <div class="date flex items-center gap-[10px]">
@@ -668,7 +668,7 @@ get_header('main');
                                 <!-- text -->
                                 <div class="px-[30px] sm:px-[12px] py-[25px] sm:pb-[15px] pt-[37px] md:pt-0 w-full flex xs:flex-col gap-y-[15px] items-center bg-white">
                                     <!-- single schedule heading -->
-                                    <div class="pr-[46px] sm:pr-0 mr-[54px] sm:mr-0 border-r sm:border-r-0 border-[#d9d9d9]" style="min-width: 76%;">
+                                    <div class="pr-[46px] sm:pr-0 mr-[54px] sm:mr-0 border-r sm:border-r-0 border-[#d9d9d9]" style="min-width: 71%;">
                                         <!-- date & time -->
                                         <div class="et-schedule-date-time border border-[rgba(217,217,217,0.89)] xxs:border-0 py-[7px] px-[15px] xxs:p-0 rounded-full inline-flex xxs:w-full items-center justify-center  gap-x-[24px] gap-y-[10px] mb-[10px]">
                                             <div class="date flex items-center gap-[10px]">
