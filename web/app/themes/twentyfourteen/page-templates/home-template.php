@@ -209,7 +209,9 @@ get_header('main');
                     <h2 class="text-[35px] sm:text-[24px] anim-text">Upcoming Event Schedule</h2>
                 </div>
 
-                <div class="right">
+                <div class="right" style="
+    margin-right: 4%;
+">
                     <div class="et-schedules-tab-navs bg-[#D0E1FF] px-[12px] py-[14px] flex flex-w gap-[16px] sm:gap-[12px] rounded-full">
                         <a href="/events/" class="et-btn border w-[180px] bg-etBlue text-white inline-flex items-center justify-center h-[45px] px-[22px] xxs:px-[16px] font-normal text-[17px] rounded-full hover:!bg-etBlue hover:!text-white">View More</a>
 
