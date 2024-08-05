@@ -395,8 +395,8 @@ document.addEventListener("DOMContentLoaded", () => {
         autoplay: true,
         watchSlidesProgress: true,
         navigation: {
-            prevEl: ".et-testimonial-slider-nav .prev",
-            nextEl: ".et-testimonial-slider-nav .next",
+            prevEl: ".et-test-slider-nav .prev",
+            nextEl: ".et-test-slider-nav .next",
         },
         breakpoints: {
             0: {
