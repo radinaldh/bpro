@@ -914,7 +914,7 @@ get_header('main');
                         </div>
                     </div>
                     <div class="pl-[54px] overflow-hidden border-l-[4px] sm:border-l-0 border-white md:text-center md:pl-[15px] sm:pl-0 md:w-full relative before:absolute before:-left-[10px] before:top-[50%] before:-translate-y-[50%] before:w-[15px] before:aspect-square before:bg-white before:rotate-[45deg] before:-skew-x-[10deg] before:-skew-y-[10deg] sm:before:hidden">
-                        <p class="mb-[30px] text-[14px] font-light text-etGray md:mb-[30px] rev-slide-up text-white" style="text-align: center; font-size:18px;">Professional Workshop <br><b>
+                        <p class="mb-[30px] text-[18px] font-light text-etGray md:mb-[30px] rev-slide-up text-white sm:text-[12px]" style="text-align: center; ">Professional Workshop <br><b>
 "Discover Digitalization, Cyber Security and Financial Trap"</b><br>
 ...<br>
 Wrapped with Praise & Worship Night <br>
@@ -1148,8 +1148,8 @@ Wrapped with Praise & Worship Night <br>
 
                             <div class="text-center">
                                 <h5 class="text-black font-medium text-[20px] mb-[3px]">Arif Bijaksana</h5>
-                                <h6 class="text-[16px] text-etGray font-normal mb-[20px]">Florist & Wedding Decoration</h6>
-                                <p class="text-[16px] text-etGray font-normal mb-[20px]">BPro Talkshow adalah salah satu format ibadah yang saya tunggu, karena disitu saya bisa belajar pengaplikasian Firman Tuhan di era sekarang dengan segala kemajuan yang ada dan di dunia kerja dengan lebih detail lewat sesi QnA.</p>
+                                <h6 class="text-[16px] text-etGray font-normal mb-[20px] sm:text-[12px]">Florist & Wedding Decoration</h6>
+                                <p class="text-[16px] text-etGray font-normal mb-[20px] sm:text-[12px]">BPro Talkshow adalah salah satu format ibadah yang saya tunggu, karena disitu saya bisa belajar pengaplikasian Firman Tuhan di era sekarang dengan segala kemajuan yang ada dan di dunia kerja dengan lebih detail lewat sesi QnA.</p>
                             </div>
 
                             <!-- quotation icon -->
@@ -1180,8 +1180,8 @@ Wrapped with Praise & Worship Night <br>
 
                             <div class="text-center">
                                 <h5 class="text-black font-medium text-[20px] mb-[3px]">Dave Harley</h5>
-                                <h6 class="text-[16px] text-etGray font-normal mb-[20px]">Musician</h6>
-                                <p class="text-[16px] text-etGray font-normal mb-[20px]">Salah satu karakterku yang bertumbuh yaitu "Kasih", jadi lebih mengerti dan bisa mengasihi sesama daripada sebelum gabung berkomunitas FA BPro.
+                                <h6 class="text-[16px] text-etGray font-normal mb-[20px] sm:text-[12px]">Musician</h6>
+                                <p class="text-[16px] text-etGray font-normal mb-[20px] sm:text-[12px]">Salah satu karakterku yang bertumbuh yaitu "Kasih", jadi lebih mengerti dan bisa mengasihi sesama daripada sebelum gabung berkomunitas FA BPro.
                                 </p>
                             </div>
 
@@ -1213,8 +1213,8 @@ Wrapped with Praise & Worship Night <br>
 
                             <div class="text-center">
                                 <h5 class="text-black font-medium text-[20px] mb-[3px]">Holi</h5>
-                                <h6 class="text-[16px] text-etGray font-normal mb-[20px]">Academic Support</h6>
-                                <p class="text-[16px] text-etGray font-normal mb-[20px]">Event BPro FA Gathering di UTC beneran berkesan, karena bisa merasakan kebersamaan meski banyak yang teman baru kenal saat itu, acara asyik dan seru. </p>
+                                <h6 class="text-[16px] text-etGray font-normal mb-[20px] sm:text-[12px]">Academic Support</h6>
+                                <p class="text-[16px] text-etGray font-normal mb-[20px] sm:text-[12px]">Event BPro FA Gathering di UTC beneran berkesan, karena bisa merasakan kebersamaan meski banyak yang teman baru kenal saat itu, acara asyik dan seru. </p>
                             </div>
 
                             <!-- quotation icon -->
@@ -1245,8 +1245,8 @@ Wrapped with Praise & Worship Night <br>
 
                             <div class="text-center">
                                 <h5 class="text-black font-medium text-[20px] mb-[3px]">Listya</h5>
-                                <h6 class="text-[16px] text-etGray font-normal mb-[20px]">Sales Marketing</h6>
-                                <p class="text-[16px] text-etGray font-normal mb-[20px]">Aku suka pelayanan di choir, karena aku suka mengekspresikan hatiku  menyembah Tuhan dengan gerakan.</p>
+                                <h6 class="text-[16px] text-etGray font-normal mb-[20px] sm:text-[12px]">Sales Marketing</h6>
+                                <p class="text-[16px] text-etGray font-normal mb-[20px] sm:text-[12px]">Aku suka pelayanan di choir, karena aku suka mengekspresikan hatiku  menyembah Tuhan dengan gerakan.</p>
                             </div>
 
                             <!-- quotation icon -->
@@ -1277,8 +1277,8 @@ Wrapped with Praise & Worship Night <br>
 
                             <div class="text-center">
                                 <h5 class="text-black font-medium text-[20px] mb-[3px]">Nelfin Lumenta</h5>
-                                <h6 class="text-[16px] text-etGray font-normal mb-[20px]">PPIC</h6>
-                                <p class="text-[16px] text-etGray font-normal mb-[20px]">Di FA BPro, aku belajar karakter sabar dan legowo, artinya mau menerima sesama saudara kita apa adanya. Dan disana kita belajar saling support dan bertumbuh bersama.</p>
+                                <h6 class="text-[16px] text-etGray font-normal mb-[20px] sm:text-[12px]">PPIC</h6>
+                                <p class="text-[16px] text-etGray font-normal mb-[20px] sm:text-[12px]">Di FA BPro, aku belajar karakter sabar dan legowo, artinya mau menerima sesama saudara kita apa adanya. Dan disana kita belajar saling support dan bertumbuh bersama.</p>
                             </div>
 
                             <!-- quotation icon -->
@@ -1309,8 +1309,8 @@ Wrapped with Praise & Worship Night <br>
 
                             <div class="text-center">
                                 <h5 class="text-black font-medium text-[20px] mb-[3px]">Santi</h5>
-                                <h6 class="text-[16px] text-etGray font-normal mb-[20px]">Manufacturing Marketing</h6>
-                                <p class="text-[16px] text-etGray font-normal mb-[20px]">Aku ikut FA BPro karena ingin punya komunitas yang lebih kecil, agar lebih dekat dengan teman, bisa sharing, bisa latihan nyanyi bareng juga.</p>
+                                <h6 class="text-[16px] text-etGray font-normal mb-[20px] sm:text-[12px]">Manufacturing Marketing</h6>
+                                <p class="text-[16px] text-etGray font-normal mb-[20px] sm:text-[12px]">Aku ikut FA BPro karena ingin punya komunitas yang lebih kecil, agar lebih dekat dengan teman, bisa sharing, bisa latihan nyanyi bareng juga.</p>
                             </div>
 
                             <!-- quotation icon -->
@@ -1340,8 +1340,8 @@ Wrapped with Praise & Worship Night <br>
 
                             <div class="text-center">
                                 <h5 class="text-black font-medium text-[20px] mb-[3px]">Rr. Nirta Sekar Dhewanti</h5>
-                                <h6 class="text-[16px] text-etGray font-normal mb-[20px]"></h6>
-                                <p class="text-[16px] text-etGray font-normal mb-[20px]">Kesan pertama kamu tentang Bpro Senang...banyak teman, banyak pengetahuan.</p>
+                                <h6 class="text-[16px] text-etGray font-normal mb-[20px] sm:text-[12px]"></h6>
+                                <p class="text-[16px] text-etGray font-normal mb-[20px] sm:text-[12px]">Kesan pertama kamu tentang Bpro Senang...banyak teman, banyak pengetahuan.</p>
                             </div>
 
                             <!-- quotation icon -->
@@ -1371,8 +1371,8 @@ Wrapped with Praise & Worship Night <br>
 
                             <div class="text-center">
                                 <h5 class="text-black font-medium text-[20px] mb-[3px]">Tabita Christian</h5>
-                                <h6 class="text-[16px] text-etGray font-normal mb-[20px]">Bank Teller</h6>
-                                <p class="text-[16px] text-etGray font-normal mb-[20px]">Kalo diulang 5x pun, aku bakalan ga bosen ikut ibadah BPro Worship Night. Karena punya waktu yg lebih lama untuk menyembah dan merasakan hadirat Tuhan bersama-sama.</p>
+                                <h6 class="text-[16px] text-etGray font-normal mb-[20px] sm:text-[12px]">Bank Teller</h6>
+                                <p class="text-[16px] text-etGray font-normal mb-[20px] sm:text-[12px]">Kalo diulang 5x pun, aku bakalan ga bosen ikut ibadah BPro Worship Night. Karena punya waktu yg lebih lama untuk menyembah dan merasakan hadirat Tuhan bersama-sama.</p>
                             </div>
 
                             <!-- quotation icon -->
@@ -1402,8 +1402,8 @@ Wrapped with Praise & Worship Night <br>
 
                             <div class="text-center">
                                 <h5 class="text-black font-medium text-[20px] mb-[3px]">Vina</h5>
-                                <h6 class="text-[16px] text-etGray font-normal mb-[20px]">Pharmacist</h6>
-                                <p class="text-[16px] text-etGray font-normal mb-[20px]">Kalo diulang 5x pun, aku bakalan ga bosen ikut ibadah BPro Worship Night. Karena punya waktu yg lebih lama untuk menyembah dan merasakan hadirat Tuhan bersama-sama.</p>
+                                <h6 class="text-[16px] text-etGray font-normal mb-[20px] sm:text-[12px]">Pharmacist</h6>
+                                <p class="text-[16px] text-etGray font-normal mb-[20px] sm:text-[12px]">Kalo diulang 5x pun, aku bakalan ga bosen ikut ibadah BPro Worship Night. Karena punya waktu yg lebih lama untuk menyembah dan merasakan hadirat Tuhan bersama-sama.</p>
                             </div>
 
                             <!-- quotation icon -->
@@ -1433,8 +1433,8 @@ Wrapped with Praise & Worship Night <br>
 
                             <div class="text-center">
                                 <h5 class="text-black font-medium text-[20px] mb-[3px]">Yeremia</h5>
-                                <h6 class="text-[16px] text-etGray font-normal mb-[20px]">Intrapreneur</h6>
-                                <p class="text-[16px] text-etGray font-normal mb-[20px]">Tiga kata tentang pelayanan di BPro: Pelayanan itu fun! Pelayanan itu komitmen! Pelayanan itu panggilan!</p>
+                                <h6 class="text-[16px] text-etGray font-normal mb-[20px] sm:text-[12px]">Intrapreneur</h6>
+                                <p class="text-[16px] text-etGray font-normal mb-[20px] sm:text-[12px]">Tiga kata tentang pelayanan di BPro: Pelayanan itu fun! Pelayanan itu komitmen! Pelayanan itu panggilan!</p>
                             </div>
 
                             <!-- quotation icon -->
@@ -1464,8 +1464,8 @@ Wrapped with Praise & Worship Night <br>
 
                             <div class="text-center">
                                 <h5 class="text-black font-medium text-[20px] mb-[3px]">Yohan</h5>
-                                <h6 class="text-[16px] text-etGray font-normal mb-[20px]">Entrepreneur</h6>
-                                <p class="text-[16px] text-etGray font-normal mb-[20px]">Bisa sharing semua hal, ga melulu masalah kerohanian, tapi juga cerita pribadi. Terus juga bisa berbagi suka dan duka. Itulah kenapa aku harus ikut FA BPro.</p>
+                                <h6 class="text-[16px] text-etGray font-normal mb-[20px] sm:text-[12px]">Entrepreneur</h6>
+                                <p class="text-[16px] text-etGray font-normal mb-[20px] sm:text-[12px]">Bisa sharing semua hal, ga melulu masalah kerohanian, tapi juga cerita pribadi. Terus juga bisa berbagi suka dan duka. Itulah kenapa aku harus ikut FA BPro.</p>
                             </div>
 
                             <!-- quotation icon -->
@@ -1495,8 +1495,8 @@ Wrapped with Praise & Worship Night <br>
 
                             <div class="text-center">
                                 <h5 class="text-black font-medium text-[20px] mb-[3px]">Yulius Gunawan</h5>
-                                <h6 class="text-[16px] text-etGray font-normal mb-[20px]">Personal Assistant </h6>
-                                <p class="text-[16px] text-etGray font-normal mb-[20px]">Aku pelayanan di Singer, Wardrobe dan Sosial Media. Pelayanan bakalan asik semua selama melayani dengan hati buat Tuhan. Aku bisa banyak belajar dari segi teknik vocal, penataan panggung, wardrobe dan belajar menyenangkan hati Tuhan dengan tulus.</p>
+                                <h6 class="text-[16px] text-etGray font-normal mb-[20px] sm:text-[12px]">Personal Assistant </h6>
+                                <p class="text-[16px] text-etGray font-normal mb-[20px] sm:text-[12px]">Aku pelayanan di Singer, Wardrobe dan Sosial Media. Pelayanan bakalan asik semua selama melayani dengan hati buat Tuhan. Aku bisa banyak belajar dari segi teknik vocal, penataan panggung, wardrobe dan belajar menyenangkan hati Tuhan dengan tulus.</p>
                             </div>
 
                             <!-- quotation icon -->
@@ -1655,13 +1655,13 @@ Wrapped with Praise & Worship Night <br>
                                     <!-- single info -->
                                     <div class="et-blog-info flex items-center gap-x-[10px]">
                                         <span class="icon"><img src="<?= get_template_directory_uri(); ?>/assets/img/calender-blue.svg" alt="icon"></span>
-                                        <span class="text font-normal text-[14px] text-etGray">08 Jul 2024</span>
+                                        <span class="text font-normal text-[14px] text-etGray sm:text-[12px]">08 Jul 2024</span>
                                     </div>
 
                                     <!-- single info -->
                                     <div class="et-blog-info flex items-center gap-x-[10px]">
                                         <span class="icon"><img src="<?= get_template_directory_uri(); ?>/assets/img/user-blue.svg" alt="icon"></span>
-                                        <span class="text font-normal text-[14px] text-etGray">BPro Administrator</span>
+                                        <span class="text font-normal text-[14px] text-etGray sm:text-[12px]">BPro Administrator</span>
                                     </div>
                                 </div>
 
@@ -1683,13 +1683,13 @@ Wrapped with Praise & Worship Night <br>
                                     <!-- single info -->
                                     <div class="et-blog-info flex items-center gap-x-[10px]">
                                         <span class="icon"><img src="<?= get_template_directory_uri(); ?>/assets/img/calender-blue.svg" alt="icon"></span>
-                                        <span class="text font-normal text-[14px] text-etGray">06 July 2024</span>
+                                        <span class="text font-normal text-[14px] text-etGray sm:text-[12px]">06 July 2024</span>
                                     </div>
 
                                     <!-- single info -->
                                     <div class="et-blog-info flex items-center gap-x-[10px]">
                                         <span class="icon"><img src="<?= get_template_directory_uri(); ?>/assets/img/user-blue.svg" alt="icon"></span>
-                                        <span class="text font-normal text-[14px] text-etGray">BPro Administrator</span>
+                                        <span class="text font-normal text-[14px] text-etGray sm:text-[12px]">BPro Administrator</span>
                                     </div>
                                 </div>
 
@@ -1710,13 +1710,13 @@ Wrapped with Praise & Worship Night <br>
                                     <!-- single info -->
                                     <div class="et-blog-info flex items-center gap-x-[10px]">
                                         <span class="icon"><img src="<?= get_template_directory_uri(); ?>/assets/img/calender-blue.svg" alt="icon"></span>
-                                        <span class="text font-normal text-[14px] text-etGray">22 Juni 2024</span>
+                                        <span class="text font-normal text-[14px] text-etGray sm:text-[12px]">22 Juni 2024</span>
                                     </div>
 
                                     <!-- single info -->
                                     <div class="et-blog-info flex items-center gap-x-[10px]">
                                         <span class="icon"><img src="<?= get_template_directory_uri(); ?>/assets/img/user-blue.svg" alt="icon"></span>
-                                        <span class="text font-normal text-[14px] text-etGray">BPro Administrator</span>
+                                        <span class="text font-normal text-[14px] text-etGray sm:text-[12px]">BPro Administrator</span>
                                     </div>
                                 </div>
 
@@ -1739,13 +1739,13 @@ Wrapped with Praise & Worship Night <br>
                                     <!-- single info -->
                                     <div class="et-blog-info flex items-center gap-x-[10px]">
                                         <span class="icon"><img src="<?= get_template_directory_uri(); ?>/assets/img/calender-blue.svg" alt="icon"></span>
-                                        <span class="text font-normal text-[14px] text-etGray">23 Mei 2024</span>
+                                        <span class="text font-normal text-[14px] text-etGray sm:text-[12px]">23 Mei 2024</span>
                                     </div>
 
                                     <!-- single info -->
                                     <div class="et-blog-info flex items-center gap-x-[10px]">
                                         <span class="icon"><img src="<?= get_template_directory_uri(); ?>/assets/img/user-blue.svg" alt="icon"></span>
-                                        <span class="text font-normal text-[14px] text-etGray">BPro Administrator</span>
+                                        <span class="text font-normal text-[14px] text-etGray sm:text-[12px]">BPro Administrator</span>
                                     </div>
                                 </div>
 
@@ -1768,13 +1768,13 @@ Wrapped with Praise & Worship Night <br>
                                     <!-- single info -->
                                     <div class="et-blog-info flex items-center gap-x-[10px]">
                                         <span class="icon"><img src="<?= get_template_directory_uri(); ?>/assets/img/calender-blue.svg" alt="icon"></span>
-                                        <span class="text font-normal text-[14px] text-etGray">23 Mar 2024</span>
+                                        <span class="text font-normal text-[14px] text-etGray sm:text-[12px]">23 Mar 2024</span>
                                     </div>
 
                                     <!-- single info -->
                                     <div class="et-blog-info flex items-center gap-x-[10px]">
                                         <span class="icon"><img src="<?= get_template_directory_uri(); ?>/assets/img/user-blue.svg" alt="icon"></span>
-                                        <span class="text font-normal text-[14px] text-etGray">BPro Administrator</span>
+                                        <span class="text font-normal text-[14px] text-etGray sm:text-[12px]">BPro Administrator</span>
                                     </div>
                                 </div>
 
@@ -1799,13 +1799,13 @@ Wrapped with Praise & Worship Night <br>
                                     <!-- single info -->
                                     <div class="et-blog-info flex items-center gap-x-[10px]">
                                         <span class="icon"><img src="<?= get_template_directory_uri(); ?>/assets/img/calender-blue.svg" alt="icon"></span>
-                                        <span class="text font-normal text-[14px] text-etGray">14 Okt 2023</span>
+                                        <span class="text font-normal text-[14px] text-etGray sm:text-[12px]">14 Okt 2023</span>
                                     </div>
 
                                     <!-- single info -->
                                     <div class="et-blog-info flex items-center gap-x-[10px]">
                                         <span class="icon"><img src="<?= get_template_directory_uri(); ?>/assets/img/user-blue.svg" alt="icon"></span>
-                                        <span class="text font-normal text-[14px] text-etGray">BPro Administrator</span>
+                                        <span class="text font-normal text-[14px] text-etGray sm:text-[12px]">BPro Administrator</span>
                                     </div>
                                 </div>
 
