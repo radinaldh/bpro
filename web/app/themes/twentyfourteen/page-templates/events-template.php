@@ -8,7 +8,11 @@ get_header('main'); ?>
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/lc-lightbox-lite@1.3.1/css/lc_lightbox.min.css">
 
 <style>
-
+    @media(max-width:600px) {
+        .modal-content {
+            width: 95%  !important;
+        }
+    }
     @media(min-width:1600px) {
         .modal-content {        
             top: 200px !important;
@@ -117,15 +121,23 @@ get_header('main'); ?>
         text-decoration: none;
         cursor: pointer;
     }
+
+    @media(max-width:600px) {
+        .et-events-tab-navs {
+            flex-wrap: nowrap;
+            overflow: scroll;
+            gap: 10px;
+        }
+    }
 </style>
 
 <!-- BREADCRUMB SECTION START -->
 <section
     class="et-breadcrumb bg-[#000D83] pt-[210px] lg:pt-[190px] sm:pt-[160px] pb-[130px] lg:pb-[110px] sm:pb-[80px] relative z-[1] before:absolute before:inset-0 before:bg-[url('<?= get_template_directory_uri() ?>/assets/img/breadcrumb-bg.jpg')] before:bg-no-repeat before:bg-cover before:bg-center before:-z-[1] before:opacity-30">
     <div class="container mx-auto max-w-[1200px] px-[12px] xl:max-w-full text-center text-white">
-        <h1 class="et-breadcrumb-title font-medium text-[56px] md:text-[50px] xs:text-[45px]">All Events</h1>
-        <ul class="inline-flex items-center gap-[10px] font-medium text-[16px]">
-            <li class="opacity-80"><a href="index-2.html" class="hover:text-etBlue">Home</a></li>
+        <h1 class="et-breadcrumb-title font-medium text-[56px] md:text-[50px] sm:text-[22px]">All Events</h1>
+        <ul class="inline-flex items-center gap-[10px] font-medium text-[16px] text-[16px] sm:text-[12px]">
+            <li class="opacity-80"><a href="<?= home_url()?>/" class="hover:text-etBlue">Home</a></li>
             <li><i class="fa-solid fa-angle-right"></i><i class="fa-solid fa-angle-right"></i></li>
             <li class="current-page">Events</li>
         </ul>
@@ -146,7 +158,7 @@ get_header('main'); ?>
                             class="txt h-full flex flex-col justify-between items-start gap-[265px] lg:gap-[215px] xxs:gap-[165px] p-[40px] lg:p-[20px] pb-[50px] md:pb-[80px] text-white">
                             <div>
                                 <div class="bg-etBlue rounded-full px-[15px] py-[4px]">
-                                    <span class="font-light text-[18px]">Upcoming Event</span>
+                                    <span class="font-light text-[18px] sm:text-[12px]">Upcoming Event</span>
                                 </div>
                             </div>
 
@@ -227,7 +239,7 @@ get_header('main'); ?>
                             class="txt h-full flex flex-col justify-between items-start gap-[265px] lg:gap-[215px] xxs:gap-[165px] p-[40px] lg:p-[20px] pb-[50px] md:pb-[80px] text-white">
                             <div>
                                 <div class="bg-etBlue rounded-full px-[15px] py-[4px]">
-                                    <span class="font-light text-[18px]">Upcoming Event</span>
+                                    <span class="font-light text-[18px] sm:text-[12px]">Upcoming Event</span>
                                 </div>
                             </div>
 
@@ -308,10 +320,10 @@ get_header('main'); ?>
         <!-- nav -->
         <div class="et-events-slider-nav flex gap-[16px] absolute -bottom-[20px] left-[50%] -translate-x-[50%] z-[1]">
             <button
-                class="prev w-[60px] h-[60px] border border-[#d9d9d9] rounded-full text-[18px] hover:bg-etBlue hover:border-etBlue hover:text-white"><i
+                class="prev w-[60px] h-[60px] sm:w-[50px] sm:h-[50px] border border-[#d9d9d9] rounded-full text-[18px] hover:bg-etBlue hover:border-etBlue hover:text-white"><i
                     class="fa-solid fa-arrow-left-long"></i></button>
             <button
-                class="next w-[60px] h-[60px] border border-[#d9d9d9] rounded-full text-[18px] hover:bg-etBlue hover:border-etBlue hover:text-white"><i
+                class="next w-[60px] h-[60px] sm:w-[50px] sm:h-[50px] border border-[#d9d9d9] rounded-full text-[18px] hover:bg-etBlue hover:border-etBlue hover:text-white"><i
                     class="fa-solid fa-arrow-right-long"></i></button>
         </div>
     </div>
@@ -323,28 +335,28 @@ get_header('main'); ?>
     <!-- EVENTS SECTION START -->
     <section class="et-all-events">
         <div class="container mx-auto max-w-[1200px] px-[12px] xl:max-w-full">
-            <div
-                class="flex lg:flex-wrap items-center justify-center lg:justify-center gap-y-[15px] shadow-[0_4px_50px_rgba(0,0,0,0.07)] mb-[60px] rounded-full xxs:rounded-[30px] lg:py-[15px] px-[30px] pr-[6px] md:px-[20px] md:pr-[6px] py-[20px]">
-                <div
-                    class="et-events-tab-navs w-[100%] lg:w-full align-center flex xs:flex-wrap shrink-0 lg:justify-center gap-[45px] md:gap-[30px] xxs:gap-[20px] md:gap-y-[15px]">
-                    <button data-tab="et-event-tab0"
-                        class="tab-nav border-r border-[#d9d9d9] text-[14px] font-medium text-etBlack pr-[45px] pl-[10px] md:pr-[30px] xxs:pr-[20px] hover:text-etBlue group active"><span
-                            class="group-[.active]:text-etBlue">All</span></button>
-                    <button data-tab="et-event-tab1"
-                        class="tab-nav border-r border-[#d9d9d9] text-[14px] font-medium text-etBlack pr-[45px] pl-[10px] md:pr-[30px] xxs:pr-[20px] hover:text-etBlue group"><span
-                            class="group-[.active]:text-etBlue">KKR</span></button>
-                    <button data-tab="et-event-tab2"
-                        class="tab-nav border-r border-[#d9d9d9] text-[14px] font-medium text-etBlack pr-[45px] pl-[10px] md:pr-[30px] xxs:pr-[20px] hover:text-etBlue group"><span
-                            class="group-[.active]:text-etBlue">Talkshow</span></button>
-                    <button data-tab="et-event-tab3"
-                        class="tab-nav border-r border-[#d9d9d9] text-[14px] font-medium text-etBlack pr-[45px] pl-[10px] md:pr-[30px] xxs:pr-[20px] hover:text-etBlue group"><span
-                            class="group-[.active]:text-etBlue">Professional Workshop</span></button>
+            <div class="flex lg:flex-wrap items-center justify-center lg:justify-center gap-y-[15px] shadow-[0_4px_50px_rgba(0,0,0,0.07)] mb-[60px] rounded-full xxs:rounded-[30px] lg:py-[15px] px-[30px] pr-[6px] md:px-[20px] md:pr-[6px] py-[20px]">
+                <div class="et-events-tab-navs w-[100%] lg:w-full align-center flex xs:flex-wrap shrink-0 lg:justify-center gap-[45px] md:gap-[30px] xxs:gap-[20px] md:gap-y-[15px]">
+                    <button data-tab="et-event-tab0" class="tab-nav border-r border-[#d9d9d9] text-[14px] font-medium text-etBlack pr-[45px] pl-[10px] md:pr-[30px] xxs:pr-[20px] hover:text-etBlue group active">
+                        <span class="group-[.active]:text-etBlue">All</span>
+                    </button>
+                    <button data-tab="et-event-tab1" class="tab-nav border-r border-[#d9d9d9] text-[14px] font-medium text-etBlack pr-[45px] pl-[10px] md:pr-[30px] xxs:pr-[20px] hover:text-etBlue group">
+                        <span class="group-[.active]:text-etBlue">KKR</span>
+                    </button>
+                    <button data-tab="et-event-tab2" class="tab-nav border-r border-[#d9d9d9] text-[14px] font-medium text-etBlack pr-[45px] pl-[10px] md:pr-[30px] xxs:pr-[20px] hover:text-etBlue group">
+                        <span class="group-[.active]:text-etBlue">Talkshow</span>
+                    </button>
+                    <button data-tab="et-event-tab3" class="tab-nav border-r border-[#d9d9d9] text-[14px] font-medium text-etBlack pr-[45px] pl-[10px] md:pr-[30px] xxs:pr-[20px] hover:text-etBlue group">
+                        <span class="group-[.active]:text-etBlue">Professional Workshop</span>
+                    </button>
                     <button data-tab="et-event-tab4"
                         class="tab-nav border-r border-[#d9d9d9] text-[14px] font-medium text-etBlack pr-[45px] pl-[10px] md:pr-[30px] xxs:pr-[20px] hover:text-etBlue group"><span
-                            class=" group-[.active]:text-etBlue">Praise and Worship Night</span></button>
+                            class=" group-[.active]:text-etBlue">Praise and Worship Night</span>
+                        </button>
                     <button data-tab="et-event-tab5"
                         class="tab-nav border-r border-[#d9d9d9] text-[14px] font-medium text-etBlack pr-[45px] pl-[10px] md:pr-[30px] xxs:pr-[20px] hover:text-etBlue group"
-                        style="border: transparent;"><span class=" group-[.active]:text-etBlue">Ibadah</span></button>
+                        style="border: transparent;"><span class=" group-[.active]:text-etBlue">Ibadah</span>
+                    </button>
                 </div>
             </div>
 
@@ -357,7 +369,7 @@ get_header('main'); ?>
                             class="et-schedule flex md:flex-wrap gap-x-[30px] gap-y-[20px] justify-between rev-slide-up">
                             <!-- img -->
                             <div
-                                class="w-[270px] shadow-[0_4px_60px_rgba(18,96,254,0.12)] shrink-0 rounded-[20px] overflow-hidden">
+                                class="w-[270px] sm:w-[300px] sm:mx-auto shadow-[0_4px_60px_rgba(18,96,254,0.12)] shrink-0 rounded-[20px] overflow-hidden">
                                 <a href="<?= get_template_directory_uri() ?>/assets/new-img/3.png" class="image">
                                     <img src="<?= get_template_directory_uri() ?>/assets/new-img/3.png"
                                         alt="scehduled-event-cover">
@@ -366,12 +378,12 @@ get_header('main'); ?>
 
                             <!-- text -->
                             <div
-                                class="px-[37px] sm:px-[22px] py-[30px] shadow-[0_4px_60px_rgba(18,96,254,0.12)] w-full rounded-[20px] flex gap-y-[15px] xs:flex-col items-center xs:items-start">
+                                class="px-[37px] sm:px-[22px] py-[30px] shadow-[0_4px_60px_rgba(18,96,254,0.12)] w-full rounded-[20px] flex gap-y-[15px] xs:flex-col items-center xs:items-center">
                                 <div
-                                    class="et-schedule__heading w-[80%] pr-[40px] sm:pr-[25px] xs:pr-0 mr-[40px] sm:mr-[25px] xs:mr-0 border-r xs:border-r-0 border-[#d9d9d9]">
+                                    class="et-schedule__heading w-[80%] sm:w-full xs:text-center pr-[40px] sm:pr-[25px] xs:pr-0 mr-[40px] sm:mr-[25px] xs:mr-0 border-r xs:border-r-0 border-[#d9d9d9]">
                                     <!-- date & time -->
                                     <div
-                                        class="et-schedule-date-time border border-[rgba(217,217,217,0.89)] py-[7px] px-[15px] rounded-full inline-flex xxs:w-full items-center justify-center gap-x-[24px] gap-y-[10px] mb-[10px] xxs:border-0 xxs:p-0 xxs:justify-start">
+                                        class="et-schedule-date-time border border-[rgba(217,217,217,0.89)] py-[7px] px-[15px] rounded-full inline-flex xxs:w-full items-center justify-center gap-x-[24px] gap-y-[10px] mb-[10px] xxs:border-0 xxs:p-0 xs:justify-center">
                                         <div class="date flex items-center gap-[10px]">
                                             <span class="icon">
                                                 <svg width="16" height="17" viewBox="0 0 16 17" fill="none"
@@ -439,7 +451,7 @@ get_header('main'); ?>
                                     <h4 class="font-semibold text-etBlue text-[16px] my-[10px]">Format: Talkshow</h4>
 
                                     <!-- location -->
-                                    <div class="et-schedule-loaction flex items-center gap-[12px]">
+                                    <div class="et-schedule-loaction flex items-center gap-[12px] xs:justify-center">
                                         <span class="icon">
                                             <svg width="12" height="16" viewBox="0 0 12 16" fill="none"
                                                 xmlns="http://www.w3.org/2000/svg">
@@ -452,10 +464,10 @@ get_header('main'); ?>
                                     </div>
                                 </div>
 
-                                <div class="flex shrink-0 flex-col xxs:flex-row gap-[16px] xxs:gap-[10px]">
+                                <div class="flex shrink-0 flex-col gap-[16px] xxs:gap-[10px] xs:flex-wrap xs:jusity-center">
                                     <!-- <a href="#" class="et-btn border w-[180px] bg-etBlue text-white inline-flex items-center justify-center h-[45px] px-[22px] xxs:px-[16px] font-normal text-[17px] rounded-full hover:!bg-etBlack hover:!text-white">View More</a> -->
                                     <a href="#"
-                                        class="et-btn border w-[180px] bg-etBlack text-white inline-flex items-center justify-center h-[45px] px-[22px] xxs:px-[16px] font-normal text-[17px] rounded-full hover:!bg-etBlue hover:!text-white">Coming Soon</a>
+                                        class="et-btn border w-[180px] bg-etBlue text-white inline-flex items-center justify-center h-[45px] px-[22px] xxs:px-[16px] font-normal text-[17px] rounded-full hover:!bg-etBlack hover:!text-white">Coming Soon</a>
                                 </div>
                             </div>
                         </div>
@@ -464,7 +476,7 @@ get_header('main'); ?>
                             class="et-schedule flex md:flex-wrap gap-x-[30px] gap-y-[20px] justify-between rev-slide-up">
                             <!-- img -->
                             <div
-                                class="w-[270px] shadow-[0_4px_60px_rgba(18,96,254,0.12)] shrink-0 rounded-[20px] overflow-hidden">
+                                class="w-[270px] sm:w-[300px] sm:mx-auto shadow-[0_4px_60px_rgba(18,96,254,0.12)] shrink-0 rounded-[20px] overflow-hidden">
                                 <a href="<?= get_template_directory_uri() ?>/assets/new-img/4.png" class="image">
                                     <img src="<?= get_template_directory_uri() ?>/assets/new-img/4.png"
                                         alt="scehduled-event-cover">
@@ -472,12 +484,12 @@ get_header('main'); ?>
                                 </div>
                             <!-- text -->
                             <div
-                                class="px-[37px] sm:px-[22px] py-[30px] shadow-[0_4px_60px_rgba(18,96,254,0.12)] w-full rounded-[20px] flex gap-y-[15px] xs:flex-col items-center xs:items-start">
+                                class="px-[37px] sm:px-[22px] py-[30px] shadow-[0_4px_60px_rgba(18,96,254,0.12)] w-full rounded-[20px] flex gap-y-[15px] xs:flex-col items-center xs:items-center">
                                 <div
-                                    class="et-schedule__heading w-[80%] pr-[40px] sm:pr-[25px] xs:pr-0 mr-[40px] sm:mr-[25px] xs:mr-0 border-r xs:border-r-0 border-[#d9d9d9]">
+                                    class="et-schedule__heading w-[80%] sm:w-full xs:text-center pr-[40px] sm:pr-[25px] xs:pr-0 mr-[40px] sm:mr-[25px] xs:mr-0 border-r xs:border-r-0 border-[#d9d9d9]">
                                     <!-- date & time -->
                                     <div
-                                        class="et-schedule-date-time border border-[rgba(217,217,217,0.89)] py-[7px] px-[15px] rounded-full inline-flex xxs:w-full items-center justify-center gap-x-[24px] gap-y-[10px] mb-[10px] xxs:border-0 xxs:p-0 xxs:justify-start">
+                                        class="et-schedule-date-time border border-[rgba(217,217,217,0.89)] py-[7px] px-[15px] rounded-full inline-flex xxs:w-full items-center justify-center gap-x-[24px] gap-y-[10px] mb-[10px] xxs:border-0 xxs:p-0 xs:justify-center">
                                         <div class="date flex items-center gap-[10px]">
                                             <span class="icon">
                                                 <svg width="16" height="17" viewBox="0 0 16 17" fill="none"
@@ -547,7 +559,7 @@ get_header('main'); ?>
                                         Workshop </h4>
 
                                     <!-- location -->
-                                    <div class="et-schedule-loaction flex items-center gap-[12px]">
+                                    <div class="et-schedule-loaction flex items-center gap-[12px] xs:justify-center">
                                         <span class="icon">
                                             <svg width="12" height="16" viewBox="0 0 12 16" fill="none"
                                                 xmlns="http://www.w3.org/2000/svg">
@@ -560,12 +572,12 @@ get_header('main'); ?>
                                     </div>
                                 </div>
 
-                                <div class="flex shrink-0 flex-col xxs:flex-row gap-[16px] xxs:gap-[10px]">
+                                <div class="flex shrink-0 flex-col gap-[16px] xxs:gap-[10px] xs:flex-wrap xs:jusity-center">
                                     <button href="#"
                                         class="myBtn et-btn border w-[180px] bg-etBlue text-white inline-flex items-center justify-center h-[45px] px-[22px] xxs:px-[16px] font-normal text-[17px] rounded-full hover:!bg-etBlack hover:!text-white">View
                                         More</button>
                                     <a href="<?= home_url()?>/rsvp"
-                                        class="et-btn border w-[180px] bg-etBlack text-white inline-flex items-center justify-center h-[45px] px-[22px] xxs:px-[16px] font-normal text-[17px] rounded-full hover:!bg-etBlue hover:!text-white">Buy
+                                        class="et-btn border w-[180px] bg-etBlue text-white inline-flex items-center justify-center h-[45px] px-[22px] xxs:px-[16px] font-normal text-[17px] rounded-full hover:!bg-etBlack hover:!text-white">Buy
                                         Tickets</a>
                                 </div>
                             </div>
@@ -575,7 +587,7 @@ get_header('main'); ?>
                             class="et-schedule flex md:flex-wrap gap-x-[30px] gap-y-[20px] justify-between rev-slide-up">
                             <!-- img -->
                             <div
-                                class="w-[270px] shadow-[0_4px_60px_rgba(18,96,254,0.12)] shrink-0 rounded-[20px] overflow-hidden">
+                                class="w-[270px] sm:w-[300px] sm:mx-auto shadow-[0_4px_60px_rgba(18,96,254,0.12)] shrink-0 rounded-[20px] overflow-hidden">
                                 <a href="<?= get_template_directory_uri() ?>/assets/new-img/4.png" class="image">
                                     <img src="<?= get_template_directory_uri() ?>/assets/new-img/4.png"
                                         alt="scehduled-event-cover">
@@ -584,12 +596,12 @@ get_header('main'); ?>
 
                             <!-- text -->
                             <div
-                                class="px-[37px] sm:px-[22px] py-[30px] shadow-[0_4px_60px_rgba(18,96,254,0.12)] w-full rounded-[20px] flex gap-y-[15px] xs:flex-col items-center xs:items-start">
+                                class="px-[37px] sm:px-[22px] py-[30px] shadow-[0_4px_60px_rgba(18,96,254,0.12)] w-full rounded-[20px] flex gap-y-[15px] xs:flex-col items-center xs:items-center">
                                 <div
-                                    class="et-schedule__heading w-[80%] pr-[40px] sm:pr-[25px] xs:pr-0 mr-[40px] sm:mr-[25px] xs:mr-0 border-r xs:border-r-0 border-[#d9d9d9]">
+                                    class="et-schedule__heading w-[80%] sm:w-full xs:text-center pr-[40px] sm:pr-[25px] xs:pr-0 mr-[40px] sm:mr-[25px] xs:mr-0 border-r xs:border-r-0 border-[#d9d9d9]">
                                     <!-- date & time -->
                                     <div
-                                        class="et-schedule-date-time border border-[rgba(217,217,217,0.89)] py-[7px] px-[15px] rounded-full inline-flex xxs:w-full items-center justify-center gap-x-[24px] gap-y-[10px] mb-[10px] xxs:border-0 xxs:p-0 xxs:justify-start">
+                                        class="et-schedule-date-time border border-[rgba(217,217,217,0.89)] py-[7px] px-[15px] rounded-full inline-flex xxs:w-full items-center justify-center gap-x-[24px] gap-y-[10px] mb-[10px] xxs:border-0 xxs:p-0 xs:justify-center">
                                         <div class="date flex items-center gap-[10px]">
                                             <span class="icon">
                                                 <svg width="16" height="17" viewBox="0 0 16 17" fill="none"
@@ -658,7 +670,7 @@ get_header('main'); ?>
                                         Worship Night</h4>
 
                                     <!-- location -->
-                                    <div class="et-schedule-loaction flex items-center gap-[12px]">
+                                    <div class="et-schedule-loaction flex items-center gap-[12px] xs:justify-center">
                                         <span class="icon">
                                             <svg width="12" height="16" viewBox="0 0 12 16" fill="none"
                                                 xmlns="http://www.w3.org/2000/svg">
@@ -671,10 +683,10 @@ get_header('main'); ?>
                                     </div>
                                 </div>
 
-                                <div class="flex shrink-0 flex-col xxs:flex-row gap-[16px] xxs:gap-[10px]">
+                                <div class="flex shrink-0 flex-col gap-[16px] xxs:gap-[10px] xs:flex-wrap xs:jusity-center">
                                     <!-- <a href="#" class="et-btn border w-[180px] bg-etBlue text-white inline-flex items-center justify-center h-[45px] px-[22px] xxs:px-[16px] font-normal text-[17px] rounded-full hover:!bg-etBlack hover:!text-white">View More</a> -->
                                     <a href="#"
-                                        class="et-btn border w-[180px] bg-etBlack text-white inline-flex items-center justify-center h-[45px] px-[22px] xxs:px-[16px] font-normal text-[17px] rounded-full hover:!bg-etBlue hover:!text-white">Coming Soon</a>
+                                        class="et-btn border w-[180px] bg-etBlue text-white inline-flex items-center justify-center h-[45px] px-[22px] xxs:px-[16px] font-normal text-[17px] rounded-full hover:!bg-etBlack hover:!text-white">Coming Soon</a>
                                 </div>
                             </div>
                         </div>
@@ -683,7 +695,7 @@ get_header('main'); ?>
                             class="et-schedule flex md:flex-wrap gap-x-[30px] gap-y-[20px] justify-between rev-slide-up">
                             <!-- img -->
                             <div
-                                class="w-[270px] shadow-[0_4px_60px_rgba(18,96,254,0.12)] shrink-0 rounded-[20px] overflow-hidden">
+                                class="w-[270px] sm:w-[300px] sm:mx-auto shadow-[0_4px_60px_rgba(18,96,254,0.12)] shrink-0 rounded-[20px] overflow-hidden">
                                 <a href="<?= get_template_directory_uri() ?>/assets/new-img/2.png" class="image">
                                     <img src="<?= get_template_directory_uri() ?>/assets/new-img/2.png"
                                         alt="scehduled-event-cover">
@@ -693,12 +705,12 @@ get_header('main'); ?>
 
                             <!-- text -->
                             <div
-                                class="px-[37px] sm:px-[22px] py-[30px] shadow-[0_4px_60px_rgba(18,96,254,0.12)] w-full rounded-[20px] flex gap-y-[15px] xs:flex-col items-center xs:items-start">
+                                class="px-[37px] sm:px-[22px] py-[30px] shadow-[0_4px_60px_rgba(18,96,254,0.12)] w-full rounded-[20px] flex gap-y-[15px] xs:flex-col items-center xs:items-center">
                                 <div
-                                    class="et-schedule__heading w-[80%] pr-[40px] sm:pr-[25px] xs:pr-0 mr-[40px] sm:mr-[25px] xs:mr-0 border-r xs:border-r-0 border-[#d9d9d9]">
+                                    class="et-schedule__heading w-[80%] sm:w-full xs:text-center pr-[40px] sm:pr-[25px] xs:pr-0 mr-[40px] sm:mr-[25px] xs:mr-0 border-r xs:border-r-0 border-[#d9d9d9]">
                                     <!-- date & time -->
                                     <div
-                                        class="et-schedule-date-time border border-[rgba(217,217,217,0.89)] py-[7px] px-[15px] rounded-full inline-flex xxs:w-full items-center justify-center gap-x-[24px] gap-y-[10px] mb-[10px] xxs:border-0 xxs:p-0 xxs:justify-start">
+                                        class="et-schedule-date-time border border-[rgba(217,217,217,0.89)] py-[7px] px-[15px] rounded-full inline-flex xxs:w-full items-center justify-center gap-x-[24px] gap-y-[10px] mb-[10px] xxs:border-0 xxs:p-0 xs:justify-center">
                                         <div class="date flex items-center gap-[10px]">
                                             <span class="icon">
                                                 <svg width="16" height="17" viewBox="0 0 16 17" fill="none"
@@ -766,7 +778,7 @@ get_header('main'); ?>
                                     <h4 class="font-semibold text-etBlue text-[16px] my-[10px]">Format: Ibadah</h4>
 
                                     <!-- location -->
-                                    <div class="et-schedule-loaction flex items-center gap-[12px]">
+                                    <div class="et-schedule-loaction flex items-center gap-[12px] xs:justify-center">
                                         <span class="icon">
                                             <svg width="12" height="16" viewBox="0 0 12 16" fill="none"
                                                 xmlns="http://www.w3.org/2000/svg">
@@ -779,10 +791,10 @@ get_header('main'); ?>
                                     </div>
                                 </div>
 
-                                <div class="flex shrink-0 flex-col xxs:flex-row gap-[16px] xxs:gap-[10px]">
+                                <div class="flex shrink-0 flex-col gap-[16px] xxs:gap-[10px] xs:flex-wrap xs:jusity-center">
                                     <!-- <a href="#" class="et-btn border w-[180px] bg-etBlue text-white inline-flex items-center justify-center h-[45px] px-[22px] xxs:px-[16px] font-normal text-[17px] rounded-full hover:!bg-etBlack hover:!text-white">View More</a> -->
                                     <a href="#"
-                                        class="et-btn border w-[180px] bg-etBlack text-white inline-flex items-center justify-center h-[45px] px-[22px] xxs:px-[16px] font-normal text-[17px] rounded-full hover:!bg-etBlue hover:!text-white">Coming
+                                        class="et-btn border w-[180px] bg-etBlue text-white inline-flex items-center justify-center h-[45px] px-[22px] xxs:px-[16px] font-normal text-[17px] rounded-full hover:!bg-etBlack hover:!text-white">Coming
                                         Soon</a>
                                 </div>
                             </div>
@@ -792,7 +804,7 @@ get_header('main'); ?>
                             class="et-schedule flex md:flex-wrap gap-x-[30px] gap-y-[20px] justify-between rev-slide-up">
                             <!-- img -->
                             <div
-                                class="w-[270px] shadow-[0_4px_60px_rgba(18,96,254,0.12)] shrink-0 rounded-[20px] overflow-hidden">
+                                class="w-[270px] sm:w-[300px] sm:mx-auto shadow-[0_4px_60px_rgba(18,96,254,0.12)] shrink-0 rounded-[20px] overflow-hidden">
                                 
                                     <a href="<?= get_template_directory_uri() ?>/assets/new-img/4.png" class="image">
                                         <img src="<?= get_template_directory_uri() ?>/assets/new-img/4.png"
@@ -802,12 +814,12 @@ get_header('main'); ?>
 
                             <!-- text -->
                             <div
-                                class="px-[37px] sm:px-[22px] py-[30px] shadow-[0_4px_60px_rgba(18,96,254,0.12)] w-full rounded-[20px] flex gap-y-[15px] xs:flex-col items-center xs:items-start">
+                                class="px-[37px] sm:px-[22px] py-[30px] shadow-[0_4px_60px_rgba(18,96,254,0.12)] w-full rounded-[20px] flex gap-y-[15px] xs:flex-col items-center xs:items-center">
                                 <div
-                                    class="et-schedule__heading w-[80%] pr-[40px] sm:pr-[25px] xs:pr-0 mr-[40px] sm:mr-[25px] xs:mr-0 border-r xs:border-r-0 border-[#d9d9d9]">
+                                    class="et-schedule__heading w-[80%] sm:w-full xs:text-center pr-[40px] sm:pr-[25px] xs:pr-0 mr-[40px] sm:mr-[25px] xs:mr-0 border-r xs:border-r-0 border-[#d9d9d9]">
                                     <!-- date & time -->
                                     <div
-                                        class="et-schedule-date-time border border-[rgba(217,217,217,0.89)] py-[7px] px-[15px] rounded-full inline-flex xxs:w-full items-center justify-center gap-x-[24px] gap-y-[10px] mb-[10px] xxs:border-0 xxs:p-0 xxs:justify-start">
+                                        class="et-schedule-date-time border border-[rgba(217,217,217,0.89)] py-[7px] px-[15px] rounded-full inline-flex xxs:w-full items-center justify-center gap-x-[24px] gap-y-[10px] mb-[10px] xxs:border-0 xxs:p-0 xs:justify-center">
                                         <div class="date flex items-center gap-[10px]">
                                             <span class="icon">
                                                 <svg width="16" height="17" viewBox="0 0 16 17" fill="none"
@@ -875,7 +887,7 @@ get_header('main'); ?>
                                     <h4 class="font-semibold text-etBlue text-[16px] my-[10px]">Format: Talkshow</h4>
 
                                     <!-- location -->
-                                    <div class="et-schedule-loaction flex items-center gap-[12px]">
+                                    <div class="et-schedule-loaction flex items-center gap-[12px] xs:justify-center">
                                         <span class="icon">
                                             <svg width="12" height="16" viewBox="0 0 12 16" fill="none"
                                                 xmlns="http://www.w3.org/2000/svg">
@@ -888,10 +900,10 @@ get_header('main'); ?>
                                     </div>
                                 </div>
 
-                                <div class="flex shrink-0 flex-col xxs:flex-row gap-[16px] xxs:gap-[10px]">
+                                <div class="flex shrink-0 flex-col gap-[16px] xxs:gap-[10px] xs:flex-wrap xs:jusity-center">
                                     <!-- <a href="#" class="et-btn border w-[180px] bg-etBlue text-white inline-flex items-center justify-center h-[45px] px-[22px] xxs:px-[16px] font-normal text-[17px] rounded-full hover:!bg-etBlack hover:!text-white">View More</a> -->
                                     <a href="#"
-                                        class="et-btn border w-[180px] bg-etBlack text-white inline-flex items-center justify-center h-[45px] px-[22px] xxs:px-[16px] font-normal text-[17px] rounded-full hover:!bg-etBlue hover:!text-white">Coming
+                                        class="et-btn border w-[180px] bg-etBlue text-white inline-flex items-center justify-center h-[45px] px-[22px] xxs:px-[16px] font-normal text-[17px] rounded-full hover:!bg-etBlack hover:!text-white">Coming
                                         Soon</a>
                                 </div>
                             </div>
@@ -900,7 +912,7 @@ get_header('main'); ?>
                             class="et-schedule flex md:flex-wrap gap-x-[30px] gap-y-[20px] justify-between rev-slide-up">
                             <!-- img -->
                             <div
-                                class="w-[270px] shadow-[0_4px_60px_rgba(18,96,254,0.12)] shrink-0 rounded-[20px] overflow-hidden">
+                                class="w-[270px] sm:w-[300px] sm:mx-auto shadow-[0_4px_60px_rgba(18,96,254,0.12)] shrink-0 rounded-[20px] overflow-hidden">
                                 
                                     <a href="<?= get_template_directory_uri() ?>/assets/new-img/1.png" class="image">
                                     <img src="<?= get_template_directory_uri() ?>/assets/new-img/1.png"
@@ -910,12 +922,12 @@ get_header('main'); ?>
 
                             <!-- text -->
                             <div
-                                class="px-[37px] sm:px-[22px] py-[30px] shadow-[0_4px_60px_rgba(18,96,254,0.12)] w-full rounded-[20px] flex gap-y-[15px] xs:flex-col items-center xs:items-start">
+                                class="px-[37px] sm:px-[22px] py-[30px] shadow-[0_4px_60px_rgba(18,96,254,0.12)] w-full rounded-[20px] flex gap-y-[15px] xs:flex-col items-center xs:items-center">
                                 <div
-                                    class="et-schedule__heading w-[80%] pr-[40px] sm:pr-[25px] xs:pr-0 mr-[40px] sm:mr-[25px] xs:mr-0 xs:border-r-0 border-[#d9d9d9]">
+                                    class="et-schedule__heading w-[80%] sm:w-full xs:text-center pr-[40px] sm:pr-[25px] xs:pr-0 mr-[40px] sm:mr-[25px] xs:mr-0 xs:border-r-0 border-[#d9d9d9]">
                                     <!-- date & time -->
                                     <div
-                                        class="et-schedule-date-time border border-[rgba(217,217,217,0.89)] py-[7px] px-[15px] rounded-full inline-flex xxs:w-full items-center justify-center gap-x-[24px] gap-y-[10px] mb-[10px] xxs:border-0 xxs:p-0 xxs:justify-start">
+                                        class="et-schedule-date-time border border-[rgba(217,217,217,0.89)] py-[7px] px-[15px] rounded-full inline-flex xxs:w-full items-center justify-center gap-x-[24px] gap-y-[10px] mb-[10px] xxs:border-0 xxs:p-0 xs:justify-center">
                                         <div class="date flex items-center gap-[10px]">
                                             <span class="icon">
                                                 <svg width="16" height="17" viewBox="0 0 16 17" fill="none"
@@ -983,7 +995,7 @@ get_header('main'); ?>
                                     <h4 class="font-semibold text-etBlue text-[16px] my-[10px]">Format: KKR</h4>
 
                                     <!-- location -->
-                                    <div class="et-schedule-loaction flex items-center gap-[12px]">
+                                    <div class="et-schedule-loaction flex items-center gap-[12px] xs:justify-center">
                                         <span class="icon">
                                             <svg width="12" height="16" viewBox="0 0 12 16" fill="none"
                                                 xmlns="http://www.w3.org/2000/svg">
@@ -996,10 +1008,10 @@ get_header('main'); ?>
                                     </div>
                                 </div>
 
-                                <div class="flex shrink-0 flex-col xxs:flex-row gap-[16px] xxs:gap-[10px]">
+                                <div class="flex shrink-0 flex-col gap-[16px] xxs:gap-[10px] xs:flex-wrap xs:jusity-center">
                                     <!-- <a href="#" class="et-btn border w-[180px] bg-etBlue text-white inline-flex items-center justify-center h-[45px] px-[22px] xxs:px-[16px] font-normal text-[17px] rounded-full hover:!bg-etBlack hover:!text-white">View More</a> -->
                                     <!-- <a href="#"
-                                        class="et-btn border w-[180px] bg-etBlack text-white inline-flex items-center justify-center h-[45px] px-[22px] xxs:px-[16px] font-normal text-[17px] rounded-full hover:!bg-etBlue hover:!text-white">Coming
+                                        class="et-btn border w-[180px] bg-etBlue text-white inline-flex items-center justify-center h-[45px] px-[22px] xxs:px-[16px] font-normal text-[17px] rounded-full hover:!bg-etBlack hover:!text-white">Coming
                                         Soon</a> -->
                                 </div>
                             </div>
@@ -1013,7 +1025,7 @@ get_header('main'); ?>
                             class="et-schedule flex md:flex-wrap gap-x-[30px] gap-y-[20px] justify-between rev-slide-up">
                             <!-- img -->
                             <div
-                                class="w-[270px] shadow-[0_4px_60px_rgba(18,96,254,0.12)] shrink-0 rounded-[20px] overflow-hidden">
+                                class="w-[270px] sm:w-[300px] sm:mx-auto shadow-[0_4px_60px_rgba(18,96,254,0.12)] shrink-0 rounded-[20px] overflow-hidden">
                                 
                                     <a href="<?= get_template_directory_uri() ?>/assets/new-img/1.png" class="image">
                                         <img src="<?= get_template_directory_uri() ?>/assets/new-img/1.png"
@@ -1023,12 +1035,12 @@ get_header('main'); ?>
 
                             <!-- text -->
                             <div
-                                class="px-[37px] sm:px-[22px] py-[30px] shadow-[0_4px_60px_rgba(18,96,254,0.12)] w-full rounded-[20px] flex gap-y-[15px] xs:flex-col items-center xs:items-start">
+                                class="px-[37px] sm:px-[22px] py-[30px] shadow-[0_4px_60px_rgba(18,96,254,0.12)] w-full rounded-[20px] flex gap-y-[15px] xs:flex-col items-center xs:items-center">
                                 <div
-                                    class="et-schedule__heading w-[80%] pr-[40px] sm:pr-[25px] xs:pr-0 mr-[40px] sm:mr-[25px] xs:mr-0 xs:border-r-0 border-[#d9d9d9]">
+                                    class="et-schedule__heading w-[80%] sm:w-full xs:text-center pr-[40px] sm:pr-[25px] xs:pr-0 mr-[40px] sm:mr-[25px] xs:mr-0 xs:border-r-0 border-[#d9d9d9]">
                                     <!-- date & time -->
                                     <div
-                                        class="et-schedule-date-time border border-[rgba(217,217,217,0.89)] py-[7px] px-[15px] rounded-full inline-flex xxs:w-full items-center justify-center gap-x-[24px] gap-y-[10px] mb-[10px] xxs:border-0 xxs:p-0 xxs:justify-start">
+                                        class="et-schedule-date-time border border-[rgba(217,217,217,0.89)] py-[7px] px-[15px] rounded-full inline-flex xxs:w-full items-center justify-center gap-x-[24px] gap-y-[10px] mb-[10px] xxs:border-0 xxs:p-0 xs:justify-center">
                                         <div class="date flex items-center gap-[10px]">
                                             <span class="icon">
                                                 <svg width="16" height="17" viewBox="0 0 16 17" fill="none"
@@ -1096,7 +1108,7 @@ get_header('main'); ?>
                                     <h4 class="font-semibold text-etBlue text-[16px] my-[10px]">Format: KKR</h4>
 
                                     <!-- location -->
-                                    <div class="et-schedule-loaction flex items-center gap-[12px]">
+                                    <div class="et-schedule-loaction flex items-center gap-[12px] xs:justify-center">
                                         <span class="icon">
                                             <svg width="12" height="16" viewBox="0 0 12 16" fill="none"
                                                 xmlns="http://www.w3.org/2000/svg">
@@ -1109,10 +1121,10 @@ get_header('main'); ?>
                                     </div>
                                 </div>
 
-                                <div class="flex shrink-0 flex-col xxs:flex-row gap-[16px] xxs:gap-[10px]">
+                                <div class="flex shrink-0 flex-col gap-[16px] xxs:gap-[10px] xs:flex-wrap xs:jusity-center">
                                     <!-- <a href="#" class="et-btn border w-[180px] bg-etBlue text-white inline-flex items-center justify-center h-[45px] px-[22px] xxs:px-[16px] font-normal text-[17px] rounded-full hover:!bg-etBlack hover:!text-white">View More</a> -->
                                     <!-- <a href="#"
-                                        class="et-btn border w-[180px] bg-etBlack text-white inline-flex items-center justify-center h-[45px] px-[22px] xxs:px-[16px] font-normal text-[17px] rounded-full hover:!bg-etBlue hover:!text-white">Coming
+                                        class="et-btn border w-[180px] bg-etBlue text-white inline-flex items-center justify-center h-[45px] px-[22px] xxs:px-[16px] font-normal text-[17px] rounded-full hover:!bg-etBlack hover:!text-white">Coming
                                         Soon</a> -->
                                 </div>
                             </div>
@@ -1127,7 +1139,7 @@ get_header('main'); ?>
                             class="et-schedule flex md:flex-wrap gap-x-[30px] gap-y-[20px] justify-between rev-slide-up">
                             <!-- img -->
                             <div
-                                class="w-[270px] shadow-[0_4px_60px_rgba(18,96,254,0.12)] shrink-0 rounded-[20px] overflow-hidden">
+                                class="w-[270px] sm:w-[300px] sm:mx-auto shadow-[0_4px_60px_rgba(18,96,254,0.12)] shrink-0 rounded-[20px] overflow-hidden">
                                     <a href="<?= get_template_directory_uri() ?>/assets/new-img/3.png" class="image">
                                         <img src="<?= get_template_directory_uri() ?>/assets/new-img/3.png"
                                             alt="scehduled-event-cover">
@@ -1136,12 +1148,12 @@ get_header('main'); ?>
 
                             <!-- text -->
                             <div
-                                class="px-[37px] sm:px-[22px] py-[30px] shadow-[0_4px_60px_rgba(18,96,254,0.12)] w-full rounded-[20px] flex gap-y-[15px] xs:flex-col items-center xs:items-start">
+                                class="px-[37px] sm:px-[22px] py-[30px] shadow-[0_4px_60px_rgba(18,96,254,0.12)] w-full rounded-[20px] flex gap-y-[15px] xs:flex-col items-center xs:items-center">
                                 <div
-                                    class="et-schedule__heading w-[80%] pr-[40px] sm:pr-[25px] xs:pr-0 mr-[40px] sm:mr-[25px] xs:mr-0 border-r xs:border-r-0 border-[#d9d9d9]">
+                                    class="et-schedule__heading w-[80%] sm:w-full xs:text-center pr-[40px] sm:pr-[25px] xs:pr-0 mr-[40px] sm:mr-[25px] xs:mr-0 border-r xs:border-r-0 border-[#d9d9d9]">
                                     <!-- date & time -->
                                     <div
-                                        class="et-schedule-date-time border border-[rgba(217,217,217,0.89)] py-[7px] px-[15px] rounded-full inline-flex xxs:w-full items-center justify-center gap-x-[24px] gap-y-[10px] mb-[10px] xxs:border-0 xxs:p-0 xxs:justify-start">
+                                        class="et-schedule-date-time border border-[rgba(217,217,217,0.89)] py-[7px] px-[15px] rounded-full inline-flex xxs:w-full items-center justify-center gap-x-[24px] gap-y-[10px] mb-[10px] xxs:border-0 xxs:p-0 xs:justify-center">
                                         <div class="date flex items-center gap-[10px]">
                                             <span class="icon">
                                                 <svg width="16" height="17" viewBox="0 0 16 17" fill="none"
@@ -1209,7 +1221,7 @@ get_header('main'); ?>
                                     <h4 class="font-semibold text-etBlue text-[16px] my-[10px]">Format: Talkshow</h4>
 
                                     <!-- location -->
-                                    <div class="et-schedule-loaction flex items-center gap-[12px]">
+                                    <div class="et-schedule-loaction flex items-center gap-[12px] xs:justify-center">
                                         <span class="icon">
                                             <svg width="12" height="16" viewBox="0 0 12 16" fill="none"
                                                 xmlns="http://www.w3.org/2000/svg">
@@ -1222,10 +1234,10 @@ get_header('main'); ?>
                                     </div>
                                 </div>
 
-                                <div class="flex shrink-0 flex-col xxs:flex-row gap-[16px] xxs:gap-[10px]">
+                                <div class="flex shrink-0 flex-col gap-[16px] xxs:gap-[10px] xs:flex-wrap xs:jusity-center">
                                     <!-- <a href="#" class="et-btn border w-[180px] bg-etBlue text-white inline-flex items-center justify-center h-[45px] px-[22px] xxs:px-[16px] font-normal text-[17px] rounded-full hover:!bg-etBlack hover:!text-white">View More</a> -->
                                     <a href="#"
-                                        class="et-btn border w-[180px] bg-etBlack text-white inline-flex items-center justify-center h-[45px] px-[22px] xxs:px-[16px] font-normal text-[17px] rounded-full hover:!bg-etBlue hover:!text-white">Coming
+                                        class="et-btn border w-[180px] bg-etBlue text-white inline-flex items-center justify-center h-[45px] px-[22px] xxs:px-[16px] font-normal text-[17px] rounded-full hover:!bg-etBlack hover:!text-white">Coming
                                         Soon</a>
                                 </div>
                             </div>
@@ -1235,7 +1247,7 @@ get_header('main'); ?>
                             class="et-schedule flex md:flex-wrap gap-x-[30px] gap-y-[20px] justify-between rev-slide-up">
                             <!-- img -->
                             <div
-                                class="w-[270px] shadow-[0_4px_60px_rgba(18,96,254,0.12)] shrink-0 rounded-[20px] overflow-hidden">
+                                class="w-[270px] sm:w-[300px] sm:mx-auto shadow-[0_4px_60px_rgba(18,96,254,0.12)] shrink-0 rounded-[20px] overflow-hidden">
                                 
                                     <a href="<?= get_template_directory_uri() ?>/assets/new-img/4.png" class="image">
                                     <img src="<?= get_template_directory_uri() ?>/assets/new-img/4.png"
@@ -1244,12 +1256,12 @@ get_header('main'); ?>
 
                             <!-- text -->
                             <div
-                                class="px-[37px] sm:px-[22px] py-[30px] shadow-[0_4px_60px_rgba(18,96,254,0.12)] w-full rounded-[20px] flex gap-y-[15px] xs:flex-col items-center xs:items-start">
+                                class="px-[37px] sm:px-[22px] py-[30px] shadow-[0_4px_60px_rgba(18,96,254,0.12)] w-full rounded-[20px] flex gap-y-[15px] xs:flex-col items-center xs:items-center">
                                 <div
-                                    class="et-schedule__heading w-[80%] pr-[40px] sm:pr-[25px] xs:pr-0 mr-[40px] sm:mr-[25px] xs:mr-0 border-r xs:border-r-0 border-[#d9d9d9]">
+                                    class="et-schedule__heading w-[80%] sm:w-full xs:text-center pr-[40px] sm:pr-[25px] xs:pr-0 mr-[40px] sm:mr-[25px] xs:mr-0 border-r xs:border-r-0 border-[#d9d9d9]">
                                     <!-- date & time -->
                                     <div
-                                        class="et-schedule-date-time border border-[rgba(217,217,217,0.89)] py-[7px] px-[15px] rounded-full inline-flex xxs:w-full items-center justify-center gap-x-[24px] gap-y-[10px] mb-[10px] xxs:border-0 xxs:p-0 xxs:justify-start">
+                                        class="et-schedule-date-time border border-[rgba(217,217,217,0.89)] py-[7px] px-[15px] rounded-full inline-flex xxs:w-full items-center justify-center gap-x-[24px] gap-y-[10px] mb-[10px] xxs:border-0 xxs:p-0 xs:justify-center">
                                         <div class="date flex items-center gap-[10px]">
                                             <span class="icon">
                                                 <svg width="16" height="17" viewBox="0 0 16 17" fill="none"
@@ -1317,7 +1329,7 @@ get_header('main'); ?>
                                     <h4 class="font-semibold text-etBlue text-[16px] my-[10px]">Format: Talkshow</h4>
 
                                     <!-- location -->
-                                    <div class="et-schedule-loaction flex items-center gap-[12px]">
+                                    <div class="et-schedule-loaction flex items-center gap-[12px] xs:justify-center">
                                         <span class="icon">
                                             <svg width="12" height="16" viewBox="0 0 12 16" fill="none"
                                                 xmlns="http://www.w3.org/2000/svg">
@@ -1330,10 +1342,10 @@ get_header('main'); ?>
                                     </div>
                                 </div>
 
-                                <div class="flex shrink-0 flex-col xxs:flex-row gap-[16px] xxs:gap-[10px]">
+                                <div class="flex shrink-0 flex-col gap-[16px] xxs:gap-[10px] xs:flex-wrap xs:jusity-center">
                                     <!-- <a href="#" class="et-btn border w-[180px] bg-etBlue text-white inline-flex items-center justify-center h-[45px] px-[22px] xxs:px-[16px] font-normal text-[17px] rounded-full hover:!bg-etBlack hover:!text-white">View More</a> -->
                                     <a href="#"
-                                        class="et-btn border w-[180px] bg-etBlack text-white inline-flex items-center justify-center h-[45px] px-[22px] xxs:px-[16px] font-normal text-[17px] rounded-full hover:!bg-etBlue hover:!text-white">Coming
+                                        class="et-btn border w-[180px] bg-etBlue text-white inline-flex items-center justify-center h-[45px] px-[22px] xxs:px-[16px] font-normal text-[17px] rounded-full hover:!bg-etBlack hover:!text-white">Coming
                                         Soon</a>
                                 </div>
                             </div>
@@ -1348,7 +1360,7 @@ get_header('main'); ?>
                             class="et-schedule flex md:flex-wrap gap-x-[30px] gap-y-[20px] justify-between rev-slide-up">
                             <!-- img -->
                             <div
-                                class="w-[270px] shadow-[0_4px_60px_rgba(18,96,254,0.12)] shrink-0 rounded-[20px] overflow-hidden">
+                                class="w-[270px] sm:w-[300px] sm:mx-auto shadow-[0_4px_60px_rgba(18,96,254,0.12)] shrink-0 rounded-[20px] overflow-hidden">
                                 <a href="<?= get_template_directory_uri() ?>/assets/new-img/4.png" class="image">
                                     <img src="<?= get_template_directory_uri() ?>/assets/new-img/4.png"
                                         alt="scehduled-event-cover">
@@ -1356,12 +1368,12 @@ get_header('main'); ?>
                                 </div>
                             <!-- text -->
                             <div
-                                class="px-[37px] sm:px-[22px] py-[30px] shadow-[0_4px_60px_rgba(18,96,254,0.12)] w-full rounded-[20px] flex gap-y-[15px] xs:flex-col items-center xs:items-start">
+                                class="px-[37px] sm:px-[22px] py-[30px] shadow-[0_4px_60px_rgba(18,96,254,0.12)] w-full rounded-[20px] flex gap-y-[15px] xs:flex-col items-center xs:items-center">
                                 <div
-                                    class="et-schedule__heading w-[80%] pr-[40px] sm:pr-[25px] xs:pr-0 mr-[40px] sm:mr-[25px] xs:mr-0 border-r xs:border-r-0 border-[#d9d9d9]">
+                                    class="et-schedule__heading w-[80%] sm:w-full xs:text-center pr-[40px] sm:pr-[25px] xs:pr-0 mr-[40px] sm:mr-[25px] xs:mr-0 border-r xs:border-r-0 border-[#d9d9d9]">
                                     <!-- date & time -->
                                     <div
-                                        class="et-schedule-date-time border border-[rgba(217,217,217,0.89)] py-[7px] px-[15px] rounded-full inline-flex xxs:w-full items-center justify-center gap-x-[24px] gap-y-[10px] mb-[10px] xxs:border-0 xxs:p-0 xxs:justify-start">
+                                        class="et-schedule-date-time border border-[rgba(217,217,217,0.89)] py-[7px] px-[15px] rounded-full inline-flex xxs:w-full items-center justify-center gap-x-[24px] gap-y-[10px] mb-[10px] xxs:border-0 xxs:p-0 xs:justify-center">
                                         <div class="date flex items-center gap-[10px]">
                                             <span class="icon">
                                                 <svg width="16" height="17" viewBox="0 0 16 17" fill="none"
@@ -1431,7 +1443,7 @@ get_header('main'); ?>
                                         Workshop </h4>
 
                                     <!-- location -->
-                                    <div class="et-schedule-loaction flex items-center gap-[12px]">
+                                    <div class="et-schedule-loaction flex items-center gap-[12px] xs:justify-center">
                                         <span class="icon">
                                             <svg width="12" height="16" viewBox="0 0 12 16" fill="none"
                                                 xmlns="http://www.w3.org/2000/svg">
@@ -1444,12 +1456,12 @@ get_header('main'); ?>
                                     </div>
                                 </div>
 
-                                <div class="flex shrink-0 flex-col xxs:flex-row gap-[16px] xxs:gap-[10px]">
+                                <div class="flex shrink-0 flex-col gap-[16px] xxs:gap-[10px] xs:flex-wrap xs:jusity-center">
                                     <button href="#"
                                         class="myBtn et-btn border w-[180px] bg-etBlue text-white inline-flex items-center justify-center h-[45px] px-[22px] xxs:px-[16px] font-normal text-[17px] rounded-full hover:!bg-etBlack hover:!text-white">View
                                         More</button>
                                     <a href="<?= home_url()?>/rsvp"
-                                        class="et-btn border w-[180px] bg-etBlack text-white inline-flex items-center justify-center h-[45px] px-[22px] xxs:px-[16px] font-normal text-[17px] rounded-full hover:!bg-etBlue hover:!text-white">Buy
+                                        class="et-btn border w-[180px] bg-etBlue text-white inline-flex items-center justify-center h-[45px] px-[22px] xxs:px-[16px] font-normal text-[17px] rounded-full hover:!bg-etBlack hover:!text-white">Buy
                                         Tickets</a>
                                 </div>
                             </div>
@@ -1464,7 +1476,7 @@ get_header('main'); ?>
                         <div
                             class="et-schedule flex md:flex-wrap gap-x-[30px] gap-y-[20px] justify-between rev-slide-up">
                             <!-- img -->
-                            <div class="w-[270px] shadow-[0_4px_60px_rgba(18,96,254,0.12)] shrink-0 rounded-[20px] overflow-hidden">
+                            <div class="w-[270px] sm:w-[300px] sm:mx-auto shadow-[0_4px_60px_rgba(18,96,254,0.12)] shrink-0 rounded-[20px] overflow-hidden">
                                 <a href="<?= get_template_directory_uri() ?>/assets/new-img/4.png" class="image">
                                     <img src="<?= get_template_directory_uri() ?>/assets/new-img/4.png"
                                         alt="scehduled-event-cover">
@@ -1473,12 +1485,12 @@ get_header('main'); ?>
 
                             <!-- text -->
                             <div
-                                class="px-[37px] sm:px-[22px] py-[30px] shadow-[0_4px_60px_rgba(18,96,254,0.12)] w-full rounded-[20px] flex gap-y-[15px] xs:flex-col items-center xs:items-start">
+                                class="px-[37px] sm:px-[22px] py-[30px] shadow-[0_4px_60px_rgba(18,96,254,0.12)] w-full rounded-[20px] flex gap-y-[15px] xs:flex-col items-center xs:items-center">
                                 <div
-                                    class="et-schedule__heading w-[80%] pr-[40px] sm:pr-[25px] xs:pr-0 mr-[40px] sm:mr-[25px] xs:mr-0 border-r xs:border-r-0 border-[#d9d9d9]">
+                                    class="et-schedule__heading w-[80%] sm:w-full xs:text-center pr-[40px] sm:pr-[25px] xs:pr-0 mr-[40px] sm:mr-[25px] xs:mr-0 border-r xs:border-r-0 border-[#d9d9d9]">
                                     <!-- date & time -->
                                     <div
-                                        class="et-schedule-date-time border border-[rgba(217,217,217,0.89)] py-[7px] px-[15px] rounded-full inline-flex xxs:w-full items-center justify-center gap-x-[24px] gap-y-[10px] mb-[10px] xxs:border-0 xxs:p-0 xxs:justify-start">
+                                        class="et-schedule-date-time border border-[rgba(217,217,217,0.89)] py-[7px] px-[15px] rounded-full inline-flex xxs:w-full items-center justify-center gap-x-[24px] gap-y-[10px] mb-[10px] xxs:border-0 xxs:p-0 xs:justify-center">
                                         <div class="date flex items-center gap-[10px]">
                                             <span class="icon">
                                                 <svg width="16" height="17" viewBox="0 0 16 17" fill="none"
@@ -1547,7 +1559,7 @@ get_header('main'); ?>
                                         Worship Night</h4>
 
                                     <!-- location -->
-                                    <div class="et-schedule-loaction flex items-center gap-[12px]">
+                                    <div class="et-schedule-loaction flex items-center gap-[12px] xs:justify-center">
                                         <span class="icon">
                                             <svg width="12" height="16" viewBox="0 0 12 16" fill="none"
                                                 xmlns="http://www.w3.org/2000/svg">
@@ -1560,10 +1572,10 @@ get_header('main'); ?>
                                     </div>
                                 </div>
 
-                                <div class="flex shrink-0 flex-col xxs:flex-row gap-[16px] xxs:gap-[10px]">
+                                <div class="flex shrink-0 flex-col gap-[16px] xxs:gap-[10px] xs:flex-wrap xs:jusity-center">
                                     <!-- <a href="#" class="et-btn border w-[180px] bg-etBlue text-white inline-flex items-center justify-center h-[45px] px-[22px] xxs:px-[16px] font-normal text-[17px] rounded-full hover:!bg-etBlack hover:!text-white">View More</a> -->
                                     <a href="#"
-                                        class="et-btn border w-[180px] bg-etBlack text-white inline-flex items-center justify-center h-[45px] px-[22px] xxs:px-[16px] font-normal text-[17px] rounded-full hover:!bg-etBlue hover:!text-white">Coming
+                                        class="et-btn border w-[180px] bg-etBlue text-white inline-flex items-center justify-center h-[45px] px-[22px] xxs:px-[16px] font-normal text-[17px] rounded-full hover:!bg-etBlack hover:!text-white">Coming
                                         Soon</a>
                                 </div>
                             </div>
@@ -1578,7 +1590,7 @@ get_header('main'); ?>
                             class="et-schedule flex md:flex-wrap gap-x-[30px] gap-y-[20px] justify-between rev-slide-up">
                             <!-- img -->
                             <div
-                                class="w-[270px] shadow-[0_4px_60px_rgba(18,96,254,0.12)] shrink-0 rounded-[20px] overflow-hidden">
+                                class="w-[270px] sm:w-[300px] sm:mx-auto shadow-[0_4px_60px_rgba(18,96,254,0.12)] shrink-0 rounded-[20px] overflow-hidden">
                                 <a href="<?= get_template_directory_uri() ?>/assets/new-img/2.png" class="image">
                                     <img src="<?= get_template_directory_uri() ?>/assets/new-img/2.png"
                                         alt="scehduled-event-cover">
@@ -1588,12 +1600,12 @@ get_header('main'); ?>
 
                             <!-- text -->
                             <div
-                                class="px-[37px] sm:px-[22px] py-[30px] shadow-[0_4px_60px_rgba(18,96,254,0.12)] w-full rounded-[20px] flex gap-y-[15px] xs:flex-col items-center xs:items-start">
+                                class="px-[37px] sm:px-[22px] py-[30px] shadow-[0_4px_60px_rgba(18,96,254,0.12)] w-full rounded-[20px] flex gap-y-[15px] xs:flex-col items-center xs:items-center">
                                 <div
-                                    class="et-schedule__heading w-[80%] pr-[40px] sm:pr-[25px] xs:pr-0 mr-[40px] sm:mr-[25px] xs:mr-0 border-r xs:border-r-0 border-[#d9d9d9]">
+                                    class="et-schedule__heading w-[80%] sm:w-full xs:text-center pr-[40px] sm:pr-[25px] xs:pr-0 mr-[40px] sm:mr-[25px] xs:mr-0 border-r xs:border-r-0 border-[#d9d9d9]">
                                     <!-- date & time -->
                                     <div
-                                        class="et-schedule-date-time border border-[rgba(217,217,217,0.89)] py-[7px] px-[15px] rounded-full inline-flex xxs:w-full items-center justify-center gap-x-[24px] gap-y-[10px] mb-[10px] xxs:border-0 xxs:p-0 xxs:justify-start">
+                                        class="et-schedule-date-time border border-[rgba(217,217,217,0.89)] py-[7px] px-[15px] rounded-full inline-flex xxs:w-full items-center justify-center gap-x-[24px] gap-y-[10px] mb-[10px] xxs:border-0 xxs:p-0 xs:justify-center">
                                         <div class="date flex items-center gap-[10px]">
                                             <span class="icon">
                                                 <svg width="16" height="17" viewBox="0 0 16 17" fill="none"
@@ -1661,7 +1673,7 @@ get_header('main'); ?>
                                     <h4 class="font-semibold text-etBlue text-[16px] my-[10px]">Format: Ibadah</h4>
 
                                     <!-- location -->
-                                    <div class="et-schedule-loaction flex items-center gap-[12px]">
+                                    <div class="et-schedule-loaction flex items-center gap-[12px] xs:justify-center">
                                         <span class="icon">
                                             <svg width="12" height="16" viewBox="0 0 12 16" fill="none"
                                                 xmlns="http://www.w3.org/2000/svg">
@@ -1674,10 +1686,10 @@ get_header('main'); ?>
                                     </div>
                                 </div>
 
-                                <div class="flex shrink-0 flex-col xxs:flex-row gap-[16px] xxs:gap-[10px]">
+                                <div class="flex shrink-0 flex-col gap-[16px] xxs:gap-[10px] xs:flex-wrap xs:jusity-center">
                                     <!-- <a href="#" class="et-btn border w-[180px] bg-etBlue text-white inline-flex items-center justify-center h-[45px] px-[22px] xxs:px-[16px] font-normal text-[17px] rounded-full hover:!bg-etBlack hover:!text-white">View More</a> -->
                                     <a href="#"
-                                        class="et-btn border w-[180px] bg-etBlack text-white inline-flex items-center justify-center h-[45px] px-[22px] xxs:px-[16px] font-normal text-[17px] rounded-full hover:!bg-etBlue hover:!text-white">Coming
+                                        class="et-btn border w-[180px] bg-etBlue text-white inline-flex items-center justify-center h-[45px] px-[22px] xxs:px-[16px] font-normal text-[17px] rounded-full hover:!bg-etBlack hover:!text-white">Coming
                                         Soon</a>
                                 </div>
                             </div>
@@ -1741,13 +1753,7 @@ get_header('main'); ?>
     </div>
 </div>
 
-<script src='https://code.jquery.com/jquery-3.2.1.min.js' type='text/javascript'></script>
-<script src="https://cdn.jsdelivr.net/npm/lc-lightbox-lite@1.3.1/js/lc_lightbox.lite.min.js"></script>
-<script type='text/javascript'>
-    $(document).ready(function() {
-        var $obj = lc_lightbox('.lcl_elems_wrapper a.image');
-    });
-</script>
+
 <script>
     // Get the modal
     var modal = document.getElementById("myModal");
