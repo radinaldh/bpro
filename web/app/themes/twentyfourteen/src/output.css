@@ -5604,6 +5604,9 @@ video {
   .sm\:justify-center {
     justify-content: center;
   }
+  .sm\:justify-start {
+    justify-content: start;
+  }
 
   .sm\:gap-\[12px\] {
     gap: 12px;

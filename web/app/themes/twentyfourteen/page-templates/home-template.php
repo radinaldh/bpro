@@ -18,6 +18,12 @@ get_header('main');
 
         .testing-slider {
             display: block !important;
+            max-width: 90%;
+            margin: auto;
+        }
+
+        .testing-slider .et-2-schedule  {
+            height: 500px;
         }
     }
 
@@ -25,9 +31,19 @@ get_header('main');
         display: none;
     }
 
-    .multiple-items {
-        overflow: hidden;
+        .multiple-items {
+            overflow: hidden;
+        }
+
+        /* the slides */
+    .slick-slide {
+        margin: 0 30px;
     }
+
+    /* the parent */
+    .slick-list {
+        margin: 0 -30px;
+  }
 </style>
 
 <main>
@@ -620,7 +636,7 @@ get_header('main');
                                         </div>
         
                                         <!-- title -->
-                                        <h3 class="et-schedule-title text-center text-[24px] sm:text-[22px] font-regular text-etBlack mb-[16px] anim-text"><a href="#" class="hover:text-etBlue">Discover Cyber Security and Financial Trap.</a></h3>
+                                        <h3 class="et-schedule-title text-center text-[24px] sm:text-[22px] font-regular text-etBlack mb-[16px] anim-text" style="height: 400;"><a href="#" class="hover:text-etBlue">Discover Cyber Security and Financial Trap.</a></h3>
         
                                         <!-- location -->
                                         <div class="et-schedule-loaction text-center justify-center flex items-center gap-[12px]">
