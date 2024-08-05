@@ -5621,6 +5621,10 @@ video {
     row-gap: 40px;
   }
 
+  .sm\:gap-y-\[0px\] {
+    row-gap: 0px;
+  }
+
   .sm\:gap-y-\[80px\] {
     row-gap: 80px;
   }
@@ -6253,4 +6257,7 @@ video {
     padding-left: 30px;
     padding-right: 30px;
   }
+  section.et-about {
+    padding-bottom: 25px;
+}
 }
