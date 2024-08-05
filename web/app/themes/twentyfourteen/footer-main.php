@@ -273,6 +273,14 @@
         dots:true
     });   
 </script>
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    // Simulate loading process
+    setTimeout(function() {
+        document.querySelector('.loader').classList.add('hide');
+    }, 1000); // Adjust the time as needed
+});
+</script>
 </body>
 
 

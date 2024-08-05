@@ -22,7 +22,37 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.css" integrity="sha512-6lLUdeQ5uheMFbWm3CP271l14RsX1xtx+J5x2yeIDkkiBpeVTNhTqijME7GgRKKi6hCqovwCoBTlRBEC20M8Mg==" crossorigin="anonymous" referrerpolicy="no-referrer" />   
 </head>
 
+<style>
+
+    .loader.hide {
+        opacity: 0;
+        visibility: hidden;
+    }
+
+    .loader {
+        position: fixed;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        bottom: 0;
+        z-index: 99;
+        background: #fff;
+        opacity: 1;
+        visibility: visible;
+        transition: opacity 1s ease, visibility 1s ease; /* Adjust timing as needed */
+    }
+
+    .loader img {
+        position: absolute;
+        top: 40%;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+</style>
 <body>
+    <div class="loader">
+        <img src="<?= get_template_directory_uri()?>/assets/new-img/logo-color.png" alt="">
+    </div>
     <!-- overlay -->
     <div class="et-overlay group">
         <div class="opacity-0 pointer-events-none group-[.active]:opacity-100 group-[.active]:pointer-events-auto transition ease-linear duration-300  bg-etBlack/80 fixed inset-0 z-[60]"></div>
