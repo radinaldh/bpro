@@ -7,7 +7,16 @@
 get_header('main');
 ?>
 <style>
+
+    .test-right {
+        display: none;
+    }
     @media (max-width: 500px) {
+
+
+        .test-right {
+            display: block;
+        }
         .et-section-sub-title {
             font-size: 16px;
             padding: 0;
@@ -1153,6 +1162,16 @@ Wrapped with Praise & Worship Night <br>
 
             <!-- slider -->
             <div class="et-2-testimonial-slider swiper overflow-visible">
+                <div class="right test-right">
+                    <div class="et-test-slider-nav flex gap-[16px] sm:gap-[12px]" style="justify-content: center; margin:30px 0">
+                        <button class="prev border border-[#D9D9D9] rounded-full w-[60px] sm:w-[50px] h-[60px] sm:h-[50px] text-[18px] text-etBlack hover:bg-etBlue hover:border-etbg-etBlue hover:text-white">
+                            <i class="fa-solid fa-arrow-left-long"></i>
+                        </button>
+                        <button class="next border border-[#D9D9D9] rounded-full w-[60px] sm:w-[50px] h-[60px] sm:h-[50px] text-[18px] text-etBlack hover:bg-etBlue hover:border-etbg-etBlue hover:text-white">
+                            <i class="fa-solid fa-arrow-right-long"></i>
+                        </button>
+                    </div>
+                </div>
                 <div class="swiper-wrapper">
                     <!-- single testimony  -->
                     <div class="swiper-slide">
