@@ -61,7 +61,7 @@ Saudara-saudara, memang kamu telah dipanggil untuk merdeka. Tetapi janganlah kam
 
 
 Info & Registrasi:<br>
-Hotline BPro - 0811 311 66111 (Whatsapp)
+Hotline BPro <br> +62811-3116-6111 (Whatsapp)
 
                         </p>
                     </div>
@@ -117,7 +117,7 @@ Hotline BPro - 0811 311 66111 (Whatsapp)
 </ul>
 <br><br>
 Info & Registrasi:<br>
-Bethany Nginden – (031) 5936880<br>
+Bethany Nginden – (+6231) 5936880<br>
 info@gerejabethany.org
 
 
