@@ -9,7 +9,7 @@ get_header('main');
 <style>
     @media (max-width: 500px) {
         .et-section-sub-title {
-            font-size: 12px;
+            font-size: 16px;
             padding: 0;
         }
         .et-section-sub-title::before {
@@ -1049,7 +1049,7 @@ Wrapped with Praise & Worship Night <br>
                     </div>
                 </div>
             </div>
-            <div class="testing-slider">
+            <div class="testing-slider okke">
                 <div class="multiple-items">
                     <div>
                         <div class="et-2-feature-card rounded-[30px] overflow-hidden group relative">

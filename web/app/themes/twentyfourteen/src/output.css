@@ -5684,7 +5684,7 @@ video {
   }
 
   .sm\:text-\[12px\] {
-    font-size: 12px;
+    font-size: 15px;
   }
 
   .sm\:text-\[18px\] {
@@ -6215,4 +6215,42 @@ video {
 .py-\[30px\] {
   padding-top: 30px;
   padding-bottom: 30px;
+}
+
+
+/* custom */
+
+.slick-dots {
+  bottom: 0 !important;
+}
+
+.slick-dotted.slick-slider {
+  margin-bottom: 30px;
+  height: 600px;
+}
+
+.slick-dots li button {
+  background: #18377e !important;
+  border-radius: 100%;
+  opacity: 0.5;
+}
+
+.slick-active button{
+  opacity: 1 !important;
+}
+
+.slick-dots li button:before {
+  content: '' !important;
+}
+
+.testing-slider.okke .slick-dotted.slick-slider {
+  margin-bottom: 30px;
+  height: 300px;
+}
+
+@media(max-width:500px) {
+  .px-\[12px\] {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
 }
