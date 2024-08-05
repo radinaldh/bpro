@@ -22,7 +22,7 @@ get_header('main');
         }   
 
         .et-section-sub-title {
-            font-size: 12px;
+            font-size: 16px;
             padding: 0;
         }
     }
