@@ -99,173 +99,7 @@ get_header('main');
                     </div>
                 </div>
 
-                <!-- single slide -->
-                <div class="swiper-slide">
-                    <div class="bg-no-repeat bg-cover bg-[url('assets/img/banner-bg-3.jpg')] bg-center pt-[clamp(140px,12.7vw,213px)] text-white relative overflow-hidden z-[1] before:content-normal before:absolute before:inset-0 before:bg-gradient-to-r before:from-[#1900B1] before:from-50% before:to-transparent before:-z-[1] before:opacity-50">
-                        <div class="mx-[15.5em] xxxl:mx-[10em] xxl:mx-[40px] xs:mx-[12px] mb-[132px] xl:mb-[112px] lg:mb-[82px]">
-                            <div class="flex md:flex-col items-center justify-between gap-x-[30px] gap-y-[30px] md:grid-cols-1">
-                                <div class="left relative z-[20] w-[60%] md:w-full">
-                                    <h6 class="font-kalam font-bold text-[2.4rem] mb-[3px] anim-text">Bethany Professional 2024</h6>
-
-                                    <h1 class="text-[clamp(42px,6.25vw,12rem)] font-semibold leading-[1.1] mb-[36px] md:mb-[36px] anim-text">Church Mega <span class="italic font-normal">Conference</span></h1>
-
-                                    <div class="et-banner-btns flex flex-wrap items-center gap-[20px]">
-                                        <a href="#" class="et-btn bg-etBlue inline-flex items-center justify-center gap-x-[13px] h-[45px] px-[15px] text-white font-normal text-[17px] rounded-full hover:!bg-white hover:!text-etBlue">Register Now</a>
-
-                                        <a href="#" class="et-btn bg-white inline-flex items-center justify-center gap-x-[13px] h-[45px] px-[15px] text-etBlue font-normal text-[17px] rounded-full">View More</a>
-                                    </div>
-                                </div>
-
-
-                            </div>
-                        </div>
-
-                        <!-- counter & video button -->
-                        <div class="flex gap-[120px] xxxl:gap-[60px] xl:gap-[40px] lg:flex-col-reverse items-center" style="display:none">
-                            <div class="max-w-[1170px] bg-etBlue relative z-[1] p-[60px] sm:p-[40px] xs:px-[20px] rounded-tr-[20px] lg:rounded-none overflow-hidden shadow-[0_4px_50px_rgba(18,96,254,0.2)] after:absolute after:inset-0 after:-z-[1] after:bg-[url(../assets/img/et-counter-bg.jpg)] after:bg-cover after:bg-no-repeat after:mix-blend-screen flex xxl:flex-col items-center xxl:items-start md:flex-wrap gap-y-[20px]">
-                                <div class="pr-[54px] border-r md:border-r-0 border-white/20 md:text-center md:pr-0 md:w-full">
-                                    <h2 class="et-section-title !text-white mb-[28px] anim-text">Count Every Second Until Event.</h2>
-                                    <a href="#" class="et-btn bg-etBlue inline-flex items-center justify-center gap-x-[13px] h-[45px] px-[15px] text-white font-normal text-[17px] rounded-full border-white border hover:!bg-white hover:!text-etBlue">Buy Ticket</a>
-                                </div>
-
-                                <!-- counter -->
-                                <div class="et-countdown flex sm:flex-wrap justify-center gap-y-[10px] md:w-full *:border-r *:sm:border-r-0 *:border-white/20 *:px-[46px] *:sm:px-[26px] *:xs:px-[16px] font-medium text-white text-[16px] text-center">
-                                    <div class="last:pr-0 last:md:pr-[30px] last:xs:pr-[20px] last:border-r-0">
-                                        <span class="days number block"></span>
-                                        <span>Days</span>
-                                    </div>
-
-                                    <div class="last:pr-0 last:md:pr-[30px] last:xs:pr-[20px] last:border-r-0">
-                                        <span class="hours number block"></span>
-                                        <span>Hours</span>
-                                    </div>
-
-                                    <div class="last:pr-0 last:md:pr-[30px] last:xs:pr-[20px] last:border-r-0">
-                                        <span class="minutes number block"></span>
-                                        <span>Minutes</span>
-                                    </div>
-
-                                    <div class="last:pr-0 last:md:pr-[30px] last:xs:pr-[20px] last:border-r-0">
-                                        <span class="seconds number block"></span>
-                                        <span>Seconds</span>
-                                    </div>
-                                </div>
-
-                                <!-- vectors -->
-                                <div class="sm:hidden">
-                                    <img src="<?= get_template_directory_uri(); ?>/assets/img/counter-vector.png" alt="vector" class="pointer-events-none absolute top-[26px] left-[53%]">
-                                    <img src="<?= get_template_directory_uri(); ?>/assets/img/counter-vector.png" alt="vector" class="pointer-events-none absolute bottom-[33px] right-[90px]">
-                                </div>
-                            </div>
-
-                            <div class="flex shrink-0 gap-[30px] items-center" style="display:none">
-                                <a href="#" class="group">
-                                    <svg width="123" height="123" viewBox="0 0 123 123" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <path d="M89.3191 57.1702V110.277H122V1H12.7234V33.6809H65.8298L2 97.5106L25.4894 121L89.3191 57.1702Z" stroke-width="2" class="stroke-[url(#paint0_linear_6096_354)] transition duration-[400ms] group-hover:stroke-etBlue " />
-                                    </svg>
-                                </a>
-
-                                <div class="flex items-center gap-[15px] ">
-                                    <!-- video button -->
-                                    <a href="https://www.youtube.com/watch?v=AQleI8oFqZo&amp;t=1s" data-fslightbox="banner-video-1" class="w-[93px] aspect-square rounded-full border border-white/20 flex justify-center items-center text-etBlue ml-auto md:ml-0 relative z-[1] text-[18px] before:absolute before:w-[70px] before:h-[70px] before:bg-white before:rounded-full before:-z-[1] before:transition before:duration-[400ms] hover:text-white hover:border-etBlue hover:before:bg-etBlue animate-[shadow_2s_ease-in_infinite]"><i class="fa-solid fa-play"></i></a>
-
-                                    <span class="font-light text-[18px] xxs:hidden">View Promo</span>
-                                </div>
-                            </div>
-                        </div>
-
-                        <!-- vectors -->
-                        <div class="et-banner-vectors">
-                            <!-- <div class="absolute left-[26px] top-[235px]"><img src="<?= get_template_directory_uri(); ?>/assets/img/team-vector.png" alt="vector" class="w-[50px] !animate-none !rotate-0 md:hidden"></div> -->
-                            <div class="absolute bottom-[352px] left-[845px]"><img src="<?= get_template_directory_uri(); ?>/assets/img/banner-vector.png" alt="vector"></div>
-                            <div class="absolute top-[214px] right-[190px]"><img src="<?= get_template_directory_uri(); ?>/assets/img/banner-vector-2.png" alt="vector" class="w-[21px] h-[21px]"></div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- single slide -->
-                <div class="swiper-slide">
-                    <div class="bg-no-repeat bg-cover bg-[url('assets/img/banner-bg-2.jpg')] bg-center pt-[clamp(140px,12.7vw,213px)] text-white relative overflow-hidden z-[1] before:content-normal before:absolute before:inset-0 before:bg-gradient-to-r before:from-[#1900B1] before:from-50% before:to-transparent before:-z-[1] before:opacity-50">
-                        <div class="mx-[15.5em] xxxl:mx-[10em] xxl:mx-[40px] xs:mx-[12px] mb-[132px] xl:mb-[112px] lg:mb-[82px]">
-                            <div class="flex md:flex-col items-center justify-between gap-x-[30px] gap-y-[30px] md:grid-cols-1">
-                                <div class="left relative z-[20] w-[60%] md:w-full">
-                                    <h6 class="font-kalam font-bold text-[2.4rem] mb-[3px] anim-text">Bethany Professional 2024</h6>
-
-                                    <h1 class="text-[clamp(42px,6.25vw,12rem)] font-semibold leading-[1.1] mb-[36px] md:mb-[36px] anim-text">Church Mega <span class="italic font-normal">Conference</span></h1>
-
-                                    <div class="et-banner-btns flex flex-wrap items-center gap-[20px]">
-                                        <a href="#" class="et-btn bg-etBlue inline-flex items-center justify-center gap-x-[13px] h-[45px] px-[15px] text-white font-normal text-[17px] rounded-full hover:!bg-white hover:!text-etBlue">Register Now</a>
-
-                                        <a href="#" class="et-btn bg-white inline-flex items-center justify-center gap-x-[13px] h-[45px] px-[15px] text-etBlue font-normal text-[17px] rounded-full">View More</a>
-                                    </div>
-                                </div>
-
-
-                            </div>
-                        </div>
-
-                        <!-- counter & video button -->
-                        <div class="flex gap-[120px] xxxl:gap-[60px] xl:gap-[40px] lg:flex-col-reverse items-center" style="display:none">
-                            <div class="max-w-[1170px] bg-etBlue relative z-[1] p-[60px] sm:p-[40px] xs:px-[20px] rounded-tr-[20px] lg:rounded-none overflow-hidden shadow-[0_4px_50px_rgba(18,96,254,0.2)] after:absolute after:inset-0 after:-z-[1] after:bg-[url(../assets/img/et-counter-bg.jpg)] after:bg-cover after:bg-no-repeat after:mix-blend-screen flex xxl:flex-col items-center xxl:items-start md:flex-wrap gap-y-[20px]">
-                                <div class="pr-[54px] border-r md:border-r-0 border-white/20 md:text-center md:pr-0 md:w-full">
-                                    <h2 class="et-section-title !text-white mb-[28px] anim-text">Count Every Second Until Event.</h2>
-                                    <a href="#" class="et-btn bg-etBlue inline-flex items-center justify-center gap-x-[13px] h-[45px] px-[15px] text-white font-normal text-[17px] rounded-full border-white border hover:!bg-white hover:!text-etBlue">Buy Ticket</a>
-                                </div>
-
-                                <!-- counter -->
-                                <div class="et-countdown flex sm:flex-wrap justify-center gap-y-[10px] md:w-full *:border-r *:sm:border-r-0 *:border-white/20 *:px-[46px] *:sm:px-[26px] *:xs:px-[16px] font-medium text-white text-[16px] text-center">
-                                    <div class="last:pr-0 last:md:pr-[30px] last:xs:pr-[20px] last:border-r-0">
-                                        <span class="days number block"></span>
-                                        <span>Days</span>
-                                    </div>
-
-                                    <div class="last:pr-0 last:md:pr-[30px] last:xs:pr-[20px] last:border-r-0">
-                                        <span class="hours number block"></span>
-                                        <span>Hours</span>
-                                    </div>
-
-                                    <div class="last:pr-0 last:md:pr-[30px] last:xs:pr-[20px] last:border-r-0">
-                                        <span class="minutes number block"></span>
-                                        <span>Minutes</span>
-                                    </div>
-
-                                    <div class="last:pr-0 last:md:pr-[30px] last:xs:pr-[20px] last:border-r-0">
-                                        <span class="seconds number block"></span>
-                                        <span>Seconds</span>
-                                    </div>
-                                </div>
-
-                                <!-- vectors -->
-                                <div class="sm:hidden">
-                                    <img src="<?= get_template_directory_uri(); ?>/assets/img/counter-vector.png" alt="vector" class="pointer-events-none absolute top-[26px] left-[53%]">
-                                    <img src="<?= get_template_directory_uri(); ?>/assets/img/counter-vector.png" alt="vector" class="pointer-events-none absolute bottom-[33px] right-[90px]">
-                                </div>
-                            </div>
-
-                            <div class="flex shrink-0 gap-[30px] items-center" style="display:none">
-                                <a href="#" class="group">
-                                    <svg width="123" height="123" viewBox="0 0 123 123" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <path d="M89.3191 57.1702V110.277H122V1H12.7234V33.6809H65.8298L2 97.5106L25.4894 121L89.3191 57.1702Z" stroke-width="2" class="stroke-[url(#paint0_linear_6096_354)] transition duration-[400ms] group-hover:stroke-etBlue " />
-                                    </svg>
-                                </a>
-
-                                <div class="flex items-center gap-[15px] ">
-                                    <!-- video button -->
-                                    <a href="https://www.youtube.com/watch?v=AQleI8oFqZo&amp;t=1s" data-fslightbox="banner-video-1" class="w-[93px] aspect-square rounded-full border border-white/20 flex justify-center items-center text-etBlue ml-auto md:ml-0 relative z-[1] text-[18px] before:absolute before:w-[70px] before:h-[70px] before:bg-white before:rounded-full before:-z-[1] before:transition before:duration-[400ms] hover:text-white hover:border-etBlue hover:before:bg-etBlue animate-[shadow_2s_ease-in_infinite]"><i class="fa-solid fa-play"></i></a>
-
-                                    <span class="font-light text-[18px] xxs:hidden">View Promo</span>
-                                </div>
-                            </div>
-                        </div>
-
-                        <!-- vectors -->
-                        <div class="et-banner-vectors">
-                            <!-- <div class="absolute left-[26px] top-[235px]"><img src="<?= get_template_directory_uri(); ?>/assets/img/team-vector.png" alt="vector" class="w-[50px] !animate-none !rotate-0 md:hidden"></div> -->
-                            <div class="absolute bottom-[352px] left-[845px]"><img src="<?= get_template_directory_uri(); ?>/assets/img/banner-vector.png" alt="vector"></div>
-                            <div class="absolute top-[214px] right-[190px]"><img src="<?= get_template_directory_uri(); ?>/assets/img/banner-vector-2.png" alt="vector" class="w-[21px] h-[21px]"></div>
-                        </div>
-                    </div>
-                </div>
+                
             </div>
 
             <div class="et-banner-slider-dots absolute flex flex-col right-[40px] xxs:right-[15px] !left-auto z-[1] !top-[50%] -translate-y-[50%] !w-auto"></div>
@@ -342,7 +176,7 @@ get_header('main');
                     </div>
 
                     <div class="flex flex-wrap items-center gap-x-[30px] gap-y-[16px] rev-slide-up">
-                        <a href="/about/" class="et-btn bg-etBlue inline-flex items-center justify-center gap-x-[13px] h-[45px] px-[15px] text-white font-normal text-[17px] rounded-full hover:!bg-black hover:!text-white">Read More</a>
+                        <a href="/about/" class="et-btn bg-etBlue w-[180px] inline-flex items-center justify-center gap-x-[13px] h-[45px] px-[15px] text-white font-normal text-[17px] rounded-full hover:!bg-black hover:!text-white">Read More</a>
 
                         <!-- <div class="flex items-center gap-[10px]">
                             <div class="flex *:-ml-[20px]">
@@ -373,11 +207,11 @@ get_header('main');
 
                 <div class="right">
                     <div class="et-schedules-tab-navs bg-[#D0E1FF] px-[12px] py-[14px] flex flex-w gap-[16px] sm:gap-[12px] rounded-full">
-                        <a href="/events/" class="tab-nav bg-etBlack rounded-full px-[20px] py-[3px] text-[16px] font-medium text-white hover:bg-etBlue">Read More</a>
+                        <a href="/events/" class="tab-nav bg-etBlue rounded-full px-[20px] py-[3px] text-[16px] font-medium text-white hover:bg-etBlue">View More</a>
 
-                        <!-- <button data-tab="tab2" class="tab-nav bg-etBlack rounded-full px-[20px] py-[3px] text-[16px] font-medium text-white hover:bg-etBlue">Day 02</button> -->
+                        <!-- <button data-tab="tab2" class="tab-nav bg-etBlue rounded-full px-[20px] py-[3px] text-[16px] font-medium text-white hover:bg-etBlue">Day 02</button> -->
 
-                        <!-- <button data-tab="tab3" class="tab-nav bg-etBlack rounded-full px-[20px] py-[3px] text-[16px] font-medium text-white hover:bg-etBlue">Day 03</button> -->
+                        <!-- <button data-tab="tab3" class="tab-nav bg-etBlue rounded-full px-[20px] py-[3px] text-[16px] font-medium text-white hover:bg-etBlue">Day 03</button> -->
                     </div>
                 </div>
             </div>
@@ -468,8 +302,8 @@ get_header('main');
                                     </div> -->
 
                                     <div class="flex shrink-0 flex-col xxs:flex-row gap-[16px] xxs:gap-[10px]">
-                                        <!-- <a href="#" class="et-btn border bg-etBlue text-white inline-flex items-center justify-center h-[45px] px-[22px] xxs:px-[16px] font-normal text-[17px] rounded-full hover:!bg-etBlack hover:!text-white">View More</a> -->
-                                        <a href="#" class="et-btn border bg-etBlack text-white inline-flex items-center justify-center h-[45px] px-[22px] xxs:px-[16px] font-normal text-[17px] rounded-full hover:!bg-etBlue hover:!text-white">Coming Soon</a>
+                                        <!-- <a href="#" class="et-btn border bg-etBlue text-white inline-flex items-center justify-center h-[45px] px-[22px] xxs:px-[16px] font-normal text-[17px] rounded-full hover:!bg-etBlue hover:!text-white">View More</a> -->
+                                        <a href="#" class="et-btn border w-[180px] bg-etBlue text-white inline-flex items-center justify-center h-[45px] px-[22px] xxs:px-[16px] font-normal text-[17px] rounded-full hover:!bg-etBlue hover:!text-white">Coming Soon</a>
                                     </div>
                                 </div>
                             </div>
@@ -557,9 +391,9 @@ get_header('main');
 
                                     <div class="flex shrink-0 flex-col xxs:flex-row gap-[16px] xxs:gap-[10px]">
                                     <button href="#"
-                                        class="myBtn et-btn border w-[180px] bg-etBlue text-white inline-flex items-center justify-center h-[45px] px-[22px] xxs:px-[16px] font-normal text-[17px] rounded-full hover:!bg-etBlack hover:!text-white">View
+                                        class="myBtn et-btn border w-[180px] bg-etBlue text-white inline-flex items-center justify-center h-[45px] px-[22px] xxs:px-[16px] font-normal text-[17px] rounded-full hover:!bg-etBlue hover:!text-white">View
                                         More</button>
-                                        <a href="https://bethanyprofessional.com/rsvp/" class="et-btn border bg-etBlack text-white inline-flex items-center justify-center h-[45px] px-[22px] xxs:px-[16px] font-normal text-[17px] rounded-full hover:!bg-etBlue hover:!text-white">Buy Tickets</a>
+                                        <a href="https://bethanyprofessional.com/rsvp/" class="et-btn border bg-etBlue text-white inline-flex items-center justify-center h-[45px] px-[22px] xxs:px-[16px] font-normal text-[17px] rounded-full hover:!bg-etBlue hover:!text-white">Buy Tickets</a>
                                     </div>
                                 </div>
                             </div>
@@ -644,8 +478,8 @@ get_header('main');
                                     </div> -->
 
                                     <div class="flex shrink-0 flex-col xxs:flex-row gap-[16px] xxs:gap-[10px]">
-                                          <!-- <a href="#" class="et-btn border bg-etBlue text-white inline-flex items-center justify-center h-[45px] px-[22px] xxs:px-[16px] font-normal text-[17px] rounded-full hover:!bg-etBlack hover:!text-white">View More</a> -->
-                                          <a href="#" class="et-btn border bg-etBlack text-white inline-flex items-center justify-center h-[45px] px-[22px] xxs:px-[16px] font-normal text-[17px] rounded-full hover:!bg-etBlue hover:!text-white">Coming Soon</a>
+                                          <!-- <a href="#" class="et-btn border bg-etBlue text-white inline-flex items-center justify-center h-[45px] px-[22px] xxs:px-[16px] font-normal text-[17px] rounded-full hover:!bg-etBlue hover:!text-white">View More</a> -->
+                                          <a href="#" class="et-btn border w-[180px] bg-etBlue text-white inline-flex items-center justify-center h-[45px] px-[22px] xxs:px-[16px] font-normal text-[17px] rounded-full hover:!bg-etBlue hover:!text-white">Coming Soon</a>
                                     </div>
                                 </div>
                             </div>
@@ -760,7 +594,7 @@ get_header('main');
                         <!-- txt -->
                         <div class="text-white">
                             <span class="block font-medium text-[16px] mb-[3px]">Hotline BPro :</span>
-                            <h5 class="font-medium text-[22px] xxs:text-[22px]"><a href="https://api.whatsapp.com/send?phone=6281131166111">+6281131166111<br>(Whatsapp)</a></h5>
+                            <h5 class="font-medium text-[22px] xxs:text-[22px]"><a href="https://api.whatsapp.com/send?phone=6281131166111">+62811-3116-6111<br>(Whatsapp)</a></h5>
                         </div>
                     </div>
                     <div class="pl-[54px] overflow-hidden border-l-[4px] sm:border-l-0 border-white md:text-center md:pl-[15px] sm:pl-0 md:w-full relative before:absolute before:-left-[10px] before:top-[50%] before:-translate-y-[50%] before:w-[15px] before:aspect-square before:bg-white before:rotate-[45deg] before:-skew-x-[10deg] before:-skew-y-[10deg] sm:before:hidden">
@@ -772,7 +606,7 @@ Wrapped with Praise & Worship Night <br>
                     </div>
                 </div>
 
-                <a href="https://bethanyprofessional.com/rsvp/" class="et-btn bg-white flex items-center justify-center gap-x-[15px] h-[50px] px-[15px] text-etBlue font-medium text-[17px] rounded-full shrink-0 group">
+                <a href="https://bethanyprofessional.com/rsvp/" class="et-btn bg-white hover:!bg-etBlack hover:!text-white flex items-center justify-center gap-x-[15px] h-[50px] px-[15px] text-etBlue font-medium text-[17px] rounded-full shrink-0 group">
                     <span class="icon">
                         <svg width="27" height="16" viewBox="0 0 27 16" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path d="M8.02101 0H0.844661C0.378197 0 0 0.378144 0 0.844662V5.12625C0 5.59277 0.378197 5.97091 0.844661 5.97091C1.96347 5.97091 2.8737 6.88114 2.8737 8C2.8737 9.11886 1.96347 10.029 0.844661 10.029C0.378197 10.029 0 10.4071 0 10.8736V15.1553C0 15.6218 0.378197 15.9999 0.844661 15.9999H8.02101V0Z" class="fill-etBlue group-hover:fill-white transition"></path>
@@ -1226,7 +1060,7 @@ Wrapped with Praise & Worship Night <br>
                             <!-- single testimony heading -->
                             <div class="et-testimony__heading flex items-end justify-center mb-[17px] lg:mb-[12px] -mt-[100px] md:-mt-[80px]">
                                 <div class="et-testimony__img rounded-full overflow-hidden border border-etBlue p-[7px] w-max max-w-full">
-                                    <img src="<?= get_template_directory_uri(); ?>/assets/img/testimony/Yeremia.png" alt="reviewer image" class="w-[100px] sm:w-[80px] h-[100px] sm:h-[80px] rounded-full">
+                                    <img src="<?= get_template_directory_uri(); ?>/assets/img/testimony/Yohan.png" alt="reviewer image" class="w-[100px] sm:w-[80px] h-[100px] sm:h-[80px] rounded-full">
                                 </div>
                             </div>
 
@@ -1257,7 +1091,7 @@ Wrapped with Praise & Worship Night <br>
                             <!-- single testimony heading -->
                             <div class="et-testimony__heading flex items-end justify-center mb-[17px] lg:mb-[12px] -mt-[100px] md:-mt-[80px]">
                                 <div class="et-testimony__img rounded-full overflow-hidden border border-etBlue p-[7px] w-max max-w-full">
-                                    <img src="<?= get_template_directory_uri(); ?>/assets/img/testimony/Yeremia.png" alt="reviewer image" class="w-[100px] sm:w-[80px] h-[100px] sm:h-[80px] rounded-full">
+                                    <img src="<?= get_template_directory_uri(); ?>/assets/img/testimony/Yulius.png" alt="reviewer image" class="w-[100px] sm:w-[80px] h-[100px] sm:h-[80px] rounded-full">
                                 </div>
                             </div>
 
@@ -1290,7 +1124,7 @@ Wrapped with Praise & Worship Night <br>
     <!-- TESTIMONIAL SECTION END -->
     <section class="grid grid-cols-4 lg:grid-cols-3 sm:grid-cols-2">
         <!-- single gallery item -->
-        <div class="relative z-[1] group before:absolute before:inset-0 before:bg-etBlack/70 before:z-[0] before:opacity-0 before:transition before:duration-[400ms] hover:before:opacity-100">
+        <div class="relative z-[1] group before:absolute before:inset-0 before:bg-etBlue/70 before:z-[0] before:opacity-0 before:transition before:duration-[400ms] hover:before:opacity-100">
             <img src="<?= get_template_directory_uri(); ?>/assets/img/galeri1.png" alt="gallery image">
             <a href="<?= get_template_directory_uri(); ?>/assets/img/galeri1.png" data-fslightbox="gallery" class="inline-flex items-center justify-center w-[64px] aspect-square rounded-full bg-white text-[25px] absolute top-[50%] left-[50%] -translate-x-[50%] -translate-y-[50%] opacity-0 group-hover:opacity-100 hover:text-etBlue">
                 <i class="fa-plus fa-regular"></i>
@@ -1298,7 +1132,7 @@ Wrapped with Praise & Worship Night <br>
         </div>
 
         <!-- single gallery item -->
-        <div class="relative z-[1] group before:absolute before:inset-0 before:bg-etBlack/70 before:z-[0] before:opacity-0 before:transition before:duration-[400ms] hover:before:opacity-100">
+        <div class="relative z-[1] group before:absolute before:inset-0 before:bg-etBlue/70 before:z-[0] before:opacity-0 before:transition before:duration-[400ms] hover:before:opacity-100">
             <img src="<?= get_template_directory_uri(); ?>/assets/img/galeri2.png" alt="gallery image">
             <a href="<?= get_template_directory_uri(); ?>/assets/img/galeri2.png" data-fslightbox="gallery" class="inline-flex items-center justify-center w-[64px] aspect-square rounded-full bg-white text-[25px] absolute top-[50%] left-[50%] -translate-x-[50%] -translate-y-[50%] opacity-0 group-hover:opacity-100 hover:text-etBlue">
                 <i class="fa-plus fa-regular"></i>
@@ -1306,7 +1140,7 @@ Wrapped with Praise & Worship Night <br>
         </div>
 
         <!-- single gallery item -->
-        <div class="relative z-[1] group before:absolute before:inset-0 before:bg-etBlack/70 before:z-[0] before:opacity-0 before:transition before:duration-[400ms] hover:before:opacity-100">
+        <div class="relative z-[1] group before:absolute before:inset-0 before:bg-etBlue/70 before:z-[0] before:opacity-0 before:transition before:duration-[400ms] hover:before:opacity-100">
             <img src="<?= get_template_directory_uri(); ?>/assets/img/galeri3.png" alt="gallery image">
             <a href="<?= get_template_directory_uri(); ?>/assets/img/galeri3.png" data-fslightbox="gallery" class="inline-flex items-center justify-center w-[64px] aspect-square rounded-full bg-white text-[25px] absolute top-[50%] left-[50%] -translate-x-[50%] -translate-y-[50%] opacity-0 group-hover:opacity-100 hover:text-etBlue">
                 <i class="fa-plus fa-regular"></i>
@@ -1314,7 +1148,7 @@ Wrapped with Praise & Worship Night <br>
         </div>
 
         <!-- single gallery item -->
-        <div class="relative z-[1] group before:absolute before:inset-0 before:bg-etBlack/70 before:z-[0] before:opacity-0 before:transition before:duration-[400ms] hover:before:opacity-100">
+        <div class="relative z-[1] group before:absolute before:inset-0 before:bg-etBlue/70 before:z-[0] before:opacity-0 before:transition before:duration-[400ms] hover:before:opacity-100">
             <img src="<?= get_template_directory_uri(); ?>/assets/img/galeri4.png" alt="gallery image">
             <a href="<?= get_template_directory_uri(); ?>/assets/img/galeri4.png" data-fslightbox="gallery" class="inline-flex items-center justify-center w-[64px] aspect-square rounded-full bg-white text-[25px] absolute top-[50%] left-[50%] -translate-x-[50%] -translate-y-[50%] opacity-0 group-hover:opacity-100 hover:text-etBlue">
                 <i class="fa-plus fa-regular"></i>
@@ -1322,7 +1156,7 @@ Wrapped with Praise & Worship Night <br>
         </div>
 
         <!-- single gallery item -->
-        <div class="relative z-[1] group before:absolute before:inset-0 before:bg-etBlack/70 before:z-[0] before:opacity-0 before:transition before:duration-[400ms] hover:before:opacity-100">
+        <div class="relative z-[1] group before:absolute before:inset-0 before:bg-etBlue/70 before:z-[0] before:opacity-0 before:transition before:duration-[400ms] hover:before:opacity-100">
             <img src="<?= get_template_directory_uri(); ?>/assets/img/galeri5.png" alt="gallery image">
             <a href="<?= get_template_directory_uri(); ?>/assets/img/galeri5.png" data-fslightbox="gallery" class="inline-flex items-center justify-center w-[64px] aspect-square rounded-full bg-white text-[25px] absolute top-[50%] left-[50%] -translate-x-[50%] -translate-y-[50%] opacity-0 group-hover:opacity-100 hover:text-etBlue">
                 <i class="fa-plus fa-regular"></i>
@@ -1330,7 +1164,7 @@ Wrapped with Praise & Worship Night <br>
         </div>
 
         <!-- single gallery item -->
-        <div class="relative z-[1] group before:absolute before:inset-0 before:bg-etBlack/70 before:z-[0] before:opacity-0 before:transition before:duration-[400ms] hover:before:opacity-100">
+        <div class="relative z-[1] group before:absolute before:inset-0 before:bg-etBlue/70 before:z-[0] before:opacity-0 before:transition before:duration-[400ms] hover:before:opacity-100">
             <img src="<?= get_template_directory_uri(); ?>/assets/img/galeri6.png" alt="gallery image">
             <a href="<?= get_template_directory_uri(); ?>/assets/img/galeri6.png" data-fslightbox="gallery" class="inline-flex items-center justify-center w-[64px] aspect-square rounded-full bg-white text-[25px] absolute top-[50%] left-[50%] -translate-x-[50%] -translate-y-[50%] opacity-0 group-hover:opacity-100 hover:text-etBlue">
                 <i class="fa-plus fa-regular"></i>
@@ -1338,7 +1172,7 @@ Wrapped with Praise & Worship Night <br>
         </div>
 
         <!-- single gallery item -->
-        <div class="relative z-[1] group before:absolute before:inset-0 before:bg-etBlack/70 before:z-[0] before:opacity-0 before:transition before:duration-[400ms] hover:before:opacity-100">
+        <div class="relative z-[1] group before:absolute before:inset-0 before:bg-etBlue/70 before:z-[0] before:opacity-0 before:transition before:duration-[400ms] hover:before:opacity-100">
             <img src="<?= get_template_directory_uri(); ?>/assets/img/galeri9.png" alt="gallery image">
             <a href="<?= get_template_directory_uri(); ?>/assets/img/galeri9.png" data-fslightbox="gallery" class="inline-flex items-center justify-center w-[64px] aspect-square rounded-full bg-white text-[25px] absolute top-[50%] left-[50%] -translate-x-[50%] -translate-y-[50%] opacity-0 group-hover:opacity-100 hover:text-etBlue">
                 <i class="fa-plus fa-regular"></i>
@@ -1346,7 +1180,7 @@ Wrapped with Praise & Worship Night <br>
         </div>
 
         <!-- single gallery item -->
-        <div class="relative z-[1] group before:absolute before:inset-0 before:bg-etBlack/70 before:z-[0] before:opacity-0 before:transition before:duration-[400ms] hover:before:opacity-100">
+        <div class="relative z-[1] group before:absolute before:inset-0 before:bg-etBlue/70 before:z-[0] before:opacity-0 before:transition before:duration-[400ms] hover:before:opacity-100">
             <img src="<?= get_template_directory_uri(); ?>/assets/img/galeri10.png" alt="gallery image">
             <a href="<?= get_template_directory_uri(); ?>/assets/img/galeri10.png" data-fslightbox="gallery" class="inline-flex items-center justify-center w-[64px] aspect-square rounded-full bg-white text-[25px] absolute top-[50%] left-[50%] -translate-x-[50%] -translate-y-[50%] opacity-0 group-hover:opacity-100 hover:text-etBlue">
                 <i class="fa-plus fa-regular"></i>
@@ -1380,7 +1214,7 @@ Wrapped with Praise & Worship Night <br>
             </div>
 
             <div class="text-center">
-                <a href="#" class="bg-etBlue inline-flex items-center justify-center gap-[10px] h-[56px] px-[24px] rounded-[10px] text-white text-[16px] hover:bg-etBlack">Become a Sponsor <span class="icon"><i class="fa-solid fa-arrow-right-long"></i></span></a>
+                <a href="#" class="bg-etBlue inline-flex items-center justify-center gap-[10px] h-[56px] px-[24px] rounded-[10px] text-white text-[16px] hover:bg-etBlue">Become a Sponsor <span class="icon"><i class="fa-solid fa-arrow-right-long"></i></span></a>
             </div>
         </div>
     </section>
@@ -1429,13 +1263,97 @@ Wrapped with Praise & Worship Night <br>
                                     <!-- single info -->
                                     <div class="et-blog-info flex items-center gap-x-[10px]">
                                         <span class="icon"><img src="<?= get_template_directory_uri(); ?>/assets/img/user-blue.svg" alt="icon"></span>
-                                        <span class="text font-normal text-[14px] text-etGray">Bpro Administrator</span>
+                                        <span class="text font-normal text-[14px] text-etGray">BPro Administrator</span>
                                     </div>
                                 </div>
 
-                                <h4 class="et-blog__title text-[22px] lg:text-[20px] sm:text-[18px] font-medium leading-[1.4] mb-[19px]" style="color: #1260FE;">FA Gabungan BPro</h4>
+                                <h4 class="et-blog__title text-[22px] lg:text-[20px] sm:text-[18px] font-medium leading-[1.4] mb-[19px]" style="color: #1260FE;">FA - FA Gabungan BPro</h4>
 
-                                <a href="news-details.html" class="text-[16px] text-etGray inline-flex items-center gap-[10px] hover:text-etBlue">Read More <span><i class="fa-solid fa-arrow-right-long"></i></span></a>
+                                <a href="#" class="text-[16px]  text-etGray inline-flex items-center gap-[10px] hover:text-etBlue">Read More <span><i class="fa-solid fa-arrow-right-long"></i></span></a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide group">
+                        <div class="et-blog bg-white relative group-[.swiper-slide-visible]:shadow-[0_4px_25px_rgba(0,0,0,0.06)]">
+                            <div class="et-blog__img relative overflow-hidden z-[1]">
+                                <img src="<?= get_template_directory_uri(); ?>/assets/new-img/journal1.jpg" alt="category-icon" class="w-full aspect-[37/24] object-cover transition duration-[400ms] group-hover:scale-105">
+                            </div>
+
+                            <div class="et-blog__txt bottom-0 z-[3] p-[30px] lg:p-[20px]">
+                                <div class="et-blog__infos flex gap-x-[30px] mb-[13px]">
+                                    <!-- single info -->
+                                    <div class="et-blog-info flex items-center gap-x-[10px]">
+                                        <span class="icon"><img src="<?= get_template_directory_uri(); ?>/assets/img/calender-blue.svg" alt="icon"></span>
+                                        <span class="text font-normal text-[14px] text-etGray">06 July 2024</span>
+                                    </div>
+
+                                    <!-- single info -->
+                                    <div class="et-blog-info flex items-center gap-x-[10px]">
+                                        <span class="icon"><img src="<?= get_template_directory_uri(); ?>/assets/img/user-blue.svg" alt="icon"></span>
+                                        <span class="text font-normal text-[14px] text-etGray">BPro Administrator</span>
+                                    </div>
+                                </div>
+
+                                <h4 class="et-blog__title text-[22px] lg:text-[20px] sm:text-[18px] font-medium leading-[1.4] mb-[19px]" style="color: #1260FE;">God's Purpose in Me</h4>
+
+                                <a href="/journal?journal-detail=Gods-Purpose-in-Me" class="text-[16px]  text-etGray inline-flex items-center gap-[10px] hover:text-etBlue">Read More <span><i class="fa-solid fa-arrow-right-long"></i></span></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide group">
+                        <div class="et-blog bg-white relative group-[.swiper-slide-visible]:shadow-[0_4px_25px_rgba(0,0,0,0.06)]">
+                            <div class="et-blog__img relative overflow-hidden z-[1]">
+                                <img src="<?= get_template_directory_uri(); ?>/assets/new-img/journal2.png" alt="category-icon" class="w-full aspect-[37/24] object-cover transition duration-[400ms] group-hover:scale-105">
+                            </div>
+
+                            <div class="et-blog__txt bottom-0 z-[3] p-[30px] lg:p-[20px]">
+                                <div class="et-blog__infos flex gap-x-[30px] mb-[13px]">
+                                    <!-- single info -->
+                                    <div class="et-blog-info flex items-center gap-x-[10px]">
+                                        <span class="icon"><img src="<?= get_template_directory_uri(); ?>/assets/img/calender-blue.svg" alt="icon"></span>
+                                        <span class="text font-normal text-[14px] text-etGray">22 Juni 2024</span>
+                                    </div>
+
+                                    <!-- single info -->
+                                    <div class="et-blog-info flex items-center gap-x-[10px]">
+                                        <span class="icon"><img src="<?= get_template_directory_uri(); ?>/assets/img/user-blue.svg" alt="icon"></span>
+                                        <span class="text font-normal text-[14px] text-etGray">BPro Administrator</span>
+                                    </div>
+                                </div>
+
+                                <h4 class="et-blog__title text-[22px] lg:text-[20px] sm:text-[18px] font-medium leading-[1.4] mb-[19px]" style="color: #1260FE;">The Calling</h4>
+
+                                <a href="/journal?journal-detail=the-calling" class="text-[16px]  text-etGray inline-flex items-center gap-[10px] hover:text-etBlue">Read More <span><i class="fa-solid fa-arrow-right-long"></i></span></a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- single blogs -->
+                    <div class="swiper-slide group">
+                        <div class="et-blog bg-white relative group-[.swiper-slide-visible]:shadow-[0_4px_25px_rgba(0,0,0,0.06)]">
+                            <div class="et-blog__img relative overflow-hidden z-[1]">
+                                <img src="<?= get_template_directory_uri(); ?>/assets/new-img/journal4.png" alt="category-icon" class="w-full aspect-[37/24] object-cover transition duration-[400ms] group-hover:scale-105">
+                            </div>
+
+                            <div class="et-blog__txt bottom-0 z-[3] p-[30px] lg:p-[20px]">
+                                <div class="et-blog__infos flex gap-x-[30px] mb-[13px]">
+                                    <!-- single info -->
+                                    <div class="et-blog-info flex items-center gap-x-[10px]">
+                                        <span class="icon"><img src="<?= get_template_directory_uri(); ?>/assets/img/calender-blue.svg" alt="icon"></span>
+                                        <span class="text font-normal text-[14px] text-etGray">23 Mei 2024</span>
+                                    </div>
+
+                                    <!-- single info -->
+                                    <div class="et-blog-info flex items-center gap-x-[10px]">
+                                        <span class="icon"><img src="<?= get_template_directory_uri(); ?>/assets/img/user-blue.svg" alt="icon"></span>
+                                        <span class="text font-normal text-[14px] text-etGray">BPro Administrator</span>
+                                    </div>
+                                </div>
+
+                                <h4 class="et-blog__title text-[22px] lg:text-[20px] sm:text-[18px] font-medium leading-[1.4] mb-[19px]" style="color: #1260FE;">BPro Race</h4>
+
+                                <a href="/journal?journal-detail=bpro-race" class="text-[16px] text-etGray inline-flex items-center gap-[10px] hover:text-etBlue">Read More <span><i class="fa-solid fa-arrow-right-long"></i></span></a>
                             </div>
                         </div>
                     </div>
@@ -1458,51 +1376,24 @@ Wrapped with Praise & Worship Night <br>
                                     <!-- single info -->
                                     <div class="et-blog-info flex items-center gap-x-[10px]">
                                         <span class="icon"><img src="<?= get_template_directory_uri(); ?>/assets/img/user-blue.svg" alt="icon"></span>
-                                        <span class="text font-normal text-[14px] text-etGray">Bpro Administrator</span>
+                                        <span class="text font-normal text-[14px] text-etGray">BPro Administrator</span>
                                     </div>
                                 </div>
 
-                                <h4 class="et-blog__title text-[22px] lg:text-[20px] sm:text-[18px] font-medium leading-[1.4] mb-[19px]" style="color: #1260FE;">Bestie in Community</h4>
+                                <h4 class="et-blog__title text-[22px] lg:text-[20px] sm:text-[18px] font-medium leading-[1.4] mb-[19px]" style="color: #1260FE;">TS - Bestie in Community</h4>
 
-                                <a href="news-details.html" class="text-[16px] text-etGray inline-flex items-center gap-[10px] hover:text-etBlue">Read More <span><i class="fa-solid fa-arrow-right-long"></i></span></a>
+                                <a href="#" class="text-[16px] text-etGray inline-flex items-center gap-[10px] hover:text-etBlue">Read More <span><i class="fa-solid fa-arrow-right-long"></i></span></a>
                             </div>
                         </div>
                     </div>
+
+                    
 
                     <!-- single blogs -->
                     <div class="swiper-slide group">
                         <div class="et-blog bg-white relative group-[.swiper-slide-visible]:shadow-[0_4px_25px_rgba(0,0,0,0.06)]">
                             <div class="et-blog__img relative overflow-hidden z-[1]">
-                                <img src="<?= get_template_directory_uri(); ?>/assets/img/blog/blog3.png" alt="category-icon" class="w-full aspect-[37/24] object-cover transition duration-[400ms] group-hover:scale-105">
-                            </div>
-
-                            <div class="et-blog__txt bottom-0 z-[3] p-[30px] lg:p-[20px]">
-                                <div class="et-blog__infos flex gap-x-[30px] mb-[13px]">
-                                    <!-- single info -->
-                                    <div class="et-blog-info flex items-center gap-x-[10px]">
-                                        <span class="icon"><img src="<?= get_template_directory_uri(); ?>/assets/img/calender-blue.svg" alt="icon"></span>
-                                        <span class="text font-normal text-[14px] text-etGray">23 Mei 2024</span>
-                                    </div>
-
-                                    <!-- single info -->
-                                    <div class="et-blog-info flex items-center gap-x-[10px]">
-                                        <span class="icon"><img src="<?= get_template_directory_uri(); ?>/assets/img/user-blue.svg" alt="icon"></span>
-                                        <span class="text font-normal text-[14px] text-etGray">Bpro Administrator</span>
-                                    </div>
-                                </div>
-
-                                <h4 class="et-blog__title text-[22px] lg:text-[20px] sm:text-[18px] font-medium leading-[1.4] mb-[19px]" style="color: #1260FE;">BPro Race</h4>
-
-                                <a href="news-details.html" class="text-[16px] text-etGray inline-flex items-center gap-[10px] hover:text-etBlue">Read More <span><i class="fa-solid fa-arrow-right-long"></i></span></a>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- single blogs -->
-                    <div class="swiper-slide group">
-                        <div class="et-blog bg-white relative group-[.swiper-slide-visible]:shadow-[0_4px_25px_rgba(0,0,0,0.06)]">
-                            <div class="et-blog__img relative overflow-hidden z-[1]">
-                                <img src="<?= get_template_directory_uri(); ?>/assets/img/blog/blog4.png" alt="category-icon" class="w-full aspect-[37/24] object-cover transition duration-[400ms] group-hover:scale-105">
+                                <img src="<?= get_template_directory_uri(); ?>/assets/new-img/journal6.png" alt="category-icon" class="w-full aspect-[37/24] object-cover transition duration-[400ms] group-hover:scale-105">
                             </div>
 
                             <div class="et-blog__txt bottom-0 z-[3] p-[30px] lg:p-[20px]">
@@ -1516,13 +1407,13 @@ Wrapped with Praise & Worship Night <br>
                                     <!-- single info -->
                                     <div class="et-blog-info flex items-center gap-x-[10px]">
                                         <span class="icon"><img src="<?= get_template_directory_uri(); ?>/assets/img/user-blue.svg" alt="icon"></span>
-                                        <span class="text font-normal text-[14px] text-etGray">Bpro Administrator</span>
+                                        <span class="text font-normal text-[14px] text-etGray">BPro Administrator</span>
                                     </div>
                                 </div>
 
-                                <h4 class="et-blog__title text-[22px] lg:text-[20px] sm:text-[18px] font-medium leading-[1.4] mb-[19px]">Harmony Celebration</h4>
+                                <h4 class="et-blog__title text-[22px] lg:text-[20px] sm:text-[18px] font-medium leading-[1.4] mb-[19px]" style="color: #1260FE;">Harmony Celebration</h4>
 
-                                <a href="news-details.html" class="text-[16px] text-etGray inline-flex items-center gap-[10px] hover:text-etBlue">Read More <span><i class="fa-solid fa-arrow-right-long"></i></span></a>
+                                <a href="/journal?journal-detail=harmony-celebration" class="text-[16px] text-etGray inline-flex items-center gap-[10px] hover:text-etBlue">Read More <span><i class="fa-solid fa-arrow-right-long"></i></span></a>
                             </div>
                         </div>
                     </div>
@@ -1677,6 +1568,10 @@ Wrapped with Praise & Worship Night <br>
         text-decoration: none;
         cursor: pointer;
     }
+
+    .et-testimony.relative.p-\[40px\].lg\:p-\[30px\].md\:p-\[20px\].border.border-\[\#D4DCED\].rounded-\[16px\].mt-\[60px\] {}.et-testimony.relative.p-\[40px\].lg\:p-\[30px\].md\:p-\[20px\].border.border-\[\#D4DCED\].rounded-\[16px\].mt-\[60px\] {
+    min-height: 290px;
+}
 </style>
 <script>
     // Get the modal
