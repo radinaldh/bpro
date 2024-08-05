@@ -181,6 +181,16 @@ get_header('main');
                         Yuk gabung dengan FA BPro…
                     </p>
                 </div>
+                <div class="border-y border-[#d9d9d9] py-[24px] flex items-center justify-between xs:flex-col xs:items-start gap-[20px]">
+                    <!-- share options -->
+                    <div class="flex gap-[28px] items-center">
+                        <h6 class="font-medium text-[16px] text-etBlack">Share:</h6>
+                        <div class="flex gap-[15px] text-[16px]">
+                            <a href="#" class="text-[#757277] hover:text-etBlue"><i class="fa-brands fa-facebook-f"></i></a>
+                            <a href="#" class="text-[#757277] hover:text-etBlue"><i class="fa-brands fa-instagram"></i></a>
+                        </div>
+                    </div>
+                </div>
             </div>
 
 
@@ -241,6 +251,16 @@ get_header('main');
                         bersama kami di komunitas BPro. Bersama kita bertumbuh dalam keharmonisan iman dan karakter.
 
                     </p>
+                </div>
+                <div class="border-y border-[#d9d9d9] py-[24px] flex items-center justify-between xs:flex-col xs:items-start gap-[20px]">
+                    <!-- share options -->
+                    <div class="flex gap-[28px] items-center">
+                        <h6 class="font-medium text-[16px] text-etBlack">Share:</h6>
+                        <div class="flex gap-[15px] text-[16px]">
+                            <a href="#" class="text-[#757277] hover:text-etBlue"><i class="fa-brands fa-facebook-f"></i></a>
+                            <a href="#" class="text-[#757277] hover:text-etBlue"><i class="fa-brands fa-instagram"></i></a>
+                        </div>
+                    </div>
                 </div>
             </div>
 
@@ -318,6 +338,16 @@ get_header('main');
 
 
                     </p>
+                </div>
+                <div class="border-y border-[#d9d9d9] py-[24px] flex items-center justify-between xs:flex-col xs:items-start gap-[20px]">
+                    <!-- share options -->
+                    <div class="flex gap-[28px] items-center">
+                        <h6 class="font-medium text-[16px] text-etBlack">Share:</h6>
+                        <div class="flex gap-[15px] text-[16px]">
+                            <a href="#" class="text-[#757277] hover:text-etBlue"><i class="fa-brands fa-facebook-f"></i></a>
+                            <a href="#" class="text-[#757277] hover:text-etBlue"><i class="fa-brands fa-instagram"></i></a>
+                        </div>
+                    </div>
                 </div>
             </div>
 
