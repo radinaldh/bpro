@@ -8,7 +8,7 @@ get_header('main'); ?>
 
 <style>
     .font-light {
-        font-size: 12px;
+        font-size: 15px;
     }
 </style>
 
