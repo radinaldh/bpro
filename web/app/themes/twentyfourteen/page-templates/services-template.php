@@ -12,6 +12,9 @@ get_header('main');
     iframe {
         height: 300px;
     }
+    section.et-about {
+    padding-bottom: 25px;
+}
 }
 </style>
 
