@@ -53,6 +53,26 @@ get_header('main');
     .slick-list {
         margin: 0 -30px;
   }
+
+  video.backgroundvideo {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.et-banner-slider .swiper-slide-active > div {
+    min-height: 100vh;
+}
+
+.swiper-backface-hidden .swiper-slide {min-height: 100vh;}
+
+.before\:opacity-50::before {
+    min-height: 100vh;
+}
+
+h5.font-semibold.text-\[22px\].md\:text-\[20px\].text-etBlack.mb-\[4px\] {
+    font-size: 16px;
+}
 </style>
 
 <main>
@@ -62,7 +82,12 @@ get_header('main');
             <div class="swiper-wrapper">
                 <!-- single slide -->
                 <div class="swiper-slide">
+        <video class="backgroundvideo" autoplay muted loop>
+            <source src="<?= get_template_directory_uri(); ?>/assets/img/background.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
                     <div class="bg-no-repeat bg-cover bg-[url('assets/img/banner-2-bg-1.jpg')] bg-center pt-[clamp(140px,12.7vw,213px)] text-white relative overflow-hidden z-[1] before:content-normal before:absolute before:inset-0 before:bg-gradient-to-r before:from-[#1900B1] before:from-50% before:to-transparent before:-z-[1] before:opacity-50">
+                       
                         <div class="mx-[15.5em] xxxl:mx-[10em] xxl:mx-[40px] xs:mx-[12px] mb-[132px] xl:mb-[112px] lg:mb-[82px]">
                             <div class="flex md:flex-col items-center justify-between gap-x-[30px] gap-y-[30px] md:grid-cols-1">
                                 
@@ -70,7 +95,7 @@ get_header('main');
                             <div class="left relative z-[20] w-[100%] text-center md:w-full">
                                     <h6 class="font-kalam font-bold text-[2.4rem] mb-[3px] anim-text">Bethany Professional 2024</h6>
 
-                                    <h1 class="text-[clamp(42px,6.25vw,12rem)] font-semibold leading-[1.1] mb-[36px] md:mb-[36px] anim-text">Welcome to <br> our Cummunity</span></h1>
+                                    <h1 class="text-[clamp(42px,6.25vw,12rem)] font-semibold leading-[1.1] mb-[36px] md:mb-[36px] anim-text">Welcome to <br> our Community</span></h1>
 
                                     <!-- <div class="et-banner-btns flex flex-wrap items-center gap-[20px]">
                                         <a href="#" class="et-btn bg-etBlue inline-flex items-center justify-center gap-x-[13px] h-[45px] px-[15px] text-white font-normal text-[17px] rounded-full hover:!bg-white hover:!text-etBlue">Register Now</a>
@@ -405,10 +430,10 @@ get_header('main');
                                     </div> -->
 
                                     <div class="flex shrink-0 flex-col xxs:flex-row gap-[16px] xxs:gap-[10px]">
-                                    <button href="#"
+                                    <a href="https://api.whatsapp.com/send?phone=6281131166111"
                                         class="myBtn et-btn border w-[180px] bg-etBlue text-white inline-flex items-center justify-center h-[45px] px-[22px] xxs:px-[16px] font-normal text-[17px] rounded-full hover:!bg-etBlue hover:!text-white">View
-                                        More</button>
-                                        <a href="https://bethanyprofessional.com/rsvp/" class="et-btn border bg-etBlue text-white inline-flex items-center justify-center h-[45px] px-[22px] xxs:px-[16px] font-normal text-[17px] rounded-full hover:!bg-etBlue hover:!text-white">Buy Tickets</a>
+                                        More</a>
+                                        <a href="https://bethanyprofessional.com/rsvp/" class="et-btn border bg-etBlue text-white inline-flex items-center justify-center h-[45px] px-[22px] xxs:px-[16px] font-normal text-[17px] rounded-full hover:!bg-etBlue hover:!text-white">Book Your Seat</a>
                                     </div>
                                 </div>
                             </div>
@@ -799,68 +824,33 @@ get_header('main');
                 <h2 class="text-[35px] sm:text-[24px] anim-text">Meet Our Creative Speakers</h2>
             </div>
 
-            <div class="sm:hidden">
-                <div class="grid grid-cols-3 md:grid-cols-3 sm:grid-cols-2 xxs:grid-cols-1 justify-center gap-[30px] lg:gap-[20px]" style="
-                        display: flex;
-                        justify-content: center;
-                        align-items: center;
-                    ">
-                    <!-- single team member -->
-                    <div class="et-member group" style="flex: 0 0 33.333333%; max-width: 33.333333%;">
-                        <div class="et-member__img rounded-[16px] overflow-hidden">
-                            <img src="<?= get_template_directory_uri(); ?>/assets/img/Irfan Arsandi.jpg" alt="Team Member Image" class="w-full duration-[400ms] group-hover:scale-110">
-                        </div>
-    
-                        <div class="et-member__txt bg-white relative z-[1] mx-[25px] md:mx-[15px] xs:mx-[5px] -mt-[44px] md:-mt-[15px] xs:mt-0 rounded-[16px] shadow-[0_4px_60px_rgba(18,96,254,0.12)] px-[25px] md:px-[15px] pb-[30px] md:pb-[20px] before:w-full before:absolute before:-z-[1] before:h-full before:bg-white before:left-0 before:rounded-[16px] before:-top-[33px] before:skew-y-[4deg]">
-                            <div class="et-member-socials absolute right-[20px] -top-[43px]">
-                                <div class="et-speaker__socials flex flex-col gap-[8px] absolute -z-[2] text-[14px] opacity-0 transition duration-[400ms] bottom-[calc(100%+8px)] translate-y-[100%] group-hover:translate-y-0 group-hover:opacity-100">
-                                    <a href="https://www.facebook.com/sharer/sharer.php?u=https://bethanyprofessional.com/rsvp/" class="border border-white text-white w-[36px] h-[36px] flex items-center justify-center rounded-full hover:border-etBlue hover:bg-etBlue"><i class="fa-brands fa-facebook-f"></i></a>
-                                    <!-- <a href="#" class="border border-white text-white w-[36px] h-[36px] flex items-center justify-center rounded-full hover:border-etBlue hover:bg-etBlue"><i class="fa-brands fa-x-twitter"></i></a>
-                                    <a href="#" class="border border-white text-white w-[36px] h-[36px] flex items-center justify-center rounded-full hover:border-etBlue hover:bg-etBlue"><i class="fa-brands fa-linkedin-in"></i></a> -->
-                                    <a href="javascript:void(0);" onclick="copyLink()" class="border border-white text-white w-[36px] h-[36px] flex items-center justify-center rounded-full hover:border-etBlue hover:bg-etBlue"><i class="fa-brands fa-instagram"></i></a>
-                                </div>
-                                <div class="et-member-socials__icon w-[36px] aspect-square rounded-full bg-etBlue flex items-center justify-center">
-                                    <svg width="13" height="14" viewBox="0 0 13 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <path d="M9.89361 9.41703C9.22284 9.41703 8.61849 9.70668 8.19906 10.1675L4.42637 7.83088C4.52995 7.56611 4.58305 7.28429 4.58294 6.99999C4.58307 6.71568 4.52997 6.43386 4.42637 6.16909L8.19906 3.83238C8.61851 4.29318 9.22284 4.58297 9.89361 4.58297C11.1572 4.58297 12.1851 3.55501 12.1851 2.29143C12.1851 1.02785 11.1572 0 9.89361 0C8.63005 0 7.60209 1.02796 7.60209 2.29154C7.60204 2.57583 7.65514 2.85763 7.75866 3.1224L3.98608 5.45903C3.56663 4.99824 2.96231 4.70845 2.29154 4.70845C1.02796 4.70845 0 5.73652 0 6.99999C0 8.26354 1.02796 9.29152 2.29154 9.29152C2.96228 9.29152 3.56666 9.00185 3.98608 8.54094L7.75869 10.8776C7.65515 11.1424 7.60204 11.4242 7.60209 11.7085C7.60209 12.972 8.63003 14 9.89361 14C11.1572 14 12.1851 12.972 12.1851 11.7086C12.1851 10.445 11.1572 9.41703 9.89361 9.41703ZM8.43766 2.29154C8.43766 1.48873 9.09082 0.835596 9.89361 0.835596C10.6964 0.835596 11.3495 1.48873 11.3495 2.29154C11.3495 3.09435 10.6964 3.74748 9.89361 3.74748C9.09079 3.74748 8.43766 3.09432 8.43766 2.29154ZM2.29154 8.45593C1.48862 8.45593 0.835487 7.80277 0.835487 6.99999C0.835487 6.1972 1.48862 5.54404 2.29154 5.54404C3.09435 5.54404 3.74737 6.1972 3.74737 6.99999C3.74737 7.80277 3.09432 8.45593 2.29154 8.45593ZM8.43766 11.7085C8.43766 10.9057 9.09082 10.2525 9.89361 10.2525C10.6964 10.2525 11.3495 10.9057 11.3495 11.7084C11.3495 12.5112 10.6964 13.1644 9.89361 13.1644C9.09079 13.1644 8.43766 12.5112 8.43766 11.7084V11.7085Z" fill="white" />
-                                    </svg>
-                                </div>
+            <div>
+            <div class="pembicaraslider">
+                    <div>
+                        <div class="et-member group" >
+                            <div class="et-member__img rounded-[16px] overflow-hidden">
+                                <img src="<?= get_template_directory_uri(); ?>/assets/img/Pdt. Jesse Lantang.png" alt="Team Member Image" class="w-full duration-[400ms] group-hover:scale-110">
                             </div>
-                            <h5 class="font-semibold text-[22px] md:text-[20px] text-etBlack mb-[4px]" style="padding: 17px 0px;"><a href="team-member-details.html" class="hover:text-etBlue">Irfan Arsandi</a></h5>
-                            <span class="text-etGray text-[16px]">CEO WIT Indonesia</span>
+        
+                            <div class="et-member__txt bg-white relative z-[1] mx-[25px] md:mx-[15px] xs:mx-[5px] -mt-[44px] md:-mt-[15px] xs:mt-0 rounded-[16px] px-[25px] md:px-[15px] pb-[30px] md:pb-[20px] before:w-full before:absolute before:-z-[1] before:h-full before:bg-white before:left-0 before:rounded-[16px] before:-top-[33px] before:skew-y-[4deg]">
+                                <div class="et-member-socials absolute right-[20px] -top-[43px]">
+                                    <div class="et-speaker__socials flex flex-col gap-[8px] absolute -z-[2] text-[14px] opacity-0 transition duration-[400ms] bottom-[calc(100%+8px)] translate-y-[100%] group-hover:translate-y-0 group-hover:opacity-100">
+                                        <a href="https://www.facebook.com/sharer/sharer.php?u=https://bethanyprofessional.com/rsvp/" class="border border-white text-white w-[36px] h-[36px] flex items-center justify-center rounded-full hover:border-etBlue hover:bg-etBlue"><i class="fa-brands fa-facebook-f"></i></a>
+                                        <!-- <a href="#" class="border border-white text-white w-[36px] h-[36px] flex items-center justify-center rounded-full hover:border-etBlue hover:bg-etBlue"><i class="fa-brands fa-x-twitter"></i></a>
+                                        <a href="#" class="border border-white text-white w-[36px] h-[36px] flex items-center justify-center rounded-full hover:border-etBlue hover:bg-etBlue"><i class="fa-brands fa-linkedin-in"></i></a> -->
+                                        <a href="javascript:void(0);" onclick="copyLink()" class="border border-white text-white w-[36px] h-[36px] flex items-center justify-center rounded-full hover:border-etBlue hover:bg-etBlue"><i class="fa-brands fa-instagram"></i></a>
+                                    </div>
+                                    <div class="et-member-socials__icon w-[36px] aspect-square rounded-full bg-etBlue flex items-center justify-center">
+                                        <svg width="13" height="14" viewBox="0 0 13 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M9.89361 9.41703C9.22284 9.41703 8.61849 9.70668 8.19906 10.1675L4.42637 7.83088C4.52995 7.56611 4.58305 7.28429 4.58294 6.99999C4.58307 6.71568 4.52997 6.43386 4.42637 6.16909L8.19906 3.83238C8.61851 4.29318 9.22284 4.58297 9.89361 4.58297C11.1572 4.58297 12.1851 3.55501 12.1851 2.29143C12.1851 1.02785 11.1572 0 9.89361 0C8.63005 0 7.60209 1.02796 7.60209 2.29154C7.60204 2.57583 7.65514 2.85763 7.75866 3.1224L3.98608 5.45903C3.56663 4.99824 2.96231 4.70845 2.29154 4.70845C1.02796 4.70845 0 5.73652 0 6.99999C0 8.26354 1.02796 9.29152 2.29154 9.29152C2.96228 9.29152 3.56666 9.00185 3.98608 8.54094L7.75869 10.8776C7.65515 11.1424 7.60204 11.4242 7.60209 11.7085C7.60209 12.972 8.63003 14 9.89361 14C11.1572 14 12.1851 12.972 12.1851 11.7086C12.1851 10.445 11.1572 9.41703 9.89361 9.41703ZM8.43766 2.29154C8.43766 1.48873 9.09082 0.835596 9.89361 0.835596C10.6964 0.835596 11.3495 1.48873 11.3495 2.29154C11.3495 3.09435 10.6964 3.74748 9.89361 3.74748C9.09079 3.74748 8.43766 3.09432 8.43766 2.29154ZM2.29154 8.45593C1.48862 8.45593 0.835487 7.80277 0.835487 6.99999C0.835487 6.1972 1.48862 5.54404 2.29154 5.54404C3.09435 5.54404 3.74737 6.1972 3.74737 6.99999C3.74737 7.80277 3.09432 8.45593 2.29154 8.45593ZM8.43766 11.7085C8.43766 10.9057 9.09082 10.2525 9.89361 10.2525C10.6964 10.2525 11.3495 10.9057 11.3495 11.7084C11.3495 12.5112 10.6964 13.1644 9.89361 13.1644C9.09079 13.1644 8.43766 12.5112 8.43766 11.7084V11.7085Z" fill="white" />
+                                        </svg>
+                                    </div>
+                                </div>
+                                <h5 class="font-semibold text-[16px] md:text-[20px] text-etBlack mb-[4px]" style="padding: 12px 0px;"><a href="#" class="hover:text-etBlue">Pdt. Jesse Lantang</a></h5>
+                                <span class="text-etGray text-[12px]">Pendeta</span>
+                            </div>
                         </div>
                     </div>
-    
-                    <!-- single team member -->
-                    <div class="et-member group" style="flex: 0 0 33.333333%; max-width: 33.333333%;">
-                        <div class="et-member__img rounded-[16px] overflow-hidden">
-                            <img src="<?= get_template_directory_uri(); ?>/assets/img/Juhono.jpg" alt="Team Member Image" class="w-full duration-[400ms] group-hover:scale-110">
-                        </div>
-    
-                        <div class="et-member__txt bg-white relative z-[1] mx-[25px] md:mx-[15px] xs:mx-[5px] -mt-[44px] md:-mt-[15px] xs:mt-0 rounded-[16px] shadow-[0_4px_60px_rgba(18,96,254,0.12)] px-[25px] md:px-[15px] pb-[30px] md:pb-[20px] before:w-full before:absolute before:-z-[1] before:h-full before:bg-white before:left-0 before:rounded-[16px] before:-top-[33px] before:skew-y-[4deg]">
-                            <div class="et-member-socials absolute right-[20px] -top-[43px]">
-                                <div class="et-speaker__socials flex flex-col gap-[8px] absolute -z-[2] text-[14px] opacity-0 transition duration-[400ms] bottom-[calc(100%+8px)] translate-y-[100%] group-hover:translate-y-0 group-hover:opacity-100">
-                                    <a href="https://www.facebook.com/sharer/sharer.php?u=https://bethanyprofessional.com/rsvp/" class="border border-white text-white w-[36px] h-[36px] flex items-center justify-center rounded-full hover:border-etBlue hover:bg-etBlue"><i class="fa-brands fa-facebook-f"></i></a>
-                                    <!-- <a href="#" class="border border-white text-white w-[36px] h-[36px] flex items-center justify-center rounded-full hover:border-etBlue hover:bg-etBlue"><i class="fa-brands fa-x-twitter"></i></a>
-                                    <a href="#" class="border border-white text-white w-[36px] h-[36px] flex items-center justify-center rounded-full hover:border-etBlue hover:bg-etBlue"><i class="fa-brands fa-linkedin-in"></i></a> -->
-                                    <a href="javascript:void(0);" onclick="copyLink()" class="border border-white text-white w-[36px] h-[36px] flex items-center justify-center rounded-full hover:border-etBlue hover:bg-etBlue"><i class="fa-brands fa-instagram"></i></a>
-                                </div>
-                                <div class="et-member-socials__icon w-[36px] aspect-square rounded-full bg-etBlue flex items-center justify-center">
-                                    <svg width="13" height="14" viewBox="0 0 13 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <path d="M9.89361 9.41703C9.22284 9.41703 8.61849 9.70668 8.19906 10.1675L4.42637 7.83088C4.52995 7.56611 4.58305 7.28429 4.58294 6.99999C4.58307 6.71568 4.52997 6.43386 4.42637 6.16909L8.19906 3.83238C8.61851 4.29318 9.22284 4.58297 9.89361 4.58297C11.1572 4.58297 12.1851 3.55501 12.1851 2.29143C12.1851 1.02785 11.1572 0 9.89361 0C8.63005 0 7.60209 1.02796 7.60209 2.29154C7.60204 2.57583 7.65514 2.85763 7.75866 3.1224L3.98608 5.45903C3.56663 4.99824 2.96231 4.70845 2.29154 4.70845C1.02796 4.70845 0 5.73652 0 6.99999C0 8.26354 1.02796 9.29152 2.29154 9.29152C2.96228 9.29152 3.56666 9.00185 3.98608 8.54094L7.75869 10.8776C7.65515 11.1424 7.60204 11.4242 7.60209 11.7085C7.60209 12.972 8.63003 14 9.89361 14C11.1572 14 12.1851 12.972 12.1851 11.7086C12.1851 10.445 11.1572 9.41703 9.89361 9.41703ZM8.43766 2.29154C8.43766 1.48873 9.09082 0.835596 9.89361 0.835596C10.6964 0.835596 11.3495 1.48873 11.3495 2.29154C11.3495 3.09435 10.6964 3.74748 9.89361 3.74748C9.09079 3.74748 8.43766 3.09432 8.43766 2.29154ZM2.29154 8.45593C1.48862 8.45593 0.835487 7.80277 0.835487 6.99999C0.835487 6.1972 1.48862 5.54404 2.29154 5.54404C3.09435 5.54404 3.74737 6.1972 3.74737 6.99999C3.74737 7.80277 3.09432 8.45593 2.29154 8.45593ZM8.43766 11.7085C8.43766 10.9057 9.09082 10.2525 9.89361 10.2525C10.6964 10.2525 11.3495 10.9057 11.3495 11.7084C11.3495 12.5112 10.6964 13.1644 9.89361 13.1644C9.09079 13.1644 8.43766 12.5112 8.43766 11.7084V11.7085Z" fill="white" />
-                                    </svg>
-                                </div>
-                            </div>
-                            <h5 class="font-semibold text-[22px] md:text-[20px] text-etBlack mb-[4px]"><a href="team-member-details.html" class="hover:text-etBlue">Juhono S. Sudirgo, CFP, QWP, AEPP</a></h5>
-                            <span class="text-etGray text-[16px]">Financial Planner</span>
-                        </div>
-                    </div>
-    
-                    <!-- single team member -->
-    
-                </div>
-            </div>
-            <div class="testing-slider">
-                <div class="multiple-items">
                     <div>
                         <div class="et-member group" >
                             <div class="et-member__img rounded-[16px] overflow-hidden">
@@ -881,8 +871,8 @@ get_header('main');
                                         </svg>
                                     </div>
                                 </div>
-                                <h5 class="font-semibold text-[22px] md:text-[20px] text-etBlack mb-[4px]" style="padding: 17px 0px;"><a href="team-member-details.html" class="hover:text-etBlue">Irfan Arsandi</a></h5>
-                                <span class="text-etGray text-[16px]">CEO WIT Indonesia</span>
+                                <h5 class="font-semibold text-[16px] md:text-[20px] text-etBlack mb-[4px]" style="padding: 12px 0px;"><a href="#" class="hover:text-etBlue">Irfan Arsandi</a></h5>
+                                <span class="text-etGray text-[12px]">CEO WIT Indonesia</span>
                             </div>
                         </div>
                     </div>
@@ -906,8 +896,33 @@ get_header('main');
                                         </svg>
                                     </div>
                                 </div>
-                                <h5 class="font-semibold text-[22px] md:text-[20px] text-etBlack mb-[4px]"><a href="team-member-details.html" class="hover:text-etBlue">Juhono S. Sudirgo, CFP, QWP, AEPP</a></h5>
-                                <span class="text-etGray text-[16px]">Financial Planner</span>
+                                <h5 class="font-semibold text-[16px] md:text-[20px] text-etBlack mb-[4px]"><a href="#" class="hover:text-etBlue">Juhono S. Sudirgo, CFP, QWP, AEPP</a></h5>
+                                <span class="text-etGray text-[12px]">Financial Planner</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="et-member group" >
+                            <div class="et-member__img rounded-[16px] overflow-hidden">
+                                <img src="<?= get_template_directory_uri(); ?>/assets/img/Pdt. Agus Gunawan _ Han-han.png" alt="Team Member Image" class="w-full duration-[400ms] group-hover:scale-110">
+                            </div>
+        
+                            <div class="et-member__txt bg-white relative z-[1] mx-[25px] md:mx-[15px] xs:mx-[5px] -mt-[44px] md:-mt-[15px] xs:mt-0 rounded-[16px] px-[25px] md:px-[15px] pb-[30px] md:pb-[20px] before:w-full before:absolute before:-z-[1] before:h-full before:bg-white before:left-0 before:rounded-[16px] before:-top-[33px] before:skew-y-[4deg]">
+                                <div class="et-member-socials absolute right-[20px] -top-[43px]">
+                                    <div class="et-speaker__socials flex flex-col gap-[8px] absolute -z-[2] text-[14px] opacity-0 transition duration-[400ms] bottom-[calc(100%+8px)] translate-y-[100%] group-hover:translate-y-0 group-hover:opacity-100">
+                                        <a href="https://www.facebook.com/sharer/sharer.php?u=https://bethanyprofessional.com/rsvp/" class="border border-white text-white w-[36px] h-[36px] flex items-center justify-center rounded-full hover:border-etBlue hover:bg-etBlue"><i class="fa-brands fa-facebook-f"></i></a>
+                                        <!-- <a href="#" class="border border-white text-white w-[36px] h-[36px] flex items-center justify-center rounded-full hover:border-etBlue hover:bg-etBlue"><i class="fa-brands fa-x-twitter"></i></a>
+                                        <a href="#" class="border border-white text-white w-[36px] h-[36px] flex items-center justify-center rounded-full hover:border-etBlue hover:bg-etBlue"><i class="fa-brands fa-linkedin-in"></i></a> -->
+                                        <a href="javascript:void(0);" onclick="copyLink()" class="border border-white text-white w-[36px] h-[36px] flex items-center justify-center rounded-full hover:border-etBlue hover:bg-etBlue"><i class="fa-brands fa-instagram"></i></a>
+                                    </div>
+                                    <div class="et-member-socials__icon w-[36px] aspect-square rounded-full bg-etBlue flex items-center justify-center">
+                                        <svg width="13" height="14" viewBox="0 0 13 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M9.89361 9.41703C9.22284 9.41703 8.61849 9.70668 8.19906 10.1675L4.42637 7.83088C4.52995 7.56611 4.58305 7.28429 4.58294 6.99999C4.58307 6.71568 4.52997 6.43386 4.42637 6.16909L8.19906 3.83238C8.61851 4.29318 9.22284 4.58297 9.89361 4.58297C11.1572 4.58297 12.1851 3.55501 12.1851 2.29143C12.1851 1.02785 11.1572 0 9.89361 0C8.63005 0 7.60209 1.02796 7.60209 2.29154C7.60204 2.57583 7.65514 2.85763 7.75866 3.1224L3.98608 5.45903C3.56663 4.99824 2.96231 4.70845 2.29154 4.70845C1.02796 4.70845 0 5.73652 0 6.99999C0 8.26354 1.02796 9.29152 2.29154 9.29152C2.96228 9.29152 3.56666 9.00185 3.98608 8.54094L7.75869 10.8776C7.65515 11.1424 7.60204 11.4242 7.60209 11.7085C7.60209 12.972 8.63003 14 9.89361 14C11.1572 14 12.1851 12.972 12.1851 11.7086C12.1851 10.445 11.1572 9.41703 9.89361 9.41703ZM8.43766 2.29154C8.43766 1.48873 9.09082 0.835596 9.89361 0.835596C10.6964 0.835596 11.3495 1.48873 11.3495 2.29154C11.3495 3.09435 10.6964 3.74748 9.89361 3.74748C9.09079 3.74748 8.43766 3.09432 8.43766 2.29154ZM2.29154 8.45593C1.48862 8.45593 0.835487 7.80277 0.835487 6.99999C0.835487 6.1972 1.48862 5.54404 2.29154 5.54404C3.09435 5.54404 3.74737 6.1972 3.74737 6.99999C3.74737 7.80277 3.09432 8.45593 2.29154 8.45593ZM8.43766 11.7085C8.43766 10.9057 9.09082 10.2525 9.89361 10.2525C10.6964 10.2525 11.3495 10.9057 11.3495 11.7084C11.3495 12.5112 10.6964 13.1644 9.89361 13.1644C9.09079 13.1644 8.43766 12.5112 8.43766 11.7084V11.7085Z" fill="white" />
+                                        </svg>
+                                    </div>
+                                </div>
+                                <h5 class="font-semibold text-[16px] md:text-[20px] text-etBlack mb-[4px]"><a href="#" class="hover:text-etBlue">Pdt. Agus Gunawan</a></h5>
+                                <span class="text-etGray text-[12px]">Pendeta</span>
                             </div>
                         </div>
                     </div>
@@ -2012,33 +2027,7 @@ Wrapped with Praise & Worship Night <br>
 </style>
 <script>
     // Get the modal
-    var modal = document.getElementById("myModal");
-
-    // Get the button that opens the modal
-    var btns = document.getElementsByClassName("myBtn");
-
-    // Get the <span> element that closes the modal
-    var span = document.getElementsByClassName("close")[0];
-
-    // When the user clicks on the button, open the modal
-    for (var i = 0; i < btns.length; i++) {
-        btns[i].onclick = function () {
-            modal.style.display = "block";
-        }
-    }
-
-
-    // When the user clicks on <span> (x), close the modal
-    span.onclick = function () {
-        modal.style.display = "none";
-    }
-
-    // When the user clicks anywhere outside of the modal, close it
-    window.onclick = function (event) {
-        if (event.target == modal) {
-            modal.style.display = "none";
-        }
-    }
+    
 
     function copyLink() {
     const link = "https://bethanyprofessional.com/rsvp/";
