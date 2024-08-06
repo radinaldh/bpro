@@ -194,74 +194,97 @@ get_header('main');
             class="pointer-events-none absolute top-[153px] right-0 -z-[1]">
     </div>
 </section>
-<section class="et-about py-[130px] xl:py-[80px] md:py-[60px] overflow-hidden relative" style="
-    background: rgb(0 27 82);
-">
-    <div
-        class="container mx-auto max-w-[calc(100%-39.1vw)] xxxl:max-w-[calc(100%-350px)] xl:max-w-[calc(100%-170px)] px-[12px] lg:max-w-full">
-        <div
-            class="flex items-center md:flex-wrap gap-x-[60px] xxl:gap-x-[40px] lg:gap-x-[30px] gap-y-[40px] sm:gap-y-[0px] lg:justify-center">
-            <!-- left -->
-            <div
-                class="et-about-img relative z-[1] md:w-auto shrink-0 max-w-full mr-[70px] md:mr-0 ml-[28px] xxxl:ml-[47px] md:ml-0 xs:w-[70%] xxs:w-full ">
-                <img src="<?= get_template_directory_uri()?>/assets/img/services4.png" alt="image"
-                    class="shrink-0 rounded-[10px]" />
-                <img src="<?= get_template_directory_uri()?>/assets/img/services3.png" alt="image"
-                    class="et-about-floating-img absolute top-[45px] -right-[70px] shrink-0 rounded-[20px] border-white border-[10px] xs:hidden" />
-
-                <!-- vectors -->
-                <div class="et-about-vectors xs:hidden">
-                    <img src="<?= get_template_directory_uri()?>/assets/img/about-img-vector-1.png" alt="vector"
-                        class="et-about-vector-1 absolute -left-[47px] top-[20px] -z-[1]" />
-                    <img src="<?= get_template_directory_uri()?>/assets/img/about-img-vector-2.png" alt="vector"
-                        class="et-about-vector-2 absolute -left-[27px] top-[41px] -z-[1]" />
-                    <img src="<?= get_template_directory_uri()?>/assets/img/about-img-vector-3.png" alt="vector"
-                        class="et-about-vector absolute -right-[24px] bottom-[34px] -z-[1]" />
-                </div>
-
-                <!-- video btn -->
-                <div
-                    class="absolute bottom-[50px] -left-[47px] lg:-left-[27px] md:-left-[47px] w-[180px] lg:w-[160px] aspect-square bg-[url('assets/img/about-video-btn-bg.jpg')] text-center text-[22px] text-white z-[1] flex items-center justify-center before:absolute before:bg-etBlue/80 before:-z-[1] before:inset-0 after:bg-etBlack after:w-[47px] after:h-[30px] after:absolute after:top-[100%] after:left-0 after:-z-[2] after:skew-y-[30deg] after:-translate-y-[17px] sm:hidden">
-                </div>
-            </div>
-
-            <!-- right -->
-            <div class="et-about__txt w-full">
-                <div class="rev-slide-up">
-                    <!-- txt -->
-                    <div class="my-[30px]">
-                        <h6 class="et-section-sub-title anim-text text-white" style="color: #fff;">Services BPro</h6>
-                        <h2 class="et-section-title mb-[24px] md:mb-[19px] anim-text text-white"
-                            style="font-size: 25px;color: #fff;">BPro – Other Services</h2>
-                        <div class="my-[10px] text-[15px] sm:text-[12px] text-white" style="text-align: justify;">
-                            <ul class="text-white" style="
-    list-style: circle;
-    padding-left: 18px;
-">
-                                <li>Baptisan</li>
-                                <li>Pemberkatan Nikah</li>
-                                <li>Penyerahan Anak</li>
-                                <li>Kedukaan</li>
-                            </ul>
-                            <br><br>
-                            Info & Registrasi:<br>
-                            Bethany Nginden – (+6231) 5936880<br>
-                            info@gerejabethany.org
-
-
-                        </div>
-                    </div>
-                </div>
-            </div>
+<section class="et-about py-[130px] xl:py-[80px] md:py-[60px] overflow-hidden relative" style=" background: rgb(0 27 82);">
+    <div class="text-center mb-[52px]">
+        <h6 class="et-section-sub-title !text-white before:!bg-white anim-text">Services BPro</h6>
+        <h2 class="text-[35px] sm:text-[24px] !text-white anim-text mb-[24px] md:mb-[19px] sm:text-[20px]">BPro – Other Services</h2>
+        <div class="my-[10px] text-[15px] sm:text-[12px] text-white" style="text-align: center; max-width:70%; margin:auto">
+            <!-- Info Registrasi:
+            <br>
+            Bethany Nginden – (+6231) 5936880
+            <br>
+            info@gerejabethany.org -->
+            <p>Selain itu, gereja kami menyelenggarakan berbagai program jangkauan, termasuk proyek layanan komunitas dan kelompok dukungan, untuk memperluas bantuan kami melampaui batas-batas gereja. Apakah Anda mencari pertumbuhan spiritual, keterlibatan komunitas, atau dukungan pribadi, gereja kami siap melayani Anda.</p>
         </div>
     </div>
-
-    <!-- vectors -->
-    <div class="xs:hidden">
-        <img src="<?= get_template_directory_uri()?>/assets/img/about-vector-1.png" alt="vector"
-            class="pointer-events-none absolute top-[340px] left-[90px] -z-[1]">
-        <img src="<?= get_template_directory_uri()?>/assets/img/about-vector-2.png" alt="vector"
-            class="pointer-events-none absolute top-[153px] right-0 -z-[1]">
+    <div class="container max-w-[calc(100%-37.1vw)] xxxl:max-w-[calc(100%-350px)] xl:max-w-[calc(100%-170px)] m-auto">
+        <div class="grid grid-cols-4 md:grid-cols-3 sm:grid-cols-2 xxs:grid-cols-1 gap-[30px] lg:gap-[20px] items-start">
+            <!-- single card -->
+            <div class="et-2-feature-card rounded-[30px] overflow-hidden group relative">
+                <div class="et-2-feature-card-txt bg-white p-[30px]">
+                    <!-- icon -->
+                    <div class="w-[102px] aspect-square border-[10px] bg-etBlue border-[#EDF3FE] rounded-full flex items-center justify-center mb-[20px]">
+                        <img src="<?= get_template_directory_uri(); ?>/assets/img/feature-1.png" alt="Feature icon" class="transition duration-[0.4s] group-hover:-scale-x-100">
+                    </div>
+    
+                    <!-- text -->
+                    <div>
+                        <h5 class="font-medium text-[22px] text-etBlack mb-[8px]"><a href="#" class="hover:text-etBlue">Baptisan</a></h5>
+                        <!-- <p class="font-light text-etGray text-[16px]">Mauris ultrices ligula eget volutpat aliquet nullam</p> -->
+                    </div>
+                </div>
+    
+                <!-- index number -->
+                <div class="absolute top-0 right-0 z-[1] w-[60px] aspect-square rounded-full bg-etBlue font-lato font-semibold text-[20px] text-white flex items-center justify-center">01</div>
+            </div>
+    
+            <!-- single card -->
+            <div class="et-2-feature-card rounded-[30px] overflow-hidden group relative">
+                <div class="et-2-feature-card-txt bg-white p-[30px]">
+                    <!-- icon -->
+                    <div class="w-[102px] aspect-square border-[10px] bg-etBlue border-[#EDF3FE] rounded-full flex items-center justify-center mb-[20px]">
+                        <img src="<?= get_template_directory_uri(); ?>/assets/img/feature-2.png" alt="Feature icon" class="transition duration-[0.4s] group-hover:-scale-x-100">
+                    </div>
+    
+                    <!-- text -->
+                    <div>
+                        <h5 class="font-medium text-[22px] text-etBlack mb-[8px]"><a href="#" class="hover:text-etBlue">Pemberkatan Nikah</a></h5>
+                        <!-- <p class="font-light text-etGray text-[16px]">Mauris ultrices ligula eget volutpat aliquet nullam</p> -->
+                    </div>
+                </div>
+    
+                <!-- index number -->
+                <div class="absolute top-0 right-0 z-[1] w-[60px] aspect-square rounded-full bg-etBlue font-lato font-semibold text-[20px] text-white flex items-center justify-center">02</div>
+            </div>
+    
+            <!-- single card -->
+            <div class="et-2-feature-card rounded-[30px] overflow-hidden group relative">
+                <div class="et-2-feature-card-txt bg-white p-[30px]">
+                    <!-- icon -->
+                    <div class="w-[102px] aspect-square border-[10px] bg-etBlue border-[#EDF3FE] rounded-full flex items-center justify-center mb-[20px]">
+                        <img src="<?= get_template_directory_uri(); ?>/assets/img/feature-3.png" alt="Feature icon" class="transition duration-[0.4s] group-hover:-scale-x-100">
+                    </div>
+    
+                    <!-- text -->
+                    <div>
+                        <h5 class="font-medium text-[22px] text-etBlack mb-[8px]"><a href="#" class="hover:text-etBlue">Penyerahan Anak</a></h5>
+                        <!-- <p class="font-light text-etGray text-[16px]">Mauris ultrices ligula eget volutpat aliquet nullam</p> -->
+                    </div>
+                </div>
+    
+                <!-- index number -->
+                <div class="absolute top-0 right-0 z-[1] w-[60px] aspect-square rounded-full bg-etBlue font-lato font-semibold text-[20px] text-white flex items-center justify-center">03</div>
+            </div>
+    
+            <!-- single card -->
+            <div class="et-2-feature-card rounded-[30px] overflow-hidden group relative">
+                <div class="et-2-feature-card-txt bg-white p-[30px]">
+                    <!-- icon -->
+                    <div class="w-[102px] aspect-square border-[10px] bg-etBlue border-[#EDF3FE] rounded-full flex items-center justify-center mb-[20px]">
+                        <img src="<?= get_template_directory_uri(); ?>/assets/img/feature-4.png" alt="Feature icon" class="transition duration-[0.4s] group-hover:-scale-x-100">
+                    </div>
+    
+                    <!-- text -->
+                    <div>
+                        <h5 class="font-medium text-[22px] text-etBlack mb-[8px]"><a href="#" class="hover:text-etBlue">Kedukaan</a></h5>
+                        <!-- <p class="font-light text-etGray text-[16px]">Mauris ultrices ligula eget volutpat aliquet nullam</p> -->
+                    </div>
+                </div>
+    
+                <!-- index number -->
+                <div class="absolute top-0 right-0 z-[1] w-[60px] aspect-square rounded-full bg-etBlue font-lato font-semibold text-[20px] text-white flex items-center justify-center">04</div>
+            </div>
+        </div>
     </div>
 </section>
 <style>
@@ -269,5 +292,6 @@ get_header('main');
         background-color: #fff;
     }
 </style>
+
 <?php
 get_footer('main');

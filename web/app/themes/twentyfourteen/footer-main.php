@@ -62,7 +62,7 @@
             <div class="flex md:flex-wrap xs:w-full gap-x-[65px] xxl:gap-x-[45px] xl:gap-[30px] gap-y-[25px] justify-between md:justify-center xxs:justify-start">
                 <!-- footer about -->
                 <div class="et-footer-about max-w-[295px] lg:max-w-none md:max-w-[300px] xs:max-w-full">
-                    <a href="#" class="inline-block"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/logo-white.png" alt="logo" style="width: 120px !important;"></a>
+                    <a href="#" class="inline-block"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/logo-white.png" alt="logo" style="width: 140px !important;"></a>
                     <p class="font-light text-[#f2f2f2] text-[16px] mb-[25px] sm:text-[12px]" >Be success be profesional.</p>
 
                     <!-- social media -->

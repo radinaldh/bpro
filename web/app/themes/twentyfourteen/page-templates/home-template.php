@@ -342,7 +342,7 @@ h5.font-semibold.text-\[22px\].md\:text-\[20px\].text-etBlack.mb-\[4px\] {
 
                                     <div class="flex shrink-0 flex-col xxs:flex-row gap-[16px] xxs:gap-[10px]">
                                         <!-- <a href="#" class="et-btn border bg-etBlue text-white inline-flex items-center justify-center h-[45px] px-[22px] xxs:px-[16px] font-normal text-[17px] rounded-full hover:!bg-etBlue hover:!text-white">View More</a> -->
-                                        <a href="#" class="et-btn border w-[180px] bg-etBlue text-white inline-flex items-center justify-center h-[45px] px-[22px] xxs:px-[16px] font-normal text-[17px] rounded-full hover:!bg-etBlue hover:!text-white">Coming Soon</a>
+                                        <a href="https://api.whatsapp.com/send?phone=6281131166111" class="et-btn border w-[180px] bg-etBlue text-white inline-flex items-center justify-center h-[45px] px-[22px] xxs:px-[16px] font-normal text-[17px] rounded-full hover:!bg-etBlue hover:!text-white">More Info</a>
                                     </div>
                                 </div>
                             </div>
@@ -428,9 +428,9 @@ h5.font-semibold.text-\[22px\].md\:text-\[20px\].text-etBlack.mb-\[4px\] {
                                     </div> -->
 
                                     <div class="flex shrink-0 flex-col xxs:flex-row gap-[16px] xxs:gap-[10px]">
-                                    <a href="https://api.whatsapp.com/send?phone=6281131166111"
+                                    <!-- <a href="https://api.whatsapp.com/send?phone=6281131166111"
                                         class="myBtn et-btn border w-[180px] bg-etBlue text-white inline-flex items-center justify-center h-[45px] px-[22px] xxs:px-[16px] font-normal text-[17px] rounded-full hover:!bg-etBlue hover:!text-white">View
-                                        More</a>
+                                        More</a> -->
                                         <a href="https://bethanyprofessional.com/rsvp/" class="et-btn border bg-etBlue text-white inline-flex items-center justify-center h-[45px] px-[22px] xxs:px-[16px] font-normal text-[17px] rounded-full hover:!bg-etBlue hover:!text-white">Book Your Seat</a>
                                     </div>
                                 </div>
@@ -517,7 +517,7 @@ h5.font-semibold.text-\[22px\].md\:text-\[20px\].text-etBlack.mb-\[4px\] {
 
                                     <div class="flex shrink-0 flex-col xxs:flex-row gap-[16px] xxs:gap-[10px]">
                                           <!-- <a href="#" class="et-btn border bg-etBlue text-white inline-flex items-center justify-center h-[45px] px-[22px] xxs:px-[16px] font-normal text-[17px] rounded-full hover:!bg-etBlue hover:!text-white">View More</a> -->
-                                          <a href="#" class="et-btn border w-[180px] bg-etBlue text-white inline-flex items-center justify-center h-[45px] px-[22px] xxs:px-[16px] font-normal text-[17px] rounded-full hover:!bg-etBlue hover:!text-white">Coming Soon</a>
+                                          <a href="https://api.whatsapp.com/send?phone=6281131166111" class="et-btn border w-[180px] bg-etBlue text-white inline-flex items-center justify-center h-[45px] px-[22px] xxs:px-[16px] font-normal text-[17px] rounded-full hover:!bg-etBlue hover:!text-white">More Info</a>
                                     </div>
                                 </div>
                             </div>
@@ -609,7 +609,7 @@ h5.font-semibold.text-\[22px\].md\:text-\[20px\].text-etBlack.mb-\[4px\] {
         
                                         <div class="flex shrink-0 flex-col xxs:flex-row gap-[16px] xxs:gap-[10px]">
                                             <!-- <a href="#" class="et-btn border bg-etBlue text-white inline-flex items-center justify-center h-[45px] px-[22px] xxs:px-[16px] font-normal text-[17px] rounded-full hover:!bg-etBlue hover:!text-white">View More</a> -->
-                                            <a href="#" class="et-btn border w-[180px] bg-etBlue text-white inline-flex items-center justify-center h-[45px] px-[22px] xxs:px-[16px] font-normal text-[17px] rounded-full hover:!bg-etBlue hover:!text-white">Coming Soon</a>
+                                            <a href="https://api.whatsapp.com/send?phone=6281131166111" class="et-btn border w-[180px] bg-etBlue text-white inline-flex items-center justify-center h-[45px] px-[22px] xxs:px-[16px] font-normal text-[17px] rounded-full hover:!bg-etBlue hover:!text-white">More Info</a>
                                         </div>
                                     </div>
                                 </div>
@@ -787,7 +787,7 @@ h5.font-semibold.text-\[22px\].md\:text-\[20px\].text-etBlack.mb-\[4px\] {
         
                                         <div class="flex shrink-0 flex-col xxs:flex-row gap-[16px] xxs:gap-[10px]">
                                                 <!-- <a href="#" class="et-btn border bg-etBlue text-white inline-flex items-center justify-center h-[45px] px-[22px] xxs:px-[16px] font-normal text-[17px] rounded-full hover:!bg-etBlue hover:!text-white">View More</a> -->
-                                                <a href="#" class="et-btn border w-[180px] bg-etBlue text-white inline-flex items-center justify-center h-[45px] px-[22px] xxs:px-[16px] font-normal text-[17px] rounded-full hover:!bg-etBlue hover:!text-white">Coming Soon</a>
+                                                <a href="https://api.whatsapp.com/send?phone=6281131166111" class="et-btn border w-[180px] bg-etBlue text-white inline-flex items-center justify-center h-[45px] px-[22px] xxs:px-[16px] font-normal text-[17px] rounded-full hover:!bg-etBlue hover:!text-white">More Info</a>
                                         </div>
                                     </div>
                                 </div>
@@ -992,7 +992,6 @@ Wrapped with Praise & Worship Night <br>
                 <h6 class="et-section-sub-title !text-white before:!bg-white anim-text">Event Features</h6>
                 <h2 class="text-[35px] sm:text-[24px] !text-white anim-text mb-[24px] md:mb-[19px] sm:text-[20px]">Discover Digitalization, Cyber Security and Financial Trap</h2>
             </div>
-
             <!-- cards -->
             <div class="sm:hidden">
                 <div class="grid grid-cols-4 md:grid-cols-3 sm:grid-cols-2 xxs:grid-cols-1 gap-[30px] lg:gap-[20px] items-start">
