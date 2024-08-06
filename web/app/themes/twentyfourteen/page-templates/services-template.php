@@ -18,10 +18,36 @@ get_header('main');
         object-fit: cover;
     }
 
+    .swiper-button-next,
+    .swiper-button-prev {
+        background: #fff;
+        padding: 20px;
+        height: 80px;
+        width: 80px;
+        border-radius: 100%;
+    }
+
+    .swiper-button-next:after, .swiper-button-prev:after {
+        color: #000;
+    }
     @media(max-width:600px) {
         .mySwiper2 {
             height: auto;
         }
+
+        .swiper-button-next,
+        .swiper-button-prev {
+            background: #fff;
+            padding: 20px;
+            height: 40px;
+            width: 40px;
+            border-radius: 100%;
+        }
+
+        .swiper-button-next:after, .swiper-button-prev:after {
+            font-size: 20px;
+        }
+
         iframe {
             height: 300px;
         }
@@ -88,7 +114,12 @@ get_header('main');
         <div class="swiper-slide">
             <img src="<?= get_template_directory_uri()?>/assets/new-img/thumb-4.png" />
         </div>
+        <div class="swiper-slide">
+            <img src="<?= get_template_directory_uri()?>/assets/new-img/thumb-4.png" />
+        </div>
     </div>
+    <div class="swiper-button-next"></div>
+    <div class="swiper-button-prev"></div>
 </div>
 <section class="et-about py-[130px] xl:py-[80px] md:py-[60px] overflow-hidden relative">
     <div

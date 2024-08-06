@@ -158,8 +158,7 @@ document.addEventListener("DOMContentLoaded", () => {
     window.addEventListener("resize", () => {
         if (window.innerWidth < 992) {
             etMobileMenuContainer.appendChild(etMobileMenuContent);
-        }
-        else if (window.innerWidth > 992) {
+        } else if (window.innerWidth > 992) {
             etHeaderNavContainer.appendChild(etMobileMenuContent);
         };
     });
@@ -229,13 +228,17 @@ document.addEventListener("DOMContentLoaded", () => {
         const observer = new IntersectionObserver((entries, observer) => {
             entries.forEach(entry => {
                 if (entry.isIntersecting) {
-                    const animate = new SplitType(entry.target, { types: 'words,chars' });
+                    const animate = new SplitType(entry.target, {
+                        types: 'words,chars'
+                    });
                     gsap.from(animate.chars, {
                         opacity: 0,
                         x: "50%",
                         ease: "elastic.out(0.6, 0.3)",
                         duration: 3,
-                        stagger: { amount: 0.8 }
+                        stagger: {
+                            amount: 0.8
+                        }
                     });
                     observer.unobserve(entry.target);
                 }
@@ -457,20 +460,29 @@ document.addEventListener("DOMContentLoaded", () => {
 
 var swiper = new Swiper(".mySwiper", {
     loop: true,
-    spaceBetween: 10,
-    slidesPerView: 4,
     freeMode: true,
     watchSlidesProgress: true,
-  });
-  
-  var swiper2 = new Swiper(".mySwiper2", {
+    navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+    },
+    breakpoints: {
+        500: {
+            slidesPerView: 2,
+        },
+        768: {
+            slidesPerView: 3,
+        },
+        1024: {
+            slidesPerView: 4,
+        },
+    },
+});
+
+var swiper2 = new Swiper(".mySwiper2", {
     loop: true,
     spaceBetween: 10,
-    navigation: {
-      nextEl: ".swiper-button-next",
-      prevEl: ".swiper-button-prev",
-    },
     thumbs: {
-      swiper: swiper,
+        swiper: swiper,
     },
-  });
+});
