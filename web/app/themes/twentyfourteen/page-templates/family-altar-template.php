@@ -13,6 +13,10 @@ get_header('main'); ?>
     margin: auto;
 }
 
+.right.test-right {
+    display: none;
+}
+
 .fa-slider-mobile-only {
     display: none;
 }
@@ -7135,37 +7139,6 @@ get_header('main'); ?>
                             <h5 class="text-black font-medium text-[20px] mb-[3px]">Yohan</h5>
                             <h6 class="text-[16px] text-etGray font-normal mb-[20px] sm:text-[12px]">Entrepreneur</h6>
                             <p class="text-[16px] text-etGray font-normal mb-[20px] sm:text-[12px]">Bisa sharing semua hal, ga melulu masalah kerohanian, tapi juga cerita pribadi. Terus juga bisa berbagi suka dan duka. Itulah kenapa aku harus ikut FA BPro.</p>
-                        </div>
-
-                        <!-- quotation icon -->
-                        <div class="absolute top-[40px] sm:top-[20px] left-[40px] sm:left-[20px]">
-                            <img src="<?= get_template_directory_uri(); ?>/assets/img/quotation-blue.svg" alt="quotation mark">
-                        </div>
-
-                        <!-- rating stars -->
-                        <div class="absolute bottom-0 left-[50%] -translate-x-[50%] translate-y-[50%] flex gap-[6px] bg-white shadow-[0_4px_25px_rgba(56,75,255,0.15)] p-[12px] rounded-full">
-                            <img src="<?= get_template_directory_uri(); ?>/assets/img/star-blue.svg" alt="star">
-                            <img src="<?= get_template_directory_uri(); ?>/assets/img/star-blue.svg" alt="star">
-                            <img src="<?= get_template_directory_uri(); ?>/assets/img/star-blue.svg" alt="star">
-                            <img src="<?= get_template_directory_uri(); ?>/assets/img/star-blue.svg" alt="star">
-                            <img src="<?= get_template_directory_uri(); ?>/assets/img/star-blue.svg" alt="star">
-                        </div>
-                    </div>
-                </div>
-
-                <div class="swiper-slide">
-                    <div class="et-testimony relative p-[40px] lg:p-[30px] md:p-[20px] border border-[#D4DCED] rounded-[16px] mt-[60px]">
-                        <!-- single testimony heading -->
-                        <div class="et-testimony__heading flex items-end justify-center mb-[17px] lg:mb-[12px] -mt-[100px] md:-mt-[80px]">
-                            <div class="et-testimony__img rounded-full overflow-hidden border border-etBlue p-[7px] w-max max-w-full">
-                                <img src="<?= get_template_directory_uri(); ?>/assets/img/testimony/Vina.png" alt="reviewer image" class="w-[100px] sm:w-[80px] h-[100px] sm:h-[80px] rounded-full">
-                            </div>
-                        </div>
-
-                        <div class="text-center">
-                            <h5 class="text-black font-medium text-[20px] mb-[3px]">Vina</h5>
-                            <h6 class="text-[16px] text-etGray font-normal mb-[20px] sm:text-[12px]">Pharmacist</h6>
-                            <p class="text-[16px] text-etGray font-normal mb-[20px] sm:text-[12px]">Kalo diulang 5x pun, aku bakalan ga bosen ikut ibadah BPro Worship Night. Karena punya waktu yg lebih lama untuk menyembah dan merasakan hadirat Tuhan bersama-sama.</p>
                         </div>
 
                         <!-- quotation icon -->
