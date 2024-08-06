@@ -460,7 +460,7 @@ get_header('main'); ?>
                                     <h3
                                         class="et-schedule-title text-[24px] sm:text-[22px] font-regular text-etBlack leading-[1.25] mb-[16px] anim-text">
                                         <a href="#" class="hover:text-etBlue"> Agent of Christ </a></h3>
-                                    <h4 class="font-semibold text-etBlue text-[16px] my-[10px]">Format: Talkshow</h4>
+                                    <h4 class="font-semibold text-etBlue text-[16px] my-[10px]">Talkshow</h4>
 
                                     <!-- location -->
                                     <div class="et-schedule-loaction flex items-center gap-[12px] xs:justify-center">
@@ -478,8 +478,7 @@ get_header('main'); ?>
 
                                 <div class="flex shrink-0 flex-col gap-[16px] xxs:gap-[10px] xs:flex-wrap xs:jusity-center">
                                     <!-- <a href="#" class="et-btn border w-[180px] bg-etBlue text-white inline-flex items-center justify-center h-[45px] px-[22px] xxs:px-[16px] font-normal text-[17px] rounded-full hover:!bg-etBlack hover:!text-white">View More</a> -->
-                                    <a href="#"
-                                        class="et-btn border w-[180px] bg-etBlue text-white inline-flex items-center justify-center h-[45px] px-[22px] xxs:px-[16px] font-normal text-[17px] rounded-full hover:!bg-etBlack hover:!text-white">Coming Soon</a>
+                                    <a href="https://api.whatsapp.com/send?phone=6281131166111" class="et-btn border w-[180px] bg-etBlue text-white inline-flex items-center justify-center h-[45px] px-[22px] xxs:px-[16px] font-normal text-[17px] rounded-full hover:!bg-etBlack hover:!text-white">More Info</a>
                                 </div>
                             </div>
                         </div>
@@ -567,7 +566,7 @@ get_header('main'); ?>
                                         class="et-schedule-title text-[24px] sm:text-[22px] font-regular text-etBlack leading-[1.25] mb-[16px] anim-text">
                                         <a href="#" class="hover:text-etBlue"> Discover Cyber Security and Financial
                                             Trap </a></h3>
-                                    <h4 class="font-semibold text-etBlue text-[16px] my-[10px]">Format: Professional
+                                    <h4 class="font-semibold text-etBlue text-[16px] my-[10px]">Professional
                                         Workshop </h4>
 
                                     <!-- location -->
@@ -678,7 +677,7 @@ get_header('main'); ?>
                                     <h3
                                         class="et-schedule-title text-[24px] sm:text-[22px] font-regular text-etBlack leading-[1.25] mb-[16px] anim-text">
                                         <a href="#" class="hover:text-etBlue"> Liberty in Christ </a></h3>
-                                    <h4 class="font-semibold text-etBlue text-[16px] my-[10px]">Format: Praise and
+                                    <h4 class="font-semibold text-etBlue text-[16px] my-[10px]">Praise and
                                         Worship Night</h4>
 
                                     <!-- location -->
@@ -697,8 +696,7 @@ get_header('main'); ?>
 
                                 <div class="flex shrink-0 flex-col gap-[16px] xxs:gap-[10px] xs:flex-wrap xs:jusity-center">
                                     <!-- <a href="#" class="et-btn border w-[180px] bg-etBlue text-white inline-flex items-center justify-center h-[45px] px-[22px] xxs:px-[16px] font-normal text-[17px] rounded-full hover:!bg-etBlack hover:!text-white">View More</a> -->
-                                    <a href="#"
-                                        class="et-btn border w-[180px] bg-etBlue text-white inline-flex items-center justify-center h-[45px] px-[22px] xxs:px-[16px] font-normal text-[17px] rounded-full hover:!bg-etBlack hover:!text-white">Coming Soon</a>
+                                    <a href="https://api.whatsapp.com/send?phone=6281131166111" class="et-btn border w-[180px] bg-etBlue text-white inline-flex items-center justify-center h-[45px] px-[22px] xxs:px-[16px] font-normal text-[17px] rounded-full hover:!bg-etBlack hover:!text-white">More Info</a>
                                 </div>
                             </div>
                         </div>
@@ -787,7 +785,7 @@ get_header('main'); ?>
                                     <h3
                                         class="et-schedule-title text-[24px] sm:text-[22px] font-regular text-etBlack leading-[1.25] mb-[16px] anim-text">
                                         <a href="#" class="hover:text-etBlue"> We Are His Witness </a></h3>
-                                    <h4 class="font-semibold text-etBlue text-[16px] my-[10px]">Format: Ibadah</h4>
+                                    <h4 class="font-semibold text-etBlue text-[16px] my-[10px]">Ibadah</h4>
 
                                     <!-- location -->
                                     <div class="et-schedule-loaction flex items-center gap-[12px] xs:justify-center">
@@ -805,9 +803,7 @@ get_header('main'); ?>
 
                                 <div class="flex shrink-0 flex-col gap-[16px] xxs:gap-[10px] xs:flex-wrap xs:jusity-center">
                                     <!-- <a href="#" class="et-btn border w-[180px] bg-etBlue text-white inline-flex items-center justify-center h-[45px] px-[22px] xxs:px-[16px] font-normal text-[17px] rounded-full hover:!bg-etBlack hover:!text-white">View More</a> -->
-                                    <a href="#"
-                                        class="et-btn border w-[180px] bg-etBlue text-white inline-flex items-center justify-center h-[45px] px-[22px] xxs:px-[16px] font-normal text-[17px] rounded-full hover:!bg-etBlack hover:!text-white">Coming
-                                        Soon</a>
+                                    <a href="https://api.whatsapp.com/send?phone=6281131166111" class="et-btn border w-[180px] bg-etBlue text-white inline-flex items-center justify-center h-[45px] px-[22px] xxs:px-[16px] font-normal text-[17px] rounded-full hover:!bg-etBlack hover:!text-white">More Info</a>
                                 </div>
                             </div>
                         </div>
@@ -896,7 +892,7 @@ get_header('main'); ?>
                                     <h3
                                         class="et-schedule-title text-[24px] sm:text-[22px] font-regular text-etBlack leading-[1.25] mb-[16px] anim-text">
                                         <a href="#" class="hover:text-etBlue"> Built to Build </a></h3>
-                                    <h4 class="font-semibold text-etBlue text-[16px] my-[10px]">Format: Talkshow</h4>
+                                    <h4 class="font-semibold text-etBlue text-[16px] my-[10px]">Talkshow</h4>
 
                                     <!-- location -->
                                     <div class="et-schedule-loaction flex items-center gap-[12px] xs:justify-center">
@@ -914,9 +910,7 @@ get_header('main'); ?>
 
                                 <div class="flex shrink-0 flex-col gap-[16px] xxs:gap-[10px] xs:flex-wrap xs:jusity-center">
                                     <!-- <a href="#" class="et-btn border w-[180px] bg-etBlue text-white inline-flex items-center justify-center h-[45px] px-[22px] xxs:px-[16px] font-normal text-[17px] rounded-full hover:!bg-etBlack hover:!text-white">View More</a> -->
-                                    <a href="#"
-                                        class="et-btn border w-[180px] bg-etBlue text-white inline-flex items-center justify-center h-[45px] px-[22px] xxs:px-[16px] font-normal text-[17px] rounded-full hover:!bg-etBlack hover:!text-white">Coming
-                                        Soon</a>
+                                    <a href="https://api.whatsapp.com/send?phone=6281131166111" class="et-btn border w-[180px] bg-etBlue text-white inline-flex items-center justify-center h-[45px] px-[22px] xxs:px-[16px] font-normal text-[17px] rounded-full hover:!bg-etBlack hover:!text-white">More Info</a>
                                 </div>
                             </div>
                         </div>
@@ -1004,7 +998,7 @@ get_header('main'); ?>
                                     <h3
                                         class="et-schedule-title text-[24px] sm:text-[22px] font-regular text-etBlack leading-[1.25] mb-[16px] anim-text">
                                         <a href="#" class="hover:text-etBlue"> Heart for The Lost </a></h3>
-                                    <h4 class="font-semibold text-etBlue text-[16px] my-[10px]">Format: KKR</h4>
+                                    <h4 class="font-semibold text-etBlue text-[16px] my-[10px]">KKR</h4>
 
                                     <!-- location -->
                                     <div class="et-schedule-loaction flex items-center gap-[12px] xs:justify-center">
@@ -1022,9 +1016,7 @@ get_header('main'); ?>
 
                                 <div class="flex shrink-0 flex-col gap-[16px] xxs:gap-[10px] xs:flex-wrap xs:jusity-center">
                                     <!-- <a href="#" class="et-btn border w-[180px] bg-etBlue text-white inline-flex items-center justify-center h-[45px] px-[22px] xxs:px-[16px] font-normal text-[17px] rounded-full hover:!bg-etBlack hover:!text-white">View More</a> -->
-                                    <!-- <a href="#"
-                                        class="et-btn border w-[180px] bg-etBlue text-white inline-flex items-center justify-center h-[45px] px-[22px] xxs:px-[16px] font-normal text-[17px] rounded-full hover:!bg-etBlack hover:!text-white">Coming
-                                        Soon</a> -->
+                                    <!-- <a hre class="et-btn border w-[180px] bg-etBlue text-white inline-flex items-center justify-center h-[45px] px-[22px] xxs:px-[16px] font-normal text-[17px] rounded-full hover:!bg-etBlack hover:!text-white">More Info</a> -->
                                 </div>
                             </div>
                         </div>
@@ -1117,7 +1109,7 @@ get_header('main'); ?>
                                     <h3
                                         class="et-schedule-title text-[24px] sm:text-[22px] font-regular text-etBlack leading-[1.25] mb-[16px] anim-text">
                                         <a href="#" class="hover:text-etBlue"> Heart for The Lost </a></h3>
-                                    <h4 class="font-semibold text-etBlue text-[16px] my-[10px]">Format: KKR</h4>
+                                    <h4 class="font-semibold text-etBlue text-[16px] my-[10px]">KKR</h4>
 
                                     <!-- location -->
                                     <div class="et-schedule-loaction flex items-center gap-[12px] xs:justify-center">
@@ -1135,9 +1127,7 @@ get_header('main'); ?>
 
                                 <div class="flex shrink-0 flex-col gap-[16px] xxs:gap-[10px] xs:flex-wrap xs:jusity-center">
                                     <!-- <a href="#" class="et-btn border w-[180px] bg-etBlue text-white inline-flex items-center justify-center h-[45px] px-[22px] xxs:px-[16px] font-normal text-[17px] rounded-full hover:!bg-etBlack hover:!text-white">View More</a> -->
-                                    <!-- <a href="#"
-                                        class="et-btn border w-[180px] bg-etBlue text-white inline-flex items-center justify-center h-[45px] px-[22px] xxs:px-[16px] font-normal text-[17px] rounded-full hover:!bg-etBlack hover:!text-white">Coming
-                                        Soon</a> -->
+                                    <!-- <a hre class="et-btn border w-[180px] bg-etBlue text-white inline-flex items-center justify-center h-[45px] px-[22px] xxs:px-[16px] font-normal text-[17px] rounded-full hover:!bg-etBlack hover:!text-white">More Info</a> -->
                                 </div>
                             </div>
                         </div>
@@ -1230,7 +1220,7 @@ get_header('main'); ?>
                                     <h3
                                         class="et-schedule-title text-[24px] sm:text-[22px] font-regular text-etBlack leading-[1.25] mb-[16px] anim-text">
                                         <a href="#" class="hover:text-etBlue"> Agent of Christ </a></h3>
-                                    <h4 class="font-semibold text-etBlue text-[16px] my-[10px]">Format: Talkshow</h4>
+                                    <h4 class="font-semibold text-etBlue text-[16px] my-[10px]">Talkshow</h4>
 
                                     <!-- location -->
                                     <div class="et-schedule-loaction flex items-center gap-[12px] xs:justify-center">
@@ -1248,9 +1238,7 @@ get_header('main'); ?>
 
                                 <div class="flex shrink-0 flex-col gap-[16px] xxs:gap-[10px] xs:flex-wrap xs:jusity-center">
                                     <!-- <a href="#" class="et-btn border w-[180px] bg-etBlue text-white inline-flex items-center justify-center h-[45px] px-[22px] xxs:px-[16px] font-normal text-[17px] rounded-full hover:!bg-etBlack hover:!text-white">View More</a> -->
-                                    <a href="#"
-                                        class="et-btn border w-[180px] bg-etBlue text-white inline-flex items-center justify-center h-[45px] px-[22px] xxs:px-[16px] font-normal text-[17px] rounded-full hover:!bg-etBlack hover:!text-white">Coming
-                                        Soon</a>
+                                    <a href="https://api.whatsapp.com/send?phone=6281131166111" class="et-btn border w-[180px] bg-etBlue text-white inline-flex items-center justify-center h-[45px] px-[22px] xxs:px-[16px] font-normal text-[17px] rounded-full hover:!bg-etBlack hover:!text-white">More Info</a>
                                 </div>
                             </div>
                         </div>
@@ -1338,7 +1326,7 @@ get_header('main'); ?>
                                     <h3
                                         class="et-schedule-title text-[24px] sm:text-[22px] font-regular text-etBlack leading-[1.25] mb-[16px] anim-text">
                                         <a href="#" class="hover:text-etBlue"> Built to Build </a></h3>
-                                    <h4 class="font-semibold text-etBlue text-[16px] my-[10px]">Format: Talkshow</h4>
+                                    <h4 class="font-semibold text-etBlue text-[16px] my-[10px]">Talkshow</h4>
 
                                     <!-- location -->
                                     <div class="et-schedule-loaction flex items-center gap-[12px] xs:justify-center">
@@ -1356,9 +1344,7 @@ get_header('main'); ?>
 
                                 <div class="flex shrink-0 flex-col gap-[16px] xxs:gap-[10px] xs:flex-wrap xs:jusity-center">
                                     <!-- <a href="#" class="et-btn border w-[180px] bg-etBlue text-white inline-flex items-center justify-center h-[45px] px-[22px] xxs:px-[16px] font-normal text-[17px] rounded-full hover:!bg-etBlack hover:!text-white">View More</a> -->
-                                    <a href="#"
-                                        class="et-btn border w-[180px] bg-etBlue text-white inline-flex items-center justify-center h-[45px] px-[22px] xxs:px-[16px] font-normal text-[17px] rounded-full hover:!bg-etBlack hover:!text-white">Coming
-                                        Soon</a>
+                                    <a href="https://api.whatsapp.com/send?phone=6281131166111" class="et-btn border w-[180px] bg-etBlue text-white inline-flex items-center justify-center h-[45px] px-[22px] xxs:px-[16px] font-normal text-[17px] rounded-full hover:!bg-etBlack hover:!text-white">More Info</a>
                                 </div>
                             </div>
                         </div>
@@ -1451,7 +1437,7 @@ get_header('main'); ?>
                                         class="et-schedule-title text-[24px] sm:text-[22px] font-regular text-etBlack leading-[1.25] mb-[16px] anim-text">
                                         <a href="#" class="hover:text-etBlue"> Discover Cyber Security and Financial
                                             Trap </a></h3>
-                                    <h4 class="font-semibold text-etBlue text-[16px] my-[10px]">Format: Professional
+                                    <h4 class="font-semibold text-etBlue text-[16px] my-[10px]">Professional
                                         Workshop </h4>
 
                                     <!-- location -->
@@ -1567,7 +1553,7 @@ get_header('main'); ?>
                                     <h3
                                         class="et-schedule-title text-[24px] sm:text-[22px] font-regular text-etBlack leading-[1.25] mb-[16px] anim-text">
                                         <a href="#" class="hover:text-etBlue"> Liberty in Christ </a></h3>
-                                    <h4 class="font-semibold text-etBlue text-[16px] my-[10px]">Format: Praise and
+                                    <h4 class="font-semibold text-etBlue text-[16px] my-[10px]">Praise and
                                         Worship Night</h4>
 
                                     <!-- location -->
@@ -1586,9 +1572,7 @@ get_header('main'); ?>
 
                                 <div class="flex shrink-0 flex-col gap-[16px] xxs:gap-[10px] xs:flex-wrap xs:jusity-center">
                                     <!-- <a href="#" class="et-btn border w-[180px] bg-etBlue text-white inline-flex items-center justify-center h-[45px] px-[22px] xxs:px-[16px] font-normal text-[17px] rounded-full hover:!bg-etBlack hover:!text-white">View More</a> -->
-                                    <a href="#"
-                                        class="et-btn border w-[180px] bg-etBlue text-white inline-flex items-center justify-center h-[45px] px-[22px] xxs:px-[16px] font-normal text-[17px] rounded-full hover:!bg-etBlack hover:!text-white">Coming
-                                        Soon</a>
+                                    <a href="https://api.whatsapp.com/send?phone=6281131166111" class="et-btn border w-[180px] bg-etBlue text-white inline-flex items-center justify-center h-[45px] px-[22px] xxs:px-[16px] font-normal text-[17px] rounded-full hover:!bg-etBlack hover:!text-white">More Info</a>
                                 </div>
                             </div>
                         </div>
@@ -1682,7 +1666,7 @@ get_header('main'); ?>
                                     <h3
                                         class="et-schedule-title text-[24px] sm:text-[22px] font-regular text-etBlack leading-[1.25] mb-[16px] anim-text">
                                         <a href="#" class="hover:text-etBlue"> We Are His Witness </a></h3>
-                                    <h4 class="font-semibold text-etBlue text-[16px] my-[10px]">Format: Ibadah</h4>
+                                    <h4 class="font-semibold text-etBlue text-[16px] my-[10px]">Ibadah</h4>
 
                                     <!-- location -->
                                     <div class="et-schedule-loaction flex items-center gap-[12px] xs:justify-center">
@@ -1700,9 +1684,7 @@ get_header('main'); ?>
 
                                 <div class="flex shrink-0 flex-col gap-[16px] xxs:gap-[10px] xs:flex-wrap xs:jusity-center">
                                     <!-- <a href="#" class="et-btn border w-[180px] bg-etBlue text-white inline-flex items-center justify-center h-[45px] px-[22px] xxs:px-[16px] font-normal text-[17px] rounded-full hover:!bg-etBlack hover:!text-white">View More</a> -->
-                                    <a href="#"
-                                        class="et-btn border w-[180px] bg-etBlue text-white inline-flex items-center justify-center h-[45px] px-[22px] xxs:px-[16px] font-normal text-[17px] rounded-full hover:!bg-etBlack hover:!text-white">Coming
-                                        Soon</a>
+                                    <a href="https://api.whatsapp.com/send?phone=6281131166111" class="et-btn border w-[180px] bg-etBlue text-white inline-flex items-center justify-center h-[45px] px-[22px] xxs:px-[16px] font-normal text-[17px] rounded-full hover:!bg-etBlack hover:!text-white">More Info</a>
                                 </div>
                             </div>
                         </div>

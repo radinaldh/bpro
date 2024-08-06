@@ -40,8 +40,8 @@ get_header('main'); ?>
                         </span>
 
                         <div class="txt">
-                            <span class="font-light">Call Us 7/24</span>
-                            <h4 class="font-semibold text-[12px]"><a href="whatsapp://send?text=Hello&phone=+6281131166111">+62811-311-66-111</a></h4>
+                            <span class="font-light">Hotline 7/24</span>
+                            <h4 class="font-semibold text-[12px]"><a href="whatsapp://send?text=Hello&phone=+6281131166111">0811-311-66111</a></h4>
                         </div>
                     </div>
 
@@ -81,8 +81,8 @@ get_header('main'); ?>
 
             <!-- right side contact form -->
             <div>
-                <h2 class="text-[40px] md:text-[35px] sm:text-[30px] xxs:text-[28px] font-medium text-etBlack mb-[7px]">Ready to Get Started?</h2>
-                <p class="text-etGray font-light text-[16px] mb-[38px]">Reach out to us for support, questions, or to get involved. We're here to guide you on your spiritual journey and help you connect with our community.</p>
+                <h2 class="text-[40px] md:text-[35px] sm:text-[30px] xxs:text-[28px] font-medium text-etBlack mb-[7px]">Be part of us</h2>
+                <p class="text-etGray font-light text-[16px] mb-[38px]">Hubungi kami untuk mendapatkan dukungan, pertanyaan, atau untuk terlibat. Kami di sini untuk memandu Anda dalam perjalanan spiritual Anda dan membantu Anda terhubung dengan komunitas kami.</p>
 
                 <form action="#" class="grid grid-cols-2 xxs:grid-cols-1 gap-[30px] xs:gap-[20px] text-[16px]">
                     <div>
@@ -109,5 +109,5 @@ get_header('main'); ?>
 
 
 <!-- map -->
-<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3957.509229362831!2d112.76195907466156!3d-7.296539671723768!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dd7fa4d645cfe87%3A0xad4edfbfc291f746!2sGereja%20Bethany%20Manyar!5e0!3m2!1sid!2sid!4v1722670310258!5m2!1sid!2sid" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe><?php
+<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3957.509229362831!2d112.76195907466156!3d-7.296539671723768!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dd7fa4d645cfe87%3A0xad4edfbfc291f746!2sGereja%20Bethany%20Manyar!5e0!3m2!1sid!2sid!4v1722670310258!5m2!1sid!2sid" width="100%" height="400" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe><?php
 get_footer('main');
