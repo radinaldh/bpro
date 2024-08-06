@@ -272,6 +272,15 @@
         slidesToScroll: 1,
         autoplay:true,
         dots:true
+    });  
+    $('.fa-list').slick({
+        rows: 2,
+        infinite: false,
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        autoplay:false,
+        dots:true,
+        arrows: false
     });   
 </script>
 <script>
