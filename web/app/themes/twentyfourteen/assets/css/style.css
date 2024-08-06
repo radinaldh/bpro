@@ -826,7 +826,11 @@ h6 {
   transition: 0.4s ease;
 }
 .et-history-timeline h3 {
-  -webkit-text-stroke: 1px var(--et-gray2);
+  color: var(--et-blue);;
+}
+.et-history-timeline h3 span {
+  color: transparent; /* This makes the text color transparent */
+  -webkit-text-stroke: 1px #fff; 
 }
 .et-history-timeline.swiper-slide-thumb-active {
   border-top: 1px solid var(--et-blue);

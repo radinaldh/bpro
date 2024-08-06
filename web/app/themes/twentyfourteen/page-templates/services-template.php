@@ -8,14 +8,28 @@ get_header('main');
 ?>
 
 <style>
-@media(max-width:600px) {
-    iframe {
-        height: 300px;
+    .mySwiper2 {
+        height: 800px;
     }
-    section.et-about {
-    padding-bottom: 25px;
-}
-}
+
+    .swiper-slide img {
+        height: 300px;
+        width: 100%;
+        object-fit: cover;
+    }
+
+    @media(max-width:600px) {
+        .mySwiper2 {
+            height: auto;
+        }
+        iframe {
+            height: 300px;
+        }
+
+        section.et-about {
+            padding-bottom: 25px;
+        }
+    }
 </style>
 
 <section
@@ -29,10 +43,53 @@ get_header('main');
         </ul>
     </div>
 </section>
-<iframe width="100%" height="900" src="https://www.youtube.com/embed/cxPAZ5Z-9yg?si=QWEOB9Jpek2s1Zvw"
+<!-- <iframe width="100%" height="800" src="https://www.youtube.com/embed/cxPAZ5Z-9yg?si=QWEOB9Jpek2s1Zvw"
     title="YouTube video player" frameborder="0"
     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe> -->
+<div style="--swiper-navigation-color: #fff; --swiper-pagination-color: #fff" class="swiper mySwiper2">
+    <div class="swiper-wrapper">
+        <div class="swiper-slide">
+            <iframe width="100%" height="800" src="https://www.youtube.com/embed/cxPAZ5Z-9yg?si=QWEOB9Jpek2s1Zvw"
+                title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+            </iframe>
+        </div>
+        <div class="swiper-slide">
+            <iframe width="100%" height="800" src="https://www.youtube.com/embed/sUe7KWWNQKw?si=8VRW9u5N2LSWDnhJ"
+                title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+        <div class="swiper-slide">
+            <iframe width="100%" height="800" src="https://www.youtube.com/embed/NRe501rLW-A?si=YaK17NuG-9jtZDcz"
+                title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+            </iframe>
+        </div>
+        <div class="swiper-slide">
+            <iframe width="100%" height="800" src="https://www.youtube.com/embed/gBHwd-gPqaI?si=mz9CkJv49rjuOMKj" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+    </div>
+</div>
+<div thumbsSlider="" class="swiper mySwiper">
+    <div class="swiper-wrapper">
+        <div class="swiper-slide">
+            <img src="<?= get_template_directory_uri()?>/assets/new-img/thumb-1.png" />
+        </div>
+        <div class="swiper-slide">
+            <img src="<?= get_template_directory_uri()?>/assets/new-img/thumb-2.png" />
+        </div>
+        <div class="swiper-slide">
+            <img src="<?= get_template_directory_uri()?>/assets/new-img/thumb-3.png" />
+        </div>
+        <div class="swiper-slide">
+            <img src="<?= get_template_directory_uri()?>/assets/new-img/thumb-4.png" />
+        </div>
+    </div>
+</div>
 <section class="et-about py-[130px] xl:py-[80px] md:py-[60px] overflow-hidden relative">
     <div
         class="container mx-auto max-w-[calc(100%-39.1vw)] xxxl:max-w-[calc(100%-350px)] xl:max-w-[calc(100%-170px)] px-[12px] lg:max-w-full">
@@ -177,9 +234,9 @@ get_header('main');
     </div>
 </section>
 <style>
-h6.et-section-sub-title.anim-text.text-white:before {
-    background-color: #fff;
-}
+    h6.et-section-sub-title.anim-text.text-white:before {
+        background-color: #fff;
+    }
 </style>
 <?php
 get_footer('main');

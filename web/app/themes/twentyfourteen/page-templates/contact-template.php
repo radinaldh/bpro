@@ -40,7 +40,7 @@ get_header('main'); ?>
                         </span>
 
                         <div class="txt">
-                            <span class="font-light">Hotline 7/24</span>
+                            <span class="font-light">Hotline</span>
                             <h4 class="font-semibold text-[12px]"><a href="whatsapp://send?text=Hello&phone=+6281131166111">0811-311-66111</a></h4>
                         </div>
                     </div>
@@ -52,7 +52,7 @@ get_header('main'); ?>
                         </span>
 
                         <div class="txt">
-                            <span class="font-light">Make a Quote</span>
+                            <span class="font-light">Reach us</span>
                             <h4 class="font-semibold text-[12px]"><a href="mailto:info@bethanyprofessional.com">info@bethanyprofessional.com </a></h4>
                         </div>
                     </div>
@@ -72,7 +72,8 @@ get_header('main'); ?>
 
                 <!-- video cover -->
                 <div class="relative">
-                    <img src="<?= get_template_directory_uri()?>/assets/img/contact-video-cover.jpg" alt="video cover" class="w-full">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3957.509229362831!2d112.76195907466156!3d-7.296539671723768!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dd7fa4d645cfe87%3A0xad4edfbfc291f746!2sGereja%20Bethany%20Manyar!5e0!3m2!1sid!2sid!4v1722670310258!5m2!1sid!2sid" width="100%" height="400" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    <!-- <img src="<?= get_template_directory_uri()?>/assets/img/contact-video-cover.jpg" alt="video cover" class="w-full"> -->
                     <!-- <a href="https://youtu.be/6KmuL6RcdNA?si=s1RJZZwk6XcqZAwX" data-fslightbox class="video-btn-shadow w-[58px] aspect-square rounded-full bg-white text-[18px] text-etBlue flex items-center justify-center absolute top-[50%] left-[50%] -translate-y-[50%] -translate-x-[50%]">
                         <i class="fa-solid fa-play"></i>
                     </a> -->
@@ -109,5 +110,6 @@ get_header('main'); ?>
 
 
 <!-- map -->
-<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3957.509229362831!2d112.76195907466156!3d-7.296539671723768!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dd7fa4d645cfe87%3A0xad4edfbfc291f746!2sGereja%20Bethany%20Manyar!5e0!3m2!1sid!2sid!4v1722670310258!5m2!1sid!2sid" width="100%" height="400" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe><?php
+
+<?php
 get_footer('main');

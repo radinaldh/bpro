@@ -9,15 +9,34 @@ get_header('main'); ?>
 
 <style>
 
-    .praise {
+    .praise,
+    .test-right {
         display: none;
     }
+
+    .et-testimony {
+        height: 300px;
+    }
+
+    .latest-event {
+        opacity: 0.4 !important;
+        cursor:  not-allowed !important;
+    }
+    .latest-event a{
+        cursor:  not-allowed !important;
+    }
     @media(max-width:600px) {
+
+        .et-testimony {
+            height: 350px;
+        }
+
         .modal-content {
             width: 95%  !important;
         }
 
-        .praise {
+        .praise,
+        .test-right {
             display: block;
         }
     }
@@ -152,7 +171,6 @@ get_header('main'); ?>
     </div>
 </section>
 <!-- BREADCRUMB SECTION END -->
-
 
 <!-- EVENTS SLIDER START -->
 <div class="container mx-auto max-w-[1200px] pt-[120px] lg:pt-[80px] md:pt-[60px] px-[12px] xl:max-w-full">
@@ -339,7 +357,7 @@ get_header('main'); ?>
 <!-- EVENTS SLIDER END -->
 
 
-<div class="py-[130px] lg:py-[80px] md:py-[60px] overflow-hidden">
+<div class="py-[80px] lg:py-[80px] md:py-[60px] overflow-hidden">
     <!-- EVENTS SECTION START -->
     <section class="et-all-events">
         <div class="container mx-auto max-w-[1200px] px-[12px] xl:max-w-full">
@@ -478,7 +496,7 @@ get_header('main'); ?>
 
                                 <div class="flex shrink-0 flex-col gap-[16px] xxs:gap-[10px] xs:flex-wrap xs:jusity-center">
                                     <!-- <a href="#" class="et-btn border w-[180px] bg-etBlue text-white inline-flex items-center justify-center h-[45px] px-[22px] xxs:px-[16px] font-normal text-[17px] rounded-full hover:!bg-etBlack hover:!text-white">View More</a> -->
-                                    <a href="https://api.whatsapp.com/send?phone=6281131166111" class="et-btn border w-[180px] bg-etBlue text-white inline-flex items-center justify-center h-[45px] px-[22px] xxs:px-[16px] font-normal text-[17px] rounded-full hover:!bg-etBlack hover:!text-white">More Info</a>
+                                    <a href="https://api.whatsapp.com/send?phone=6281131166111" class="et-btn border w-[180px] bg-etBlue text-white inline-flex items-center justify-center h-[45px] px-[22px] xxs:px-[16px] font-normal text-[17px] rounded-full hover:!bg-etBlack hover:!text-white">Book Your Seat</a>
                                 </div>
                             </div>
                         </div>
@@ -584,12 +602,11 @@ get_header('main'); ?>
                                 </div>
 
                                 <div class="flex shrink-0 flex-col gap-[16px] xxs:gap-[10px] xs:flex-wrap xs:jusity-center">
-                                    <button href="#"
+                                    <!-- <button href="#"
                                         class="myBtn et-btn border w-[180px] bg-etBlue text-white inline-flex items-center justify-center h-[45px] px-[22px] xxs:px-[16px] font-normal text-[17px] rounded-full hover:!bg-etBlack hover:!text-white">View
-                                        More</button>
+                                        More</button> -->
                                     <a href="<?= home_url()?>/rsvp"
-                                        class="et-btn border w-[180px] bg-etBlue text-white inline-flex items-center justify-center h-[45px] px-[22px] xxs:px-[16px] font-normal text-[17px] rounded-full hover:!bg-etBlack hover:!text-white">Buy
-                                        Tickets</a>
+                                        class="et-btn border w-[180px] bg-etBlue text-white inline-flex items-center justify-center h-[45px] px-[22px] xxs:px-[16px] font-normal text-[17px] rounded-full hover:!bg-etBlack hover:!text-white">Book Your Seat</a>
                                 </div>
                             </div>
                         </div>
@@ -696,7 +713,7 @@ get_header('main'); ?>
 
                                 <div class="flex shrink-0 flex-col gap-[16px] xxs:gap-[10px] xs:flex-wrap xs:jusity-center">
                                     <!-- <a href="#" class="et-btn border w-[180px] bg-etBlue text-white inline-flex items-center justify-center h-[45px] px-[22px] xxs:px-[16px] font-normal text-[17px] rounded-full hover:!bg-etBlack hover:!text-white">View More</a> -->
-                                    <a href="https://api.whatsapp.com/send?phone=6281131166111" class="et-btn border w-[180px] bg-etBlue text-white inline-flex items-center justify-center h-[45px] px-[22px] xxs:px-[16px] font-normal text-[17px] rounded-full hover:!bg-etBlack hover:!text-white">More Info</a>
+                                    <a href="https://api.whatsapp.com/send?phone=6281131166111" class="et-btn border w-[180px] bg-etBlue text-white inline-flex items-center justify-center h-[45px] px-[22px] xxs:px-[16px] font-normal text-[17px] rounded-full hover:!bg-etBlack hover:!text-white">Book Your Seat</a>
                                 </div>
                             </div>
                         </div>
@@ -803,7 +820,7 @@ get_header('main'); ?>
 
                                 <div class="flex shrink-0 flex-col gap-[16px] xxs:gap-[10px] xs:flex-wrap xs:jusity-center">
                                     <!-- <a href="#" class="et-btn border w-[180px] bg-etBlue text-white inline-flex items-center justify-center h-[45px] px-[22px] xxs:px-[16px] font-normal text-[17px] rounded-full hover:!bg-etBlack hover:!text-white">View More</a> -->
-                                    <a href="https://api.whatsapp.com/send?phone=6281131166111" class="et-btn border w-[180px] bg-etBlue text-white inline-flex items-center justify-center h-[45px] px-[22px] xxs:px-[16px] font-normal text-[17px] rounded-full hover:!bg-etBlack hover:!text-white">More Info</a>
+                                    <a href="https://api.whatsapp.com/send?phone=6281131166111" class="et-btn border w-[180px] bg-etBlue text-white inline-flex items-center justify-center h-[45px] px-[22px] xxs:px-[16px] font-normal text-[17px] rounded-full hover:!bg-etBlack hover:!text-white">Book Your Seat</a>
                                 </div>
                             </div>
                         </div>
@@ -910,12 +927,12 @@ get_header('main'); ?>
 
                                 <div class="flex shrink-0 flex-col gap-[16px] xxs:gap-[10px] xs:flex-wrap xs:jusity-center">
                                     <!-- <a href="#" class="et-btn border w-[180px] bg-etBlue text-white inline-flex items-center justify-center h-[45px] px-[22px] xxs:px-[16px] font-normal text-[17px] rounded-full hover:!bg-etBlack hover:!text-white">View More</a> -->
-                                    <a href="https://api.whatsapp.com/send?phone=6281131166111" class="et-btn border w-[180px] bg-etBlue text-white inline-flex items-center justify-center h-[45px] px-[22px] xxs:px-[16px] font-normal text-[17px] rounded-full hover:!bg-etBlack hover:!text-white">More Info</a>
+                                    <a href="https://api.whatsapp.com/send?phone=6281131166111" class="et-btn border w-[180px] bg-etBlue text-white inline-flex items-center justify-center h-[45px] px-[22px] xxs:px-[16px] font-normal text-[17px] rounded-full hover:!bg-etBlack hover:!text-white">Book Your Seat</a>
                                 </div>
                             </div>
                         </div>
                         <div
-                            class="et-schedule flex md:flex-wrap gap-x-[30px] gap-y-[20px] justify-between rev-slide-up">
+                            class="latest-event et-schedule flex md:flex-wrap gap-x-[30px] gap-y-[20px] justify-between rev-slide-up">
                             <!-- img -->
                             <div
                                 class="w-[270px] sm:w-[300px] sm:mx-auto shadow-[0_4px_60px_rgba(18,96,254,0.12)] shrink-0 rounded-[20px] overflow-hidden">
@@ -974,7 +991,7 @@ get_header('main'); ?>
                                                 </svg>
                                             </span>
 
-                                            <span class="text-etGray font-normal text-[16px]">03 Aug 2024</span>
+                                            <span class="text-etGray font-normal text-[16px]">03 Aug 2024 </span>
                                         </div>
 
                                         <div class="time flex items-center gap-[10px] xxs:hidden">
@@ -990,7 +1007,7 @@ get_header('main'); ?>
                                                 </svg>
                                             </span>
 
-                                            <span class="text-etGray font-normal text-[16px]">17.30 PM</span>
+                                            <span class="text-etGray font-normal text-[16px]">17.30 PM (Past Event)</span>
                                         </div>
                                     </div>
 
@@ -1026,7 +1043,7 @@ get_header('main'); ?>
                     <div class="all-scheduled-events space-y-[30px]">
                         <!-- single schedule -->
                         <div
-                            class="et-schedule flex md:flex-wrap gap-x-[30px] gap-y-[20px] justify-between rev-slide-up">
+                            class="latest-event et-schedule flex md:flex-wrap gap-x-[30px] gap-y-[20px] justify-between rev-slide-up">
                             <!-- img -->
                             <div
                                 class="w-[270px] sm:w-[300px] sm:mx-auto shadow-[0_4px_60px_rgba(18,96,254,0.12)] shrink-0 rounded-[20px] overflow-hidden">
@@ -1085,7 +1102,7 @@ get_header('main'); ?>
                                                 </svg>
                                             </span>
 
-                                            <span class="text-etGray font-normal text-[16px]">03 Aug 2024</span>
+                                            <span class="text-etGray font-normal text-[16px]">03 Aug 2024 </span>
                                         </div>
 
                                         <div class="time flex items-center gap-[10px] xxs:hidden">
@@ -1101,7 +1118,7 @@ get_header('main'); ?>
                                                 </svg>
                                             </span>
 
-                                            <span class="text-etGray font-normal text-[16px]">17.30 PM</span>
+                                            <span class="text-etGray font-normal text-[16px]">17.30 PM (Past Event)</span>
                                         </div>
                                     </div>
 
@@ -1238,7 +1255,7 @@ get_header('main'); ?>
 
                                 <div class="flex shrink-0 flex-col gap-[16px] xxs:gap-[10px] xs:flex-wrap xs:jusity-center">
                                     <!-- <a href="#" class="et-btn border w-[180px] bg-etBlue text-white inline-flex items-center justify-center h-[45px] px-[22px] xxs:px-[16px] font-normal text-[17px] rounded-full hover:!bg-etBlack hover:!text-white">View More</a> -->
-                                    <a href="https://api.whatsapp.com/send?phone=6281131166111" class="et-btn border w-[180px] bg-etBlue text-white inline-flex items-center justify-center h-[45px] px-[22px] xxs:px-[16px] font-normal text-[17px] rounded-full hover:!bg-etBlack hover:!text-white">More Info</a>
+                                    <a href="https://api.whatsapp.com/send?phone=6281131166111" class="et-btn border w-[180px] bg-etBlue text-white inline-flex items-center justify-center h-[45px] px-[22px] xxs:px-[16px] font-normal text-[17px] rounded-full hover:!bg-etBlack hover:!text-white">Book Your Seat</a>
                                 </div>
                             </div>
                         </div>
@@ -1344,7 +1361,7 @@ get_header('main'); ?>
 
                                 <div class="flex shrink-0 flex-col gap-[16px] xxs:gap-[10px] xs:flex-wrap xs:jusity-center">
                                     <!-- <a href="#" class="et-btn border w-[180px] bg-etBlue text-white inline-flex items-center justify-center h-[45px] px-[22px] xxs:px-[16px] font-normal text-[17px] rounded-full hover:!bg-etBlack hover:!text-white">View More</a> -->
-                                    <a href="https://api.whatsapp.com/send?phone=6281131166111" class="et-btn border w-[180px] bg-etBlue text-white inline-flex items-center justify-center h-[45px] px-[22px] xxs:px-[16px] font-normal text-[17px] rounded-full hover:!bg-etBlack hover:!text-white">More Info</a>
+                                    <a href="https://api.whatsapp.com/send?phone=6281131166111" class="et-btn border w-[180px] bg-etBlue text-white inline-flex items-center justify-center h-[45px] px-[22px] xxs:px-[16px] font-normal text-[17px] rounded-full hover:!bg-etBlack hover:!text-white">Book Your Seat</a>
                                 </div>
                             </div>
                         </div>
@@ -1455,12 +1472,11 @@ get_header('main'); ?>
                                 </div>
 
                                 <div class="flex shrink-0 flex-col gap-[16px] xxs:gap-[10px] xs:flex-wrap xs:jusity-center">
-                                    <button href="#"
+                                    <!-- <button href="#"
                                         class="myBtn et-btn border w-[180px] bg-etBlue text-white inline-flex items-center justify-center h-[45px] px-[22px] xxs:px-[16px] font-normal text-[17px] rounded-full hover:!bg-etBlack hover:!text-white">View
-                                        More</button>
+                                        More</button> -->
                                     <a href="<?= home_url()?>/rsvp"
-                                        class="et-btn border w-[180px] bg-etBlue text-white inline-flex items-center justify-center h-[45px] px-[22px] xxs:px-[16px] font-normal text-[17px] rounded-full hover:!bg-etBlack hover:!text-white">Buy
-                                        Tickets</a>
+                                        class="et-btn border w-[180px] bg-etBlue text-white inline-flex items-center justify-center h-[45px] px-[22px] xxs:px-[16px] font-normal text-[17px] rounded-full hover:!bg-etBlack hover:!text-white">Book Your Seat</a>
                                 </div>
                             </div>
                         </div>
@@ -1572,7 +1588,7 @@ get_header('main'); ?>
 
                                 <div class="flex shrink-0 flex-col gap-[16px] xxs:gap-[10px] xs:flex-wrap xs:jusity-center">
                                     <!-- <a href="#" class="et-btn border w-[180px] bg-etBlue text-white inline-flex items-center justify-center h-[45px] px-[22px] xxs:px-[16px] font-normal text-[17px] rounded-full hover:!bg-etBlack hover:!text-white">View More</a> -->
-                                    <a href="https://api.whatsapp.com/send?phone=6281131166111" class="et-btn border w-[180px] bg-etBlue text-white inline-flex items-center justify-center h-[45px] px-[22px] xxs:px-[16px] font-normal text-[17px] rounded-full hover:!bg-etBlack hover:!text-white">More Info</a>
+                                    <a href="https://api.whatsapp.com/send?phone=6281131166111" class="et-btn border w-[180px] bg-etBlue text-white inline-flex items-center justify-center h-[45px] px-[22px] xxs:px-[16px] font-normal text-[17px] rounded-full hover:!bg-etBlack hover:!text-white">Book Your Seat</a>
                                 </div>
                             </div>
                         </div>
@@ -1684,7 +1700,7 @@ get_header('main'); ?>
 
                                 <div class="flex shrink-0 flex-col gap-[16px] xxs:gap-[10px] xs:flex-wrap xs:jusity-center">
                                     <!-- <a href="#" class="et-btn border w-[180px] bg-etBlue text-white inline-flex items-center justify-center h-[45px] px-[22px] xxs:px-[16px] font-normal text-[17px] rounded-full hover:!bg-etBlack hover:!text-white">View More</a> -->
-                                    <a href="https://api.whatsapp.com/send?phone=6281131166111" class="et-btn border w-[180px] bg-etBlue text-white inline-flex items-center justify-center h-[45px] px-[22px] xxs:px-[16px] font-normal text-[17px] rounded-full hover:!bg-etBlack hover:!text-white">More Info</a>
+                                    <a href="https://api.whatsapp.com/send?phone=6281131166111" class="et-btn border w-[180px] bg-etBlue text-white inline-flex items-center justify-center h-[45px] px-[22px] xxs:px-[16px] font-normal text-[17px] rounded-full hover:!bg-etBlack hover:!text-white">Book Your Seat</a>
                                 </div>
                             </div>
                         </div>
@@ -1710,6 +1726,191 @@ get_header('main'); ?>
     </div> -->
     <!-- PAGINATION END -->
 </div>
+
+<section class="et-testimonial overflow-hidden pb-[80px]">
+    <div class="container mx-auto max-w-[1200px] px-[12px] xl:max-w-full">
+        <!-- heading -->
+        <div class="et-testimonial-heading text-center mb-[46px] xl:mb-[26px] lg:mb-[16px] gap-[15px]">
+            <h6 class="et-section-sub-title anim-text">Testimonials</h6>
+            <h2 class="text-[35px] sm:text-[24px] anim-text">See Their Feedback</h2>
+        </div>
+
+        <!-- slider -->
+        <div class="et-2-testimonial-slider swiper overflow-visible">
+            <div class="right test-right">
+                <div class="et-test-slider-nav flex gap-[16px] sm:gap-[12px]" style="justify-content: center; margin:30px 0">
+                    <button class="prev border border-[#D9D9D9] rounded-full w-[60px] sm:w-[50px] h-[60px] sm:h-[50px] text-[18px] text-etBlack hover:bg-etBlue hover:border-etbg-etBlue hover:text-white">
+                        <i class="fa-solid fa-arrow-left-long"></i>
+                    </button>
+                    <button class="next border border-[#D9D9D9] rounded-full w-[60px] sm:w-[50px] h-[60px] sm:h-[50px] text-[18px] text-etBlack hover:bg-etBlue hover:border-etbg-etBlue hover:text-white">
+                        <i class="fa-solid fa-arrow-right-long"></i>
+                    </button>
+                </div>
+            </div>
+            <div class="swiper-wrapper">
+                <!-- single testimony  -->
+                <div class="swiper-slide">
+                    <div class="et-testimony relative p-[40px] lg:p-[30px] md:p-[20px] border border-[#D4DCED] rounded-[16px] mt-[60px]">
+                        <!-- single testimony heading -->
+                        <div class="et-testimony__heading flex items-end justify-center mb-[17px] lg:mb-[12px] -mt-[100px] md:-mt-[80px]">
+                            <div class="et-testimony__img rounded-full overflow-hidden border border-etBlue p-[7px] w-max max-w-full">
+                                <img src="<?= get_template_directory_uri(); ?>/assets/img/testimony/Arif.png" alt="reviewer image" class="w-[100px] sm:w-[80px] h-[100px] sm:h-[80px] rounded-full">
+                            </div>
+                        </div>
+
+                        <div class="text-center">
+                            <h5 class="text-black font-medium text-[20px] mb-[3px]">Arif Bijaksana</h5>
+                            <h6 class="text-[16px] text-etGray font-normal mb-[20px] sm:text-[12px]">Florist & Wedding Decoration</h6>
+                            <p class="text-[16px] text-etGray font-normal mb-[20px] sm:text-[12px]">BPro Talkshow adalah salah satu format ibadah yang saya tunggu, karena disitu saya bisa belajar pengaplikasian Firman Tuhan di era sekarang dengan segala kemajuan yang ada dan di dunia kerja dengan lebih detail lewat sesi QnA.</p>
+                        </div>
+
+                        <!-- quotation icon -->
+                        <div class="absolute top-[40px] sm:top-[20px] left-[40px] sm:left-[20px]">
+                            <img src="<?= get_template_directory_uri(); ?>/assets/img/quotation-blue.svg" alt="quotation mark">
+                        </div>
+
+                        <!-- rating stars -->
+                        <div class="absolute bottom-0 left-[50%] -translate-x-[50%] translate-y-[50%] flex gap-[6px] bg-white shadow-[0_4px_25px_rgba(56,75,255,0.15)] p-[12px] rounded-full">
+                            <img src="<?= get_template_directory_uri(); ?>/assets/img/star-blue.svg" alt="star">
+                            <img src="<?= get_template_directory_uri(); ?>/assets/img/star-blue.svg" alt="star">
+                            <img src="<?= get_template_directory_uri(); ?>/assets/img/star-blue.svg" alt="star">
+                            <img src="<?= get_template_directory_uri(); ?>/assets/img/star-blue.svg" alt="star">
+                            <img src="<?= get_template_directory_uri(); ?>/assets/img/star-blue.svg" alt="star">
+                        </div>
+                    </div>
+                </div>
+
+                <!-- single testimony  -->
+                <div class="swiper-slide">
+                    <div class="et-testimony relative p-[40px] lg:p-[30px] md:p-[20px] border border-[#D4DCED] rounded-[16px] mt-[60px]">
+                        <!-- single testimony heading -->
+                        <div class="et-testimony__heading flex items-end justify-center mb-[17px] lg:mb-[12px] -mt-[100px] md:-mt-[80px]">
+                            <div class="et-testimony__img rounded-full overflow-hidden border border-etBlue p-[7px] w-max max-w-full">
+                                <img src="<?= get_template_directory_uri()?>/assets/new-img/profile.jpg" alt="reviewer image" class="w-[100px] sm:w-[80px] h-[100px] sm:h-[80px] rounded-full">
+                            </div>
+                        </div>
+
+                        <div class="text-center">
+                            <h5 class="text-black font-medium text-[20px] mb-[3px]">Renita</h5>
+                            <h6 class="text-[16px] text-etGray font-normal mb-[20px] sm:text-[12px]">Housewife</h6>
+                            <p class="text-[16px] text-etGray font-normal mb-[20px] sm:text-[12px]">Harapan saya kedepannya BPro semakin lebih baik, lebih banyak teman yang bisa bergabung, dan bisa belajar menjadi berkat bagi sekitar kita.
+                            </p>
+                        </div>
+
+                        <!-- quotation icon -->
+                        <div class="absolute top-[40px] sm:top-[20px] left-[40px] sm:left-[20px]">
+                            <img src="<?= get_template_directory_uri(); ?>/assets/img/quotation-blue.svg" alt="quotation mark">
+                        </div>
+
+                        <!-- rating stars -->
+                        <div class="absolute bottom-0 left-[50%] -translate-x-[50%] translate-y-[50%] flex gap-[6px] bg-white shadow-[0_4px_25px_rgba(56,75,255,0.15)] p-[12px] rounded-full">
+                            <img src="<?= get_template_directory_uri(); ?>/assets/img/star-blue.svg" alt="star">
+                            <img src="<?= get_template_directory_uri(); ?>/assets/img/star-blue.svg" alt="star">
+                            <img src="<?= get_template_directory_uri(); ?>/assets/img/star-blue.svg" alt="star">
+                            <img src="<?= get_template_directory_uri(); ?>/assets/img/star-blue.svg" alt="star">
+                            <img src="<?= get_template_directory_uri(); ?>/assets/img/star-blue.svg" alt="star">
+                        </div>
+                    </div>
+                </div>
+
+                <!-- single testimony  -->
+                <div class="swiper-slide">
+                    <div class="et-testimony relative p-[40px] lg:p-[30px] md:p-[20px] border border-[#D4DCED] rounded-[16px] mt-[60px]">
+                        <!-- single testimony heading -->
+                        <div class="et-testimony__heading flex items-end justify-center mb-[17px] lg:mb-[12px] -mt-[100px] md:-mt-[80px]">
+                            <div class="et-testimony__img rounded-full overflow-hidden border border-etBlue p-[7px] w-max max-w-full">
+                                <img src="<?= get_template_directory_uri(); ?>/assets/img/testimony/Holi.png" alt="reviewer image" class="w-[100px] sm:w-[80px] h-[100px] sm:h-[80px] rounded-full">
+                            </div>
+                        </div>
+
+                        <div class="text-center">
+                            <h5 class="text-black font-medium text-[20px] mb-[3px]">Holi</h5>
+                            <h6 class="text-[16px] text-etGray font-normal mb-[20px] sm:text-[12px]">Academic Support</h6>
+                            <p class="text-[16px] text-etGray font-normal mb-[20px] sm:text-[12px]">Event BPro FA Gathering di UTC beneran berkesan, karena bisa merasakan kebersamaan meski banyak yang teman baru kenal saat itu, acara asyik dan seru. </p>
+                        </div>
+
+                        <!-- quotation icon -->
+                        <div class="absolute top-[40px] sm:top-[20px] left-[40px] sm:left-[20px]">
+                            <img src="<?= get_template_directory_uri(); ?>/assets/img/quotation-blue.svg" alt="quotation mark">
+                        </div>
+
+                        <!-- rating stars -->
+                        <div class="absolute bottom-0 left-[50%] -translate-x-[50%] translate-y-[50%] flex gap-[6px] bg-white shadow-[0_4px_25px_rgba(56,75,255,0.15)] p-[12px] rounded-full">
+                            <img src="<?= get_template_directory_uri(); ?>/assets/img/star-blue.svg" alt="star">
+                            <img src="<?= get_template_directory_uri(); ?>/assets/img/star-blue.svg" alt="star">
+                            <img src="<?= get_template_directory_uri(); ?>/assets/img/star-blue.svg" alt="star">
+                            <img src="<?= get_template_directory_uri(); ?>/assets/img/star-blue.svg" alt="star">
+                            <img src="<?= get_template_directory_uri(); ?>/assets/img/star-blue.svg" alt="star">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="swiper-slide">
+                    <div class="et-testimony relative p-[40px] lg:p-[30px] md:p-[20px] border border-[#D4DCED] rounded-[16px] mt-[60px]">
+                        <!-- single testimony heading -->
+                        <div class="et-testimony__heading flex items-end justify-center mb-[17px] lg:mb-[12px] -mt-[100px] md:-mt-[80px]">
+                            <div class="et-testimony__img rounded-full overflow-hidden border border-etBlue p-[7px] w-max max-w-full">
+                                <img src="<?= get_template_directory_uri(); ?>/assets/img/testimony/Tabita.png" alt="reviewer image" class="w-[100px] sm:w-[80px] h-[100px] sm:h-[80px] rounded-full">
+                            </div>
+                        </div>
+
+                        <div class="text-center">
+                            <h5 class="text-black font-medium text-[20px] mb-[3px]">Tabita Christian</h5>
+                            <h6 class="text-[16px] text-etGray font-normal mb-[20px] sm:text-[12px]">Bank Teller</h6>
+                            <p class="text-[16px] text-etGray font-normal mb-[20px] sm:text-[12px]">Kalo diulang 5x pun, aku bakalan ga bosen ikut ibadah BPro Worship Night. Karena punya waktu yg lebih lama untuk menyembah dan merasakan hadirat Tuhan bersama-sama.</p>
+                        </div>
+
+                        <!-- quotation icon -->
+                        <div class="absolute top-[40px] sm:top-[20px] left-[40px] sm:left-[20px]">
+                            <img src="<?= get_template_directory_uri(); ?>/assets/img/quotation-blue.svg" alt="quotation mark">
+                        </div>
+
+                        <!-- rating stars -->
+                        <div class="absolute bottom-0 left-[50%] -translate-x-[50%] translate-y-[50%] flex gap-[6px] bg-white shadow-[0_4px_25px_rgba(56,75,255,0.15)] p-[12px] rounded-full">
+                            <img src="<?= get_template_directory_uri(); ?>/assets/img/star-blue.svg" alt="star">
+                            <img src="<?= get_template_directory_uri(); ?>/assets/img/star-blue.svg" alt="star">
+                            <img src="<?= get_template_directory_uri(); ?>/assets/img/star-blue.svg" alt="star">
+                            <img src="<?= get_template_directory_uri(); ?>/assets/img/star-blue.svg" alt="star">
+                            <img src="<?= get_template_directory_uri(); ?>/assets/img/star-blue.svg" alt="star">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="swiper-slide">
+                    <div class="et-testimony relative p-[40px] lg:p-[30px] md:p-[20px] border border-[#D4DCED] rounded-[16px] mt-[60px]">
+                        <!-- single testimony heading -->
+                        <div class="et-testimony__heading flex items-end justify-center mb-[17px] lg:mb-[12px] -mt-[100px] md:-mt-[80px]">
+                            <div class="et-testimony__img rounded-full overflow-hidden border border-etBlue p-[7px] w-max max-w-full">
+                                <img src="<?= get_template_directory_uri(); ?>/assets/img/testimony/Vina.png" alt="reviewer image" class="w-[100px] sm:w-[80px] h-[100px] sm:h-[80px] rounded-full">
+                            </div>
+                        </div>
+
+                        <div class="text-center">
+                            <h5 class="text-black font-medium text-[20px] mb-[3px]">Vina</h5>
+                            <h6 class="text-[16px] text-etGray font-normal mb-[20px] sm:text-[12px]">Pharmacist</h6>
+                            <p class="text-[16px] text-etGray font-normal mb-[20px] sm:text-[12px]">Kalo diulang 5x pun, aku bakalan ga bosen ikut ibadah BPro Worship Night. Karena punya waktu yg lebih lama untuk menyembah dan merasakan hadirat Tuhan bersama-sama.</p>
+                        </div>
+
+                        <!-- quotation icon -->
+                        <div class="absolute top-[40px] sm:top-[20px] left-[40px] sm:left-[20px]">
+                            <img src="<?= get_template_directory_uri(); ?>/assets/img/quotation-blue.svg" alt="quotation mark">
+                        </div>
+
+                        <!-- rating stars -->
+                        <div class="absolute bottom-0 left-[50%] -translate-x-[50%] translate-y-[50%] flex gap-[6px] bg-white shadow-[0_4px_25px_rgba(56,75,255,0.15)] p-[12px] rounded-full">
+                            <img src="<?= get_template_directory_uri(); ?>/assets/img/star-blue.svg" alt="star">
+                            <img src="<?= get_template_directory_uri(); ?>/assets/img/star-blue.svg" alt="star">
+                            <img src="<?= get_template_directory_uri(); ?>/assets/img/star-blue.svg" alt="star">
+                            <img src="<?= get_template_directory_uri(); ?>/assets/img/star-blue.svg" alt="star">
+                            <img src="<?= get_template_directory_uri(); ?>/assets/img/star-blue.svg" alt="star">
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</section>
 
 <div id="myModal" class="modal">
     <div class="modal-content">
