@@ -65,10 +65,12 @@ get_header('main');
                     <div class="bg-no-repeat bg-cover bg-[url('assets/img/banner-2-bg-1.jpg')] bg-center pt-[clamp(140px,12.7vw,213px)] text-white relative overflow-hidden z-[1] before:content-normal before:absolute before:inset-0 before:bg-gradient-to-r before:from-[#1900B1] before:from-50% before:to-transparent before:-z-[1] before:opacity-50">
                         <div class="mx-[15.5em] xxxl:mx-[10em] xxl:mx-[40px] xs:mx-[12px] mb-[132px] xl:mb-[112px] lg:mb-[82px]">
                             <div class="flex md:flex-col items-center justify-between gap-x-[30px] gap-y-[30px] md:grid-cols-1">
-                                <div class="left relative z-[20] w-[60%] md:w-full">
+                                
+                            </div>
+                            <div class="left relative z-[20] w-[100%] text-center md:w-full">
                                     <h6 class="font-kalam font-bold text-[2.4rem] mb-[3px] anim-text">Bethany Professional 2024</h6>
 
-                                    <h1 class="text-[clamp(42px,6.25vw,12rem)] font-semibold leading-[1.1] mb-[36px] md:mb-[36px] anim-text">Church Mega <span class="italic font-normal">Conference</span></h1>
+                                    <h1 class="text-[clamp(42px,6.25vw,12rem)] font-semibold leading-[1.1] mb-[36px] md:mb-[36px] anim-text">Welcome to <br> our Cummunity</span></h1>
 
                                     <!-- <div class="et-banner-btns flex flex-wrap items-center gap-[20px]">
                                         <a href="#" class="et-btn bg-etBlue inline-flex items-center justify-center gap-x-[13px] h-[45px] px-[15px] text-white font-normal text-[17px] rounded-full hover:!bg-white hover:!text-etBlue">Register Now</a>
@@ -76,7 +78,6 @@ get_header('main');
                                         <a href="#" class="et-btn bg-white inline-flex items-center justify-center gap-x-[13px] h-[45px] px-[15px] text-etBlue font-normal text-[17px] rounded-full">View More</a>
                                     </div> -->
                                 </div>
-                            </div>
                         </div>
 
                         <!-- counter & video button -->
@@ -937,7 +938,8 @@ get_header('main');
                         <!-- txt -->
                         <div class="text-white">
                             <span class="block font-medium text-[16px] mb-[3px]">Hotline BPro :</span>
-                            <h5 class="font-medium text-[22px] xxs:text-[22px]"><a href="https://api.whatsapp.com/send?phone=6281131166111">+62811-3116-6111<br>(Whatsapp)</a></h5>
+                            <h5 class="font-medium text-[22px] xxs:text-[22px]"><a href="https://api.whatsapp.com/send?phone=6281131166111">0811-311-66111
+                            <br>(Whatsapp)</a></h5>
                         </div>
                     </div>
                     <div class="pl-[54px] overflow-hidden border-l-[4px] sm:border-l-0 border-white md:text-center md:pl-[15px] sm:pl-0 md:w-full relative before:absolute before:-left-[10px] before:top-[50%] before:-translate-y-[50%] before:w-[15px] before:aspect-square before:bg-white before:rotate-[45deg] before:-skew-x-[10deg] before:-skew-y-[10deg] sm:before:hidden">
@@ -956,7 +958,7 @@ Wrapped with Praise & Worship Night <br>
                             <path d="M26.0001 5.97091C26.4665 5.97091 26.8447 5.59277 26.8447 5.12625V0.844662C26.8447 0.378144 26.4665 0 26.0001 0H9.71094V16H26.0001C26.4665 16 26.8447 15.6219 26.8447 15.1553V10.8737C26.8447 10.4072 26.4665 10.029 26.0001 10.029C24.8813 10.029 23.971 9.11886 23.971 8C23.971 6.88114 24.8813 5.97091 26.0001 5.97091Z" class="fill-etBlue group-hover:fill-white transition"></path>
                         </svg>
                     </span>
-                    Get Tickets</a>
+                    Book Your Seat</a>
             </div>
 
             <!-- vectors -->
