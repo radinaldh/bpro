@@ -64,8 +64,6 @@ get_header('main');
     min-height: 100vh;
 }
 
-.swiper-backface-hidden .swiper-slide {min-height: 100vh;}
-
 .before\:opacity-50::before {
     min-height: 100vh;
 }
