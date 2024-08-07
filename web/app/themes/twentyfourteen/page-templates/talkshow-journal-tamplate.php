@@ -1,7 +1,7 @@
 <?php
 
 /**
- * Template Name: Journal Template
+ * Template Name: Talkshow BPro Journal Template
  */
 
 get_header('main');
@@ -70,11 +70,11 @@ a.more-link {
 
 <section class="et-breadcrumb bg-[#000D83] pt-[210px] lg:pt-[190px] sm:pt-[160px] pb-[130px] lg:pb-[110px] sm:pb-[80px] relative z-[1] before:absolute before:inset-0 before:bg-[url('assets/img/breadcrumb-bg.jpg')] before:bg-no-repeat before:bg-cover before:bg-center before:-z-[1] before:opacity-30">
     <div class="container mx-auto max-w-[1200px] px-[12px] xl:max-w-full text-center text-white">
-        <h1 class="et-breadcrumb-title font-medium text-[56px] md:text-[50px] sm:text-[22px]">Journal</h1>
+        <h1 class="et-breadcrumb-title font-medium text-[56px] md:text-[50px] sm:text-[22px]"><?php the_title();?></h1>
         <ul class="inline-flex items-center gap-[10px] font-medium text-[16px] sm:text-[12px]">
             <li class="opacity-80"><a href="<?= home_url()?>/" class="hover:text-etBlue">Home</a></li>
             <li><i class="fa-solid fa-angle-right"></i><i class="fa-solid fa-angle-right"></i></li>
-            <li class="current-page">Journal</li>
+            <li class="current-page"><?php the_title();?></li>
         </ul>
     </div>
 </section>
@@ -88,7 +88,7 @@ a.more-link {
                 <?php
                 $currentPage = get_query_var('paged');
                 $args = array(
-                    'category_name' => 'Journal',
+                    'category_name' => 'Talkshow BPro',
                     'orderby'    => 'date',
                     'post_status' => 'publish',
                     'posts_per_page' => 3,
@@ -277,7 +277,7 @@ a.more-link {
 
                     <div class="posts mt-[30px] space-y-[24px]">
                         <!-- single post -->
-                        <?php $latest = new WP_Query(array('cat' => 3, 'posts_per_page' => 3, 'orderby' => 'title', 'order' => 'ASC')); ?>
+                        <?php $latest = new WP_Query(array('cat' => 4, 'posts_per_page' => 3, 'orderby' => 'title', 'order' => 'ASC')); ?>
                         <?php if (have_posts()) : while ($latest->have_posts()) : $latest->the_post(); ?>
                         <div class="flex items-center gap-[16px]">
                             <div class="rounded-[6px] w-[78px] h-[79px] overflow-hidden shrink-0">
