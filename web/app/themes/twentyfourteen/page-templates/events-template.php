@@ -454,7 +454,7 @@ get_header('main'); ?>
                                     <!-- title -->
                                     <h3 class="et-schedule-title text-[24px] sm:text-[22px] font-regular text-etBlack leading-[1.25] mb-[16px] anim-text">
                                     <a href="#" class="hover:text-etBlue"><?= the_title()?></a></h3>
-                                    <h4 class="font-semibold text-etBlue text-[16px] my-[10px]"><?= $category_event?></h4>
+                                    <h4 class="font-semibold text-etBlue text-[16px] my-[10px]"><?= ucwords(str_replace('-', ' ', $category_event))?></h4>
 
                                     <!-- location -->
                                     <div class="et-schedule-loaction flex items-center gap-[12px] xs:justify-center">
@@ -598,7 +598,7 @@ get_header('main'); ?>
                                     <!-- title -->
                                     <h3 class="et-schedule-title text-[24px] sm:text-[22px] font-regular text-etBlack leading-[1.25] mb-[16px] anim-text">
                                     <a href="#" class="hover:text-etBlue"><?= the_title()?></a></h3>
-                                    <h4 class="font-semibold text-etBlue text-[16px] my-[10px]"><?= $category_event?></h4>
+                                    <h4 class="font-semibold text-etBlue text-[16px] my-[10px]"><?= ucwords(str_replace('-', ' ', $category_event))?></h4>
 
                                     <!-- location -->
                                     <div class="et-schedule-loaction flex items-center gap-[12px] xs:justify-center">
@@ -633,7 +633,7 @@ get_header('main'); ?>
                     </div>
                 </div>
             </div>
-            <?php elseif($type_page_event == 'professional') : ?>
+            <?php elseif($type_page_event == 'professional-workshop') : ?>
                 <div class="et-schedules-tab-container">
                 <div id="eventDetail">
                     <div class="all-scheduled-events space-y-[30px]">
@@ -742,7 +742,7 @@ get_header('main'); ?>
                                     <!-- title -->
                                     <h3 class="et-schedule-title text-[24px] sm:text-[22px] font-regular text-etBlack leading-[1.25] mb-[16px] anim-text">
                                     <a href="#" class="hover:text-etBlue"><?= the_title()?></a></h3>
-                                    <h4 class="font-semibold text-etBlue text-[16px] my-[10px]"><?= $category_event?></h4>
+                                    <h4 class="font-semibold text-etBlue text-[16px] my-[10px]"><?= ucwords(str_replace('-', ' ', $category_event))?></h4>
 
                                     <!-- location -->
                                     <div class="et-schedule-loaction flex items-center gap-[12px] xs:justify-center">
@@ -777,7 +777,7 @@ get_header('main'); ?>
                     </div>
                 </div>
             </div>
-            <?php elseif($type_page_event == 'praise') : ?>
+            <?php elseif($type_page_event == 'praise-and-worship-night') : ?>
                 <div class="et-schedules-tab-container">
                 <div id="eventDetail">
                     <div class="all-scheduled-events space-y-[30px]">
@@ -886,7 +886,7 @@ get_header('main'); ?>
                                     <!-- title -->
                                     <h3 class="et-schedule-title text-[24px] sm:text-[22px] font-regular text-etBlack leading-[1.25] mb-[16px] anim-text">
                                     <a href="#" class="hover:text-etBlue"><?= the_title()?></a></h3>
-                                    <h4 class="font-semibold text-etBlue text-[16px] my-[10px]"><?= $category_event?></h4>
+                                    <h4 class="font-semibold text-etBlue text-[16px] my-[10px]"><?= ucwords(str_replace('-', ' ', $category_event))?></h4>
 
                                     <!-- location -->
                                     <div class="et-schedule-loaction flex items-center gap-[12px] xs:justify-center">
@@ -1030,7 +1030,7 @@ get_header('main'); ?>
                                     <!-- title -->
                                     <h3 class="et-schedule-title text-[24px] sm:text-[22px] font-regular text-etBlack leading-[1.25] mb-[16px] anim-text">
                                     <a href="#" class="hover:text-etBlue"><?= the_title()?></a></h3>
-                                    <h4 class="font-semibold text-etBlue text-[16px] my-[10px]"><?= $category_event?></h4>
+                                    <h4 class="font-semibold text-etBlue text-[16px] my-[10px]"><?= ucwords(str_replace('-', ' ', $category_event))?></h4>
 
                                     <!-- location -->
                                     <div class="et-schedule-loaction flex items-center gap-[12px] xs:justify-center">
@@ -1166,7 +1166,7 @@ get_header('main'); ?>
                                     <!-- title -->
                                     <h3 class="et-schedule-title text-[24px] sm:text-[22px] font-regular text-etBlack leading-[1.25] mb-[16px] anim-text">
                                     <a href="#" class="hover:text-etBlue"><?= the_title()?></a></h3>
-                                    <h4 class="font-semibold text-etBlue text-[16px] my-[10px]"><?= $category_event?></h4>
+                                    <h4 class="font-semibold text-etBlue text-[16px] my-[10px]"><?= ucwords(str_replace('-', ' ', $category_event))?></h4>
 
                                     <!-- location -->
                                     <div class="et-schedule-loaction flex items-center gap-[12px] xs:justify-center">
