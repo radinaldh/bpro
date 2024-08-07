@@ -26,6 +26,36 @@ get_header('main'); ?>
         cursor: not-allowed !important;
     }
 
+    a.page-numbers {
+        background:#18377e;
+        padding: 10px;
+        border-radius: 100%;
+        display: inline-block;
+        height: 40px;
+        width: 40px;
+        text-align: center;
+        color: #fff;
+        font-size: 13px;
+    }
+
+    span.page-numbers.current {
+        background: #18377e;
+        padding: 10px;
+        border-radius: 100%;
+        display: inline-block;
+        height: 40px;
+        width: 40px;
+        text-align: center;
+        color: #fff;
+        font-size: 13px;
+        opacity: 0.7;
+    }
+
+    .pagination {
+        margin: 30px auto;
+        text-align: center;
+    }
+
     @media(max-width:600px) {
 
         .et-testimony {
