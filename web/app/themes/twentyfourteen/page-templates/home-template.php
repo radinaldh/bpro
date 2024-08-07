@@ -87,16 +87,8 @@ h5.font-semibold.text-\[22px\].md\:text-\[20px\].text-etBlack.mb-\[4px\] {
 .swiper-slide.swiper-slide-active.swiper-slide-next {
     position: relative;
 }
-.et-member__txt.bg-white.relative.z-\[1\].mx-\[25px\].md\:mx-\[15px\].xs\:mx-\[5px\].-mt-\[44px\].md\:-mt-\[15px\].xs\:mt-0.rounded-\[16px\].px-\[25px\].md\:px-\[15px\].pb-\[30px\].md\:pb-\[20px\].before\:w-full.before\:absolute.before\:-z-\[1\].before\:h-full.before\:bg-white.before\:left-0.before\:rounded-\[16px\].before\:-top-\[33px\].before\:skew-y-\[4deg\] {
-    margin-top: -152px;
-    min-height: 96px;
-}
-section.et-speakers.py-\[130px\].lg\:py-\[80px\].md\:py-\[60px\].overflow-hidden.relative.z-\[1\] {
-    margin-bottom: 50px;
-}
-
-section.et-speakers.py-\[130px\].lg\:py-\[80px\].md\:py-\[60px\].overflow-hidden.relative.z-\[1\] ul.slick-dots {
-    bottom: -89px !important;
+.about-us.items-center.gap-x-\[30px\].gap-y-\[16px\].rev-slide-up {
+    text-align: center;
 }
 }
 </style>
@@ -240,7 +232,7 @@ section.et-speakers.py-\[130px\].lg\:py-\[80px\].md\:py-\[60px\].overflow-hidden
 
                     </p>
 
-                    <div class="flex flex-wrap items-center gap-x-[30px] gap-y-[16px] rev-slide-up">
+                    <div class="about-us items-center gap-x-[30px] gap-y-[16px] rev-slide-up">
                         <a href="/about/" class="et-btn bg-etBlue w-[180px] inline-flex items-center justify-center gap-x-[13px] h-[45px] px-[15px] text-white font-normal text-[17px] rounded-full hover:!bg-black hover:!text-white">Read More</a>
 
                         <!-- <div class="flex items-center gap-[10px]">

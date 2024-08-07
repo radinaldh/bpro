@@ -30,6 +30,24 @@ get_header('main');
     .swiper-button-next:after, .swiper-button-prev:after {
         color: #000;
     }
+
+    .bg-etBlue.rounded-\[20px\].overflow-hidden.text-white.max-w-\[370px\].xxs\:max-w-full {
+    width: 100%;
+    min-height: 383px;
+}
+
+.lg\:col-span-3.xs\:col-span-full {
+    width: 100%;
+}
+
+
+.slick-initialized .slick-slide .lg\:col-span-3.xs\:col-span-full {
+    padding: 17px;
+}
+
+.pembicaraslider.slick-initialized.slick-slider.slick-dotted {
+    height: 450px;
+}
     @media(max-width:600px) {
         .mySwiper2 {
             height: auto;
@@ -55,6 +73,7 @@ get_header('main');
         section.et-about {
             padding-bottom: 25px;
         }
+        
     }
 </style>
 
@@ -121,7 +140,7 @@ get_header('main');
     <div class="swiper-button-next"></div>
     <div class="swiper-button-prev"></div>
 </div>
-<section class="et-about py-[130px] xl:py-[80px] md:py-[60px] overflow-hidden relative">
+<section class="et-about py-[130px] xl:py-[80px] md:py-[60px] overflow-hidden relative" style="display: none;">
     <div
         class="container mx-auto max-w-[calc(100%-39.1vw)] xxxl:max-w-[calc(100%-350px)] xl:max-w-[calc(100%-170px)] px-[12px] lg:max-w-full">
         <div
@@ -192,6 +211,104 @@ get_header('main');
             class="pointer-events-none absolute top-[340px] left-[90px] -z-[1]">
         <img src="<?= get_template_directory_uri()?>/assets/img/about-vector-2.png" alt="vector"
             class="pointer-events-none absolute top-[153px] right-0 -z-[1]">
+    </div>
+</section>
+<section class="et-about py-[130px] xl:py-[80px] md:py-[60px] overflow-hidden relative" style=" background: #FFF">
+    <div class="text-center mb-[52px]">
+        <h6 class="et-section-sub-title anim-text">Services BPro</h6>
+        <h2 class="mb-[24px] md:mb-[19px] anim-text sm:text-[24px] text-[25px]">BPro – Join Our Ministry
+                        </h2>
+        <div class="my-[10px] text-[15px] sm:text-[12px] text-white" style="text-align: center; max-width:70%; margin:auto">
+            <p class="text-black">Saudara-saudara, memang kamu telah dipanggil untuk merdeka. <br> Tetapi janganlah kamu mempergunakan kemerdekaan itu sebagai kesempatan untuk kehidupan dalam dosa, melainkan layanilah seorang akan yang lain oleh kasih. <b> Galatia 5:13 </b></p>
+        </div>
+    </div>
+    <div class="container max-w-[calc(100%-37.1vw)] mx-[30px] xxxl:max-w-[calc(100%-350px)] xl:max-w-[calc(100%-170px)] m-auto">
+            <div class="pembicaraslider">
+                    <div>
+                    <!-- pricing plans banner -->
+                    <div class="lg:col-span-3 xs:col-span-full">
+                        <div class="bg-etBlue rounded-[20px] overflow-hidden text-white max-w-[370px] xxs:max-w-full">
+                            <div class="p-[40px] sm:p-[30px] pb-0">
+                                <h3 class="text-[32px] mb-[14px]">Prayer <span class="font-semibold"> Team </span>.</h3>
+                                <p class="font-light text-[18px]"></p>
+                            </div>
+                            <!-- <img src="assets/img/pricing-banner-img.png" alt="image"> -->
+                        </div>
+                    </div>
+                    </div>
+                    <div>
+                    <div class="lg:col-span-3 xs:col-span-full">
+                        <div class="bg-etBlue rounded-[20px] overflow-hidden text-white max-w-[370px] xxs:max-w-full">
+                            <div class="p-[40px] sm:p-[30px] pb-0">
+                                <h3 class="text-[32px] mb-[14px]">Praise & <span class="font-semibold">Worship</span>.</h3>
+                                <p class="font-light text-[18px]">Worship Leader, Singer, Musician, Choir</p>
+                            </div>
+                            <!-- <img src="assets/img/pricing-banner-img.png" alt="image"> -->
+                        </div>
+                    </div>
+                    </div>
+                    <div>
+                    <div class="lg:col-span-3 xs:col-span-full">
+                        <div class="bg-etBlue rounded-[20px] overflow-hidden text-white max-w-[370px] xxs:max-w-full">
+                            <div class="p-[40px] sm:p-[30px] pb-0">
+                                <h3 class="text-[32px] mb-[14px]">Creative & <span class="font-semibold">Art</span>.</h3>
+                                <p class="font-light text-[18px]">Multimedia, Photo-Videographer, Design & Content Creator, Lighting</p>
+                            </div>
+                            <!-- <img src="assets/img/pricing-banner-img.png" alt="image"> -->
+                        </div>
+                    </div>
+                    </div>
+                    <div>
+                    <div class="lg:col-span-3 xs:col-span-full">
+                        <div class="bg-etBlue rounded-[20px] overflow-hidden text-white max-w-[370px] xxs:max-w-full">
+                            <div class="p-[40px] sm:p-[30px] pb-0">
+                                <h3 class="text-[32px] mb-[14px]"><span class="font-semibold">Pastoral</span>.</h3>
+                                <p class="font-light text-[18px]">Usher, Professional Community</p>
+                            </div>
+                            <!-- <img src="assets/img/pricing-banner-img.png" alt="image"> -->
+                        </div>
+                    </div>
+                    </div>
+                    <div>
+                    <div class="lg:col-span-3 xs:col-span-full">
+                        <div class="bg-etBlue rounded-[20px] overflow-hidden text-white max-w-[370px] xxs:max-w-full">
+                            <div class="p-[40px] sm:p-[30px] pb-0">
+                                <h3 class="text-[32px] mb-[14px]">Stage <span class="font-semibold">Management</span>.</h3>
+                                <p class="font-light text-[18px]"></p>
+                            </div>
+                            <!-- <img src="assets/img/pricing-banner-img.png" alt="image"> -->
+                        </div>
+                    </div>
+                    </div>
+                    <div>
+                    <div class="lg:col-span-3 xs:col-span-full">
+                        <div class="bg-etBlue rounded-[20px] overflow-hidden text-white max-w-[370px] xxs:max-w-full">
+                            <div class="p-[40px] sm:p-[30px] pb-0">
+                                <h3 class="text-[32px] mb-[14px]">Mission & <span class="font-semibold">Outreach</span>.</h3>
+                                <p class="font-light text-[18px]"></p>
+                            </div>
+                            <!-- <img src="assets/img/pricing-banner-img.png" alt="image"> -->
+                        </div>
+                    </div>
+                    </div>
+                    <div>
+                    <div class="lg:col-span-3 xs:col-span-full">
+                        <div class="bg-etBlue rounded-[20px] overflow-hidden text-white max-w-[370px] xxs:max-w-full">
+                            <div class="p-[40px] sm:p-[30px] pb-0">
+                                <h3 class="text-[32px] mb-[14px]">BPro <span class="font-semibold">Kids</span>.</h3>
+                                <p class="font-light text-[18px]"></p>
+                            </div>
+                            <!-- <img src="assets/img/pricing-banner-img.png" alt="image"> -->
+                        </div>
+                    </div>
+                    </div>
+                </div>
+       
+    </div>
+    <div class="my-[10px] text-[15px] sm:text-[12px] text-white" style="text-align: center; max-width:70%; margin:auto">
+    <p class="text-black " style="
+    padding-top: 45px;
+">Info & Registrasi: <br>Hotline BPro +62811-3116-6111 (Whatsapp)</p>   
     </div>
 </section>
 <section class="et-about py-[130px] xl:py-[80px] md:py-[60px] overflow-hidden relative" style=" background: rgb(0 27 82);">
