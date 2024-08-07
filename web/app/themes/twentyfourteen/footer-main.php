@@ -305,7 +305,17 @@
         }
       }
     ]
-    });   
+    });
+    
+    $('.slide-video').slick({
+        rows: 1,
+        infinite: false,
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        autoplay:false,
+        dots:true,
+        arrows: true
+    });
 </script>
 <script>
 document.addEventListener('DOMContentLoaded', function() {
