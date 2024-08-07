@@ -24,7 +24,7 @@ get_header('main'); ?>
         height: 50px;
         padding: 10px;
         border-radius: 10px;
-        margin-bottom: 20px;
+        margin-bottom: 10px;
         font-size: 15px;
     }
 
@@ -55,6 +55,7 @@ get_header('main'); ?>
     span.wpcf7-not-valid-tip {
         color: red;
         font-size: 14px;
+        margin-bottom: 10px;
     }
 </style>
 
