@@ -378,7 +378,7 @@ get_header('main'); ?>
             <?php if($type_page_event == 'kkr') :?>
                 <div class="et-schedules-tab-container">
                     <div id="eventDetail">
-                        <div class="all-scheduled-events space-y-[30px]">
+                        <div class="all-scheduled-events space-y-[30px] lcl_elems_wrapper">
                             <?php $paged = (get_query_var('paged')) ? get_query_var('paged') : 1; ?>
                             <?php
                                 $args = array(
@@ -534,7 +534,7 @@ get_header('main'); ?>
             <?php elseif($type_page_event == 'talkshow') : ?>
                 <div class="et-schedules-tab-container">
                     <div id="eventDetail">
-                        <div class="all-scheduled-events space-y-[30px]">
+                        <div class="all-scheduled-events space-y-[30px] lcl_elems_wrapper">
                             <?php $paged = (get_query_var('paged')) ? get_query_var('paged') : 1; ?>
                             <?php
                                 $args = array(
@@ -690,7 +690,7 @@ get_header('main'); ?>
             <?php elseif($type_page_event == 'professional-workshop') : ?>
                 <div class="et-schedules-tab-container">
                     <div id="eventDetail">
-                        <div class="all-scheduled-events space-y-[30px]">
+                        <div class="all-scheduled-events space-y-[30px] lcl_elems_wrapper">
                             <?php $paged = (get_query_var('paged')) ? get_query_var('paged') : 1; ?>
                             <?php
                                 $args = array(
@@ -846,7 +846,7 @@ get_header('main'); ?>
             <?php elseif($type_page_event == 'praise-and-worship-night') : ?>
                 <div class="et-schedules-tab-container">
                     <div id="eventDetail">
-                        <div class="all-scheduled-events space-y-[30px]">
+                        <div class="all-scheduled-events space-y-[30px] lcl_elems_wrapper">
                             <?php $paged = (get_query_var('paged')) ? get_query_var('paged') : 1; ?>
                             <?php
                                 $args = array(
@@ -1002,7 +1002,7 @@ get_header('main'); ?>
             <?php elseif($type_page_event == 'ibadah') : ?>
                 <div class="et-schedules-tab-container">
                     <div id="eventDetail">
-                        <div class="all-scheduled-events space-y-[30px]">
+                        <div class="all-scheduled-events space-y-[30px] lcl_elems_wrapper">
                             <?php $paged = (get_query_var('paged')) ? get_query_var('paged') : 1; ?>
                             <?php
                                 $args = array(
@@ -1157,7 +1157,7 @@ get_header('main'); ?>
             <?php elseif($type_page_event == 'default') : ?>
                 <div class="et-schedules-tab-container">
                     <div id="eventDetail">
-                        <div class="all-scheduled-events space-y-[30px]">
+                        <div class="all-scheduled-events space-y-[30px] lcl_elems_wrapper">
                             <?php $paged = (get_query_var('paged')) ? get_query_var('paged') : 1; ?>
                             <?php
                                 $args = array(
