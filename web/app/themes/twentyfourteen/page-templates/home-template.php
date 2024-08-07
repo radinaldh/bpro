@@ -1057,7 +1057,12 @@ h5.font-semibold.text-\[22px\].md\:text-\[20px\].text-etBlack.mb-\[4px\] {
     <!-- FEATURES SECTION START -->
     <?php if ( have_rows( 'section_discover' ) ) : ?>
         <?php while ( have_rows( 'section_discover' ) ) : the_row(); ?>
-    <div class="bg-[#00339A] relative z-[1] after:absolute after:inset-0 after:bg-[url(<?php the_sub_field( 'backgroound' ); ?>)] after:bg-no-repeat after:bg-cover after:-z-[2] after:pointer-events-none after:opacity-50 pb-[130px] xl:pb-[80px] md:pb-[60px] pt-[244px] xl:pt-[194px] md:pt-[174px]">
+    <style>
+        .section-discovery::after {
+    background-image: url(<?php the_sub_field( 'backgroound' ); ?>);
+}
+    </style>
+    <div  class="section-discovery bg-[#00339A] relative z-[1] after:absolute after:inset-0 after:bg-[url(<?php the_sub_field( 'backgroound' ); ?>)] after:bg-no-repeat after:bg-cover after:-z-[2] after:pointer-events-none after:opacity-50 pb-[130px] xl:pb-[80px] md:pb-[60px] pt-[244px] xl:pt-[194px] md:pt-[174px]">
         <div class="container mx-auto max-w-[calc(100%-37.1vw)] xxxl:max-w-[calc(100%-350px)] xl:max-w-[calc(100%-170px)] px-[12px] lg:max-w-full rev-slide-up">
             <!-- heading -->
             <div class="text-center mb-[52px]">
