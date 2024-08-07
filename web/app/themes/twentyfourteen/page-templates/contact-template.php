@@ -19,6 +19,33 @@ get_header('main'); ?>
         top: 0;
         bottom: 0;
     }
+
+    .custom-again input {
+        height: 35px;
+        padding: 10px;
+        border-radius: 10px;
+        margin-bottom: 20px;
+    }
+
+    .custom-again label {
+        font-size: 15px;
+        margin-bottom: 0;
+    }
+    .custom-again textarea {
+        font-size: 15px;
+        margin-bottom: 0;
+        padding: 10px;
+        border-radius: 10px;
+        margin-bottom: 20px;
+    }
+
+    .custom-again .wpcf7-submit {
+        height: 40px;
+        padding: 10px;
+        margin: 20px 0;
+        border-radius: 10px;
+        font-size: 12px;
+    }
 </style>
 
 <!-- BREADCRUMB SECTION START -->
@@ -140,7 +167,9 @@ get_header('main'); ?>
                         <button type="submit" class="bg-etBlue h-[55px] px-[24px] rounded-[10px] text-[16px] font-medium text-white hover:bg-etBlack">Send Message <span class="icon pl-[10px]"><i class="fa-solid fa-arrow-right-long"></i></span></button>
                     </div>
                 </form> -->
-                <?= do_shortcode('[contact-form-7 id="e432f6f" title="Contact form 1"]')?>
+                <div class="custom-again">
+                    <?= do_shortcode('[contact-form-7 id="e432f6f" title="Contact form 1"]')?>
+                </div>
             </div>
         </div>
     </div>
