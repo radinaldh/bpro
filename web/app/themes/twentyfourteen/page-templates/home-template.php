@@ -1303,7 +1303,7 @@ h5.font-semibold.text-\[22px\].md\:text-\[20px\].text-etBlack.mb-\[4px\] {
                     <div class="swiper-slide group">
                         <div class="et-blog bg-white relative group-[.swiper-slide-visible]:shadow-[0_4px_25px_rgba(0,0,0,0.06)]">
                             <div class="et-blog__img relative overflow-hidden z-[1]">
-                                <img src="<?= get_template_directory_uri(); ?>/assets/img/blog/blog1.png" alt="category-icon" class="w-full aspect-[37/24] object-cover transition duration-[400ms] group-hover:scale-105">
+                                <img src="<?php the_post_thumbnail_url();?>" alt="category-icon" class="w-full aspect-[37/24] object-cover transition duration-[400ms] group-hover:scale-105">
                             </div>
 
                             <div class="et-blog__txt bottom-0 z-[3] p-[30px] lg:p-[20px]">
