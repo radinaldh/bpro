@@ -1287,6 +1287,19 @@ h5.font-semibold.text-\[22px\].md\:text-\[20px\].text-etBlack.mb-\[4px\] {
             <div class="et-2-blogs-slider swiper p-[30px] -m-[30px]">
                 <div class="swiper-wrapper">
                     <!-- single blogs -->
+                    <?php
+                $args = array(
+                    'category_name' => 'Journal',
+                    'orderby'    => 'date',
+                    'post_status' => 'publish',
+                    'posts_per_page' => 6,
+                );
+                $result = new WP_Query( $args );
+                if ( $result-> have_posts() ) : ?>
+                <?php while ( $result->have_posts() ) : $result->the_post(); ?>
+                <?php
+                    $content = get_field('content', $post->ID);
+                ?>
                     <div class="swiper-slide group">
                         <div class="et-blog bg-white relative group-[.swiper-slide-visible]:shadow-[0_4px_25px_rgba(0,0,0,0.06)]">
                             <div class="et-blog__img relative overflow-hidden z-[1]">
@@ -1298,7 +1311,7 @@ h5.font-semibold.text-\[22px\].md\:text-\[20px\].text-etBlack.mb-\[4px\] {
                                     <!-- single info -->
                                     <div class="et-blog-info flex items-center gap-x-[10px]">
                                         <span class="icon"><img src="<?= get_template_directory_uri(); ?>/assets/img/calender-blue.svg" alt="icon"></span>
-                                        <span class="text font-normal text-[14px] text-etGray sm:text-[12px]">08 Jul 2024</span>
+                                        <span class="text font-normal text-[14px] text-etGray sm:text-[12px]"><?php echo get_the_date("d  M  Y");?></span>
                                     </div>
 
                                     <!-- single info -->
@@ -1308,156 +1321,17 @@ h5.font-semibold.text-\[22px\].md\:text-\[20px\].text-etBlack.mb-\[4px\] {
                                     </div>
                                 </div>
 
-                                <h4 class="et-blog__title text-[22px] lg:text-[20px] sm:text-[18px] font-medium leading-[1.4] mb-[19px]" style="color: #1260FE;">FA - FA Gabungan BPro</h4>
+                                <h4 class="et-blog__title text-[22px] lg:text-[20px] sm:text-[18px] font-medium leading-[1.4] mb-[19px]" style="color: #1260FE;"><?php the_title();?></h4>
 
-                                <a href="#" class="text-[16px]  text-etGray inline-flex items-center gap-[10px] hover:text-etBlue">Read More <span><i class="fa-solid fa-arrow-right-long"></i></span></a>
+                                <a href="<?php the_permalink();?>" class="text-[16px]  text-etGray inline-flex items-center gap-[10px] hover:text-etBlue">Read More <span><i class="fa-solid fa-arrow-right-long"></i></span></a>
                             </div>
                         </div>
                     </div>
 
-                    <div class="swiper-slide group">
-                        <div class="et-blog bg-white relative group-[.swiper-slide-visible]:shadow-[0_4px_25px_rgba(0,0,0,0.06)]">
-                            <div class="et-blog__img relative overflow-hidden z-[1]">
-                                <img src="<?= get_template_directory_uri(); ?>/assets/new-img/journal1.jpg" alt="category-icon" class="w-full aspect-[37/24] object-cover transition duration-[400ms] group-hover:scale-105">
-                            </div>
-
-                            <div class="et-blog__txt bottom-0 z-[3] p-[30px] lg:p-[20px]">
-                                <div class="et-blog__infos flex gap-x-[30px] mb-[13px]">
-                                    <!-- single info -->
-                                    <div class="et-blog-info flex items-center gap-x-[10px]">
-                                        <span class="icon"><img src="<?= get_template_directory_uri(); ?>/assets/img/calender-blue.svg" alt="icon"></span>
-                                        <span class="text font-normal text-[14px] text-etGray sm:text-[12px]">06 July 2024</span>
-                                    </div>
-
-                                    <!-- single info -->
-                                    <div class="et-blog-info flex items-center gap-x-[10px]">
-                                        <span class="icon"><img src="<?= get_template_directory_uri(); ?>/assets/img/user-blue.svg" alt="icon"></span>
-                                        <span class="text font-normal text-[14px] text-etGray sm:text-[12px]">BPro Administrator</span>
-                                    </div>
-                                </div>
-
-                                <h4 class="et-blog__title text-[22px] lg:text-[20px] sm:text-[18px] font-medium leading-[1.4] mb-[19px]" style="color: #1260FE;">God's Purpose in Me</h4>
-
-                                <a href="/journal?journal-detail=Gods-Purpose-in-Me" class="text-[16px]  text-etGray inline-flex items-center gap-[10px] hover:text-etBlue">Read More <span><i class="fa-solid fa-arrow-right-long"></i></span></a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="swiper-slide group">
-                        <div class="et-blog bg-white relative group-[.swiper-slide-visible]:shadow-[0_4px_25px_rgba(0,0,0,0.06)]">
-                            <div class="et-blog__img relative overflow-hidden z-[1]">
-                                <img src="<?= get_template_directory_uri(); ?>/assets/new-img/journal2.png" alt="category-icon" class="w-full aspect-[37/24] object-cover transition duration-[400ms] group-hover:scale-105">
-                            </div>
-
-                            <div class="et-blog__txt bottom-0 z-[3] p-[30px] lg:p-[20px]">
-                                <div class="et-blog__infos flex gap-x-[30px] mb-[13px]">
-                                    <!-- single info -->
-                                    <div class="et-blog-info flex items-center gap-x-[10px]">
-                                        <span class="icon"><img src="<?= get_template_directory_uri(); ?>/assets/img/calender-blue.svg" alt="icon"></span>
-                                        <span class="text font-normal text-[14px] text-etGray sm:text-[12px]">22 Juni 2024</span>
-                                    </div>
-
-                                    <!-- single info -->
-                                    <div class="et-blog-info flex items-center gap-x-[10px]">
-                                        <span class="icon"><img src="<?= get_template_directory_uri(); ?>/assets/img/user-blue.svg" alt="icon"></span>
-                                        <span class="text font-normal text-[14px] text-etGray sm:text-[12px]">BPro Administrator</span>
-                                    </div>
-                                </div>
-
-                                <h4 class="et-blog__title text-[22px] lg:text-[20px] sm:text-[18px] font-medium leading-[1.4] mb-[19px]" style="color: #1260FE;">The Calling</h4>
-
-                                <a href="/journal?journal-detail=the-calling" class="text-[16px]  text-etGray inline-flex items-center gap-[10px] hover:text-etBlue">Read More <span><i class="fa-solid fa-arrow-right-long"></i></span></a>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- single blogs -->
-                    <div class="swiper-slide group">
-                        <div class="et-blog bg-white relative group-[.swiper-slide-visible]:shadow-[0_4px_25px_rgba(0,0,0,0.06)]">
-                            <div class="et-blog__img relative overflow-hidden z-[1]">
-                                <img src="<?= get_template_directory_uri(); ?>/assets/new-img/journal4.png" alt="category-icon" class="w-full aspect-[37/24] object-cover transition duration-[400ms] group-hover:scale-105">
-                            </div>
-
-                            <div class="et-blog__txt bottom-0 z-[3] p-[30px] lg:p-[20px]">
-                                <div class="et-blog__infos flex gap-x-[30px] mb-[13px]">
-                                    <!-- single info -->
-                                    <div class="et-blog-info flex items-center gap-x-[10px]">
-                                        <span class="icon"><img src="<?= get_template_directory_uri(); ?>/assets/img/calender-blue.svg" alt="icon"></span>
-                                        <span class="text font-normal text-[14px] text-etGray sm:text-[12px]">23 Mei 2024</span>
-                                    </div>
-
-                                    <!-- single info -->
-                                    <div class="et-blog-info flex items-center gap-x-[10px]">
-                                        <span class="icon"><img src="<?= get_template_directory_uri(); ?>/assets/img/user-blue.svg" alt="icon"></span>
-                                        <span class="text font-normal text-[14px] text-etGray sm:text-[12px]">BPro Administrator</span>
-                                    </div>
-                                </div>
-
-                                <h4 class="et-blog__title text-[22px] lg:text-[20px] sm:text-[18px] font-medium leading-[1.4] mb-[19px]" style="color: #1260FE;">BPro Race</h4>
-
-                                <a href="/journal?journal-detail=bpro-race" class="text-[16px] text-etGray inline-flex items-center gap-[10px] hover:text-etBlue">Read More <span><i class="fa-solid fa-arrow-right-long"></i></span></a>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- single blogs -->
-                    <div class="swiper-slide group">
-                        <div class="et-blog bg-white relative group-[.swiper-slide-visible]:shadow-[0_4px_25px_rgba(0,0,0,0.06)]">
-                            <div class="et-blog__img relative overflow-hidden z-[1]">
-                                <img src="<?= get_template_directory_uri(); ?>/assets/img/blog/blog2.png" alt="category-icon" class="w-full aspect-[37/24] object-cover transition duration-[400ms] group-hover:scale-105">
-                            </div>
-
-                            <div class="et-blog__txt bottom-0 z-[3] p-[30px] lg:p-[20px]">
-                                <div class="et-blog__infos flex gap-x-[30px] mb-[13px]">
-                                    <!-- single info -->
-                                    <div class="et-blog-info flex items-center gap-x-[10px]">
-                                        <span class="icon"><img src="<?= get_template_directory_uri(); ?>/assets/img/calender-blue.svg" alt="icon"></span>
-                                        <span class="text font-normal text-[14px] text-etGray sm:text-[12px]">23 Mar 2024</span>
-                                    </div>
-
-                                    <!-- single info -->
-                                    <div class="et-blog-info flex items-center gap-x-[10px]">
-                                        <span class="icon"><img src="<?= get_template_directory_uri(); ?>/assets/img/user-blue.svg" alt="icon"></span>
-                                        <span class="text font-normal text-[14px] text-etGray sm:text-[12px]">BPro Administrator</span>
-                                    </div>
-                                </div>
-
-                                <h4 class="et-blog__title text-[22px] lg:text-[20px] sm:text-[18px] font-medium leading-[1.4] mb-[19px]" style="color: #1260FE;">TS - Bestie in Community</h4>
-
-                                <a href="#" class="text-[16px] text-etGray inline-flex items-center gap-[10px] hover:text-etBlue">Read More <span><i class="fa-solid fa-arrow-right-long"></i></span></a>
-                            </div>
-                        </div>
-                    </div>
-
-                    
-
-                    <!-- single blogs -->
-                    <div class="swiper-slide group">
-                        <div class="et-blog bg-white relative group-[.swiper-slide-visible]:shadow-[0_4px_25px_rgba(0,0,0,0.06)]">
-                            <div class="et-blog__img relative overflow-hidden z-[1]">
-                                <img src="<?= get_template_directory_uri(); ?>/assets/new-img/journal6.png" alt="category-icon" class="w-full aspect-[37/24] object-cover transition duration-[400ms] group-hover:scale-105">
-                            </div>
-
-                            <div class="et-blog__txt bottom-0 z-[3] p-[30px] lg:p-[20px]">
-                                <div class="et-blog__infos flex gap-x-[30px] mb-[13px]">
-                                    <!-- single info -->
-                                    <div class="et-blog-info flex items-center gap-x-[10px]">
-                                        <span class="icon"><img src="<?= get_template_directory_uri(); ?>/assets/img/calender-blue.svg" alt="icon"></span>
-                                        <span class="text font-normal text-[14px] text-etGray sm:text-[12px]">14 Okt 2023</span>
-                                    </div>
-
-                                    <!-- single info -->
-                                    <div class="et-blog-info flex items-center gap-x-[10px]">
-                                        <span class="icon"><img src="<?= get_template_directory_uri(); ?>/assets/img/user-blue.svg" alt="icon"></span>
-                                        <span class="text font-normal text-[14px] text-etGray sm:text-[12px]">BPro Administrator</span>
-                                    </div>
-                                </div>
-
-                                <h4 class="et-blog__title text-[22px] lg:text-[20px] sm:text-[18px] font-medium leading-[1.4] mb-[19px]" style="color: #1260FE;">Harmony Celebration</h4>
-
-                                <a href="/journal?journal-detail=harmony-celebration" class="text-[16px] text-etGray inline-flex items-center gap-[10px] hover:text-etBlue">Read More <span><i class="fa-solid fa-arrow-right-long"></i></span></a>
-                            </div>
-                        </div>
-                    </div>
+                    <?php endwhile;
+                endif;
+                wp_reset_query();
+                ?>
                 </div>
             </div>
         </div>
