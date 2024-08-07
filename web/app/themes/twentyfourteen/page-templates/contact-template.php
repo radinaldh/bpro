@@ -56,6 +56,7 @@ get_header('main'); ?>
         color: red;
         font-size: 14px;
         margin-bottom: 10px;
+        display: block;
     }
 </style>
 
