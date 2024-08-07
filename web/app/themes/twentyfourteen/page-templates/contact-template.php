@@ -47,6 +47,15 @@ get_header('main'); ?>
         border-radius: 10px;
         font-size: 15px;
     }
+
+    .screen-reader-response {
+        display: none;
+    }
+
+    span.wpcf7-not-valid-tip {
+        color: red;
+        font-size: 14px;
+    }
 </style>
 
 <!-- BREADCRUMB SECTION START -->
