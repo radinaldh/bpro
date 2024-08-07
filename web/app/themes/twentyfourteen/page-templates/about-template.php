@@ -20,7 +20,7 @@ get_header('main');
 
     .hero-banner::before {
         content: '';
-        background-color: #1260FE;
+        background-color: rgb(0 13 131 / 0.7);
         height: 100%;
         width: 100%;
         top: 0;
