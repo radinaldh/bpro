@@ -21,10 +21,11 @@ get_header('main'); ?>
     }
 
     .custom-again input {
-        height: 35px;
+        height: 50px;
         padding: 10px;
         border-radius: 10px;
         margin-bottom: 20px;
+        font-size: 15px;
     }
 
     .custom-again label {
@@ -40,11 +41,11 @@ get_header('main'); ?>
     }
 
     .custom-again .wpcf7-submit {
-        height: 40px;
+        height: 50px;
         padding: 10px;
         margin: 20px 0;
         border-radius: 10px;
-        font-size: 12px;
+        font-size: 15px;
     }
 </style>
 
