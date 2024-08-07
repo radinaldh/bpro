@@ -94,10 +94,19 @@ iframe {
     .et-testimony.relative.p-\[40px\].lg\:p-\[30px\].md\:p-\[20px\].border.border-\[\#D4DCED\].rounded-\[16px\].mt-\[60px\] {
     min-height: 350px;
 }
+
+.hero-banner::before {
+    content: '';
+    background-color: rgb(0 13 131 / 0.7);
+    height: 100%;
+    width: 100%;
+    top: 0;
+    bottom: 0;
+}
 </style>
 
 <section
-    class="et-breadcrumb bg-[#000D83] pt-[210px] lg:pt-[190px] sm:pt-[160px] pb-[130px] lg:pb-[110px] sm:pb-[80px] relative z-[1] before:absolute before:inset-0 before:bg-[url('assets/img/breadcrumb-bg.jpg')] before:bg-no-repeat before:bg-cover before:bg-center before:-z-[1] before:opacity-30" style="
+    class="hero-banner et-breadcrumb bg-[#000D83] pt-[210px] lg:pt-[190px] sm:pt-[160px] pb-[130px] lg:pb-[110px] sm:pb-[80px] relative z-[1] before:absolute before:inset-0 before:bg-[url('assets/img/breadcrumb-bg.jpg')] before:bg-no-repeat before:bg-cover before:bg-center before:-z-[1] before:opacity-30" style="
     background-image: url(<?php the_field( 'background_header' ); ?>);     background-size: cover;
     background-position: center;
 ">
