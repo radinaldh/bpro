@@ -232,7 +232,7 @@ get_header('main'); ?>
                         'post_type'=> ['post'],
                         'orderby'    => 'date',
                         'post_status' => 'publish',
-                        'posts_per_page' => -1,
+                        'posts_per_page' => 5,
                     );
                     $result = new WP_Query( $args );
                     if ( $result-> have_posts() ) : 
