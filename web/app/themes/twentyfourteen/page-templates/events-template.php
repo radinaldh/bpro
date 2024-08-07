@@ -173,8 +173,8 @@ get_header('main'); ?>
 <!-- BREADCRUMB SECTION START -->
 <?php if(have_rows('hero_banner')) :?>
 <?php while(have_rows('hero_banner')) : the_row();
-    $hero_image = get_field('hero_image');
-    $hero_title = get_field('hero_title');
+    $hero_image = get_sub_field('hero_image');
+    $hero_title = get_sub_field('hero_title');
 ?>
     <section style="background-image:url('<?= ($hero_image != NULL) ? $hero_image : '' ?>'); background-size:cover; background-position:center" class="hero-banner et-breadcrumb bg-[#000D83] pt-[210px] lg:pt-[190px] sm:pt-[160px] pb-[130px] lg:pb-[110px] sm:pb-[80px] relative z-[1] before:absolute before:inset-0 before:bg-[url('<?= get_template_directory_uri() ?>/assets/img/breadcrumb-bg.jpg')] before:bg-no-repeat before:bg-cover before:bg-center before:-z-[1] before:opacity-30">
         <div class="container mx-auto max-w-[1200px] px-[12px] xl:max-w-full text-center text-white">
