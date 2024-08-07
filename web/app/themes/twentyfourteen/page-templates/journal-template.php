@@ -68,16 +68,24 @@ a.more-link {
 }
 </style>
 
-<section class="et-breadcrumb bg-[#000D83] pt-[210px] lg:pt-[190px] sm:pt-[160px] pb-[130px] lg:pb-[110px] sm:pb-[80px] relative z-[1] before:absolute before:inset-0 before:bg-[url('assets/img/breadcrumb-bg.jpg')] before:bg-no-repeat before:bg-cover before:bg-center before:-z-[1] before:opacity-30">
+<!-- BREADCRUMB SECTION START -->
+<?php if ( have_rows( 'section_header' ) ) : ?>
+<?php while ( have_rows( 'section_header' ) ) : the_row(); ?>
+<section style="background-image:url('<?php the_sub_field( 'background_image' ); ?>'); background-size:cover; background-position:center" 
+    class="et-breadcrumb bg-[#000D83] pt-[210px] lg:pt-[190px] sm:pt-[160px] pb-[130px] lg:pb-[110px] sm:pb-[80px] relative z-[1] before:absolute before:inset-0 before:bg-[url('<?= get_template_directory_uri(); ?>/assets/img/breadcrumb-bg.jpg')] before:bg-no-repeat before:bg-cover before:bg-center before:-z-[1] before:opacity-30">
     <div class="container mx-auto max-w-[1200px] px-[12px] xl:max-w-full text-center text-white">
-        <h1 class="et-breadcrumb-title font-medium text-[56px] md:text-[50px] sm:text-[22px]">Journal</h1>
-        <ul class="inline-flex items-center gap-[10px] font-medium text-[16px] sm:text-[12px]">
-            <li class="opacity-80"><a href="<?= home_url()?>/" class="hover:text-etBlue">Home</a></li>
+        <h1 class="et-breadcrumb-title font-medium text-[56px] md:text-[50px] sm:text-[22px]">
+            <?php the_title();?></h1>
+        <ul class="inline-flex items-center gap-[10px] font-medium text-[16px]">
+            <li class="opacity-80"><a href="index-2.html" class="hover:text-etBlue">Home</a></li>
             <li><i class="fa-solid fa-angle-right"></i><i class="fa-solid fa-angle-right"></i></li>
-            <li class="current-page">Journal</li>
+            <li class="current-page"><?php the_title();?></li>
         </ul>
     </div>
 </section>
+<?php endwhile; ?>
+<?php endif; ?>
+<!-- BREADCRUMB SECTION END -->
 <!-- MAIN CONTENT START -->
 <div class="et-event-details-content py-[130px] lg:py-[80px] md:py-[60px]">
     <div class="container mx-auto max-w-[1200px] px-[12px] xl:max-w-full">
