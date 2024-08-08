@@ -201,14 +201,14 @@ get_header('rsvp'); ?>
                         <h4 class="fw-light mb-0 text-center">Phone No.</h4>
                         <input name="phone" class="bg-white border-none rounded w-100" type="text">
                     </div>
+                    <div class="col-10 d-flex justify-content-center">
+                        <div class="g-recaptcha" data-sitekey="6Ld0hyIqAAAAACEprRYsHLDXoGHpFDOFY22Qg3f0"></div> <!-- Replace YOUR_SITE_KEY with your actual site key -->
+                    </div>
                     <div class="col-10">
                         <h4 class="fw-light">
                             Pembayaran commitment fee dapat ditransfer melalui <br />
                             Rek BCA 4700385405 a.n Aprilliawati Wahyuni Sanjaya PP
                         </h4>
-                    </div>
-                    <div class="col-10">
-                        <div class="g-recaptcha" data-sitekey="6Ld0hyIqAAAAACEprRYsHLDXoGHpFDOFY22Qg3f0"></div> <!-- Replace YOUR_SITE_KEY with your actual site key -->
                     </div>
                     <div class="col-10">
                         <button type="submit" class="bg-danger p-2 w-100 text-center text-white d-flex align-items-center justify-content-center" id="submitBtn">
