@@ -217,7 +217,7 @@ get_header('main'); ?>
         <div
             class="et-upcoming-events-heading text-center max-w-[60%] mx-auto mb-[52px] xl:mb-[42px] lg:mb-[32px] md:max-w-[70%] sm:max-w-[80%] xs:max-w-full">
             <h6 class="et-section-sub-title !text-white"><?php the_sub_field( 'tag' ); ?></h6>
-            <h2 class=" !text-white text-[30px] sm:text-[24px]"><?php the_sub_field( 'title' ); ?></h2>
+            <h2 class=" !text-white text-[25px] sm:text-[24px]"><?php the_sub_field( 'title' ); ?></h2>
         </div>
 
         <div
