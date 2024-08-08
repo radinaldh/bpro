@@ -591,7 +591,7 @@ if (!function_exists('twentyfourteen_list_authors')) :
 				</div><!-- .contributor-info -->
 			</div><!-- .contributor -->
 
-<?php
+		<?php
 		endforeach;
 	}
 endif;
@@ -1167,9 +1167,23 @@ function handle_send_email()
 	if (isset($_POST['post_id'])) {
 		$post_id = intval($_POST['post_id']);
 		send_qr_code_email($post_id);
+		set_transient('email_sent_success', true, 30); // Set a transient to show the admin notice
 		wp_send_json_success();
 	} else {
 		wp_send_json_error('Invalid post ID.');
 	}
 }
 add_action('wp_ajax_send_email', 'handle_send_email');
+
+function display_email_sent_notice()
+{
+	if (get_transient('email_sent_success')) {
+		?>
+		<div class="notice notice-success is-dismissible">
+			<p><?php _e('Email sent successfully.', 'text-domain'); ?></p>
+		</div>
+<?php
+		delete_transient('email_sent_success'); // Delete the transient after displaying the notice
+	}
+}
+add_action('admin_notices', 'display_email_sent_notice');
