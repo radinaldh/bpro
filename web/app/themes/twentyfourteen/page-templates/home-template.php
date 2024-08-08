@@ -12,6 +12,13 @@ get_header('main');
         display: none;
     }
 
+    .et-member__txt {
+        box-shadow: 10px 10px 5px 0px rgba(227, 227, 227, 0.91);
+        -webkit-box-shadow: 10px 10px 5px 0px rgb(227 227 227 / 32%);
+        -moz-box-shadow: 10px 10px 5px 0px rgba(227, 227, 227, 0.91);
+        margin-bottom: 20px;
+    }
+
     @media(min-width:1800px) {
         .herohero-title {
             margin-top: 120px;
