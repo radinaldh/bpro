@@ -1089,7 +1089,7 @@ add_action('wp_enqueue_scripts', 'enqueue_custom_login_js');
 function send_qr_code_email($post_id)
 {
 	$email = get_post_meta($post_id, 'email', true);
-	$name = get_post_meta($post_id, 'title', true);
+	$name = get_the_title($post_id);
 	$phone = get_post_meta($post_id, 'phone', true);
 	$qr_code_url = get_post_meta($post_id, 'qr_code_url', true);
 
