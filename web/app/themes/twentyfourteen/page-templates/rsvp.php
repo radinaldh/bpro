@@ -208,6 +208,9 @@ get_header('rsvp'); ?>
                         </h4>
                     </div>
                     <div class="col-10">
+                        <div class="g-recaptcha" data-sitekey="6Ld0hyIqAAAAACEprRYsHLDXoGHpFDOFY22Qg3f0"></div> <!-- Replace YOUR_SITE_KEY with your actual site key -->
+                    </div>
+                    <div class="col-10">
                         <button type="submit" class="bg-danger p-2 w-100 text-center text-white d-flex align-items-center justify-content-center" id="submitBtn">
                             <span id="submitText">Submit</span>
                             <div id="spinner" class="spinner-border text-light ms-2" role="status" style="display: none;">

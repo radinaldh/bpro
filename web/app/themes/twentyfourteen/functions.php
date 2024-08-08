@@ -813,6 +813,18 @@ add_action('wp_enqueue_scripts', 'enqueue_custom_js');
 
 function handle_form_submission()
 {
+
+	$recaptcha_response = sanitize_text_field($_POST['g-recaptcha-response']);
+	$response = wp_remote_get("https://www.google.com/recaptcha/api/siteverify?secret=6Ld0hyIqAAAAAN_coXvQd6zatH7lJYbC8MU4lXWw&response=" . $recaptcha_response);
+
+	$response_body = wp_remote_retrieve_body($response);
+	$result = json_decode($response_body);
+
+	if (!$result->success) {
+		wp_send_json_error('reCAPTCHA verification failed.');
+		return;
+	}
+
 	// Check nonce and sanitize inputs as previously discussed
 	$post_id = wp_insert_post([
 		'post_title' => sanitize_text_field($_POST['name']),
@@ -1199,6 +1211,12 @@ function enqueue_admin_custom_js()
 	wp_localize_script('custom-admin-js', 'ajax_params', array('ajax_url' => admin_url('admin-ajax.php')));
 }
 add_action('admin_enqueue_scripts', 'enqueue_admin_custom_js');
+
+function enqueue_recaptcha()
+{
+	wp_enqueue_script('recaptcha', 'https://www.google.com/recaptcha/api.js', array(), null, true);
+}
+add_action('wp_enqueue_scripts', 'enqueue_recaptcha');
 
 /**
  * TEMPLATE FUNCTIONS
