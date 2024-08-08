@@ -208,7 +208,7 @@ get_header('rsvp'); ?>
                         </h4>
                     </div>
                     <div class="col-10">
-                        <button type="submit" class="bg-danger p-2 w-25 text-center text-white d-flex align-items-center justify-content-center" id="submitBtn">
+                        <button type="submit" class="bg-danger p-2 w-100 text-center text-white d-flex align-items-center justify-content-center" id="submitBtn">
                             <span id="submitText">Submit</span>
                             <div id="spinner" class="spinner-border text-light ms-2" role="status" style="display: none;">
                                 <span class="visually-hidden">Loading...</span>
@@ -242,6 +242,42 @@ get_header('rsvp'); ?>
         </div>
     </div>
 </section>
+
+<!-- Success Modal -->
+<div class="modal fade" id="successModal" tabindex="-1" aria-labelledby="successModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="successModalLabel">Submission Successful</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                Your submission was successful!
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-primary" id="successOkButton">OK</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Error Modal -->
+<div class="modal fade" id="errorModal" tabindex="-1" aria-labelledby="errorModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="errorModalLabel">Submission Error</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                There was an error with your submission. Please try again.
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
 
 <section class="py-3 text-center">
     <small>© 2024 Bethany Professional Manyar</small>

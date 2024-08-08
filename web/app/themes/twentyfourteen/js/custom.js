@@ -26,10 +26,13 @@ jQuery(document).ready(function ($) {
       $submitText.text("Submit");
 
       if (response.success) {
-        alert("Submission successful!");
-        window.location.href = response.data;
+        $("#successModal").modal("show");
+        $("#successOkButton").click(function () {
+          window.location.href = response.data;
+        });
       } else {
-        alert("Error: " + response.data);
+        $("#errorModal").modal("show");
+        $("#errorModal .modal-body").text("Error: " + response.data);
       }
     });
   });

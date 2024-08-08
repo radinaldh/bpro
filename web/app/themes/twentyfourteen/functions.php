@@ -1136,17 +1136,20 @@ class Custom_Walker_Nav_Menu extends Walker_Nav_Menu
 function send_qr_code_email($post_id)
 {
 	$email = get_post_meta($post_id, 'email', true);
+	$name = get_post_meta($post_id, 'name', true);
+	$phone = get_post_meta($post_id, 'phone', true);
 	$qr_code_url = get_post_meta($post_id, 'qr_code_url', true);
 
 	$subject = 'Invitation QR Code for DISCOVER CYBER SECURITY AND FINANCIAL TRAP';
 
 	$body = '<p>Shallom profesional muda,</p>';
-	$body .= '<p>Dengan penuh semangat dan rasa syukur, kami ingin menginformasikan kepada Anda bahwa Bethany Professional (BPro) akan mengadakan workshop dengan topik yang relevan dengan keseharian kita, yaitu kemajuan teknologi dan financial.</p>';
-	$body .= '<p>Seiring dengan pesatnya perkembangan di dunia teknologi dan financial, muncul berbagai ilmu dan informasi baru hampir setiap hari. Hal ini menuntut kita, sebagai para profesional muda untuk selalu siap dan tanggap menghadapi perubahan.</p>';
-	$body .= '<p>Untuk itu, BPro ingin memfasilitasi Anda dalam menambah wawasan dan memperluas perspektif melalui workshop ini, agar Anda lebih siap dan diperlengkapi dalam menghadapi tantangan dunia profesional yang terus berkembang.</p>';
-	$body .= '<p>Kami mengundang Anda untuk bergabung dalam acara "Professional Workshop" yang disertai dengan "Praise & Worship Night". Kami berharap event ini dapat memberi manfaat dan membantu dalam perjalanan profesional Anda.</p>';
-	$body .= '<p>Terima kasih.<br>Tuhan Yesus memberkati<br>Logo B-Pro<br>Be Success, Be Profesional.</p>';
+	$body = '<p>Invitation for:</p>';
+	$body .= '<p>Name: ' . $name . '<br>';
+	$body .= 'Email: ' . $email . '<br>';
+	$body .= 'Phone: ' . $phone . '</p>';
+	$body .= '<p>QRCode Invitation:</p>';
 	$body .= '<p><img src="' . $qr_code_url . '" alt="QR Code"></p>';
+	$body .= '<p>Terima kasih.<br>Tuhan Yesus memberkati<br>Be Success, Be Profesional.</p>';
 
 	$headers = array('Content-Type: text/html; charset=UTF-8');
 
@@ -1187,3 +1190,10 @@ function display_email_sent_notice()
 	}
 }
 add_action('admin_notices', 'display_email_sent_notice');
+
+function enqueue_admin_custom_js()
+{
+	wp_enqueue_script('custom-admin-js', get_template_directory_uri() . '/js/custom-admin.js', array('jquery'), null, true);
+	wp_localize_script('custom-admin-js', 'ajax_params', array('ajax_url' => admin_url('admin-ajax.php')));
+}
+add_action('admin_enqueue_scripts', 'enqueue_admin_custom_js');
