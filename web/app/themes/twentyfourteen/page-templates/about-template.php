@@ -13,6 +13,15 @@ get_header('main');
         font-size: 20px;
     }
 
+    .uproinhimgod {
+        text-align: center;
+        margin: 20px 0;
+        font-size: 60px;
+        color: transparent;
+        -webkit-text-stroke: 1px #fff;
+        text-align: center;
+        font-style: italic;
+    }
     .explain {
         width: 50%;
         margin: auto;
@@ -27,6 +36,9 @@ get_header('main');
         bottom: 0;
     }
     @media(max-width:500px) {
+        .uproinhimgod {
+            font-size: 40px;
+        }
         .explain {
             width: 100%;
             margin: auto;
@@ -151,6 +163,7 @@ get_header('main');
             ?>
             <div class="vision mb-[40px]">
                 <h2 class="text-[35px] sm:text-[24px] !text-white text-center"><?= $head_title ?></h2>
+                <h3 class="font-semibold uproinhimgod">"U PRO IN HIM"</h3>
             </div>
             <?php if(have_rows('bpro_values')) :?>
                     <div class="et-history-slider swiper ">
