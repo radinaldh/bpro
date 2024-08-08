@@ -1,5 +1,11 @@
 </main>
-
+<style>
+    @media only screen and (max-width: 1500px) {
+        h5.font-medium.text-\[20px\].sm\:text-\[12px\] {
+    font-size: 17px;
+}
+}
+</style>
 <!-- FOOTER SECTION START -->
 <footer class="et-footer bg-etBlack relative z-[1] before:absolute before:-z-[1] before:inset-0 before:bg-[url('assets/img/footer-1-bg.jpg')] before:opacity-30 before:mix-blend-overlay text-white">
     <div class="container mx-auto max-w-[calc(100%-37.1vw)] xxxl:max-w-[calc(100%-350px)] xl:max-w-[calc(100%-170px)] px-[12px] lg:max-w-full">
@@ -63,7 +69,7 @@
                 <!-- footer about -->
                 <div class="et-footer-about max-w-[295px] lg:max-w-none md:max-w-[300px] xs:max-w-full">
                     <a href="#" class="inline-block"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/logo-white.png" alt="logo" style="width: 140px !important;"></a>
-                    <p class="font-light text-[#f2f2f2] text-[16px] mb-[25px] sm:text-[12px]" >Be success be profesional.</p>
+                    <p class="font-light text-[#f2f2f2] text-[16px] mb-[25px] sm:text-[12px]" ><i>Be Success, Be Professional.</i></p>
 
                     <!-- social media -->
                     <div class="et-socials flex gap-[10px] text-[14px] *:border *:border-[#9EAACB] *:text-[#9EAACB] *:w-[40px] *:aspect-square *:shrink-0 *:inline-flex *:items-center *:justify-center *:rounded-full ">
