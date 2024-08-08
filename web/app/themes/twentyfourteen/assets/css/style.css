@@ -321,6 +321,7 @@ h6 {
 .et-header-nav > li > a {
   color: var(--white);
   font-family: var(--font-poppins);
+  font-weight: 500;
 }
 @media screen and (max-width: 991px) {
   .et-header-nav > li > a {
