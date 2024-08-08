@@ -9,6 +9,12 @@ get_header('main');
 
 <style>
 
+.before\:bg-etBlue\/80::before {
+    content: var(--tw-content);
+    background-color: #18377e;
+    opacity: 0.7;
+}
+
     .et-history-timeline.swiper-slide-thumb-active h3,
     .et-history-timeline h3 {
         color: #fff;

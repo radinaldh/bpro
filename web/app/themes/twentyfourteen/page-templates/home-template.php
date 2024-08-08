@@ -1042,7 +1042,7 @@ h5.font-semibold.text-\[22px\].md\:text-\[20px\].text-etBlack.mb-\[4px\] {
                                     </div>
                                 </div>
 
-                                <h4 class="et-blog__title text-[22px] lg:text-[20px] sm:text-[18px] font-medium leading-[1.4] mb-[19px]" style="color: #1260FE;"><?php the_title();?></h4>
+                                <h4 class="et-blog__title text-[22px] lg:text-[20px] sm:text-[18px] font-medium leading-[1.4] mb-[19px]" style="color: #18377e;"><?php the_title();?></h4>
 
                                 <a href="<?php the_permalink();?>" class="text-[16px]  text-etGray inline-flex items-center gap-[10px] hover:text-etBlue">Read More <span><i class="fa-solid fa-arrow-right-long"></i></span></a>
                             </div>
