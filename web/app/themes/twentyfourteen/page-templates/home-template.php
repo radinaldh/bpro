@@ -406,7 +406,7 @@ h5.font-semibold.text-\[22px\].md\:text-\[20px\].text-etBlack.mb-\[4px\] {
                     <div class="et-schedules-tab-navs bg-[#D0E1FF] px-[12px] py-[14px] flex flex-w gap-[16px] sm:gap-[12px] rounded-full">
                     <?php if ( have_rows( 'button_get' ) ) : ?>
                         <?php while ( have_rows( 'button_get' ) ) : the_row(); ?>
-                        <a href="<?php the_sub_field( 'url' ); ?>" class="et-btn border w-[180px] bg-etBlue text-white inline-flex items-center justify-center h-[45px] px-[22px] xxs:px-[16px] font-normal text-[17px] rounded-full hover:!bg-etBlue hover:!text-white"><?php the_sub_field( 'title' ); ?></a>
+                        <a href="<?php the_sub_field( 'url' ); ?>" class="et-btn border w-[180px] bg-etBlue text-white inline-flex items-center justify-center h-[45px] px-[22px] xxs:px-[16px] font-normal text-[17px] rounded-full hover:!bg-etBlack hover:!text-white"><?php the_sub_field( 'title' ); ?></a>
                         <?php endwhile; ?>
 		<?php endif; ?>
                         <!-- <button data-tab="tab2" class="tab-nav bg-etBlue rounded-full px-[20px] py-[3px] text-[16px] font-medium text-white hover:bg-etBlue">Day 02</button> -->
