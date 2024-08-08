@@ -1143,7 +1143,7 @@ function send_qr_code_email($post_id)
 	$subject = 'Invitation QR Code for DISCOVER CYBER SECURITY AND FINANCIAL TRAP';
 
 	$body = '<p>Shallom profesional muda,</p>';
-	$body = '<p>Invitation for:</p>';
+	$body .= '<p>Invitation for:</p>';
 	$body .= '<p>Name: ' . $name . '<br>';
 	$body .= 'Email: ' . $email . '<br>';
 	$body .= 'Phone: ' . $phone . '</p>';
@@ -1153,24 +1153,29 @@ function send_qr_code_email($post_id)
 
 	$headers = array('Content-Type: text/html; charset=UTF-8');
 
-	wp_mail($email, $subject, $body, $headers);
+	if (wp_mail($email, $subject, $body, $headers)) {
+		update_post_meta($post_id, 'email_sent', true);
+	}
 }
 
 
 function add_send_email_button($column, $post_id)
 {
 	if ($column === 'send_email') {
-		echo '<button class="button send-email" data-post-id="' . $post_id . '">Send Email</button>';
+		$email_sent = get_post_meta($post_id, 'email_sent', true);
+		$button_text = $email_sent ? 'Send Email Again' : 'Send Email';
+		echo '<button class="button send-email" data-post-id="' . $post_id . '">' . $button_text . '</button>';
 	}
 }
 add_action('manage_submission_posts_custom_column', 'add_send_email_button', 10, 2);
+
 
 function handle_send_email()
 {
 	if (isset($_POST['post_id'])) {
 		$post_id = intval($_POST['post_id']);
 		send_qr_code_email($post_id);
-		set_transient('email_sent_success', true, 30); // Set a transient to show the admin notice
+		set_transient('email_sent_success', true, 30);
 		wp_send_json_success();
 	} else {
 		wp_send_json_error('Invalid post ID.');

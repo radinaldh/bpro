@@ -13,7 +13,7 @@ jQuery(document).ready(function ($) {
       success: function (response) {
         if (response.success) {
           alert("Email sent successfully.");
-          location.reload(); // Reload the page to show the success notice
+          $button.text("Send Email Again"); // Change button text
         } else {
           alert("Failed to send email.");
         }
