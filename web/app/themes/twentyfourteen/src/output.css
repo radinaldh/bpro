@@ -2448,7 +2448,7 @@ video {
 
 .border-etBlue {
   --tw-border-opacity: 1;
-  border-color: rgb(18 96 254 / var(--tw-border-opacity));
+  border-color: #18377e;
 }
 
 .border-etGray\/15 {
@@ -2571,11 +2571,11 @@ video {
 
 .bg-etBlue {
   --tw-bg-opacity: 1;
-  background-color: rgb(18 96 254 / var(--tw-bg-opacity));
+  background-color: #18377e;
 }
 
 .bg-etBlue\/10 {
-  background-color: rgb(18 96 254 / 0.1);
+  background-color: #18377e;
 }
 
 .bg-etGray\/10 {
@@ -3499,7 +3499,7 @@ video {
 
 .text-etBlue {
   --tw-text-opacity: 1;
-  color: rgb(18 96 254 / var(--tw-text-opacity));
+  color: #18377e;
 }
 
 .text-etGray {
@@ -3762,7 +3762,7 @@ video {
 
 .\*\:border-etBlue > * {
   --tw-border-opacity: 1;
-  border-color: rgb(18 96 254 / var(--tw-border-opacity));
+  border-color: #18377e;
 }
 
 .\*\:border-white\/20 > * {
@@ -3785,7 +3785,7 @@ video {
 
 .\*\:text-etBlue > * {
   --tw-text-opacity: 1;
-  color: rgb(18 96 254 / var(--tw-text-opacity));
+  color: #18377e;
 }
 
 .before\:pointer-events-none::before {
@@ -3986,7 +3986,7 @@ video {
 .before\:border-etBlue::before {
   content: var(--tw-content);
   --tw-border-opacity: 1;
-  border-color: rgb(18 96 254 / var(--tw-border-opacity));
+  border-color: #18377e;
 }
 
 .before\:\!bg-white::before {
@@ -4003,22 +4003,22 @@ video {
 .before\:bg-etBlue::before {
   content: var(--tw-content);
   --tw-bg-opacity: 1;
-  background-color: rgb(18 96 254 / var(--tw-bg-opacity));
+  background-color: #18377e;
 }
 
 .before\:bg-etBlue\/40::before {
   content: var(--tw-content);
-  background-color: rgb(18 96 254 / 0.4);
+  background-color: #18377e;
 }
 
 .before\:bg-etBlue\/80::before {
   content: var(--tw-content);
-  background-color: rgb(18 96 254 / 0.8);
+  background-color:#18377e;
 }
 
 .before\:bg-etBlue\/85::before {
   content: var(--tw-content);
-  background-color: rgb(18 96 254 / 0.85);
+  background-color: #18377e;
 }
 
 .before\:bg-white::before {
@@ -4364,7 +4364,7 @@ video {
 .after\:bg-etBlue::after {
   content: var(--tw-content);
   --tw-bg-opacity: 1;
-  background-color: rgb(18 96 254 / var(--tw-bg-opacity));
+  background-color: #18377e;
 }
 
 .after\:bg-\[url\(\.\.\/assets\/img\/et-counter-bg\.jpg\)\]::after {
@@ -4443,7 +4443,7 @@ video {
 
 .hover\:border-etBlue:hover {
   --tw-border-opacity: 1;
-  border-color: rgb(18 96 254 / var(--tw-border-opacity));
+  border-color: #18377e;
 }
 
 .hover\:border-etPink:hover {
@@ -4468,7 +4468,7 @@ video {
 
 .hover\:\!bg-etBlue:hover {
   --tw-bg-opacity: 1 !important;
-  background-color: rgb(18 96 254 / var(--tw-bg-opacity)) !important;
+  background-color: #18377e !important;
 }
 
 .hover\:\!bg-white:hover {
@@ -4498,7 +4498,7 @@ video {
 
 .hover\:bg-etBlue:hover {
   --tw-bg-opacity: 1;
-  background-color: rgb(18 96 254 / var(--tw-bg-opacity));
+  background-color: #18377e;
 }
 
 .hover\:bg-etGray:hover {
@@ -4528,7 +4528,7 @@ video {
 
 .hover\:\!text-etBlue:hover {
   --tw-text-opacity: 1 !important;
-  color: rgb(18 96 254 / var(--tw-text-opacity)) !important;
+  color: #18377e !important;
 }
 
 .hover\:\!text-white:hover {
@@ -4543,7 +4543,7 @@ video {
 
 .hover\:text-etBlue:hover {
   --tw-text-opacity: 1;
-  color: rgb(18 96 254 / var(--tw-text-opacity));
+  color: #18377e;
 }
 
 .hover\:text-etLpink:hover {
@@ -4564,7 +4564,7 @@ video {
 .hover\:before\:bg-etBlue:hover::before {
   content: var(--tw-content);
   --tw-bg-opacity: 1;
-  background-color: rgb(18 96 254 / var(--tw-bg-opacity));
+  background-color: #18377e;
 }
 
 .hover\:before\:opacity-100:hover::before {
@@ -4654,17 +4654,17 @@ video {
 
 .group.swiper-slide-active .group-\[\.swiper-slide-active\]\:border-etBlue {
   --tw-border-opacity: 1;
-  border-color: rgb(18 96 254 / var(--tw-border-opacity));
+  border-color:#18377e;
 }
 
 .group.swiper-slide-active .group-\[\.swiper-slide-active\]\:bg-etBlue {
   --tw-bg-opacity: 1;
-  background-color: rgb(18 96 254 / var(--tw-bg-opacity));
+  background-color: #18377e;
 }
 
 .group.active .group-\[\.active\]\:text-etBlue {
   --tw-text-opacity: 1;
-  color: rgb(18 96 254 / var(--tw-text-opacity));
+  color: #18377e;
 }
 
 .group.swiper-slide-active .group-\[\.swiper-slide-active\]\:text-white {
