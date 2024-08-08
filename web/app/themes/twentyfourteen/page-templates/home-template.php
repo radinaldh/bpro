@@ -11,7 +11,23 @@ get_header('main');
     .test-right {
         display: none;
     }
+
+    @media(min-width:1800px) {
+        .herohero-title {
+            margin-top: 120px;
+        }
+    }
+
+    @media(max-width:1700px) {
+        .herohero-title {
+            margin-top: 50px;
+        }
+    }
     @media (max-width: 500px) {
+
+        .herohero-title {
+            margin-top: 0;
+        }
 
 
         .test-right {
@@ -127,7 +143,7 @@ h5.font-semibold.text-\[22px\].md\:text-\[20px\].text-etBlack.mb-\[4px\] {
                             <div class="flex md:flex-col items-center justify-between gap-x-[30px] gap-y-[30px] md:grid-cols-1">
                                 
                             </div>
-                            <div class="left relative z-[20] w-[100%] text-center md:w-full">
+                            <div class="left relative z-[20] w-[100%] text-center md:w-full herohero-title">
                                     <h6 class="font-kalam font-bold text-[2.4rem] mb-[3px] anim-text"><?php the_sub_field( 'subtitle' ); ?></h6>
 
                                     <h1 class="text-[clamp(42px,6.25vw,12rem)] font-semibold leading-[1.1] mb-[36px] md:mb-[36px] anim-text"><?php the_sub_field( 'title' ); ?> </h1>
@@ -781,7 +797,7 @@ h5.font-semibold.text-\[22px\].md\:text-\[20px\].text-etBlack.mb-\[4px\] {
     
                             <!-- text -->
                             <div>
-                                <h5 class="font-medium text-[22px] text-etBlack mb-[8px]"><a href="#" class="hover:text-etBlue"><?php the_sub_field( 'title' ); ?></a></h5>
+                                <h5 class="font-medium text-[18px] text-etBlack mb-[8px]"><a href="#" class="hover:text-etBlue"><?php the_sub_field( 'title' ); ?></a></h5>
                                 <!-- <p class="font-light text-etGray text-[16px]">Mauris ultrices ligula eget volutpat aliquet nullam</p> -->
                             </div>
                         </div>
