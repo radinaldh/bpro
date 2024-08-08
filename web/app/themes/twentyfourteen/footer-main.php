@@ -290,7 +290,7 @@
       {
         breakpoint: 1024,
         settings: {
-          slidesToShow: 3,
+          slidesToShow: 2,
           slidesToScroll: 1,
           infinite: true,
           dots: true
@@ -320,7 +320,8 @@
         slidesToScroll: 1,
         autoplay:false,
         dots:true,
-        arrows: true
+        arrows: true,
+        
     });
 </script>
 <script>
