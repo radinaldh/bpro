@@ -95,7 +95,7 @@ iframe {
 }
 
 h3.text-\[32px\].mb-\[14px\] {
-    font-size: 29px;
+    font-size: 25px;
 }
 
 
@@ -267,7 +267,7 @@ h5.font-medium.text-\[22px\].text-etBlack.mb-\[8px\] {
                     <div class="lg:col-span-3 xs:col-span-full">
                         <div class="bg-etBlue rounded-[20px] overflow-hidden text-white max-w-[370px] xxs:max-w-full">
                             <div class="p-[40px] sm:p-[30px] pb-0">
-                                <h3 class="text-[32px] mb-[14px]"><?php the_sub_field( 'title' ); ?></h3>
+                                <h3 class="text-[32px] mb-[14px]" style="font-weight:bolder"><?php the_sub_field( 'title' ); ?></h3>
                                 <p class="font-light text-[18px]"><?php the_sub_field( 'description' ); ?></p>
                             </div>
                             <!-- <img src="assets/img/pricing-banner-img.png" alt="image"> -->
@@ -321,7 +321,7 @@ h5.font-medium.text-\[22px\].text-etBlack.mb-\[8px\] {
     
                     <!-- text -->
                     <div>
-                        <h5 class="font-medium text-[22px] text-etBlack mb-[8px]"><a href="#" class="hover:text-etBlue"><?php the_sub_field( 'title' ); ?></a></h5>
+                        <h5 class="font-medium text-[18px] text-etBlack mb-[8px]"><a href="#" class="hover:text-etBlue"><?php the_sub_field( 'title' ); ?></a></h5>
                         <!-- <p class="font-light text-etGray text-[16px]">Mauris ultrices ligula eget volutpat aliquet nullam</p> -->
                     </div>
                 </div>
