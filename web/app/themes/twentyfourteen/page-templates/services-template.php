@@ -64,6 +64,10 @@ iframe {
 /* .bg-etBlue{
     background-color: #18377e;
 } */
+
+.testing-slider.okke.md\:hidden {
+    display: none;
+}
 @media only screen and (max-width: 1700px) {
     iframe {
     width: 70%;
@@ -121,6 +125,9 @@ h5.font-medium.text-\[22px\].text-etBlack.mb-\[8px\] {
     }
 }
     @media(max-width:600px) {
+        .testing-slider.okke.md\:hidden {
+    display: block;
+}
         .mySwiper2 {
             height: auto;
         }
@@ -180,6 +187,7 @@ h5.font-medium.text-\[22px\].text-etBlack.mb-\[8px\] {
     .et-testimony.relative.p-\[40px\].lg\:p-\[30px\].md\:p-\[20px\].border.border-\[\#D4DCED\].rounded-\[16px\].mt-\[60px\] {
     min-height: 350px;
 }
+
 
 
 
