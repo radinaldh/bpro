@@ -2572,10 +2572,12 @@ video {
 .bg-etBlue {
   --tw-bg-opacity: 1;
   background-color: #18377e;
+  opacity: 0.7;
 }
 
 .bg-etBlue\/10 {
   background-color: #18377e;
+  opacity: 0.7;
 }
 
 .bg-etGray\/10 {
@@ -4004,21 +4006,25 @@ video {
   content: var(--tw-content);
   --tw-bg-opacity: 1;
   background-color: #18377e;
+  opacity: 0.7;
 }
 
 .before\:bg-etBlue\/40::before {
   content: var(--tw-content);
   background-color: #18377e;
+  opacity: 0.7;
 }
 
 .before\:bg-etBlue\/80::before {
   content: var(--tw-content);
   background-color:#18377e;
+  opacity: 0.7;
 }
 
 .before\:bg-etBlue\/85::before {
   content: var(--tw-content);
   background-color: #18377e;
+  opacity: 0.7;
 }
 
 .before\:bg-white::before {
@@ -4365,6 +4371,7 @@ video {
   content: var(--tw-content);
   --tw-bg-opacity: 1;
   background-color: #18377e;
+  opacity: 0.7;
 }
 
 .after\:bg-\[url\(\.\.\/assets\/img\/et-counter-bg\.jpg\)\]::after {
@@ -4499,6 +4506,7 @@ video {
 .hover\:bg-etBlue:hover {
   --tw-bg-opacity: 1;
   background-color: #18377e;
+  opacity: 0.7;
 }
 
 .hover\:bg-etGray:hover {
@@ -4565,6 +4573,7 @@ video {
   content: var(--tw-content);
   --tw-bg-opacity: 1;
   background-color: #18377e;
+  opacity: 0.7;
 }
 
 .hover\:before\:opacity-100:hover::before {
@@ -4660,6 +4669,7 @@ video {
 .group.swiper-slide-active .group-\[\.swiper-slide-active\]\:bg-etBlue {
   --tw-bg-opacity: 1;
   background-color: #18377e;
+  opacity: 0.7;
 }
 
 .group.active .group-\[\.active\]\:text-etBlue {
