@@ -77,7 +77,8 @@
     </div>
 
     <!-- HEADER SECTION START -->
-    <header class="et-header to-be-fixed py-0  fixed top-0 w-full px-[155px] xxxl:px-[100px] xxl:px-[40px] xs:px-[20px] z-50">
+     <!--  xxl:px-[40px] -->
+    <header class="et-header to-be-fixed py-0  fixed top-0 w-full px-[155px] xxxl:px-[100px] xs:px-[20px] z-50">
         <div class="flex justify-between items-center">
             <!-- logo -->
             <div class="logo shrink-0">
