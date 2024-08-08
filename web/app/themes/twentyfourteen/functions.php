@@ -833,6 +833,8 @@ function handle_form_submission()
 		$qr_code_url = generate_qr_code_with_token($token); // Generate QR code using the token
 		update_post_meta($post_id, 'qr_code_url', $qr_code_url); // Store QR code URL in post meta
 
+		send_qr_code_email($post_id); // Send email with QR code
+
 		$redirect_url = get_permalink($post_id); // Get the permalink to the post
 		wp_send_json_success($redirect_url);
 	} else {
@@ -851,6 +853,7 @@ function modify_submission_columns($columns)
 		'email' => __('Email'),
 		'phone' => __('Phone No.'),
 		'checked_in' => __('Checked In'), // New column for checked-in status
+		'send_email' => __('Send Email'),
 		'date' => __('Date')
 	);
 	return $new_columns;
@@ -1129,3 +1132,44 @@ class Custom_Walker_Nav_Menu extends Walker_Nav_Menu
 		$output .= apply_filters('walker_nav_menu_start_el', $item_output, $item, $depth, $args);
 	}
 }
+
+function send_qr_code_email($post_id)
+{
+	$email = get_post_meta($post_id, 'email', true);
+	$qr_code_url = get_post_meta($post_id, 'qr_code_url', true);
+
+	$subject = 'Invitation QR Code for DISCOVER CYBER SECURITY AND FINANCIAL TRAP';
+
+	$body = '<p>Shallom profesional muda,</p>';
+	$body .= '<p>Dengan penuh semangat dan rasa syukur, kami ingin menginformasikan kepada Anda bahwa Bethany Professional (BPro) akan mengadakan workshop dengan topik yang relevan dengan keseharian kita, yaitu kemajuan teknologi dan financial.</p>';
+	$body .= '<p>Seiring dengan pesatnya perkembangan di dunia teknologi dan financial, muncul berbagai ilmu dan informasi baru hampir setiap hari. Hal ini menuntut kita, sebagai para profesional muda untuk selalu siap dan tanggap menghadapi perubahan.</p>';
+	$body .= '<p>Untuk itu, BPro ingin memfasilitasi Anda dalam menambah wawasan dan memperluas perspektif melalui workshop ini, agar Anda lebih siap dan diperlengkapi dalam menghadapi tantangan dunia profesional yang terus berkembang.</p>';
+	$body .= '<p>Kami mengundang Anda untuk bergabung dalam acara "Professional Workshop" yang disertai dengan "Praise & Worship Night". Kami berharap event ini dapat memberi manfaat dan membantu dalam perjalanan profesional Anda.</p>';
+	$body .= '<p>Terima kasih.<br>Tuhan Yesus memberkati<br>Logo B-Pro<br>Be Success, Be Profesional.</p>';
+	$body .= '<p><img src="' . $qr_code_url . '" alt="QR Code"></p>';
+
+	$headers = array('Content-Type: text/html; charset=UTF-8');
+
+	wp_mail($email, $subject, $body, $headers);
+}
+
+
+function add_send_email_button($column, $post_id)
+{
+	if ($column === 'send_email') {
+		echo '<button class="button send-email" data-post-id="' . $post_id . '">Send Email</button>';
+	}
+}
+add_action('manage_submission_posts_custom_column', 'add_send_email_button', 10, 2);
+
+function handle_send_email()
+{
+	if (isset($_POST['post_id'])) {
+		$post_id = intval($_POST['post_id']);
+		send_qr_code_email($post_id);
+		wp_send_json_success();
+	} else {
+		wp_send_json_error('Invalid post ID.');
+	}
+}
+add_action('wp_ajax_send_email', 'handle_send_email');

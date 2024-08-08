@@ -208,8 +208,11 @@ get_header('rsvp'); ?>
                         </h4>
                     </div>
                     <div class="col-10">
-                        <button type="submit" class="bg-danger p-2 w-25 text-center text-white">
-                            <h4 class="fw-bold mb-0">Submit</h4>
+                        <button type="submit" class="bg-danger p-2 w-25 text-center text-white d-flex align-items-center justify-content-center" id="submitBtn">
+                            <span id="submitText">Submit</span>
+                            <div id="spinner" class="spinner-border text-light ms-2" role="status" style="display: none;">
+                                <span class="visually-hidden">Loading...</span>
+                            </div>
                         </button>
                     </div>
                 </div>
@@ -218,7 +221,9 @@ get_header('rsvp'); ?>
             <div class="d-flex justify-content-between align-items-end">
                 <div>
                     <h2 class="fw-light mb-0">Hotline B-Pro</h2>
-                    <a href="tel:081131166111" class="text-decoration-none"><h2 class="fw-bold">0811-3116-6111</h2></a>
+                    <a href="tel:081131166111" class="text-decoration-none">
+                        <h2 class="fw-bold">0811-3116-6111</h2>
+                    </a>
                 </div>
                 <div>
                     <div class="d-flex justify-content-center align-items-center gap-3">
