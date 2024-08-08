@@ -810,7 +810,7 @@ h5.font-semibold.text-\[22px\].md\:text-\[20px\].text-etBlack.mb-\[4px\] {
                         </div>
     
                         <!-- index number -->
-                        <div class="absolute top-0 right-0 z-[1] w-[60px] aspect-square rounded-full bg-etBlue font-lato font-semibold text-[20px] text-white flex items-center justify-center" style="background-color: #fff;">0<?php echo $no ; ?></div>
+                        <div class="absolute top-0 right-0 z-[1] w-[60px] aspect-square rounded-full bg-etBlue font-lato font-semibold text-[20px] text-white flex items-center justify-center" style="background-color: #18377e;">0<?php echo $no ; ?></div>
                     </div>
                     <?php $no++; endwhile; ?>
                     <?php endif; ?>
@@ -837,7 +837,7 @@ h5.font-semibold.text-\[22px\].md\:text-\[20px\].text-etBlack.mb-\[4px\] {
                             </div>
         
                             <!-- index number -->
-                            <div class="absolute top-0 right-0 z-[1] w-[60px] aspect-square rounded-full bg-etBlue font-lato font-semibold text-[20px] text-white flex items-center justify-center" style="background-color: #fff;">0<?php echo $no ; ?></div>
+                            <div class="absolute top-0 right-0 z-[1] w-[60px] aspect-square rounded-full bg-etBlue font-lato font-semibold text-[20px] text-white flex items-center justify-center" style="background-color: #18377e;">0<?php echo $no ; ?></div>
                         </div>
                     </div>
                     <?php $no++; endwhile; ?>
