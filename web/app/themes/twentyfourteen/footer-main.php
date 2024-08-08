@@ -20,9 +20,6 @@
     color: #18377e;
 }
 
-.icon svg .fill-etBlue {
-    fill: #fff;
-}
 
 .box-cta-home {
     background-color: #18377e;
