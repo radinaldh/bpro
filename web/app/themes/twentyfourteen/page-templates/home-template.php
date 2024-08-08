@@ -17,6 +17,7 @@ get_header('main');
         -webkit-box-shadow: 10px 10px 5px 0px rgb(227 227 227 / 32%);
         -moz-box-shadow: 10px 10px 5px 0px rgba(227, 227, 227, 0.91);
         margin-bottom: 20px;
+        height: 160px;
     }
 
     @media(min-width:1800px) {
