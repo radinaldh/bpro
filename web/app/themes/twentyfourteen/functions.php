@@ -1158,6 +1158,14 @@ function enqueue_admin_custom_js()
 }
 add_action('admin_enqueue_scripts', 'enqueue_admin_custom_js');
 
+function enqueue_frontend_custom_js()
+{
+	if (is_page_template('submission-list-page.php')) {
+		wp_enqueue_script('custom-admin-js', get_template_directory_uri() . '/js/custom-admin.js', array('jquery'), null, true);
+		wp_localize_script('custom-admin-js', 'ajax_params', array('ajax_url' => admin_url('admin-ajax.php')));
+	}
+}
+add_action('wp_enqueue_scripts', 'enqueue_frontend_custom_js');
 
 
 /**

@@ -41,6 +41,7 @@ get_header();
                     <th>Email</th>
                     <th>Phone</th>
                     <th>Confirmed?</th>
+                    <th>Send Email</th>
                 </tr>
             </thead>
             <tbody>
@@ -57,12 +58,17 @@ get_header();
                         $email = get_post_meta(get_the_ID(), 'email', true);
                         $phone = get_post_meta(get_the_ID(), 'phone', true);
                         $checked_in = get_post_meta(get_the_ID(), 'checked_in', true);
+                        $email_sent = get_post_meta(get_the_ID(), 'email_sent', true);
+                        $button_text = $email_sent ? 'Send Email Again' : 'Send Email';
                 ?>
                         <tr>
                             <td><?php echo esc_html($name); ?></td>
                             <td><?php echo esc_html($email); ?></td>
                             <td><?php echo esc_html($phone); ?></td>
                             <td><?php echo esc_html($checked_in === 'true' ? 'Yes' : 'No'); ?></td>
+                            <td>
+                                <button class="btn btn-primary send-email" data-post-id="<?php echo get_the_ID(); ?>"><?php echo $button_text; ?></button>
+                            </td>
                         </tr>
                     <?php
                     endwhile;
@@ -70,7 +76,7 @@ get_header();
                 else :
                     ?>
                     <tr>
-                        <td colspan="4" class="text-center">No submissions found.</td>
+                        <td colspan="5" class="text-center">No submissions found.</td>
                     </tr>
                 <?php
                 endif;
@@ -82,3 +88,4 @@ get_header();
 
 <?php
 get_footer();
+?>
