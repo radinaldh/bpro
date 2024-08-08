@@ -16,7 +16,7 @@ get_header('main');
     .uproinhimgod {
         text-align: center;
         margin: 20px 0;
-        font-size: 60px;
+        font-size:40px;
         color: transparent;
         -webkit-text-stroke: 1px #fff;
         text-align: center;
@@ -37,7 +37,7 @@ get_header('main');
     }
     @media(max-width:500px) {
         .uproinhimgod {
-            font-size: 40px;
+            font-size: 30px;
         }
         .explain {
             width: 100%;
