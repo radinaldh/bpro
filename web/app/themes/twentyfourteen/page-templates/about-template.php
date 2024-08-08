@@ -9,6 +9,11 @@ get_header('main');
 
 <style>
 
+    .et-history-timeline.swiper-slide-thumb-active h3,
+    .et-history-timeline h3 {
+        color: #fff;
+    }
+
     .uproinhim {
         font-size: 20px;
     }
