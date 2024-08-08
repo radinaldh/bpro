@@ -50,7 +50,7 @@ get_header('main');
             <div class="left">
                 <!-- img -->
                 <div class="relative rounded-[8px] overflow-hidden">
-                    <img src="<?php the_post_thumbnail_url();?>"
+                    <img width="100%" src="<?php the_post_thumbnail_url();?>"
                         alt="event-details-img">
                     <!-- hall number tag -->
                     <!-- <span
