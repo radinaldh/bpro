@@ -1098,7 +1098,7 @@ function send_qr_code_email($post_id)
 	$body = '<p>Shallom profesional muda,</p>';
 	$body .= '<p>Invitation for:</p>';
 	$body .= '<p>Name: ' . $name . '<br>';
-	$body .= '<p>Email: ' . $email . '<br>';
+	$body .= 'Email: ' . $email . '<br>';
 	$body .= 'Phone: ' . $phone . '</p>';
 	$body .= '<p>QRCode Invitation:</p>';
 	$body .= '<p><img src="' . $qr_code_url . '" alt="QR Code"></p>';
