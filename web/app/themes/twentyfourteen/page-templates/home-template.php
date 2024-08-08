@@ -727,7 +727,7 @@ h5.font-semibold.text-\[22px\].md\:text-\[20px\].text-etBlack.mb-\[4px\] {
 
     <!-- CTA SECTION START -->
     <div class="container mx-auto max-w-[calc(100%-37.1vw)] xxxl:max-w-[calc(100%-350px)] xl:max-w-[calc(100%-170px)] px-[12px] lg:max-w-full rev-slide-up relative z-[2]">
-        <div class="bg-etBlue relative z-[1] p-[60px] xxl:p-[40px] xs:px-[20px] rounded-[20px] overflow-hidden -mb-[114px] shadow-[0_4px_50px_rgba(18,96,254,0.2)] after:absolute after:inset-0 after:-z-[1] after:bg-[url(../assets/img/et-counter-bg.jpg)] after:bg-cover after:bg-no-repeat after:mix-blend-screen">
+        <div class="box-cta-home bg-etBlue relative z-[1] p-[60px] xxl:p-[40px] xs:px-[20px] rounded-[20px] overflow-hidden -mb-[114px] shadow-[0_4px_50px_rgba(18,96,254,0.2)] after:absolute after:inset-0 after:-z-[1] after:bg-[url(../assets/img/et-counter-bg.jpg)] after:bg-cover after:bg-no-repeat after:mix-blend-screen">
         <?php if ( have_rows( 'section_information' ) ) : ?>
             <?php while ( have_rows( 'section_information' ) ) : the_row(); ?>
             <div class="flex items-center justify-center md:flex-wrap gap-x-[140px] xxl:gap-x-[80px] gap-y-[20px]">
@@ -810,7 +810,7 @@ h5.font-semibold.text-\[22px\].md\:text-\[20px\].text-etBlack.mb-\[4px\] {
                         </div>
     
                         <!-- index number -->
-                        <div class="absolute top-0 right-0 z-[1] w-[60px] aspect-square rounded-full bg-etBlue font-lato font-semibold text-[20px] text-white flex items-center justify-center">0<?php echo $no ; ?></div>
+                        <div class="absolute top-0 right-0 z-[1] w-[60px] aspect-square rounded-full bg-etBlue font-lato font-semibold text-[20px] text-white flex items-center justify-center" style="background-color: #fff;">0<?php echo $no ; ?></div>
                     </div>
                     <?php $no++; endwhile; ?>
                     <?php endif; ?>
@@ -837,7 +837,7 @@ h5.font-semibold.text-\[22px\].md\:text-\[20px\].text-etBlack.mb-\[4px\] {
                             </div>
         
                             <!-- index number -->
-                            <div class="absolute top-0 right-0 z-[1] w-[60px] aspect-square rounded-full bg-etBlue font-lato font-semibold text-[20px] text-white flex items-center justify-center">0<?php echo $no ; ?></div>
+                            <div class="absolute top-0 right-0 z-[1] w-[60px] aspect-square rounded-full bg-etBlue font-lato font-semibold text-[20px] text-white flex items-center justify-center" style="background-color: #fff;">0<?php echo $no ; ?></div>
                         </div>
                     </div>
                     <?php $no++; endwhile; ?>
