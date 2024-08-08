@@ -1086,6 +1086,79 @@ function enqueue_custom_login_js()
 }
 add_action('wp_enqueue_scripts', 'enqueue_custom_login_js');
 
+function send_qr_code_email($post_id)
+{
+	$email = get_post_meta($post_id, 'email', true);
+	$name = get_post_meta($post_id, 'title', true);
+	$phone = get_post_meta($post_id, 'phone', true);
+	$qr_code_url = get_post_meta($post_id, 'qr_code_url', true);
+
+	$subject = 'Invitation QR Code for DISCOVER CYBER SECURITY AND FINANCIAL TRAP';
+
+	$body = '<p>Shallom profesional muda,</p>';
+	$body .= '<p>Invitation for:</p>';
+	$body .= '<p>Name: ' . $name . '<br>';
+	$body .= '<p>Email: ' . $email . '<br>';
+	$body .= 'Phone: ' . $phone . '</p>';
+	$body .= '<p>QRCode Invitation:</p>';
+	$body .= '<p><img src="' . $qr_code_url . '" alt="QR Code"></p>';
+	$body .= '<p>Terima kasih.<br>Tuhan Yesus memberkati<br>Be Success, Be Profesional.</p>';
+
+	$headers = array('Content-Type: text/html; charset=UTF-8');
+
+	if (wp_mail($email, $subject, $body, $headers)) {
+		update_post_meta($post_id, 'email_sent', true);
+	}
+}
+
+
+
+function add_send_email_button($column, $post_id)
+{
+	if ($column === 'send_email') {
+		$email_sent = get_post_meta($post_id, 'email_sent', true);
+		$button_text = $email_sent ? 'Send Email Again' : 'Send Email';
+		echo '<button class="button send-email" data-post-id="' . $post_id . '">' . $button_text . '</button>';
+	}
+}
+add_action('manage_submission_posts_custom_column', 'add_send_email_button', 10, 2);
+
+
+
+function handle_send_email()
+{
+	if (isset($_POST['post_id'])) {
+		$post_id = intval($_POST['post_id']);
+		send_qr_code_email($post_id);
+		set_transient('email_sent_success', true, 30);
+		wp_send_json_success();
+	} else {
+		wp_send_json_error('Invalid post ID.');
+	}
+}
+add_action('wp_ajax_send_email', 'handle_send_email');
+
+function display_email_sent_notice()
+{
+	if (get_transient('email_sent_success')) {
+		?>
+		<div class="notice notice-success is-dismissible">
+			<p><?php _e('Email sent successfully.', 'text-domain'); ?></p>
+		</div>
+<?php
+		delete_transient('email_sent_success'); // Delete the transient after displaying the notice
+	}
+}
+add_action('admin_notices', 'display_email_sent_notice');
+
+function enqueue_admin_custom_js()
+{
+	wp_enqueue_script('custom-admin-js', get_template_directory_uri() . '/js/custom-admin.js', array('jquery'), null, true);
+	wp_localize_script('custom-admin-js', 'ajax_params', array('ajax_url' => admin_url('admin-ajax.php')));
+}
+add_action('admin_enqueue_scripts', 'enqueue_admin_custom_js');
+
+
 
 /**
  * TEMPLATE FUNCTIONS
@@ -1132,73 +1205,3 @@ class Custom_Walker_Nav_Menu extends Walker_Nav_Menu
 		$output .= apply_filters('walker_nav_menu_start_el', $item_output, $item, $depth, $args);
 	}
 }
-
-function send_qr_code_email($post_id)
-{
-	$email = get_post_meta($post_id, 'email', true);
-	$name = get_post_meta($post_id, 'name', true);
-	$phone = get_post_meta($post_id, 'phone', true);
-	$qr_code_url = get_post_meta($post_id, 'qr_code_url', true);
-
-	$subject = 'Invitation QR Code for DISCOVER CYBER SECURITY AND FINANCIAL TRAP';
-
-	$body = '<p>Shallom profesional muda,</p>';
-	$body .= '<p>Invitation for:</p>';
-	$body .= '<p>Name: ' . $name . '<br>';
-	$body .= 'Email: ' . $email . '<br>';
-	$body .= 'Phone: ' . $phone . '</p>';
-	$body .= '<p>QRCode Invitation:</p>';
-	$body .= '<p><img src="' . $qr_code_url . '" alt="QR Code"></p>';
-	$body .= '<p>Terima kasih.<br>Tuhan Yesus memberkati<br>Be Success, Be Profesional.</p>';
-
-	$headers = array('Content-Type: text/html; charset=UTF-8');
-
-	if (wp_mail($email, $subject, $body, $headers)) {
-		update_post_meta($post_id, 'email_sent', true);
-	}
-}
-
-
-function add_send_email_button($column, $post_id)
-{
-	if ($column === 'send_email') {
-		$email_sent = get_post_meta($post_id, 'email_sent', true);
-		$button_text = $email_sent ? 'Send Email Again' : 'Send Email';
-		echo '<button class="button send-email" data-post-id="' . $post_id . '">' . $button_text . '</button>';
-	}
-}
-add_action('manage_submission_posts_custom_column', 'add_send_email_button', 10, 2);
-
-
-function handle_send_email()
-{
-	if (isset($_POST['post_id'])) {
-		$post_id = intval($_POST['post_id']);
-		send_qr_code_email($post_id);
-		set_transient('email_sent_success', true, 30);
-		wp_send_json_success();
-	} else {
-		wp_send_json_error('Invalid post ID.');
-	}
-}
-add_action('wp_ajax_send_email', 'handle_send_email');
-
-function display_email_sent_notice()
-{
-	if (get_transient('email_sent_success')) {
-		?>
-		<div class="notice notice-success is-dismissible">
-			<p><?php _e('Email sent successfully.', 'text-domain'); ?></p>
-		</div>
-<?php
-		delete_transient('email_sent_success'); // Delete the transient after displaying the notice
-	}
-}
-add_action('admin_notices', 'display_email_sent_notice');
-
-function enqueue_admin_custom_js()
-{
-	wp_enqueue_script('custom-admin-js', get_template_directory_uri() . '/js/custom-admin.js', array('jquery'), null, true);
-	wp_localize_script('custom-admin-js', 'ajax_params', array('ajax_url' => admin_url('admin-ajax.php')));
-}
-add_action('admin_enqueue_scripts', 'enqueue_admin_custom_js');
