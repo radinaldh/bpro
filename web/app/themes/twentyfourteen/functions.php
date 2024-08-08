@@ -591,7 +591,7 @@ if (!function_exists('twentyfourteen_list_authors')) :
 				</div><!-- .contributor-info -->
 			</div><!-- .contributor -->
 
-		<?php
+	<?php
 		endforeach;
 	}
 endif;
@@ -880,8 +880,16 @@ add_action('manage_submission_posts_custom_column', 'custom_submission_column_co
 function checked_in_meta_box_html($post)
 {
 	$checked_in = get_post_meta($post->ID, 'checked_in', true);
-	echo '<p>Checked In: ' . ($checked_in === 'true' ? 'Yes' : 'No') . '</p>';
+	wp_nonce_field('save_checked_in_meta_box_data', 'checked_in_meta_box_nonce');
+	?>
+	<label for="checked_in_status">Checked In:</label>
+	<select name="checked_in_status" id="checked_in_status">
+		<option value="false" <?php selected($checked_in, 'false'); ?>>No</option>
+		<option value="true" <?php selected($checked_in, 'true'); ?>>Yes</option>
+	</select>
+	<?php
 }
+
 
 function add_checked_in_meta_box()
 {
@@ -895,6 +903,40 @@ function add_checked_in_meta_box()
 	);
 }
 add_action('add_meta_boxes', 'add_checked_in_meta_box');
+
+function save_checked_in_meta_box_data($post_id)
+{
+	// Check if our nonce is set.
+	if (!isset($_POST['checked_in_meta_box_nonce'])) {
+		return $post_id;
+	}
+	$nonce = $_POST['checked_in_meta_box_nonce'];
+
+	// Verify that the nonce is valid.
+	if (!wp_verify_nonce($nonce, 'save_checked_in_meta_box_data')) {
+		return $post_id;
+	}
+
+	// If this is an autosave, our form has not been submitted, so we don't want to do anything.
+	if (defined('DOING_AUTOSAVE') && DOING_AUTOSAVE) {
+		return $post_id;
+	}
+
+	// Check the user's permissions.
+	if (isset($_POST['post_type']) && 'submission' == $_POST['post_type']) {
+		if (!current_user_can('edit_post', $post_id)) {
+			return $post_id;
+		}
+	}
+
+	// Sanitize the user input.
+	$new_value = (isset($_POST['checked_in_status']) && $_POST['checked_in_status'] === 'true') ? 'true' : 'false';
+
+	// Update the meta field.
+	update_post_meta($post_id, 'checked_in', $new_value);
+}
+add_action('save_post', 'save_checked_in_meta_box_data');
+
 
 function custom_submission_sortable_columns($columns)
 {
@@ -1141,7 +1183,7 @@ add_action('wp_ajax_send_email', 'handle_send_email');
 function display_email_sent_notice()
 {
 	if (get_transient('email_sent_success')) {
-		?>
+	?>
 		<div class="notice notice-success is-dismissible">
 			<p><?php _e('Email sent successfully.', 'text-domain'); ?></p>
 		</div>
