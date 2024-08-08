@@ -64,6 +64,12 @@ iframe {
 /* .bg-etBlue{
     background-color: #18377e;
 } */
+
+.serviceslist .slick-slide {
+    padding: 18px;
+}
+
+
 @media only screen and (max-width: 1700px) {
     iframe {
     width: 70%;
@@ -121,6 +127,13 @@ h5.font-medium.text-\[22px\].text-etBlack.mb-\[8px\] {
     }
 }
     @media(max-width:600px) {
+        .pembicaraslider.slick-initialized.slick-slider.slick-dotted {
+    height: 388px;
+}
+
+.serviceslist {
+    height:340px!important;
+}
         .mySwiper2 {
             height: auto;
         }
@@ -295,9 +308,10 @@ h5.font-medium.text-\[22px\].text-etBlack.mb-\[8px\] {
         </div>
     </div>
     <div class="container max-w-[calc(100%-37.1vw)] xxxl:max-w-[calc(100%-350px)] xl:max-w-[calc(100%-170px)] m-auto">
-        <div class="grid grid-cols-4 md:grid-cols-3 sm:grid-cols-2 xxs:grid-cols-1 gap-[30px] lg:gap-[20px] items-start">
+        <div class="serviceslist">
         <?php if ( have_rows( 'list_services' ) ) : ?>
 			<?php $no=1; while ( have_rows( 'list_services' ) ) : the_row(); ?>
+            <div>
             <div class="et-2-feature-card rounded-[30px] overflow-hidden group relative">
                 <div class="et-2-feature-card-txt bg-white p-[30px]">
                     <!-- icon -->
@@ -315,11 +329,12 @@ h5.font-medium.text-\[22px\].text-etBlack.mb-\[8px\] {
                 <!-- index number -->
                 <div class="absolute top-0 right-0 z-[1] w-[60px] aspect-square rounded-full bg-etBlue font-lato font-semibold text-[20px] text-white flex items-center justify-center">0<?php echo $no; ?></div>
             </div>
-    
+        </div>
             <?php $no++; endwhile; ?>
 		<?php else : ?>
 			<?php // No rows found ?>
 		<?php endif; ?>
+            
         </div>
     </div>
 </section>
