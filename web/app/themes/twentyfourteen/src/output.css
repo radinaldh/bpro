@@ -2699,7 +2699,7 @@ video {
 }
 
 .fill-etBlue {
-  fill: #1260FE;
+  fill: #18377e;
 }
 
 .fill-etGray2 {
@@ -2731,7 +2731,7 @@ video {
 }
 
 .stroke-etBlue {
-  stroke: #1260FE;
+  stroke: #18377e;
 }
 
 .stroke-white {
@@ -4116,7 +4116,7 @@ video {
 
 .before\:from-etBlue::before {
   content: var(--tw-content);
-  --tw-gradient-from: #1260FE var(--tw-gradient-from-position);
+  --tw-gradient-from: #18377e var(--tw-gradient-from-position);
   --tw-gradient-to: rgb(18 96 254 / 0) var(--tw-gradient-to-position);
   --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
 }
@@ -4610,7 +4610,7 @@ video {
 }
 
 .group:hover .group-hover\:fill-etBlue {
-  fill: #1260FE;
+  fill: #18377e;
 }
 
 .group:hover .group-hover\:fill-etPink {
@@ -4622,7 +4622,7 @@ video {
 }
 
 .group:hover .group-hover\:stroke-etBlue {
-  stroke: #1260FE;
+  stroke: #18377e;
 }
 
 .group:hover .group-hover\:stroke-etPink {

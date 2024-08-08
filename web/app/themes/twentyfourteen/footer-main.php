@@ -1,5 +1,9 @@
 </main>
 <style>
+
+.et-header-nav a:hover {
+    color: #dddee5;
+}
     footer.et-footer {
     background: #18377e;
 }
@@ -113,50 +117,50 @@
 
                     <ul class="space-y-[17px] text-[16px] font-light text-[#f2f2f2]">
                         <li>
-                            <a href="/events/" class="flex items-center gap-[10px] hover:text-etBlue group sm:text-[12px]">
+                            <a href="/events/" class="flex items-center gap-[10px] group sm:text-[12px]">
                                 <span class="icon">
                                     <svg width="12" height="16" viewBox="0 0 12 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <path d="M0 15.875V2.28125C0 1.51953 0.615234 0.875 1.40625 0.875H9.84375C10.6055 0.875 11.25 1.51953 11.25 2.28125V15.875L5.625 12.5938L0 15.875Z" class="fill-transparent stroke-white group-hover:stroke-etBlue group-hover:fill-etBlue transition" />
+                                        <path d="M0 15.875V2.28125C0 1.51953 0.615234 0.875 1.40625 0.875H9.84375C10.6055 0.875 11.25 1.51953 11.25 2.28125V15.875L5.625 12.5938L0 15.875Z" class="fill-transparent stroke-white group-hover:fill-etBlue transition" />
                                     </svg>
                                 </span>
                                 <span class="txt">Heart for The Lost</span>
                             </a>
                         </li>
                         <li>
-                            <a href="/events/" class="flex items-center gap-[10px] hover:text-etBlue group sm:text-[12px]">
+                            <a href="/events/" class="flex items-center gap-[10px] group sm:text-[12px]">
                                 <span class="icon">
                                     <svg width="12" height="16" viewBox="0 0 12 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <path d="M0 15.875V2.28125C0 1.51953 0.615234 0.875 1.40625 0.875H9.84375C10.6055 0.875 11.25 1.51953 11.25 2.28125V15.875L5.625 12.5938L0 15.875Z" class="fill-transparent stroke-white group-hover:stroke-etBlue group-hover:fill-etBlue transition" />
+                                        <path d="M0 15.875V2.28125C0 1.51953 0.615234 0.875 1.40625 0.875H9.84375C10.6055 0.875 11.25 1.51953 11.25 2.28125V15.875L5.625 12.5938L0 15.875Z" class="fill-transparent stroke-white group-hover:fill-etBlue transition" />
                                     </svg>
                                 </span>
                                 <span class="txt">Agent of Christ</span>
                             </a>
                         </li>
                         <li>
-                            <a href="/events/" class="flex items-center gap-[10px] hover:text-etBlue group sm:text-[12px]">
+                            <a href="/events/" class="flex items-center gap-[10px] group sm:text-[12px]">
                                 <span class="icon">
                                     <svg width="12" height="16" viewBox="0 0 12 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <path d="M0 15.875V2.28125C0 1.51953 0.615234 0.875 1.40625 0.875H9.84375C10.6055 0.875 11.25 1.51953 11.25 2.28125V15.875L5.625 12.5938L0 15.875Z" class="fill-transparent stroke-white group-hover:stroke-etBlue group-hover:fill-etBlue transition" />
+                                        <path d="M0 15.875V2.28125C0 1.51953 0.615234 0.875 1.40625 0.875H9.84375C10.6055 0.875 11.25 1.51953 11.25 2.28125V15.875L5.625 12.5938L0 15.875Z" class="fill-transparent stroke-white group-hover:fill-etBlue transition" />
                                     </svg>
                                 </span>
                                 <span class="txt">Discover Cyber Security and Financial Trap</span>
                             </a>
                         </li>
                         <li>
-                            <a href="/events/" class="flex items-center gap-[10px] hover:text-etBlue group sm:text-[12px]">
+                            <a href="/events/" class="flex items-center gap-[10px] group sm:text-[12px]">
                                 <span class="icon">
                                     <svg width="12" height="16" viewBox="0 0 12 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <path d="M0 15.875V2.28125C0 1.51953 0.615234 0.875 1.40625 0.875H9.84375C10.6055 0.875 11.25 1.51953 11.25 2.28125V15.875L5.625 12.5938L0 15.875Z" class="fill-transparent stroke-white group-hover:stroke-etBlue group-hover:fill-etBlue transition" />
+                                        <path d="M0 15.875V2.28125C0 1.51953 0.615234 0.875 1.40625 0.875H9.84375C10.6055 0.875 11.25 1.51953 11.25 2.28125V15.875L5.625 12.5938L0 15.875Z" class="fill-transparent stroke-white group-hover:fill-etBlue transition" />
                                     </svg>
                                 </span>
                                 <span class="txt">Liberty in Christ</span>
                             </a>
                         </li>
                         <li>
-                            <a href="/events/" class="flex items-center gap-[10px] hover:text-etBlue group sm:text-[12px]">
+                            <a href="/events/" class="flex items-center gap-[10px] group sm:text-[12px]">
                                 <span class="icon">
                                     <svg width="12" height="16" viewBox="0 0 12 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <path d="M0 15.875V2.28125C0 1.51953 0.615234 0.875 1.40625 0.875H9.84375C10.6055 0.875 11.25 1.51953 11.25 2.28125V15.875L5.625 12.5938L0 15.875Z" class="fill-transparent stroke-white group-hover:stroke-etBlue group-hover:fill-etBlue transition" />
+                                        <path d="M0 15.875V2.28125C0 1.51953 0.615234 0.875 1.40625 0.875H9.84375C10.6055 0.875 11.25 1.51953 11.25 2.28125V15.875L5.625 12.5938L0 15.875Z" class="fill-transparent stroke-white group-hover:fill-etBlue transition" />
                                     </svg>
                                 </span>
                                 <span class="txt">Built to Build</span>
@@ -171,40 +175,40 @@
 
                     <ul class="space-y-[17px] text-[16px] font-light text-[#f2f2f2]">
                         <li>
-                            <a href="/about/" class="flex items-center gap-[10px] hover:text-etBlue group sm:text-[12px]">
+                            <a href="/about/" class="flex items-center gap-[10px] group sm:text-[12px]">
                                 <span class="icon">
                                     <svg width="12" height="16" viewBox="0 0 12 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <path d="M0 15.875V2.28125C0 1.51953 0.615234 0.875 1.40625 0.875H9.84375C10.6055 0.875 11.25 1.51953 11.25 2.28125V15.875L5.625 12.5938L0 15.875Z" class="fill-transparent stroke-white group-hover:stroke-etBlue group-hover:fill-etBlue transition" />
+                                        <path d="M0 15.875V2.28125C0 1.51953 0.615234 0.875 1.40625 0.875H9.84375C10.6055 0.875 11.25 1.51953 11.25 2.28125V15.875L5.625 12.5938L0 15.875Z" class="fill-transparent stroke-white group-hover:fill-etBlue transition" />
                                     </svg>
                                 </span>
                                 <span class="txt">About</span>
                             </a>
                         </li>
                         <li>
-                            <a href="/services/" class="flex items-center gap-[10px] hover:text-etBlue group sm:text-[12px]">
+                            <a href="/services/" class="flex items-center gap-[10px] group sm:text-[12px]">
                                 <span class="icon">
                                     <svg width="12" height="16" viewBox="0 0 12 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <path d="M0 15.875V2.28125C0 1.51953 0.615234 0.875 1.40625 0.875H9.84375C10.6055 0.875 11.25 1.51953 11.25 2.28125V15.875L5.625 12.5938L0 15.875Z" class="fill-transparent stroke-white group-hover:stroke-etBlue group-hover:fill-etBlue transition" />
+                                        <path d="M0 15.875V2.28125C0 1.51953 0.615234 0.875 1.40625 0.875H9.84375C10.6055 0.875 11.25 1.51953 11.25 2.28125V15.875L5.625 12.5938L0 15.875Z" class="fill-transparent stroke-white group-hover:fill-etBlue transition" />
                                     </svg>
                                 </span>
                                 <span class="txt">Services</span>
                             </a>
                         </li>
                         <li>
-                            <a href="/journal/" class="flex items-center gap-[10px] hover:text-etBlue group sm:text-[12px]">
+                            <a href="/journal/" class="flex items-center gap-[10px] group sm:text-[12px]">
                                 <span class="icon">
                                     <svg width="12" height="16" viewBox="0 0 12 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <path d="M0 15.875V2.28125C0 1.51953 0.615234 0.875 1.40625 0.875H9.84375C10.6055 0.875 11.25 1.51953 11.25 2.28125V15.875L5.625 12.5938L0 15.875Z" class="fill-transparent stroke-white group-hover:stroke-etBlue group-hover:fill-etBlue transition" />
+                                        <path d="M0 15.875V2.28125C0 1.51953 0.615234 0.875 1.40625 0.875H9.84375C10.6055 0.875 11.25 1.51953 11.25 2.28125V15.875L5.625 12.5938L0 15.875Z" class="fill-transparent stroke-white group-hover:fill-etBlue transition" />
                                     </svg>
                                 </span>
                                 <span class="txt">Journal</span>
                             </a>
                         </li>
                         <li>
-                            <a href="/bible/" class="flex items-center gap-[10px] hover:text-etBlue group sm:text-[12px]">
+                            <a href="/bible/" class="flex items-center gap-[10px] group sm:text-[12px]">
                                 <span class="icon">
                                     <svg width="12" height="16" viewBox="0 0 12 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <path d="M0 15.875V2.28125C0 1.51953 0.615234 0.875 1.40625 0.875H9.84375C10.6055 0.875 11.25 1.51953 11.25 2.28125V15.875L5.625 12.5938L0 15.875Z" class="fill-transparent stroke-white group-hover:stroke-etBlue group-hover:fill-etBlue transition" />
+                                        <path d="M0 15.875V2.28125C0 1.51953 0.615234 0.875 1.40625 0.875H9.84375C10.6055 0.875 11.25 1.51953 11.25 2.28125V15.875L5.625 12.5938L0 15.875Z" class="fill-transparent stroke-white group-hover:fill-etBlue transition" />
                                     </svg>
                                 </span>
                                 <span class="txt">Bible</span>
