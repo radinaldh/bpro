@@ -323,7 +323,7 @@ h5.font-medium.text-\[22px\].text-etBlack.mb-\[8px\] {
 		<?php endif; ?>
         </div>
     </div>
-    <div class="testing-slider okke">
+    <div class="testing-slider okke md:hidden">
                 <div class="multiple-items">
                 <?php if ( have_rows( 'list_services' ) ) : ?>
                     <?php $no =1; while ( have_rows( 'list_services' ) ) : the_row(); ?>
