@@ -134,7 +134,7 @@ get_header('main');
 
         <?php if(have_rows('bpro_vision')) :?>
             <?php while(have_rows('bpro_vision')) : the_row() ;
-                $title = get_sub_field('bpro_vision');
+                $title = get_sub_field('bpro_vision_title');
                 $description = get_sub_field('bpro_vision_description');
             ?>
             <div class="vision mb-[40px] mt-[40px]">
