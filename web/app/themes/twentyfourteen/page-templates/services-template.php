@@ -50,7 +50,7 @@ get_header('main');
 }
 
 .slide-video.slick-initialized.slick-slider.slick-dotted ul.slick-dots {
-    bottom: -150px !important;
+    bottom: -100px !important;
 }
 
 iframe {
@@ -58,9 +58,68 @@ iframe {
     height: 700px;
 }
 
+.slide-video.slick-initialized.slick-slider.slick-dotted {
+    height: 670px;
+}
 /* .bg-etBlue{
     background-color: #18377e;
 } */
+@media only screen and (max-width: 1700px) {
+    iframe {
+    width: 70%;
+    height: 500px;
+    margin: auto;
+    }
+    .slide-video.slick-initialized.slick-slider.slick-dotted ul.slick-dots {
+        bottom: 80px !important;
+    }
+    section.minus-top {
+        margin-top: -155px;
+    }
+.bg-etBlue.rounded-\[20px\].overflow-hidden.text-white.max-w-\[370px\].xxs\:max-w-full {
+    width: 100%;
+    min-height: 333px;
+}
+}
+
+@media only screen and (max-width: 1500px) {
+
+    .p-\[40px\].sm\:p-\[30px\].pb-0 {
+    padding: 25px;
+}
+
+h3.text-\[32px\].mb-\[14px\] {
+    font-size: 29px;
+}
+
+
+p.font-light.text-\[18px\] {
+    font-size: 17px;
+}
+
+h5.font-medium.text-\[22px\].text-etBlack.mb-\[8px\] {
+    font-size: 20px;
+}
+.slide-video.slick-initialized.slick-slider.slick-dotted ul.slick-dots {
+        bottom: 160px !important;
+    }
+
+    section.minus-top {
+        margin-top: -268px;
+    }
+    .bg-etBlue.rounded-\[20px\].overflow-hidden.text-white.max-w-\[370px\].xxs\:max-w-full {
+    width: 100%;
+    min-height: 295px;
+}
+}
+
+@media only screen and (max-width: 1500px) {
+    iframe {
+    width: 60%;
+    height: 425px;
+    margin: auto;
+    }
+}
     @media(max-width:600px) {
         .mySwiper2 {
             height: auto;
@@ -80,8 +139,18 @@ iframe {
         }
 
         iframe {
-            height: 300px;
-        }
+    width: 100%;
+    height: 350px;
+    margin: auto;
+    }
+    .slide-video.slick-initialized.slick-slider.slick-dotted ul.slick-dots {
+        bottom: 213px !important;
+    }
+
+
+    section.minus-top {
+        margin-top: -258px;
+    }
 
         section.et-about {
             padding-bottom: 25px;
@@ -90,10 +159,29 @@ iframe {
     max-width: calc(100% - 50px);
   }
     }
+    @media(max-width:400px) {
 
+        iframe {
+    width: 100%;
+    height: 250px;
+    margin: auto;
+    }
+
+    .slide-video.slick-initialized.slick-slider.slick-dotted ul.slick-dots {
+        bottom: 320px !important;
+    }
+
+
+    section.minus-top {
+        margin-top: -368px;
+    }
+
+    }
     .et-testimony.relative.p-\[40px\].lg\:p-\[30px\].md\:p-\[20px\].border.border-\[\#D4DCED\].rounded-\[16px\].mt-\[60px\] {
     min-height: 350px;
 }
+
+
 
 .hero-banner::before {
     content: '';
@@ -123,7 +211,7 @@ iframe {
     title="YouTube video player" frameborder="0"
     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
     referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe> -->
-    <section class="et-about py-[130px] xl:py-[80px] md:py-[60px] overflow-hidden relative" style=" background: #FFF">
+    <section class="et-about py-[80px] overflow-hidden relative" style=" background: #FFF">
     <div class="container max-w-[calc(100%-37.1vw)] mx-[30px] xxxl:max-w-[calc(100%-350px)] xl:max-w-[calc(100%-170px)] m-auto">
         <div class="slide-video">
         <?php if ( have_rows( 'list_video' ) ) : ?>
@@ -146,7 +234,7 @@ iframe {
     
     <?php if ( have_rows( 'section_ministry' ) ) : ?>
         <?php while ( have_rows( 'section_ministry' ) ) : the_row(); ?>
-<section class="et-about py-[130px] xl:py-[80px] md:py-[60px] overflow-hidden relative" style=" background: #FFF">
+<section class="minus-top et-about py-[80px] overflow-hidden relative" style=" background: #FFF">
     <div class="text-center mb-[52px]">
         <h6 class="et-section-sub-title anim-text"><?php the_sub_field( 'subtitle' ); ?></h6>
         <h2 class="mb-[24px] md:mb-[19px] anim-text sm:text-[24px] text-[25px]"><?php the_sub_field( 'title' ); ?>
@@ -193,7 +281,7 @@ iframe {
     <?php endif; ?>
 <?php if ( have_rows( 'section_other_services' ) ) : ?>
 	<?php while ( have_rows( 'section_other_services' ) ) : the_row(); ?>
-<section class="et-about py-[130px] xl:py-[80px] md:py-[60px] overflow-hidden relative" style=" background: rgb(0 27 82);">
+<section class="et-about py-[80px]  overflow-hidden relative" style=" background: rgb(0 27 82);">
     <div class="text-center mb-[52px]">
         <h6 class="et-section-sub-title !text-white before:!bg-white anim-text"><?php the_sub_field( 'subtitle' ); ?></h6>
         <h2 class="text-[35px] sm:text-[24px] !text-white anim-text mb-[24px] md:mb-[19px] sm:text-[20px]"><?php the_sub_field( 'title' ); ?></h2>
@@ -207,6 +295,7 @@ iframe {
         </div>
     </div>
     <div class="container max-w-[calc(100%-37.1vw)] xxxl:max-w-[calc(100%-350px)] xl:max-w-[calc(100%-170px)] m-auto">
+    <div class="sm:hidden">
         <div class="grid grid-cols-4 md:grid-cols-3 sm:grid-cols-2 xxs:grid-cols-1 gap-[30px] lg:gap-[20px] items-start">
         <?php if ( have_rows( 'list_services' ) ) : ?>
 			<?php $no=1; while ( have_rows( 'list_services' ) ) : the_row(); ?>
@@ -234,13 +323,41 @@ iframe {
 		<?php endif; ?>
         </div>
     </div>
+    <div class="testing-slider okke">
+                <div class="multiple-items">
+                <?php if ( have_rows( 'list_services' ) ) : ?>
+                    <?php $no =1; while ( have_rows( 'list_services' ) ) : the_row(); ?>
+                    <div>
+                        <div class="et-2-feature-card rounded-[30px] overflow-hidden group relative">
+                            <div class="et-2-feature-card-txt bg-white p-[30px]">
+                                <!-- icon -->
+                                <div class="w-[102px] aspect-square border-[10px] bg-etBlue border-[#EDF3FE] rounded-full flex items-center justify-center mb-[20px]">
+                                    <img src="<?php the_sub_field( 'icon' ); ?>" alt="Feature icon" class="transition duration-[0.4s] group-hover:-scale-x-100">
+                                </div>
+        
+                                <!-- text -->
+                                <div>
+                                    <h5 class="font-medium text-[22px] text-etBlack mb-[8px]"><a href="#" class="hover:text-etBlue"><?php the_sub_field( 'title' ); ?></a></h5>
+                                    <!-- <p class="font-light text-etGray text-[16px]">Mauris ultrices ligula eget volutpat aliquet nullam</p> -->
+                                </div>
+                            </div>
+        
+                            <!-- index number -->
+                            <div class="absolute top-0 right-0 z-[1] w-[60px] aspect-square rounded-full bg-etBlue font-lato font-semibold text-[20px] text-white flex items-center justify-center">0<?php echo $no ; ?></div>
+                        </div>
+                    </div>
+                    <?php $no++; endwhile; ?>
+                    <?php endif; ?>
+                </div>
+            </div>
+    </div>
 </section>
 <?php endwhile; ?>
 <?php endif; ?>
 <?php if ( have_rows( 'section_testimonials',76 ) ) : ?>
         <?php while ( have_rows( 'section_testimonials',76 ) ) : the_row(); ?>
 
-    <section class="et-testimonial overflow-hidden py-[130px] xl:py-[80px] md:py-[60px]">
+    <section class="et-testimonial overflow-hidden py-[80px]">
         <div class="container mx-auto max-w-[1200px] px-[12px] xl:max-w-full">
             <!-- heading -->
             <div class="et-testimonial-heading text-center mb-[46px] xl:mb-[26px] lg:mb-[16px] gap-[15px]">
