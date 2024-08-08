@@ -797,7 +797,7 @@ h5.font-semibold.text-\[22px\].md\:text-\[20px\].text-etBlack.mb-\[4px\] {
     
                             <!-- text -->
                             <div>
-                                <h5 class="font-medium text-[22px] text-etBlack mb-[8px]"><a href="#" class="hover:text-etBlue"><?php the_sub_field( 'title' ); ?></a></h5>
+                                <h5 class="font-medium text-[18px] text-etBlack mb-[8px]"><a href="#" class="hover:text-etBlue"><?php the_sub_field( 'title' ); ?></a></h5>
                                 <!-- <p class="font-light text-etGray text-[16px]">Mauris ultrices ligula eget volutpat aliquet nullam</p> -->
                             </div>
                         </div>
