@@ -64,10 +64,6 @@ iframe {
 /* .bg-etBlue{
     background-color: #18377e;
 } */
-
-.testing-slider.okke.md\:hidden {
-    display: none;
-}
 @media only screen and (max-width: 1700px) {
     iframe {
     width: 70%;
@@ -125,9 +121,6 @@ h5.font-medium.text-\[22px\].text-etBlack.mb-\[8px\] {
     }
 }
     @media(max-width:600px) {
-        .testing-slider.okke.md\:hidden {
-    display: block;
-}
         .mySwiper2 {
             height: auto;
         }
@@ -187,7 +180,6 @@ h5.font-medium.text-\[22px\].text-etBlack.mb-\[8px\] {
     .et-testimony.relative.p-\[40px\].lg\:p-\[30px\].md\:p-\[20px\].border.border-\[\#D4DCED\].rounded-\[16px\].mt-\[60px\] {
     min-height: 350px;
 }
-
 
 
 
@@ -303,7 +295,6 @@ h5.font-medium.text-\[22px\].text-etBlack.mb-\[8px\] {
         </div>
     </div>
     <div class="container max-w-[calc(100%-37.1vw)] xxxl:max-w-[calc(100%-350px)] xl:max-w-[calc(100%-170px)] m-auto">
-    <div class="sm:hidden">
         <div class="grid grid-cols-4 md:grid-cols-3 sm:grid-cols-2 xxs:grid-cols-1 gap-[30px] lg:gap-[20px] items-start">
         <?php if ( have_rows( 'list_services' ) ) : ?>
 			<?php $no=1; while ( have_rows( 'list_services' ) ) : the_row(); ?>
@@ -330,34 +321,6 @@ h5.font-medium.text-\[22px\].text-etBlack.mb-\[8px\] {
 			<?php // No rows found ?>
 		<?php endif; ?>
         </div>
-    </div>
-    <div class="testing-slider okke md:hidden">
-                <div class="multiple-items">
-                <?php if ( have_rows( 'list_services' ) ) : ?>
-                    <?php $no =1; while ( have_rows( 'list_services' ) ) : the_row(); ?>
-                    <div>
-                        <div class="et-2-feature-card rounded-[30px] overflow-hidden group relative">
-                            <div class="et-2-feature-card-txt bg-white p-[30px]">
-                                <!-- icon -->
-                                <div class="w-[102px] aspect-square border-[10px] bg-etBlue border-[#EDF3FE] rounded-full flex items-center justify-center mb-[20px]">
-                                    <img src="<?php the_sub_field( 'icon' ); ?>" alt="Feature icon" class="transition duration-[0.4s] group-hover:-scale-x-100">
-                                </div>
-        
-                                <!-- text -->
-                                <div>
-                                    <h5 class="font-medium text-[22px] text-etBlack mb-[8px]"><a href="#" class="hover:text-etBlue"><?php the_sub_field( 'title' ); ?></a></h5>
-                                    <!-- <p class="font-light text-etGray text-[16px]">Mauris ultrices ligula eget volutpat aliquet nullam</p> -->
-                                </div>
-                            </div>
-        
-                            <!-- index number -->
-                            <div class="absolute top-0 right-0 z-[1] w-[60px] aspect-square rounded-full bg-etBlue font-lato font-semibold text-[20px] text-white flex items-center justify-center">0<?php echo $no ; ?></div>
-                        </div>
-                    </div>
-                    <?php $no++; endwhile; ?>
-                    <?php endif; ?>
-                </div>
-            </div>
     </div>
 </section>
 <?php endwhile; ?>
