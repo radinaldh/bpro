@@ -21,6 +21,7 @@ get_header('rsvp'); ?>
             <div id="card" class="card mx-auto" style="max-width: 600px;">
                 <div class="card-body text-center">
                     <?php if ($checked_in === 'true') : ?>
+                        <img class="text-center mb-2" src="https://bethanyprofessional.com/app/themes/twentyfourteen/assets/new-img/logo-color.png" />
                         <h5 class="card-title">Submission Detail</h5>
                         <p class="card-text mb-0"><strong>Name:</strong> <?php echo esc_html($name); ?></p>
                         <p class="card-text mb-0"><strong>Email:</strong> <?php echo esc_html($email); ?></p>
@@ -29,10 +30,11 @@ get_header('rsvp'); ?>
                         <h4 class="fw-light mb-0">PROFESSIONAL WORKSHOP</h4>
                         <h3 class="fw-bold">DISCOVER CYBER SECURITY AND FINANCIAL TRAP</h3>
                     <?php else : ?>
+                        <img class="text-center mb-2" src="https://bethanyprofessional.com/app/themes/twentyfourteen/assets/new-img/logo-color.png" />
                         <h5 class="card-title">Submission Details</h5>
-                        <p class="card-text"><strong>Name:</strong> <?php echo esc_html($name); ?></p>
-                        <p class="card-text"><strong>Email:</strong> <?php echo esc_html($email); ?></p>
-                        <p class="card-text"><strong>Phone:</strong> <?php echo esc_html($phone); ?></p>
+                        <p class="card-text mb-0"><strong>Name:</strong> <?php echo esc_html($name); ?></p>
+                        <p class="card-text mb-0"><strong>Email:</strong> <?php echo esc_html($email); ?></p>
+                        <p class="card-text mb-2"><strong>Phone:</strong> <?php echo esc_html($phone); ?></p>
                         <div class="d-flex justify-content-center">
                             <img class="qr-image" src="<?php echo esc_url($qr_code_url); ?>" alt="QR Code" />
                         </div>
