@@ -65,18 +65,22 @@ get_header();
                         // Format phone number
                         $phone = format_phone_number_for_whatsapp($phone);
 
-                        // Construct the WhatsApp message
-                        $whatsapp_message = rawurlencode(
-                            "*Invitation QR Code for DISCOVER CYBER SECURITY AND FINANCIAL TRAP*,\n " .
-                                " *Name: $name*,\n" .
-                                " *Email: $email*,\n" .
-                                " *Phone: +$phone*,\n\n" .
-                                " *QR Code:* " . get_permalink() . ",\n\n" .
-                                " This message was automatically generated."
-                        );
+                        // // Construct the WhatsApp message
+                        // $whatsapp_message = rawurlencode(
+                        //     "*Invitation QR Code for DISCOVER CYBER SECURITY AND FINANCIAL TRAP*,\n " .
+                        //         " *Name: $name*,\n" .
+                        //         " *Email: $email*,\n" .
+                        //         " *Phone: +$phone*,\n\n" .
+                        //         " *QR Code:* " . get_permalink() . ",\n\n" .
+                        //         " This message was automatically generated."
+                        // );
 
-                        // Generate the WhatsApp URL
+                        // // Generate the WhatsApp URL
+                        // $whatsapp_url = "https://api.whatsapp.com/send?phone=$phone&text=$whatsapp_message";
+
+                        $whatsapp_message = rawurlencode("Shalom *" . $name . "*! Terimakasih telah mendaftarkan diri di acara “*Discover Digitalization, Cyber Security and Financial Trap*”. Silahkan cek QR Code di email (Inbox atau Spam) yang didaftarkan. Salam hangat, *Bethany Professional*.");
                         $whatsapp_url = "https://api.whatsapp.com/send?phone=$phone&text=$whatsapp_message";
+
                 ?>
                         <tr>
                             <td><?php echo esc_html($name); ?></td>
