@@ -231,13 +231,13 @@ get_header('rsvp'); ?>
                 <div>
                     <div class="d-flex justify-content-center align-items-center gap-3">
                         <div class="border border-1 border-white rounded-circle px-2 py-1">
-                            <a href="https://tiktok.com"><i class="fa-brands fa-tiktok"></i></a>
+                            <a href="https://www.tiktok.com/@b.pro.manyar"><i class="fa-brands fa-tiktok"></i></a>
                         </div>
                         <div class="border border-1 border-white rounded-circle px-2 py-1">
-                            <a href="https://instagram.com"><i class="fa-brands fa-instagram"></i></a>
+                            <a href="https://www.instagram.com/b.pro.manyar/"><i class="fa-brands fa-instagram"></i></a>
                         </div>
                         <div class="border border-1 border-white rounded-circle px-2 py-1">
-                            <a href="https://facebook.com"><i class="fa-brands fa-facebook"></i></a>
+                            <a href="https://www.facebook.com/profile.php?id=100067809792113"><i class="fa-brands fa-facebook"></i></a>
                         </div>
                     </div>
                 </div>
