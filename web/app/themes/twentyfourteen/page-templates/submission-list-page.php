@@ -67,15 +67,16 @@ get_header();
 
                         // Generate WhatsApp URL
                         $whatsapp_message = urlencode(
-                            "*Invitation QR Code for DISCOVER CYBER SECURITY AND FINANCIAL TRAP*\n" .
-                                "Name: $name\n" .
-                                "Email: $email\n" .
-                                "Phone: +$phone\n\n" .
+                            "*Invitation QR Code for DISCOVER CYBER SECURITY AND FINANCIAL TRAP*" . "\n" .
+                                "Name: $name" . "\n" .
+                                "Email: $email" . "\n" .
+                                "Phone: +$phone" . "\n\n" .
                                 "QR Code: " . get_permalink() . "\n\n" .
                                 "This message was automatically generated."
                         );
 
                         $whatsapp_url = "https://api.whatsapp.com/send?phone=$phone&text=$whatsapp_message";
+
                 ?>
                         <tr>
                             <td><?php echo esc_html($name); ?></td>
