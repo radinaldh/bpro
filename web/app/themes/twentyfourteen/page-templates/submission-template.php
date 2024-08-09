@@ -12,6 +12,7 @@ get_header('rsvp'); ?>
 <section class="py-5 vh-100 d-flex align-items-center">
     <div class="container">
         <?php if (get_post_type() == 'submission') :
+            $checked_in = get_post_meta(get_the_ID(), 'checked_in', true);
             $qr_code_url = get_post_meta(get_the_ID(), 'qr_code_url', true);
             $name = get_the_title();
             $email = get_post_meta(get_the_ID(), 'email', true);
@@ -19,16 +20,24 @@ get_header('rsvp'); ?>
         ?>
             <div id="card" class="card mx-auto" style="max-width: 600px;">
                 <div class="card-body text-center">
-                    <h5 class="card-title">Submission Details</h5>
-                    <p class="card-text"><strong>Name:</strong> <?php echo esc_html($name); ?></p>
-                    <p class="card-text"><strong>Email:</strong> <?php echo esc_html($email); ?></p>
-                    <p class="card-text"><strong>Phone:</strong> <?php echo esc_html($phone); ?></p>
-                    <div class="d-flex justify-content-center">
-                        <img class="qr-image" src="<?php echo esc_url($qr_code_url); ?>" alt="QR Code" />
-                    </div>
-                    <div class="mt-3 text-center">
-                        <button id="downloadCardBtn" class="btn btn-secondary">Download Card as Image</button>
-                    </div>
+                    <?php if ($checked_in === 'true') : ?>
+                        <h5 class="card-title">Submission Details</h5>
+                        <p class="card-text"><strong>Name:</strong> <?php echo esc_html($name); ?></p>
+                        <p class="card-text"><strong>Email:</strong> <?php echo esc_html($email); ?></p>
+                        <p class="card-text"><strong>Phone:</strong> <?php echo esc_html($phone); ?></p>
+                        <h2 class="my-2">Welcome to PROFESSIONAL WORKSHOP: DISCOVER CYBER SECURITY AND FINANCIAL TRAP</h2>
+                    <?php else : ?>
+                        <h5 class="card-title">Submission Details</h5>
+                        <p class="card-text"><strong>Name:</strong> <?php echo esc_html($name); ?></p>
+                        <p class="card-text"><strong>Email:</strong> <?php echo esc_html($email); ?></p>
+                        <p class="card-text"><strong>Phone:</strong> <?php echo esc_html($phone); ?></p>
+                        <div class="d-flex justify-content-center">
+                            <img class="qr-image" src="<?php echo esc_url($qr_code_url); ?>" alt="QR Code" />
+                        </div>
+                        <div class="mt-3 text-center">
+                            <button id="downloadCardBtn" class="btn btn-secondary">Download Card as Image</button>
+                        </div>
+                    <?php endif; ?>
                 </div>
             </div>
         <?php endif; ?>
@@ -58,6 +67,30 @@ get_header('rsvp'); ?>
             link.download = 'Submission_Card.png';
             link.click();
         });
+    });
+
+    document.addEventListener('DOMContentLoaded', function() {
+        const postId = <?php echo get_the_ID(); ?>; // Get the current post ID
+
+        function checkStatus() {
+            jQuery.ajax({
+                url: '<?php echo admin_url('admin-ajax.php'); ?>',
+                type: 'POST',
+                data: {
+                    action: 'check_submission_status',
+                    post_id: postId
+                },
+                success: function(response) {
+                    if (response.success && response.data.checked_in === 'true') {
+                        // If checked in status is true, reload the page
+                        window.location.reload();
+                    }
+                }
+            });
+        }
+
+        // Check the status every 5 seconds
+        setInterval(checkStatus, 5000);
     });
 </script>
 

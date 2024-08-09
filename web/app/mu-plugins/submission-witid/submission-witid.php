@@ -481,3 +481,19 @@ function enqueue_admin_custom_js()
     wp_localize_script('custom-admin-js', 'ajax_params', array('ajax_url' => admin_url('admin-ajax.php')));
 }
 add_action('admin_enqueue_scripts', 'enqueue_admin_custom_js');
+
+function check_submission_status()
+{
+    $post_id = isset($_POST['post_id']) ? intval($_POST['post_id']) : 0;
+
+    if (!$post_id) {
+        wp_send_json_error('Invalid post ID.');
+        return;
+    }
+
+    $checked_in = get_post_meta($post_id, 'checked_in', true);
+    wp_send_json_success(array('checked_in' => $checked_in));
+}
+
+add_action('wp_ajax_check_submission_status', 'check_submission_status');
+add_action('wp_ajax_nopriv_check_submission_status', 'check_submission_status');
