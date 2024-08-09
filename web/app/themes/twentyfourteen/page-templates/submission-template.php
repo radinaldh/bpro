@@ -25,9 +25,9 @@ get_header('rsvp'); ?>
                         <p class="card-text"><strong>Name:</strong> <?php echo esc_html($name); ?></p>
                         <p class="card-text"><strong>Email:</strong> <?php echo esc_html($email); ?></p>
                         <p class="card-text"><strong>Phone:</strong> <?php echo esc_html($phone); ?></p>
-                        <h3 class="my-2">You are already checked in!</h3>
-                        <h4 class="fw-bold">PROFESSIONAL WORKSHOP</h4>
-                        <h2 class="fw-bold">DISCOVER CYBER SECURITY AND FINANCIAL TRAP</h2>
+                        <h6 class="mb-0">You are already checked in!</h6>
+                        <h4 class="fw-light mb-0">PROFESSIONAL WORKSHOP</h4>
+                        <h3 class="fw-bold">DISCOVER CYBER SECURITY AND FINANCIAL TRAP</h3>
                     <?php else : ?>
                         <h5 class="card-title">Submission Details</h5>
                         <p class="card-text"><strong>Name:</strong> <?php echo esc_html($name); ?></p>
