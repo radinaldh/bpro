@@ -41,7 +41,7 @@ add_action('init', 'register_submission_post_type');
 
 function enqueue_custom_js()
 {
-    wp_enqueue_script('custom-js', get_template_directory_uri() . '/js/custom.js', array('jquery'), null, true);
+    wp_enqueue_script('custom-js', plugin_dir_url(__FILE__) . 'js/custom.js', array('jquery'), null, true);
     wp_localize_script('custom-js', 'ajax_params', array('ajax_url' => admin_url('admin-ajax.php')));
 }
 add_action('wp_enqueue_scripts', 'enqueue_custom_js');
@@ -371,7 +371,7 @@ add_action('init', 'custom_logout');
 
 function enqueue_custom_login_js()
 {
-    wp_enqueue_script('custom-login-js', get_template_directory_uri() . '/js/custom-login.js', array('jquery'), null, true);
+    wp_enqueue_script('custom-login-js', plugin_dir_url(__FILE__) . '/js/custom-login.js', array('jquery'), null, true);
 }
 add_action('wp_enqueue_scripts', 'enqueue_custom_login_js');
 
@@ -473,7 +473,7 @@ add_action('admin_notices', 'display_email_sent_notice');
 
 function enqueue_admin_custom_js()
 {
-    wp_enqueue_script('custom-admin-js', get_template_directory_uri() . '/js/custom-admin.js', array('jquery'), null, true);
+    wp_enqueue_script('custom-admin-js', plugin_dir_url(__FILE__) . '/js/custom-admin.js', array('jquery'), null, true);
     wp_localize_script('custom-admin-js', 'ajax_params', array('ajax_url' => admin_url('admin-ajax.php')));
 }
 add_action('admin_enqueue_scripts', 'enqueue_admin_custom_js');
