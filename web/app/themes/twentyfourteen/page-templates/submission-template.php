@@ -51,18 +51,16 @@ get_header('rsvp'); ?>
         const card = document.getElementById('card');
         const downloadButton = document.getElementById('downloadCardBtn');
 
-        // Hide the download button before capturing
         downloadButton.style.display = 'none';
 
         html2canvas(card, {
-            useCORS: true, // Enable cross-origin image loading
-            logging: true, // Enable logging for debugging
+            useCORS: true,
+            logging: true,
             onclone: (documentClone) => {
                 documentClone.getElementById('downloadCardBtn').style.display = 'none';
             }
         }).then(canvas => {
-            // Restore the download button after capturing
-            downloadButton.style.display = 'block';
+            downloadButton.style.display = 'inline';
 
             const link = document.createElement('a');
             link.href = canvas.toDataURL('image/png');
