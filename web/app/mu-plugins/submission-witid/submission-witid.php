@@ -238,8 +238,11 @@ function check_auth_token()
 function handle_check_in($request)
 {
     $token = $request->get_param('token');
-    if (!$token) {
-        return new WP_Error('no_token', 'No token provided', array('status' => 400));
+    $secret_key = $request->get_header('x-secret-key');
+    $expected_key = 'aB7#dfG8*kLm@1nOpQr9+T!sUvWx2yZ';
+
+    if (!$token || !$secret_key || $secret_key !== $expected_key) {
+        return new WP_Error('unauthorized_access', 'Unauthorized access', array('status' => 403));
     }
 
     $args = [

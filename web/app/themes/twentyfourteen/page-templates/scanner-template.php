@@ -98,24 +98,18 @@ get_header();
 
 
     function onScanSuccess(decodedText, decodedResult) {
-
         if (!scanning) return;
 
+        scanning = false;
+        const url = new URL(decodedText);
+        const token = url.searchParams.get('token');
 
-
-        scanning = false; // Stop further scans
-
-        console.log(`Code matched = ${decodedText}`, decodedResult);
-
-        const url = new URL(decodedText); // Assuming the QR code contains a URL
-
-        const token = url.searchParams.get('token'); // Correct extraction of the token
-
-        console.log('Token:', token); // Verify the token in the console
-
-
-
-        fetch(`https://bethanyprofessional.com/wp-json/bethany/v1/check-in?token=${encodeURIComponent(token)}`)
+        fetch(`https://bethanyprofessional.com/wp-json/bethany/v1/check-in?token=${encodeURIComponent(token)}`, {
+                method: 'GET',
+                headers: {
+                    'x-secret-key': 'aB7#dfG8*kLm@1nOpQr9+T!sUvWx2yZ'
+                }
+            })
             .then(response => response.json())
             .then(data => {
                 if (data.success) {
@@ -129,18 +123,10 @@ get_header();
                 console.error('API call failed:', error);
                 showAlert('Check-in failed due to network error.');
             });
-
-
     }
 
-
-
     function onScanFailure(error) {
-
-        // Handle scan failure, usually better to do nothing.
-
         console.warn(`Code scan error = ${error}`);
-
     }
 
 
