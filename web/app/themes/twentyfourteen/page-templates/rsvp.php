@@ -112,7 +112,7 @@ get_header('rsvp'); ?>
                         REGISTRATION
                     </p>
                     <p class="fw-bold border border-1 border-white p-1 small-text">
-                        <a class="text-decoration-none" href="bit.ly/bproevent">BIT.LY/BPROEVENT</a>
+                        <a class="text-decoration-none" href="https://bit.ly/bproevent">BIT.LY/BPROEVENT</a>
                     </p>
                 </div>
             </div>
