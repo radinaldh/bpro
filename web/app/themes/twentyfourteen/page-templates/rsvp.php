@@ -251,13 +251,13 @@ get_header('rsvp'); ?>
     <div class="modal-dialog">
         <div class="modal-content">
             <div class="modal-header">
-                <h5 class="modal-title" id="successModalLabel">Submission Successful</h5>
+                <h5 class="modal-title text-black" id="successModalLabel">Submission Successful</h5>
                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
-            <div class="modal-body">
+            <div class="modal-body text-black">
                 Your submission was successful!
             </div>
-            <div class="modal-footer">
+            <div class="modal-footer text-black">
                 <button type="button" class="btn btn-primary" id="successOkButton">OK</button>
             </div>
         </div>
@@ -269,13 +269,13 @@ get_header('rsvp'); ?>
     <div class="modal-dialog">
         <div class="modal-content">
             <div class="modal-header">
-                <h5 class="modal-title" id="errorModalLabel">Submission Error</h5>
+                <h5 class="modal-title text-black" id="errorModalLabel">Submission Error</h5>
                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
-            <div class="modal-body">
+            <div class="modal-body text-black">
                 There was an error with your submission. Please try again.
             </div>
-            <div class="modal-footer">
+            <div class="modal-footer text-black">
                 <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
             </div>
         </div>
