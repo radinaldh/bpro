@@ -42,6 +42,7 @@ get_header();
                     <th>Phone</th>
                     <th>Confirmed?</th>
                     <th>Send Email</th>
+                    <th>Send WhatsApp</th>
                 </tr>
             </thead>
             <tbody>
@@ -60,6 +61,21 @@ get_header();
                         $checked_in = get_post_meta(get_the_ID(), 'checked_in', true);
                         $email_sent = get_post_meta(get_the_ID(), 'email_sent', true);
                         $button_text = $email_sent ? 'Send Email Again' : 'Send Email';
+
+                        // Format phone number
+                        $phone = format_phone_number_for_whatsapp($phone);
+
+                        // Generate WhatsApp URL
+                        $whatsapp_message = urlencode(
+                            "*Invitation QR Code for DISCOVER CYBER SECURITY AND FINANCIAL TRAP*\n" .
+                                "Name: $name\n" .
+                                "Email: $email\n" .
+                                "Phone: +$phone\n\n" .
+                                "QR Code: " . get_permalink() . "\n\n" .
+                                "This message was automatically generated."
+                        );
+
+                        $whatsapp_url = "https://api.whatsapp.com/send?phone=$phone&text=$whatsapp_message";
                 ?>
                         <tr>
                             <td><?php echo esc_html($name); ?></td>
@@ -69,6 +85,9 @@ get_header();
                             <td>
                                 <button class="btn btn-primary send-email" data-post-id="<?php echo get_the_ID(); ?>"><?php echo $button_text; ?></button>
                             </td>
+                            <td>
+                                <a href="<?php echo esc_url($whatsapp_url); ?>" target="_blank" class="btn btn-success">Send WhatsApp</a>
+                            </td>
                         </tr>
                     <?php
                     endwhile;
@@ -76,7 +95,7 @@ get_header();
                 else :
                     ?>
                     <tr>
-                        <td colspan="5" class="text-center">No submissions found.</td>
+                        <td colspan="6" class="text-center">No submissions found.</td>
                     </tr>
                 <?php
                 endif;

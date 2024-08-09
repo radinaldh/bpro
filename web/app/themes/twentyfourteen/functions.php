@@ -1165,6 +1165,16 @@ function send_qr_code_email($post_id)
 	}
 }
 
+function format_phone_number_for_whatsapp($phone)
+{
+	$phone = str_replace([' ', '-', '+'], '', $phone);
+
+	if (strpos($phone, '0') === 0) {
+		$phone = '62' . substr($phone, 1);
+	}
+
+	return $phone;
+}
 
 
 function add_send_email_button($column, $post_id)
@@ -1172,10 +1182,31 @@ function add_send_email_button($column, $post_id)
 	if ($column === 'send_email') {
 		$email_sent = get_post_meta($post_id, 'email_sent', true);
 		$button_text = $email_sent ? 'Send Email Again' : 'Send Email';
-		echo '<button class="button send-email" data-post-id="' . $post_id . '">' . $button_text . '</button>';
+		echo '<button class="button send-email" data-post-id="' . $post_id . '"style="margin-right: 10px">' . $button_text . '</button>';
+
+		$phone = get_post_meta($post_id, 'phone', true);
+		$phone = format_phone_number_for_whatsapp($phone);
+
+		$name = get_the_title($post_id);
+		$email = get_post_meta($post_id, 'email', true);
+		$qr_code_url = get_permalink();
+
+		$whatsapp_message = urlencode(
+			"*Invitation QR Code for DISCOVER CYBER SECURITY AND FINANCIAL TRAP*\n" .
+				"Name: $name\n" .
+				"Email: $email\n" .
+				"Phone: +$phone\n\n" .
+				"QR Code: $qr_code_url\n\n" .
+				"This message was automatically generated."
+		);
+
+		$whatsapp_url = "https://api.whatsapp.com/send?phone=$phone&text=$whatsapp_message";
+
+		echo '<a href="' . $whatsapp_url . '" target="_blank" class="button send-whatsapp">Send WhatsApp</a>';
 	}
 }
 add_action('manage_submission_posts_custom_column', 'add_send_email_button', 10, 2);
+
 
 
 
