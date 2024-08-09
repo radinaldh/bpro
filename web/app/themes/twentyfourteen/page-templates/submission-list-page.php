@@ -79,7 +79,7 @@ get_header();
                         // $whatsapp_url = "https://api.whatsapp.com/send?phone=$phone&text=$whatsapp_message";
 
                         $whatsapp_message = rawurlencode("Shalom *" . $name . "*!\n Terima kasih telah mendaftarkan diri di event workshop “Discover Cyber Security & Financial Trap”. Pastikan kamu telah menerima QR code kepesertaan, atau silakan cek di email (Inbox atau Spam) yang didaftarkan. Kamu bisa menunjukkan QR code tersebut saat registrasi ulang di lokasi. See you there!\n\n Best Regards,\n
- *Bethany Professional*");
+ *Bethany Professional*.");
                         $whatsapp_url = "https://api.whatsapp.com/send?phone=$phone&text=$whatsapp_message";
 
                 ?>
