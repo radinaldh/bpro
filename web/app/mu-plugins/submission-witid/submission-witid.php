@@ -384,6 +384,7 @@ function send_qr_code_email($post_id)
     $email = get_post_meta($post_id, 'email', true);
     $name = get_the_title($post_id);
     $phone = get_post_meta($post_id, 'phone', true);
+    $permalink = get_permalink();
     $qr_code_url = get_post_meta($post_id, 'qr_code_url', true);
 
     $subject = 'Invitation QR Code for DISCOVER CYBER SECURITY AND FINANCIAL TRAP';
@@ -393,6 +394,7 @@ function send_qr_code_email($post_id)
     $body .= '<p>Name: ' . $name . '<br>';
     $body .= 'Email: ' . $email . '<br>';
     $body .= 'Phone: ' . $phone . '</p>';
+    $body .= '<p>QRCode Page: ' . $permalink . '</p>';
     $body .= '<p>QRCode Invitation:</p>';
     $body .= '<p><img src="' . $qr_code_url . '" alt="QR Code"></p>';
     $body .= '<p>Terima kasih.<br>Tuhan Yesus memberkati<br>Be Success, Be Profesional.</p>';
