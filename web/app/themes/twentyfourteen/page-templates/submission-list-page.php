@@ -65,18 +65,20 @@ get_header();
                         // Format phone number
                         $phone = format_phone_number_for_whatsapp($phone);
 
-                        // Generate WhatsApp URL
+                        // Construct the WhatsApp message
                         $whatsapp_message =
-                            "*Invitation QR Code for DISCOVER CYBER SECURITY AND FINANCIAL TRAP*" . "%0A" .
-                            "Name: $name" . "%0A" .
-                            "Email: $email" . "%0A" .
-                            "Phone: +$phone" . "%0A%0A" .
-                            "QR Code: " . get_permalink() . "%0A%0A" .
+                            "*Invitation QR Code for DISCOVER CYBER SECURITY AND FINANCIAL TRAP*" . "\n" .
+                            "Name: $name" . "\n" .
+                            "Email: $email" . "\n" .
+                            "Phone: +$phone" . "\n\n" .
+                            "QR Code: " . get_permalink() . "\n\n" .
                             "This message was automatically generated.";
 
+                        // Encode the message for URL use
+                        $whatsapp_message = rawurlencode($whatsapp_message);
+
+                        // Generate the WhatsApp URL
                         $whatsapp_url = "https://api.whatsapp.com/send?phone=$phone&text=$whatsapp_message";
-
-
                 ?>
                         <tr>
                             <td><?php echo esc_html($name); ?></td>
