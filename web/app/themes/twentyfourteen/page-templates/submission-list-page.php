@@ -67,11 +67,11 @@ get_header();
 
                         // Construct the WhatsApp message
                         $whatsapp_message = rawurlencode(
-                            "*Invitation QR Code for DISCOVER CYBER SECURITY AND FINANCIAL TRAP* \n " .
-                                " *Name: $name*\n" .
-                                " *Email: $email*\n" .
-                                " *Phone: +$phone*\n\n" .
-                                " *QR Code:* " . get_permalink() . "\n\n" .
+                            "*Invitation QR Code for DISCOVER CYBER SECURITY AND FINANCIAL TRAP*,\n " .
+                                " *Name: $name*,\n" .
+                                " *Email: $email*,\n" .
+                                " *Phone: +$phone*,\n\n" .
+                                " *QR Code:* " . get_permalink() . ",\n\n" .
                                 " This message was automatically generated."
                         );
 
