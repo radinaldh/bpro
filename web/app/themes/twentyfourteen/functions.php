@@ -812,17 +812,17 @@ add_action('wp_enqueue_scripts', 'enqueue_custom_js');
 function handle_form_submission()
 {
 
-	$recaptcha_response = sanitize_text_field($_POST['g-recaptcha-response']);
-	$secret_key = '6Ld0hyIqAAAAAN_coXvQd6zatH7lJYbC8MU4lXWw'; // Replace with your actual secret key
-	$response = wp_remote_get("https://www.google.com/recaptcha/api/siteverify?secret={$secret_key}&response={$recaptcha_response}");
+	// $recaptcha_response = sanitize_text_field($_POST['g-recaptcha-response']);
+	// $secret_key = '6Ld0hyIqAAAAAN_coXvQd6zatH7lJYbC8MU4lXWw'; // Replace with your actual secret key
+	// $response = wp_remote_get("https://www.google.com/recaptcha/api/siteverify?secret={$secret_key}&response={$recaptcha_response}");
 
-	$response_body = wp_remote_retrieve_body($response);
-	$result = json_decode($response_body);
+	// $response_body = wp_remote_retrieve_body($response);
+	// $result = json_decode($response_body);
 
-	if (!$result->success) {
-		wp_send_json_error('reCAPTCHA verification failed.');
-		return;
-	}
+	// if (!$result->success) {
+	// 	wp_send_json_error('reCAPTCHA verification failed.');
+	// 	return;
+	// }
 
 	// Check nonce and sanitize inputs as previously discussed
 	$post_id = wp_insert_post([

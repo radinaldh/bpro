@@ -201,9 +201,9 @@ get_header('rsvp'); ?>
                         <h4 class="fw-light mb-0 text-center">Phone No.</h4>
                         <input name="phone" class="bg-white border-none rounded w-100" type="text">
                     </div>
-                    <div class="col-10 d-flex justify-content-center">
-                        <div class="g-recaptcha" data-sitekey="6Ld0hyIqAAAAACEprRYsHLDXoGHpFDOFY22Qg3f0"></div> <!-- Replace YOUR_SITE_KEY with your actual site key -->
-                    </div>
+                    <!-- <div class="col-10 d-flex justify-content-center">
+                        <div class="g-recaptcha" data-sitekey="6Ld0hyIqAAAAACEprRYsHLDXoGHpFDOFY22Qg3f0"></div>
+                    </div> -->
                     <div class="col-10">
                         <h4 class="fw-light">
                             Pembayaran commitment fee dapat ditransfer melalui <br />
@@ -287,7 +287,7 @@ get_header('rsvp'); ?>
 </section>
 
 
-<script src="https://www.google.com/recaptcha/api.js" async defer></script>
+<!-- <script src="https://www.google.com/recaptcha/api.js" async defer></script> -->
 <script>
     function handleClick() {
         // Change the envelope icon immediately
