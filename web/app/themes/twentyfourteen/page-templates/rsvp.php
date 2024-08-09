@@ -287,6 +287,7 @@ get_header('rsvp'); ?>
 </section>
 
 
+<script src="https://www.google.com/recaptcha/api.js" async defer></script>
 <script>
     function handleClick() {
         // Change the envelope icon immediately
