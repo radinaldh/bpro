@@ -21,10 +21,10 @@ get_header('rsvp'); ?>
             <div id="card" class="card mx-auto" style="max-width: 600px;">
                 <div class="card-body text-center">
                     <?php if ($checked_in === 'true') : ?>
-                        <h5 class="card-title">Submission Details</h5>
-                        <p class="card-text"><strong>Name:</strong> <?php echo esc_html($name); ?></p>
-                        <p class="card-text"><strong>Email:</strong> <?php echo esc_html($email); ?></p>
-                        <p class="card-text"><strong>Phone:</strong> <?php echo esc_html($phone); ?></p>
+                        <h5 class="card-title">Submission Detail</h5>
+                        <p class="card-text mb-0"><strong>Name:</strong> <?php echo esc_html($name); ?></p>
+                        <p class="card-text mb-0"><strong>Email:</strong> <?php echo esc_html($email); ?></p>
+                        <p class="card-text mb-0"><strong>Phone:</strong> <?php echo esc_html($phone); ?></p>
                         <h6 class="mb-0">You are already checked in!</h6>
                         <h4 class="fw-light mb-0">PROFESSIONAL WORKSHOP</h4>
                         <h3 class="fw-bold">DISCOVER CYBER SECURITY AND FINANCIAL TRAP</h3>
