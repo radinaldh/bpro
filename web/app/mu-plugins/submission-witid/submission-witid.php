@@ -384,7 +384,7 @@ function send_qr_code_email($post_id)
     $email = get_post_meta($post_id, 'email', true);
     $name = get_the_title($post_id);
     $phone = get_post_meta($post_id, 'phone', true);
-    $permalink = get_permalink();
+    $permalink = get_permalink($post_id);
     $qr_code_url = get_post_meta($post_id, 'qr_code_url', true);
 
     $subject = 'Invitation QR Code for DISCOVER CYBER SECURITY AND FINANCIAL TRAP';
