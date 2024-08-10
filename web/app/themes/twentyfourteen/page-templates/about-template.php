@@ -161,7 +161,7 @@ get_header('main');
                 $description = get_sub_field('bpro_vision_description');
             ?>
             <div class="vision mb-[40px] mt-[40px]">
-                <h2 class="text-[35px] sm:text-[24px] !text-white text-center"><?= $title ?></h2>
+                <h2 class="text-[35px] sm:text-[24px] !text-white text-center" style="font-style:normal;"><?= $title ?></h2>
                 <div class="txt mb-[40px]" style="max-width: 80%; margin: 20px auto;">
                     <p class="my-[10px] text-[15px] text-white text-center" style="font-style: normal;" ><?= $description ?></p>
                 </div>
