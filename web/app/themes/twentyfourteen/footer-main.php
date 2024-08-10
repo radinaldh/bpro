@@ -52,6 +52,7 @@
                     </div>
                     <!-- txt -->
                     <div>
+                        <h5 class="text-[12px]">Address</h5>
                         <h5 class="font-medium text-[18px] sm:text-[12px] gereja-oke">Gereja Bethany Manyar <br>
                         Jl. Manyar Rejo II No.36-38, Surabaya.</h5>
                     </div>
@@ -72,6 +73,7 @@
                     </div>
                     <!-- txt -->
                     <div>
+                        <h5 class="text-[12px]">Reach us</h5>
                         <h5 class="font-medium text-[18px] sm:text-[12px] gereja-oke"><a href="mailto:info@info@bethanyprofessional.com">info@bethanyprofessional.com</a></h5>
                     </div>
                 </div>
@@ -87,6 +89,7 @@
 
                     <!-- txt -->
                     <div>
+                        <h5 class="text-[12px]">Hotline</h5>
                         <h5 class="font-medium text-[18px] sm:text-[12px] gereja-oke"><a href="https://api.whatsapp.com/send?phone=6281131166111">0811-311-66111</a></h5>
                     </div>
                 </div>
