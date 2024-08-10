@@ -21,6 +21,7 @@ get_header('main');
     text-align: justify;
     list-style-type: disc;
     margin-left: 30px;
+    font-size: 16px;
 }
 
 .left ul li {
@@ -60,7 +61,7 @@ get_header('main');
                 </div>
 
                 <!-- txt -->
-                <div style="goks">
+                <div>
                     <h4 class="text-[30px] xs:text-[25px] xxs:text-[22px] font-medium text-etBlack mb-[11px] mt-[27px]">
                         <?php the_title();?></h4>
 
