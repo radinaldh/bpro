@@ -9,6 +9,13 @@ get_header('main');
 
 <style>
 
+.et-history-timeline.swiper-slide-thumb-active {
+    border-top:1px solid #fff;
+}
+
+.et-history-timeline::before {
+    background-color: #fff;
+}
 .before\:bg-etBlue\/80::before {
     content: var(--tw-content);
     background-color: #18377e;
@@ -41,6 +48,20 @@ get_header('main');
     .hero-banner::before {
         content: '';
         background-color: rgb(0 13 131 / 0.7);
+        height: 100%;
+        width: 100%;
+        top: 0;
+        bottom: 0;
+    }
+
+    .yo {
+        position: relative;
+    }
+
+    .yo::before {
+        content: '';
+        background-color:#18377e52;
+        position: absolute;
         height: 100%;
         width: 100%;
         top: 0;
@@ -148,7 +169,7 @@ get_header('main');
 </section>
 
 <!-- HISTORY SECTION START -->
-<section class="bg-[#001B52] relative z-[1] before:absolute before:inset-0 before:-z-[1] before:bg-[url('assets/img/history-bg.jpg')] before:bg-no-repeat before:bg-cover before:bg-center before:mix-blend-screen before:opacity-25 py-[130px] lg:py-[80px] md:py-[60px]">
+<section style="background-image:url('https://bethanyprofessional.com/app/uploads/2024/08/edwin-andrade-6liebVeAfrY-unsplash.jpg'); background-size:cover; background-position:center;" class="yo bg-[#001B52] relative z-[1] py-[130px] lg:py-[80px] md:py-[60px]">
     <div class="container mx-auto max-w-[1200px] px-[12px] xl:max-w-full">
         <!-- heading -->
         <div class="et-upcoming-events-heading text-center max-w-[60%] mx-auto md:max-w-[70%] sm:max-w-[80%] xs:max-w-full">
@@ -160,8 +181,8 @@ get_header('main');
                 $title = get_sub_field('bpro_vision_title');
                 $description = get_sub_field('bpro_vision_description');
             ?>
-            <div class="vision mb-[40px] mt-[40px]">
-                <h2 class="text-[35px] sm:text-[24px] !text-white text-center" style="font-style:normal;"><?= $title ?></h2>
+            <div class="vision relative mb-[40px] mt-[40px]">
+                <h2 class="text-[35px] sm:text-[24px] !text-white text-center" style="color:#fff; font-style:normal;"><?= $title ?></h2>
                 <div class="txt mb-[40px]" style="max-width: 80%; margin: 20px auto;">
                     <p class="my-[10px] text-[15px] text-white text-center" style="font-style: normal;" ><?= $description ?></p>
                 </div>
@@ -172,8 +193,8 @@ get_header('main');
             <?php while(have_rows('bpro_value')) : the_row();
                 $head_title = get_sub_field('bpro_value_title');
             ?>
-            <div class="vision mb-[40px]">
-                <h2 class="text-[35px] sm:text-[24px] !text-white text-center" style="font-style:normal;"><?= $head_title ?></h2>
+            <div class="vision mb-[40px] relative">
+                <h2 class="text-[35px] sm:text-[24px] !text-white text-center" style="color:#fff; font-style:normal;"><?= $head_title ?></h2>
                 <h3 class="font-semibold uproinhimgod">"U PRO IN HIM"</h3>
             </div>
             <?php if(have_rows('bpro_values')) :?>
