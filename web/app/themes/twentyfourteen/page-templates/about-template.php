@@ -163,7 +163,7 @@ get_header('main');
             <div class="vision mb-[40px] mt-[40px]">
                 <h2 class="text-[35px] sm:text-[24px] !text-white text-center"><?= $title ?></h2>
                 <div class="txt mb-[40px]" style="max-width: 80%; margin: 20px auto;">
-                    <p class="my-[10px] text-[15px] text-white text-center" ><?= $description ?></p>
+                    <p class="my-[10px] text-[15px] text-white text-center" style="text-align: normal;" ><?= $description ?></p>
                 </div>
             </div>
             <?php endwhile; ?>
@@ -204,7 +204,7 @@ get_header('main');
                                         <div class="explain bg-white h-[350px] xxs:h-[500px] relative rounded-[20px] px-[30px] py-[20px] xxs:px-[20px]">
                                             <h5 class="text-[24px] font-normal mb-[13px] sm:text-[20px]" style="color:rgb(0 27 82);"><?= $bigger_title_value ?></h5>
     
-                                            <div class="txt mb-[40px]">
+                                            <div class="txt mb-[40px]" style="text-align: normal;">
                                                 <p class="my-[10px] text-[15px]" style="text-align: justify;"><?= $description_value ?></p>
                                             </div>
                                             <div
