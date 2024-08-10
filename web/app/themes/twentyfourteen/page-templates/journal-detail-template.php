@@ -9,14 +9,14 @@ get_header('main');
 
 <style>
     .left p {
-    font-weight: 300;
     font-size: 16px;
     line-height: 1.6;
     margin-bottom: 30px;
     text-align: justify;
     }
 
-    .left ul {
+    .left ul,
+    .left ol {
     margin-bottom: 30px;
     text-align: justify;
     list-style-type: disc;
@@ -26,6 +26,7 @@ get_header('main');
 .left ul li {
     font-size: 16px;
 }
+
 </style>
 
 <!-- BREADCRUMB SECTION START -->
@@ -59,7 +60,7 @@ get_header('main');
                 </div>
 
                 <!-- txt -->
-                <div>
+                <div style="goks">
                     <h4 class="text-[30px] xs:text-[25px] xxs:text-[22px] font-medium text-etBlack mb-[11px] mt-[27px]">
                         <?php the_title();?></h4>
 
