@@ -89,7 +89,7 @@
 
                     <!-- txt -->
                     <div>
-                        <h5 class="text-[12px] gereja-oke">Hotline</h5>
+                        <h5 class="text-[12px] gereja-oke">Hotline BPro</h5>
                         <h5 class="font-medium text-[18px] sm:text-[12px] gereja-oke"><a href="https://api.whatsapp.com/send?phone=6281131166111">0811-311-66111</a></h5>
                     </div>
                 </div>
