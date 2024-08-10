@@ -39,6 +39,28 @@ get_header('main'); ?>
     object-fit: cover;
 }
 
+.yo {
+    position: relative;
+}
+
+.yo::before {
+    content: '';
+    background-color:#18377e52;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    bottom: 0;
+}
+
+.hero-banner::before {
+    content: '';
+    background-color: rgb(0 13 131 / 0.7);
+    height: 100%;
+    width: 100%;
+    top: 0;
+    bottom: 0;
+}
 @media screen and (max-width: 600px) {
     .single-fa .et-schedule__heading {
         width: 100%;
@@ -130,7 +152,7 @@ get_header('main'); ?>
 <?php if ( have_rows( 'section_header' ) ) : ?>
 <?php while ( have_rows( 'section_header' ) ) : the_row(); ?>
 <section style="background-image:url('<?php the_sub_field( 'background_image' ); ?>'); background-size:cover; background-position:center" 
-    class="et-breadcrumb bg-[#000D83] pt-[210px] lg:pt-[190px] sm:pt-[160px] pb-[130px] lg:pb-[110px] sm:pb-[80px] relative z-[1] before:absolute before:inset-0 before:bg-[url('<?= get_template_directory_uri(); ?>/assets/img/breadcrumb-bg.jpg')] before:bg-no-repeat before:bg-cover before:bg-center before:-z-[1] before:opacity-30">
+    class="hero-banner et-breadcrumb bg-[#000D83] pt-[210px] lg:pt-[190px] sm:pt-[160px] pb-[130px] lg:pb-[110px] sm:pb-[80px] relative z-[1] before:absolute before:inset-0 before:bg-[url('<?= get_template_directory_uri(); ?>/assets/img/breadcrumb-bg.jpg')] before:bg-no-repeat before:bg-cover before:bg-center before:-z-[1] before:opacity-30">
     <div class="container mx-auto max-w-[1200px] px-[12px] xl:max-w-full text-center text-white">
         <h1 class="et-breadcrumb-title font-medium text-[56px] md:text-[50px] sm:text-[22px]">
             <?php the_sub_field( 'title' ); ?></h1>
@@ -216,18 +238,16 @@ get_header('main'); ?>
 <?php if ( have_rows( 'section_join_us_at_fa_bpro' ) ) : ?>
 	<?php while ( have_rows( 'section_join_us_at_fa_bpro' ) ) : the_row(); ?>
 <!-- HISTORY SECTION START -->
-<section
-    class="bg-[#001B52] relative z-[1] before:absolute before:inset-0 before:-z-[1] before:bg-[url('<?= get_template_directory_uri(); ?>/assets/img/history-bg.jpg')] before:bg-no-repeat before:bg-cover before:bg-center before:mix-blend-screen before:opacity-25 py-[130px] lg:py-[80px] md:py-[60px]">
+<section style="background-image:url('<?= get_template_directory_uri()?>/assets/new-img/demo-banner-3.jpeg'); background-size:cover; background-position:center; background-attachment:fixed" class="yo relative z-[1] py-[130px] lg:py-[80px] md:py-[60px]">
     <div class="container mx-auto max-w-[1200px] px-[12px] xl:max-w-full">
         <!-- heading -->
-        <div
-            class="et-upcoming-events-heading text-center max-w-[60%] mx-auto mb-[52px] xl:mb-[42px] lg:mb-[32px] md:max-w-[70%] sm:max-w-[80%] xs:max-w-full">
-            <h6 class="et-section-sub-title !text-white"><?php the_sub_field( 'tag' ); ?></h6>
-            <h2 class=" !text-white text-[25px] sm:text-[24px]"><?php the_sub_field( 'title' ); ?></h2>
+        <div class="et-upcoming-events-heading text-center max-w-[60%] mx-auto mb-[52px] xl:mb-[42px] lg:mb-[32px] md:max-w-[70%] sm:max-w-[80%] xs:max-w-full">
+            <h6 class="et-section-sub-title !text-white relative"><?php the_sub_field( 'tag' ); ?></h6>
+            <h2 class=" !text-white text-[25px] sm:text-[24px] relative"><?php the_sub_field( 'title' ); ?></h2>
         </div>
 
         <div
-            class="filter-list-fa flex lg:flex-wrap items-center justify-center lg:justify-center sm:justify-start gap-y-[15px] shadow-[0_4px_50px_rgba(0,0,0,0.07)] mb-[60px] rounded-full xxs:rounded-[30px] lg:py-[15px] px-[30px] pr-[6px] md:px-[20px] md:pr-[6px] py-[20px]">
+            class="relative filter-list-fa flex lg:flex-wrap items-center justify-center lg:justify-center sm:justify-start gap-y-[15px] shadow-[0_4px_50px_rgba(0,0,0,0.07)] mb-[60px] rounded-full xxs:rounded-[30px] lg:py-[15px] px-[30px] pr-[6px] md:px-[20px] md:pr-[6px] py-[20px]">
             <div
                 class="et-events-tab-navs w-[100%] lg:w-full align-center flex xs:flex-wrap shrink-0 lg:justify-center sm:justify-start gap-[45px] md:gap-[30px] xxs:gap-[20px] md:gap-y-[15px]">
                 <button data-tab="et-event-tab0"
@@ -350,7 +370,7 @@ get_header('main'); ?>
                                                 fill="var(--et-blue)" />
                                         </svg>
                                     </span>
-                                    <h6 class="text-[15px] text-etGray sm:text-[16px] sm:my-[10px]"><?= $address ?></h6>
+                                    <h6 style="font-size:13px;" class="text-etGray sm:text-[16px] sm:my-[10px]"><?= $address ?></h6>
                                 </div>
                                 <div class="et-schedule-loaction flex items-center gap-[12px]">
                                     <span class="icon">
@@ -361,7 +381,7 @@ get_header('main'); ?>
                                                 fill="var(--et-blue)" />
                                         </svg>
                                     </span>
-                                    <h6 class="text-[15px] text-etGray sm:text-[16px] sm:my-[10px]"><?= $area ?>
+                                    <h6 style="font-size:13px;" class="text-etGray sm:text-[16px] sm:my-[10px]"><?= $area ?>
                                     </h6>
                                 </div>
 
@@ -484,7 +504,7 @@ get_header('main'); ?>
                                                 fill="var(--et-blue)" />
                                         </svg>
                                     </span>
-                                    <h6 class="text-[15px] text-etGray sm:text-[16px] sm:my-[10px]"><?= $address ?></h6>
+                                    <h6 style="font-size:13px;" class="text-etGray sm:text-[16px] sm:my-[10px]"><?= $address ?></h6>
                                 </div>
                                 <div class="et-schedule-loaction flex items-center gap-[12px]">
                                     <span class="icon">
@@ -495,7 +515,7 @@ get_header('main'); ?>
                                                 fill="var(--et-blue)" />
                                         </svg>
                                     </span>
-                                    <h6 class="text-[15px] text-etGray sm:text-[16px] sm:my-[10px]"><?= $area ?></h6>
+                                    <h6 style="font-size:13px;" class="text-etGray sm:text-[16px] sm:my-[10px]"><?= $area ?></h6>
                                 </div>
 
                             </div>
@@ -620,7 +640,7 @@ get_header('main'); ?>
                                                             fill="var(--et-blue)" />
                                                     </svg>
                                                 </span>
-                                                <h6 class="text-[15px] text-etGray sm:text-[16px] sm:my-[10px]"><?= $address ?></h6>
+                                                <h6 style="font-size:13px;" class="text-etGray sm:text-[16px] sm:my-[10px]"><?= $address ?></h6>
                                             </div>
                                             <div class="et-schedule-loaction flex items-center gap-[12px]">
                                                 <span class="icon">
@@ -631,7 +651,7 @@ get_header('main'); ?>
                                                             fill="var(--et-blue)" />
                                                     </svg>
                                                 </span>
-                                                <h6 class="text-[15px] text-etGray sm:text-[16px] sm:my-[10px]"><?= $area ?></h6>
+                                                <h6 style="font-size:13px;" class="text-etGray sm:text-[16px] sm:my-[10px]"><?= $area ?></h6>
                                             </div>
         
                                         </div>
@@ -756,7 +776,7 @@ get_header('main'); ?>
                                                             fill="var(--et-blue)" />
                                                     </svg>
                                                 </span>
-                                                <h6 class="text-[15px] text-etGray sm:text-[16px] sm:my-[10px]"><?= $address ?></h6>
+                                                <h6 style="font-size:13px;" class="text-etGray sm:text-[16px] sm:my-[10px]"><?= $address ?></h6>
                                             </div>
                                             <div class="et-schedule-loaction flex items-center gap-[12px]">
                                                 <span class="icon">
@@ -767,7 +787,7 @@ get_header('main'); ?>
                                                             fill="var(--et-blue)" />
                                                     </svg>
                                                 </span>
-                                                <h6 class="text-[15px] text-etGray sm:text-[16px] sm:my-[10px]"><?= $area ?></h6>
+                                                <h6 style="font-size:13px;" class="text-etGray sm:text-[16px] sm:my-[10px]"><?= $area ?></h6>
                                             </div>
         
                                         </div>
