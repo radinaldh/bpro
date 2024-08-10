@@ -173,7 +173,7 @@ get_header('main');
                 $head_title = get_sub_field('bpro_value_title');
             ?>
             <div class="vision mb-[40px]">
-                <h2 class="text-[35px] sm:text-[24px] !text-white text-center"><?= $head_title ?></h2>
+                <h2 class="text-[35px] sm:text-[24px] !text-white text-center" style="font-style:normal;"><?= $head_title ?></h2>
                 <h3 class="font-semibold uproinhimgod">"U PRO IN HIM"</h3>
             </div>
             <?php if(have_rows('bpro_values')) :?>
