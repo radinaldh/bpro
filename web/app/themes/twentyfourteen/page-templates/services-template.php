@@ -436,11 +436,11 @@ get_header('main');
                 <div class="et-test-slider-nav flex gap-[16px] sm:gap-[12px]"
                     style="justify-content: center; margin:30px 0">
                     <button
-                        class="prev border border-[#D9D9D9] rounded-full w-[60px] sm:w-[50px] h-[60px] sm:h-[50px] text-[18px] text-etBlack hover:bg-etBlue hover:border-etbg-etBlue hover:text-white">
+                        class="prev w-[60px] h-[60px] sm:w-[50px] sm:h-[50px] border border-[#d9d9d9] rounded-full text-[18px] hover:bg-etBlue hover:border-etBlue hover:text-white">
                         <i class="fa-solid fa-arrow-left-long"></i>
                     </button>
                     <button
-                        class="next border border-[#D9D9D9] rounded-full w-[60px] sm:w-[50px] h-[60px] sm:h-[50px] text-[18px] text-etBlack hover:bg-etBlue hover:border-etbg-etBlue hover:text-white">
+                        class="next w-[60px] h-[60px] sm:w-[50px] sm:h-[50px] border border-[#d9d9d9] rounded-full text-[18px] hover:bg-etBlue hover:border-etBlue hover:text-white">
                         <i class="fa-solid fa-arrow-right-long"></i>
                     </button>
                 </div>
