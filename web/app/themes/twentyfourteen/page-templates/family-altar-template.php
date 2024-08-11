@@ -64,9 +64,14 @@ get_header('main'); ?>
 
 .box-cta-home {
     margin-bottom: -90px;
-    height: 350px;
+    height: 330px;
+    padding: 60px;
 }
 @media screen and (max-width: 600px) {
+
+    .box-cta-home {
+        padding: 10px;
+    }
     .single-fa .et-schedule__heading {
         width: 100%;
     }
