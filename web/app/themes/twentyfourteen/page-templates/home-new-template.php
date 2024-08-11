@@ -422,46 +422,46 @@ get_header('main');
 
       <!-- ABOUT SECTION START -->
       <?php if ( have_rows( 'about' ) ) : ?>
-      <?php while ( have_rows( 'about' ) ) : the_row(); ?>
-      <section class="et-about py-[80px] xl:py-[80px] md:py-[60px] overflow-hidden relative" style="padding-top: 0 !important;">
-         <div
-            class="container mx-auto max-w-[calc(100%-39.1vw)] xxxl:max-w-[calc(100%-350px)] xl:max-w-[calc(100%-170px)] px-[12px] lg:max-w-full">
-            <div
-               class="flex items-center md:flex-wrap gap-x-[60px] xl:gap-x-[40px] lg:gap-x-[30px] gap-y-[40px] sm:gap-y-[40px] lg:justify-center">
-               <div class="et-about-img relative z-[1] md:w-auto shrink-0 max-w-full ml-[124px] md:mr-0 xs:mx-auto">
-                  <img src="<?php the_sub_field( 'image_2' ); ?>" alt="image" class="shrink-0 rounded-[50px]" />
-                  <img src="<?php the_sub_field( 'image_1' ); ?>" alt="image"
-                     class="et-about-floating-img absolute top-[55px] -left-[124px] shrink-0 rounded-[20px] border-white border-[10px] shadow-[0_4px_40px_0_rgba(0,0,0,0.1)] xs:hidden" />
-   
-                  <div class="et-about-vectors">
-                     <img src="<?= get_template_directory_uri(); ?>/assets/img/about-img-vector-4.png" alt="vector"
-                        class="et-about-vector-1 absolute -left-[98px] top-[20px] -z-[1] xxs:hidden" />
+         <?php while ( have_rows( 'about' ) ) : the_row(); ?>
+            <section class="et-about py-[80px] xl:py-[80px] md:py-[60px] overflow-hidden relative" style="padding-top: 0 !important;">
+               <div
+                  class="container mx-auto max-w-[calc(100%-39.1vw)] xxxl:max-w-[calc(100%-350px)] xl:max-w-[calc(100%-170px)] px-[12px] lg:max-w-full">
+                  <div
+                     class="flex items-center md:flex-wrap gap-x-[60px] xl:gap-x-[40px] lg:gap-x-[30px] gap-y-[40px] sm:gap-y-[40px] lg:justify-center">
+                     <div class="et-about-img relative z-[1] md:w-auto shrink-0 max-w-full ml-[124px] md:mr-0 xs:mx-auto">
+                        <img src="<?php the_sub_field( 'image_2' ); ?>" alt="image" class="shrink-0 rounded-[50px]" />
+                        <img src="<?php the_sub_field( 'image_1' ); ?>" alt="image"
+                           class="et-about-floating-img absolute top-[55px] -left-[124px] shrink-0 rounded-[20px] border-white border-[10px] shadow-[0_4px_40px_0_rgba(0,0,0,0.1)] xs:hidden" />
+         
+                        <div class="et-about-vectors">
+                           <img src="<?= get_template_directory_uri(); ?>/assets/img/about-img-vector-4.png" alt="vector"
+                              class="et-about-vector-1 absolute -left-[98px] top-[20px] -z-[1] xxs:hidden" />
+                        </div>
+                     </div>
+         
+                     <div class="et-about__txt max-w-[570px] grow">
+                        <h6 class="et-section-sub-title anim-text"><?php the_sub_field( 'title' ); ?></h6>
+                        <h2 class="text-[35px] sm:text-[24px] mb-[24px] md:mb-[19px] sm:text-[20px] anim-text">
+                           <?php the_sub_field( 'title' ); ?></h2>
+         
+                        <div class="mb-[30px] text-[15px] sm:text-[12px] font-light text-etGray md:mb-[30px] rev-slide-up"
+                           style="text-align: justify;">
+                           <?php the_sub_field( 'description' ); ?>
+                        </div>
+         
+                        <div class="about-us items-center gap-x-[30px] gap-y-[16px] rev-slide-up">
+                           <?php if ( have_rows( 'button_get' ) ) : ?>
+                           <?php while ( have_rows( 'button_get' ) ) : the_row(); ?>
+                           <a href="<?php the_sub_field( 'url' ); ?>"
+                              class="et-btn bg-etBlue w-[180px] inline-flex items-center justify-center gap-x-[13px] h-[45px] px-[15px] text-white font-normal text-[17px] rounded-full hover:!bg-black hover:!text-white"><?php the_sub_field( 'title' ); ?></a>
+                           <?php endwhile; ?>
+                           <?php endif; ?>
+                        </div>
+                     </div>
                   </div>
                </div>
-   
-               <div class="et-about__txt max-w-[570px] grow">
-                  <h6 class="et-section-sub-title anim-text"><?php the_sub_field( 'title' ); ?></h6>
-                  <h2 class="text-[35px] sm:text-[24px] mb-[24px] md:mb-[19px] sm:text-[20px] anim-text">
-                     <?php the_sub_field( 'title' ); ?></h2>
-   
-                  <div class="mb-[30px] text-[15px] sm:text-[12px] font-light text-etGray md:mb-[30px] rev-slide-up"
-                     style="text-align: justify;">
-                     <?php the_sub_field( 'description' ); ?>
-                  </div>
-   
-                  <div class="about-us items-center gap-x-[30px] gap-y-[16px] rev-slide-up">
-                     <?php if ( have_rows( 'button_get' ) ) : ?>
-                     <?php while ( have_rows( 'button_get' ) ) : the_row(); ?>
-                     <a href="<?php the_sub_field( 'url' ); ?>"
-                        class="et-btn bg-etBlue w-[180px] inline-flex items-center justify-center gap-x-[13px] h-[45px] px-[15px] text-white font-normal text-[17px] rounded-full hover:!bg-black hover:!text-white"><?php the_sub_field( 'title' ); ?></a>
-                     <?php endwhile; ?>
-                     <?php endif; ?>
-                  </div>
-               </div>
-            </div>
-         </div>
-      </section>
-      <?php endwhile; ?>
+            </section>
+         <?php endwhile; ?>
       <?php endif; ?>
       <!-- ABOUT SECTION END
    
@@ -1069,16 +1069,76 @@ get_header('main');
       <!-- TESTIMONIAL SECTION START -->
       <?php if ( have_rows( 'section_testimonials' ) ) : ?>
       <?php while ( have_rows( 'section_testimonials' ) ) : the_row(); ?>
+      <section class="section-testimonial testimonial-1 section-full-width">
+				<div class="section-title-wrapper position-relative">
+					<div class="scroll-move">
+						<span class="scrolling-text display-1 fw-extra-bold stroke-title text-stroke stroke-opacity-20 stroke-width-1 stroke-primary lh-1">Testimonial</span>
+					</div>					
+					
+					<div class="container">	
+						<div class="section-title section-separator">
+							<h2 class="fw-extra-bold heading-title separator lh-1">Client Experiences</h2>
+							<div class="d-flex flex-column flex-lg-row gap-4 align-items-lg-end justify-content-lg-between">
+								<p class="fs-4 fw-semibold mb-0 subtitle subtitle-width">Inspiring Stories from Our Clients, Where Dreams Find Their Designers</p>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- section-title-wrapper -->
+				<div class="swiper-custom-progress position-relative mt-n30">
+					<div class="swiper testimonial-swiper">
+						<div class="swiper-wrapper"> 
+                     <?php if ( have_rows( 'list_testimonials' ) ) : ?>
+                        <?php while ( have_rows( 'list_testimonials' ) ) : the_row(); ?>
+                           <div class="swiper-slide">
+                              <div class="testimonial-wrapper d-flex gap-10 gap-lg-3 gap-xl-4 align-items-baseline">
+                                 <div class="testimonial-quote-icon text-secondary">
+                                    <svg width="121" height="96" viewBox="0 0 121 96" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                       <path fill-rule="evenodd" clip-rule="evenodd" d="M66 95.9453V67.8453C66 49.9188 70.3834 35.0608 79.3087 23.4338C88.2594 11.5728 101.429 3.96088 118.603 0.485051L121 0V26.5397L119.446 26.895C112.752 28.4251 107.289 31.271 102.982 35.3906L102.981 35.392C99.4937 38.7208 97.0251 42.565 95.5542 46.9453H115V95.9453H66ZM92.9 48.9453C93.0636 48.2677 93.2476 47.601 93.4521 46.9453C94.9981 41.988 97.714 37.6546 101.6 33.9453C106.2 29.5453 112 26.5453 119 24.9453V2.44531C118.327 2.58156 117.66 2.72424 117 2.87334C101.189 6.44484 89.1554 13.7022 80.9 24.6453C72.3 35.8453 68 50.2453 68 67.8453V93.9453H113V48.9453H92.9ZM0 95.9453V67.8453C0 49.9188 4.38341 35.0609 13.3086 23.4339C22.2593 11.5729 35.4286 3.96089 52.6033 0.485051L55 0V26.5397L53.4456 26.895C46.7516 28.4251 41.2893 31.271 36.9825 35.3906L36.981 35.392C33.4937 38.7208 31.0251 42.565 29.5542 46.9453H49V95.9453H0ZM26.9 48.9453C27.0636 48.2677 27.2476 47.601 27.4521 46.9453C28.9981 41.988 31.714 37.6546 35.6 33.9453C40.2 29.5453 46 26.5453 53 24.9453V2.44531C52.3268 2.58156 51.6601 2.72424 51 2.87334C35.1887 6.44484 23.1554 13.7022 14.9 24.6453C6.3 35.8453 2 50.2453 2 67.8453V93.9453H47V48.9453H26.9Z"/>
+                                    </svg>
+                                 </div>
+                                 <div class="testimonial-details">
+                                    <p><?php the_sub_field( 'message' ); ?></p>
+                                    <div class="testimonial-author">
+                                       <h6 class="fw-extra-bold testimonial-author-name"><?php the_sub_field( 'name' ); ?></h6>
+                                       <span class="fw-medium"><?php the_sub_field( 'profession' ); ?></span>
+                                    </div>
+                                 </div>								 
+                              </div>
+                           </div>
+                        <?php endwhile; ?>
+                        <?php else : ?>
+                        <?php ?>
+                     <?php endif; ?>
+						</div>
+					</div>
+					<div class="container">
+						<div class="testimonial-swiper-pagination-wrapper">
+							<div class="testimonial-swiper-pagination"></div>						
+							<div class="swiper-button-progress">	
+								<div class="progress-button-prev">
+									<svg class="arrow-reverse" width="35" height="22" viewBox="0 0 35 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path fill-rule="evenodd" clip-rule="evenodd" d="M24 0.585815L34.4142 10.9999L24 21.4142L22.5858 20L30.5857 12L0 12L2.38419e-07 10L30.5858 10L22.5858 2.00003L24 0.585815Z"/>
+									</svg>
+								</div>							
+								<div class="progress-button-next">
+									<svg width="35" height="22" viewBox="0 0 35 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path fill-rule="evenodd" clip-rule="evenodd" d="M24 0.585815L34.4142 10.9999L24 21.4142L22.5858 20L30.5857 12L0 12L2.38419e-07 10L30.5858 10L22.5858 2.00003L24 0.585815Z"/>
+									</svg> 
+								</div>																
+							</div>
+						</div>							
+					</div>
+				</div>
+			</section>
    
-      <section class="et-testimonial overflow-hidden py-[130px] xl:py-[80px] md:py-[60px]">
+      <!-- <section class="et-testimonial overflow-hidden py-[130px] xl:py-[80px] md:py-[60px]">
          <div class="container mx-auto max-w-[1200px] px-[12px] xl:max-w-full">
-            <!-- heading -->
             <div class="et-testimonial-heading text-center mb-[46px] xl:mb-[26px] lg:mb-[16px] gap-[15px]">
                <h6 class="et-section-sub-title anim-text"><?php the_sub_field( 'subtitle' ); ?></h6>
                <h2 class="text-[35px] sm:text-[24px] anim-text"><?php the_sub_field( 'title' ); ?></h2>
             </div>
    
-            <!-- slider -->
             <div class="et-2-testimonial-slider swiper overflow-visible">
                <div class="right test-right">
                   <div class="et-test-slider-nav flex gap-[16px] sm:gap-[12px]"
@@ -1096,11 +1156,8 @@ get_header('main');
                <div class="swiper-wrapper">
                   <?php if ( have_rows( 'list_testimonials' ) ) : ?>
                   <?php while ( have_rows( 'list_testimonials' ) ) : the_row(); ?>
-                  <!-- single testimony  -->
                   <div class="swiper-slide">
-                     <div
-                        class="et-testimony relative p-[40px] lg:p-[30px] md:p-[20px] border border-[#D4DCED] rounded-[16px] mt-[60px]">
-                        <!-- single testimony heading -->
+                     <div class="et-testimony relative p-[40px] lg:p-[30px] md:p-[20px] border border-[#D4DCED] rounded-[16px] mt-[60px]">
                         <div
                            class="et-testimony__heading flex items-end justify-center mb-[17px] lg:mb-[12px] -mt-[100px] md:-mt-[80px]">
                            <div
@@ -1118,15 +1175,12 @@ get_header('main');
                               <?php the_sub_field( 'message' ); ?></p>
                         </div>
    
-                        <!-- quotation icon -->
                         <div class="absolute top-[40px] sm:top-[20px] left-[40px] sm:left-[20px]">
                            <img src="<?= get_template_directory_uri(); ?>/assets/img/quotation-blue.svg"
                               alt="quotation mark">
                         </div>
    
-                        <!-- rating stars -->
-                        <div
-                           class="absolute bottom-0 left-[50%] -translate-x-[50%] translate-y-[50%] flex gap-[6px] bg-white shadow-[0_4px_25px_rgba(56,75,255,0.15)] p-[12px] rounded-full">
+                        <div class="absolute bottom-0 left-[50%] -translate-x-[50%] translate-y-[50%] flex gap-[6px] bg-white shadow-[0_4px_25px_rgba(56,75,255,0.15)] p-[12px] rounded-full">
                            <img src="<?= get_template_directory_uri(); ?>/assets/img/star-blue.svg" alt="star">
                            <img src="<?= get_template_directory_uri(); ?>/assets/img/star-blue.svg" alt="star">
                            <img src="<?= get_template_directory_uri(); ?>/assets/img/star-blue.svg" alt="star">
@@ -1137,13 +1191,13 @@ get_header('main');
                   </div>
                   <?php endwhile; ?>
                   <?php else : ?>
-                  <?php // No rows found ?>
+                  <?php ?>
                   <?php endif; ?>
-   
                </div>
             </div>
          </div>
-      </section>
+      </section> -->
+      
       <?php endwhile; ?>
       <?php endif; ?>
       <!-- TESTIMONIAL SECTION END -->
