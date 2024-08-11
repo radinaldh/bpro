@@ -282,7 +282,7 @@ get_header('main');
     title="YouTube video player" frameborder="0"
     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
     referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe> -->
-<section class="et-about py-[80px] overflow-hidden relative" style=" background: #FFF">
+<section class="et-about py-[80px] overflow-hidden relative">
     <div class="container max-w-[calc(100%-37.1vw)] mx-[30px] xxxl:max-w-[calc(100%-350px)] xl:max-w-[calc(100%-170px)] m-auto">
         <div class="slide-video">
             <?php if ( have_rows( 'list_video' ) ) : ?>
@@ -300,6 +300,13 @@ get_header('main');
             <?php endif; ?>
 
         </div>
+    </div>
+    <!-- vectors -->
+    <div class="xs:hidden">
+        <img src="<?= get_template_directory_uri()?>/assets/img/about-vector-1.png" alt="vector"
+            class="pointer-events-none absolute top-[340px] left-[90px] -z-[1]">
+        <img src="<?= get_template_directory_uri()?>/assets/img/about-vector-2.png" alt="vector"
+            class="pointer-events-none absolute top-[153px] right-0 -z-[1]">
     </div>
 </section>
 
