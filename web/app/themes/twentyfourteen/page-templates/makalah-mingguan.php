@@ -10,7 +10,7 @@ get_header('main'); ?>
 .img-right img {
     width: 100%;
 }
-
+/* 
 .et-single-accordion-item__body i {
     font-size: 14px;
     margin-right: 10px;
@@ -27,7 +27,7 @@ get_header('main'); ?>
 
 .et-single-accordion-item__body p {
     margin: 20px 0;
-}
+} */
 
 
 .hero-banner::before {
