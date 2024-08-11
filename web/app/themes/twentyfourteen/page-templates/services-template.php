@@ -294,7 +294,7 @@ get_header('main');
 
 <?php if ( have_rows( 'section_ministry' ) ) : ?>
 <?php while ( have_rows( 'section_ministry' ) ) : the_row(); ?>
-<section class="minus-top et-about py-[80px] overflow-hidden relative" style=" background: #FFF">
+<section class="minus-top et-about py-[80px] overflow-hidden relative et-2-schedules bg-[#EEF4FF] bg-[url('assets/img/schedule-bg.png')] bg-cover bg-no-repeat bg-center relative py-[130px] xl:py-[80px] md:py-[60px] before:absolute before:inset-0 before:bg-[url('../assets/img/')]" style="margin-top: 100px; margin-bottom: 100px;">
     <div class="text-center mb-[52px]">
         <h6 class="et-section-sub-title anim-text"><?php the_sub_field( 'subtitle' ); ?></h6>
         <h2 class="mb-[24px] md:mb-[19px] anim-text sm:text-[24px] text-[25px]"><?php the_sub_field( 'title' ); ?>
@@ -336,6 +336,13 @@ get_header('main');
             <?php the_sub_field( 'bottom_description' ); ?>
         </div>
     </div>
+    <!-- vectors -->
+    <div class="md:hidden">
+            <img src="<?= get_template_directory_uri(); ?>/assets/img/features-vector-1.png" alt="vector" class="pointer-events-none absolute top-[254px] left-[93px] -z-[1]">
+            <img src="<?= get_template_directory_uri(); ?>/assets/img/schedule-vector.png" alt="vector" class="pointer-events-none absolute bottom-[270px] left-[125px] -z-[1]">
+            <img src="<?= get_template_directory_uri(); ?>/assets/img/features-vector-2.png" alt="vector" class="pointer-events-none absolute top-[184px] right-[151px] -z-[1]">
+            <img src="<?= get_template_directory_uri(); ?>/assets/img/features-vector-3.png" alt="vector" class="pointer-events-none absolute bottom-[455px] right-[93px] -z-[1]">
+        </div>
 </section>
 <?php endwhile; ?>
 <?php endif; ?>
