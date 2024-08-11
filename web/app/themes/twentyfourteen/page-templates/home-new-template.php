@@ -423,7 +423,7 @@ get_header('main');
       <!-- ABOUT SECTION START -->
       <?php if ( have_rows( 'about' ) ) : ?>
       <?php while ( have_rows( 'about' ) ) : the_row(); ?>
-      <section class="et-about py-[80px] xl:py-[80px] md:py-[60px] overflow-hidden relative">
+      <section class="et-about py-[80px] xl:py-[80px] md:py-[60px] overflow-hidden relative" style="padding-top: 0 !important;">
          <div
             class="container mx-auto max-w-[calc(100%-39.1vw)] xxxl:max-w-[calc(100%-350px)] xl:max-w-[calc(100%-170px)] px-[12px] lg:max-w-full">
             <div
