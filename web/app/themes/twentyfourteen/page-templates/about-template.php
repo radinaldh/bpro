@@ -149,7 +149,7 @@ get_header('main');
                                 $description = get_sub_field('description_bpro');
                             ?>
                                 <h6 class="et-section-sub-title anim-text"><?= $sub_text ?></h6>
-                                <p class="my-[10px] text-[15px]" style="text-align: justify;"><?= $description ?></p>
+                                <p class="my-[10px] text-[15px]" style="text-align: justify; color: #000;"><?= $description ?></p>
                             <?php endwhile; ?>
                         <?php endif;?>
                     </div>
