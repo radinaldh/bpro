@@ -468,8 +468,7 @@ get_header('main');
    
       <!-- EVENT SCHEDULE SECTION START -->
       <section class="et-2-schedules bg-[#EEF4FF] bg-[url('assets/img/schedule-bg.png')] bg-cover bg-no-repeat bg-center relative py-[130px] xl:py-[80px] md:py-[60px] before:absolute before:inset-0 before:bg-[url('../assets/img/')]">
-         <div
-            class="container mx-auto max-w-[calc(100%-37.1vw)] xxxl:max-w-[calc(100%-350px)] xl:max-w-[calc(100%-170px)] px-[12px] lg:max-w-full rev-slide-up">
+         <div class="container mx-auto max-w-[calc(100%-37.1vw)] xxxl:max-w-[calc(100%-350px)] xl:max-w-[calc(100%-170px)] px-[12px] lg:max-w-full rev-slide-up">
             <!-- heading -->
             <?php if ( have_rows( 'section_event' ) ) : ?>
             <?php while ( have_rows( 'section_event' ) ) : the_row(); ?>
