@@ -10355,6 +10355,7 @@ body {
   height: 150px;
   text-align: justify;
   font-size: 15px;
+  color: #000;
 }
 
 @media (max-width: 1399.98px) {
@@ -11620,7 +11621,7 @@ html.lenis {
 }
 
 svg {
-  fill: currentColor;
+  fill: #18377e;
 }
 
 .arrow-reverse {
