@@ -9,6 +9,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="<?= get_template_directory_uri(); ?>/assets/vendor/font-awesome/all.min.css" />
     <link rel="stylesheet" href="<?= get_template_directory_uri(); ?>/assets/vendor/swiper/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="<?= get_template_directory_uri(); ?>/assets/assets-new/css/swiper-bundle.min.css">
     <link rel="stylesheet" href="<?= get_template_directory_uri(); ?>/assets/vendor/splide/splide.min.css" />
     <link rel="stylesheet" href="<?= get_template_directory_uri(); ?>/assets/vendor/slim-select/slimselect.css" />
     <title>Bethany Professional</title>
