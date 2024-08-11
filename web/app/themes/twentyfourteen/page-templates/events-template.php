@@ -8,6 +8,40 @@ get_header('main'); ?>
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/lc-lightbox-lite@1.3.1/css/lc_lightbox.min.css">
 
 <style>
+
+.before\:bg-\[url\(\'\.\.\/assets\/img\/\'\)\]::before {
+    z-index: -1;
+}
+
+span.page-numbers.current{
+        background-color: var(--et-blue);
+        border-color: var(--et-blue);
+        color: var(--white);
+        width: 50px;
+        height: 50px;
+        transition: 0.4s ease;
+        border: 1px;
+        border-radius: 999px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        opacity: 1;
+    }
+
+    a.page-numbers {
+        background-color: #fff;
+        color: #000;
+        width: 50px;
+        height: 50px;
+        transition: 0.4s ease;
+        border: 1px solid gray;
+        border-radius: 999px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+
     .praise,
     .test-right {
         display: none;
@@ -359,7 +393,7 @@ get_header('main'); ?>
 
 <div class="py-[80px] lg:py-[80px] md:py-[60px] overflow-hidden py-[80px] xl:py-[80px] md:py-[60px] overflow-hidden relative">
     <!-- EVENTS SECTION START -->
-    <section class="et-all-events">
+    <section class="et-all-events et-2-schedules bg-[#EEF4FF] bg-[url('assets/img/schedule-bg.png')] bg-cover bg-no-repeat bg-center relative py-[130px] xl:py-[80px] md:py-[60px] before:absolute before:inset-0 before:bg-[url('../assets/img/')]" style="padding: 80px 0px">
         <div class="container mx-auto max-w-[1200px] px-[12px] xl:max-w-full">
             <div class="flex lg:flex-wrap items-center justify-center lg:justify-center sm:justify-start gap-y-[15px] shadow-[0_4px_50px_rgba(0,0,0,0.07)] mb-[60px] rounded-full xxs:rounded-[30px] lg:py-[15px] px-[30px] pr-[6px] md:px-[20px] md:pr-[6px] py-[20px]">
                 <div
@@ -1354,12 +1388,12 @@ get_header('main'); ?>
             <?php endif;?>
         </div>
         <!-- vectors -->
-    <div class="xs:hidden">
-        <img src="<?= get_template_directory_uri()?>/assets/img/about-vector-1.png" alt="vector"
-            class="pointer-events-none absolute top-[340px] left-[90px] -z-[1]">
-        <img src="<?= get_template_directory_uri()?>/assets/img/about-vector-2.png" alt="vector"
-            class="pointer-events-none absolute top-[153px] right-0 -z-[1]">
-    </div>
+        <div class="md:hidden">
+            <img src="<?= get_template_directory_uri(); ?>/assets/img/features-vector-1.png" alt="vector" class="pointer-events-none absolute top-[254px] left-[93px] -z-[1]">
+            <img src="<?= get_template_directory_uri(); ?>/assets/img/schedule-vector.png" alt="vector" class="pointer-events-none absolute bottom-[270px] left-[125px] -z-[1]">
+            <img src="<?= get_template_directory_uri(); ?>/assets/img/features-vector-2.png" alt="vector" class="pointer-events-none absolute top-[184px] right-[151px] -z-[1]">
+            <img src="<?= get_template_directory_uri(); ?>/assets/img/features-vector-3.png" alt="vector" class="pointer-events-none absolute bottom-[455px] right-[93px] -z-[1]">
+        </div>
     </section>
     <!-- EVENTS SECTION END -->
 </div>
