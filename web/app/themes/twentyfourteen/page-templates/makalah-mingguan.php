@@ -81,7 +81,7 @@ get_header('main'); ?>
                     <div class="et-single-accordion-item__body">
                         <?php if ( have_rows( 'button_download' ) ) : ?>
 							<?php while ( have_rows( 'button_download' ) ) : the_row(); ?>
-                                <p class="font-light text-[20px]"><a href="<?php the_sub_field( 'link_button' ); ?>" target="_blank"><i class="fa-solid fa-download"></i><?php the_sub_field( 'title_content_accordion' ); ?> </a>
+                                <p class="font-light text-[20px]"><a href="<?php the_sub_field( 'link_button' ); ?>" target="_blank"><i class="fa-solid fa-download"></i><?php the_sub_field( 'title_content_accordion' ); ?> </a></p>
                             <?php endwhile; ?>
 						<?php else : ?>
 							<?php // No rows found ?>
