@@ -10352,6 +10352,8 @@ body {
   display: -webkit-box;
   -webkit-line-clamp: 4;
   -webkit-box-orient: vertical;
+  height: 150px;
+  text-align: justify;
 }
 
 @media (max-width: 1399.98px) {
@@ -10390,6 +10392,7 @@ body {
 
 .testimonial-author-name {
   color: var(--bs-primary);
+  font-size: 20px;
 }
 
 #projectSlider .carousel-inner {

@@ -1065,7 +1065,7 @@ get_header('main');
       <!-- GALLERY SECTION START -->
       <!-- GALLERY SECTION END -->
    
-      <section class="section-testimonial testimonial-1 section-full-width">
+      <section class="section-testimonial testimonial-1 section-full-width" style="padding-bottom: 120px;">
          <div class="section-title-wrapper position-relative">
             <div class="scroll-move">
                <span class="scrolling-text display-1 fw-extra-bold stroke-title text-stroke stroke-opacity-20 stroke-width-1 stroke-primary lh-1">Testimonial</span>
