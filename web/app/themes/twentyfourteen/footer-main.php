@@ -272,6 +272,19 @@
 
 
 <!-- JS FILES -->
+<script src="https://cdn.jsdelivr.net/gh/studio-freight/lenis@1.0.29/bundled/lenis.min.js"></script> 
+<script src="<?= get_template_directory_uri()?>/assets/assets-new/js/jquery-3.7.0.min.js"></script>	
+<script src="<?= get_template_directory_uri()?>/assets/assets-new/js/bootstrap.bundle.min.js"></script>	
+<script src="<?= get_template_directory_uri()?>/assets/assets-new/js/jquery.magnific-popup.min.js"></script>	
+<script src="<?= get_template_directory_uri()?>/assets/assets-new/js/anime.min.js"></script>	
+<script src="<?= get_template_directory_uri()?>/assets/assets-new/js/animate.js"></script>	
+<script src="<?= get_template_directory_uri()?>/assets/assets-new/js/wow.min.js"></script>	
+<script src="<?= get_template_directory_uri()?>/assets/assets-new/js/odometer.js"></script>	
+<script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+<script src="<?= get_template_directory_uri()?>/assets/assets-new/js/jquery.progressScroll.min.js"></script>	
+<script src="<?= get_template_directory_uri()?>/assets/assets-new/js/script.js"></script>	
+
+<script src="customize/presets.js"></script>
 <script src="<?php echo get_template_directory_uri(); ?>/assets/vendor/swiper/swiper-bundle.min.js"></script>
 <script src="<?php echo get_template_directory_uri(); ?>/assets/vendor/splide/splide.min.js"></script>
 <script src="<?php echo get_template_directory_uri(); ?>/assets/vendor/slim-select/slimselect.min.js"></script>
