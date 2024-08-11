@@ -55,8 +55,18 @@ get_header('main');
             margin: auto;
         }
 
-        .testing-slider .et-2-schedule  {
-            height: 500px;
+        .et-member__img {
+            height: 380px;
+        }
+
+        .testing-slider .et-2-schedule {
+            height: 450px;
+        }
+        
+        .et-2-schedule-img img {
+            display: block;
+            margin: auto;
+            border-radius: 20px;
         }
     }
 
@@ -557,7 +567,7 @@ h5.font-semibold.text-\[22px\].md\:text-\[20px\].text-etBlack.mb-\[4px\] {
                         <div>
                         <div class="et-2-schedule bg-white mt-[57px] p-[12px] pt-0 rounded-[20px] inline-flex md:flex-col w-full gap-y-[20px] justify-between relative z-[2] rev-slide-up">
                             <!-- img -->
-                            <div class="w-[240px] shrink-0 relative">
+                            <div class="w-[240px] md:w-full shrink-0 relative">
                                 <div class="et-2-schedule-img absolute md:static md:-mt-[45px] bottom-0 md:before:content-none before:absolute before:top-0 before:left-[100%] before:w-full before:h-full before:bg-gradient-to-br before:from-etBlue before:to-[#0B3998] before:-z-[1]">
                                 <a href="<?= get_field('image_thumbnail', $post->ID) ?>" data-fslightbox="gallery">
                                     <img style="height: 230px; width: 230px;" src="<?= get_field('image_thumbnail', $post->ID) ?>" alt="scehduled-event-cover" class="rounded-[20px] rounded-tr-none object-cover aspect-[8/9]">

@@ -200,7 +200,7 @@ get_header('main');
             <?php if(have_rows('bpro_values')) :?>
                     <div class="et-history-slider swiper ">
                         <div class="et-history-timeline-slider swiper my-[40px] lg:mt-[25px] border-t border-[rgba(217,217,217,0.2)]">
-                            <div class="swiper-wrapper justify-center">
+                            <div class="swiper-wrapper justify-center sm:justify-start">
                                 <?php while(have_rows('bpro_values')) : the_row();
                                     $title_coordination = get_sub_field('title_value');
                                     $bigger_title_value = get_sub_field('bigger_title_value');
