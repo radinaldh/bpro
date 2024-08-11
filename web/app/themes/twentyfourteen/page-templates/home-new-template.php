@@ -834,7 +834,7 @@ get_header('main');
       <?php if ( have_rows( 'section_speakers' ) ) : ?>
       <?php while ( have_rows( 'section_speakers' ) ) : the_row(); ?>
       <!-- SPEAKERS SECTION START -->
-      <section class="et-speakers py-[80px] lg:py-[80px] md:py-[60px] overflow-hidden relative z-[1]">
+      <section class="et-speakers py-[80px] lg:py-[80px] md:py-[60px] overflow-hidden relative z-[1]" style="margin-top: -40px;">
          <div class="container mx-auto max-w-[1200px] px-[12px] xl:max-w-full">
             <!-- heading -->
             <div class="et-speakers-heading text-center mb-[46px] xl:mb-[26px] lg:mb-[16px] gap-[15px]">
@@ -973,8 +973,7 @@ get_header('main');
             ?>);
          }
       </style>
-      <div
-         class="section-discovery bg-[#00339A] relative z-[1] after:absolute after:inset-0 after:bg-[url(<?php the_sub_field( 'backgroound' ); ?>)] after:bg-no-repeat after:bg-cover after:-z-[2] after:pointer-events-none after:opacity-50 pb-[130px] xl:pb-[80px] md:pb-[60px] pt-[244px] xl:pt-[194px] md:pt-[174px]">
+      <div class="section-discovery bg-[#00339A] relative z-[1] after:absolute after:inset-0 after:bg-[url(<?php the_sub_field( 'backgroound' ); ?>)] after:bg-no-repeat after:bg-cover after:-z-[2] after:pointer-events-none after:opacity-50 pb-[130px] xl:pb-[80px] md:pb-[60px] pt-[244px] xl:pt-[194px] md:pt-[174px]">
          <div
             class="container mx-auto max-w-[calc(100%-37.1vw)] xxxl:max-w-[calc(100%-350px)] xl:max-w-[calc(100%-170px)] px-[12px] lg:max-w-full rev-slide-up">
             <!-- heading -->
@@ -1083,7 +1082,7 @@ get_header('main');
                   </div>
                </div>
                <!-- section-title-wrapper -->
-               <div class="swiper-custom-progress position-relative mt-n30">
+               <div class="swiper-custom-progress position-relative mt-n30" style="margin-top: -120px;">
                   <div class="swiper testimonial-swiper">
                      <div class="swiper-wrapper"> 
                         <?php if(have_rows('list_testimonials')) :?>
