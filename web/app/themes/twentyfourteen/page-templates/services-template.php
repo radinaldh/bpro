@@ -231,6 +231,29 @@ get_header('main');
         top: 0;
         bottom: 0;
     }
+
+    .background-minis {
+        position: relative;
+        transition: all 0.5s;
+        min-height: 383px;
+    }
+
+    .background-minis::before {
+        content: '';
+        background-color:#18377eba;
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        top: 0;
+        bottom: 0;
+    }
+
+    .background-minis:hover {
+        background-color: #18377e;
+    }
+
+
+    
 </style>
 
 <section
@@ -253,8 +276,7 @@ get_header('main');
     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
     referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe> -->
 <section class="et-about py-[80px] overflow-hidden relative" style=" background: #FFF">
-    <div
-        class="container max-w-[calc(100%-37.1vw)] mx-[30px] xxxl:max-w-[calc(100%-350px)] xl:max-w-[calc(100%-170px)] m-auto">
+    <div class="container max-w-[calc(100%-37.1vw)] mx-[30px] xxxl:max-w-[calc(100%-350px)] xl:max-w-[calc(100%-170px)] m-auto">
         <div class="slide-video">
             <?php if ( have_rows( 'list_video' ) ) : ?>
             <?php while ( have_rows( 'list_video' ) ) : the_row(); ?>
@@ -288,16 +310,15 @@ get_header('main');
             </div>
         </div>
     </div>
-    <div
-        class="container max-w-[calc(100%-37.1vw)] mx-[30px] xxxl:max-w-[calc(100%-350px)] xl:max-w-[calc(100%-170px)] m-auto">
+    <div class="container max-w-[calc(100%-37.1vw)] mx-[30px] xxxl:max-w-[calc(100%-350px)] xl:max-w-[calc(100%-170px)] m-auto">
         <div class="pembicaraslider">
             <?php if ( have_rows( 'list_ministry' ) ) : ?>
             <?php while ( have_rows( 'list_ministry' ) ) : the_row(); ?>
             <div>
                 <!-- pricing plans banner -->
                 <div class="lg:col-span-3 xs:col-span-full">
-                    <div class="bg-etBlue rounded-[20px] overflow-hidden text-white max-w-[370px] xxs:max-w-full">
-                        <div class="p-[40px] sm:p-[30px] pb-0">
+                    <div style="background-image: url(' <?php the_sub_field( 'background' ) ?>'); background-size:cover; background-position:center" class="background-minis rounded-[20px] overflow-hidden text-white max-w-[370px] xxs:max-w-full">
+                        <div class="p-[40px] sm:p-[30px] pb-0 relative">
                             <h3 class="text-[25px] mb-[14px]" style="font-weight:bolder">
                                 <?php the_sub_field( 'title' ); ?></h3>
                             <p class="font-light text-[18px]"><?php the_sub_field( 'description' ); ?></p>
