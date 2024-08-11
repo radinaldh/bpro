@@ -198,6 +198,13 @@ get_header('main'); ?>
         top: 0;
         bottom: 0;
     }
+
+    .pagination {
+    margin: 30px auto;
+    text-align: center !important;
+    justify-content: center;
+    line-height: 15px;
+    }
 </style>
 
 <!-- BREADCRUMB SECTION START -->
@@ -350,7 +357,7 @@ get_header('main'); ?>
 <!-- EVENTS SLIDER END -->
 
 
-<div class="py-[80px] lg:py-[80px] md:py-[60px] overflow-hidden">
+<div class="py-[80px] lg:py-[80px] md:py-[60px] overflow-hidden py-[80px] xl:py-[80px] md:py-[60px] overflow-hidden relative">
     <!-- EVENTS SECTION START -->
     <section class="et-all-events">
         <div class="container mx-auto max-w-[1200px] px-[12px] xl:max-w-full">
@@ -386,7 +393,7 @@ get_header('main'); ?>
                                     'post_type'=> ['post'],
                                     'orderby'    => 'date',
                                     'post_status' => 'publish',
-                                    'posts_per_page' => 5,
+                                    'posts_per_page' => 3,
                                     'paged' => $paged,
                                     'meta_query' => array(
                                         array(
@@ -542,7 +549,7 @@ get_header('main'); ?>
                                     'post_type'=> ['post'],
                                     'orderby'    => 'date',
                                     'post_status' => 'publish',
-                                    'posts_per_page' => 5,
+                                    'posts_per_page' => 3,
                                     'paged' => $paged,
                                     'meta_query' => array(
                                         array(
@@ -698,7 +705,7 @@ get_header('main'); ?>
                                     'post_type'=> ['post'],
                                     'orderby'    => 'date',
                                     'post_status' => 'publish',
-                                    'posts_per_page' => 5,
+                                    'posts_per_page' => 3,
                                     'paged' => $paged,
                                     'meta_query' => array(
                                         array(
@@ -854,7 +861,7 @@ get_header('main'); ?>
                                     'post_type'=> ['post'],
                                     'orderby'    => 'date',
                                     'post_status' => 'publish',
-                                    'posts_per_page' => 5,
+                                    'posts_per_page' => 3,
                                     'paged' => $paged,
                                     'meta_query' => array(
                                         array(
@@ -1010,7 +1017,7 @@ get_header('main'); ?>
                                     'post_type'=> ['post'],
                                     'orderby'    => 'date',
                                     'post_status' => 'publish',
-                                    'posts_per_page' => 5,
+                                    'posts_per_page' => 3,
                                     'paged' => $paged,
                                     'meta_query' => array(
                                         array(
@@ -1165,7 +1172,7 @@ get_header('main'); ?>
                                     'post_type'=> ['post'],
                                     'orderby'    => 'date',
                                     'post_status' => 'publish',
-                                    'posts_per_page' => 5, // Set limit per halaman
+                                    'posts_per_page' => 3, // Set limit per halaman
                                     'paged' => $paged, // Tambahkan parameter paged'
                                 );
                                 $result = new WP_Query( $args );
@@ -1304,6 +1311,13 @@ get_header('main'); ?>
                 </div>
             <?php endif;?>
         </div>
+        <!-- vectors -->
+    <div class="xs:hidden">
+        <img src="<?= get_template_directory_uri()?>/assets/img/about-vector-1.png" alt="vector"
+            class="pointer-events-none absolute top-[340px] left-[90px] -z-[1]">
+        <img src="<?= get_template_directory_uri()?>/assets/img/about-vector-2.png" alt="vector"
+            class="pointer-events-none absolute top-[153px] right-0 -z-[1]">
+    </div>
     </section>
     <!-- EVENTS SECTION END -->
 </div>

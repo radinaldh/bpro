@@ -252,6 +252,17 @@ get_header('main');
         background-color: #18377e;
     }
 
+    .slick-dots {
+    position: absolute;
+    bottom: -25px !important;
+    display: block;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    text-align: center;
+}
+
 
     
 </style>
@@ -332,7 +343,7 @@ get_header('main');
 
     </div>
     <div class="my-[10px] text-[15px] sm:text-[12px] text-white" style="text-align: center; max-width:70%; margin:auto">
-        <div class="text-black " style=" padding-top: 45px; ">
+        <div class="text-black " style=" padding-top: 45px; font-size: 20px;">
             <?php the_sub_field( 'bottom_description' ); ?>
         </div>
     </div>

@@ -329,6 +329,7 @@
         slidesToScroll: 1,
         autoplay:true,
         dots:true,
+        arrows: false,
         responsive: [
       {
         breakpoint: 1024,
