@@ -63,7 +63,8 @@ get_header('main'); ?>
 }
 
 .box-cta-home {
-    margin-bottom: -45px;
+    margin-bottom: -90px;
+    height: 350px;
 }
 @media screen and (max-width: 600px) {
     .single-fa .et-schedule__heading {
