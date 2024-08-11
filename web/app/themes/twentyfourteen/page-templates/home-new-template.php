@@ -462,7 +462,7 @@ get_header('main');
          </div>
       </section>
       <?php endwhile; ?>
-      <?php endif; ?> -->
+      <?php endif; ?>
       <!-- ABOUT SECTION END
    
    
