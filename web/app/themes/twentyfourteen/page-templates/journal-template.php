@@ -186,7 +186,7 @@ a.more-link {
                         </div>
 
                         <h3
-                            class="text-[30px] lg:text-[27px] sm:text-[24px] xxs:text-[22px] font-medium text-etBlack mb-[10px] sm:text-[24px] sm:my-[15px]">
+                            class="text-[30px] lg:text-[27px] sm:text-[24px] xxs:text-[22px] font-medium text-etBlack mb-[10px] sm:text-[24px] sm:my-[15px]" style="color: #18377e;">
                             <?php the_title();?></h3>
                             <div style="margin-bottom: 10px;">
                             <?php the_excerpt(); ?>

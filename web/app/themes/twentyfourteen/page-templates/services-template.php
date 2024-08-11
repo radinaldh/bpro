@@ -449,18 +449,17 @@ get_header('main');
 
                         <!-- quotation icon -->
                         <div class="absolute top-[40px] sm:top-[20px] left-[40px] sm:left-[20px]">
-                            <img src="<?= get_template_directory_uri(); ?>/assets/img/quotation-blue.svg"
-                                alt="quotation mark">
+                        <img src="<?= get_template_directory_uri(); ?>/assets/img/quotation-darkblue.png" width="55px" alt="quotation mark">
                         </div>
 
                         <!-- rating stars -->
                         <div
                             class="absolute bottom-0 left-[50%] -translate-x-[50%] translate-y-[50%] flex gap-[6px] bg-white shadow-[0_4px_25px_rgba(56,75,255,0.15)] p-[12px] rounded-full">
-                            <img src="<?= get_template_directory_uri(); ?>/assets/img/star-blue.svg" alt="star">
-                            <img src="<?= get_template_directory_uri(); ?>/assets/img/star-blue.svg" alt="star">
-                            <img src="<?= get_template_directory_uri(); ?>/assets/img/star-blue.svg" alt="star">
-                            <img src="<?= get_template_directory_uri(); ?>/assets/img/star-blue.svg" alt="star">
-                            <img src="<?= get_template_directory_uri(); ?>/assets/img/star-blue.svg" alt="star">
+                            <img width="20px" src="<?= get_template_directory_uri(); ?>/assets/img/star-darkblue.png" alt="star">
+                                <img width="20px" src="<?= get_template_directory_uri(); ?>/assets/img/star-darkblue.png" alt="star">
+                                <img width="20px" src="<?= get_template_directory_uri(); ?>/assets/img/star-darkblue.png" alt="star">
+                                <img width="20px" src="<?= get_template_directory_uri(); ?>/assets/img/star-darkblue.png" alt="star">
+                                <img width="20px" src="<?= get_template_directory_uri(); ?>/assets/img/star-darkblue.png" alt="star">
                         </div>
                     </div>
                 </div>
