@@ -283,7 +283,7 @@
 <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
 <script src="<?= get_template_directory_uri()?>/assets/assets-new/js/jquery.progressScroll.min.js"></script>	
 <script src="<?= get_template_directory_uri()?>/assets/assets-new/js/script.js"></script>
-<script src="<?= get_template_directory_uri()?>/assets/assets-new/assets/js/swiper-bundle.min.js"></script>	
+<script src="<?= get_template_directory_uri()?>/assets/assets-new/js/swiper-bundle.min.js"></script>	
 <script src="<?php echo get_template_directory_uri(); ?>/assets/vendor/swiper/swiper-bundle.min.js"></script>
 <script src="<?php echo get_template_directory_uri(); ?>/assets/vendor/splide/splide.min.js"></script>
 <script src="<?php echo get_template_directory_uri(); ?>/assets/vendor/slim-select/slimselect.min.js"></script>
