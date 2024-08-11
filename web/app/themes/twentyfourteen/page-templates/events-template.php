@@ -523,16 +523,23 @@ get_header('main'); ?>
                                 </div>
                             </div>
                             <?php endwhile; ?>
-                            <div class="pagination">
-                                <?php
+                            <!-- PAGINATION START -->
+                            <div class="container mx-auto max-w-[1200px] px-[12px] xl:max-w-full">
+                                <div class="flex items-center gap-[20px] pt-[60px] justify-center text-[16px]">
+                                
+                                    <div class="et-pagination flex gap-[10px] items-center">
+                                    <?php
                                     echo paginate_links(array(
-                                        'total' => $result->max_num_pages,
-                                        'current' => $paged,
-                                        'prev_text' => __('«'),
-                                        'next_text' => __('»'),
-                                    ));
-                                ?>
+                                            'total' => $result->max_num_pages,
+                                            'prev_text' => '<i class="fa-solid fa-arrow-left-long"></i>',
+                                            'next_text' => '<i class="fa-solid fa-arrow-right-long"></i>',
+                                            'mid_size'     => 4,
+                                        ));
+                                    ?>
+                                    </div>
+                                </div>
                             </div>
+                            <!-- PAGINATION END -->
                             <?php wp_reset_postdata(); ?>
                             <?php endif;  ?>
                         </div>
@@ -679,16 +686,23 @@ get_header('main'); ?>
                                 </div>
                             </div>
                             <?php endwhile; ?>
-                            <div class="pagination">
-                                <?php
+                            <!-- PAGINATION START -->
+                            <div class="container mx-auto max-w-[1200px] px-[12px] xl:max-w-full">
+                                <div class="flex items-center gap-[20px] pt-[60px] justify-center text-[16px]">
+                                
+                                    <div class="et-pagination flex gap-[10px] items-center">
+                                    <?php
                                     echo paginate_links(array(
-                                        'total' => $result->max_num_pages,
-                                        'current' => $paged,
-                                        'prev_text' => __('«'),
-                                        'next_text' => __('»'),
-                                    ));
-                                ?>
+                                            'total' => $result->max_num_pages,
+                                            'prev_text' => '<i class="fa-solid fa-arrow-left-long"></i>',
+                                            'next_text' => '<i class="fa-solid fa-arrow-right-long"></i>',
+                                            'mid_size'     => 4,
+                                        ));
+                                    ?>
+                                    </div>
+                                </div>
                             </div>
+                            <!-- PAGINATION END -->
                             <?php wp_reset_postdata(); ?>
                             <?php endif;  ?>
                         </div>
@@ -835,16 +849,23 @@ get_header('main'); ?>
                                 </div>
                             </div>
                             <?php endwhile; ?>
-                            <div class="pagination">
-                                <?php
+                            <!-- PAGINATION START -->
+                            <div class="container mx-auto max-w-[1200px] px-[12px] xl:max-w-full">
+                                <div class="flex items-center gap-[20px] pt-[60px] justify-center text-[16px]">
+                                
+                                    <div class="et-pagination flex gap-[10px] items-center">
+                                    <?php
                                     echo paginate_links(array(
-                                        'total' => $result->max_num_pages,
-                                        'current' => $paged,
-                                        'prev_text' => __('«'),
-                                        'next_text' => __('»'),
-                                    ));
-                                ?>
+                                            'total' => $result->max_num_pages,
+                                            'prev_text' => '<i class="fa-solid fa-arrow-left-long"></i>',
+                                            'next_text' => '<i class="fa-solid fa-arrow-right-long"></i>',
+                                            'mid_size'     => 4,
+                                        ));
+                                    ?>
+                                    </div>
+                                </div>
                             </div>
+                            <!-- PAGINATION END -->
                             <?php wp_reset_postdata(); ?>
                             <?php endif;  ?>
                         </div>
@@ -991,16 +1012,23 @@ get_header('main'); ?>
                                 </div>
                             </div>
                             <?php endwhile; ?>
-                            <div class="pagination">
-                                <?php
+                           <!-- PAGINATION START -->
+                            <div class="container mx-auto max-w-[1200px] px-[12px] xl:max-w-full">
+                                <div class="flex items-center gap-[20px] pt-[60px] justify-center text-[16px]">
+                                
+                                    <div class="et-pagination flex gap-[10px] items-center">
+                                    <?php
                                     echo paginate_links(array(
-                                        'total' => $result->max_num_pages,
-                                        'current' => $paged,
-                                        'prev_text' => __('«'),
-                                        'next_text' => __('»'),
-                                    ));
-                                ?>
+                                            'total' => $result->max_num_pages,
+                                            'prev_text' => '<i class="fa-solid fa-arrow-left-long"></i>',
+                                            'next_text' => '<i class="fa-solid fa-arrow-right-long"></i>',
+                                            'mid_size'     => 4,
+                                        ));
+                                    ?>
+                                    </div>
+                                </div>
                             </div>
+                            <!-- PAGINATION END -->
                             <?php wp_reset_postdata(); ?>
                             <?php endif;  ?>
                         </div>
@@ -1146,16 +1174,23 @@ get_header('main'); ?>
                                 </div>
                             </div>
                             <?php endwhile; ?>
-                            <div class="pagination">
-                                <?php
+                            <!-- PAGINATION START -->
+                            <div class="container mx-auto max-w-[1200px] px-[12px] xl:max-w-full">
+                                <div class="flex items-center gap-[20px] pt-[60px] justify-center text-[16px]">
+                                
+                                    <div class="et-pagination flex gap-[10px] items-center">
+                                    <?php
                                     echo paginate_links(array(
-                                        'total' => $result->max_num_pages,
-                                        'current' => $paged,
-                                        'prev_text' => __('«'),
-                                        'next_text' => __('»'),
-                                    ));
-                                ?>
+                                            'total' => $result->max_num_pages,
+                                            'prev_text' => '<i class="fa-solid fa-arrow-left-long"></i>',
+                                            'next_text' => '<i class="fa-solid fa-arrow-right-long"></i>',
+                                            'mid_size'     => 4,
+                                        ));
+                                    ?>
+                                    </div>
+                                </div>
                             </div>
+                            <!-- PAGINATION END -->
                             <?php wp_reset_postdata(); ?>
                             <?php endif;  ?>
                         </div>
@@ -1294,16 +1329,23 @@ get_header('main'); ?>
                                 </div>
                             </div>
                             <?php endwhile; ?>
-                            <div class="pagination">
-                                <?php
+                            <!-- PAGINATION START -->
+                            <div class="container mx-auto max-w-[1200px] px-[12px] xl:max-w-full">
+                                <div class="flex items-center gap-[20px] pt-[60px] justify-center text-[16px]">
+                                
+                                    <div class="et-pagination flex gap-[10px] items-center">
+                                    <?php
                                     echo paginate_links(array(
-                                        'total' => $result->max_num_pages,
-                                        'current' => $paged,
-                                        'prev_text' => __('«'),
-                                        'next_text' => __('»'),
-                                    ));
-                                ?>
+                                            'total' => $result->max_num_pages,
+                                            'prev_text' => '<i class="fa-solid fa-arrow-left-long"></i>',
+                                            'next_text' => '<i class="fa-solid fa-arrow-right-long"></i>',
+                                            'mid_size'     => 4,
+                                        ));
+                                    ?>
+                                    </div>
+                                </div>
                             </div>
+                            <!-- PAGINATION END -->
                             <?php wp_reset_postdata(); ?>
                             <?php endif;  ?>
                         </div>
