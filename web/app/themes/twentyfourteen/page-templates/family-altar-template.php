@@ -61,6 +61,10 @@ get_header('main'); ?>
     top: 0;
     bottom: 0;
 }
+
+.box-cta-home {
+    margin-bottom: -45px;
+}
 @media screen and (max-width: 600px) {
     .single-fa .et-schedule__heading {
         width: 100%;
