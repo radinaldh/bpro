@@ -11620,7 +11620,7 @@ html.lenis {
   }
 }
 
-svg {
+.testimonial-quote-icon svg {
   fill: #18377e;
   opacity: 0.3;
 }
