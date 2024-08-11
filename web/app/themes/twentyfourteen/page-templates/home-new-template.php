@@ -823,7 +823,7 @@ get_header('main');
             <div class="scroll-move">
                <span class="scrolling-text display-1 fw-extra-bold stroke-title text-stroke stroke-opacity-20 stroke-width-1 stroke-primary lh-1">Speakers</span>
             </div>
-            <div class="container" style="height:200px;">	
+            <div class="container" style="height:0;">	
                <div class="section-title section-separator">
                   <h2 class="fw-extra-bold heading-title separator lh-1">Here's the Line Up</h2>
                   <!-- <p class="fs-4 fw-semibold mb-0 subtitle subtitle-width">Shalom profesional muda, Kami percaya bahwa setiap manusia, sebagai makhluk sosial, membutuhkan sebuah komunitas dalam keseharian hidup mereka. Dan sejatinya, komunitas itu akan menjadi sebuah tempat dimana mereka bisa menjadi diri sendiri, saling membangun, saling support, dan saling memberkati satu sama lain. Dengan semangat inilah, kami ada. Komunitas Bethany Professional, atau bisa juga disebut, BPro.</p>	 -->
@@ -834,7 +834,7 @@ get_header('main');
       <?php if ( have_rows( 'section_speakers' ) ) : ?>
       <?php while ( have_rows( 'section_speakers' ) ) : the_row(); ?>
       <!-- SPEAKERS SECTION START -->
-      <section class="et-speakers py-[130px] lg:py-[80px] md:py-[60px] overflow-hidden relative z-[1]">
+      <section class="et-speakers py-[80px] lg:py-[80px] md:py-[60px] overflow-hidden relative z-[1]">
          <div class="container mx-auto max-w-[1200px] px-[12px] xl:max-w-full">
             <!-- heading -->
             <div class="et-speakers-heading text-center mb-[46px] xl:mb-[26px] lg:mb-[16px] gap-[15px]">
