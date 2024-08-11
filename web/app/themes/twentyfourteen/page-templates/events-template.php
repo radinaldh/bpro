@@ -60,30 +60,7 @@ span.page-numbers.current{
         cursor: not-allowed !important;
     }
 
-    a.page-numbers {
-        background:#18377e;
-        padding: 10px;
-        border-radius: 100%;
-        display: inline-block;
-        height: 40px;
-        width: 40px;
-        text-align: center;
-        color: #fff;
-        font-size: 13px;
-    }
 
-    span.page-numbers.current {
-        background: #18377e;
-        padding: 10px;
-        border-radius: 100%;
-        display: inline-block;
-        height: 40px;
-        width: 40px;
-        text-align: center;
-        color: #fff;
-        font-size: 13px;
-        opacity: 0.7;
-    }
 
     .pagination {
         margin: 30px auto;
@@ -395,7 +372,7 @@ span.page-numbers.current{
     <!-- EVENTS SECTION START -->
     <section class="et-all-events et-2-schedules bg-[#EEF4FF] bg-[url('assets/img/schedule-bg.png')] bg-cover bg-no-repeat bg-center relative py-[130px] xl:py-[80px] md:py-[60px] before:absolute before:inset-0 before:bg-[url('../assets/img/')]" style="padding: 80px 0px;">
         <div class="container mx-auto max-w-[1200px] px-[12px] xl:max-w-full">
-            <div class="flex lg:flex-wrap items-center justify-center lg:justify-center sm:justify-start gap-y-[15px] shadow-[0_4px_50px_rgba(0,0,0,0.07)] mb-[60px] rounded-full xxs:rounded-[30px] lg:py-[15px] px-[30px] pr-[6px] md:px-[20px] md:pr-[6px] py-[20px]">
+            <div class="flex lg:flex-wrap items-center justify-center lg:justify-center sm:justify-start gap-y-[15px] shadow-[0_4px_50px_rgba(0,0,0,0.07)] mb-[60px] rounded-full xxs:rounded-[30px] lg:py-[15px] px-[30px] pr-[6px] md:px-[20px] md:pr-[6px] py-[20px]" style="background-color: #fff">
                 <div
                     class="et-events-tab-navs w-[100%] lg:w-full align-center flex xs:flex-wrap shrink-0 lg:justify-center sm:justify-start gap-[45px] md:gap-[30px] xxs:gap-[20px] md:gap-y-[15px]">
                     <a href="<?= home_url()?>/events"
@@ -460,7 +437,7 @@ span.page-numbers.current{
                                         <img src="<?= $image_thumbnail ?>" alt="scehduled-event-cover">
                                     </a>
                                 </div>
-                                <div class="px-[37px] sm:px-[22px] py-[30px] shadow-[0_4px_60px_rgba(18,96,254,0.12)] w-full rounded-[20px] flex gap-y-[15px] xs:flex-col items-center xs:items-center">
+                                <div class="px-[37px] sm:px-[22px] py-[30px] shadow-[0_4px_60px_rgba(18,96,254,0.12)] w-full rounded-[20px] flex gap-y-[15px] xs:flex-col items-center xs:items-center" style="background-color: #fff;">
                                     <div class="et-schedule__heading w-[80%] sm:w-full xs:text-center pr-[40px] sm:pr-[25px] xs:pr-0 mr-[40px] sm:mr-[25px] xs:mr-0 border-r xs:border-r-0 border-[#d9d9d9]">
                                         <!-- date & time -->
                                         <div class="et-schedule-date-time border border-[rgba(217,217,217,0.89)] py-[7px] px-[15px] rounded-full inline-flex xxs:w-full items-center justify-center gap-x-[24px] gap-y-[10px] mb-[10px] xxs:border-0 xxs:p-0 xs:justify-center">
@@ -623,7 +600,7 @@ span.page-numbers.current{
                                         <img src="<?= $image_thumbnail ?>" alt="scehduled-event-cover">
                                     </a>
                                 </div>
-                                <div class="px-[37px] sm:px-[22px] py-[30px] shadow-[0_4px_60px_rgba(18,96,254,0.12)] w-full rounded-[20px] flex gap-y-[15px] xs:flex-col items-center xs:items-center">
+                                <div class="px-[37px] sm:px-[22px] py-[30px] shadow-[0_4px_60px_rgba(18,96,254,0.12)] w-full rounded-[20px] flex gap-y-[15px] xs:flex-col items-center xs:items-center" style="background-color: #fff;">
                                     <div class="et-schedule__heading w-[80%] sm:w-full xs:text-center pr-[40px] sm:pr-[25px] xs:pr-0 mr-[40px] sm:mr-[25px] xs:mr-0 border-r xs:border-r-0 border-[#d9d9d9]">
                                         <!-- date & time -->
                                         <div class="et-schedule-date-time border border-[rgba(217,217,217,0.89)] py-[7px] px-[15px] rounded-full inline-flex xxs:w-full items-center justify-center gap-x-[24px] gap-y-[10px] mb-[10px] xxs:border-0 xxs:p-0 xs:justify-center">
@@ -786,7 +763,7 @@ span.page-numbers.current{
                                         <img src="<?= $image_thumbnail ?>" alt="scehduled-event-cover">
                                     </a>
                                 </div>
-                                <div class="px-[37px] sm:px-[22px] py-[30px] shadow-[0_4px_60px_rgba(18,96,254,0.12)] w-full rounded-[20px] flex gap-y-[15px] xs:flex-col items-center xs:items-center">
+                                <div class="px-[37px] sm:px-[22px] py-[30px] shadow-[0_4px_60px_rgba(18,96,254,0.12)] w-full rounded-[20px] flex gap-y-[15px] xs:flex-col items-center xs:items-center" style="background-color: #fff;">
                                     <div class="et-schedule__heading w-[80%] sm:w-full xs:text-center pr-[40px] sm:pr-[25px] xs:pr-0 mr-[40px] sm:mr-[25px] xs:mr-0 border-r xs:border-r-0 border-[#d9d9d9]">
                                         <!-- date & time -->
                                         <div class="et-schedule-date-time border border-[rgba(217,217,217,0.89)] py-[7px] px-[15px] rounded-full inline-flex xxs:w-full items-center justify-center gap-x-[24px] gap-y-[10px] mb-[10px] xxs:border-0 xxs:p-0 xs:justify-center">
@@ -949,7 +926,7 @@ span.page-numbers.current{
                                         <img src="<?= $image_thumbnail ?>" alt="scehduled-event-cover">
                                     </a>
                                 </div>
-                                <div class="px-[37px] sm:px-[22px] py-[30px] shadow-[0_4px_60px_rgba(18,96,254,0.12)] w-full rounded-[20px] flex gap-y-[15px] xs:flex-col items-center xs:items-center">
+                                <div class="px-[37px] sm:px-[22px] py-[30px] shadow-[0_4px_60px_rgba(18,96,254,0.12)] w-full rounded-[20px] flex gap-y-[15px] xs:flex-col items-center xs:items-center" style="background-color: #fff;">
                                     <div class="et-schedule__heading w-[80%] sm:w-full xs:text-center pr-[40px] sm:pr-[25px] xs:pr-0 mr-[40px] sm:mr-[25px] xs:mr-0 border-r xs:border-r-0 border-[#d9d9d9]">
                                         <!-- date & time -->
                                         <div class="et-schedule-date-time border border-[rgba(217,217,217,0.89)] py-[7px] px-[15px] rounded-full inline-flex xxs:w-full items-center justify-center gap-x-[24px] gap-y-[10px] mb-[10px] xxs:border-0 xxs:p-0 xs:justify-center">
@@ -1112,7 +1089,7 @@ span.page-numbers.current{
                                         <img src="<?= $image_thumbnail ?>" alt="scehduled-event-cover">
                                     </a>
                                 </div>
-                                <div class="px-[37px] sm:px-[22px] py-[30px] shadow-[0_4px_60px_rgba(18,96,254,0.12)] w-full rounded-[20px] flex gap-y-[15px] xs:flex-col items-center xs:items-center">
+                                <div class="px-[37px] sm:px-[22px] py-[30px] shadow-[0_4px_60px_rgba(18,96,254,0.12)] w-full rounded-[20px] flex gap-y-[15px] xs:flex-col items-center xs:items-center" style="background-color: #fff;">
                                     <div class="et-schedule__heading w-[80%] sm:w-full xs:text-center pr-[40px] sm:pr-[25px] xs:pr-0 mr-[40px] sm:mr-[25px] xs:mr-0 border-r xs:border-r-0 border-[#d9d9d9]">
                                         <!-- date & time -->
                                         <div class="et-schedule-date-time border border-[rgba(217,217,217,0.89)] py-[7px] px-[15px] rounded-full inline-flex xxs:w-full items-center justify-center gap-x-[24px] gap-y-[10px] mb-[10px] xxs:border-0 xxs:p-0 xs:justify-center">
@@ -1267,7 +1244,7 @@ span.page-numbers.current{
                                         <img src="<?= $image_thumbnail ?>" alt="scehduled-event-cover">
                                     </a>
                                 </div>
-                                <div class="px-[37px] sm:px-[22px] py-[30px] shadow-[0_4px_60px_rgba(18,96,254,0.12)] w-full rounded-[20px] flex gap-y-[15px] xs:flex-col items-center xs:items-center">
+                                <div class="px-[37px] sm:px-[22px] py-[30px] shadow-[0_4px_60px_rgba(18,96,254,0.12)] w-full rounded-[20px] flex gap-y-[15px] xs:flex-col items-center xs:items-center" style="background-color: #fff;">
                                     <div class="et-schedule__heading w-[80%] sm:w-full xs:text-center pr-[40px] sm:pr-[25px] xs:pr-0 mr-[40px] sm:mr-[25px] xs:mr-0 border-r xs:border-r-0 border-[#d9d9d9]">
                                         <!-- date & time -->
                                         <div class="et-schedule-date-time border border-[rgba(217,217,217,0.89)] py-[7px] px-[15px] rounded-full inline-flex xxs:w-full items-center justify-center gap-x-[24px] gap-y-[10px] mb-[10px] xxs:border-0 xxs:p-0 xs:justify-center">
