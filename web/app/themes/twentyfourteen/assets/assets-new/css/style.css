@@ -7903,7 +7903,7 @@ body {
   --bs-body-font-size: 18px;
   --bs-body-font-weight: 400;
   --bs-body-line-height: 160%;
-  --bs-body-font-family: 'Plus Jakarta Sans', sans-serif;
+  /* --bs-body-font-family: 'Plus Jakarta Sans', sans-serif; */
   --bs-body-color: var(--bs-primary);
   overflow-x: hidden;
 }
@@ -11729,6 +11729,7 @@ svg {
   --bs-stroke-title-padding: 77px;
   padding-top: var(--bs-section-padding-top);
   overflow-x: hidden;
+  overflow-y: hidden;
 }
 
 @media (max-width: 1199.98px) {
