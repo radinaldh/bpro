@@ -234,7 +234,7 @@ h2, .h2 {
 
 @media (min-width: 1200px) {
   h2, .h2 {
-    font-size: 7.5em;
+    font-size: 7em;
   }
 }
 
@@ -7898,7 +7898,8 @@ fieldset:disabled .btn {
 
 body {
   padding-right: 0 !important;
-  --bs-body-bg: #F9FFFC;
+  --bs-body-bg: #fff;
+  /* --bs-body-bg: #F9FFFC; */
   --bs-body-font-size: 18px;
   --bs-body-font-weight: 400;
   --bs-body-line-height: 160%;
