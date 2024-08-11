@@ -256,12 +256,8 @@ get_header('main');
     
 </style>
 
-<section
-    class="hero-banner et-breadcrumb bg-[#000D83] pt-[210px] lg:pt-[190px] sm:pt-[160px] pb-[130px] lg:pb-[110px] sm:pb-[80px] relative z-[1] before:absolute before:inset-0 before:bg-[url('assets/img/breadcrumb-bg.jpg')] before:bg-no-repeat before:bg-cover before:bg-center before:-z-[1] before:opacity-30"
-    style="
-    background-image: url(<?php the_field( 'background_header' ); ?>);     background-size: cover;
-    background-position: center;
-">
+<section class="hero-banner et-breadcrumb bg-[#000D83] pt-[210px] lg:pt-[190px] sm:pt-[160px] pb-[130px] lg:pb-[110px] sm:pb-[80px] relative z-[1] before:absolute before:inset-0 before:bg-[url('assets/img/breadcrumb-bg.jpg')] before:bg-no-repeat before:bg-cover before:bg-center before:-z-[1] before:opacity-30"
+    style=" background-image: url(<?php the_field( 'background_header' ); ?>); background-size: cover; background-position: center; ">
     <div class="container mx-auto max-w-[1200px] px-[12px] xl:max-w-full text-center text-white">
         <h1 class="et-breadcrumb-title font-medium text-[56px] md:text-[50px] sm:text-[22px]">Services BPro</h1>
         <ul class="inline-flex items-center gap-[10px] font-medium text-[16px] sm:text-[12px]">
