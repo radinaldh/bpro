@@ -234,7 +234,7 @@ h2, .h2 {
 
 @media (min-width: 1200px) {
   h2, .h2 {
-    font-size: 6em;
+    font-size: 6.2em;
   }
 }
 
@@ -11884,7 +11884,7 @@ svg {
 }
 
 .heading-title {
-  --bs-heading-title-max-width: 1170px;
+  --bs-heading-title-max-width: 1500px;
   --bs-heading-separator-padding-bottom: 30px;
   --bs-heading-separator-margin-bottom: 30px;
   --bs-separator-width: 200px;
