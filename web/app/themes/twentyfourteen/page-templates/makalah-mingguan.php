@@ -13,10 +13,20 @@ get_header('main'); ?>
 
 .et-single-accordion-item__body i {
     font-size: 14px;
+    margin-right: 10px;
+    background: #18377e;
+    color: #fff;
+    padding: 14px;
+    border-radius: 100%;
 }
 
 .et-single-accordion-item__body a {
-    font-size: 14px;
+    font-size: 15px;
+    font-weight: 500;
+}
+
+.et-single-accordion-item__body p {
+    margin: 20px 0;
 }
 
 
