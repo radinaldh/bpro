@@ -10,7 +10,7 @@ get_header('main'); ?>
 .img-right img {
     width: 100%;
 }
-/* 
+
 .et-single-accordion-item__body i {
     font-size: 14px;
     margin-right: 10px;
@@ -27,7 +27,7 @@ get_header('main'); ?>
 
 .et-single-accordion-item__body p {
     margin: 20px 0;
-} */
+}
 
 
 .hero-banner::before {
@@ -89,13 +89,16 @@ get_header('main'); ?>
                     <?php if ( have_rows( 'content_accordion' ) ) : ?>
                         <?php while ( have_rows( 'content_accordion' ) ) : the_row(); ?>
                     <div class="et-single-accordion-item__body">
+                        <p class="font-light text-[20px]">
                         <?php if ( have_rows( 'button_download' ) ) : ?>
 							<?php while ( have_rows( 'button_download' ) ) : the_row(); ?>
-                                <p class="font-light text-[20px]"><a href="<?php the_sub_field( 'link_button' ); ?>" target="_blank"><i class="fa-solid fa-download"></i><?php the_sub_field( 'title_button' ); ?> </a></p>
-                            <?php endwhile; ?>
-						<?php else : ?>
-							<?php // No rows found ?>
-						<?php endif; ?>
+                                    <a href="<?php the_sub_field( 'link_button' ); ?>" target="_blank"><i class="fa-solid fa-download"></i>
+                                    <?php the_sub_field( 'title_button' ); ?> </a>
+                                    <?php endwhile; ?>
+                                    <?php else : ?>
+                                        <?php // No rows found ?>
+                                        <?php endif; ?>
+                                    </p>
                     </div>
                     <?php endwhile; ?>
             <?php else : ?>
@@ -115,4 +118,4 @@ get_header('main'); ?>
 <?php endif; ?>
 
 <script src="<?= get_template_directory_uri()?>/assets/js/accordion.js"></script>
-<?php get_footer('main');?>im
+<?php get_footer('main');?>
