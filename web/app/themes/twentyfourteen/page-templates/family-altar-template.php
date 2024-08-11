@@ -71,6 +71,8 @@ get_header('main'); ?>
 
     .box-cta-home {
         padding: 10px;
+        margin-bottom: -20px;
+
     }
     .single-fa .et-schedule__heading {
         width: 100%;
