@@ -1065,8 +1065,6 @@ get_header('main');
       <!-- GALLERY SECTION START -->
       <!-- GALLERY SECTION END -->
    
-   
-      <!-- TESTIMONIAL SECTION START -->
       <section class="section-testimonial testimonial-1 section-full-width">
          <div class="section-title-wrapper position-relative">
             <div class="scroll-move">
@@ -1082,14 +1080,15 @@ get_header('main');
                </div>
             </div>
          </div>
+         <!-- section-title-wrapper -->
          <div class="swiper-custom-progress position-relative mt-n30">
             <div class="swiper testimonial-swiper">
                <div class="swiper-wrapper"> 
                   <?php if ( have_rows( 'section_testimonials' ) ) : ?>
-                  <?php while ( have_rows( 'section_testimonials' ) ) : the_row(); ?>
-                        <!-- section-title-wrapper -->
+                     <?php while ( have_rows( 'section_testimonials' ) ) : the_row(); ?>
                      <?php if ( have_rows( 'list_testimonials' ) ) : ?>
                         <?php while ( have_rows( 'list_testimonials' ) ) : the_row(); ?>
+                           <!-- single testimony  -->
                            <div class="swiper-slide">
                               <div class="testimonial-wrapper d-flex gap-10 gap-lg-3 gap-xl-4 align-items-baseline">
                                  <div class="testimonial-quote-icon text-secondary">
@@ -1108,98 +1107,34 @@ get_header('main');
                            </div>
                            <?php endwhile; ?>
                            <?php else : ?>
-                           <?php ?>
-                           <?php endif; ?>
-						</div>
-					</div>
-               <!-- <section class="et-testimonial overflow-hidden py-[130px] xl:py-[80px] md:py-[60px]">
-                     <div class="container mx-auto max-w-[1200px] px-[12px] xl:max-w-full">
-                        <div class="et-testimonial-heading text-center mb-[46px] xl:mb-[26px] lg:mb-[16px] gap-[15px]">
-                           <h6 class="et-section-sub-title anim-text"><?php the_sub_field( 'subtitle' ); ?></h6>
-                           <h2 class="text-[35px] sm:text-[24px] anim-text"><?php the_sub_field( 'title' ); ?></h2>
-                        </div>
-               
-                        <div class="et-2-testimonial-slider swiper overflow-visible">
-                           <div class="right test-right">
-                              <div class="et-test-slider-nav flex gap-[16px] sm:gap-[12px]"
-                                 style="justify-content: center; margin:30px 0">
-                                 <button
-                                    class="prev border border-[#D9D9D9] rounded-full w-[60px] sm:w-[50px] h-[60px] sm:h-[50px] text-[18px] text-etBlack hover:bg-etBlue hover:border-etbg-etBlue hover:text-white">
-                                    <i class="fa-solid fa-arrow-left-long"></i>
-                                 </button>
-                                 <button
-                                    class="next border border-[#D9D9D9] rounded-full w-[60px] sm:w-[50px] h-[60px] sm:h-[50px] text-[18px] text-etBlack hover:bg-etBlue hover:border-etbg-etBlue hover:text-white">
-                                    <i class="fa-solid fa-arrow-right-long"></i>
-                                 </button>
-                              </div>
-                           </div>
-                           <div class="swiper-wrapper">
-                           <?php if ( have_rows( 'list_testimonials' ) ) : ?>
-                              <?php while ( have_rows( 'list_testimonials' ) ) : the_row(); ?>
-                              <div class="swiper-slide">
-                                 <div class="et-testimony relative p-[40px] lg:p-[30px] md:p-[20px] border border-[#D4DCED] rounded-[16px] mt-[60px]">
-                                    <div
-                                       class="et-testimony__heading flex items-end justify-center mb-[17px] lg:mb-[12px] -mt-[100px] md:-mt-[80px]">
-                                       <div
-                                          class="et-testimony__img rounded-full overflow-hidden border border-etBlue p-[7px] w-max max-w-full">
-                                          <img src="<?php the_sub_field( 'image' ); ?>" alt="reviewer image"
-                                             class="w-[100px] sm:w-[80px] h-[100px] sm:h-[80px] rounded-full">
-                                       </div>
-                                    </div>
-               
-                                    <div class="text-center">
-                                       <h5 class="text-black font-medium text-[20px] mb-[3px]"><?php the_sub_field( 'name' ); ?></h5>
-                                       <h6 class="text-[16px] text-etGray font-normal mb-[20px] sm:text-[12px]">
-                                          <?php the_sub_field( 'profession' ); ?></h6>
-                                       <p class="text-[16px] text-etGray font-normal mb-[20px] sm:text-[12px]">
-                                          <?php the_sub_field( 'message' ); ?></p>
-                                    </div>
-               
-                                    <div class="absolute top-[40px] sm:top-[20px] left-[40px] sm:left-[20px]">
-                                       <img src="<?= get_template_directory_uri(); ?>/assets/img/quotation-blue.svg"
-                                          alt="quotation mark">
-                                    </div>
-               
-                                    <div class="absolute bottom-0 left-[50%] -translate-x-[50%] translate-y-[50%] flex gap-[6px] bg-white shadow-[0_4px_25px_rgba(56,75,255,0.15)] p-[12px] rounded-full">
-                                       <img src="<?= get_template_directory_uri(); ?>/assets/img/star-blue.svg" alt="star">
-                                       <img src="<?= get_template_directory_uri(); ?>/assets/img/star-blue.svg" alt="star">
-                                       <img src="<?= get_template_directory_uri(); ?>/assets/img/star-blue.svg" alt="star">
-                                       <img src="<?= get_template_directory_uri(); ?>/assets/img/star-blue.svg" alt="star">
-                                       <img src="<?= get_template_directory_uri(); ?>/assets/img/star-blue.svg" alt="star">
-                                    </div>
-                                 </div>
-                              </div>
-                              <?php endwhile; ?>
-                              <?php else : ?>
-                              <?php ?>
-                              <?php endif; ?>
-                           </div>
-                        </div>
-                     </div>
-                  </section> -->
-                  
-					<div class="container">
-						<div class="testimonial-swiper-pagination-wrapper">
-							<div class="testimonial-swiper-pagination"></div>						
-							<div class="swiper-button-progress">	
-								<div class="progress-button-prev">
-									<svg class="arrow-reverse" width="35" height="22" viewBox="0 0 35 22" fill="none" xmlns="http://www.w3.org/2000/svg">
-										<path fill-rule="evenodd" clip-rule="evenodd" d="M24 0.585815L34.4142 10.9999L24 21.4142L22.5858 20L30.5857 12L0 12L2.38419e-07 10L30.5858 10L22.5858 2.00003L24 0.585815Z"/>
-									</svg>
-								</div>							
-								<div class="progress-button-next">
-									<svg width="35" height="22" viewBox="0 0 35 22" fill="none" xmlns="http://www.w3.org/2000/svg">
-										<path fill-rule="evenodd" clip-rule="evenodd" d="M24 0.585815L34.4142 10.9999L24 21.4142L22.5858 20L30.5857 12L0 12L2.38419e-07 10L30.5858 10L22.5858 2.00003L24 0.585815Z"/>
-									</svg> 
-								</div>																
-							</div>
-						</div>							
-					</div>
-				</div>
-		</section>
-   
+                           <?php // No rows found ?>
+                        <?php endif; ?>
+                     <?php endwhile; ?>
+                  <?php endif; ?>
+               </div>
+               <!-- swiper-wrapper -->
+            </div>
+            <!-- swiper testimonial-swiper -->
+            <div class="container">
+               <div class="testimonial-swiper-pagination-wrapper">
+                  <div class="testimonial-swiper-pagination"></div>						
+                  <div class="swiper-button-progress">	
+                     <div class="progress-button-prev">
+                        <svg class="arrow-reverse" width="35" height="22" viewBox="0 0 35 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                           <path fill-rule="evenodd" clip-rule="evenodd" d="M24 0.585815L34.4142 10.9999L24 21.4142L22.5858 20L30.5857 12L0 12L2.38419e-07 10L30.5858 10L22.5858 2.00003L24 0.585815Z"/>
+                        </svg>
+                     </div>							
+                     <div class="progress-button-next">
+                        <svg width="35" height="22" viewBox="0 0 35 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                           <path fill-rule="evenodd" clip-rule="evenodd" d="M24 0.585815L34.4142 10.9999L24 21.4142L22.5858 20L30.5857 12L0 12L2.38419e-07 10L30.5858 10L22.5858 2.00003L24 0.585815Z"/>
+                        </svg> 
+                     </div>																
+                  </div>
+               </div>							
+            </div>
+         </div>
+      </section>
       
-      <!-- TESTIMONIAL SECTION END -->
 
       <section class="grid grid-cols-4 lg:grid-cols-3 sm:grid-cols-2">
          <!-- single gallery item -->
