@@ -234,7 +234,7 @@ h2, .h2 {
 
 @media (min-width: 1200px) {
   h2, .h2 {
-    font-size: 8.125rem;
+    font-size: 5.5em;
   }
 }
 
@@ -11437,6 +11437,7 @@ body {
   z-index: 1;
   left: 48px;
   transition: transform .08s ease-in-out;
+  top: 50px;
 }
 
 @media (max-width: 1399.98px) {
