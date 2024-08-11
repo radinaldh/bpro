@@ -11622,6 +11622,7 @@ html.lenis {
 
 svg {
   fill: #18377e;
+  opacity: 0.3;
 }
 
 .arrow-reverse {
@@ -11860,7 +11861,8 @@ svg {
 }
 
 .section-separator {
-  border-left: 1px solid var(--bs-border-color);
+  border-left: unset;
+  /* border-left: 1px solid var(--bs-border-color); */
   --bs-section-padding-left: 50px;
   padding-left: var(--bs-section-padding-left);
   position: relative;
