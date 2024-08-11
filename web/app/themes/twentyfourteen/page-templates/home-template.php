@@ -369,7 +369,7 @@ h5.font-semibold.text-\[22px\].md\:text-\[20px\].text-etBlack.mb-\[4px\] {
                     <h6 class="et-section-sub-title anim-text"><?php the_sub_field( 'title' ); ?></h6>
                     <h2 class="text-[35px] sm:text-[24px] mb-[24px] md:mb-[19px] sm:text-[20px] anim-text"><?php the_sub_field( 'title' ); ?></h2>
 
-                    <div class="mb-[30px] text-[15px] sm:text-[12px] md:mb-[30px] rev-slide-up" style="text-align: justify;">
+                    <div class="mb-[30px] text-[15px] sm:text-[12px] md:mb-[30px] rev-slide-up" style="text-align: justify; color: #000;">
                     <?php the_sub_field( 'description' ); ?>
                     </div>
 

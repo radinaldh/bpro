@@ -14,31 +14,31 @@ get_header('main'); ?>
 }
 
 span.page-numbers.current{
-        background-color: var(--et-blue) !important;
-        border-color: var(--et-blue) !important;
-        color: var(--white) !important;
-        width: 50px !important;
-        height: 50px !important;
-        transition: 0.4s ease !important;
-        border: 1px !important;
-        border-radius: 999px !important;
-        display: flex !important;
-        align-items: center !important;
-        justify-content: center !important;
-        opacity: 1 !important;
+        background-color: var(--et-blue);
+        border-color: var(--et-blue);
+        color: var(--white);
+        width: 50px;
+        height: 50px;
+        transition: 0.4s ease;
+        border: 1px;
+        border-radius: 999px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        opacity: 1;
     }
 
     a.page-numbers {
-        background-color: #fff !important;
-        color: #000 !important;
-        width: 50px !important;
-        height: 50px !important;
-        transition: 0.4s ease !important;
-        border: 1px solid gray !important;
-        border-radius: 999px !important;
-        display: flex !important;
-        align-items: center !important;
-        justify-content: center !important;
+        background-color: #fff;
+        color: #000;
+        width: 50px;
+        height: 50px;
+        transition: 0.4s ease;
+        border: 1px solid gray;
+        border-radius: 999px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
     }
 
 
@@ -391,9 +391,9 @@ span.page-numbers.current{
 <!-- EVENTS SLIDER END -->
 
 
-<div class="py-[80px] lg:py-[80px] md:py-[60px] overflow-hidden py-[80px] xl:py-[80px] md:py-[60px] overflow-hidden relative">
+<div class="py-[80px] lg:py-[80px] md:py-[60px] overflow-hidden py-[80px] xl:py-[80px] md:py-[60px] overflow-hidden relative" style="padding-bottom: 0px;">
     <!-- EVENTS SECTION START -->
-    <section class="et-all-events et-2-schedules bg-[#EEF4FF] bg-[url('assets/img/schedule-bg.png')] bg-cover bg-no-repeat bg-center relative py-[130px] xl:py-[80px] md:py-[60px] before:absolute before:inset-0 before:bg-[url('../assets/img/')]" style="padding: 80px 0px">
+    <section class="et-all-events et-2-schedules bg-[#EEF4FF] bg-[url('assets/img/schedule-bg.png')] bg-cover bg-no-repeat bg-center relative py-[130px] xl:py-[80px] md:py-[60px] before:absolute before:inset-0 before:bg-[url('../assets/img/')]" style="padding: 80px 0px;">
         <div class="container mx-auto max-w-[1200px] px-[12px] xl:max-w-full">
             <div class="flex lg:flex-wrap items-center justify-center lg:justify-center sm:justify-start gap-y-[15px] shadow-[0_4px_50px_rgba(0,0,0,0.07)] mb-[60px] rounded-full xxs:rounded-[30px] lg:py-[15px] px-[30px] pr-[6px] md:px-[20px] md:pr-[6px] py-[20px]">
                 <div
