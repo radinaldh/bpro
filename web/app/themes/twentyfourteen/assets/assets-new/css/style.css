@@ -11885,6 +11885,7 @@ svg {
   --bs-separator-padding-bottom: var(--bs-heading-separator-padding-bottom);
   --bs-separator-margin-bottom: var(--bs-heading-separator-margin-bottom);
   max-width: var(--bs-heading-title-max-width);
+  color: #18377e;
 }
 
 @media (max-width: 1399.98px) {
