@@ -223,7 +223,7 @@ get_header('main'); ?>
                     <!-- txt -->
                     <div class="my-[30px]">
                         <h6 class="et-section-sub-title anim-text"><?php the_sub_field( 'tag' ); ?> </h6>
-                        <p class="my-[10px] text-[15px]" style="text-align:justify;">
+                        <p class="my-[10px] text-[15px]" style="text-align:justify; color: #000;">
                         <?php the_sub_field( 'description' ); ?>
                         </p>
                     </div>
