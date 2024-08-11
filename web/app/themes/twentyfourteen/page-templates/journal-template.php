@@ -188,10 +188,10 @@ a.more-link {
                         <h3
                             class="text-[30px] lg:text-[27px] sm:text-[24px] xxs:text-[22px] font-medium text-etBlack mb-[10px] sm:text-[24px] sm:my-[15px]">
                             <?php the_title();?></h3>
-
+                            <div style="margin-bottom: 10px;">
                             <?php the_excerpt(); ?>
-
-                        <a href="<?php the_permalink();?>" class="text-etBlue text-[16px] hover:text-etBlue">Read More <span
+                            </div>
+                        <a href="<?php the_permalink();?>" class="text-etGray text-[16px] hover:text-etBlue">Read More <span
                                 class="pl-[5px]"><i class="fa-solid fa-arrow-right-long"></i></span></a>
                     </div>
                 </div>
