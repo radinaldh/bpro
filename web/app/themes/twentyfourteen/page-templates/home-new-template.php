@@ -411,7 +411,7 @@ get_header('main');
             <div class="scroll-move">
                <span class="scrolling-text display-1 fw-extra-bold stroke-title text-stroke stroke-opacity-20 stroke-width-1 stroke-primary lh-1">About us</span>
             </div>
-            <div class="container">	
+            <div class="container" style="height:100px;">	
                <div class="section-title section-separator">
                   <h2 class="fw-extra-bold heading-title separator lh-1">About BPro Professional</h2>
                   <!-- <p class="fs-4 fw-semibold mb-0 subtitle subtitle-width">Shalom profesional muda, Kami percaya bahwa setiap manusia, sebagai makhluk sosial, membutuhkan sebuah komunitas dalam keseharian hidup mereka. Dan sejatinya, komunitas itu akan menjadi sebuah tempat dimana mereka bisa menjadi diri sendiri, saling membangun, saling support, dan saling memberkati satu sama lain. Dengan semangat inilah, kami ada. Komunitas Bethany Professional, atau bisa juga disebut, BPro.</p>	 -->
@@ -423,7 +423,7 @@ get_header('main');
       <!-- ABOUT SECTION START -->
       <?php if ( have_rows( 'about' ) ) : ?>
       <?php while ( have_rows( 'about' ) ) : the_row(); ?>
-      <section class="et-about py-[130px] xl:py-[80px] md:py-[60px] overflow-hidden relative">
+      <section class="et-about py-[80px] xl:py-[80px] md:py-[60px] overflow-hidden relative">
          <div
             class="container mx-auto max-w-[calc(100%-39.1vw)] xxxl:max-w-[calc(100%-350px)] xl:max-w-[calc(100%-170px)] px-[12px] lg:max-w-full">
             <div
