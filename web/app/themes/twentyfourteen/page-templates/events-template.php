@@ -1400,7 +1400,7 @@ span.page-numbers.current{
 
 <?php if ( have_rows( 'section_testimonials',76 ) ) : ?>
     <?php while ( have_rows( 'section_testimonials',76 ) ) : the_row(); ?>
-        <section class="et-testimonial overflow-hidden py-[130px] xl:py-[80px] md:py-[60px]">
+        <section class="et-testimonial overflow-hidden py-[130px] xl:py-[80px] md:py-[60px]" style="padding-top: 80px;">
             <div class="container mx-auto max-w-[1200px] px-[12px] xl:max-w-full">
                 <!-- heading -->
                 <div class="et-testimonial-heading text-center mb-[46px] xl:mb-[26px] lg:mb-[16px] gap-[15px]">
