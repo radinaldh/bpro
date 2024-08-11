@@ -63,7 +63,8 @@ get_header('main'); ?>
 }
 
 .box-cta-home {
-    margin-bottom: -45px;
+    margin-bottom: -90px;
+    height: 350px;
 }
 @media screen and (max-width: 600px) {
     .single-fa .et-schedule__heading {
@@ -176,7 +177,7 @@ get_header('main'); ?>
 
 <?php if ( have_rows( 'section_fa_at_a_glance' ) ) : ?>
 	<?php while ( have_rows( 'section_fa_at_a_glance' ) ) : the_row(); ?>
-<section class="et-about py-[130px] xl:py-[80px] md:py-[60px] overflow-hidden relative">
+<section class="et-about py-[80px] xl:py-[80px] md:py-[60px] overflow-hidden relative">
     <div
         class="container mx-auto max-w-[calc(100%-39.1vw)] xxxl:max-w-[calc(100%-350px)] xl:max-w-[calc(100%-170px)] px-[12px] lg:max-w-full">
         <div
