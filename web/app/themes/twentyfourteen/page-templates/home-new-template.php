@@ -409,7 +409,7 @@ get_header('main');
       <section class="section-about about-1 section-full-width">	
          <div class="section-title-wrapper position-relative">				
             <div class="scroll-move">
-               <span class="scrolling-text display-1 fw-extra-bold stroke-title text-stroke stroke-opacity-20 stroke-width-1 stroke-primary lh-1">About Us</span>
+               <span class="scrolling-text display-1 fw-extra-bold stroke-title text-stroke stroke-opacity-20 stroke-primary lh-1">About Us</span>
             </div>
             <div class="container">	
                <div class="section-title section-separator">
@@ -821,7 +821,7 @@ get_header('main');
       <section class="section-about about-1 section-full-width">	
          <div class="section-title-wrapper position-relative">				
             <div class="scroll-move">
-               <span class="scrolling-text display-1 fw-extra-bold stroke-title text-stroke stroke-opacity-20 stroke-width-1 stroke-primary lh-1">Speakers</span>
+               <span class="scrolling-text display-1 fw-extra-bold stroke-title text-stroke stroke-opacity-20 stroke-primary lh-1">Speakers</span>
             </div>
             <div class="container" style="height:0;">	
                <div class="section-title section-separator">
@@ -1070,7 +1070,7 @@ get_header('main');
             <section class="section-testimonial testimonial-1 section-full-width" style="padding-bottom: 120px;">
                <div class="section-title-wrapper position-relative">
                   <div class="scroll-move">
-                     <span class="scrolling-text display-1 fw-extra-bold stroke-title text-stroke stroke-opacity-20 stroke-width-1 stroke-primary lh-1"><?php the_sub_field( 'subtitle' ); ?></span>
+                     <span class="scrolling-text display-1 fw-extra-bold stroke-title text-stroke stroke-opacity-20 stroke-primary lh-1"><?php the_sub_field( 'subtitle' ); ?></span>
                   </div>					
                   
                   <div class="container">	
