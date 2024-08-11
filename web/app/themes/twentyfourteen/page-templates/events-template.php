@@ -14,31 +14,31 @@ get_header('main'); ?>
 }
 
 span.page-numbers.current{
-        background-color: var(--et-blue);
-        border-color: var(--et-blue);
-        color: var(--white);
-        width: 50px;
-        height: 50px;
-        transition: 0.4s ease;
-        border: 1px;
-        border-radius: 999px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        opacity: 1;
+        background-color: var(--et-blue) !important;
+        border-color: var(--et-blue) !important;
+        color: var(--white) !important;
+        width: 50px !important;
+        height: 50px !important;
+        transition: 0.4s ease !important;
+        border: 1px !important;
+        border-radius: 999px !important;
+        display: flex !important;
+        align-items: center !important;
+        justify-content: center !important;
+        opacity: 1 !important;
     }
 
     a.page-numbers {
-        background-color: #fff;
-        color: #000;
-        width: 50px;
-        height: 50px;
-        transition: 0.4s ease;
-        border: 1px solid gray;
-        border-radius: 999px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
+        background-color: #fff !important;
+        color: #000 !important;
+        width: 50px !important;
+        height: 50px !important;
+        transition: 0.4s ease !important;
+        border: 1px solid gray !important;
+        border-radius: 999px !important;
+        display: flex !important;
+        align-items: center !important;
+        justify-content: center !important;
     }
 
 
