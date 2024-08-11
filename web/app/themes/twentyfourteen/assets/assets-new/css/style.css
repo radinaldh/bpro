@@ -234,7 +234,7 @@ h2, .h2 {
 
 @media (min-width: 1200px) {
   h2, .h2 {
-    font-size: 7em;
+    font-size: 6em;
   }
 }
 
@@ -7909,7 +7909,7 @@ body {
 }
 
 :root {
-  --bs-primary: #253B2F;
+  --bs-primary: #18377e;
   --bs-primary-rgb: 37, 59, 47;
   --bs-secondary: #D2E0D9;
   --bs-secondary-rgb: 210, 224, 217;
@@ -7924,7 +7924,7 @@ body {
   --bs-primary: #D2E0D9 ;
   --bs-primary-rgb: 210, 224, 217;
   --bs-link-color-rgb: 210, 224, 217;
-  --bs-secondary: #253B2F;
+  --bs-secondary: #18377e;
   --bs-secondary-rgb: 37, 59, 47;
   --bs-link-hover-color-rgb: 210, 224, 217;
 }
@@ -10354,6 +10354,7 @@ body {
   -webkit-box-orient: vertical;
   height: 150px;
   text-align: justify;
+  font-size: 15px;
 }
 
 @media (max-width: 1399.98px) {
@@ -11728,8 +11729,8 @@ svg {
 }
 
 .section-title-wrapper {
-  --bs-section-padding-top: 80px;
-  --bs-stroke-title-padding: 77px;
+  /* --bs-section-padding-top: 80px;
+  --bs-stroke-title-padding: 77px; */
   padding-top: var(--bs-section-padding-top);
   overflow-x: hidden;
   overflow-y: hidden;

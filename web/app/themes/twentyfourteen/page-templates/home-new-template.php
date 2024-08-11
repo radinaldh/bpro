@@ -409,9 +409,9 @@ get_header('main');
       <section class="section-about about-1 section-full-width">	
          <div class="section-title-wrapper position-relative">				
             <div class="scroll-move">
-               <span class="scrolling-text display-1 fw-extra-bold stroke-title text-stroke stroke-opacity-20 stroke-width-1 stroke-primary lh-1">About us</span>
+               <span class="scrolling-text display-1 fw-extra-bold stroke-title text-stroke stroke-opacity-20 stroke-width-1 stroke-primary lh-1">About Us</span>
             </div>
-            <div class="container" style="height:200px;">	
+            <div class="container">	
                <div class="section-title section-separator">
                   <h2 class="fw-extra-bold heading-title separator lh-1">Bethany Professional</h2>
                   <!-- <p class="fs-4 fw-semibold mb-0 subtitle subtitle-width">Shalom profesional muda, Kami percaya bahwa setiap manusia, sebagai makhluk sosial, membutuhkan sebuah komunitas dalam keseharian hidup mereka. Dan sejatinya, komunitas itu akan menjadi sebuah tempat dimana mereka bisa menjadi diri sendiri, saling membangun, saling support, dan saling memberkati satu sama lain. Dengan semangat inilah, kami ada. Komunitas Bethany Professional, atau bisa juga disebut, BPro.</p>	 -->
@@ -546,7 +546,7 @@ get_header('main');
                                           <g clip-path="url(#clip0_2043_1443)">
                                              <path
                                                 d="M14.125 1.75H13.375V0.5H12.125V1.75H3.875V0.5H2.625V1.75H1.875C0.841125 1.75 0 2.59113 0 3.625V14.625C0 15.6589 0.841125 16.5 1.875 16.5H14.125C15.1589 16.5 16 15.6589 16 14.625V3.625C16 2.59113 15.1589 1.75 14.125 1.75ZM14.75 14.625C14.75 14.9696 14.4696 15.25 14.125 15.25H1.875C1.53038 15.25 1.25 14.9696 1.25 14.625V6.375H14.75V14.625ZM14.75 5.125H1.25V3.625C1.25 3.28038 1.53038 3 1.875 3H2.625V4.25H3.875V3H12.125V4.25H13.375V3H14.125C14.4696 3 14.75 3.28038 14.75 3.625V5.125Z"
-                                                fill="var(--et-blue)" />
+                                                fill="#18377e" />
                                              <path d="M3.625 7.6875H2.375V8.9375H3.625V7.6875Z" fill="var(--et-blue)" />
                                              <path d="M6.125 7.6875H4.875V8.9375H6.125V7.6875Z" fill="var(--et-blue)" />
                                              <path d="M8.625 7.6875H7.375V8.9375H8.625V7.6875Z" fill="var(--et-blue)" />
@@ -1065,71 +1065,71 @@ get_header('main');
       <!-- GALLERY SECTION START -->
       <!-- GALLERY SECTION END -->
    
-      <section class="section-testimonial testimonial-1 section-full-width" style="padding-bottom: 120px;">
-         <div class="section-title-wrapper position-relative">
-            <div class="scroll-move">
-               <span class="scrolling-text display-1 fw-extra-bold stroke-title text-stroke stroke-opacity-20 stroke-width-1 stroke-primary lh-1">Testimonial</span>
-            </div>					
-            
-            <div class="container">	
-               <div class="section-title section-separator">
-                  <h2 class="fw-extra-bold heading-title separator lh-1">Client Experiences</h2>
-                  <div class="d-flex flex-column flex-lg-row gap-4 align-items-lg-end justify-content-lg-between">
-                     <p class="fs-4 fw-semibold mb-0 subtitle subtitle-width">Inspiring Stories from Our Clients, Where Dreams Find Their Designers</p>
+      <?php if(have_rows('section_testimonials')) :?>
+         <?php while(have_rows('section_testimonials')) : the_row() ;?>
+            <section class="section-testimonial testimonial-1 section-full-width" style="padding-bottom: 120px;">
+               <div class="section-title-wrapper position-relative">
+                  <div class="scroll-move">
+                     <span class="scrolling-text display-1 fw-extra-bold stroke-title text-stroke stroke-opacity-20 stroke-width-1 stroke-primary lh-1"><?php the_sub_field( 'subtitle' ); ?></span>
+                  </div>					
+                  
+                  <div class="container">	
+                     <div class="section-title section-separator">
+                        <h2 class="fw-extra-bold heading-title separator lh-1"><?php the_sub_field( 'title' ); ?></h2>
+                        <!-- <div class="d-flex flex-column flex-lg-row gap-4 align-items-lg-end justify-content-lg-between">
+                           <p class="fs-4 fw-semibold mb-0 subtitle subtitle-width">Inspiring Stories from Our Clients, Where Dreams Find Their Designers</p>
+                        </div> -->
+                     </div>
                   </div>
                </div>
-            </div>
-         </div>
-         <!-- section-title-wrapper -->
-         <div class="swiper-custom-progress position-relative mt-n30">
-            <div class="swiper testimonial-swiper">
-               <div class="swiper-wrapper"> 
-                  <?php if(have_rows('section_testimonials')) :?>
-                     <?php while(have_rows('section_testimonials')) : the_row() ;?>
+               <!-- section-title-wrapper -->
+               <div class="swiper-custom-progress position-relative mt-n30">
+                  <div class="swiper testimonial-swiper">
+                     <div class="swiper-wrapper"> 
                         <?php if(have_rows('list_testimonials')) :?>
-                           <?php while(have_rows('list_testimonials')) : the_row() ;?>
-                              <div class="swiper-slide">
-                                 <div class="testimonial-wrapper d-flex gap-10 gap-lg-3 gap-xl-4 align-items-baseline">
-                                    <div class="testimonial-quote-icon text-secondary">
-                                       <svg width="121" height="96" viewBox="0 0 121 96" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                          <path fill-rule="evenodd" clip-rule="evenodd" d="M66 95.9453V67.8453C66 49.9188 70.3834 35.0608 79.3087 23.4338C88.2594 11.5728 101.429 3.96088 118.603 0.485051L121 0V26.5397L119.446 26.895C112.752 28.4251 107.289 31.271 102.982 35.3906L102.981 35.392C99.4937 38.7208 97.0251 42.565 95.5542 46.9453H115V95.9453H66ZM92.9 48.9453C93.0636 48.2677 93.2476 47.601 93.4521 46.9453C94.9981 41.988 97.714 37.6546 101.6 33.9453C106.2 29.5453 112 26.5453 119 24.9453V2.44531C118.327 2.58156 117.66 2.72424 117 2.87334C101.189 6.44484 89.1554 13.7022 80.9 24.6453C72.3 35.8453 68 50.2453 68 67.8453V93.9453H113V48.9453H92.9ZM0 95.9453V67.8453C0 49.9188 4.38341 35.0609 13.3086 23.4339C22.2593 11.5729 35.4286 3.96089 52.6033 0.485051L55 0V26.5397L53.4456 26.895C46.7516 28.4251 41.2893 31.271 36.9825 35.3906L36.981 35.392C33.4937 38.7208 31.0251 42.565 29.5542 46.9453H49V95.9453H0ZM26.9 48.9453C27.0636 48.2677 27.2476 47.601 27.4521 46.9453C28.9981 41.988 31.714 37.6546 35.6 33.9453C40.2 29.5453 46 26.5453 53 24.9453V2.44531C52.3268 2.58156 51.6601 2.72424 51 2.87334C35.1887 6.44484 23.1554 13.7022 14.9 24.6453C6.3 35.8453 2 50.2453 2 67.8453V93.9453H47V48.9453H26.9Z"/>
-                                       </svg>
-                                    </div>
-                                    <div class="testimonial-details">
-                                       <p><?php the_sub_field( 'message' ); ?></p>
-                                       <div class="testimonial-author">
-                                          <h6 class="fw-extra-bold testimonial-author-name"><?php the_sub_field( 'name' ); ?></h6>
-                                          <span class="fw-medium"><?php the_sub_field( 'profession' ); ?></span>
+                              <?php while(have_rows('list_testimonials')) : the_row() ;?>
+                                 <div class="swiper-slide">
+                                    <div class="testimonial-wrapper d-flex gap-10 gap-lg-3 gap-xl-4 align-items-baseline">
+                                       <div class="testimonial-quote-icon text-secondary">
+                                          <svg width="121" height="96" viewBox="0 0 121 96" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                             <path fill-rule="evenodd" clip-rule="evenodd" d="M66 95.9453V67.8453C66 49.9188 70.3834 35.0608 79.3087 23.4338C88.2594 11.5728 101.429 3.96088 118.603 0.485051L121 0V26.5397L119.446 26.895C112.752 28.4251 107.289 31.271 102.982 35.3906L102.981 35.392C99.4937 38.7208 97.0251 42.565 95.5542 46.9453H115V95.9453H66ZM92.9 48.9453C93.0636 48.2677 93.2476 47.601 93.4521 46.9453C94.9981 41.988 97.714 37.6546 101.6 33.9453C106.2 29.5453 112 26.5453 119 24.9453V2.44531C118.327 2.58156 117.66 2.72424 117 2.87334C101.189 6.44484 89.1554 13.7022 80.9 24.6453C72.3 35.8453 68 50.2453 68 67.8453V93.9453H113V48.9453H92.9ZM0 95.9453V67.8453C0 49.9188 4.38341 35.0609 13.3086 23.4339C22.2593 11.5729 35.4286 3.96089 52.6033 0.485051L55 0V26.5397L53.4456 26.895C46.7516 28.4251 41.2893 31.271 36.9825 35.3906L36.981 35.392C33.4937 38.7208 31.0251 42.565 29.5542 46.9453H49V95.9453H0ZM26.9 48.9453C27.0636 48.2677 27.2476 47.601 27.4521 46.9453C28.9981 41.988 31.714 37.6546 35.6 33.9453C40.2 29.5453 46 26.5453 53 24.9453V2.44531C52.3268 2.58156 51.6601 2.72424 51 2.87334C35.1887 6.44484 23.1554 13.7022 14.9 24.6453C6.3 35.8453 2 50.2453 2 67.8453V93.9453H47V48.9453H26.9Z"/>
+                                          </svg>
                                        </div>
-                                    </div>								 
+                                       <div class="testimonial-details">
+                                          <p><?php the_sub_field( 'message' ); ?></p>
+                                          <div class="testimonial-author">
+                                             <h6 class="fw-extra-bold testimonial-author-name"><?php the_sub_field( 'name' ); ?></h6>
+                                             <span class="fw-medium"><?php the_sub_field( 'profession' ); ?></span>
+                                          </div>
+                                       </div>								 
+                                    </div>
                                  </div>
-                              </div>
-                           <?php endwhile;?>
-                        <?php endif;?>
-                     <?php endwhile;?>
-                  <?php endif;?>
-               </div>
-            </div>
-            <div class="container">
-               <div class="testimonial-swiper-pagination-wrapper">
-                  <div class="testimonial-swiper-pagination"></div>						
-                  <div class="swiper-button-progress">	
-                     <div class="progress-button-prev">
-                        <svg class="arrow-reverse" width="35" height="22" viewBox="0 0 35 22" fill="none" xmlns="http://www.w3.org/2000/svg">
-                           <path fill-rule="evenodd" clip-rule="evenodd" d="M24 0.585815L34.4142 10.9999L24 21.4142L22.5858 20L30.5857 12L0 12L2.38419e-07 10L30.5858 10L22.5858 2.00003L24 0.585815Z"/>
-                        </svg>
-                     </div>							
-                     <div class="progress-button-next">
-                        <svg width="35" height="22" viewBox="0 0 35 22" fill="none" xmlns="http://www.w3.org/2000/svg">
-                           <path fill-rule="evenodd" clip-rule="evenodd" d="M24 0.585815L34.4142 10.9999L24 21.4142L22.5858 20L30.5857 12L0 12L2.38419e-07 10L30.5858 10L22.5858 2.00003L24 0.585815Z"/>
-                        </svg> 
-                     </div>																
+                              <?php endwhile;?>
+                           <?php endif;?>
+                     </div>
                   </div>
-               </div>							
-            </div>
-         </div>
-      </section>
-   
+                  <div class="container">
+                     <div class="testimonial-swiper-pagination-wrapper">
+                        <div class="testimonial-swiper-pagination"></div>						
+                        <div class="swiper-button-progress">	
+                           <div class="progress-button-prev">
+                              <svg class="arrow-reverse" width="35" height="22" viewBox="0 0 35 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                 <path fill-rule="evenodd" clip-rule="evenodd" d="M24 0.585815L34.4142 10.9999L24 21.4142L22.5858 20L30.5857 12L0 12L2.38419e-07 10L30.5858 10L22.5858 2.00003L24 0.585815Z"/>
+                              </svg>
+                           </div>							
+                           <div class="progress-button-next">
+                              <svg width="35" height="22" viewBox="0 0 35 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                 <path fill-rule="evenodd" clip-rule="evenodd" d="M24 0.585815L34.4142 10.9999L24 21.4142L22.5858 20L30.5857 12L0 12L2.38419e-07 10L30.5858 10L22.5858 2.00003L24 0.585815Z"/>
+                              </svg> 
+                           </div>																
+                        </div>
+                     </div>							
+                  </div>
+               </div>
+            </section>
+            <?php endwhile;?>
+         <?php endif;?>
+         
       <section class="grid grid-cols-4 lg:grid-cols-3 sm:grid-cols-2">
          <!-- single gallery item -->
          <?php $gallery_image_urls = get_field( 'gallery_image' ); ?>
