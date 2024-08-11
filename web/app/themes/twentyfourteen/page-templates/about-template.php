@@ -108,8 +108,7 @@ get_header('main');
 </section>
 <?php endif; ?>
 
-
-<section class="et-about py-[130px] xl:py-[80px] md:py-[60px] overflow-hidden relative">
+<section class="et-about py-[80px] xl:py-[80px] md:py-[60px] overflow-hidden relative">
     <div class="container mx-auto max-w-[calc(100%-39.1vw)] xxxl:max-w-[calc(100%-350px)] xl:max-w-[calc(100%-170px)] px-[12px] lg:max-w-full">
         <div
             class="flex items-center md:flex-wrap gap-x-[60px] xxl:gap-x-[40px] lg:gap-x-[30px] gap-y-[40px] sm:gap-y-[0px] lg:justify-center">
