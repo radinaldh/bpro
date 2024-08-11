@@ -27,6 +27,9 @@ get_header('main'); ?>
 
 .et-single-accordion-item__body p {
     margin: 20px 0;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
 }
 
 
@@ -92,13 +95,13 @@ get_header('main'); ?>
                         <p class="font-light text-[20px]">
                         <?php if ( have_rows( 'button_download' ) ) : ?>
 							<?php while ( have_rows( 'button_download' ) ) : the_row(); ?>
-                                    <a href="<?php the_sub_field( 'link_button' ); ?>" target="_blank"><i class="fa-solid fa-download"></i>
-                                    <?php the_sub_field( 'title_button' ); ?> </a>
-                                    <?php endwhile; ?>
-                                    <?php else : ?>
-                                        <?php // No rows found ?>
-                                        <?php endif; ?>
-                                    </p>
+                            <a href="<?php the_sub_field( 'link_button' ); ?>" target="_blank"><i class="fa-solid fa-download"></i>
+                                <?php the_sub_field( 'title_button' ); ?> </a>
+                            <?php endwhile; ?>
+                            <?php else : ?>
+                                 <?php // No rows found ?>
+                        </p>
+						<?php endif; ?>
                     </div>
                     <?php endwhile; ?>
             <?php else : ?>
