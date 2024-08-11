@@ -1084,61 +1084,32 @@ get_header('main');
          <div class="swiper-custom-progress position-relative mt-n30">
             <div class="swiper testimonial-swiper">
                <div class="swiper-wrapper"> 
-                  <div class="swiper-slide">
-                     <div class="testimonial-wrapper d-flex gap-10 gap-lg-3 gap-xl-4 align-items-baseline">
-                        <div class="testimonial-quote-icon text-secondary">
-                           <svg width="121" height="96" viewBox="0 0 121 96" fill="none" xmlns="http://www.w3.org/2000/svg">
-                              <path fill-rule="evenodd" clip-rule="evenodd" d="M66 95.9453V67.8453C66 49.9188 70.3834 35.0608 79.3087 23.4338C88.2594 11.5728 101.429 3.96088 118.603 0.485051L121 0V26.5397L119.446 26.895C112.752 28.4251 107.289 31.271 102.982 35.3906L102.981 35.392C99.4937 38.7208 97.0251 42.565 95.5542 46.9453H115V95.9453H66ZM92.9 48.9453C93.0636 48.2677 93.2476 47.601 93.4521 46.9453C94.9981 41.988 97.714 37.6546 101.6 33.9453C106.2 29.5453 112 26.5453 119 24.9453V2.44531C118.327 2.58156 117.66 2.72424 117 2.87334C101.189 6.44484 89.1554 13.7022 80.9 24.6453C72.3 35.8453 68 50.2453 68 67.8453V93.9453H113V48.9453H92.9ZM0 95.9453V67.8453C0 49.9188 4.38341 35.0609 13.3086 23.4339C22.2593 11.5729 35.4286 3.96089 52.6033 0.485051L55 0V26.5397L53.4456 26.895C46.7516 28.4251 41.2893 31.271 36.9825 35.3906L36.981 35.392C33.4937 38.7208 31.0251 42.565 29.5542 46.9453H49V95.9453H0ZM26.9 48.9453C27.0636 48.2677 27.2476 47.601 27.4521 46.9453C28.9981 41.988 31.714 37.6546 35.6 33.9453C40.2 29.5453 46 26.5453 53 24.9453V2.44531C52.3268 2.58156 51.6601 2.72424 51 2.87334C35.1887 6.44484 23.1554 13.7022 14.9 24.6453C6.3 35.8453 2 50.2453 2 67.8453V93.9453H47V48.9453H26.9Z"/>
-                           </svg>
-                        </div>
-                        <div class="testimonial-details">
-                           <p>I was truly impressed by the design expertise of Architronix. They turned my home into a stylish haven, and I couldn't be happier!</p>
-                           <div class="testimonial-author">
-                              <h6 class="fw-extra-bold testimonial-author-name">Sarah Johnson</h6>
-                              <span class="fw-medium">Modern Spaces Inc.</span>
-                           </div>
-                        </div>								 
-                     </div>
-                  </div>
-                  <!-- swiper-slide -->
-                  <div class="swiper-slide">
-                     <div class="testimonial-wrapper d-flex gap-10 gap-lg-3 gap-xl-4 align-items-baseline">
-                        <div class="testimonial-quote-icon text-secondary">
-                           <svg width="121" height="96" viewBox="0 0 121 96" fill="none" xmlns="http://www.w3.org/2000/svg">
-                              <path fill-rule="evenodd" clip-rule="evenodd" d="M66 95.9453V67.8453C66 49.9188 70.3834 35.0608 79.3087 23.4338C88.2594 11.5728 101.429 3.96088 118.603 0.485051L121 0V26.5397L119.446 26.895C112.752 28.4251 107.289 31.271 102.982 35.3906L102.981 35.392C99.4937 38.7208 97.0251 42.565 95.5542 46.9453H115V95.9453H66ZM92.9 48.9453C93.0636 48.2677 93.2476 47.601 93.4521 46.9453C94.9981 41.988 97.714 37.6546 101.6 33.9453C106.2 29.5453 112 26.5453 119 24.9453V2.44531C118.327 2.58156 117.66 2.72424 117 2.87334C101.189 6.44484 89.1554 13.7022 80.9 24.6453C72.3 35.8453 68 50.2453 68 67.8453V93.9453H113V48.9453H92.9ZM0 95.9453V67.8453C0 49.9188 4.38341 35.0609 13.3086 23.4339C22.2593 11.5729 35.4286 3.96089 52.6033 0.485051L55 0V26.5397L53.4456 26.895C46.7516 28.4251 41.2893 31.271 36.9825 35.3906L36.981 35.392C33.4937 38.7208 31.0251 42.565 29.5542 46.9453H49V95.9453H0ZM26.9 48.9453C27.0636 48.2677 27.2476 47.601 27.4521 46.9453C28.9981 41.988 31.714 37.6546 35.6 33.9453C40.2 29.5453 46 26.5453 53 24.9453V2.44531C52.3268 2.58156 51.6601 2.72424 51 2.87334C35.1887 6.44484 23.1554 13.7022 14.9 24.6453C6.3 35.8453 2 50.2453 2 67.8453V93.9453H47V48.9453H26.9Z"/>
-                           </svg>
-                        </div>
-                        <div class="testimonial-details">
-                           <p>Architronix exceeded my expectations. They took my vision and brought it to life, creating a breathtaking design that perfectly complements my desire</p>
-                           <div class="testimonial-author">
-                              <h6 class="fw-extra-bold testimonial-author-name">John Smith</h6>
-                              <span class="fw-medium">Smith & Co. Architecture.</span>
-                           </div>
-                        </div>								 
-                     </div>
-                  </div>
-                  <!-- swiper-slide -->
-                  <div class="swiper-slide">
-                     <div class="testimonial-wrapper d-flex gap-10 gap-lg-3 gap-xl-4 align-items-baseline">
-                        <div class="testimonial-quote-icon text-secondary">
-                           <svg width="121" height="96" viewBox="0 0 121 96" fill="none" xmlns="http://www.w3.org/2000/svg">
-                              <path fill-rule="evenodd" clip-rule="evenodd" d="M66 95.9453V67.8453C66 49.9188 70.3834 35.0608 79.3087 23.4338C88.2594 11.5728 101.429 3.96088 118.603 0.485051L121 0V26.5397L119.446 26.895C112.752 28.4251 107.289 31.271 102.982 35.3906L102.981 35.392C99.4937 38.7208 97.0251 42.565 95.5542 46.9453H115V95.9453H66ZM92.9 48.9453C93.0636 48.2677 93.2476 47.601 93.4521 46.9453C94.9981 41.988 97.714 37.6546 101.6 33.9453C106.2 29.5453 112 26.5453 119 24.9453V2.44531C118.327 2.58156 117.66 2.72424 117 2.87334C101.189 6.44484 89.1554 13.7022 80.9 24.6453C72.3 35.8453 68 50.2453 68 67.8453V93.9453H113V48.9453H92.9ZM0 95.9453V67.8453C0 49.9188 4.38341 35.0609 13.3086 23.4339C22.2593 11.5729 35.4286 3.96089 52.6033 0.485051L55 0V26.5397L53.4456 26.895C46.7516 28.4251 41.2893 31.271 36.9825 35.3906L36.981 35.392C33.4937 38.7208 31.0251 42.565 29.5542 46.9453H49V95.9453H0ZM26.9 48.9453C27.0636 48.2677 27.2476 47.601 27.4521 46.9453C28.9981 41.988 31.714 37.6546 35.6 33.9453C40.2 29.5453 46 26.5453 53 24.9453V2.44531C52.3268 2.58156 51.6601 2.72424 51 2.87334C35.1887 6.44484 23.1554 13.7022 14.9 24.6453C6.3 35.8453 2 50.2453 2 67.8453V93.9453H47V48.9453H26.9Z"/>
-                           </svg>
-                        </div>
-                        <div class="testimonial-details">
-                           <p>Architronix Interiors transformed my office space into a functional yet aesthetically pleasing environment. Their attention to detail and innovative designs are top-notch</p>
-                           <div class="testimonial-author">
-                              <h6 class="fw-extra-bold testimonial-author-name">Emily Roberts</h6>
-                              <span class="fw-medium">UrbanLiving Interiors</span>
-                           </div>
-                        </div>								 
-                     </div>
-                  </div>
-                  <!-- swiper-slide -->
+                  <?php if(have_rows('section_testimonials')) :?>
+                     <?php while(have_rows('section_testimonials')) : the_row() ;?>
+                        <?php if(have_rows('list_testimonials')) :?>
+                           <?php while(have_rows('list_testimonials')) : the_row() ;?>
+                              <div class="swiper-slide">
+                                 <div class="testimonial-wrapper d-flex gap-10 gap-lg-3 gap-xl-4 align-items-baseline">
+                                    <div class="testimonial-quote-icon text-secondary">
+                                       <svg width="121" height="96" viewBox="0 0 121 96" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                          <path fill-rule="evenodd" clip-rule="evenodd" d="M66 95.9453V67.8453C66 49.9188 70.3834 35.0608 79.3087 23.4338C88.2594 11.5728 101.429 3.96088 118.603 0.485051L121 0V26.5397L119.446 26.895C112.752 28.4251 107.289 31.271 102.982 35.3906L102.981 35.392C99.4937 38.7208 97.0251 42.565 95.5542 46.9453H115V95.9453H66ZM92.9 48.9453C93.0636 48.2677 93.2476 47.601 93.4521 46.9453C94.9981 41.988 97.714 37.6546 101.6 33.9453C106.2 29.5453 112 26.5453 119 24.9453V2.44531C118.327 2.58156 117.66 2.72424 117 2.87334C101.189 6.44484 89.1554 13.7022 80.9 24.6453C72.3 35.8453 68 50.2453 68 67.8453V93.9453H113V48.9453H92.9ZM0 95.9453V67.8453C0 49.9188 4.38341 35.0609 13.3086 23.4339C22.2593 11.5729 35.4286 3.96089 52.6033 0.485051L55 0V26.5397L53.4456 26.895C46.7516 28.4251 41.2893 31.271 36.9825 35.3906L36.981 35.392C33.4937 38.7208 31.0251 42.565 29.5542 46.9453H49V95.9453H0ZM26.9 48.9453C27.0636 48.2677 27.2476 47.601 27.4521 46.9453C28.9981 41.988 31.714 37.6546 35.6 33.9453C40.2 29.5453 46 26.5453 53 24.9453V2.44531C52.3268 2.58156 51.6601 2.72424 51 2.87334C35.1887 6.44484 23.1554 13.7022 14.9 24.6453C6.3 35.8453 2 50.2453 2 67.8453V93.9453H47V48.9453H26.9Z"/>
+                                       </svg>
+                                    </div>
+                                    <div class="testimonial-details">
+                                       <p><?php the_sub_field( 'message' ); ?></p>
+                                       <div class="testimonial-author">
+                                          <h6 class="fw-extra-bold testimonial-author-name"><?php the_sub_field( 'name' ); ?></h6>
+                                          <span class="fw-medium"><?php the_sub_field( 'profession' ); ?></span>
+                                       </div>
+                                    </div>								 
+                                 </div>
+                              </div>
+                           <?php endwhile;?>
+                        <?php endif;?>
+                     <?php endwhile;?>
+                  <?php endif;?>
                </div>
-               <!-- swiper-wrapper -->
             </div>
-            <!-- swiper testimonial-swiper -->
             <div class="container">
                <div class="testimonial-swiper-pagination-wrapper">
                   <div class="testimonial-swiper-pagination"></div>						
@@ -1157,76 +1128,8 @@ get_header('main');
                </div>							
             </div>
          </div>
-         
       </section>
-      <?php if ( have_rows( 'section_testimonials' ) ) : ?>
-         <?php while ( have_rows( 'section_testimonials' ) ) : the_row(); ?>
-            <section class="et-testimonial overflow-hidden py-[130px] xl:py-[80px] md:py-[60px]">
-               <div class="container mx-auto max-w-[1200px] px-[12px] xl:max-w-full">
-                     <!-- heading -->
-                     <div class="et-testimonial-heading text-center mb-[46px] xl:mb-[26px] lg:mb-[16px] gap-[15px]">
-                        <h6 class="et-section-sub-title anim-text"><?php the_sub_field( 'subtitle' ); ?></h6>
-                        <h2 class="text-[35px] sm:text-[24px] anim-text"><?php the_sub_field( 'title' ); ?></h2>
-                     </div>
-
-                     <!-- slider -->
-                     <div class="et-2-testimonial-slider swiper overflow-visible">
-                        <div class="right test-right">
-                           <div class="et-test-slider-nav flex gap-[16px] sm:gap-[12px]" style="justify-content: center; margin:30px 0">
-                                 <button class="prev border border-[#D9D9D9] rounded-full w-[60px] sm:w-[50px] h-[60px] sm:h-[50px] text-[18px] text-etBlack hover:bg-etBlue hover:border-etbg-etBlue hover:text-white">
-                                    <i class="fa-solid fa-arrow-left-long"></i>
-                                 </button>
-                                 <button class="next border border-[#D9D9D9] rounded-full w-[60px] sm:w-[50px] h-[60px] sm:h-[50px] text-[18px] text-etBlack hover:bg-etBlue hover:border-etbg-etBlue hover:text-white">
-                                    <i class="fa-solid fa-arrow-right-long"></i>
-                                 </button>
-                           </div>
-                        </div>
-                        <div class="swiper-wrapper">
-                        <?php if ( have_rows( 'list_testimonials' ) ) : ?>
-                           <?php while ( have_rows( 'list_testimonials' ) ) : the_row(); ?>
-                           <!-- single testimony  -->
-                           <div class="swiper-slide">
-                                 <div class="et-testimony relative p-[40px] lg:p-[30px] md:p-[20px] border border-[#D4DCED] rounded-[16px] mt-[60px]">
-                                    <!-- single testimony heading -->
-                                    <div class="et-testimony__heading flex items-end justify-center mb-[17px] lg:mb-[12px] -mt-[100px] md:-mt-[80px]">
-                                       <div class="et-testimony__img rounded-full overflow-hidden border border-etBlue p-[7px] w-max max-w-full">
-                                             <img src="<?php the_sub_field( 'image' ); ?>" alt="reviewer image" class="w-[100px] sm:w-[80px] h-[100px] sm:h-[80px] rounded-full">
-                                       </div>
-                                    </div>
-
-                                    <div class="text-center">
-                                       <h5 class="text-black font-medium text-[20px] mb-[3px]"><?php the_sub_field( 'name' ); ?></h5>
-                                       <h6 class="text-[16px] text-etGray font-normal mb-[20px] sm:text-[12px]"><?php the_sub_field( 'profession' ); ?></h6>
-                                       <p class="text-[16px] text-etGray font-normal mb-[20px] sm:text-[12px]"><?php the_sub_field( 'message' ); ?></p>
-                                    </div>
-
-                                    <!-- quotation icon -->
-                                    <div class="absolute top-[40px] sm:top-[20px] left-[40px] sm:left-[20px]">
-                                       <img src="<?= get_template_directory_uri(); ?>/assets/img/quotation-darkblue.png" width="55px" alt="quotation mark">
-                                    </div>
-
-                                    <!-- rating stars -->
-                                    <div class="absolute bottom-0 left-[50%] -translate-x-[50%] translate-y-[50%] flex gap-[6px] bg-white shadow-[0_4px_25px_rgba(56,75,255,0.15)] p-[12px] rounded-full">
-                                       <img width="20px" src="<?= get_template_directory_uri(); ?>/assets/img/star-darkblue.png" alt="star">
-                                       <img width="20px" src="<?= get_template_directory_uri(); ?>/assets/img/star-darkblue.png" alt="star">
-                                       <img width="20px" src="<?= get_template_directory_uri(); ?>/assets/img/star-darkblue.png" alt="star">
-                                       <img width="20px" src="<?= get_template_directory_uri(); ?>/assets/img/star-darkblue.png" alt="star">
-                                       <img width="20px" src="<?= get_template_directory_uri(); ?>/assets/img/star-darkblue.png" alt="star">
-                                    </div>
-                                 </div>
-                           </div>
-                           <?php endwhile; ?>
-               <?php else : ?>
-                  <?php // No rows found ?>
-               <?php endif; ?>
-
-                        </div>
-                     </div>
-               </div>
-            </section>
-         <?php endwhile; ?>
-      <?php endif; ?>
-
+   
       <section class="grid grid-cols-4 lg:grid-cols-3 sm:grid-cols-2">
          <!-- single gallery item -->
          <?php $gallery_image_urls = get_field( 'gallery_image' ); ?>
