@@ -82,7 +82,7 @@ get_header('main'); ?>
 
 
 <!-- CONTACT SECTION START -->
-<div class="py-[120px] xl:py-[80px] md:py-[60px]">
+<div class="py-[120px] xl:py-[80px] md:py-[60px] overflow-hidden relative">
     <div class="container mx-auto max-w-[1200px] px-[12px] xl:max-w-full">
         <div class="grid grid-cols-2 md:grid-cols-1 gap-[60px] xl:gap-[40px] items-center">
             <!-- left side contact infos -->
@@ -184,6 +184,13 @@ get_header('main'); ?>
                 </div>
             </div>
         </div>
+    </div>
+    <!-- vectors -->
+    <div class="xs:hidden">
+        <img src="<?= get_template_directory_uri()?>/assets/img/about-vector-1.png" alt="vector"
+            class="pointer-events-none absolute top-[340px] left-[90px] -z-[1]">
+        <img src="<?= get_template_directory_uri()?>/assets/img/about-vector-2.png" alt="vector"
+            class="pointer-events-none absolute top-[153px] right-0 -z-[1]">
     </div>
 </div>
 <!-- CONTACT SECTION END -->
