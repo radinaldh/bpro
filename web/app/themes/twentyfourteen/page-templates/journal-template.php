@@ -95,7 +95,7 @@ a.more-link {
 <?php endif; ?>
 <!-- BREADCRUMB SECTION END -->
 <!-- MAIN CONTENT START -->
-<div class="et-event-details-content py-[130px] lg:py-[80px] md:py-[60px]">
+<div class="py-[80px] xl:py-[80px] md:py-[60px] overflow-hidden relative et-event-details-content py-[130px] lg:py-[80px] md:py-[60px]">
     <div class="container mx-auto max-w-[1200px] px-[12px] xl:max-w-full">
         <div class="flex gap-[30px] lg:gap-[20px] md:flex-col md:items-center">
             <!-- left content -->
@@ -107,7 +107,7 @@ a.more-link {
                     'category_name' => 'Journal',
                     'orderby'    => 'date',
                     'post_status' => 'publish',
-                    'posts_per_page' => 3,
+                    'posts_per_page' => 2,
                     'paged' => $currentPage,
                 );
                 $paged = (get_query_var('paged')) ? get_query_var('paged') : 1;
@@ -344,6 +344,13 @@ a.more-link {
                 </div>
             </div>
         </div>
+    </div>
+    <!-- vectors -->
+    <div class="xs:hidden">
+        <img src="<?= get_template_directory_uri()?>/assets/img/about-vector-1.png" alt="vector"
+            class="pointer-events-none absolute top-[340px] left-[90px] -z-[1]">
+        <img src="<?= get_template_directory_uri()?>/assets/img/about-vector-2.png" alt="vector"
+            class="pointer-events-none absolute top-[153px] right-0 -z-[1]">
     </div>
 </div>
 <!-- MAIN CONTENT END -->
