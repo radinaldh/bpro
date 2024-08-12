@@ -9,18 +9,18 @@ get_header('main');
 
 <style>
 
-.et-history-timeline.swiper-slide-thumb-active {
-    border-top:1px solid #fff;
-}
+    .et-history-timeline.swiper-slide-thumb-active {
+        border-top:1px solid #fff;
+    }
 
-.et-history-timeline::before {
-    background-color: #fff;
-}
-.before\:bg-etBlue\/80::before {
-    content: var(--tw-content);
-    background-color: #18377e;
-    opacity: 0.7;
-}
+    .et-history-timeline::before {
+        background-color: #fff;
+    }
+    .before\:bg-etBlue\/80::before {
+        content: var(--tw-content);
+        background-color: #18377e;
+        opacity: 0.7;
+    }
 
     .et-history-timeline.swiper-slide-thumb-active h3,
     .et-history-timeline h3 {
@@ -73,7 +73,19 @@ get_header('main');
     .parent-image-new {
         height: 600px;
     }
+
+    .arrow-mobile {
+        display: none;
+    }
+
+    .arrow-mobile button {
+        background-color: #18377e;
+        color: #fff;
+    }
     @media(max-width:500px) {
+        .arrow-mobile {
+            display: block;
+        }
         .parent-image-new {
             height: 350px;
         }
@@ -258,7 +270,19 @@ get_header('main');
                                     </div>
                                 </div>
                             <?php endwhile; ?>
-                        </div>                    
+                        </div>    
+                        <div class="arrow-mobile">
+                            <div class="right test-right">
+                                <div class="et-test-slider-nav flex gap-[16px] sm:gap-[12px]" style="justify-content: center; margin:30px 0">
+                                    <button class="prev border border-[#D9D9D9] rounded-full w-[60px] sm:w-[50px] h-[60px] sm:h-[50px] text-[18px] text-etBlack hover:bg-etBlue hover:border-etbg-etBlue hover:text-white">
+                                        <i class="fa-solid fa-arrow-left-long"></i>
+                                    </button>
+                                    <button class="next border border-[#D9D9D9] rounded-full w-[60px] sm:w-[50px] h-[60px] sm:h-[50px] text-[18px] text-etBlack hover:bg-etBlue hover:border-etbg-etBlue hover:text-white">
+                                        <i class="fa-solid fa-arrow-right-long"></i>
+                                    </button>
+                                </div>
+                            </div>                
+                        </div>
                     </div>
             <?php endif;?>
             <?php endwhile;?>

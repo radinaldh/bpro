@@ -449,12 +449,12 @@ document.addEventListener("DOMContentLoaded", () => {
             768: {
                 spaceBetween: 52,
             }
-        }
+        },
     });
     new Swiper(".et-history-slider", {
         navigation: {
-            nextEl: ".swiper-button-next",
-            prevEl: ".swiper-button-prev",
+            prevEl: ".et-test-slider-nav .prev",
+            nextEl: ".et-test-slider-nav .next",
         },
         thumbs: {
             swiper: etHistoryTimelineSlider,
