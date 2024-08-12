@@ -391,6 +391,7 @@ h5.font-semibold.text-\[22px\].md\:text-\[20px\].text-etBlack.mb-\[4px\] {
                                 <div class="w-[60px] h-[60px] rounded-full border-[3px] border-white first:ml-0 text-white bg-etBlue font-semibold flex items-center justify-center text-[16px]">25+</div>
                             </div>
                             <span class="uppercase font-semibold text-etBlue text-[16px]">Speakers</span>
+                            
                         </div> -->
                     </div>
                 </div>

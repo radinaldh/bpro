@@ -71,6 +71,10 @@ get_header('main');
     }
 
 
+    section.minus-top {
+        margin-top: 80px;
+    }
+
     @media only screen and (max-width: 1700px) {
         iframe {
             width: 70%;
@@ -83,7 +87,7 @@ get_header('main');
         }
 
         section.minus-top {
-            margin-top: -155px;
+            margin-top: -100px;
         }
 
         .bg-etBlue.rounded-\[20px\].overflow-hidden.text-white.max-w-\[370px\].xxs\:max-w-full {
@@ -287,15 +291,15 @@ get_header('main');
     }
 
     .slick-dots {
-    position: absolute;
-    bottom: -25px !important;
-    display: block;
-    width: 100%;
-    padding: 0;
-    margin: 0;
-    list-style: none;
-    text-align: center;
-}
+        position: absolute;
+        bottom: -25px !important;
+        display: block;
+        width: 100%;
+        padding: 0;
+        margin: 0;
+        list-style: none;
+        text-align: center;
+    }
 
 
     
@@ -346,7 +350,7 @@ get_header('main');
 
 <?php if ( have_rows( 'section_ministry' ) ) : ?>
 <?php while ( have_rows( 'section_ministry' ) ) : the_row(); ?>
-<section class="minus-top et-about py-[80px] overflow-hidden relative et-2-schedules bg-[#EEF4FF] bg-[url('assets/img/schedule-bg.png')] bg-cover bg-no-repeat bg-center relative py-[130px] xl:py-[80px] md:py-[60px] before:absolute before:inset-0 before:bg-[url('../assets/img/')]" style="margin-top: 100px; margin-bottom: 100px;">
+<section class="minus-top et-about py-[80px] overflow-hidden relative et-2-schedules bg-[#EEF4FF] bg-[url('assets/img/schedule-bg.png')] bg-cover bg-no-repeat bg-center relative py-[130px] xl:py-[80px] md:py-[60px] before:absolute before:inset-0 before:bg-[url('../assets/img/')]">
     <div class="text-center mb-[52px]">
         <h6 class="et-section-sub-title anim-text"><?php the_sub_field( 'subtitle' ); ?></h6>
         <h2 class="mb-[24px] md:mb-[19px] anim-text sm:text-[24px] text-[25px]"><?php the_sub_field( 'title' ); ?>
