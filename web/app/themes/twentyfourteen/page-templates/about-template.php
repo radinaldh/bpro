@@ -71,7 +71,7 @@ get_header('main');
     }
 
     .parent-image-new {
-        height: 500px;
+        height: 600px;
     }
     @media(max-width:500px) {
         .parent-image-new {
