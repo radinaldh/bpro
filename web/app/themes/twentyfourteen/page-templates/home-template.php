@@ -397,6 +397,11 @@ h5.font-semibold.text-\[22px\].md\:text-\[20px\].text-etBlack.mb-\[4px\] {
                 </div>
             </div>
         </div>
+         <!-- vectors -->
+         <div class="xs:hidden">
+            <img src="https://bethanyprofessional.com/app/themes/twentyfourteen/assets/img/about-vector-1.png" alt="vector" class="pointer-events-none absolute top-[340px] left-[90px] -z-[1]">
+            <img src="https://bethanyprofessional.com/app/themes/twentyfourteen/assets/img/about-vector-2.png" alt="vector" class="pointer-events-none absolute top-[153px] right-0 -z-[1]">
+        </div>
     </section>
     <?php endwhile; ?>
     <?php endif; ?>
@@ -733,6 +738,11 @@ h5.font-semibold.text-\[22px\].md\:text-\[20px\].text-etBlack.mb-\[4px\] {
                     
                 </div>
             </div>
+        </div>
+         <!-- vectors -->
+         <div class="xs:hidden">
+            <img src="https://bethanyprofessional.com/app/themes/twentyfourteen/assets/img/about-vector-1.png" alt="vector" class="pointer-events-none absolute top-[340px] left-[90px] -z-[1]">
+            <img src="https://bethanyprofessional.com/app/themes/twentyfourteen/assets/img/about-vector-2.png" alt="vector" class="pointer-events-none absolute top-[153px] right-0 -z-[1]">
         </div>
     </section>
 
