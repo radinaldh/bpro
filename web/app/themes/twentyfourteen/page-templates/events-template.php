@@ -198,6 +198,8 @@ span.page-numbers.current{
             flex-wrap: nowrap;
             overflow: scroll;
             gap: 10px;
+            align-items: center;
+            text-align: center;
         }
     }
 
@@ -484,7 +486,7 @@ span.page-numbers.current{
                                                 <span class="text-etGray font-normal text-[16px]"><?= $date ?></span>
                                             </div>
 
-                                            <div class="time flex items-center gap-[10px] xxs:hidden">
+                                            <div class="time flex items-center gap-[10px]">
                                                 <span class="icon">
                                                     <svg width="16" height="17" viewBox="0 0 16 17" fill="none"
                                                         xmlns="http://www.w3.org/2000/svg">
@@ -647,7 +649,7 @@ span.page-numbers.current{
                                                 <span class="text-etGray font-normal text-[16px]"><?= $date ?></span>
                                             </div>
 
-                                            <div class="time flex items-center gap-[10px] xxs:hidden">
+                                            <div class="time flex items-center gap-[10px]">
                                                 <span class="icon">
                                                     <svg width="16" height="17" viewBox="0 0 16 17" fill="none"
                                                         xmlns="http://www.w3.org/2000/svg">
@@ -810,7 +812,7 @@ span.page-numbers.current{
                                                 <span class="text-etGray font-normal text-[16px]"><?= $date ?></span>
                                             </div>
 
-                                            <div class="time flex items-center gap-[10px] xxs:hidden">
+                                            <div class="time flex items-center gap-[10px]">
                                                 <span class="icon">
                                                     <svg width="16" height="17" viewBox="0 0 16 17" fill="none"
                                                         xmlns="http://www.w3.org/2000/svg">
@@ -973,7 +975,7 @@ span.page-numbers.current{
                                                 <span class="text-etGray font-normal text-[16px]"><?= $date ?></span>
                                             </div>
 
-                                            <div class="time flex items-center gap-[10px] xxs:hidden">
+                                            <div class="time flex items-center gap-[10px]">
                                                 <span class="icon">
                                                     <svg width="16" height="17" viewBox="0 0 16 17" fill="none"
                                                         xmlns="http://www.w3.org/2000/svg">
@@ -1136,7 +1138,7 @@ span.page-numbers.current{
                                                 <span class="text-etGray font-normal text-[16px]"><?= $date ?></span>
                                             </div>
 
-                                            <div class="time flex items-center gap-[10px] xxs:hidden">
+                                            <div class="time flex items-center gap-[10px]">
                                                 <span class="icon">
                                                     <svg width="16" height="17" viewBox="0 0 16 17" fill="none"
                                                         xmlns="http://www.w3.org/2000/svg">
@@ -1291,7 +1293,7 @@ span.page-numbers.current{
                                                 <span class="text-etGray font-normal text-[16px]"><?= $date ?></span>
                                             </div>
 
-                                            <div class="time flex items-center gap-[10px] xxs:hidden">
+                                            <div class="time flex items-center gap-[10px]">
                                                 <span class="icon">
                                                     <svg width="16" height="17" viewBox="0 0 16 17" fill="none"
                                                         xmlns="http://www.w3.org/2000/svg">
