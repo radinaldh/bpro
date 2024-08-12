@@ -160,7 +160,7 @@ get_header('main'); ?>
             <!-- right side contact form -->
             <div>
                 <h2 class="text-[40px] md:text-[35px] sm:text-[30px] xxs:text-[28px] font-medium text-etBlack mb-[7px]"><?= the_field('head_title_form')?></h2>
-                <p class="text-etGray font-light text-[16px] mb-[38px]"><?= the_field('description_form')?></p>
+                <p class="text-etGray font-light text-[16px] mb-[38px]" style="text-align: justify;"><?= the_field('description_form')?></p>
 
                 <!-- <form action="#" class="grid grid-cols-2 xxs:grid-cols-1 gap-[30px] xs:gap-[20px] text-[16px]">
                     <div>
