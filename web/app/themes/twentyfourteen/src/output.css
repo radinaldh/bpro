@@ -6017,6 +6017,9 @@ video {
   .xxs\:h-\[500px\] {
     height: 500px;
   }
+  .xxs\:h-\[450px\] {
+    height: 450px;
+  }
 
   .xxs\:w-\[110px\] {
     width: 110px;
