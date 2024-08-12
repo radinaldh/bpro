@@ -452,6 +452,10 @@ document.addEventListener("DOMContentLoaded", () => {
         }
     });
     new Swiper(".et-history-slider", {
+        navigation: {
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev",
+        },
         thumbs: {
             swiper: etHistoryTimelineSlider,
         },
