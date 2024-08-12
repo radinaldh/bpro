@@ -254,7 +254,7 @@ get_header('main');
                             ?>
                                 <div class="swiper-slide">
                                     <div class="grid grid-cols-1 gap-[30px]">
-                                        <div class="explain bg-white h-[350px] xxs:h-[500px] relative rounded-[20px] px-[30px] py-[20px] xxs:px-[20px]">
+                                        <div class="explain bg-white h-[350px] xxs:h-[450px] relative rounded-[20px] px-[30px] py-[20px] xxs:px-[20px]">
                                             <h5 class="text-[24px] font-normal mb-[13px] sm:text-[20px] text-center" style="color:#fff"><?= $bigger_title_value ?></h5>
     
                                             <div class="txt mb-[40px]" style="font-style: normal;">
