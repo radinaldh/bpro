@@ -37,7 +37,7 @@ get_header('main');
 
     @media(max-width:1700px) {
         .herohero-title {
-            margin-top: 175px;
+            margin-top: 82px;
         }
         .et-banner-slider .swiper-slide-active > div {
     min-height: 100vh;
@@ -52,7 +52,7 @@ get_header('main');
     }
 
     .herohero-title {
-            margin-top: 147px;
+            margin-top: 64px;
         }
 
     }
@@ -63,7 +63,7 @@ get_header('main');
 }
 
 .herohero-title {
-            margin-top: 125px;
+            margin-top: 43px;
         }
     }
     @media (max-width: 600px) {
