@@ -525,12 +525,14 @@ span.page-numbers.current{
                                     <div
                                         class="flex shrink-0 flex-col gap-[16px] xxs:gap-[10px] xs:flex-wrap xs:jusity-center">
                                         <!-- <a href="#" class="et-btn border w-[180px] bg-etBlue text-white inline-flex items-center justify-center h-[45px] px-[22px] xxs:px-[16px] font-normal text-[17px] rounded-full hover:!bg-etBlack hover:!text-white">View More</a> -->
+                                        <?php if($now <= $tanggal ) :?>
                                         <?php if($link_reservation != NULL) : ?>
                                             <a href="<?= $link_reservation ?>" class="et-btn border w-[180px] bg-etBlue text-white inline-flex items-center justify-center h-[45px] px-[22px] xxs:px-[16px] font-normal text-[17px] rounded-full hover:!bg-etBlack hover:!text-white">Book Your Seat</a>
                                         <?php else :?>
                                         <a href="https://api.whatsapp.com/send?phone=6281131166111"
                                             class="et-btn border w-[180px] bg-etBlue text-white inline-flex items-center justify-center h-[45px] px-[22px] xxs:px-[16px] font-normal text-[17px] rounded-full hover:!bg-etBlack hover:!text-white">More
                                             Info</a>
+                                        <?php endif;?>
                                         <?php endif;?>
                                     </div>
                                 </div>
@@ -688,12 +690,14 @@ span.page-numbers.current{
                                     <div
                                         class="flex shrink-0 flex-col gap-[16px] xxs:gap-[10px] xs:flex-wrap xs:jusity-center">
                                         <!-- <a href="#" class="et-btn border w-[180px] bg-etBlue text-white inline-flex items-center justify-center h-[45px] px-[22px] xxs:px-[16px] font-normal text-[17px] rounded-full hover:!bg-etBlack hover:!text-white">View More</a> -->
+                                        <?php if($now <= $tanggal ) :?>
                                         <?php if($link_reservation != NULL) : ?>
                                             <a href="<?= $link_reservation ?>" class="et-btn border w-[180px] bg-etBlue text-white inline-flex items-center justify-center h-[45px] px-[22px] xxs:px-[16px] font-normal text-[17px] rounded-full hover:!bg-etBlack hover:!text-white">Book Your Seat</a>
                                         <?php else :?>
                                         <a href="https://api.whatsapp.com/send?phone=6281131166111"
                                             class="et-btn border w-[180px] bg-etBlue text-white inline-flex items-center justify-center h-[45px] px-[22px] xxs:px-[16px] font-normal text-[17px] rounded-full hover:!bg-etBlack hover:!text-white">More
                                             Info</a>
+                                        <?php endif;?>
                                         <?php endif;?>
                                     </div>
                                 </div>
@@ -851,12 +855,14 @@ span.page-numbers.current{
                                     <div
                                         class="flex shrink-0 flex-col gap-[16px] xxs:gap-[10px] xs:flex-wrap xs:jusity-center">
                                         <!-- <a href="#" class="et-btn border w-[180px] bg-etBlue text-white inline-flex items-center justify-center h-[45px] px-[22px] xxs:px-[16px] font-normal text-[17px] rounded-full hover:!bg-etBlack hover:!text-white">View More</a> -->
+                                        <?php if($now <= $tanggal ) :?>
                                         <?php if($link_reservation != NULL) : ?>
                                             <a href="<?= $link_reservation ?>" class="et-btn border w-[180px] bg-etBlue text-white inline-flex items-center justify-center h-[45px] px-[22px] xxs:px-[16px] font-normal text-[17px] rounded-full hover:!bg-etBlack hover:!text-white">Book Your Seat</a>
                                         <?php else :?>
                                         <a href="https://api.whatsapp.com/send?phone=6281131166111"
                                             class="et-btn border w-[180px] bg-etBlue text-white inline-flex items-center justify-center h-[45px] px-[22px] xxs:px-[16px] font-normal text-[17px] rounded-full hover:!bg-etBlack hover:!text-white">More
                                             Info</a>
+                                        <?php endif;?>
                                         <?php endif;?>
                                     </div>
                                 </div>
@@ -1014,12 +1020,14 @@ span.page-numbers.current{
                                     <div
                                         class="flex shrink-0 flex-col gap-[16px] xxs:gap-[10px] xs:flex-wrap xs:jusity-center">
                                         <!-- <a href="#" class="et-btn border w-[180px] bg-etBlue text-white inline-flex items-center justify-center h-[45px] px-[22px] xxs:px-[16px] font-normal text-[17px] rounded-full hover:!bg-etBlack hover:!text-white">View More</a> -->
+                                        <?php if($now <= $tanggal ) :?>
                                         <?php if($link_reservation != NULL) : ?>
                                             <a href="<?= $link_reservation ?>" class="et-btn border w-[180px] bg-etBlue text-white inline-flex items-center justify-center h-[45px] px-[22px] xxs:px-[16px] font-normal text-[17px] rounded-full hover:!bg-etBlack hover:!text-white">Book Your Seat</a>
                                         <?php else :?>
                                         <a href="https://api.whatsapp.com/send?phone=6281131166111"
                                             class="et-btn border w-[180px] bg-etBlue text-white inline-flex items-center justify-center h-[45px] px-[22px] xxs:px-[16px] font-normal text-[17px] rounded-full hover:!bg-etBlack hover:!text-white">More
                                             Info</a>
+                                        <?php endif;?>
                                         <?php endif;?>
                                     </div>
                                 </div>
@@ -1176,12 +1184,14 @@ span.page-numbers.current{
 
                                     <div
                                         class="flex shrink-0 flex-col gap-[16px] xxs:gap-[10px] xs:flex-wrap xs:jusity-center">
+                                        <?php if($now <= $tanggal ) :?>
                                         <?php if($link_reservation != NULL) : ?>
                                             <a href="<?= $link_reservation ?>" class="et-btn border w-[180px] bg-etBlue text-white inline-flex items-center justify-center h-[45px] px-[22px] xxs:px-[16px] font-normal text-[17px] rounded-full hover:!bg-etBlack hover:!text-white">Book Your Seat</a>
                                         <?php else :?>
                                         <a href="https://api.whatsapp.com/send?phone=6281131166111"
                                             class="et-btn border w-[180px] bg-etBlue text-white inline-flex items-center justify-center h-[45px] px-[22px] xxs:px-[16px] font-normal text-[17px] rounded-full hover:!bg-etBlack hover:!text-white">More
                                             Info</a>
+                                        <?php endif;?>
                                         <?php endif;?>
                                     </div>
                                 </div>
@@ -1331,12 +1341,14 @@ span.page-numbers.current{
 
                                     <div
                                         class="flex shrink-0 flex-col gap-[16px] xxs:gap-[10px] xs:flex-wrap xs:jusity-center">
+                                        <?php if($now <= $tanggal ) :?>
                                         <?php if($link_reservation != NULL) : ?>
                                             <a href="<?= $link_reservation ?>" class="et-btn border w-[180px] bg-etBlue text-white inline-flex items-center justify-center h-[45px] px-[22px] xxs:px-[16px] font-normal text-[17px] rounded-full hover:!bg-etBlack hover:!text-white">Book Your Seat</a>
                                         <?php else :?>
                                         <a href="https://api.whatsapp.com/send?phone=6281131166111"
                                             class="et-btn border w-[180px] bg-etBlue text-white inline-flex items-center justify-center h-[45px] px-[22px] xxs:px-[16px] font-normal text-[17px] rounded-full hover:!bg-etBlack hover:!text-white">More
                                             Info</a>
+                                        <?php endif;?>
                                         <?php endif;?>
                                     </div>
                                 </div>
