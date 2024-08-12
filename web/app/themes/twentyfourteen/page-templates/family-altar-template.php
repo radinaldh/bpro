@@ -162,7 +162,7 @@ section.section-box-family-altar {
     }
 
     .box-cta-home {
-        padding-top: 50px;
+        padding-top: 25px;
     }
 
     .box-cta-home a.et-btn {
