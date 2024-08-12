@@ -132,7 +132,7 @@ get_header('main');
                         $image_child = get_sub_field('image_child');
                     ?>
                     <?php endwhile;?>
-                    <img src="<?= $image_parent ?>" style="width: 350px; height: 500px; object-fit: cover;" alt="image" class="shrink-0 rounded-[10px]" />
+                    <img src="<?= $image_parent ?>" style="width: 350px; height: 350px; object-fit: cover;" alt="image" class="shrink-0 rounded-[10px]" />
                     <img src="<?= $image_child ?>" alt="image" class="et-about-floating-img absolute top-[45px] -right-[70px] shrink-0 rounded-[20px] border-white border-[10px] xs:hidden" />
                 <?php endif;?>
                 <!-- vectors -->
