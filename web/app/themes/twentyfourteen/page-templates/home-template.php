@@ -8,8 +8,6 @@ get_header('main');
 ?>
 <style>
 
-    
-
     .test-right {
         display: none;
     }
@@ -23,54 +21,17 @@ get_header('main');
     }
 
     @media(min-width:1800px) {
-        h1.text-\[clamp\(42px\,6\.25vw\,12rem\)\].font-semibold.leading-\[1\.1\].mb-\[36px\].md\:mb-\[36px\].anim-text{
-            font-size: 90px;
-        }
         .herohero-title {
-            margin-top: 160px;
+            margin-top: 120px;
         }
-        .et-banner-slider .swiper-slide-active > div {
-    min-height: 100vh;
-}
-        
     }
 
     @media(max-width:1700px) {
         .herohero-title {
-            margin-top: 82px;
-        }
-        .et-banner-slider .swiper-slide-active > div {
-    min-height: 100vh;
-    }
-        h1.text-\[clamp\(42px\,6\.25vw\,12rem\)\].font-semibold.leading-\[1\.1\].mb-\[36px\].md\:mb-\[36px\].anim-text{
-            font-size: 75px;
+            margin-top: 50px;
         }
     }
-    @media(max-width:1400px) {
-        .et-banner-slider .swiper-slide-active > div {
-    min-height: 100vh;
-    }
-
-    .herohero-title {
-            margin-top: 64px;
-        }
-
-    }
-
-    @media(max-width:1300px) {
-        .et-banner-slider .swiper-slide-active > div {
-    min-height: 100vh;
-}
-
-.herohero-title {
-            margin-top: 43px;
-        }
-    }
-    @media (max-width: 600px) {
-
-        h1.text-\[clamp\(42px\,6\.25vw\,12rem\)\].font-semibold.leading-\[1\.1\].mb-\[36px\].md\:mb-\[36px\].anim-text{
-            font-size: 48px;
-        }
+    @media (max-width: 500px) {
 
         .herohero-title {
             margin-top: 0;
@@ -108,19 +69,7 @@ get_header('main');
             border-radius: 20px;
         }
     }
-    @media (max-width: 400px) {
-        h1.text-\[clamp\(42px\,6\.25vw\,12rem\)\].font-semibold.leading-\[1\.1\].mb-\[36px\].md\:mb-\[36px\].anim-text{
-            font-size: 40px;
-        }
 
-        .et-banner-slider .swiper-slide-active > div {
-    min-height: 34vh;
-}
-
-        .herohero-title {
-        margin-top: 15px;
-        }
-    }
     .testing-slider {
         display: none;
     }
@@ -149,6 +98,10 @@ img.backgroundimg{
     position: absolute;
     top: 0;
     left: 0;
+}
+
+.et-banner-slider .swiper-slide-active > div {
+    min-height: 100vh;
 }
 
 .before\:opacity-50::before {
@@ -416,7 +369,7 @@ h5.font-semibold.text-\[22px\].md\:text-\[20px\].text-etBlack.mb-\[4px\] {
                     <h6 class="et-section-sub-title anim-text"><?php the_sub_field( 'title' ); ?></h6>
                     <h2 class="text-[35px] sm:text-[24px] mb-[24px] md:mb-[19px] sm:text-[20px] anim-text"><?php the_sub_field( 'title' ); ?></h2>
 
-                    <div class="mb-[30px] text-[15px] sm:text-[12px] md:mb-[30px] rev-slide-up" style="text-align: justify; color: #000;">
+                    <div class="mb-[30px] text-[15px] sm:text-[12px] font-light text-etGray md:mb-[30px] rev-slide-up" style="text-align: justify;">
                     <?php the_sub_field( 'description' ); ?>
                     </div>
 
@@ -439,13 +392,6 @@ h5.font-semibold.text-\[22px\].md\:text-\[20px\].text-etBlack.mb-\[4px\] {
                 </div>
             </div>
         </div>
-        <!-- vectors -->
-    <div class="xs:hidden">
-        <img src="<?= get_template_directory_uri()?>/assets/img/about-vector-1.png" alt="vector"
-            class="pointer-events-none absolute top-[340px] left-[90px] -z-[1]">
-        <img src="<?= get_template_directory_uri()?>/assets/img/about-vector-2.png" alt="vector"
-            class="pointer-events-none absolute top-[153px] right-0 -z-[1]">
-    </div>
     </section>
     <?php endwhile; ?>
     <?php endif; ?>
@@ -783,13 +729,6 @@ h5.font-semibold.text-\[22px\].md\:text-\[20px\].text-etBlack.mb-\[4px\] {
                 </div>
             </div>
         </div>
-        <!-- vectors -->
-    <div class="xs:hidden">
-        <img src="<?= get_template_directory_uri()?>/assets/img/about-vector-1.png" alt="vector"
-            class="pointer-events-none absolute top-[340px] left-[90px] -z-[1]">
-        <img src="<?= get_template_directory_uri()?>/assets/img/about-vector-2.png" alt="vector"
-            class="pointer-events-none absolute top-[153px] right-0 -z-[1]">
-    </div>
     </section>
 
     <?php endwhile; ?>
@@ -947,10 +886,10 @@ h5.font-semibold.text-\[22px\].md\:text-\[20px\].text-etBlack.mb-\[4px\] {
             <div class="et-2-testimonial-slider swiper overflow-visible">
                 <div class="right test-right">
                     <div class="et-test-slider-nav flex gap-[16px] sm:gap-[12px]" style="justify-content: center; margin:30px 0">
-                        <button class="prev w-[60px] h-[60px] sm:w-[50px] sm:h-[50px] border border-[#d9d9d9] rounded-full text-[18px] hover:bg-etBlue hover:border-etBlue hover:text-white">
+                        <button class="prev border border-[#D9D9D9] rounded-full w-[60px] sm:w-[50px] h-[60px] sm:h-[50px] text-[18px] text-etBlack hover:bg-etBlue hover:border-etbg-etBlue hover:text-white">
                             <i class="fa-solid fa-arrow-left-long"></i>
                         </button>
-                        <button class="next w-[60px] h-[60px] sm:w-[50px] sm:h-[50px] border border-[#d9d9d9] rounded-full text-[18px] hover:bg-etBlue hover:border-etBlue hover:text-white">
+                        <button class="next border border-[#D9D9D9] rounded-full w-[60px] sm:w-[50px] h-[60px] sm:h-[50px] text-[18px] text-etBlack hover:bg-etBlue hover:border-etbg-etBlue hover:text-white">
                             <i class="fa-solid fa-arrow-right-long"></i>
                         </button>
                     </div>
@@ -1066,10 +1005,10 @@ h5.font-semibold.text-\[22px\].md\:text-\[20px\].text-etBlack.mb-\[4px\] {
 
                 <div class="right">
                     <div class="et-blogs-slider-nav flex gap-[16px] sm:gap-[12px]">
-                        <button class="prev w-[60px] h-[60px] sm:w-[50px] sm:h-[50px] border border-[#d9d9d9] rounded-full text-[18px] hover:bg-etBlue hover:border-etBlue hover:text-white">
+                        <button class="prev border border-[#D9D9D9] rounded-full w-[60px] sm:w-[50px] h-[60px] sm:h-[50px] text-[18px] text-etBlack hover:bg-etBlue hover:border-etbg-etBlue hover:text-white">
                             <i class="fa-solid fa-arrow-left-long"></i>
                         </button>
-                        <button class="next w-[60px] h-[60px] sm:w-[50px] sm:h-[50px] border border-[#d9d9d9] rounded-full text-[18px] hover:bg-etBlue hover:border-etBlue hover:text-white">
+                        <button class="next border border-[#D9D9D9] rounded-full w-[60px] sm:w-[50px] h-[60px] sm:h-[50px] text-[18px] text-etBlack hover:bg-etBlue hover:border-etbg-etBlue hover:text-white">
                             <i class="fa-solid fa-arrow-right-long"></i>
                         </button>
                     </div>
