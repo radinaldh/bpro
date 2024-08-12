@@ -87,16 +87,16 @@ get_header('main');
             font-size: 16px;
             padding: 0;
         }
-
+        .et-history-timeline {
+            padding-left: 0px !important;
+            padding-right: 0px !important;
+        }
+        
         .et-history-slider .swiper-slide {
             padding-left: 10px;
             padding-right: 10px;
         }
 
-        .et-history-timeline {
-            padding-left: 0px !important;
-            padding-right: 0px !important;
-        }
 
 
     }
@@ -151,7 +151,7 @@ get_header('main');
             </div>
 
             <!-- right -->
-            <div class="et-about__txt xs:w-[70%] xxs:w-[90%] sm:ml-0">
+            <div class="et-about__txt">
                 <div class="rev-slide-up">
                     <!-- txt -->
                     <div class="my-[30px] sm:my-[20px]">
