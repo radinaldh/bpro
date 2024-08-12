@@ -156,6 +156,14 @@ get_header('main'); ?>
         padding-top: 10px;
     }
 
+    .box-cta-home {
+        padding-top: 50px;
+    }
+
+    .box-cta-home a.et-btn {
+        margin-top: -15px;
+    }
+
 }
 </style>
 
@@ -191,7 +199,7 @@ get_header('main'); ?>
             class="flex items-center md:flex-wrap gap-x-[60px] xxl:gap-x-[40px] lg:gap-x-[30px] gap-y-[40px] sm:gap-y-[0px] lg:justify-center">
             <!-- left -->
             <div
-                class="et-about-img relative z-[1] md:w-auto shrink-0 max-w-full mr-[70px] md:mr-0 ml-[28px] xxxl:ml-[47px] md:ml-0 xs:w-[70%] xxs:w-[90%] ">
+                class="et-about-img relative z-[1] md:w-auto shrink-0 max-w-full mr-[70px] md:mr-0 ml-[28px] xxxl:ml-[47px] md:ml-0 ">
                 <img src="<?php the_sub_field( 'image_1' ); ?>" alt="image"
                     class="shrink-0 rounded-[10px]" />
                 <img src="<?php the_sub_field( 'image_2' ); ?>" alt="image"
@@ -268,7 +276,7 @@ get_header('main'); ?>
 <?php if ( have_rows( 'section_join_us_at_fa_bpro' ) ) : ?>
 	<?php while ( have_rows( 'section_join_us_at_fa_bpro' ) ) : the_row(); ?>
 <!-- HISTORY SECTION START -->
-<section style="background-image:url('<?= get_template_directory_uri()?>/assets/new-img/demo-banner-3.jpeg'); background-size:cover; background-position:center; background-attachment:fixed" class="yo relative z-[1] py-[130px] lg:py-[80px] md:py-[60px]">
+<section class="section-box-family-altar" style="background-image:url('<?= get_template_directory_uri()?>/assets/new-img/demo-banner-3.jpeg'); background-size:cover; background-position:center; background-attachment:fixed" class="yo relative z-[1] py-[130px] lg:py-[80px] md:py-[60px]">
     <div class="container mx-auto max-w-[1200px] px-[12px] xl:max-w-full">
         <!-- heading -->
         <div class="et-upcoming-events-heading text-center max-w-[60%] mx-auto mb-[52px] xl:mb-[42px] lg:mb-[32px] md:max-w-[70%] sm:max-w-[80%] xs:max-w-full">
