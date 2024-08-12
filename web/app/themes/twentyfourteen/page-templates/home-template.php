@@ -24,7 +24,7 @@ get_header('main');
 
     @media(min-width:1800px) {
         .herohero-title {
-            margin-top: 120px;
+            margin-top: 160px;
         }
     }
 
@@ -166,7 +166,7 @@ h5.font-semibold.text-\[22px\].md\:text-\[20px\].text-etBlack.mb-\[4px\] {
                             <div class="left relative z-[20] w-[100%] text-center md:w-full herohero-title">
                                     <h6 class="font-kalam font-bold text-[2.4rem] mb-[3px] anim-text"><?php the_sub_field( 'subtitle' ); ?></h6>
 
-                                    <h1 class="text-[clamp(42px,6.25vw,12rem)] font-semibold leading-[1.1] mb-[36px] md:mb-[36px] anim-text" style="font-size: 60px;"><?php the_sub_field( 'title' ); ?> </h1>
+                                    <h1 class="text-[clamp(42px,6.25vw,12rem)] font-semibold leading-[1.1] mb-[36px] md:mb-[36px] anim-text" style="font-size: 90px;"><?php the_sub_field( 'title' ); ?> </h1>
 
                                     <!-- <div class="et-banner-btns flex flex-wrap items-center gap-[20px]">
                                         <a href="#" class="et-btn bg-etBlue inline-flex items-center justify-center gap-x-[13px] h-[45px] px-[15px] text-white font-normal text-[17px] rounded-full hover:!bg-white hover:!text-etBlue">Register Now</a>
