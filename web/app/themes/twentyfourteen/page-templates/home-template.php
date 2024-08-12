@@ -40,7 +40,7 @@ get_header('main');
             margin-top: 175px;
         }
         .et-banner-slider .swiper-slide-active > div {
-    min-height: 83vh;
+    min-height: 100vh;
     }
         h1.text-\[clamp\(42px\,6\.25vw\,12rem\)\].font-semibold.leading-\[1\.1\].mb-\[36px\].md\:mb-\[36px\].anim-text{
             font-size: 75px;
@@ -48,7 +48,7 @@ get_header('main');
     }
     @media(max-width:1400px) {
         .et-banner-slider .swiper-slide-active > div {
-    min-height: 71vh;
+    min-height: 100vh;
     }
 
     .herohero-title {
@@ -59,7 +59,7 @@ get_header('main');
 
     @media(max-width:1300px) {
         .et-banner-slider .swiper-slide-active > div {
-    min-height: 66vh;
+    min-height: 100vh;
 }
 
 .herohero-title {
