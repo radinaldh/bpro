@@ -120,7 +120,7 @@ get_header('main');
         }
 
         section.minus-top {
-            margin-top: -268px;
+            margin-top: -200px;
         }
 
         .bg-etBlue.rounded-\[20px\].overflow-hidden.text-white.max-w-\[370px\].xxs\:max-w-full {
@@ -171,12 +171,7 @@ get_header('main');
         }
 
         .slide-video.slick-initialized.slick-slider.slick-dotted ul.slick-dots {
-            bottom: -25px !important;
-        }
-
-
-        section.minus-top {
-            margin-top: -258px;
+            bottom: -50px !important;
         }
 
         section.et-about {
@@ -188,7 +183,7 @@ get_header('main');
         }
 
         section.minus-top {
-            margin-top: 0px !important;
+            margin-top: 55px !important;
         }
 
         .slide-video.slick-initialized.slick-slider.slick-dotted {
