@@ -112,6 +112,10 @@ h5.font-semibold.text-\[22px\].md\:text-\[20px\].text-etBlack.mb-\[4px\] {
     font-size: 16px;
 }
 
+.parent-image-new {
+    height: 600px;
+}
+
 @media only screen and (max-width: 800px) {
     .et-banner-slider .swiper-slide-active > div {
     min-height: 45vh;
@@ -354,7 +358,7 @@ h5.font-semibold.text-\[22px\].md\:text-\[20px\].text-etBlack.mb-\[4px\] {
             <div class="flex items-center md:flex-wrap gap-x-[60px] xl:gap-x-[40px] lg:gap-x-[30px] gap-y-[40px] sm:gap-y-[40px] lg:justify-center">
                 <!-- left -->
                 <div class="et-about-img relative z-[1] md:w-auto shrink-0 max-w-full ml-[124px] md:mr-0 xs:mx-auto">
-                    <img src="<?php the_sub_field( 'image_2' ); ?>" alt="image" class="shrink-0 rounded-[50px]" />
+                    <img src="<?php the_sub_field( 'image_2' ); ?>" alt="image" style="width: 350px; object-fit: cover;" alt="image" class="parent-image-new rounded-[50px]" />
                     <img src="<?php the_sub_field( 'image_1' ); ?>" alt="image" class="et-about-floating-img absolute top-[55px] -left-[124px] shrink-0 rounded-[20px] border-white border-[10px] shadow-[0_4px_40px_0_rgba(0,0,0,0.1)] xs:hidden" />
 
                     <!-- vectors -->
