@@ -87,6 +87,18 @@ get_header('main');
             font-size: 16px;
             padding: 0;
         }
+
+        .et-history-slider .swiper-slide {
+            padding-left: 10px;
+            padding-right: 10px;
+        }
+
+        .et-history-timeline {
+            padding-left: 0px !important;
+            padding-right: 0px !important;
+        }
+
+
     }
 </style>
 
@@ -139,7 +151,7 @@ get_header('main');
             </div>
 
             <!-- right -->
-            <div class="et-about__txt">
+            <div class="et-about__txt xs:w-[70%] xxs:w-[90%] sm:ml-0">
                 <div class="rev-slide-up">
                     <!-- txt -->
                     <div class="my-[30px] sm:my-[20px]">
@@ -197,7 +209,7 @@ get_header('main');
                 <h3 class="font-semibold uproinhimgod">"U PRO IN HIM"</h3>
             </div>
             <?php if(have_rows('bpro_values')) :?>
-                    <div class="et-history-slider swiper ">
+                    <div class="et-history-slider swiper xs:w-[70%] xxs:w-[90%] sm:ml-0">
                         <div class="et-history-timeline-slider swiper my-[40px] lg:mt-[25px] border-t border-[rgba(217,217,217,0.2)]">
                             <div class="swiper-wrapper justify-center sm:justify-start">
                                 <?php while(have_rows('bpro_values')) : the_row();
