@@ -125,7 +125,7 @@ get_header('main');
         <div
             class="flex items-center md:flex-wrap gap-x-[60px] xxl:gap-x-[40px] lg:gap-x-[30px] gap-y-[40px] sm:gap-y-[0px] lg:justify-center">
             <!-- left -->
-            <div class="et-about-img relative z-[1] md:w-auto shrink-0 max-w-full mr-[70px] md:mr-0 ml-[28px] xxxl:ml-[47px] md:ml-0 xs:w-[70%] xxs:w-[90%] sm:ml-0">
+            <div class="et-about-img relative z-[1] md:w-auto shrink-0 max-w-full mr-[70px] md:mr-0 ml-[28px] xxxl:ml-[47px] md:ml-0 xs:w-[100%] xxs:w-[100%] sm:ml-0">
                 <?php if(have_rows('bpro_at_glance_image')) :?>
                     <?php while(have_rows('bpro_at_glance_image')) : the_row();
                         $image_parent = get_sub_field('image_parent');
