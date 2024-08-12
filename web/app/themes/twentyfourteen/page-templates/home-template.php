@@ -68,6 +68,10 @@ get_header('main');
             margin: auto;
             border-radius: 20px;
         }
+
+        .et-testimony .text-center {
+            padding-top: 30px;
+        }
     }
 
     .testing-slider {
