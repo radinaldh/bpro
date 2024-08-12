@@ -41,8 +41,10 @@ get_header('main');
         font-style: italic;
     }
     .explain {
-        width: 50%;
+        width: 45%;
         margin: auto;
+        background: #ffffff0d;
+        color: #fff;
     }
 
     .hero-banner::before {
@@ -67,7 +69,14 @@ get_header('main');
         top: 0;
         bottom: 0;
     }
+
+    .parent-image-new {
+        height: 500px;
+    }
     @media(max-width:500px) {
+        .parent-image-new {
+            height: 350px;
+        }
         .uproinhimgod {
             font-size: 30px;
         }
@@ -132,7 +141,7 @@ get_header('main');
                         $image_child = get_sub_field('image_child');
                     ?>
                     <?php endwhile;?>
-                    <img src="<?= $image_parent ?>" style="width: 350px; height: 350px; object-fit: cover;" alt="image" class="shrink-0 rounded-[10px]" />
+                    <img src="<?= $image_parent ?>" style="width: 350px; object-fit: cover;" alt="image" class="parent-image-new shrink-0 rounded-[10px]" />
                     <img src="<?= $image_child ?>" alt="image" class="et-about-floating-img absolute top-[45px] -right-[70px] shrink-0 rounded-[20px] border-white border-[10px] xs:hidden" />
                 <?php endif;?>
                 <!-- vectors -->
@@ -234,19 +243,17 @@ get_header('main');
                                 <div class="swiper-slide">
                                     <div class="grid grid-cols-1 gap-[30px]">
                                         <div class="explain bg-white h-[350px] xxs:h-[500px] relative rounded-[20px] px-[30px] py-[20px] xxs:px-[20px]">
-                                            <h5 class="text-[24px] font-normal mb-[13px] sm:text-[20px]" style="color:rgb(0 27 82);"><?= $bigger_title_value ?></h5>
+                                            <h5 class="text-[24px] font-normal mb-[13px] sm:text-[20px] text-center" style="color:#fff"><?= $bigger_title_value ?></h5>
     
                                             <div class="txt mb-[40px]" style="font-style: normal;">
-                                                <p class="my-[10px] text-[15px]" style="text-align: justify;"><?= $description_value ?></p>
+                                                <p class="my-[10px] text-[15px]" style="text-align: center;"><?= $description_value ?></p>
                                             </div>
-                                            <div
-                                                class="flex flex-wrap gap-x-[40px] lg:gap-x-[20px] gap-y-[15px] items-center xxs:justify-center absolute bottom-0">
-                                                <!-- signature -->
+                                            <!-- <div class="flex flex-wrap gap-x-[40px] lg:gap-x-[20px] gap-y-[15px] items-center xxs:justify-center absolute bottom-0">
                                                 <div>
                                                     <img src="<?= get_template_directory_uri(); ?>/assets/new-img/logo-color.png"
                                                         alt="signature" class="w-[100px]">
                                                 </div>
-                                            </div>
+                                            </div> -->
                                         </div>
                                     </div>
                                 </div>
