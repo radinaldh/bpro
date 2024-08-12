@@ -67,6 +67,11 @@ get_header('main'); ?>
     height: 330px;
     padding: 60px;
 }
+
+section.section-box-family-altar {
+    padding-top: 150px;
+    padding-bottom: 80px;
+}
 @media screen and (max-width: 600px) {
 
     .box-cta-home {
@@ -163,6 +168,11 @@ get_header('main'); ?>
     .box-cta-home a.et-btn {
         margin-top: -15px;
     }
+
+    section.section-box-family-altar {
+    padding-top: 80px;
+    padding-bottom: 80px;
+}
 
 }
 </style>
