@@ -50,7 +50,7 @@ function handle_form_submission()
 {
 
     $recaptcha_response = sanitize_text_field($_POST['g-recaptcha-response']);
-    $secret_key = '6Ld0hyIqAAAAAN_coXvQd6zatH7lJYbC8MU4lXWw'; // Replace with your actual secret key
+    $secret_key = '6Ld0hyIqAAAAAN_coXvQd6zatH7lJYbC8MU4lXWw';
     $response = wp_remote_get("https://www.google.com/recaptcha/api/siteverify?secret={$secret_key}&response={$recaptcha_response}");
 
     $response_body = wp_remote_retrieve_body($response);
@@ -58,6 +58,42 @@ function handle_form_submission()
 
     if (!$result->success) {
         wp_send_json_error('reCAPTCHA verification failed.');
+        return;
+    }
+
+    $email = sanitize_email($_POST['email']);
+    $phone = sanitize_text_field($_POST['phone']);
+
+    // Check if email or phone number already exists
+    $existing_email = get_posts(array(
+        'post_type' => 'submission',
+        'meta_query' => array(
+            array(
+                'key' => 'email',
+                'value' => $email,
+                'compare' => '='
+            )
+        )
+    ));
+
+    $existing_phone = get_posts(array(
+        'post_type' => 'submission',
+        'meta_query' => array(
+            array(
+                'key' => 'phone',
+                'value' => $phone,
+                'compare' => '='
+            )
+        )
+    ));
+
+    if (!empty($existing_email)) {
+        wp_send_json_error('This email address is already used for a submission.');
+        return;
+    }
+
+    if (!empty($existing_phone)) {
+        wp_send_json_error('This phone number is already used for a submission.');
         return;
     }
 
