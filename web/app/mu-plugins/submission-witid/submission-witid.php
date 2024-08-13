@@ -61,6 +61,11 @@ function handle_form_submission()
     //     return;
     // }
 
+    if (empty($_POST['name']) || empty($_POST['email']) || empty($_POST['phone'])) {
+        wp_send_json_error('Please fill in all the required fields.');
+        return;
+    }
+
     $email = sanitize_email($_POST['email']);
     $phone = sanitize_text_field($_POST['phone']);
 
