@@ -201,9 +201,9 @@ get_header('rsvp'); ?>
                         <h4 class="fw-light mb-0 text-center">Phone No.</h4>
                         <input name="phone" class="bg-white border-none rounded w-100" type="text">
                     </div>
-                    <div class="col-10 d-flex justify-content-center">
+                    <!-- <div class="col-10 d-flex justify-content-center">
                         <div class="g-recaptcha" data-sitekey="6Ld0hyIqAAAAACEprRYsHLDXoGHpFDOFY22Qg3f0"></div>
-                    </div>
+                    </div> -->
                     <div class="col-10">
                         <h4 class="fw-light">
                             Pembayaran commitment fee dapat ditransfer melalui <br />
@@ -214,7 +214,7 @@ get_header('rsvp'); ?>
                         <button type="submit" class="bg-danger p-2 w-100 text-center text-white d-flex align-items-center justify-content-center" id="submitBtn">
                             <span id="submitText">Submit</span>
                             <div id="spinner" class="spinner-border text-light ms-2" role="status" style="display: none;">
-                                <span class="visually-hidden">Loading....</span>
+                                <span class="visually-hidden">Loading...</span>
                             </div>
                         </button>
                     </div>
