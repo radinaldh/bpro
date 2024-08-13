@@ -214,7 +214,7 @@ get_header('rsvp'); ?>
                         <button type="submit" class="bg-danger p-2 w-100 text-center text-white d-flex align-items-center justify-content-center" id="submitBtn">
                             <span id="submitText">Submit</span>
                             <div id="spinner" class="spinner-border text-light ms-2" role="status" style="display: none;">
-                                <span class="visually-hidden">Loading...</span>
+                                <span class="visually-hidden">Loading....</span>
                             </div>
                         </button>
                     </div>
