@@ -74,6 +74,10 @@ section.section-box-family-altar {
 }
 @media screen and (max-width: 600px) {
 
+    .name-testimonial {
+        margin-top: 40px;
+    }
+
     .box-cta-home {
         padding: 10px;
         margin-bottom: -20px;
@@ -900,7 +904,7 @@ section.section-box-family-altar {
                             </div>
 
                             <div class="text-center">
-                                <h5 class="text-black font-medium text-[20px] mb-[3px]"><?php the_sub_field( 'name' ); ?></h5>
+                                <h5 class="text-black font-medium text-[20px] mb-[3px] name-testimonial"><?php the_sub_field( 'name' ); ?></h5>
                                 <h6 class="text-[16px] text-etGray font-normal mb-[20px] sm:text-[12px]"><?php the_sub_field( 'profession' ); ?></h6>
                                 <p class="text-[16px] text-etGray font-normal mb-[20px] sm:text-[12px]"><?php the_sub_field( 'message' ); ?></p>
                             </div>
