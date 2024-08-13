@@ -275,7 +275,6 @@
 
 
 <!-- JS FILES -->
-<script src="https://www.google.com/recaptcha/api.js?render=6LdQJCYqAAAAADqrXLcxUXRsQSr25egyOIFszuYI&amp;ver=3.0" id="google-recaptcha-js"></script>
 <script src="https://cdn.jsdelivr.net/gh/studio-freight/lenis@1.0.29/bundled/lenis.min.js"></script>
 <script src="<?= get_template_directory_uri() ?>/assets/assets-new/js/jquery-3.7.0.min.js"></script>
 <script src="<?= get_template_directory_uri() ?>/assets/assets-new/js/bootstrap.bundle.min.js"></script>
@@ -410,6 +409,7 @@
         }, 1000); // Adjust the time as needed
     });
 </script>
+<?php wp_footer(); ?>
 </body>
 
 

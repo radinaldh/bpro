@@ -19,16 +19,16 @@
 
     <!-- custom css -->
     <link href="<?= get_template_directory_uri(); ?>/assets/css/style.css" rel="stylesheet" />
-    <link rel="stylesheet" href="<?= get_template_directory_uri()?>/assets/assets-new/css/odometer.css">
-    <link rel="stylesheet" href="<?= get_template_directory_uri()?>/assets/assets-new/css/animate.css">
-    <link rel="stylesheet" href="<?= get_template_directory_uri()?>/assets/assets-new/css/magnific-popup.css">
-    <link rel="stylesheet" href="<?= get_template_directory_uri()?>/assets/assets-new/css/style.css">
+    <link rel="stylesheet" href="<?= get_template_directory_uri() ?>/assets/assets-new/css/odometer.css">
+    <link rel="stylesheet" href="<?= get_template_directory_uri() ?>/assets/assets-new/css/animate.css">
+    <link rel="stylesheet" href="<?= get_template_directory_uri() ?>/assets/assets-new/css/magnific-popup.css">
+    <link rel="stylesheet" href="<?= get_template_directory_uri() ?>/assets/assets-new/css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.css" integrity="sha512-wR4oNhLBHf7smjy0K4oqzdWumd+r5/+6QO/vDda76MW5iug4PT7v86FoEkySIJft3XA0Ae6axhIvHrqwm793Nw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.css" integrity="sha512-6lLUdeQ5uheMFbWm3CP271l14RsX1xtx+J5x2yeIDkkiBpeVTNhTqijME7GgRKKi6hCqovwCoBTlRBEC20M8Mg==" crossorigin="anonymous" referrerpolicy="no-referrer" />   
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.css" integrity="sha512-6lLUdeQ5uheMFbWm3CP271l14RsX1xtx+J5x2yeIDkkiBpeVTNhTqijME7GgRKKi6hCqovwCoBTlRBEC20M8Mg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <?php wp_head(); ?>
 </head>
 
 <style>
-
     .loader.hide {
         opacity: 0;
         visibility: hidden;
@@ -44,7 +44,8 @@
         background: #fff;
         opacity: 1;
         visibility: visible;
-        transition: opacity 1s ease, visibility 1s ease; /* Adjust timing as needed */
+        transition: opacity 1s ease, visibility 1s ease;
+        /* Adjust timing as needed */
     }
 
     .loader img {
@@ -54,9 +55,10 @@
         transform: translateX(-50%);
     }
 </style>
+
 <body>
     <div class="loader">
-        <img src="<?= get_template_directory_uri()?>/assets/new-img/logo-color.png" alt="">
+        <img src="<?= get_template_directory_uri() ?>/assets/new-img/logo-color.png" alt="">
     </div>
     <!-- overlay -->
     <div class="et-overlay group">
@@ -70,7 +72,7 @@
             <!-- heading -->
             <div class="et-sidebar-heading">
                 <div class="logo flex justify-between items-center">
-                    <a href="index.html"><img class="img-mw-100" src="<?= get_template_directory_uri()?>/assets/img/logo-white.png" alt="logo"></a>
+                    <a href="index.html"><img class="img-mw-100" src="<?= get_template_directory_uri() ?>/assets/img/logo-white.png" alt="logo"></a>
 
                     <button type="button" class="et-sidebar-close-btn border border-white/50 w-[45px] aspect-square shrink-0 text-white text-[22px] rounded-full hover:text-etBlue hover:bg-white"><i class="fa-solid fa-xmark"></i></button>
                 </div>
@@ -82,7 +84,7 @@
     </div>
 
     <!-- HEADER SECTION START -->
-     <!--  xxl:px-[40px] -->
+    <!--  xxl:px-[40px] -->
     <header class="et-header to-be-fixed py-0  fixed top-0 w-full px-[155px] xxxl:px-[100px] xs:px-[20px] z-50">
         <div class="flex justify-between items-center">
             <!-- logo -->
