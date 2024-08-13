@@ -69,6 +69,10 @@ span.page-numbers.current{
 
     @media(max-width:600px) {
 
+        .name-testimonial {
+            margin-top: 40px;
+        }
+
         .et-testimony {
             height: 350px;
         }
@@ -1426,7 +1430,7 @@ span.page-numbers.current{
                                 </div>
 
                                 <div class="text-center">
-                                    <h5 class="text-black font-medium text-[20px] mb-[3px]"><?php the_sub_field( 'name' ); ?></h5>
+                                    <h5 class="text-black font-medium text-[20px] mb-[3px] name-testimonial"><?php the_sub_field( 'name' ); ?></h5>
                                     <h6 class="text-[16px] text-etGray font-normal mb-[20px] sm:text-[12px]"><?php the_sub_field( 'profession' ); ?></h6>
                                     <p class="text-[16px] text-etGray font-normal mb-[20px] sm:text-[12px]"><?php the_sub_field( 'message' ); ?></p>
                                 </div>
