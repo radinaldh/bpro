@@ -50,6 +50,14 @@ Use it to make something cool, have fun, and share what you've learned with othe
   color: #fff;
 } */
 
+.border.border-1 a {
+  color: #fff;
+}
+
+.uk-scrollspy-inview a{
+  color: #fff;
+}
+
 @media screen and (max-width: 800px) {
   .flag-img {
     width: 60px;
