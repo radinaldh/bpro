@@ -48,6 +48,7 @@ add_action('wp_enqueue_scripts', 'enqueue_custom_js');
 
 function handle_form_submission()
 {
+
     $recaptcha_response = sanitize_text_field($_POST['g-recaptcha-response']);
     $secret_key = '6Ld0hyIqAAAAAN_coXvQd6zatH7lJYbC8MU4lXWw';
     $response = wp_remote_get("https://www.google.com/recaptcha/api/siteverify?secret={$secret_key}&response={$recaptcha_response}");
@@ -63,27 +64,25 @@ function handle_form_submission()
     $email = sanitize_email($_POST['email']);
     $phone = sanitize_text_field($_POST['phone']);
 
-    // Check if email or phone number already exists (in any post status)
+    // Check if email or phone number already exists
     $existing_email = get_posts(array(
         'post_type' => 'submission',
-        'post_status' => 'any', // Include all statuses
         'meta_query' => array(
             array(
                 'key' => 'email',
                 'value' => $email,
-                'compare' => '=',
+                'compare' => '='
             )
         )
     ));
 
     $existing_phone = get_posts(array(
         'post_type' => 'submission',
-        'post_status' => 'any', // Include all statuses
         'meta_query' => array(
             array(
                 'key' => 'phone',
                 'value' => $phone,
-                'compare' => '=',
+                'compare' => '='
             )
         )
     ));
@@ -105,7 +104,7 @@ function handle_form_submission()
         'post_status' => 'publish',
         'post_type' => 'submission',
         'meta_input' => [
-            'email' => $email,
+            'email' => sanitize_email($_POST['email']),
             'phone' => sanitize_text_field($_POST['phone']),
             'checked_in' => 'false', // Initial status, not checked in
         ],
