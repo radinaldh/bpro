@@ -138,7 +138,7 @@ if (!function_exists('twentyfourteen_setup')) :
 
 		// Enable support for Post Thumbnails, and declare two sizes.
 		add_theme_support('post-thumbnails');
-		// set_post_thumbnail_size(672, 372, true);
+		set_post_thumbnail_size(672, 372, false);
 		add_image_size('twentyfourteen-full-width', 1038, 576, true);
 
 		// This theme uses wp_nav_menu() in two locations.
