@@ -258,6 +258,11 @@ a.more-link {
 
                     <ul class="mt-[30px] text-[16px]">
                         <li class="text-etBlack py-[16px] border-b border-t border-[#D9D9D9]">
+                            <a href="<?= home_url()?>/journal" class="flex items-center justify-between hover:text-etBlue">
+                                <span>All</span>
+                            </a>
+                        </li>
+                        <li class="text-etBlack py-[16px] border-b border-t border-[#D9D9D9]">
                             <a href="/journal/talkshow-bpro/" class="flex items-center justify-between hover:text-etBlue">
                                 <span>Talkshow BPro</span>
                             </a>
