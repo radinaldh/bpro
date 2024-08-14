@@ -81,7 +81,9 @@ section.section-box-family-altar {
     .box-cta-home {
         padding: 10px;
         margin-bottom: -20px;
-
+        display: flex;
+        align-items: center;
+        align-content: center;
     }
     .single-fa .et-schedule__heading {
         width: 100%;
