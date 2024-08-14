@@ -62,9 +62,20 @@ a.more-link {
 
 @media screen and (max-width: 600px) {
     .right {
-    margin-top: 50px;
-    width: 100%;
-}
+        margin-top: 50px;
+        width: 100%;
+    }
+    a.page-numbers {
+        width: 40px;
+        height: 40px;
+        font-size: 12px;
+    }
+
+    span.page-numbers.current {
+        width: 40px;
+        height: 40px;
+        font-size: 12px;
+    }
 }
 </style>
 
