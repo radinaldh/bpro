@@ -78,6 +78,18 @@ get_header('main');
         width: 350px;
         margin: auto;
     }
+
+    a.page-numbers {
+        width: 40px;
+        height: 40px;
+        font-size: 12px;
+    }
+
+    span.page-numbers.current {
+        width: 40px;
+        height: 40px;
+        font-size: 12px;
+    }
 }
 </style>
 

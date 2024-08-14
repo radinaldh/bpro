@@ -39,32 +39,44 @@ get_header('main');
 
 
     img.img-recent {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
 
-.left.grow p {
-    font-size: 16px;
-}
+    .left.grow p {
+        font-size: 16px;
+    }
 
-a.more-link {
-    display: none;
-}
+    a.more-link {
+        display: none;
+    }
 
-.left p {
-    text-align: justify;
-}
+    .left p {
+        text-align: justify;
+    }
 
-.left ul {
-    text-align: justify;
-}
+    .left ul {
+        text-align: justify;
+    }
 
 @media screen and (max-width: 600px) {
     .right {
-    margin-top: 50px;
-    width: 100%;
-}
+        margin-top: 50px;
+        width: 100%;
+    }
+
+    a.page-numbers {
+        width: 40px;
+        height: 40px;
+        font-size: 12px;
+    }
+
+    span.page-numbers.current {
+        width: 40px;
+        height: 40px;
+        font-size: 12px;
+    }
 }
 </style>
 
