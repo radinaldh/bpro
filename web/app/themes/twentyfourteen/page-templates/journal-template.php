@@ -75,7 +75,7 @@ get_header('main');
     }
 
     .fixing-width {
-        width: 320px;
+        width: 350px;
         margin: auto;
     }
 }
