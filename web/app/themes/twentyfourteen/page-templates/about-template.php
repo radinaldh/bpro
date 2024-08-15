@@ -201,7 +201,8 @@ get_header('main');
 </section>
 
 <!-- HISTORY SECTION START -->
-<section style="background-image:url('https://bethanyprofessional.com/app/uploads/2024/08/edwin-andrade-6liebVeAfrY-unsplash.jpg'); background-size:cover; background-position:center;" class="yo bg-[#001B52] relative z-[1] py-[130px] lg:py-[80px] md:py-[60px]">
+
+<section style="background-image:url('<?php the_field('bpro_background_vision_value')?>'); background-size:cover; background-position:center;" class="yo bg-[#001B52] relative z-[1] py-[130px] lg:py-[80px] md:py-[60px]">
     <div class="container mx-auto max-w-[1200px] px-[12px] xl:max-w-full">
         <!-- heading -->
         <div class="et-upcoming-events-heading text-center max-w-[60%] mx-auto md:max-w-[70%] sm:max-w-[80%] xs:max-w-full">
