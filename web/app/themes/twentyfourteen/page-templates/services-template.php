@@ -253,6 +253,7 @@ get_header('main');
         width: 100%;
         top: 0;
         bottom: 0;
+        opacity: 0.7;
     }
 
     .yo {
