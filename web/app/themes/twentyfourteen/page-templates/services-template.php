@@ -404,7 +404,7 @@ get_header('main');
 <?php endif; ?>
 <?php if ( have_rows( 'section_other_services' ) ) : ?>
 <?php while ( have_rows( 'section_other_services' ) ) : the_row(); ?>
-<section class="et-about py-[80px]  overflow-hidden relative yo" style="background-image:url('<?= get_template_directory_uri()?>/assets/new-img/demo-banner-2.jpeg'); background-size:cover; background-position:center">
+<section class="et-about py-[80px]  overflow-hidden relative yo" style="background-image:url('<?php the_sub_field( 'background_image' ); ?>'); background-size:cover; background-position:center">
     <div class="text-center mb-[52px]">
         <h6 class="et-section-sub-title !text-white before:!bg-white anim-text"><?php the_sub_field( 'subtitle' ); ?>
         </h6>
