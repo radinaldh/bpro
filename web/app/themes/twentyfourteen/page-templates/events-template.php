@@ -1060,7 +1060,7 @@ span.page-numbers.current{
                         </div>
                     </div>
                 </div>
-            <?php elseif($type_page_event == 'ibadah') : ?>
+            <?php elseif($type_page_event == 'service') : ?>
                 <div class="et-schedules-tab-container">
                     <div id="eventDetail">
                         <div class="all-scheduled-events space-y-[30px] lcl_elems_wrapper">
