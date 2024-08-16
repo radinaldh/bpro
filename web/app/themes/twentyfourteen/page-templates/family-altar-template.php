@@ -293,7 +293,7 @@ section.section-box-family-altar {
 <?php if ( have_rows( 'section_join_us_at_fa_bpro' ) ) : ?>
 	<?php while ( have_rows( 'section_join_us_at_fa_bpro' ) ) : the_row(); ?>
 <!-- HISTORY SECTION START -->
-<section class="section-box-family-altar" style="background-image:url('<?= get_template_directory_uri()?>/assets/new-img/demo-banner-3.jpeg'); background-size:cover; background-position:center; background-attachment:fixed" class="yo relative z-[1] py-[130px] lg:py-[80px] md:py-[60px]">
+<section class="section-box-family-altar" style="background-image:url('<?php the_sub_field( 'background_image' ); ?>'); background-size:cover; background-position:center; background-attachment:fixed" class="yo relative z-[1] py-[130px] lg:py-[80px] md:py-[60px]">
     <div class="container mx-auto max-w-[1200px] px-[12px] xl:max-w-full">
         <!-- heading -->
         <div class="et-upcoming-events-heading text-center max-w-[60%] mx-auto mb-[52px] xl:mb-[42px] lg:mb-[32px] md:max-w-[70%] sm:max-w-[80%] xs:max-w-full">
