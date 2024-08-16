@@ -159,7 +159,7 @@ h5.font-semibold.text-\[22px\].md\:text-\[20px\].text-etBlack.mb-\[4px\] {
                     <?php while ( have_rows( 'slider_home' ) ) : the_row(); ?>
                 <?php if(get_sub_field( 'type_slider' ) == "video") { ?>
                 <div class="swiper-slide">
-                    <video class="backgroundvideo" autoplay muted loop>
+                    <video class="backgroundvideo" autoplay muted loop playsinline>
                         <source src="<?php the_sub_field( 'file_background' ); ?>" type="video/mp4">
                         Your browser does not support the video tag.
                     </video>
