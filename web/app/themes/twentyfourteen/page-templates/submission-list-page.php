@@ -33,6 +33,36 @@ get_header();
             < Back to Scanner</a>
     </div>
     <h2 class="text-center mb-4">Submissions List</h2>
+    <?php
+    $noconfirm = 0;
+    $confirm = 0;
+                $args = array(
+                    'post_type' => 'submission',
+                    'post_status' => 'publish',
+                    'posts_per_page' => -1,
+                );
+                $query = new WP_Query($args);
+                if ($query->have_posts()) :
+                    while ($query->have_posts()) : $query->the_post();
+                    $checked_in = get_post_meta(get_the_ID(), 'checked_in', true);
+                    if($checked_in == "true"){
+                    $confirm++;
+                    }else{
+                        $noconfirm++;          
+                    }     
+    ?>
+<?php
+                    endwhile;
+                    wp_reset_postdata();
+                else :
+                    ?>
+                    <tr>
+                        <td colspan="6" class="text-center">No submissions found.</td>
+                    </tr>
+                <?php
+                endif;
+                ?>
+    <p class="text-white">Confirmed: <?php echo $confirm; ?> & Not Confirmed: <?php echo $noconfirm; ?></p>
     <div class="table-responsive">
         <table class="table table-striped">
             <thead>
