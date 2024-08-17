@@ -70,7 +70,6 @@ get_header();
                 <option value="false">No</option>
             </select>
             <button class="btn btn-primary" id="applyFilters">Apply</button>
-            <button class="btn btn-secondary" id="exportToExcel">Export to Excel</button>
         </div>
     </div>
     <p class="text-white w-100 mb-2">Confirmed: <?php echo $confirm; ?> & Not Confirmed: <?php echo $noconfirm; ?></p>
@@ -192,36 +191,6 @@ get_header();
                     $(this).hide();
                 }
             });
-        });
-
-        $("#exportToExcel").on("click", function() {
-            var nameFilter = $("#nameFilter").val();
-            var confirmedFilter = $("#confirmedFilter").val();
-
-            // Create a form to submit to the server
-            var $form = $('<form>', {
-                action: ajax_params.ajax_url,
-                method: 'POST'
-            }).append($('<input>', {
-                name: 'action',
-                value: 'export_to_excel',
-                type: 'hidden'
-            })).append($('<input>', {
-                name: 'export',
-                value: 'true',
-                type: 'hidden'
-            })).append($('<input>', {
-                name: 'name',
-                value: nameFilter,
-                type: 'hidden'
-            })).append($('<input>', {
-                name: 'confirmed',
-                value: confirmedFilter,
-                type: 'hidden'
-            }));
-
-            // Submit the form
-            $form.appendTo('body').submit();
         });
     });
 </script>
