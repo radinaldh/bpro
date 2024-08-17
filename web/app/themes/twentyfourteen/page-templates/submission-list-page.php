@@ -29,40 +29,50 @@ get_header();
 
 <div class="container mt-5 table-container">
     <div class="text-start">
-        <a href="/scanner" class="btn btn-secondary mb-5">
-            < Back to Scanner</a>
+        <a href="/scanner" class="btn btn-secondary mb-5">&lt; Back to Scanner</a>
     </div>
     <h2 class="text-center mb-4">Submissions List</h2>
     <?php
     $noconfirm = 0;
     $confirm = 0;
-                $args = array(
-                    'post_type' => 'submission',
-                    'post_status' => 'publish',
-                    'posts_per_page' => -1,
-                );
-                $query = new WP_Query($args);
-                if ($query->have_posts()) :
-                    while ($query->have_posts()) : $query->the_post();
-                    $checked_in = get_post_meta(get_the_ID(), 'checked_in', true);
-                    if($checked_in == "true"){
-                    $confirm++;
-                    }else{
-                        $noconfirm++;          
-                    }     
+    $args = array(
+        'post_type' => 'submission',
+        'post_status' => 'publish',
+        'posts_per_page' => -1,
+    );
+    $query = new WP_Query($args);
+    if ($query->have_posts()) :
+        while ($query->have_posts()) : $query->the_post();
+            $checked_in = get_post_meta(get_the_ID(), 'checked_in', true);
+            if ($checked_in == "true") {
+                $confirm++;
+            } else {
+                $noconfirm++;
+            }
     ?>
-<?php
-                    endwhile;
-                    wp_reset_postdata();
-                else :
-                    ?>
-                    <tr>
-                        <td colspan="6" class="text-center">No submissions found.</td>
-                    </tr>
-                <?php
-                endif;
-                ?>
-    <p class="text-white">Confirmed: <?php echo $confirm; ?> & Not Confirmed: <?php echo $noconfirm; ?></p>
+        <?php
+        endwhile;
+        wp_reset_postdata();
+    else :
+        ?>
+        <tr>
+            <td colspan="6" class="text-center">No submissions found.</td>
+        </tr>
+    <?php
+    endif;
+    ?>
+    <div class="w-100">
+        <div class="input-group mb-3 d-flex">
+            <input type="text" class="form-control me-2" id="nameFilter" placeholder="Search by Name" aria-label="Search by Name">
+            <select class="form-select me-2" id="confirmedFilter">
+                <option value="">All</option>
+                <option value="true">Yes</option>
+                <option value="false">No</option>
+            </select>
+            <button class="btn btn-primary" id="applyFilters">Apply</button>
+        </div>
+    </div>
+    <p class="text-white w-100 mb-2">Confirmed: <?php echo $confirm; ?> & Not Confirmed: <?php echo $noconfirm; ?></p>
     <div class="table-responsive">
         <table class="table table-striped">
             <thead>
@@ -108,8 +118,7 @@ get_header();
                         // // Generate the WhatsApp URL
                         // $whatsapp_url = "https://api.whatsapp.com/send?phone=$phone&text=$whatsapp_message";
 
-                        $whatsapp_message = rawurlencode("Shalom *" . $name . "*!\n Terima kasih telah mendaftarkan diri di event workshop “Discover Cyber Security & Financial Trap”. Pastikan kamu telah menerima QR code kepesertaan, atau silakan cek di email (Inbox atau Spam) yang didaftarkan. Kamu bisa menunjukkan QR code tersebut saat registrasi ulang di lokasi. See you there!\n\n Best Regards,\n
- *Bethany Professional*.");
+                        $whatsapp_message = rawurlencode("Shalom *" . $name . "*!\n Terima kasih telah mendaftarkan diri di event workshop “Discover Cyber Security & Financial Trap”. Pastikan kamu telah menerima QR code kepesertaan, atau silakan cek di email (Inbox atau Spam) yang didaftarkan. Kamu bisa menunjukkan QR code tersebut saat registrasi ulang di lokasi. See you there!\n\n Best Regards,\n *Bethany Professional*.");
                         $whatsapp_url = "https://api.whatsapp.com/send?phone=$phone&text=$whatsapp_message";
 
                 ?>
@@ -162,6 +171,25 @@ get_header();
                         alert("Failed to send email.");
                     }
                 },
+            });
+        });
+
+        $("#applyFilters").on("click", function() {
+            var nameFilter = $("#nameFilter").val().toLowerCase();
+            var confirmedFilter = $("#confirmedFilter").val();
+
+            $("table tbody tr").each(function() {
+                var name = $(this).find("td:eq(0)").text().toLowerCase();
+                var confirmed = $(this).find("td:eq(3)").text().toLowerCase();
+
+                var matchesName = name.includes(nameFilter);
+                var matchesConfirmed = confirmedFilter === "" || (confirmedFilter === "true" && confirmed === "yes") || (confirmedFilter === "false" && confirmed === "no");
+
+                if (matchesName && matchesConfirmed) {
+                    $(this).show();
+                } else {
+                    $(this).hide();
+                }
             });
         });
     });
