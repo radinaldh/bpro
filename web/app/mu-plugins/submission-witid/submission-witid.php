@@ -533,8 +533,6 @@ function add_send_email_button($column, $post_id)
 add_action('manage_submission_posts_custom_column', 'add_send_email_button', 10, 2);
 
 
-
-
 function handle_send_email()
 {
     if (isset($_POST['post_id'])) {
@@ -615,7 +613,7 @@ function filter_by_checked_in_status()
             <option value="true" <?php selected($checked_in, 'true'); ?>><?php _e('Checked In'); ?></option>
             <option value="false" <?php selected($checked_in, 'false'); ?>><?php _e('Not Checked In'); ?></option>
         </select>
-    <?php
+<?php
     }
 }
 add_action('restrict_manage_posts', 'filter_by_checked_in_status');
@@ -627,43 +625,53 @@ function filter_submissions_by_event_name_and_checked_in($query)
 
     if ($pagenow == 'edit.php' && isset($q_vars['post_type']) && $q_vars['post_type'] == 'submission') {
 
-        // Filter by event_name
-        if (isset($q_vars['event_name']) && is_taxonomy_hierarchical('event_name')) {
-            $term = $q_vars['event_name'];
-            $query->set('tax_query', array(
-                array(
-                    'taxonomy' => 'event_name',
-                    'field' => 'slug',
-                    'terms' => $term
-                )
-            ));
+        // Filter by event_name if set
+        if (isset($_GET['event_name']) && !empty($_GET['event_name'])) {
+            $q_vars['tax_query'][] = array(
+                'taxonomy' => 'event_name',
+                'field' => 'slug',
+                'terms' => sanitize_text_field($_GET['event_name'])
+            );
         }
 
-        // Filter by checked_in status
-        if (isset($_GET['checked_in']) && $_GET['checked_in'] != '') {
-            $meta_query = array(
-                array(
-                    'key' => 'checked_in',
-                    'value' => $_GET['checked_in'],
-                    'compare' => '='
-                )
+        // Filter by checked_in status if set
+        if (isset($_GET['checked_in']) && $_GET['checked_in'] !== '') {
+            $q_vars['meta_query'][] = array(
+                'key' => 'checked_in',
+                'value' => sanitize_text_field($_GET['checked_in']),
+                'compare' => '='
             );
-            $query->set('meta_query', $meta_query);
         }
     }
 }
 add_filter('pre_get_posts', 'filter_submissions_by_event_name_and_checked_in');
 
+
 function add_export_button()
 {
     global $typenow;
     if ($typenow == 'submission') {
-    ?>
-        <input type="submit" name="export_submissions" class="button button-primary" value="<?php _e('Export to XLSX'); ?>" />
-<?php
+        echo '<div style="display: inline-flex; align-items: center;">';
+        echo get_submit_button(__('Filter'), 'primary', '', false);
+        echo '<input type="submit" name="export_submissions" class="button button-primary" value="' . __('Export to XLSX') . '" style="margin-left: 5px;" />';
+        echo '</div>';
     }
 }
 add_action('restrict_manage_posts', 'add_export_button');
+
+function remove_default_filter_button()
+{
+    global $typenow;
+    if ($typenow == 'submission') {
+        echo '<style type="text/css">
+            input#post-query-submit {
+                display: none;
+            }
+        </style>';
+    }
+}
+add_action('admin_head', 'remove_default_filter_button');
+
 
 
 function handle_export_to_xlsx()
