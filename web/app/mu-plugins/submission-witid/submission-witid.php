@@ -14,6 +14,9 @@ if (!defined('ABSPATH')) {
     exit; // Exit if accessed directly
 }
 
+use PhpOffice\PhpSpreadsheet\Spreadsheet;
+use PhpOffice\PhpSpreadsheet\Writer\Xlsx;
+
 /**
  * SUBMISSION 
  */
@@ -677,9 +680,7 @@ add_action('admin_head', 'remove_default_filter_button');
 function handle_export_to_xlsx()
 {
     if (isset($_GET['export_submissions'])) {
-        global $wpdb;
-
-        // Ensure we only get filtered results
+        // Set up the query to get filtered results
         $args = array(
             'post_type' => 'submission',
             'posts_per_page' => -1, // Get all posts
@@ -708,11 +709,9 @@ function handle_export_to_xlsx()
         $query = new WP_Query($args);
 
         if ($query->have_posts()) {
-            require_once plugin_dir_path(__FILE__) . '/path/to/PHPExcel.php'; // Include PHPExcel or any XLSX library you are using
-
-            $objPHPExcel = new PHPExcel();
-            $objPHPExcel->setActiveSheetIndex(0);
-            $sheet = $objPHPExcel->getActiveSheet();
+            // Create a new Spreadsheet object
+            $spreadsheet = new Spreadsheet();
+            $sheet = $spreadsheet->getActiveSheet();
 
             // Set header names
             $sheet->setCellValue('A1', 'Name');
@@ -751,14 +750,14 @@ function handle_export_to_xlsx()
             header('Content-Type: application/vnd.openxmlformats-officedocument.spreadsheetml.sheet');
             header('Content-Disposition: attachment;filename="submissions.xlsx"');
             header('Cache-Control: max-age=0');
-            header('Cache-Control: max-age=1');
             header('Expires: Mon, 26 Jul 1997 05:00:00 GMT');
             header('Last-Modified: ' . gmdate('D, d M Y H:i:s') . ' GMT');
             header('Cache-Control: cache, must-revalidate');
             header('Pragma: public');
 
-            $objWriter = PHPExcel_IOFactory::createWriter($objPHPExcel, 'Excel2007');
-            $objWriter->save('php://output');
+            // Write the file
+            $writer = new Xlsx($spreadsheet);
+            $writer->save('php://output');
             exit;
         }
     }
