@@ -28,16 +28,46 @@ function register_submission_post_type()
         'public' => true,
         'has_archive' => true,
         'menu_icon' => 'dashicons-welcome-write-blog',
+        'taxonomies' => array('event_name'),
         'supports' => array('title', 'editor', 'custom-fields'),
         'capabilities' => array(
-            'create_posts' => 'do_not_allow', // Using 'do_not_allow' to disable creating new posts
+            'create_posts' => 'do_not_allow',
         ),
-        'map_meta_cap' => true, // Use the actual capabilities set above
+        'map_meta_cap' => true,
     );
 
     register_post_type('submission', $args);
 }
 add_action('init', 'register_submission_post_type');
+
+function register_event_name_taxonomy()
+{
+    $labels = array(
+        'name'              => _x('Event Names', 'taxonomy general name'),
+        'singular_name'     => _x('Event Name', 'taxonomy singular name'),
+        'search_items'      => __('Search Event Names'),
+        'all_items'         => __('All Event Names'),
+        'parent_item'       => __('Parent Event Name'),
+        'parent_item_colon' => __('Parent Event Name:'),
+        'edit_item'         => __('Edit Event Name'),
+        'update_item'       => __('Update Event Name'),
+        'add_new_item'      => __('Add New Event Name'),
+        'new_item_name'     => __('New Event Name'),
+        'menu_name'         => __('Event Name'),
+    );
+
+    $args = array(
+        'hierarchical'      => true, // Set this to 'false' if you don't want parent/child relationships
+        'labels'            => $labels,
+        'show_ui'           => true,
+        'show_admin_column' => true,
+        'query_var'         => true,
+        'rewrite'           => array('slug' => 'event-name'),
+    );
+
+    register_taxonomy('event_name', array('submission'), $args);
+}
+add_action('init', 'register_event_name_taxonomy', 0);
 
 function enqueue_custom_js()
 {
@@ -141,6 +171,7 @@ function modify_submission_columns($columns)
         'title' => __('Name'),
         'email' => __('Email'),
         'phone' => __('Phone No.'),
+        'event_name' => __('Event Name'),
         'checked_in' => __('Checked In'), // New column for checked-in status
         'send_email' => __('Send Email'),
         'date' => __('Date')
@@ -160,7 +191,18 @@ function custom_submission_column_content($column, $post_id)
             break;
         case 'checked_in':
             $checked_in = get_post_meta($post_id, 'checked_in', true);
-            echo ($checked_in === 'true') ? 'Yes' : 'No'; // Explicitly check for the string "true"
+            echo ($checked_in === 'true') ? 'Yes' : 'No';
+            break;
+        case 'event_name': // Display Event Name
+            $terms = get_the_terms($post_id, 'event_name');
+            if (!empty($terms)) {
+                $term_names = array_map(function ($term) {
+                    return $term->name;
+                }, $terms);
+                echo implode(', ', $term_names);
+            } else {
+                echo __('No Event Name assigned');
+            }
             break;
     }
 }
@@ -231,6 +273,7 @@ function custom_submission_sortable_columns($columns)
 {
     $columns['email'] = 'email';
     $columns['phone'] = 'phone';
+    $columns['event_name'] = 'event_name'; // Make Event Name column sortable
     return $columns;
 }
 add_filter('manage_edit-submission_sortable_columns', 'custom_submission_sortable_columns');
@@ -512,7 +555,7 @@ function display_email_sent_notice()
         <div class="notice notice-success is-dismissible">
             <p><?php _e('Email sent successfully.', 'text-domain'); ?></p>
         </div>
-<?php
+    <?php
         delete_transient('email_sent_success'); // Delete the transient after displaying the notice
     }
 }
@@ -540,3 +583,176 @@ function check_submission_status()
 
 add_action('wp_ajax_check_submission_status', 'check_submission_status');
 add_action('wp_ajax_nopriv_check_submission_status', 'check_submission_status');
+
+function filter_by_event_name()
+{
+    global $typenow;
+    if ($typenow == 'submission') {
+        $taxonomy = 'event_name';
+        $event_names = get_terms($taxonomy);
+    ?>
+        <select name="<?php echo $taxonomy; ?>" id="<?php echo $taxonomy; ?>" class="postform">
+            <option value=""><?php _e('All Event Names'); ?></option>
+            <?php
+            foreach ($event_names as $event_name) {
+                echo '<option value=' . $event_name->slug . '>' . $event_name->name . '</option>';
+            }
+            ?>
+        </select>
+    <?php
+    }
+}
+add_action('restrict_manage_posts', 'filter_by_event_name');
+
+function filter_by_checked_in_status()
+{
+    global $typenow;
+    if ($typenow == 'submission') {
+        $checked_in = isset($_GET['checked_in']) ? $_GET['checked_in'] : '';
+    ?>
+        <select name="checked_in" id="checked_in" class="postform">
+            <option value=""><?php _e('All Checked-In Statuses'); ?></option>
+            <option value="true" <?php selected($checked_in, 'true'); ?>><?php _e('Checked In'); ?></option>
+            <option value="false" <?php selected($checked_in, 'false'); ?>><?php _e('Not Checked In'); ?></option>
+        </select>
+    <?php
+    }
+}
+add_action('restrict_manage_posts', 'filter_by_checked_in_status');
+
+function filter_submissions_by_event_name_and_checked_in($query)
+{
+    global $pagenow;
+    $q_vars = &$query->query_vars;
+
+    if ($pagenow == 'edit.php' && isset($q_vars['post_type']) && $q_vars['post_type'] == 'submission') {
+
+        // Filter by event_name
+        if (isset($q_vars['event_name']) && is_taxonomy_hierarchical('event_name')) {
+            $term = $q_vars['event_name'];
+            $query->set('tax_query', array(
+                array(
+                    'taxonomy' => 'event_name',
+                    'field' => 'slug',
+                    'terms' => $term
+                )
+            ));
+        }
+
+        // Filter by checked_in status
+        if (isset($_GET['checked_in']) && $_GET['checked_in'] != '') {
+            $meta_query = array(
+                array(
+                    'key' => 'checked_in',
+                    'value' => $_GET['checked_in'],
+                    'compare' => '='
+                )
+            );
+            $query->set('meta_query', $meta_query);
+        }
+    }
+}
+add_filter('pre_get_posts', 'filter_submissions_by_event_name_and_checked_in');
+
+function add_export_button()
+{
+    global $typenow;
+    if ($typenow == 'submission') {
+    ?>
+        <input type="submit" name="export_submissions" class="button button-primary" value="<?php _e('Export to XLSX'); ?>" />
+<?php
+    }
+}
+add_action('restrict_manage_posts', 'add_export_button');
+
+
+function handle_export_to_xlsx()
+{
+    if (isset($_GET['export_submissions'])) {
+        global $wpdb;
+
+        // Ensure we only get filtered results
+        $args = array(
+            'post_type' => 'submission',
+            'posts_per_page' => -1, // Get all posts
+            'meta_query' => array(),
+            'tax_query' => array()
+        );
+
+        // Filter by event_name if set
+        if (isset($_GET['event_name']) && $_GET['event_name'] != '') {
+            $args['tax_query'][] = array(
+                'taxonomy' => 'event_name',
+                'field' => 'slug',
+                'terms' => sanitize_text_field($_GET['event_name'])
+            );
+        }
+
+        // Filter by checked_in if set
+        if (isset($_GET['checked_in']) && $_GET['checked_in'] != '') {
+            $args['meta_query'][] = array(
+                'key' => 'checked_in',
+                'value' => sanitize_text_field($_GET['checked_in']),
+                'compare' => '='
+            );
+        }
+
+        $query = new WP_Query($args);
+
+        if ($query->have_posts()) {
+            require_once plugin_dir_path(__FILE__) . '/path/to/PHPExcel.php'; // Include PHPExcel or any XLSX library you are using
+
+            $objPHPExcel = new PHPExcel();
+            $objPHPExcel->setActiveSheetIndex(0);
+            $sheet = $objPHPExcel->getActiveSheet();
+
+            // Set header names
+            $sheet->setCellValue('A1', 'Name');
+            $sheet->setCellValue('B1', 'Email');
+            $sheet->setCellValue('C1', 'Phone No.');
+            $sheet->setCellValue('D1', 'Event Name');
+            $sheet->setCellValue('E1', 'Checked In');
+            $sheet->setCellValue('F1', 'Date');
+
+            $row = 2;
+
+            while ($query->have_posts()) : $query->the_post();
+                $post_id = get_the_ID();
+                $sheet->setCellValue('A' . $row, get_the_title());
+                $sheet->setCellValue('B' . $row, get_post_meta($post_id, 'email', true));
+                $sheet->setCellValue('C' . $row, get_post_meta($post_id, 'phone', true));
+
+                $terms = get_the_terms($post_id, 'event_name');
+                if (!empty($terms)) {
+                    $term_names = array_map(function ($term) {
+                        return $term->name;
+                    }, $terms);
+                    $sheet->setCellValue('D' . $row, implode(', ', $term_names));
+                } else {
+                    $sheet->setCellValue('D' . $row, 'No Event Name assigned');
+                }
+
+                $checked_in = get_post_meta($post_id, 'checked_in', true);
+                $sheet->setCellValue('E' . $row, $checked_in === 'true' ? 'Yes' : 'No');
+                $sheet->setCellValue('F' . $row, get_the_date());
+
+                $row++;
+            endwhile;
+
+            // Set the headers to download the file
+            header('Content-Type: application/vnd.openxmlformats-officedocument.spreadsheetml.sheet');
+            header('Content-Disposition: attachment;filename="submissions.xlsx"');
+            header('Cache-Control: max-age=0');
+            header('Cache-Control: max-age=1');
+            header('Expires: Mon, 26 Jul 1997 05:00:00 GMT');
+            header('Last-Modified: ' . gmdate('D, d M Y H:i:s') . ' GMT');
+            header('Cache-Control: cache, must-revalidate');
+            header('Pragma: public');
+
+            $objWriter = PHPExcel_IOFactory::createWriter($objPHPExcel, 'Excel2007');
+            $objWriter->save('php://output');
+            exit;
+        }
+    }
+}
+add_action('init', 'handle_export_to_xlsx');
