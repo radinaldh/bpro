@@ -1,7 +1,7 @@
 <?php
 
 /**
- * Template Name: RSVP
+ * Template Name: RSVP Backup
  *
  * @package WordPress
  * @subpackage Twenty_Fourteen
@@ -9,13 +9,6 @@
  */
 
 get_header('rsvp'); ?>
-
-<style>
-    .opening p{
-        color: #000;
-        margin-bottom: 35px;
-    }
-</style>
 
 <section id="opening" class="position-fixed w-100 top-0 left-0 vh-100 justify-content-center align-items-center" style="background: linear-gradient(0deg, rgba(0, 0, 0, 1) 0%, rgba(10, 31, 56, 1) 26%, rgba(10, 31, 56, 1) 73%, rgba(0, 0, 0, 1) 100%); background-repeat: no-repeat; color: #fff; display: flex; z-index: 9999">
     <div class="text-center">
@@ -38,79 +31,69 @@ get_header('rsvp'); ?>
 </section>
 
 <section class="my-5 text-center" uk-scrollspy="target: h4; cls: uk-animation-fade; delay: 500">
-    <h4 class="fw-light"><?php the_field('category_event')?></h4>
-    <h1 class="fw-bold"><?php the_field('title_event')?></h1>
+    <h4 class="fw-light">PROFESSIONAL WORKSHOP</h4>
+    <h1 class="fw-bold">DISCOVER CYBER SECURITY<br />AND FINANCIAL TRAP</h1>
 </section>
 
 <section class="my-5" uk-scrollspy="target: .animated; cls: uk-animation-fade; delay: 500">
     <div class="container">
         <div class="row mb-5">
-            <?php if(have_rows('left_description')) :?>
-                <?php while(have_rows('left_description')) : the_row();
-                    $venue = get_sub_field('venue');
-                    $location_venue = get_sub_field('location_venue');
-                    $day_and_start_time = get_sub_field('day_and_start_time');
-                ?>
-                    <div class="col-6 ps-3 animated" style="border-right: 1px solid #fff;">
-                        <div>
-                            <h4 class="fw-bold mb-0"><?= $venue ?></h4>
-                            <h4 class="fw-light"><?= $location_venue ?></h4>
-                        </div>
-                        <div>
-                            <h4 class="fw-light"><?= $day_and_start_time ?></h4>
-                        </div>
-                    </div>
-                <?php endwhile;?>
-            <?php endif;?>
+            <div class="col-6 ps-3 animated" style="border-right: 1px solid #fff;">
+                <div>
+                    <h4 class="fw-bold mb-0">Awning Bethany Manyar </h4>
+                    <h4 class="fw-light">Jl Manyar Rejo II No.36-38</h4>
+                </div>
+                <div>
+                    <h4 class="fw-light">Saturday, August 17th 2024<br />
+                        Start from 01.00 PM</h4>
+                </div>
+            </div>
             <div class="col-6 ps-3 animated">
-            <?php if(have_rows('right_description')) :?>
-                <?php while(have_rows('right_description')) : the_row(); 
-                    $description = get_sub_field('description');
-                ?>
-                    <h3 class="fw-light"><?= $description ?></h3>
-                <?php endwhile;?>
-            <?php endif;?>
+                <h3 class="fw-light">
+                    With<br />
+                    Praise and<br />
+                    Worship Night
+                </h3>
             </div>
         </div>
-        <div class="row g-3 justify-content-center">
-            <?php if(have_rows('speaker')) :?>
-                <?php while(have_rows('speaker')) : the_row();
-                    $profile_photo = get_sub_field('profile_photo');    
-                    $name_speaker = get_sub_field('name_speaker');    
-                    $position_speaker = get_sub_field('position_speaker');    
-                    $small_description = get_sub_field('small_description');    
-                ?>
-                    <div class="col-12 col-md-6 animated">
-                        <div class="d-flex gap-2 justify-content-start align-items-center">
-                            <img class="object-fit-cover" src="<?= $profile_photo ?>" alt="Irfan Arsandi" width="150" height="150">
-                            <div>
-                                <h5 class="fw-bold mb-0"><?= $name_speaker ?></h5>
-                                <h5 class="fw-light"><?= $position_speaker ?></h5>
-                                <p><?= $small_description ?></p>
-                            </div>
-                        </div>
+        <div class="row g-3">
+            <div class="col-12 col-md-6 animated">
+                <div class="d-flex gap-2 justify-content-start align-items-center">
+                    <img class="object-fit-cover" src="<?= get_template_directory_uri() ?>/images/irfan.png" alt="Irfan Arsandi" width="150" height="150">
+                    <div>
+                        <h5 class="fw-bold mb-0">Irfan Arsandi</h5>
+                        <h5 class="fw-light">CEO WIT.ID</h5>
+                        <p>Digital Transformation: How<br />
+                            Technology is Reshaping Industries<br />
+                            & Cyber Security Case in Indonesia</p>
                     </div>
-                <?php endwhile;?>
-            <?php endif;?>
+                </div>
+            </div>
+            <div class="col-12 col-md-6 animated">
+                <div class="d-flex gap-2 justify-content-start align-items-center">
+                    <img class="object-fit-cover" src="<?= get_template_directory_uri() ?>/images/juhono.png" alt="Irfan Arsandi" width="150" height="150">
+                    <div>
+                        <h5 class="fw-bold mb-0">Juhono S. Sudirgo, CFP, QWP, AEPP</h5>
+                        <h5 class="fw-light">Financial Planner</h5>
+                        <p>Smart Financial Management: The Trap<br />
+                            of Online Gambling and Instant Loans</p>
+                    </div>
+                </div>
+            </div>
+
+
         </div>
         <div class="row my-5">
-            <?php if(have_rows('commitment_fee')) :?>
-                <?php while(have_rows('commitment_fee')) : the_row() ;
-                    $title = get_sub_field('title');
-                    $price = get_sub_field('price');
-                ?>
-                    <div class="col-6 col-md-3 d-flex justify-content-center align-items-center">
-                        <div>
-                            <p class="fw-light small-text mb-0">
-                                <?= $title ?>
-                            </p>
-                            <p class="fw-bold small-text">
-                                <?= $price ?>
-                            </p>
-                        </div>
-                    </div>
-                <?php endwhile; ?>
-            <?php endif;?>
+            <div class="col-6 col-md-3 d-flex justify-content-center align-items-center">
+                <div>
+                    <p class="fw-light small-text mb-0">
+                        Commitment Fee
+                    </p>
+                    <p class="fw-bold small-text">
+                        Rp. 50.000
+                    </p>
+                </div>
+            </div>
             <div class="col-6 col-md-3 d-flex justify-content-center align-items-center">
                 <div>
                     <div class="d-flex">
@@ -123,24 +106,16 @@ get_header('rsvp'); ?>
                     </p>
                 </div>
             </div>
-            <?php if(have_rows('registration')) : ?>
-                <?php while(have_rows('registration')) : the_row() ;
-                    $head_title = get_sub_field('registration_name');
-                    $button_name = get_sub_field('registration_button_name');
-                    $button_link = get_sub_field('registration_button_link');
-                ?>
-                    <div class="col-6 col-md-3 d-flex justify-content-center align-items-center">
-                        <div>
-                            <p class="fw-light small-text mb-0">
-                                <?= $head_title ?>
-                            </p>
-                            <p class="fw-bold border border-1 border-white p-1 small-text">
-                                <a class="text-decoration-none" href="<?= $button_link ?>"><?= $button_name ?></a>
-                            </p>
-                        </div>
-                    </div>
-                <?php endwhile; ?>
-            <?php endif;?>
+            <div class="col-6 col-md-3 d-flex justify-content-center align-items-center">
+                <div>
+                    <p class="fw-light small-text mb-0">
+                        REGISTRATION
+                    </p>
+                    <p class="fw-bold border border-1 border-white p-1 small-text">
+                        <a class="text-decoration-none" href="https://bit.ly/bproevent">BIT.LY/BPROEVENT</a>
+                    </p>
+                </div>
+            </div>
             <div class="col-6 col-md-3 d-flex justify-content-center align-items-center">
                 <div>
                     <div class="d-flex">
@@ -159,45 +134,49 @@ get_header('rsvp'); ?>
 <section class="position-relative" uk-scrollspy="target: .animated; cls: uk-animation-fade; delay: 500">
     <div class="container py-4">
         <div class="row justify-content-center">
-            <div class="col-10 bg-white rounded shadow position-relative animated opening">
-                <?php the_field('opening_and_description_event')?>
+            <div class="col-10 bg-white rounded shadow position-relative animated">
+                <h5 class="fw-light py-5 text-dark">
+                    Shallom profesional muda, <br /> <br />
+                    Dengan penuh semangat dan rasa syukur, kami ingin menginformasikan kepada Anda bahwa Bethany Professional (BPro) akan mengadakan workshop dengan topik yang relevan dengan keseharian kita, yaitu kemajuan teknologi dan financial. <br /> <br />
+                    Seiring dengan pesatnya perkembangan di dunia teknologi dan financial, muncul berbagai ilmu dan informasi baru hampir setiap hari. Hal ini menuntut kita, sebagai para profesional muda untuk selalu siap dan tanggap menghadapi perubahan. <br /> <br />
+                    Untuk itu, BPro ingin memfasilitasi Anda dalam menambah wawasan dan memperluas perspektif melalui workshop ini, agar Anda lebih siap dan diperlengkapi dalam menghadapi tantangan dunia profesional yang terus berkembang. <br /> <br />
+                    Kami mengundang Anda untuk bergabung dalam acara <strong>"Professional Workshop"</strong> yang disertai dengan <strong>"Praise & Worship Night"</strong>. Kami berharap event ini dapat memberi manfaat dan membantu dalam perjalanan profesional Anda. <br /> <br />
+                    Terima kasih.<br /> Tuhan Yesus memberkati <br />
+                    <img class="my-2" src="<?= get_template_directory_uri() ?>/images/logo.png" alt="Logo B-Pro"><br />
+                    Be Success, Be Profesional.
+                </h5>
                 <img class="position-absolute bottom-0 end-0 flag-img d-none" src="<?= get_template_directory_uri() ?>/images/flag-2.png" alt="">
             </div>
         </div>
     </div>
 </section>
 
-<section class="position-relative" style="background: url(<?php the_field('background_rundown')?>) top center no-repeat; background-size: cover;" uk-scrollspy="target: .animated; cls: uk-animation-fade; delay: 500">
+<section class="position-relative" style="background: url(<?= get_template_directory_uri() ?>/images/bg.jpg) top center no-repeat; background-size: cover;" uk-scrollspy="target: .animated; cls: uk-animation-fade; delay: 500">
     <div class="animated" style="position: absolute; left: 0; width: 80%; height: 100%; background-color: #39404fba; z-index: 1">
     </div>
     <div class="top-50 end-0 translate-middle-y shadow animated" style="position: absolute; width: 90%; height: 95%; background-color: #39404fba; z-index: 1">
     </div>
     <div class="container py-5 position-relative z-3">
         <div class="text-center">
-            <h1 class="mb-5 fw-bold"><?php the_field('title_reservation')?></h1>
-            <?php if(have_rows('rundown')) :?>
-                <?php while(have_rows('rundown')) : the_row(); 
-                    $layout_type = get_sub_field('layout_type');
-                    $time = get_sub_field('time');
-                    $title_session = get_sub_field('title_session');
-                    $session_name_event = get_sub_field('session_name_event');
-                ?>
-                    <?php if($layout_type == 'without-session-name-event') :?>
-                        <div class="rundown-without-description">
-                            <h4 class="fw-bold"><?= $time ?></h4>
-                            <h4 class="mb-5 fw-bold"><?= $title_session ?></h4>
-                        </div>
-                    <?php else :?>
-                        <div class="rundown-with-description">
-                            <h4 class="fw-bold"><?= $time ?></h4>
-                            <h4 class="fw-bold"><?= $title_session ?></h4>
-                            <h4 class="fw-light mb-5">
-                                <?= $session_name_event ?>
-                            </h4>
-                        </div>
-                    <?php endif;?>
-                <?php endwhile;?>
-            <?php endif;?>
+            <h1 class="mb-5 fw-bold">EVENT RUNDOWN</h1>
+            <h4 class="fw-bold">13.00 - 13.30</h4>
+            <h4 class="mb-5 fw-bold">Re-Registration</h4>
+            <h4 class="fw-bold">13.30 - 15.00</h4>
+            <h4 class="fw-bold">Session 1</h4>
+            <h4 class="fw-light mb-5">
+                <i>Digital Transformation: <br /> How Technology is Reshaping Industries & <br /> Cyber Security Case in Indonesia</i>
+            </h4>
+            <h4 class="fw-bold">15.00 - 15.30</h4>
+            <h4 class="fw-bold mb-5">Coffee Break</h4>
+            <h4 class="fw-bold">15.30 - 17.00</h4>
+            <h4 class="fw-bold">Session 2</h4>
+            <h4 class="fw-light mb-5">
+                <i>Smart Financial Management: <br /> The Trap of Online Gambling and <br /> Instant Loans</i>
+            </h4>
+            <h4 class="fw-bold">17.00 - 17.30</h4>
+            <h4 class="fw-bold mb-5">Coffee Break</h4>
+            <h4 class="fw-bold">17.30 - 19.00</h4>
+            <h4 class="fw-bold">Praise & Worship Night</h4>
         </div>
     </div>
 </section>
@@ -227,7 +206,8 @@ get_header('rsvp'); ?>
                     </div> -->
                     <div class="col-10">
                         <h4 class="fw-light">
-                            <?php the_field('informational_form_contact')?>
+                            Pembayaran commitment fee dapat ditransfer melalui <br />
+                            Rek BCA 4700385405 a.n Aprilliawati Wahyuni Sanjaya PP
                         </h4>
                     </div>
                     <div class="col-10">
