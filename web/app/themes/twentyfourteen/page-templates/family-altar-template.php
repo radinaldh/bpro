@@ -272,8 +272,12 @@ section.section-box-family-altar {
         <div class="flex items-center justify-center md:flex-wrap gap-x-[140px] xxl:gap-x-[80px] gap-y-[20px]" style="flex-direction: column;">
             <div class="flex gap-x-[62px] sm:flex-col gap-y-[15px]">
                 <div class="mb-[30px] text-[18px] font-light text-etGray md:mb-[30px] rev-slide-up text-white sm:text-[12px]" style="text-align: center; translate: none; rotate: none; scale: none; transform: translate(0px, 0px); opacity: 1;">
-                    <h2 class="!text-white text-[25px] sm:text-[24px] relative" style="font-weight: 500; margin-bottom:30px">Makalah Family Altar BPro</h2>
-                    <p class="mw-">Jelajahi berbagai sumber daya spiritual dan materi mendalam kami, termasuk panduan untuk kegiatan dan pengajaran gereja.</p>
+                    <?php if ( have_rows( 'box_fa' ) ) : ?>
+                        <?php while ( have_rows( 'box_fa' ) ) : the_row(); ?>
+                            <h2 class="!text-white text-[25px] sm:text-[24px] relative" style="font-weight: 500; margin-bottom:30px"><?php the_sub_field( 'title' ); ?></h2>
+                            <p class="mw-"><?php the_sub_field( 'description' ); ?></p>
+                        <?php endwhile; ?>
+                    <?php endif; ?>
                 </div>
         </div>
         <a href="<?= home_url()?>/makalah" class="et-btn bg-white hover:!bg-etBlack hover:!text-white flex items-center justify-center gap-x-[15px] h-[50px] px-[15px] text-etBlue font-medium text-[17px] rounded-full shrink-0 group">
